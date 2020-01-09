@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb30a38fae3730863b5a17a7d5d935065f96e9552.txt:781:3: Warning: Integer Overflow.\n  function bulkMint(address[] _investors, uint256[] _amounts) onlyOwner public returns (bool) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.1"
+}

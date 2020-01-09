@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x92dee36a50f66c603e15b9ac07338ec0046f902f.txt:111:9: Warning: Timestamp Dependency.\n        require(now > startDate)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x92dee36a50f66c603e15b9ac07338ec0046f902f.txt:119:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0x92dee36a50f66c603e15b9ac07338ec0046f902f.txt:101:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.0"
+}

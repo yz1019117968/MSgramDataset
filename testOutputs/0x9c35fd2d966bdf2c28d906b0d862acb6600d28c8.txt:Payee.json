@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x9c35fd2d966bdf2c28d906b0d862acb6600d28c8.txt:239:51: Warning: Re-Entrancy Vulnerability.\n        if(!founder.call.value(price*count)() || !msg.sender.call.value(msg.value-price*count)()", 
+   "./restContracts/0x9c35fd2d966bdf2c28d906b0d862acb6600d28c8.txt:245:9: Warning: Re-Entrancy Vulnerability.\n        s.update(_addr,count)"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9c35fd2d966bdf2c28d906b0d862acb6600d28c8.txt:239:13: Warning: Transaction-Ordering Dependency.\n        if(!founder.call.value(price*count)()"
+   ], 
+   [
+    "./restContracts/0x9c35fd2d966bdf2c28d906b0d862acb6600d28c8.txt:239:13: Warning: Transaction-Ordering Dependency.\n        if(!founder.call.value(price*count)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2b7aa75bbe26c28324e417c5efb027966e9cb810.txt:1639:34: Warning: Integer Overflow.\n\t\treturn safeDiv(safeMul(amount, stageBonusPercentage[stageIndex]\nInteger Overflow occurs if:\n    stageBonusPercentage[stageIndex] = 8\n    totalStages = 8\n    stageNumber = 8", 
+   "./uniqueContractSourceCode/0x2b7aa75bbe26c28324e417c5efb027966e9cb810.txt:1325:7: Warning: Integer Overflow.\n\t\tif (totalRaised + minimumInvestment\nInteger Overflow occurs if:\n    _cap = 115792089237316195423570985008687907853269984665640564039457538971986020007936\n    totalRaised = 115792089237316195423570985008687907853269984665640564039457538437570216067070\n    minimumCap = 115792089237316195423570985008687907853269984665640564039457538971986020007936\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2b7aa75bbe26c28324e417c5efb027966e9cb810.txt:971:2: Warning: Integer Overflow.\n\tuint[] public stageBonusPercentage"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2b7aa75bbe26c28324e417c5efb027966e9cb810.txt:1741:9: Warning: Transaction-Ordering Dependency.\n\t\t\tif (!fundOwnerWallet.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2b7aa75bbe26c28324e417c5efb027966e9cb810.txt:1367:3: Warning: Transaction-Ordering Dependency.\n\t\tselfdestruct(msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.6"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:925:20: Warning: Integer Underflow.\n        int diff = int(_finishRateToUsdE8) - int(_startRateToUsdE8)\nInteger Underflow occurs if:\n    _startRateToUsdE8 = 95780971304118053647396689196894323976171195136475136\n    _finishRateToUsdE8 = 95780971304118053647396689196894323976171195136475134"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.7"
+}

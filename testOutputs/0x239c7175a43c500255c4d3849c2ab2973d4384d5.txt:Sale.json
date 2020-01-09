@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x239c7175a43c500255c4d3849c2ab2973d4384d5.txt:841:9: Warning: Timestamp Dependency.\n        require(now > twoMonthsLater)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x239c7175a43c500255c4d3849c2ab2973d4384d5.txt:1059:9: Warning: Transaction-Ordering Dependency.\n        vault.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x239c7175a43c500255c4d3849c2ab2973d4384d5.txt:1077:10: Warning: Transaction-Ordering Dependency.\n         selfdestruct(vault)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.1"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8f3470a7388c05ee4e7af3d01d8c722b0ff52374.txt:261:5: Warning: Integer Underflow.\n    string public name = \"Veritaseum\"", 
+   "./restContracts/0x8f3470a7388c05ee4e7af3d01d8c722b0ff52374.txt:263:5: Warning: Integer Underflow.\n    string public symbol = \"VERI\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.0"
+}

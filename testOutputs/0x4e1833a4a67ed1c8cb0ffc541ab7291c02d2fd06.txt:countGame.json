@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4e1833a4a67ed1c8cb0ffc541ab7291c02d2fd06.txt:37:9: Warning: Timestamp Dependency.\n        require(now>endTime || count == 50)", 
+   "./uniqueContractSourceCode/0x4e1833a4a67ed1c8cb0ffc541ab7291c02d2fd06.txt:37:17: Warning: Timestamp Dependency.\n        require(now>endTime || count == 50"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4e1833a4a67ed1c8cb0ffc541ab7291c02d2fd06.txt:39:9: Warning: Transaction-Ordering Dependency.\n        best_gamer.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4e1833a4a67ed1c8cb0ffc541ab7291c02d2fd06.txt:39:9: Warning: Transaction-Ordering Dependency.\n        best_gamer.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

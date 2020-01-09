@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb49e984a83d7a638e7f2889fc8328952ba951abe.txt:439:5: Warning: Integer Overflow.\n    StageData[] public stageDataStore"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb49e984a83d7a638e7f2889fc8328952ba951abe.txt:571:32: Warning: Integer Underflow.\n        amountOfEthBeforeBuy = this.balance - msg.value\nInteger Underflow occurs if:\n    start = 1\n    stageIndex = 0\n    stageDataStore[stageIndex] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.1"
+}

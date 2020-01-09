@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:801:12: Warning: Integer Overflow.\n    return knownFunders[funder].reservedTokensPerDay", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:755:22: Warning: Integer Overflow.\n        knownFunders[funders[i]\nInteger Overflow occurs if:\n    updater = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:773:9: Warning: Integer Overflow.\n        knownFunders[funders[i]].reservedTokensPerDay\nInteger Overflow occurs if:\n    updater = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:739:22: Warning: Integer Overflow.\n        knownFunders[funders[i]\nInteger Overflow occurs if:\n    updater = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:773:62: Warning: Integer Overflow.\n        knownFunders[funders[i]].reservedTokensPerDay[day] = reservedTokens[i]\nInteger Overflow occurs if:\n    updater = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:773:22: Warning: Integer Overflow.\n        knownFunders[funders[i]\nInteger Overflow occurs if:\n    updater = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.4"
+}

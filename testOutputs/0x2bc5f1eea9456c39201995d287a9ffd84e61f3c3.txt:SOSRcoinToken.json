@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2bc5f1eea9456c39201995d287a9ffd84e61f3c3.txt:47:19: Warning: Integer Overflow.\n      uint256 c = a + b\nInteger Overflow occurs if:\n    balanceOf[owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    currentCandyTotalSupply = 0\n    candyBalance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    touched[_from] = 0\n    candyTotalSupply = 1\n    totalSupply1 = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply2 = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    date610 = 1\n    minValue2 = 0", 
+   "./uniqueContractSourceCode/0x2bc5f1eea9456c39201995d287a9ffd84e61f3c3.txt:323:23: Warning: Integer Overflow.\n     address wallet = walletArr[walletIdx]\nInteger Overflow occurs if:\n    walletIdx = 115792089237316195423570985007226406215939081747436879206741300988252902129663\n    currentCandyTotalSupply = 0\n    balanceOf[owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    walletArr[walletIdx] = 115792089237316195423570985007226406215939081747436879206741300988252902129664\n    candyTotalSupply = 0\n    totalSupply1 = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply2 = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    date610 = 1\n    minValue2 = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2bc5f1eea9456c39201995d287a9ffd84e61f3c3.txt:149:2: Warning: Integer Underflow.\n string public symbol", 
+   "./uniqueContractSourceCode/0x2bc5f1eea9456c39201995d287a9ffd84e61f3c3.txt:147:2: Warning: Integer Underflow.\n string public name", 
+   "./uniqueContractSourceCode/0x2bc5f1eea9456c39201995d287a9ffd84e61f3c3.txt:375:17: Warning: Integer Underflow.\n    uint256 s = totalSupply - balanceOf[owner]\nInteger Underflow occurs if:\n    balanceOf[owner] = 43478573020306636061593597838949086360760666980610965991374243818301246406657\n    totalSupply = 35336990057933538336187582217899514443974005962263605815078644747958854090756\n    minValue2 = 0\n    totalSupply2 = 107650506274943097698164969387638335936483323647293203863161984937570737324035\n    date610 = 1", 
+   "./uniqueContractSourceCode/0x2bc5f1eea9456c39201995d287a9ffd84e61f3c3.txt:341:18: Warning: Integer Underflow.\n     uint256 s = totalSupply - balanceOf[owner]\nInteger Underflow occurs if:\n    totalSupply = 0\n    balanceOf[owner] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.4"
+}

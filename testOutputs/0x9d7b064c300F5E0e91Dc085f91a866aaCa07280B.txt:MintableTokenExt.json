@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2705:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].isDistributed", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2697:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].isReserved", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2647:3: Warning: Integer Overflow.\n  mapping (address => ReservedTokensData) public reservedTokensList", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2729:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentageDecimals", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:87:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2735:3: Warning: Integer Overflow.\n  function setReservedTokensListMultiple(\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2689:5: Warning: Integer Overflow.\n    reservedTokensData.isDistributed\nInteger Overflow occurs if:\n    mintingFinished = 0\n    mintAgents[msg.sender] = 255", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2721:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentageUnit", 
+   "./restContracts/0x9d7b064c300F5E0e91Dc085f91a866aaCa07280B.txt:2649:3: Warning: Integer Overflow.\n  address[] public reservedTokensDestinations"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.7"
+}

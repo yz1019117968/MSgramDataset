@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x927398406595a145592ECB60d521Ed5b50e8b868.txt:17:5: Warning: Integer Overflow.\n    address[] public users"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x927398406595a145592ECB60d521Ed5b50e8b868.txt:5:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'", 
+   "./restContracts/0x927398406595a145592ECB60d521Ed5b50e8b868.txt:21:5: Warning: Integer Underflow.\n    string public filehash", 
+   "./restContracts/0x927398406595a145592ECB60d521Ed5b50e8b868.txt:7:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x927398406595a145592ECB60d521Ed5b50e8b868.txt:95:20: Warning: Integer Underflow.\n        owner.send(this.balance - 2100000\nInteger Underflow occurs if:\n    owner = 0", 
+   "./restContracts/0x927398406595a145592ECB60d521Ed5b50e8b868.txt:9:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.6"
+}

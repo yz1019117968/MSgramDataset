@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:869:24: Warning: Integer Overflow.\n        previousDate = stages[i].closed\nInteger Overflow occurs if:\n    stages.length = 1\n    stages[i].invested = 0\n    stages[i].closed = 1\n    stages[i].hardCap = 0\n    start = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:857:31: Warning: Integer Overflow.\n      if(stages[i].invested < stages[i]\nInteger Overflow occurs if:\n    stages.length = 2\n    stages[i].invested = 0\n    stages[i].invested = 0\n    stages[i].closed = 1\n    stages[i].hardCap = 0\n    stages[i].hardCap = 0\n    start = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:697:27: Warning: Integer Overflow.\n    Stage storage stage = stages[number]\nInteger Overflow occurs if:\n    stages.length = 32\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:839:33: Warning: Integer Overflow.\n        lastDate = lastDate.add(stages[i]\nInteger Overflow occurs if:\n    stages.length = 115792089236894946256896756261896235742535302936364983657855387562895885729791\n    stages[i].invested = 0\n    stages[i].invested = 0\n    stages[i].hardCap = 1\n    stages[i].hardCap = 0\n    start = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:101:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    totalHardCap = 115792075379903608508093090692534444681712351311279520959727529068747586273280\n    stages.length = 128\n    totalPeriod = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:733:37: Warning: Integer Overflow.\n    totalHardCap = totalHardCap.sub(stage.hardCap\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853269984665639326099418298627638230515711\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:699:37: Warning: Integer Overflow.\n    totalHardCap = totalHardCap.sub(stage.hardCap\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853269984665639326099418298627638230515711\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:857:31: Warning: Integer Overflow.\n      if(stages[i].invested < stages[i].hardCap\nInteger Overflow occurs if:\n    stages.length = 1\n    stages[i].invested = 0\n    stages[i].closed = 1\n    stages[i].hardCap = 0\n    start = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:743:5: Warning: Integer Overflow.\n    stage.price\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853269984665640554368051027090879731990527\n    totalPeriod = 0\n    totalHardCap = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:857:10: Warning: Integer Overflow.\n      if(stages[i].invested\nInteger Overflow occurs if:\n    stages.length = 1\n    stages[i].invested = 0\n    stages[i].closed = 1\n    stages[i].hardCap = 0\n    start = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:705:12: Warning: Integer Overflow.\n    delete stages[number]\nInteger Overflow occurs if:\n    stages.length = 32\n    totalPeriod = 0\n    totalHardCap = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:681:5: Warning: Integer Overflow.\n    stages.push(Stage(period, hardCap, price, 0, 0))\nInteger Overflow occurs if:\n    stages.push(Stage(period, hardCap, price, 0, 0)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:987:33: Warning: Integer Overflow.\n    uint summaryTokensPercent = bountyPercent + foundersPercent\nInteger Overflow occurs if:\n    bountyPercent = 1\n    foundersPercent = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    paused = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:739:5: Warning: Integer Overflow.\n    stage.hardCap\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853269984665640554368051027090879731990527\n    totalPeriod = 0\n    totalHardCap = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:869:24: Warning: Integer Overflow.\n        previousDate = stages[i]\nInteger Overflow occurs if:\n    stages.length = 2\n    stages[i].invested = 0\n    stages[i].invested = 0\n    stages[i].closed = 1\n    stages[i].hardCap = 0\n    stages[i].hardCap = 0\n    start = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:857:10: Warning: Integer Overflow.\n      if(stages[i]\nInteger Overflow occurs if:\n    stages.length = 2\n    stages[i].invested = 0\n    stages[i].invested = 0\n    stages[i].closed = 1\n    stages[i].hardCap = 0\n    stages[i].hardCap = 0\n    start = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:729:27: Warning: Integer Overflow.\n    Stage storage stage = stages[number]\nInteger Overflow occurs if:\n    stages.length = 32\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:657:3: Warning: Integer Overflow.\n  Stage[] public stages"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7a2ea17b835cfd9272cec08ee0d40a5719557843.txt:989:82: Warning: Integer Underflow.\n    uint summaryFoundersTokens = issuedTokenSupply.mul(summaryTokensPercent).div(percentRate - summaryTokensPercent\nInteger Underflow occurs if:\n    percentRate = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    foundersPercent = 0\n    bountyPercent = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.1"
+}

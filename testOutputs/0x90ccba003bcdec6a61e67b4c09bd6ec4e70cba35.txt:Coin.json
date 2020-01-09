@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x90ccba003bcdec6a61e67b4c09bd6ec4e70cba35.txt:937:3: Warning: Integer Overflow.\n  function dispenseTokensToInvestorAddressesByValue(address[] _addresses, uint[] _value) onlyOwner returns (bool ok){\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x90ccba003bcdec6a61e67b4c09bd6ec4e70cba35.txt:877:3: Warning: Integer Overflow.\n  function updateTokenInformation(string _name, string _symbol) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x90ccba003bcdec6a61e67b4c09bd6ec4e70cba35.txt:801:3: Warning: Integer Underflow.\n  string public name = \"XinFin XDCE\"", 
+   "./restContracts/0x90ccba003bcdec6a61e67b4c09bd6ec4e70cba35.txt:807:3: Warning: Integer Underflow.\n  string public symbol = \"XDCE\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.6"
+}

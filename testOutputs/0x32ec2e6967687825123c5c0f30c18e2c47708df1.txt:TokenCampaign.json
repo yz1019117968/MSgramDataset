@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:2619:3: Warning: Integer Overflow.\n  function grant_token_from_offchain(address _toAddr, uint _nTokens, string _ref) public onlyRobot {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _ref = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:2281:5: Warning: Integer Overflow.\n    t_1st_StageEnd += tNow\nInteger Overflow occurs if:\n    campaignState = 187072209578355573530071658587684226515959365500928\n    t_1st_StageEnd = 1\n    teamVaultAddr = 1461501637330902918203684832716283019655932542975\n    controller = 0", 
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:2277:5: Warning: Integer Overflow.\n    tBonusStageEnd += tNow\nInteger Overflow occurs if:\n    campaignState = 187072209578355573530071658587684226515959365500928\n    tBonusStageEnd = 1\n    teamVaultAddr = 1461501637330902918203684832716283019655932542975\n    controller = 0", 
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:2285:5: Warning: Integer Overflow.\n    t_3rd_StageEnd += tNow\nInteger Overflow occurs if:\n    campaignState = 187072209578355573530071658587684226515959365500928\n    t_3rd_StageEnd = 1\n    teamVaultAddr = 1461501637330902918203684832716283019655932542975\n    controller = 0", 
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:2279:5: Warning: Integer Overflow.\n    tRegSaleStart += tNow\nInteger Overflow occurs if:\n    campaignState = 187072209578355573530071658587684226515959365500928\n    tRegSaleStart = 1\n    teamVaultAddr = 1461501637330902918203684832716283019655932542975\n    controller = 0", 
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:2283:5: Warning: Integer Overflow.\n    t_2nd_StageEnd += tNow\nInteger Overflow occurs if:\n    campaignState = 187072209578355573530071658587684226515959365500928\n    t_2nd_StageEnd = 1\n    teamVaultAddr = 1461501637330902918203684832716283019655932542975\n    controller = 0", 
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:2287:5: Warning: Integer Overflow.\n    tCampaignEnd += tNow\nInteger Overflow occurs if:\n    campaignState = 187072209578355573530071658587684226515959365500928\n    tCampaignEnd = 1\n    teamVaultAddr = 1461501637330902918203684832716283019655932542975\n    controller = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.0"
+}

@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:871:51: Warning: Integer Overflow.\n            votesAvailable[voters[i]] = balanceOf(voters[i]\nInteger Overflow occurs if:\n    voters[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votersCount = 108555083659983933209597798445644913612440610624038028786991485007418559037439\n    voitingStartTime = 0\n    isVotingPrepare = 65280", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:871:28: Warning: Integer Overflow.\n            votesAvailable[voters[i]\nInteger Overflow occurs if:\n    voters[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votersCount = 108555083659983933209597798445644913612440610624038028786991485007418559037439\n    voitingStartTime = 0\n    isVotingPrepare = 65280", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:819:20: Warning: Integer Overflow.\n            delete voters[i]\nInteger Overflow occurs if:\n    voters.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    mintingFinished = 372682917519380244141939632342652170012262798458880\n    alreadyMintedOnce = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:783:28: Warning: Integer Overflow.\n\t\tif(now-mintingStartTime>(2+failedVotingCount\nInteger Overflow occurs if:\n    failedVotingCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    alreadyMintedOnce = 372682917519380244141939632342652170012262798458880\n    mintingFinished = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:55:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:843:13: Warning: Integer Overflow.\n            voters.push(msg.sender)\nInteger Overflow occurs if:\n    voters.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isVotingPrepare = 65280", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:639:1: Warning: Integer Overflow.\ncontract TitsToken is MintableToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    voters.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    isVotingPrepare = 65280", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:681:5: Warning: Integer Overflow.\n    address[] public voters"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:783:6: Warning: Integer Underflow.\n\t\tif(now-mintingStartTime\nInteger Underflow occurs if:\n    mintingStartTime = 1\n    alreadyMintedOnce = 372682917519380244141939632342652170012262798458880\n    mintingFinished = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:571:17: Warning: Integer Underflow.\n            if (now - mintingStartTime\nInteger Underflow occurs if:\n    mintingStartTime = 1\n    mintingFinished = 0", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:643:5: Warning: Integer Underflow.\n    string public symbol = \"TITS\"", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:421:23: Warning: Integer Underflow.\n        uint period = now - mintingStartTime\nInteger Underflow occurs if:\n    mintingStartTime = 1\n    mintingFinished = 0", 
+   "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:641:5: Warning: Integer Underflow.\n    string public name = \"Truth In The Sourcecode\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:379:9: Warning: Transaction-Ordering Dependency.\n        titsTokenAuthor.transfer(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x03209BdE47dA583547C17c47e7CA74bFa3DFb404.txt:631:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.1"
+}

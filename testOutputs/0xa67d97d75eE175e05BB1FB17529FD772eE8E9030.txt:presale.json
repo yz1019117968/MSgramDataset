@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:615:26: Warning: Callstack Depth Attack Vulnerability.\n        if(weiLeftOver>0)msg.sender.send(weiLeftOver)"
+  ], 
+  "time_dependency": [
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:495:13: Warning: Timestamp Dependency.\n            if(now > dates[numberOfDates-1]) {\r\n            ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:393:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:573:19: Warning: Integer Underflow.\n                i=numberOfDates-1\nInteger Underflow occurs if:\n    numberOfDates = 0\n    dates[0] = 57896044618661388720900134904736250766352883688200768829729795006435801694206\n    numberOfTokensLeft = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:559:63: Warning: Integer Underflow.\n        if(numberOfTokensLeft<=0 || now<dates[0] || now>dates[numberOfDates-1\nInteger Underflow occurs if:\n    numberOfTokensLeft = 1\n    dates[0] = 1\n    numberOfDates = 0", 
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:495:28: Warning: Integer Underflow.\n            if(now > dates[numberOfDates-1\nInteger Underflow occurs if:\n    numberOfDates = 0\n    owner = 0", 
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:391:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:567:27: Warning: Integer Underflow.\n        for(uint256 i=0;i<numberOfDates-1\nInteger Underflow occurs if:\n    numberOfDates = 0\n    dates[0] = 115792089237316195423570985008687907853269984665640564039457583937544385462271\n    numberOfTokensLeft = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:523:16: Warning: Transaction-Ordering Dependency.\n            if(finalAddress.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0xa67d97d75eE175e05BB1FB17529FD772eE8E9030.txt:523:16: Warning: Transaction-Ordering Dependency.\n            if(finalAddress.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.6"
+}

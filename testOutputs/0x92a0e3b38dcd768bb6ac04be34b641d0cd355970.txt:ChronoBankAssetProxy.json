@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:557:5: Warning: Integer Overflow.\n    function __transferFromWithReference(address _from, address _to, uint _value, string _reference, address _sender) onlyAccess(_sender) returns(bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:487:5: Warning: Integer Overflow.\n    function __transferWithReference(address _to, uint _value, string _reference, address _sender) onlyAccess(_sender) returns(bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:425:5: Warning: Integer Overflow.\n    function transferWithReference(address _to, uint _value, string _reference) returns(bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:225:5: Warning: Integer Overflow.\n    function stringToBytes32(string memory source) returns (bytes32 result) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:177:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:173:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:675:9: Warning: Transaction-Ordering Dependency.\n        _getAsset().__process.value(msg.value)(msg.data, msg.sender)"
+   ], 
+   [
+    "./restContracts/0x92a0e3b38dcd768bb6ac04be34b641d0cd355970.txt:675:9: Warning: Transaction-Ordering Dependency.\n        _getAsset().__process.value(msg.value)(msg.data, msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.9"
+}

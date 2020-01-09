@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:569:2: Warning: Integer Overflow.\n\tfunction tokenFallback(address _from, uint256 _value, bytes _data) public pure {\r\n\t^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.5"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbdb686ac471b374bdc844615c768c2595c2ff2fe.txt:501:5: Warning: Integer Overflow.\n    InfoForDeposit[] public arrayInfoForDeposit", 
+   "./restContracts/0xbdb686ac471b374bdc844615c768c2595c2ff2fe.txt:479:1: Warning: Integer Overflow.\ncontract BoostContainer {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    arrayInfoForDeposit.push(InfoForDeposit({blockNumber:_blockNumber, depositedEther:msg.value})) = 41422112641837104714977910719459132799912797182732962724615910609143899352111\n    multiSigAddress = 0", 
+   "./restContracts/0xbdb686ac471b374bdc844615c768c2595c2ff2fe.txt:609:9: Warning: Integer Overflow.\n        arrayInfoForDeposit.push(InfoForDeposit({blockNumber:_blockNumber, depositedEther:msg.value}))\nInteger Overflow occurs if:\n    multiSigAddress = 0\n    arrayInfoForDeposit.push(InfoForDeposit({blockNumber:_blockNumber, depositedEther:msg.value})) = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbdb686ac471b374bdc844615c768c2595c2ff2fe.txt:737:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(multiSigAddress)"
+   ], 
+   [
+    "./restContracts/0xbdb686ac471b374bdc844615c768c2595c2ff2fe.txt:787:9: Warning: Transaction-Ordering Dependency.\n        _address.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.6"
+}

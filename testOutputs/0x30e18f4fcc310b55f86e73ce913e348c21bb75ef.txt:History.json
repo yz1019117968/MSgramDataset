@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x30e18f4fcc310b55f86e73ce913e348c21bb75ef.txt:233:5: Warning: Integer Overflow.\n    function getEvent(string _vin, uint256 _index) constant\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vin = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x30e18f4fcc310b55f86e73ce913e348c21bb75ef.txt:215:5: Warning: Integer Overflow.\n    function getEventsCount(string _vin) constant returns(uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vin = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x30e18f4fcc310b55f86e73ce913e348c21bb75ef.txt:173:5: Warning: Integer Overflow.\n    function addEvent(uint256 _mileage, \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _description = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "23.3"
+}

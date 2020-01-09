@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x949C9B8dFf9b264CAD57F69Cd98ECa1338F05B39.txt:729:3: Warning: Integer Underflow.\n  string public name = \"Jincor Token PreSale\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.8"
+}

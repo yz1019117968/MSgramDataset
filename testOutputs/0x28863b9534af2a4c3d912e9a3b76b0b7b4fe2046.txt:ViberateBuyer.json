@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x28863b9534af2a4c3d912e9a3b76b0b7b4fe2046.txt:321:5: Warning: Timestamp Dependency.\n    if (now < earliest_buy_time) return;"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x28863b9534af2a4c3d912e9a3b76b0b7b4fe2046.txt:377:5: Warning: Integer Overflow.\n    balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    eth_cap = 1\n    bought_tokens = 0\n    kill_switch = 0", 
+   "./uniqueContractSourceCode/0x28863b9534af2a4c3d912e9a3b76b0b7b4fe2046.txt:305:5: Warning: Integer Overflow.\n    withdraw_bounty += msg.value\nInteger Overflow occurs if:\n    withdraw_bounty = 1\n    developer = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x28863b9534af2a4c3d912e9a3b76b0b7b4fe2046.txt:243:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[user]\nInteger Underflow occurs if:\n    balances[user] = 95780971304118053647396689196894323976171195136475136\n    contract_eth_value = 95780971304118053647396689196894323976171195136475134\n    bought_tokens = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.7"
+}

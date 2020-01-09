@@ -1,0 +1,40 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:397:11: Warning: Integer Overflow.\n          presaleProceeds += msg.value\nInteger Overflow occurs if:\n    presaleProceeds = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    presaleOngoing = 255\n    buildPrice = 69722843986276191112704802276904042686523943500539225692285358676886601247599", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:119:5: Warning: Integer Overflow.\n    mapping (uint => uint[4]) public houseTraits", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:541:9: Warning: Integer Overflow.\n        return houseTraits[_tokenId]", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:113:5: Warning: Integer Overflow.\n    House[] public houses", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:983:13: Warning: Integer Overflow.\n            seed + block.gaslimit\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    houses[_tokenId].owner = 0\n    houses[_tokenId] = 115792089237316195423570985008687907853269984665640564039457582882013222797312", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:417:29: Warning: Integer Overflow.\n        if (presaleOngoing) presaleProceeds += msg.value\nInteger Overflow occurs if:\n    presaleProceeds = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    _tokenId = 0\n    presaleOngoing = 255\n    additionPrice = 69722843986276191112704802276904042686523943500539225692285358676886601247599\n    houses[_tokenId].owner = 0\n    houses[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:565:5: Warning: Integer Overflow.\n    function addNewTrait(string _name, bool _isNegative) public onlyByOwnerOrDev {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:395:11: Warning: Integer Overflow.\n          presaleSales++\nInteger Overflow occurs if:\n    presaleSales = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    presaleOngoing = 255\n    buildPrice = 0", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:983:13: Warning: Integer Overflow.\n            seed + block.gaslimit + block.number\nInteger Overflow occurs if:\n    _tokenId = 0\n    houses[_tokenId].owner = 0\n    houses[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:533:9: Warning: Integer Overflow.\n        listings[_tokenId].isAvailable\nInteger Overflow occurs if:\n    _tokenId = 0\n    houses[_tokenId].owner = 0\n    houses[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:121:5: Warning: Integer Overflow.\n    mapping (uint => Listing) public listings", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:677:19: Warning: Integer Overflow.\n        houseId = houses.length++\nInteger Overflow occurs if:\n    houses.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    presaleOngoing = 255\n    gameOwner = 0", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:431:31: Warning: Integer Overflow.\n        House storage house = houses[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 19298681539836823024159292411393409321066566631467113066042328791057048098134\n    houses[_tokenId].owner = 0\n    houses[_tokenId] = 19298681539836823024159292411393409321066566631467113066042328791057048098135", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:585:5: Warning: Integer Overflow.\n    function addNewStreetType(string _type) public onlyByOwnerOrDev {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _type = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:355:9: Warning: Integer Overflow.\n        ownedHouses[newOwner]++\nInteger Overflow occurs if:\n    _tokenId = 0\n    ownedHouses[newOwner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    houses[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:115:5: Warning: Integer Overflow.\n    Trait[] public traits", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:421:9: Warning: Integer Overflow.\n        house.numBedrooms\nInteger Overflow occurs if:\n    _tokenId = 0\n    additionPrice = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    presaleOngoing = 0\n    houses[_tokenId].owner = 0\n    houses[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:557:5: Warning: Integer Overflow.\n    function addNewColor(string _colorCode) public onlyByOwnerOrDev {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _colorCode = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:577:5: Warning: Integer Overflow.\n    function addNewStreetName(string _name) public onlyByOwnerOrDev {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:113:5: Warning: Integer Underflow.\n    House[] public houses", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:353:9: Warning: Integer Underflow.\n        ownedHouses[oldOwner]--\nInteger Underflow occurs if:\n    _tokenId = 0\n    ownedHouses[oldOwner] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    houses[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:623:41: Warning: Integer Underflow.\n        uint remainingPresaleProceeds = presaleProceeds - presaleDevPayout\nInteger Underflow occurs if:\n    presaleProceeds = 0\n    presaleDevPayout = 1\n    gameOwner = 0", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:115:5: Warning: Integer Underflow.\n    Trait[] public traits", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:647:41: Warning: Integer Underflow.\n        uint remainingPresaleProceeds = presaleProceeds - presaleDevPayout\nInteger Underflow occurs if:\n    presaleProceeds = 0\n    presaleDevPayout = 1\n    gameDeveloper = 0", 
+   "./uniqueContractSourceCode/0x1b05e6557768650c0df0c9377c32c621ac1ccf17.txt:315:9: Warning: Integer Underflow.\n        ownedHouses[oldOwner] -= 1\nInteger Underflow occurs if:\n    _tokenId = 0\n    ownedHouses[oldOwner] = 0\n    approvedTransfers[_tokenId] = 0\n    houses[_tokenId] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.6"
+}

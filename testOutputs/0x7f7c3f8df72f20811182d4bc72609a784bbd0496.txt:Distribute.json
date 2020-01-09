@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7f7c3f8df72f20811182d4bc72609a784bbd0496.txt:105:2: Warning: Integer Overflow.\n\taddress[] public admins", 
+   "./restContracts/0x7f7c3f8df72f20811182d4bc72609a784bbd0496.txt:363:33: Warning: Integer Overflow.\n\t\t\t\ttotalTokensDue += tokensDue(payees[i].contributionWei\nInteger Overflow occurs if:\n    payees.length = 12\n    payees[i].paid = 0\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255", 
+   "./restContracts/0x7f7c3f8df72f20811182d4bc72609a784bbd0496.txt:101:2: Warning: Integer Overflow.\n\tPayee[] public payees", 
+   "./restContracts/0x7f7c3f8df72f20811182d4bc72609a784bbd0496.txt:363:33: Warning: Integer Overflow.\n\t\t\t\ttotalTokensDue += tokensDue(payees[i]\nInteger Overflow occurs if:\n    payees.length = 12\n    payees[i].paid = 0\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255\n    payees[i].paid = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x7f7c3f8df72f20811182d4bc72609a784bbd0496.txt:383:11: Warning: Transaction-Ordering Dependency.\n\t\trequire(multisig.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0x7f7c3f8df72f20811182d4bc72609a784bbd0496.txt:383:11: Warning: Transaction-Ordering Dependency.\n\t\trequire(multisig.send(this.balance)", 
+    "./restContracts/0x7f7c3f8df72f20811182d4bc72609a784bbd0496.txt:397:3: Warning: Transaction-Ordering Dependency.\n\t\tselfdestruct(multisig)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.0"
+}

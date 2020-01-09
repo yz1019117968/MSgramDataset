@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:653:5: Warning: Integer Overflow.\n    function startAuctions(bytes32[] _hashes)  {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _hashes = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:1019:5: Warning: Integer Overflow.\n    function invalidateName(string unhashedName) inState(sha3(unhashedName), Mode.Owned) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    unhashedName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:1085:5: Warning: Integer Overflow.\n    function eraseNode(bytes32[] labels) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    labels = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:747:5: Warning: Integer Overflow.\n    function startAuctionsAndBid(bytes32[] hashes, bytes32 sealedBid) payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    hashes = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "26.5"
+}

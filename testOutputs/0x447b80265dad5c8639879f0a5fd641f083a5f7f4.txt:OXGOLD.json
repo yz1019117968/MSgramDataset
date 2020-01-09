@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x447b80265dad5c8639879f0a5fd641f083a5f7f4.txt:13:5: Warning: Integer Underflow.\n    string public name = \"OXGOLD\"", 
+   "./uniqueContractSourceCode/0x447b80265dad5c8639879f0a5fd641f083a5f7f4.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"ZRXG\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

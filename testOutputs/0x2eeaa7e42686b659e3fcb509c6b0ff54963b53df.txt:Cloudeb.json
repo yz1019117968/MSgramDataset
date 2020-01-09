@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2eeaa7e42686b659e3fcb509c6b0ff54963b53df.txt:9:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x2eeaa7e42686b659e3fcb509c6b0ff54963b53df.txt:5:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'", 
+   "./uniqueContractSourceCode/0x2eeaa7e42686b659e3fcb509c6b0ff54963b53df.txt:7:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.5"
+}

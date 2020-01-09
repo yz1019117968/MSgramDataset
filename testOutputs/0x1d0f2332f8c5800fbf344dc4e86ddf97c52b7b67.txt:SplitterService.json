@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1d0f2332f8c5800fbf344dc4e86ddf97c52b7b67.txt:97:9: Warning: Integer Overflow.\n        addressToSplittersCreated[msg.sender].push(newSplitterAddress)\nInteger Overflow occurs if:\n    feeForSplitterCreation = 0", 
+   "./uniqueContractSourceCode/0x1d0f2332f8c5800fbf344dc4e86ddf97c52b7b67.txt:69:5: Warning: Integer Overflow.\n    mapping(address => address[]) public addressToSplittersCreated", 
+   "./uniqueContractSourceCode/0x1d0f2332f8c5800fbf344dc4e86ddf97c52b7b67.txt:59:1: Warning: Integer Overflow.\ncontract SplitterService\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    feeForSplitterCreation = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1d0f2332f8c5800fbf344dc4e86ddf97c52b7b67.txt:73:5: Warning: Integer Underflow.\n    mapping(address => string) public splitterNames"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.3"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7149cab37227eb947c762fd762cee87050f19171.txt:87:9: Warning: Integer Overflow.\n        swaps[_participant][_hash] = Swap(_expiration, msg.sender, _participant, _token, _value, true)\nInteger Overflow occurs if:\n    _value = 100135927934651036221761091863598459016256155049858187411712977198722809069568", 
+   "./uniqueContractSourceCode/0x7149cab37227eb947c762fd762cee87050f19171.txt:55:5: Warning: Integer Overflow.\n    mapping(address => mapping(bytes20 => Swap)) public swaps"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.6"
+}

@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x92cB5F1FbabbcbDd891B9Cbd8E9a056c8c1eEbEF.txt:321:5: Warning: Integer Overflow.\n    listedItems.push(_itemId)\nInteger Overflow occurs if:\n    ownerOfItem[_itemId] = 0\n    admins[msg.sender] = 255\n    priceOfItem[_itemId] = 0", 
+   "./restContracts/0x92cB5F1FbabbcbDd891B9Cbd8E9a056c8c1eEbEF.txt:89:1: Warning: Integer Overflow.\ncontract ItemToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ownerOfItem[_itemId] = 0\n    admins[msg.sender] = 255\n    priceOfItem[_itemId] = 0", 
+   "./restContracts/0x92cB5F1FbabbcbDd891B9Cbd8E9a056c8c1eEbEF.txt:253:3: Warning: Integer Overflow.\n  function populateFromItemRegistry (uint256[] _itemIds) onlyOwner() public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _itemIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x92cB5F1FbabbcbDd891B9Cbd8E9a056c8c1eEbEF.txt:501:19: Warning: Integer Overflow.\n      if (ownerOf(listedItems[i]\nInteger Overflow occurs if:\n    listedItems.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    ownerOfItem[_itemId] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x92cB5F1FbabbcbDd891B9Cbd8E9a056c8c1eEbEF.txt:245:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(_amount)"
+   ], 
+   [
+    "./restContracts/0x92cB5F1FbabbcbDd891B9Cbd8E9a056c8c1eEbEF.txt:237:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.5"
+}

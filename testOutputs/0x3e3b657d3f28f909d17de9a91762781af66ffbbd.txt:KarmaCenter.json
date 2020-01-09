@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:263:5: Warning: Integer Overflow.\n    function getLinkToPostId(string _link) public view returns(uint256) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:365:9: Warning: Integer Overflow.\n        posts[_postId].voteCount\nInteger Overflow occurs if:\n    posts[_postId].voteCount = 1\n    postExists[_postId] = 255", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:365:36: Warning: Integer Overflow.\n        posts[_postId].voteCount = posts[_postId].voteCount\nInteger Overflow occurs if:\n    posts[_postId].voteCount = 1\n    postExists[_postId] = 255", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:273:16: Warning: Integer Overflow.\n        return posts[_postId].datePosted", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:257:16: Warning: Integer Overflow.\n        return posts[_postId].voteCount", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:171:5: Warning: Integer Overflow.\n    function createPost(string _link) public returns(uint256) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:345:36: Warning: Integer Overflow.\n        posts[_postId].voteCount = posts[_postId].voteCount\nInteger Overflow occurs if:\n    postExists[_postId] = 255", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:249:16: Warning: Integer Overflow.\n        return posts[_postId].poster"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:123:5: Warning: Integer Underflow.\n    string public name = \"Karma Factory\"", 
+   "./uniqueContractSourceCode/0x3e3b657d3f28f909d17de9a91762781af66ffbbd.txt:241:9: Warning: Integer Underflow.\n        return posts[_postId].link\nInteger Underflow occurs if:\n    return posts[_postId].link = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.1"
+}

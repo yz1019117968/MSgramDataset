@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5ba12fa4941988e0ce19e0bbb11907ced19d3f0b.txt:783:18: Warning: Integer Underflow.\n    for(uint i = loop_count-1\nInteger Underflow occurs if:\n    current_state = 5846006549323611672814739330865132078623730171904\n    _end = 0", 
+   "./uniqueContractSourceCode/0x5ba12fa4941988e0ce19e0bbb11907ced19d3f0b.txt:801:18: Warning: Integer Underflow.\n    for(uint j = loop_count-1\nInteger Underflow occurs if:\n    current_state = 5846006549323611672814739330865132078623730171904\n    _end = 0\n    _begin = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    pay_to_long_b = 0\n    pay_to_long_a = 0", 
+   "./uniqueContractSourceCode/0x5ba12fa4941988e0ce19e0bbb11907ced19d3f0b.txt:783:46: Warning: Integer Underflow.\n    for(uint i = loop_count-1; i >= _begin ; i--\nInteger Underflow occurs if:\n    current_state = 5846006549323611672814739330865132078623730171904\n    _end = 1\n    _begin = 0\n    pay_to_long_b = 0\n    pay_to_long_a = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5ba12fa4941988e0ce19e0bbb11907ced19d3f0b.txt:923:28: Warning: Transaction-Ordering Dependency.\n        if (premium > 0) { creator.transfer(premium)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5ba12fa4941988e0ce19e0bbb11907ced19d3f0b.txt:901:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(premium)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.7"
+}

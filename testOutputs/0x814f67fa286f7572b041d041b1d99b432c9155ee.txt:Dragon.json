@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x814f67fa286f7572b041d041b1d99b432c9155ee.txt:343:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x814f67fa286f7572b041d041b1d99b432c9155ee.txt:287:13: Warning: Integer Overflow.\n            accountCount++\nInteger Overflow occurs if:\n    _value = 0\n    accountCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    burner = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    allowance[_from][msg.sender] = 0\n    balanceOf[_from] = 0\n    balanceOf[_to] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x814f67fa286f7572b041d041b1d99b432c9155ee.txt:69:5: Warning: Integer Underflow.\n    string public standard = 'DRAGON 1.2'", 
+   "./restContracts/0x814f67fa286f7572b041d041b1d99b432c9155ee.txt:431:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    _value = 7237005577332262213973186563042994240829374041603773192505384380769469726720\n    totalSupply = 748288838313422294120287872290776191444112361127934\n    allowance[_from][msg.sender] = 7237005577332262213973186563042994240829374041603773192505384380769469726720\n    balanceOf[_from] = 7237005577332262213973186563042994240829374041603773192505384380769469726720"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.2"
+}

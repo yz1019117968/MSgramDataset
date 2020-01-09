@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:543:9: Warning: Integer Overflow.\n        tokenHolder.revoked\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:1283:39: Warning: Integer Overflow.\n            }else if (block.number <= startBlock + thirdPeriod\nInteger Overflow occurs if:\n    startBlock = 4194304\n    currentStep = 1\n    thirdPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    secondPeriod = 115792089237316195423570985008682198862499160826116330895579786027367598653437\n    firstPeriod = 115792089237316195423570985008682198862499160826116330895579786027367598653437\n    tokenPriceWei = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList = 0\n    endBlock = 115792089237316195423570985008682198862499160826116330895579786027367602847742\n    paused = 0", 
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:1275:33: Warning: Integer Overflow.\n            if (block.number <= startBlock + firstPeriod\nInteger Overflow occurs if:\n    startBlock = 4194304\n    currentStep = 1\n    firstPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenPriceWei = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList = 0\n    endBlock = 115792089237316195423570985008682198862499160826116330895579786027367602847742\n    paused = 0", 
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:413:5: Warning: Integer Overflow.\n    mapping(address => TokenHolder) public tokenHolders", 
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:1279:39: Warning: Integer Overflow.\n            }else if (block.number <= startBlock + secondPeriod\nInteger Overflow occurs if:\n    startBlock = 4194304\n    currentStep = 1\n    secondPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    firstPeriod = 115792089237316195423570985008682198862499160826116330895579786027367598653437\n    tokenPriceWei = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList = 0\n    endBlock = 115792089237316195423570985008682198862499160826116330895579786027367602847742\n    paused = 0", 
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:709:5: Warning: Integer Overflow.\n    address[] public holdersIndex"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:883:58: Warning: Integer Underflow.\n        if (block.number < endBlock && totalTokensSent < maxCap - 100\nInteger Underflow occurs if:\n    maxCap = 99\n    endBlock = 1\n    crowdsaleClosed = 0", 
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:973:63: Warning: Integer Underflow.\n        require(block.number >= endBlock || totalTokensSent > maxCap - 1000\nInteger Underflow occurs if:\n    maxCap = 999\n    endBlock = 1\n    crowdsaleClosed = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.3"
+}

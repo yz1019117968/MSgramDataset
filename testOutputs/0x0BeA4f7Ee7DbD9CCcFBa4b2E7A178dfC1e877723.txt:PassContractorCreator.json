@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:1393:5: Warning: Integer Overflow.\n    function createContractor(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _projectName = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "4.9"
+}

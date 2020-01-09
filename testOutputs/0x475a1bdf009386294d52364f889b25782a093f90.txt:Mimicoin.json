@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:53:16: Warning: Integer Overflow.\n        delete callers[index]\nInteger Overflow occurs if:\n    callers.length = 3\n    callers[i] = 0\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:345:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    callers.length = 5\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    callers[i] = 0\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:9:5: Warning: Integer Overflow.\n    address[] public callers", 
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:445:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    callers.length = 5\n    mintedAmount = 1\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    callers[i] = 0\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:197:1: Warning: Integer Overflow.\ncontract Mimicoin is CalledA, TokenERC20 {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    callers.length = 4\n    callers[i] = 0\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:45:9: Warning: Integer Overflow.\n        callers[index]\nInteger Overflow occurs if:\n    callers.length = 3\n    callers[i] = 0\n    callers[i] = 1461501637330902918203684832716283019655932542975\n    callers[i] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:73:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x475a1bdf009386294d52364f889b25782a093f90.txt:75:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.0"
+}

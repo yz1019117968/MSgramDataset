@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x1002226135e9e42235319bba1653a6d930febf83.txt:391:5: Warning: Callstack Depth Attack Vulnerability.\n\t\t\t\tpiranhaOwner.send(divsForPiranhaOwner)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1002226135e9e42235319bba1653a6d930febf83.txt:191:3: Warning: Integer Overflow.\n  address[][] public betsOnFighter", 
+   "./uniqueContractSourceCode/0x1002226135e9e42235319bba1653a6d930febf83.txt:251:5: Warning: Integer Overflow.\n\t\t\t\tbetsOnFighter[battleId-1].push(msg.sender)\nInteger Overflow occurs if:\n    _piranhaFighter2 = 115792089237316195423570985008687907852589419931798687112457047816754755010559\n    _piranhaFighter1 = 680564733841876927000536191158374629376\n    battleId = 1\n    fightersToBattle[_piranhaFighter1][_piranhaFighter2] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter2] = 0\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter1] = 0\n    battleToWinner[curBattleId] = 0", 
+   "./uniqueContractSourceCode/0x1002226135e9e42235319bba1653a6d930febf83.txt:159:1: Warning: Integer Overflow.\ncontract PiranhasBattle is Ownable, Payments  {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _piranhaFighter2 = 649037107316853453566312041152513\n    _piranhaFighter1 = 649037107316853453566312041152512\n    battleId = 1\n    fightersToBattle[_piranhaFighter1][_piranhaFighter2] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter2] = 0\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter1] = 0\n    battleToWinner[curBattleId] = 0", 
+   "./uniqueContractSourceCode/0x1002226135e9e42235319bba1653a6d930febf83.txt:239:20: Warning: Integer Overflow.\n \t      battleId = betsOnFighter.push([msg.sender])\nInteger Overflow occurs if:\n    _piranhaFighter2 = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    _piranhaFighter1 = 2\n    betsOnFighter.push([msg.sender]) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fightersToBattle[_piranhaFighter1][_piranhaFighter2] = 0\n    battleToWinner[curBattleId] = 0", 
+   "./uniqueContractSourceCode/0x1002226135e9e42235319bba1653a6d930febf83.txt:251:5: Warning: Integer Overflow.\n\t\t\t\tbetsOnFighter[battleId-1]\nInteger Overflow occurs if:\n    _piranhaFighter2 = 115792089237316195422786347291764569969857078804490774582016630888878168866815\n    _piranhaFighter1 = 784637716923337883412905861149789457440953119034960773120\n    battleId = 115792089237316195423570985008687907850547725730273056331750587148458983948288\n    fightersToBattle[_piranhaFighter1][_piranhaFighter2] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter2] = 0\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter1] = 0\n    battleToWinner[curBattleId] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1002226135e9e42235319bba1653a6d930febf83.txt:251:19: Warning: Integer Underflow.\n\t\t\t\tbetsOnFighter[battleId-1\nInteger Underflow occurs if:\n    _piranhaFighter2 = 115792089237316195423570985008687907853269984665640544696644470173846334341119\n    _piranhaFighter1 = 19342813113834066795298816\n    battleId = 0\n    fightersToBattle[_piranhaFighter1][_piranhaFighter2] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter2] = 0\n    addressToBattleToFigterIdToBetPower[msg.sender][battleId][_piranhaFighter1] = 0\n    battleToWinner[curBattleId] = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.3"
+}

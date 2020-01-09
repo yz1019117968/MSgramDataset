@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x82df5022fbcfdd877830371d7713f0181a554c9c.txt:65:3: Warning: Integer Overflow.\n  function transfer(uint8[] animalTypes, uint8[] numsXType, uint32[] ids) payable{\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    animalTypes = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./restContracts/0x82df5022fbcfdd877830371d7713f0181a554c9c.txt:109:3: Warning: Integer Overflow.\n  function slice(uint32[] array, uint8 from, uint8 number) returns (uint32[] sliced){\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    array = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "22.1"
+}

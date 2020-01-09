@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2555:24: Warning: Callstack Depth Attack Vulnerability.\n        bool success = _recipient.send(_amaunt)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:3371:5: Warning: Integer Overflow.\n    function getPVPCycles(uint32[] warriorIds) external view returns(uint32[]){\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.3"
+}

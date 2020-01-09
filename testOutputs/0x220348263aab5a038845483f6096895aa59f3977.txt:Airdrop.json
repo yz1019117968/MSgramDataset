@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x220348263aab5a038845483f6096895aa59f3977.txt:39:5: Warning: Integer Overflow.\n    function TransferToken (address[] _to, uint _value, uint _weiPrice) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.2"
+}

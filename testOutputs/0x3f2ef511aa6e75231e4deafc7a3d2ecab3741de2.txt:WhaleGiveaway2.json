@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.txt:75:9: Warning: Callstack Depth Attack Vulnerability.\n        adr.call.value(msg.value)(data)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.txt:65:5: Warning: Integer Overflow.\n    function Command(address adr,bytes data)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.txt:59:9: Warning: Transaction-Ordering Dependency.\n        Owner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.txt:59:9: Warning: Transaction-Ordering Dependency.\n        Owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.9"
+}

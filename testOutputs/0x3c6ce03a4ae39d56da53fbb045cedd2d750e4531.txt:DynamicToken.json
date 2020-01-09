@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3c6ce03a4ae39d56da53fbb045cedd2d750e4531.txt:67:3: Warning: Integer Overflow.\n  address[] public accounts", 
+   "./uniqueContractSourceCode/0x3c6ce03a4ae39d56da53fbb045cedd2d750e4531.txt:71:3: Warning: Integer Overflow.\n  string[] public proofIds", 
+   "./uniqueContractSourceCode/0x3c6ce03a4ae39d56da53fbb045cedd2d750e4531.txt:197:3: Warning: Integer Overflow.\n  function issue(address _to, uint256 _amount, string _proofId) notClosed onlyContractOwner noEther returns (bool success) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3c6ce03a4ae39d56da53fbb045cedd2d750e4531.txt:71:3: Warning: Integer Underflow.\n  string[] public proofIds"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.9"
+}

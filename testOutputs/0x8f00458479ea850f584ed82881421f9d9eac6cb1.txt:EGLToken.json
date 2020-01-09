@@ -1,0 +1,41 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:47:5: Warning: Timestamp Dependency.\n    assert(b <= a)", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:1207:7: Warning: Timestamp Dependency.\n      if (delta > STAGE_TWO_TIME_END) return PRICE_STAGE_THREE", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:1293:5: Warning: Timestamp Dependency.\n    if (now < publicStartTime) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:1065:7: Warning: Timestamp Dependency.\n      now > publicEndTime\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:855:15: Warning: Integer Overflow.\n    vesting = grant.vesting\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:57:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    publicEndTime = 0\n    balances[_owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    grants[_holder].length = 0", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:843:24: Warning: Integer Overflow.\n    TokenGrant grant = grants[_holder][_grantId]\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:941:25: Warning: Integer Overflow.\n      date = Math.max64(grants[holder][i].vesting\nInteger Overflow occurs if:\n    grants[holder].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:515:3: Warning: Integer Overflow.\n  mapping (address => TokenGrant[]) public grants", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:859:21: Warning: Integer Overflow.\n    burnsOnRevoke = grant.burnsOnRevoke\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:851:13: Warning: Integer Overflow.\n    start = grant.start\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:941:25: Warning: Integer Overflow.\n      date = Math.max64(grants[holder][i]\nInteger Overflow occurs if:\n    grants[holder].length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    grants[holder][i].vesting = 0", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:853:13: Warning: Integer Overflow.\n    cliff = grant.cliff\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:857:17: Warning: Integer Overflow.\n    revokable = grant.revokable\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:625:24: Warning: Integer Overflow.\n    address receiver = grant.burnsOnRevoke\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:849:13: Warning: Integer Overflow.\n    value = grant.value\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:957:3: Warning: Integer Underflow.\n  string public name = \"eGold\"", 
+   "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:959:3: Warning: Integer Underflow.\n  string public symbol = \"EGL\""
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:1255:13: Warning: Transaction-Ordering Dependency.\n    require(multisigAddress.send(msg.value)"
+   ], 
+   [
+    "./restContracts/0x8f00458479ea850f584ed82881421f9d9eac6cb1.txt:1337:13: Warning: Transaction-Ordering Dependency.\n    require(ownerAddress.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.1"
+}

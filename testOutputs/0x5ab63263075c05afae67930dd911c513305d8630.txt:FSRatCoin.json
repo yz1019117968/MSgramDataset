@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5ab63263075c05afae67930dd911c513305d8630.txt:369:5: Warning: Integer Underflow.\n    string public symbol = \"FSRAT\"", 
+   "./uniqueContractSourceCode/0x5ab63263075c05afae67930dd911c513305d8630.txt:371:5: Warning: Integer Underflow.\n    string public version = \"FCS1.0\"", 
+   "./uniqueContractSourceCode/0x5ab63263075c05afae67930dd911c513305d8630.txt:367:5: Warning: Integer Underflow.\n    string public name = \"FS Rat Coin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.9"
+}

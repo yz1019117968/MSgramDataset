@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:245:9: Warning: Integer Overflow.\n        totalIssuerSupply += mintedAmount\nInteger Overflow occurs if:\n    totalIssuerSupply = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:229:9: Warning: Integer Overflow.\n        totalBuyerSupply += mintedAmount\nInteger Overflow occurs if:\n    totalBuyerSupply = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:243:9: Warning: Integer Overflow.\n        balanceOfIssuer[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOfIssuer[target] = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:227:9: Warning: Integer Overflow.\n        balanceOfBuyer[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOfBuyer[target] = 1\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:67:5: Warning: Integer Underflow.\n    string public issuerSymbol", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:65:5: Warning: Integer Underflow.\n    string public issuerTokenName", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:395:20: Warning: Integer Underflow.\n        premium = (issuePrice - cPT\nInteger Underflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:55:5: Warning: Integer Underflow.\n    string public buyerSymbol", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:275:9: Warning: Integer Underflow.\n        balanceOfIssuer[this] -= burnAmount\nInteger Underflow occurs if:\n    balanceOfIssuer[this] = 0\n    burnAmount = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:265:9: Warning: Integer Underflow.\n        totalBuyerSupply -= burnAmount\nInteger Underflow occurs if:\n    totalBuyerSupply = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:277:9: Warning: Integer Underflow.\n        totalIssuerSupply -= burnAmount\nInteger Underflow occurs if:\n    totalIssuerSupply = 0\n    burnAmount = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:47:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:263:9: Warning: Integer Underflow.\n        balanceOfBuyer[this] -= burnAmount\nInteger Underflow occurs if:\n    balanceOfBuyer[this] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e.txt:53:5: Warning: Integer Underflow.\n    string public buyerTokenName"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.4"
+}

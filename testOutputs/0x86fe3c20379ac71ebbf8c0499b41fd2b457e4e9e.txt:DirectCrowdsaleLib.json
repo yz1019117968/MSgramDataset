@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:455:23: Warning: Integer Overflow.\n      _leftoverWei = (self.base.ownerBalance + _amount\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 0\n    self.base.ownerBalance = 664619068494858849369509516952993793\n    self.base.currentMilestone = 255\n    self.base.capAmount = 664619068494858849369509516952993791\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 0\n    self.startTime = 0\n    self.base.owner = 0", 
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:455:59: Warning: Integer Overflow.\n      _leftoverWei = (self.base.ownerBalance + _amount) - self.base.capAmount\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 0\n    self.base.currentMilestone = 255\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.capAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    _amount = 0\n    self.base.ownerBalance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.owner = 0", 
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:351:3: Warning: Integer Overflow.\n  function init(DirectCrowdsaleStorage storage self,\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _saleData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:455:23: Warning: Integer Overflow.\n      _leftoverWei = (self.base.ownerBalance\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 0\n    self.base.currentMilestone = 255\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.capAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    _amount = 0\n    self.base.ownerBalance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:583:3: Warning: Integer Underflow.\n  function getSaleData(DirectCrowdsaleStorage storage self, uint256 timestamp)\r\n  ^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.1"
+}

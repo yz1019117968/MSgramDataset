@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x34c8ff4e1cd9a57c54b29e85757a30279efa07aa.txt:1625:5: Warning: Integer Overflow.\n    function importTokensSourceBulk(ERC20 _sourceToken, address[] _tokenHolders)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _tokenHolders = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x34c8ff4e1cd9a57c54b29e85757a30279efa07aa.txt:1839:5: Warning: Integer Overflow.\n    function delegateReferralTokensBulk(address[] tokenHolders, uint88[] amounts)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokenHolders = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.9"
+}

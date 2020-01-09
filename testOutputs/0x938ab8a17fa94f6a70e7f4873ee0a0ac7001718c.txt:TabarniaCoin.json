@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:455:17: Warning: Integer Overflow.\n            if (proposals[prop]\nInteger Overflow occurs if:\n    proposals.length = 115679011025170378826477653968640361068257025696240524426137801211030401974271\n    proposals[prop].voteCount = 0", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:443:51: Warning: Integer Overflow.\n        proposals[toProposal].voteCount = safeAdd(proposals[toProposal]\nInteger Overflow occurs if:\n    proposals.length = 32\n    voters[msg.sender].voted = 0\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tradeable = 0", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:457:36: Warning: Integer Overflow.\n                winningVoteCount = proposals[prop]\nInteger Overflow occurs if:\n    proposals.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    proposals[prop].voteCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    proposals[prop].voteCount = 0\n    proposals[prop].voteCount = 0\n    proposals[prop].voteCount = 0\n    proposals[prop].voteCount = 0\n    proposals[prop].voteCount = 0\n    proposals[prop].voteCount = 0\n    proposals[prop].voteCount = 0", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:61:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    _value = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    _to = 1461501637330902918203684832716283019655932542975\n    tradeable = 65280", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:197:1: Warning: Integer Overflow.\ncontract TabarniaCoin is StandardToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    fundsWallet = 0", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:319:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:209:5: Warning: Integer Underflow.\n    string public version = '1.0'", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:211:5: Warning: Integer Underflow.\n    string public author = \"Lord Cid\"", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:213:5: Warning: Integer Underflow.\n    string public mission = \"Somos Anonimos. Somos Legion. No perdonamos. No olvidamos.\"", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:207:5: Warning: Integer Underflow.\n    string public symbol = \"TAB\"", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:203:5: Warning: Integer Underflow.\n    string public motto = \"Acta est fabula\"", 
+   "./restContracts/0x938ab8a17fa94f6a70e7f4873ee0a0ac7001718c.txt:201:5: Warning: Integer Underflow.\n    string public name = \"Tabarnia Coin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:263:9: Warning: Timestamp Dependency.\n        require(\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:125:13: Warning: Timestamp Dependency.\n            !bounty.ended &&\r\n            ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:243:9: Warning: Integer Overflow.\n        bounty.bounty\nInteger Overflow occurs if:\n    bountyFee = 0\n    minBounty = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:249:9: Warning: Integer Overflow.\n        bounty.startTime\nInteger Overflow occurs if:\n    bountyFee = 0\n    minBounty = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:245:9: Warning: Integer Overflow.\n        bounty.remainingBounty\nInteger Overflow occurs if:\n    bountyFee = 0\n    minBounty = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:283:68: Warning: Integer Overflow.\n        BountyStatus('Bounty was canceled', bounty.id, msg.sender, bounty.bounty\nInteger Overflow occurs if:\n    bountyDuration = 0", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:251:9: Warning: Integer Overflow.\n        bounty.owner\nInteger Overflow occurs if:\n    bountyFee = 0\n    minBounty = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:239:9: Warning: Integer Overflow.\n        bountyCount++\nInteger Overflow occurs if:\n    bountyCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    bountyFee = 0\n    minBounty = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:245:34: Warning: Integer Overflow.\n        bounty.remainingBounty = bounty.bounty\nInteger Overflow occurs if:\n    bountyFee = 0\n    minBounty = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:247:9: Warning: Integer Overflow.\n        bountyFeeCount += bountyFee\nInteger Overflow occurs if:\n    bountyFeeCount = 1\n    bountyFee = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minBounty = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:243:25: Warning: Integer Underflow.\n        bounty.bounty = msg.value - bountyFee\nInteger Underflow occurs if:\n    bountyFee = 1\n    minBounty = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:215:9: Warning: Transaction-Ordering Dependency.\n        _user.transfer(_reward)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1e200a9af1ab6a0d74cd44c489bf65744bc7d961.txt:89:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.7"
+}

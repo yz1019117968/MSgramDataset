@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5a758e5a34e5c9258198b2b6d186a92056ae0b19.txt:55:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5a758e5a34e5c9258198b2b6d186a92056ae0b19.txt:309:5: Warning: Integer Underflow.\n    string public name = 'Cooin'", 
+   "./uniqueContractSourceCode/0x5a758e5a34e5c9258198b2b6d186a92056ae0b19.txt:311:5: Warning: Integer Underflow.\n    string public symbol = 'COOIN'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.6"
+}

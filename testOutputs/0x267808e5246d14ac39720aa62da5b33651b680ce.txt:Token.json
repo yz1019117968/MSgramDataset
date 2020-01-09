@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x267808e5246d14ac39720aa62da5b33651b680ce.txt:453:5: Warning: Integer Overflow.\n    function setMotd(string _m) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _m = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x267808e5246d14ac39720aa62da5b33651b680ce.txt:409:5: Warning: Integer Overflow.\n    function multiTransfer(uint[] bits) onlyOwner notMultilocked {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x267808e5246d14ac39720aa62da5b33651b680ce.txt:429:5: Warning: Integer Overflow.\n    function multiApprove(uint[] bits) onlyOwner notMultilocked {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bits = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x267808e5246d14ac39720aa62da5b33651b680ce.txt:449:5: Warning: Integer Underflow.\n    string public motd", 
+   "./uniqueContractSourceCode/0x267808e5246d14ac39720aa62da5b33651b680ce.txt:181:5: Warning: Integer Underflow.\n    string public name = \"FunFair\"", 
+   "./uniqueContractSourceCode/0x267808e5246d14ac39720aa62da5b33651b680ce.txt:185:5: Warning: Integer Underflow.\n    string public symbol = \"FUN\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.8"
+}

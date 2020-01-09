@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc01b78e62a4d1fdce58d364193ee1218832919fd.txt:275:4: Warning: Integer Overflow.\n   function distributeToken(address[] addresses, uint256 _value) onlyOwner{\r\n   ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc01b78e62a4d1fdce58d364193ee1218832919fd.txt:81:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.9"
+}

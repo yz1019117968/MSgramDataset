@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbeb415855b47133aa458f079cd37d48be9894baf.txt:131:9: Warning: Integer Overflow.\n        distributorCount += _addr.length\nInteger Overflow occurs if:\n    distributorCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xbeb415855b47133aa458f079cd37d48be9894baf.txt:57:5: Warning: Integer Overflow.\n    mapping(address => member)   public whitelist", 
+   "./restContracts/0xbeb415855b47133aa458f079cd37d48be9894baf.txt:177:12: Warning: Integer Overflow.\n           whitelist[_owner].withdraw\nInteger Overflow occurs if:\n    whitelist[_owner].unlockTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbeb415855b47133aa458f079cd37d48be9894baf.txt:127:26: Warning: Integer Overflow.\n            distributors[_addr[index]\nInteger Overflow occurs if:\n    _addr = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "96.7"
+}

@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1771:17: Warning: Integer Overflow.\n                Transfer(owner, msg.sender, amt)\nInteger Overflow occurs if:\n    balances[msg.sender] = 113152405919044595654045963673066263036572818821490444975250794018133508096\n    balances[owner] = 115367925161208314349604713500282017561525970635983402507743683175428984406016", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1799:13: Warning: Integer Overflow.\n            LogFundTransfer(0x0, target, amt, 1)", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:33:21: Warning: Integer Overflow.\n        assert((z = x + y\nInteger Overflow occurs if:\n    status = 0\n    balances[msg.sender] = 69927038579921112834150271092448364216492350478425850146641875538238773395456\n    balances[owner] = 57957914002746515030476601434587597057341587290981226745514494878283911397376\n    minEtherParticipate = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:41:21: Warning: Integer Underflow.\n        assert((z = x - y\nInteger Underflow occurs if:\n    status = 0\n    balances[owner] = 53094974584656444343387115910428585170159071939180347145486478541553934532607\n    minEtherParticipate = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1797:13: Warning: Transaction-Ordering Dependency.\n            target.transfer(amt)"
+   ], 
+   [
+    "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1797:13: Warning: Transaction-Ordering Dependency.\n            target.transfer(amt)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.6"
+}

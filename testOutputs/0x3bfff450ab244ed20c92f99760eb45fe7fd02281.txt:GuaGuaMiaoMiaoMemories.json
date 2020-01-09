@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:105:38: Warning: Integer Overflow.\n        memories[_index].imageSlices[memories[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    memories.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    guagua = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:105:9: Warning: Integer Overflow.\n        memories[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    memories.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    guagua = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:121:25: Warning: Integer Overflow.\n        for (i = 0; i < memories[_index].imageSliceCount\nInteger Overflow occurs if:\n    _index = 0\n    memories.length = 1", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:123:25: Warning: Integer Overflow.\n            imageLen += memories[_index].imageSlices\nInteger Overflow occurs if:\n    _index = 0\n    memories[_index].imageSliceCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    memories.length = 1", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:105:9: Warning: Integer Overflow.\n        memories[_index].imageSlices\nInteger Overflow occurs if:\n    _index = 0\n    memories.length = 1\n    guagua = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:105:38: Warning: Integer Overflow.\n        memories[_index].imageSlices[memories[_index].imageSliceCount\nInteger Overflow occurs if:\n    _index = 0\n    memories.length = 1\n    guagua = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:133:25: Warning: Integer Overflow.\n        for (i = 0; i < memories[_index].imageSliceCount\nInteger Overflow occurs if:\n    _index = 0\n    memories.length = 1\n    memories[_index].imageSliceCount = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:123:25: Warning: Integer Overflow.\n            imageLen += memories[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    memories[_index].imageSliceCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    memories.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:91:9: Warning: Integer Overflow.\n        memories.push(Memory({story: _story, imageSliceCount: 0}))\nInteger Overflow occurs if:\n    memories.push(Memory({story: _story, imageSliceCount: 0})) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    guagua = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:133:25: Warning: Integer Overflow.\n        for (i = 0; i < memories[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    memories.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944\n    memories[_index].imageSliceCount = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:121:25: Warning: Integer Overflow.\n        for (i = 0; i < memories[_index]\nInteger Overflow occurs if:\n    _index = 77194726158210796948916550386304716052933410830776882975969590266849085707605\n    memories.length = 77194726158210796948916550386304716052933410830782144221136553133017406985559", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:15:1: Warning: Integer Overflow.\ncontract GuaGuaMiaoMiaoMemories {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    memories.push(Memory({story: _story, imageSliceCount: 0})) = 71035195276905978830841378541667856625157632706140231142381185849046086175071\n    guagua = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:145:17: Warning: Integer Overflow.\n        story = memories[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    memories.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944\n    memories[_index].imageSliceCount = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:145:9: Warning: Integer Underflow.\n        story = memories[_index].story\nInteger Underflow occurs if:\n    _index = 0\n    memories.length = 1\n    memories[_index].imageSliceCount = 0", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:123:25: Warning: Integer Underflow.\n            imageLen += memories[_index].imageSlices[i].length\nInteger Underflow occurs if:\n    _index = 0\n    memories[_index].imageSliceCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    memories.length = 1", 
+   "./uniqueContractSourceCode/0x3bfff450ab244ed20c92f99760eb45fe7fd02281.txt:15:1: Warning: Integer Underflow.\ncontract GuaGuaMiaoMiaoMemories {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    _index = 0\n    memories.length = 1\n    guagua = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.2"
+}

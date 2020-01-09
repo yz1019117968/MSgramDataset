@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:705:9: Warning: Integer Overflow.\n        artworkIdToAuction[_artworkId] = _auction\nInteger Overflow occurs if:\n    artworkContract = 0\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:669:33: Warning: Integer Overflow.\n        return (auction.seller, auction.price\nInteger Overflow occurs if:\n    artworkIdToAuction[_artworkId].seller = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.4"
+}

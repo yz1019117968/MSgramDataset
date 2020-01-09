@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x33116db6c6942903653e74d9580f0f7c7abe1cbe.txt:513:5: Warning: Integer Overflow.\n    function complexityForBtcAddressPrefixWithLength(bytes prefix, uint length) public pure returns(uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    prefix = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x33116db6c6942903653e74d9580f0f7c7abe1cbe.txt:637:5: Warning: Integer Overflow.\n    function isValidBicoinAddressPrefix(bytes prefixArg) public pure returns(bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    prefixArg = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x33116db6c6942903653e74d9580f0f7c7abe1cbe.txt:193:5: Warning: Integer Overflow.\n    function equalBytesToBytes(bytes a, bytes b) public pure returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    a = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "20.4"
+}

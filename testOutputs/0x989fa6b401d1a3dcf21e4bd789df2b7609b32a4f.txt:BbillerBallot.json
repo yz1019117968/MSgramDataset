@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:223:13: Warning: Integer Overflow.\n        if (issue.flag", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:201:13: Warning: Integer Overflow.\n            issue.flag\nInteger Overflow occurs if:\n    forVote = 0\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:83:5: Warning: Integer Overflow.\n    mapping(uint => Issue) public issues", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:229:13: Warning: Integer Overflow.\n        if (issue.flag\nInteger Overflow occurs if:\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:209:13: Warning: Integer Overflow.\n            issue.flag\nInteger Overflow occurs if:\n    forVote = 0\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:183:13: Warning: Integer Overflow.\n            issue.forCounter\nInteger Overflow occurs if:\n    forVote = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:189:13: Warning: Integer Overflow.\n            issue.againstCounter++\nInteger Overflow occurs if:\n    forVote = 0\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:235:13: Warning: Integer Overflow.\n        if (issue.flag\nInteger Overflow occurs if:\n    issueAcceptedFlag = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    issueVotingFlag = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:241:13: Warning: Integer Overflow.\n        if (issue.flag\nInteger Overflow occurs if:\n    issueRejectedFlag = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    issueAcceptedFlag = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    issueVotingFlag = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:199:13: Warning: Integer Overflow.\n        if (issue.forCounter\nInteger Overflow occurs if:\n    forVote = 0\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:151:9: Warning: Integer Overflow.\n        issues[issueId] = issue\nInteger Overflow occurs if:\n    owner = 0\n    issueDoesNotExistFlag = 0\n    issues[issueId].flag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:207:13: Warning: Integer Overflow.\n        if (issue.againstCounter\nInteger Overflow occurs if:\n    forVote = 0\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:189:13: Warning: Integer Overflow.\n            issue.againstCounter\nInteger Overflow occurs if:\n    forVote = 0\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:179:9: Warning: Integer Overflow.\n        issue.isVoted\nInteger Overflow occurs if:\n    issueVotingFlag = 0", 
+   "./restContracts/0x989fa6b401d1a3dcf21e4bd789df2b7609b32a4f.txt:183:13: Warning: Integer Overflow.\n            issue.forCounter++\nInteger Overflow occurs if:\n    forVote = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    issueVotingFlag = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.6"
+}

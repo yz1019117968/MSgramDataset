@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3f3a3b42e4564b20948307de9bb5b66398c325fa.txt:101:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    weiRaised = 100307167662023561251292614204721503342744460846627705899260544568931540870089\n    cap = 100307167662023561251292614204721503342744460846627705899260544568931540870090\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.9"
+}

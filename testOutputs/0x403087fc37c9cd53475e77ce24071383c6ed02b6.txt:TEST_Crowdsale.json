@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x403087fc37c9cd53475e77ce24071383c6ed02b6.txt:83:3: Warning: Timestamp Dependency.\n\t\tif (now < TIMEstartICO) {\r\n\t\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x403087fc37c9cd53475e77ce24071383c6ed02b6.txt:89:8: Warning: Timestamp Dependency.\n\t\telse if (now > stopICO) {\r\n\t\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x403087fc37c9cd53475e77ce24071383c6ed02b6.txt:73:6: Warning: Timestamp Dependency.\n\t    if(now > febr20) price = 0.0105 * 1 ether; \r\n\t    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x403087fc37c9cd53475e77ce24071383c6ed02b6.txt:75:11: Warning: Timestamp Dependency.\n\t    else if(now > jan20) price = 0.0070 * 1 ether"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.8"
+}

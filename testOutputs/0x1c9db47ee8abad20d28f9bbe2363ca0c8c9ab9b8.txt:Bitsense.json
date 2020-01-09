@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:183:5: Warning: Integer Overflow.\n    address[] public AllLockAccounts", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:343:5: Warning: Integer Overflow.\n    function transfer(address _to, uint _value, bytes _data) public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:189:5: Warning: Integer Overflow.\n    address[] public rewardsAccounts", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:161:1: Warning: Integer Overflow.\ncontract Bitsense is BitsenseToken(\"BINS\", \"Bitsense\", 8, 1000000000000000), ERC20, ERC223 {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    rewardsAccounts.push(_addr) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    _owner = 0", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:235:9: Warning: Integer Overflow.\n        rewardsAccounts.push(_addr)\nInteger Overflow occurs if:\n    rewardsAccounts.push(_addr) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _owner = 0", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:149:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _allowances[msg.sender][_spender] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:233:9: Warning: Integer Overflow.\n        reward.amount +=  _amount\nInteger Overflow occurs if:\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _owner = 0", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:221:9: Warning: Integer Overflow.\n        AllLockAccounts.push(_addr)\nInteger Overflow occurs if:\n    AllLockAccounts.push(_addr) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:77:9: Warning: Integer Underflow.\n        return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1", 
+   "./uniqueContractSourceCode/0x1c9db47ee8abad20d28f9bbe2363ca0c8c9ab9b8.txt:69:9: Warning: Integer Underflow.\n        return _name\nInteger Underflow occurs if:\n    return _name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.3"
+}

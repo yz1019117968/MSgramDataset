@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x90da942f5a63b383121cd8d4772d384cd7ed51eb.txt:29:5: Warning: Integer Overflow.\n    function sendPositiveWhuffies(address _to, string message) public payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    message = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x90da942f5a63b383121cd8d4772d384cd7ed51eb.txt:39:5: Warning: Integer Overflow.\n    function sendNegativeWhuffies(address _to, string message) public payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    message = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x90da942f5a63b383121cd8d4772d384cd7ed51eb.txt:15:5: Warning: Integer Overflow.\n    mapping(address => Status) public stats"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "32.8"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3ec4f3ac06b3334671acd218b3b4d8ec66c41223.txt:913:5: Warning: Integer Overflow.\n    Sale[] public sales", 
+   "./uniqueContractSourceCode/0x3ec4f3ac06b3334671acd218b3b4d8ec66c41223.txt:937:5: Warning: Integer Overflow.\n    function createSale(string _bonusPreset, uint256 _startTime, uint256 _endTime,  uint256 _tokensLimit, uint256 _minimalPrice) public onlyOwner{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _bonusPreset = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3ec4f3ac06b3334671acd218b3b4d8ec66c41223.txt:983:24: Warning: Integer Underflow.\n        require(!sales[sales.length - 1\nInteger Underflow occurs if:\n    activatedSalesTotalCount = 0\n    sales.length = 0\n    maxActivatedSalesTotalCount = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.6"
+}

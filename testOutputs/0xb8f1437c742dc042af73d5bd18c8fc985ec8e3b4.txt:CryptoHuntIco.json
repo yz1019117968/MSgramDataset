@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4.txt:493:16: Warning: Integer Overflow.\n            wl[users[i]\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4.txt:497:25: Warning: Integer Overflow.\n            Whitelisted(users[i]\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4.txt:523:16: Warning: Integer Overflow.\n            wl[users[i]\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4.txt:525:25: Warning: Integer Overflow.\n            Whitelisted(users[i]\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4.txt:221:5: Warning: Integer Overflow.\n    address[] public tokenBuyersArray"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4.txt:1021:16: Warning: Integer Underflow.\n        return token.balanceOf(address(this)) - tokenBuyersAmount\nInteger Underflow occurs if:\n    tokenBuyersAmount = 50942633119752846454219349998365661925608737367104304655302372697894809501697", 
+   "./restContracts/0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4.txt:899:29: Warning: Integer Underflow.\n        massClaimLimited(0, tokenBuyersArray.length - 1\nInteger Underflow occurs if:\n    tokenBuyersArray.length = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.4"
+}

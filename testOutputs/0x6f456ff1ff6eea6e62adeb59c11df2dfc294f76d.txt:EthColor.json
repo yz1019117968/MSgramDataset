@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6f456ff1ff6eea6e62adeb59c11df2dfc294f76d.txt:375:9: Warning: Timestamp Dependency.\n        require(now >= 1546300799)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6f456ff1ff6eea6e62adeb59c11df2dfc294f76d.txt:119:16: Warning: Integer Overflow.\n        return accounts[userAddress].referrer", 
+   "./uniqueContractSourceCode/0x6f456ff1ff6eea6e62adeb59c11df2dfc294f76d.txt:241:5: Warning: Integer Overflow.\n    function drawColors(uint256[] pixelIdxs, uint256[] colors, address referralAddress) payable public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    pixelIdxs = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6f456ff1ff6eea6e62adeb59c11df2dfc294f76d.txt:377:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6f456ff1ff6eea6e62adeb59c11df2dfc294f76d.txt:137:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.9"
+}

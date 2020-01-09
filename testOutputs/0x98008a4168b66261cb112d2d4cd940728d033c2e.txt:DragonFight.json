@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:127:9: Warning: Integer Overflow.\n        ownershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    dragonIndexToOwner[_tokenId] = 0\n    dragonIndexToApproved[_tokenId] = 0", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:703:27: Warning: Integer Overflow.\n        Dragon memory d = dragons[_id]\nInteger Overflow occurs if:\n    dragons[_id] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:849:1: Warning: Integer Overflow.\ncontract DragonFight is DragonCore, Random {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contractOwner = 0", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:201:31: Warning: Integer Overflow.\n        uint256 newDragonId = dragons.push(_dragon)\nInteger Overflow occurs if:\n    contractOwner = 0", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:883:37: Warning: Integer Overflow.\n        Dragon memory ownerDragon = dragons[_ownerDragonId]\nInteger Overflow occurs if:\n    _ownerDragonId = 115792089237316195423570985008687907853269984665640564039457583990320943595519\n    dragons[_ownerDragonId] = 115792089237316195423570985008687907853269984665640564039457583990320943595520\n    dragonIndexToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    dragonIndexToOwner[_tokenId] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:803:7: Warning: Integer Underflow.\n      dragonsOnSaleCount--\nInteger Underflow occurs if:\n    dragonsOnSaleCount = 0\n    dragonIndexToOwner[_id] = 0\n    dragons[_id] = 1", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:539:40: Warning: Integer Underflow.\n        uint256 dragonsForFightCount = dragons.length - dragonsOnSaleCount - ownershipTokenCount[msg.sender]\nInteger Underflow occurs if:\n    ownershipTokenCount[msg.sender] = 1\n    dragons.length = 0\n    dragonsOnSaleCount = 0", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:135:13: Warning: Integer Underflow.\n            ownershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    dragonIndexToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    dragonIndexToApproved[_tokenId] = 0", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:539:40: Warning: Integer Underflow.\n        uint256 dragonsForFightCount = dragons.length - dragonsOnSaleCount\nInteger Underflow occurs if:\n    dragons.length = 0\n    dragonsOnSaleCount = 1", 
+   "./restContracts/0x98008a4168b66261cb112d2d4cd940728d033c2e.txt:837:56: Warning: Integer Underflow.\n    _seed = uint64(keccak256(keccak256(block.blockhash(block.number - step"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.4"
+}

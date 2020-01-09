@@ -1,0 +1,53 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:777:16: Warning: Integer Overflow.\n        return islands[_island_id].price", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:1055:9: Warning: Integer Overflow.\n        islands[_island_id].owner\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975\n    islands[_island_id].approve_transfer_to = 1461501637330902918203684832716283019655932542975\n    islands[_island_id].owner = 0\n    _from = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:489:13: Warning: Integer Overflow.\n            island.attack_ships_count\nInteger Overflow occurs if:\n    _is_attack_ships = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maintenance = 0\n    _ships_to_buy = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:881:27: Warning: Integer Overflow.\n        previous_owners = islands[_island_id].previous_owners", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:689:9: Warning: Integer Overflow.\n        island.previous_price\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:865:30: Warning: Integer Overflow.\n        attack_ships_count = islands[_island_id].attack_ships_count", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:689:33: Warning: Integer Overflow.\n        island.previous_price = island.price\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:493:13: Warning: Integer Overflow.\n            island.defense_ships_count\nInteger Overflow occurs if:\n    maintenance = 0\n    _is_attack_ships = 0\n    _ships_to_buy = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:1057:9: Warning: Integer Overflow.\n        islands[_island_id].approve_transfer_to\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975\n    islands[_island_id].approve_transfer_to = 1461501637330902918203684832716283019655932542975\n    islands[_island_id].owner = 0\n    _from = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:819:27: Warning: Integer Overflow.\n        attack_cooldown = islandBattleStats[_island_id].attack_cooldown", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:857:17: Warning: Integer Overflow.\n        price = islands[_island_id].price", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:625:50: Warning: Integer Overflow.\n        uint256 excess = SafeMath.sub(msg.value, island.price\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:859:20: Warning: Integer Overflow.\n        treasury = islands[_island_id].treasury", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:931:9: Warning: Integer Overflow.\n        islands[islands_count] = Island({\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:697:50: Warning: Integer Overflow.\n        island.price = SafeMath.mul(SafeMath.div(island.price\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:867:31: Warning: Integer Overflow.\n        defense_ships_count = islands[_island_id].defense_ships_count", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:1075:9: Warning: Integer Overflow.\n        islands[_island_id].approve_transfer_to\nInteger Overflow occurs if:\n    islands[_island_id].owner = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:815:27: Warning: Integer Overflow.\n        treasury_stolen = islandBattleStats[_island_id].treasury_stolen", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:811:24: Warning: Integer Overflow.\n        defenses_won = islandBattleStats[_island_id].defenses_won", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:855:17: Warning: Integer Overflow.\n        owner = islands[_island_id].owner", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:869:30: Warning: Integer Overflow.\n        transactions_count = islands[_island_id].transactions_count", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:861:42: Warning: Integer Overflow.\n        treasury_next_withdrawal_block = islands[_island_id].treasury_next_withdrawal_block", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:809:24: Warning: Integer Overflow.\n        attacks_lost = islandBattleStats[_island_id].attacks_lost", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:691:9: Warning: Integer Overflow.\n        island.treasury_next_withdrawal_block\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:817:25: Warning: Integer Overflow.\n        treasury_lost = islandBattleStats[_island_id].treasury_lost", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:489:54: Warning: Integer Overflow.\n            island.attack_ships_count = SafeMath.add(island.attack_ships_count\nInteger Overflow occurs if:\n    _is_attack_ships = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maintenance = 0\n    _ships_to_buy = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:693:30: Warning: Integer Overflow.\n        address _old_owner = island.owner\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:813:25: Warning: Integer Overflow.\n        defenses_lost = islandBattleStats[_island_id].defenses_lost", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:821:28: Warning: Integer Overflow.\n        defense_cooldown = islandBattleStats[_island_id].defense_cooldown", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:567:66: Warning: Integer Overflow.\n        uint256 treasury_to_withdraw = SafeMath.mul(SafeMath.div(island.treasury\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:391:58: Warning: Integer Overflow.\n        uint256 goods_stolen = SafeMath.mul(SafeMath.div(defenderIsland.treasury\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:863:26: Warning: Integer Overflow.\n        previous_price = islands[_island_id].previous_price", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:691:49: Warning: Integer Overflow.\n        island.treasury_next_withdrawal_block = block.number + withdrawalBlocksCooldown\nInteger Overflow occurs if:\n    withdrawalBlocksCooldown = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:881:9: Warning: Integer Overflow.\n        previous_owners = islands[_island_id].previous_owners", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:627:13: Warning: Integer Overflow.\n        if (island.previous_price\nInteger Overflow occurs if:\n    maintenance = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:493:55: Warning: Integer Overflow.\n            island.defense_ships_count = SafeMath.add(island.defense_ships_count\nInteger Overflow occurs if:\n    maintenance = 0\n    _is_attack_ships = 0\n    _ships_to_buy = 0", 
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:629:60: Warning: Integer Overflow.\n            uint256 owners_cut = SafeMath.mul(SafeMath.div(island.price\nInteger Overflow occurs if:\n    maintenance = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xab55903841e9d755ac512e9cca39def98eb64943.txt:1059:9: Warning: Integer Underflow.\n        ownerCount[_from] -= 1\nInteger Underflow occurs if:\n    ownerCount[_from] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    islands[_island_id].approve_transfer_to = 1461501637330902918203684832716283019655932542975\n    islands[_island_id].owner = 0\n    _from = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.0"
+}

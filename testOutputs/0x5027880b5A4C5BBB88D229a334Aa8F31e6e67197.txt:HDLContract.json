@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5027880b5A4C5BBB88D229a334Aa8F31e6e67197.txt:555:5: Warning: Integer Overflow.\n    address[] public _investorAddresses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5027880b5A4C5BBB88D229a334Aa8F31e6e67197.txt:849:13: Warning: Transaction-Ordering Dependency.\n            _vaultAddress.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5027880b5A4C5BBB88D229a334Aa8F31e6e67197.txt:893:9: Warning: Transaction-Ordering Dependency.\n        aInvestorAddress.transfer(depositedValue)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.2"
+}

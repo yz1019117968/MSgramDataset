@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:81:13: Warning: Integer Underflow.\n            totalSeraphims -= 1\nInteger Underflow occurs if:\n    creatorAddress = 0\n    seraphims[_oldSeraphim] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.9"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbcf097f2e5f4c76ede2c9fa42f40c349fd0ffe23.txt:1565:3: Warning: Integer Overflow.\n  function registerByList(address[] _addrs, uint256[] _maxGuaranteedLimits)\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xbcf097f2e5f4c76ede2c9fa42f40c349fd0ffe23.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    startTime = 340282346638528859774810695337097822208\n    beneficiaryFunded[beneficiary] = 115792089237316195423570985008687907852844631706989390960127681201471469143752\n    presaleGuaranteedLimit[beneficiary] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxEtherCap = 0\n    weiRaised = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0\n    registeredAddress[_addr] = 255", 
+   "./restContracts/0xbcf097f2e5f4c76ede2c9fa42f40c349fd0ffe23.txt:1633:3: Warning: Integer Overflow.\n  function unregisterByList(address[] _addrs)\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbcf097f2e5f4c76ede2c9fa42f40c349fd0ffe23.txt:2251:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xbcf097f2e5f4c76ede2c9fa42f40c349fd0ffe23.txt:2251:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.2"
+}

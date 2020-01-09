@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb5abdeb81161ff05e1d5c018c929b297a47e229b.txt:1547:3: Warning: Integer Overflow.\n  function slice32(bytes b, uint offset) constant returns (bytes32) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    b = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5abdeb81161ff05e1d5c018c929b297a47e229b.txt:1595:3: Warning: Integer Overflow.\n  function slice16(bytes b, uint offset) constant returns (bytes16) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    b = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./restContracts/0xb5abdeb81161ff05e1d5c018c929b297a47e229b.txt:1619:3: Warning: Integer Overflow.\n  function slice4(bytes b, uint offset) constant returns (bytes4) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    b = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5abdeb81161ff05e1d5c018c929b297a47e229b.txt:1571:3: Warning: Integer Overflow.\n  function sliceAddress(bytes b, uint offset) constant returns (address) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    b = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5abdeb81161ff05e1d5c018c929b297a47e229b.txt:1643:3: Warning: Integer Overflow.\n  function slice2(bytes b, uint offset) constant returns (bytes2) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    b = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "20.2"
+}

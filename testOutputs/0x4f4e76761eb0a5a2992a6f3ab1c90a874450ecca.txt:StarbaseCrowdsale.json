@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2041:9: Warning: Integer Overflow.\n        qualifiedPartners[_qualifiedPartner].bonaFide\nInteger Overflow occurs if:\n    qualifiedPartners[_qualifiedPartner].bonaFide = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:1321:5: Warning: Integer Overflow.\n    mapping (address => QualifiedPartners) public qualifiedPartners", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    qualifiedPartners[msg.sender].amountRaised = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    qualifiedPartners[msg.sender].bonaFide = 255\n    cnyEthRate = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    purchaseStartBlock = 1", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2039:17: Warning: Integer Overflow.\n        assert(!qualifiedPartners[_qualifiedPartner].bonaFide\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:1329:5: Warning: Integer Overflow.\n    CrowdsalePurchase[] public crowdsalePurchases", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2195:16: Warning: Integer Overflow.\n        assert(qualifiedPartners[msg.sender].amountRaised\nInteger Overflow occurs if:\n    qualifiedPartners[msg.sender].amountRaised = 0\n    qualifiedPartners[msg.sender].bonaFide = 255\n    cnyEthRate = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    purchaseStartBlock = 1", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2191:9: Warning: Integer Overflow.\n        qualifiedPartners[msg.sender].amountRaised\nInteger Overflow occurs if:\n    qualifiedPartners[msg.sender].amountRaised = 0\n    qualifiedPartners[msg.sender].bonaFide = 255\n    cnyEthRate = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    purchaseStartBlock = 1", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:1301:5: Warning: Integer Overflow.\n    address[] public earlyPurchasers", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2065:9: Warning: Integer Overflow.\n        qualifiedPartners[_qualifiedPartner].bonaFide\nInteger Overflow occurs if:\n    qualifiedPartners[_qualifiedPartner].bonaFide = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2063:16: Warning: Integer Overflow.\n        assert(qualifiedPartners[_qualifiedPartner].bonaFide\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2191:78: Warning: Integer Overflow.\n        qualifiedPartners[msg.sender].amountRaised = SafeMath.add(msg.value, qualifiedPartners[msg.sender].amountRaised\nInteger Overflow occurs if:\n    qualifiedPartners[msg.sender].bonaFide = 255\n    cnyEthRate = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    purchaseStartBlock = 1", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2045:9: Warning: Integer Overflow.\n        qualifiedPartners[_qualifiedPartner].commissionFeePercentage\nInteger Overflow occurs if:\n    qualifiedPartners[_qualifiedPartner].bonaFide = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4f4e76761eb0a5a2992a6f3ab1c90a874450ecca.txt:2083:16: Warning: Integer Overflow.\n        assert(qualifiedPartners[_qualifiedPartner].bonaFide\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.1"
+}

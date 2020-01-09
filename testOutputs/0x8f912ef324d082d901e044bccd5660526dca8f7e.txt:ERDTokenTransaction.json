@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8f912ef324d082d901e044bccd5660526dca8f7e.txt:483:5: Warning: Integer Overflow.\n    function AddTransactionAgainstExistingEntity(address entId,uint transType,uint amt,string curr, string accPr) public \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    curr = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f912ef324d082d901e044bccd5660526dca8f7e.txt:631:9: Warning: Integer Overflow.\n        entityAccountChart[entId] = AccountChartObj\nInteger Overflow occurs if:\n    perTransactionRate = 0\n    freezedTokens[entId] = 0\n    entityAccountChart[entId].isEntityInitialized = 1", 
+   "./restContracts/0x8f912ef324d082d901e044bccd5660526dca8f7e.txt:653:9: Warning: Integer Overflow.\n        entities.push(entId)\nInteger Overflow occurs if:\n    perTransactionRate = 0\n    entities.push(entId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    freezedTokens[entId] = 0\n    entityAccountChart[entId].isEntityInitialized = 0", 
+   "./restContracts/0x8f912ef324d082d901e044bccd5660526dca8f7e.txt:279:1: Warning: Integer Overflow.\ncontract ERDTokenTransaction {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    perTransactionRate = 836276867335920748827892557389052741401589881460038991947734766254454472704\n    entities.push(entId) = 52340104765455213015836627894044767446888597102487914899320324767200342699708\n    freezedTokens[entId] = 0\n    entityAccountChart[entId].isEntityInitialized = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.7"
+}

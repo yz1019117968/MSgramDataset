@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:311:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:503:9: Warning: Integer Overflow.\n        ticket_addresses.push(ticket_address)\nInteger Overflow occurs if:\n    ticket_addresses.push(ticket_address) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ticket_address_added[ticket_address] = 0\n    oneTime = 0", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:209:5: Warning: Integer Overflow.\n    address[] public ONETIMESOLD", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:137:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:261:21: Warning: Integer Overflow.\n                    ONETIMESOLD.push(_to)\nInteger Overflow occurs if:\n    balanceOf[_to] = 56926756271248857472859888455336749419401643553888150353692470966271820693505\n    _value = 44269733449451990821864445905329380152269388881031768334917879670804441989118\n    ONETIMESOLD.push(_to) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    oneTimeTickets[_to] = 255\n    oneTimeSold[_to] = 0\n    tickets[_to].price = 44269733449451990821864445905329380152269388881031768334917879670804441989118\n    ticket_address_added[_to] = 255\n    frozenAccount[msg.sender] = 0\n    balanceOf[msg.sender] = 44269733449451990821864445905329380152269388881031768334917879670804441989118", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:511:9: Warning: Integer Overflow.\n        customer_tickets[customer_addr].push(ticket_addr)\nInteger Overflow occurs if:\n    balanceOf[_to] = 56926756271248857472859888455336749419401643553888150353692470966271820693505\n    _value = 44269733449451990821864445905329380152269388881031768334917879670804441989118\n    oneTimeTickets[_to] = 0\n    oneTimeSold[_to] = 0\n    tickets[_to].price = 44269733449451990821864445905329380152269388881031768334917879670804441989118\n    ticket_address_added[_to] = 255\n    frozenAccount[msg.sender] = 0\n    balanceOf[msg.sender] = 44269733449451990821864445905329380152269388881031768334917879670804441989118", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:499:9: Warning: Integer Overflow.\n        tickets[ticket_address] = newTicket\nInteger Overflow occurs if:\n    ticket_address_added[ticket_address] = 0\n    oneTime = 0", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:417:5: Warning: Integer Overflow.\n    mapping(address=>ticket) public tickets", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:313:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:421:5: Warning: Integer Overflow.\n    mapping(address=>address[]) public customer_tickets", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:191:1: Warning: Integer Overflow.\ncontract TravelCoinToken is owned, token {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ticket_addresses.push(ticket_address) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    ticket_address_added[ticket_address] = 0\n    oneTime = 0", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:423:5: Warning: Integer Overflow.\n    address[] public ticket_addresses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:229:5: Warning: Integer Underflow.\n    string public tokenSymbol = \"TRV\"", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:227:5: Warning: Integer Underflow.\n    string public tokenName = \"TravelCoin\"", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:51:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:47:5: Warning: Integer Underflow.\n    string public standard = 'TRV 0.1'", 
+   "./uniqueContractSourceCode/0x23cb17d7d079518dbff4febb6efcc0de58d8c984.txt:49:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.2"
+}

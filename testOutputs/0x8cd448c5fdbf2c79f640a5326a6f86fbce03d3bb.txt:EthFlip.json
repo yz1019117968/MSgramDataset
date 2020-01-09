@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2593:102: Warning: Integer Overflow.\n    return (pastBets[_betNumber].win, pastBets[_betNumber].betValue, pastBets[_betNumber].timestamp, pastBets[_betNumber].playerAddress\nInteger Overflow occurs if:\n    currentBetNumber = 0\n    _betNumber = 0", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2593:70: Warning: Integer Overflow.\n    return (pastBets[_betNumber].win, pastBets[_betNumber].betValue, pastBets[_betNumber].timestamp\nInteger Overflow occurs if:\n    currentBetNumber = 0\n    _betNumber = 0", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:247:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2789:3: Warning: Integer Overflow.\n  function __callback(bytes32 _queryId, string _result, bytes _proof) public senderIsOraclize {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2593:138: Warning: Integer Overflow.\n    return (pastBets[_betNumber].win, pastBets[_betNumber].betValue, pastBets[_betNumber].timestamp, pastBets[_betNumber].playerAddress, pastBets[_betNumber].randomNumber\nInteger Overflow occurs if:\n    currentBetNumber = 0\n    _betNumber = 0", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2593:173: Warning: Integer Overflow.\n    return (pastBets[_betNumber].win, pastBets[_betNumber].betValue, pastBets[_betNumber].timestamp, pastBets[_betNumber].playerAddress, pastBets[_betNumber].randomNumber, pastBets[_betNumber].low\nInteger Overflow occurs if:\n    currentBetNumber = 0\n    _betNumber = 0", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2593:39: Warning: Integer Overflow.\n    return (pastBets[_betNumber].win, pastBets[_betNumber].betValue\nInteger Overflow occurs if:\n    currentBetNumber = 0\n    _betNumber = 0", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2729:3: Warning: Integer Overflow.\n  uint[] public unprocessedQueryList", 
+   "./restContracts/0x8cd448c5fdbf2c79f640a5326a6f86fbce03d3bb.txt:2727:3: Warning: Integer Overflow.\n  mapping(uint => UnprocessedQueryBytes32) public unprocessedQueryBytes32s"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.8"
+}

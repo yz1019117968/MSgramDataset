@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:477:5: Warning: Integer Overflow.\n    uint[] public tableStakesOptions", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:601:9: Warning: Integer Overflow.\n        tableStakesOptions.push(price)\nInteger Overflow occurs if:\n    tableStakesOptions.push(price) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:615:9: Warning: Integer Overflow.\n        tableStakesOptions[priceTier]\nInteger Overflow occurs if:\n    tableStakesOptions[priceTier] = 32\n    priceTier = 30\n    owner = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:411:1: Warning: Integer Overflow.\ncontract GoGlobals is Ownable, PullPayment, Destructible, Pausable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tableStakesOptions.push(price) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:373:12: Warning: Transaction-Ordering Dependency.\n    assert(payee.send(payment)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:117:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "96.3"
+}

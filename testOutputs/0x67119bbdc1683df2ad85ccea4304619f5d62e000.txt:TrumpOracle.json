@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x67119bbdc1683df2ad85ccea4304619f5d62e000.txt:253:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x67119bbdc1683df2ad85ccea4304619f5d62e000.txt:3529:5: Warning: Integer Overflow.\n    function __callback(bytes32 _queryId, string result) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x67119bbdc1683df2ad85ccea4304619f5d62e000.txt:3493:1: Warning: Integer Underflow.\ncontract TrumpOracle is usingOraclize{\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    OAR = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.7"
+}

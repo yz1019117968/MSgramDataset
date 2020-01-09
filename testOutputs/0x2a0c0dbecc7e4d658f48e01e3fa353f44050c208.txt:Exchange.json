@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2a0c0dbecc7e4d658f48e01e3fa353f44050c208.txt:331:19: Warning: Integer Overflow.\n    if (ecrecover(keccak256(\"\\x19Ethereum Signed Message:\\n32\", tradeHash)\nInteger Overflow occurs if:\n    invalidOrder[tradeAddresses[2]] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2a0c0dbecc7e4d658f48e01e3fa353f44050c208.txt:329:25: Warning: Integer Overflow.\n    bytes32 tradeHash = keccak256(orderHash, tradeValues[4], tradeAddresses[3], tradeValues[5])\nInteger Overflow occurs if:\n    invalidOrder[tradeAddresses[2]] = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2a0c0dbecc7e4d658f48e01e3fa353f44050c208.txt:329:25: Warning: Integer Underflow.\n    bytes32 tradeHash = keccak256(orderHash, tradeValues[4], tradeAddresses[3], tradeValues[5])\nInteger Underflow occurs if:\n    invalidOrder[tradeAddresses[2]] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2a0c0dbecc7e4d658f48e01e3fa353f44050c208.txt:327:19: Warning: Integer Underflow.\n    if (ecrecover(keccak256(\"\\x19Ethereum Signed Message:\\n32\", orderHash)\nInteger Underflow occurs if:\n    invalidOrder[tradeAddresses[2]] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2a0c0dbecc7e4d658f48e01e3fa353f44050c208.txt:325:25: Warning: Integer Underflow.\n    bytes32 orderHash = keccak256(this, tradeAddresses[0], tradeValues[0], tradeAddresses[1], tradeValues[1], tradeValues[2], tradeValues[3], tradeAddresses[2])\nInteger Underflow occurs if:\n    invalidOrder[tradeAddresses[2]] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2a0c0dbecc7e4d658f48e01e3fa353f44050c208.txt:331:19: Warning: Integer Underflow.\n    if (ecrecover(keccak256(\"\\x19Ethereum Signed Message:\\n32\", tradeHash)\nInteger Underflow occurs if:\n    invalidOrder[tradeAddresses[2]] = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.8"
+}

@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:883:9: Warning: Integer Overflow.\n        getContractsOf[_client].push(inst)\nInteger Overflow occurs if:\n    _client = 1461501637330902918203684832716283019655932542975\n    buildingCostWei = 0", 
+   "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:739:5: Warning: Integer Overflow.\n    mapping(address => address[]) public getContractsOf", 
+   "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:815:5: Warning: Integer Overflow.\n    function setSecurityCheck(string _uri) onlyOwner\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:755:16: Warning: Integer Overflow.\n        return sender_contracts[sender_contracts.length - 1]", 
+   "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:829:1: Warning: Integer Overflow.\ncontract BuilderDaoCasinoToken is Builder {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _client = 1461501637330902918203684832716283019655932542975\n    buildingCostWei = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:803:5: Warning: Integer Underflow.\n    string public securityCheckURI", 
+   "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:755:33: Warning: Integer Underflow.\n        return sender_contracts[sender_contracts.length - 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:867:22: Warning: Transaction-Ordering Dependency.\n                if (!msg.sender.send(msg.value)"
+   ], 
+   [
+    "./restContracts/0xb39c77767406ec8a147971736412b18bb0ec1619.txt:851:18: Warning: Transaction-Ordering Dependency.\n            if (!beneficiary.send(buildingCostWei)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.6"
+}

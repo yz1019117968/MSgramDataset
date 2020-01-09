@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9AcA6aBFe63A5ae0Dc6258cefB65207eC990Aa4D.txt:285:10: Warning: Integer Underflow.\n\t\treturn tokenSupply - allocatedSupply\nInteger Underflow occurs if:\n    allocatedSupply = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9AcA6aBFe63A5ae0Dc6258cefB65207eC990Aa4D.txt:313:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(_amount)"
+   ], 
+   [
+    "./restContracts/0x9AcA6aBFe63A5ae0Dc6258cefB65207eC990Aa4D.txt:253:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(ethValue)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.7"
+}

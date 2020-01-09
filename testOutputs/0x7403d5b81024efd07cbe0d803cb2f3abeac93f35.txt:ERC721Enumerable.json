@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1339:12: Warning: Integer Overflow.\n    return _assetsOf[owner][index]\nInteger Overflow occurs if:\n    index = 42535295865117307932921825928971026432\n    _assetsOf[owner].length = 42535295865117307932921825928971026433"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.4"
+}

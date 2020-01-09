@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:433:5: Warning: Integer Overflow.\n    bookings[msg.sender][_index]\nInteger Overflow occurs if:\n    birthBlockThreshold = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    bookings[msg.sender].length = 57896044618658097711785492504343953926634992332820282019728792003956564819969", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:115:1: Warning: Integer Overflow.\ncontract UnicornRanch {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    visitingUnicorns = 0\n    visitLength[uint8(_type)] = 0\n    visitCost[uint8(_type)] = 0", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:249:29: Warning: Integer Overflow.\n    return (v.unicornCount, v.t\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:249:48: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock, v.expiresBlock\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:247:23: Warning: Integer Overflow.\n    Visit storage v = bookings[_who][_index]\nInteger Overflow occurs if:\n    bookings[_who][_index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:511:5: Warning: Integer Overflow.\n    v.completedCount\nInteger Overflow occurs if:\n    visitingUnicorns = 0\n    repossessionBlocks = 0\n    bookings[_who].length = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:249:73: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock, v.expiresBlock, v.state, v.completedBlock\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:395:36: Warning: Integer Overflow.\n    if (SafeMath.sub(block.number, v.startBlock\nInteger Overflow occurs if:\n    bookings[msg.sender].length = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:249:91: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock, v.expiresBlock, v.state, v.completedBlock, v.completedCount\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:249:64: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock, v.expiresBlock, v.state\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:509:5: Warning: Integer Overflow.\n    v.completedBlock\nInteger Overflow occurs if:\n    visitingUnicorns = 0\n    repossessionBlocks = 0\n    bookings[_who].length = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:429:5: Warning: Integer Overflow.\n    v.completedBlock\nInteger Overflow occurs if:\n    birthBlockThreshold = 862297044182146244682552810673893499827113041139696122950298284064768\n    bookings[msg.sender].length = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:427:5: Warning: Integer Overflow.\n    v.state\nInteger Overflow occurs if:\n    birthBlockThreshold = 862297044182146244682552810673893499827113041139696122950298284064768\n    bookings[msg.sender].length = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:507:5: Warning: Integer Overflow.\n    v.state\nInteger Overflow occurs if:\n    visitingUnicorns = 0\n    repossessionBlocks = 0\n    bookings[_who].length = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:431:5: Warning: Integer Overflow.\n    v.completedCount\nInteger Overflow occurs if:\n    birthBlockThreshold = 862297044182146244682552810673893499827113041139696122950298284064768\n    bookings[msg.sender].length = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:513:5: Warning: Integer Overflow.\n    bookings[_who][_index]\nInteger Overflow occurs if:\n    visitingUnicorns = 0\n    repossessionBlocks = 0\n    bookings[_who].length = 57896044618658097711785492504343953926634992332820282019728792003956564819969", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:249:34: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:317:5: Warning: Integer Overflow.\n    bookings[msg.sender].push(Visit(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    visitingUnicorns = 0\n    visitLength[uint8(_type)] = 0\n    visitCost[uint8(_type)] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x97e7ef310499be2f97c392b8b16ddd494af73e22.txt:511:24: Warning: Integer Underflow.\n    v.completedCount = v.unicornCount - bountyCount\nInteger Underflow occurs if:\n    visitingUnicorns = 0\n    repossessionBlocks = 0\n    bookings[_who].length = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.6"
+}

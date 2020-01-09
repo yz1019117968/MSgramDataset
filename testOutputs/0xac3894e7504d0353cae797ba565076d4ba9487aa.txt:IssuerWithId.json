@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xac3894e7504d0353cae797ba565076d4ba9487aa.txt:557:5: Warning: Integer Overflow.\n    issuedCount += amount\nInteger Overflow occurs if:\n    issuedCount = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    issued[id] = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.4"
+}

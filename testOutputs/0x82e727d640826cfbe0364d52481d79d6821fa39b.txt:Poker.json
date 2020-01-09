@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x82e727d640826cfbe0364d52481d79d6821fa39b.txt:639:16: Warning: Callstack Depth Attack Vulnerability.\n        assert(med.call(bytes4(sha3(\"poke()\")))", 
+   "./restContracts/0x82e727d640826cfbe0364d52481d79d6821fa39b.txt:651:16: Warning: Callstack Depth Attack Vulnerability.\n        assert(med.call(bytes4(sha3(\"poke()\")))"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.5"
+}

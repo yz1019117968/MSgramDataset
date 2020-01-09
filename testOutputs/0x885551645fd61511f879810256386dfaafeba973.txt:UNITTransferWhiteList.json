@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x885551645fd61511f879810256386dfaafeba973.txt:163:20: Warning: Integer Overflow.\n            delete whitelist[whitelist.length - 1]\nInteger Overflow occurs if:\n    whitelist.length = 16381\n    wlIndex[_checkAddress] = 16384\n    administrator = 0", 
+   "./restContracts/0x885551645fd61511f879810256386dfaafeba973.txt:67:5: Warning: Integer Overflow.\n    address[] public whitelist", 
+   "./restContracts/0x885551645fd61511f879810256386dfaafeba973.txt:157:17: Warning: Integer Overflow.\n                whitelist[i]\nInteger Overflow occurs if:\n    whitelist.length = 131072\n    wlIndex[_checkAddress] = 64510\n    administrator = 0", 
+   "./restContracts/0x885551645fd61511f879810256386dfaafeba973.txt:115:5: Warning: Integer Overflow.\n    function addBulk(address[] _wlAddresses)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x885551645fd61511f879810256386dfaafeba973.txt:175:5: Warning: Integer Overflow.\n    function removeBulk(address[] _wlAddresses)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x885551645fd61511f879810256386dfaafeba973.txt:157:32: Warning: Integer Overflow.\n                whitelist[i] = whitelist[i + 1]\nInteger Overflow occurs if:\n    whitelist.length = 32768\n    wlIndex[_checkAddress] = 32190\n    administrator = 0", 
+   "./restContracts/0x885551645fd61511f879810256386dfaafeba973.txt:243:1: Warning: Integer Overflow.\ncontract UNITTransferWhiteList is BasicWhitelist {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    whitelist.length = 1\n    wlIndex[_checkAddress] = 0\n    administrator = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.4"
+}

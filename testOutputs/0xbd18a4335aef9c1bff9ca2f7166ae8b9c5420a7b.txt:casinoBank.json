@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:299:8: Warning: Timestamp Dependency.\n\t\telse if(closeAt < now) selfdestruct(owner)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.2"
+}

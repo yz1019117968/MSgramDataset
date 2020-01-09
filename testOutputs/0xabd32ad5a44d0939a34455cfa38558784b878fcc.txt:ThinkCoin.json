@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xabd32ad5a44d0939a34455cfa38558784b878fcc.txt:603:3: Warning: Integer Underflow.\n  string public name = \"ThinkCoin\"", 
+   "./restContracts/0xabd32ad5a44d0939a34455cfa38558784b878fcc.txt:605:3: Warning: Integer Underflow.\n  string public symbol = \"TCO\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.4"
+}

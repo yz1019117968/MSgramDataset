@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x59ef652ed72bc6b7a8b26da7fe39a853a5c8239a.txt:755:19: Warning: Integer Overflow.\n        endTime = now + 3*bonusPeriod\nInteger Overflow occurs if:\n    owner = 0\n    crowdSaleOn = 0", 
+   "./uniqueContractSourceCode/0x59ef652ed72bc6b7a8b26da7fe39a853a5c8239a.txt:615:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    weiRaised = 77182667738089914098727062472196353080554259135303815766905103575028658256385\n    endTime = 90147734465454789856136913270204528643266360454646557691216619194905897074501\n    startTime = 90147734465454789856136913270204528643266360454646557691216619194905897074501\n    beneficiary = 1461501637330902918203684832716283019655932542975\n    crowdSaleOn = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.8"
+}

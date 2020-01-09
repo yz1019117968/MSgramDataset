@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:425:4: Warning: Integer Overflow.\n\t\t\tspecialManagerCountInt++\nInteger Overflow occurs if:\n    specialManagerCountInt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddressMap[msg.sender] = 255\n    specialManagerAddressNumberMap[ _onSpecialManagerAddress ] = 0", 
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:179:4: Warning: Integer Overflow.\n\t\t\townerCountInt++\nInteger Overflow occurs if:\n    ownerCountInt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddressMap[msg.sender] = 255\n    ownerAddressNumberMap[ _onOwnerAddress ] = 0", 
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:571:4: Warning: Integer Overflow.\n\t\t\tmanagerCountInt++\nInteger Overflow occurs if:\n    managerCountInt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddressMap[msg.sender] = 255\n    managerAddressNumberMap[ _onManagerAddress ] = 0", 
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:925:4: Warning: Integer Overflow.\n\t\t\tverificationCountInt++\nInteger Overflow occurs if:\n    verificationCountInt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _onVerificationAddress = 1461501637330902918203684832716283019655932542975\n    ownerAddressMap[msg.sender] = 255\n    verificationAddressNumberMap[ _onVerificationAddress ] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:75:2: Warning: Integer Underflow.\n\tstring public name = \"FoodCoin\"", 
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:87:2: Warning: Integer Underflow.\n\tstring public version = \"v1\"", 
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:79:2: Warning: Integer Underflow.\n\tstring public symbol = \"FOOD\"", 
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:641:2: Warning: Integer Underflow.\n\tstring public description = \"\"", 
+   "./restContracts/0x9f9e83f89e9ce97527bf309054e1ee2d4f33f7de.txt:635:1: Warning: Integer Underflow.\ncontract Management is Manager {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    ownerAddressMap[msg.sender] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.7"
+}

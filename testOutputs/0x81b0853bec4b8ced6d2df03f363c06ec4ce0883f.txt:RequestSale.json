@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x81b0853bec4b8ced6d2df03f363c06ec4ce0883f.txt:211:5: Warning: Integer Overflow.\n    balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    eth_cap = 1\n    bought_tokens = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x81b0853bec4b8ced6d2df03f363c06ec4ce0883f.txt:175:5: Warning: Transaction-Ordering Dependency.\n    sale.transfer(contract_eth_value)"
+   ], 
+   [
+    "./restContracts/0x81b0853bec4b8ced6d2df03f363c06ec4ce0883f.txt:143:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(eth_to_withdraw)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.3"
+}

@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:513:13: Warning: Integer Overflow.\n            offers[id].pay_gem\nInteger Overflow occurs if:\n    offers[id].timestamp = 26959946667150639793205513449688727755433459589824289461447677706240", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:515:13: Warning: Integer Overflow.\n            offers[id].buy_gem\nInteger Overflow occurs if:\n    offers[id].timestamp = 26959946667150639793205513449688727755433459589824289461447677706240", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:511:13: Warning: Integer Overflow.\n            offers[id].owner\nInteger Overflow occurs if:\n    offers[id].timestamp = 26959946667150639793205513449688727755433459589824289461447677706240", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:485:30: Warning: Integer Overflow.\n              offer.buy_amt, offer.buy_gem", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:509:43: Warning: Integer Overflow.\n            keccak256(offers[id].pay_gem, offers[id].buy_gem\nInteger Overflow occurs if:\n    offers[id].timestamp = 26959946667150639793205513449688727755433459589824289461447677706240", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:521:13: Warning: Integer Overflow.\n            offers[id].timestamp\nInteger Overflow occurs if:\n    offers[id].timestamp = 26959946667150639793205513449688727755433459589824289461447677706240", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:393:5: Warning: Integer Overflow.\n    mapping (uint => OfferInfo) public offers", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:519:21: Warning: Integer Overflow.\n            uint128(offers[id].buy_amt\nInteger Overflow occurs if:\n    offers[id].timestamp = 26959946667150639793205513449688727755433459589824289461447677706240", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:483:30: Warning: Integer Overflow.\n      return (offer.pay_amt, offer.pay_gem", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:485:15: Warning: Integer Overflow.\n              offer.buy_amt", 
+   "./uniqueContractSourceCode/0x14fbca95be7e99c15cc2996c6c9d841e54b79425.txt:509:23: Warning: Integer Overflow.\n            keccak256(offers[id].pay_gem\nInteger Overflow occurs if:\n    offers[id].timestamp = 26959946667150639793205513449688727755433459589824289461447677706240"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.9"
+}

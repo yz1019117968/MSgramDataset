@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:841:1: Warning: Integer Overflow.\ncontract RaceToken is CommonToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ownerMap[owner] = 0\n    owner1 = 0", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:365:9: Warning: Integer Overflow.\n        ownerHistory.push(owner)\nInteger Overflow occurs if:\n    ownerMap[owner] = 0\n    owner1 = 0", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:313:5: Warning: Integer Overflow.\n    address[] public ownerHistory"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:597:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:595:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:603:5: Warning: Integer Underflow.\n    string public version = 'v0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.9"
+}

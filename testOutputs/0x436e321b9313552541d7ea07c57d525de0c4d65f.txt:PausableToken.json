@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x436e321b9313552541d7ea07c57d525de0c4d65f.txt:121:5: Warning: Integer Underflow.\n    string public symbol = \"RICO\"", 
+   "./uniqueContractSourceCode/0x436e321b9313552541d7ea07c57d525de0c4d65f.txt:119:5: Warning: Integer Underflow.\n    string public name = \"Rico\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.8"
+}

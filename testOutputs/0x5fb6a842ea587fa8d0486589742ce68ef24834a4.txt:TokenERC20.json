@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5fb6a842ea587fa8d0486589742ce68ef24834a4.txt:245:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5fb6a842ea587fa8d0486589742ce68ef24834a4.txt:355:7: Warning: Integer Overflow.\n\t\tif((curReward+mined\nInteger Overflow occurs if:\n    difficulty = 0\n    mined = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    miningGoalReached = 0\n    timeOfLastProof = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5fb6a842ea587fa8d0486589742ce68ef24834a4.txt:285:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5fb6a842ea587fa8d0486589742ce68ef24834a4.txt:13:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x5fb6a842ea587fa8d0486589742ce68ef24834a4.txt:15:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x5fb6a842ea587fa8d0486589742ce68ef24834a4.txt:321:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.3"
+}

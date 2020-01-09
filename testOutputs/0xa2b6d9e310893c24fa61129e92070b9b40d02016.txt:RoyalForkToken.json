@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xa2b6d9e310893c24fa61129e92070b9b40d02016.txt:407:5: Warning: Callstack Depth Attack Vulnerability.\n    msg.sender.send(payment)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa2b6d9e310893c24fa61129e92070b9b40d02016.txt:113:3: Warning: Integer Underflow.\n  string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "26.7"
+}

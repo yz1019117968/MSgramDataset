@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6527d0fd6df77ed928db32b761b32e9b6e332961.txt:245:5: Warning: Integer Underflow.\n    string public symbol = \"FOOS\"", 
+   "./uniqueContractSourceCode/0x6527d0fd6df77ed928db32b761b32e9b6e332961.txt:243:5: Warning: Integer Underflow.\n    string public name = \"FoosBallCoin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.4"
+}

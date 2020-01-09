@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9c0e795ddf3b0655ab378a3551b36a036e93dc18.txt:229:16: Warning: Integer Overflow.\n        return ownersIndex[_index]\nInteger Overflow occurs if:\n    ownersIndex[_index] = 115792089237316195423570937118202255794243160967295965592295595921216049774592", 
+   "./restContracts/0x9c0e795ddf3b0655ab378a3551b36a036e93dc18.txt:277:33: Warning: Integer Overflow.\n            address keyToMove = ownersIndex[ownersIndex.length - 1]\nInteger Overflow occurs if:\n    ownersIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owners[_account] = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    owners[_account] = 115792089237316195423570985008687907853269984665640564039457584007913129639929"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9c0e795ddf3b0655ab378a3551b36a036e93dc18.txt:1025:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x9c0e795ddf3b0655ab378a3551b36a036e93dc18.txt:1023:5: Warning: Integer Underflow.\n    string public standard = \"Token 0.3.1\"", 
+   "./restContracts/0x9c0e795ddf3b0655ab378a3551b36a036e93dc18.txt:1727:9: Warning: Integer Underflow.\n        totalTokenSupply -= _value\nInteger Underflow occurs if:\n    _value = 1329227995784915872903807060280344576\n    balances[_from] = 57896044618658097711785492503978578517302266522139722396943039553253576540158\n    owners[_account] = 0\n    totalTokenSupply = 1329227995784915872903807060280344575\n    ownersIndex.length = 1", 
+   "./restContracts/0x9c0e795ddf3b0655ab378a3551b36a036e93dc18.txt:1027:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.0"
+}

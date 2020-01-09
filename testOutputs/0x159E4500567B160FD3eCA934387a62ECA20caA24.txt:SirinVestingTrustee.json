@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x159E4500567B160FD3eCA934387a62ECA20caA24.txt:1043:5: Warning: Integer Overflow.\n    mapping (address => Grant) public grants", 
+   "./uniqueContractSourceCode/0x159E4500567B160FD3eCA934387a62ECA20caA24.txt:1167:42: Warning: Integer Overflow.\n        uint256 refund = grant.value.sub(grant.transferred\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.2"
+}

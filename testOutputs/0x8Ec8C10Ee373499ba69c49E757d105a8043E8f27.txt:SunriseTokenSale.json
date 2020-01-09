@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8Ec8C10Ee373499ba69c49E757d105a8043E8f27.txt:885:9: Warning: Integer Overflow.\n        amountRaised += amount\nInteger Overflow occurs if:\n    amountRaised = 58273926870418192473933128290275218006904575664221331275790719479452753603097\n    price = 109893018245897748038482089066762982531069955439587416152212077312291484349200\n    deadline = 2147483649\n    startline = 2147483647"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8Ec8C10Ee373499ba69c49E757d105a8043E8f27.txt:933:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(amountRaised)"
+   ], 
+   [
+    "./restContracts/0x8Ec8C10Ee373499ba69c49E757d105a8043E8f27.txt:925:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.5"
+}

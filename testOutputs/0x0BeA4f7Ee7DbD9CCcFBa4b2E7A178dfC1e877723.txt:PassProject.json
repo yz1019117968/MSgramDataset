@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:399:5: Warning: Integer Overflow.\n    resolution[] public resolutions", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:631:5: Warning: Integer Overflow.\n    function updateDescription(string _projectDescription, bytes32 _hashOfTheDocument) onlyProjectManager {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _projectDescription = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:677:5: Warning: Integer Overflow.\n    function newResolution(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:321:1: Warning: Integer Overflow.\ncontract PassProject {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    orders.length = 19553522595453252762159207969660836113535560129003487626059407945321879306061\n    projectManager = 0", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:371:5: Warning: Integer Overflow.\n    order[] public orders", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:537:25: Warning: Integer Overflow.\n        uint _orderID = orders.length++\nInteger Overflow occurs if:\n    orders.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    projectManager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:333:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:399:5: Warning: Integer Underflow.\n    resolution[] public resolutions", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:337:5: Warning: Integer Underflow.\n    string public description", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:453:16: Warning: Integer Underflow.\n        return resolutions.length - 1\nInteger Underflow occurs if:\n    resolutions.length = 0", 
+   "./uniqueContractSourceCode/0x0BeA4f7Ee7DbD9CCcFBa4b2E7A178dfC1e877723.txt:433:16: Warning: Integer Underflow.\n        return orders.length - 1\nInteger Underflow occurs if:\n    orders.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.8"
+}

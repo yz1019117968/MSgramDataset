@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5052787b0B9cEC67442E2FF43D2176693377Bc5A.txt:245:21: Warning: Integer Underflow.\n    uint _elapsed = now - icoStartTime\nInteger Underflow occurs if:\n    icoStartTime = 1", 
+   "./uniqueContractSourceCode/0x5052787b0B9cEC67442E2FF43D2176693377Bc5A.txt:415:14: Warning: Integer Underflow.\n      return TOTAL_SUPPLY - balanceOf[this]\nInteger Underflow occurs if:\n    balanceOf[this] = 36267774588438875241185280"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5052787b0B9cEC67442E2FF43D2176693377Bc5A.txt:951:7: Warning: Transaction-Ordering Dependency.\n      selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5052787b0B9cEC67442E2FF43D2176693377Bc5A.txt:683:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(ether_value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.4"
+}

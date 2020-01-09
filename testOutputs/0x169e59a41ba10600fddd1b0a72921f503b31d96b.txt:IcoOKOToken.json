@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x169e59a41ba10600fddd1b0a72921f503b31d96b.txt:593:85: Warning: Integer Underflow.\n    price = priceWeiToUSD / 1000000 * 27 / 10 + priceWeiToUSD / 1000000 * 1 / 2 * ((now - startTime\nInteger Underflow occurs if:\n    startTime = 1\n    USDto1ETH = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.2"
+}

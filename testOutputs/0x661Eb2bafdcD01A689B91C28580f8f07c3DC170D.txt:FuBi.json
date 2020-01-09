@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x661Eb2bafdcD01A689B91C28580f8f07c3DC170D.txt:245:6: Warning: Integer Overflow.\n    \ttotalSupply += _value\nInteger Overflow occurs if:\n    totalSupply = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    flag = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x661Eb2bafdcD01A689B91C28580f8f07c3DC170D.txt:243:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    flag = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x661Eb2bafdcD01A689B91C28580f8f07c3DC170D.txt:79:5: Warning: Integer Underflow.\n    string public name = \"FuBi\"", 
+   "./uniqueContractSourceCode/0x661Eb2bafdcD01A689B91C28580f8f07c3DC170D.txt:83:5: Warning: Integer Underflow.\n    string public symbol = \"Fu\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.9"
+}

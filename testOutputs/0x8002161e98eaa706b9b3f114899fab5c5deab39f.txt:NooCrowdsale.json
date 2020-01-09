@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8002161e98eaa706b9b3f114899fab5c5deab39f.txt:871:9: Warning: Timestamp Dependency.\n        require(now > start + period * 1 days)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8002161e98eaa706b9b3f114899fab5c5deab39f.txt:787:22: Warning: Integer Underflow.\n        uint delta = now - start\nInteger Underflow occurs if:\n    start = 1", 
+   "./restContracts/0x8002161e98eaa706b9b3f114899fab5c5deab39f.txt:727:71: Warning: Integer Underflow.\n        uint restrictedTokens = issuedTokenSupply.mul(restricted).div(100 - restricted\nInteger Underflow occurs if:\n    restricted = 112\n    balanceTotal = 0\n    softcap = 0\n    start = 0\n    period = 0\n    owner = 0\n    status = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8002161e98eaa706b9b3f114899fab5c5deab39f.txt:779:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(value)"
+   ], 
+   [
+    "./restContracts/0x8002161e98eaa706b9b3f114899fab5c5deab39f.txt:763:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.8"
+}

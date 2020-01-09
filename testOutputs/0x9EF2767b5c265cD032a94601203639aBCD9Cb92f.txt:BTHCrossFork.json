@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2271:38: Warning: Integer Overflow.\n            moderators[foundIndex] = moderators[moderators.length-1]\nInteger Overflow occurs if:\n    moderators.length = 115792089237316195423570985005764904578608178829233194374025017968601264553984\n    moderators[foundIndex] = 0\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2273:20: Warning: Integer Overflow.\n            delete moderators[moderators.length-1]\nInteger Overflow occurs if:\n    moderators.length = 115792089237316195423570984821250322865581685406017984243594286737039781003264\n    moderators[foundIndex] = 0\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2163:5: Warning: Integer Overflow.\n    address[] public moderators", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2261:17: Warning: Integer Overflow.\n            if (moderators[foundIndex]\nInteger Overflow occurs if:\n    moderators.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2439:5: Warning: Integer Overflow.\n    function getDistributedAmount(uint64 _requestId, string _btcAddress, address _receiver) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _btcAddress = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2239:21: Warning: Integer Overflow.\n                if (moderators[index]\nInteger Overflow occurs if:\n    moderators.length = 115792089210356248756420345214020892766250353992003419616917011526809519390719\n    moderators[index] = 0\n    owner = 0", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2403:5: Warning: Integer Overflow.\n    function __callback(bytes32 _queryId, string _result) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2381:5: Warning: Integer Overflow.\n    function setVerifyUrl(string _verifyUrl) onlyModerators public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _verifyUrl = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2271:13: Warning: Integer Overflow.\n            moderators[foundIndex]\nInteger Overflow occurs if:\n    moderators.length = 57896044618658097711785492410442473728124479838233531517707607991062898933760\n    moderators[foundIndex] = 0\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    moderators[foundIndex] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2309:1: Warning: Integer Overflow.\ncontract BTHCrossFork is usingOraclize, BasicUtility, BasicAccessControl, CrossForkDistribution {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    moderators.length = 1\n    moderators[index] = 0\n    owner = 0", 
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:249:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9EF2767b5c265cD032a94601203639aBCD9Cb92f.txt:2343:5: Warning: Integer Underflow.\n    string public verifyUrl = \"\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.2"
+}

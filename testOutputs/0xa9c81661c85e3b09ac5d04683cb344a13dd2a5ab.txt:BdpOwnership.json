@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa9c81661c85e3b09ac5d04683cb344a13dd2a5ab.txt:1215:18: Warning: Integer Overflow.\n\t\tvar (area,,) = BdpCalculator.calculateArea(_contracts, _tokenId)\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.6"
+}

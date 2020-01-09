@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6fc9c554c2363805673f18b3a2b1912cce8bfb8a.txt:135:5: Warning: Integer Overflow.\n    function multiTransfer(address[] _addresses, uint[] _amounts) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6fc9c554c2363805673f18b3a2b1912cce8bfb8a.txt:177:9: Warning: Integer Overflow.\n        balances[_to] += _amount\nInteger Overflow occurs if:\n    _amount = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./uniqueContractSourceCode/0x6fc9c554c2363805673f18b3a2b1912cce8bfb8a.txt:125:9: Warning: Integer Overflow.\n        balances[_to] += _amount\nInteger Overflow occurs if:\n    _amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705", 
+   "./uniqueContractSourceCode/0x6fc9c554c2363805673f18b3a2b1912cce8bfb8a.txt:93:9: Warning: Integer Overflow.\n        balances[msg.sender] += airDropAmount\nInteger Overflow occurs if:\n    balances[msg.sender] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    airDropAmount = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    airDropGasPrice = 0\n    participants[msg.sender] = 0\n    balances[owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    airDropStatus = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.6"
+}

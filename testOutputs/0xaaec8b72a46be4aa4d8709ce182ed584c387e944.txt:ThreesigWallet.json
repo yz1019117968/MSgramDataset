@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaaec8b72a46be4aa4d8709ce182ed584c387e944.txt:75:12: Warning: Integer Overflow.\n    assert(txs[txIdx]\nInteger Overflow occurs if:\n    txs[txIdx] = 32\n    txIdx = 30\n    founders[msg.sender] = 255", 
+   "./restContracts/0xaaec8b72a46be4aa4d8709ce182ed584c387e944.txt:5:1: Warning: Integer Overflow.\ncontract ThreesigWallet {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    txs.push(Tx({\r\n\r\n      founder: msg.sender,\r\n\r\n      destAddr: destAddr\r\n\r\n    })) = 41422112641837104714977910719459132799912797182732962724615910609143899352111\n    founders[msg.sender] = 255", 
+   "./restContracts/0xaaec8b72a46be4aa4d8709ce182ed584c387e944.txt:49:5: Warning: Integer Overflow.\n    balance += msg.value\nInteger Overflow occurs if:\n    balance = 1", 
+   "./restContracts/0xaaec8b72a46be4aa4d8709ce182ed584c387e944.txt:59:5: Warning: Integer Overflow.\n    txs.push(Tx({\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    txs.push(Tx({\r\n\r\n      founder: msg.sender,\r\n\r\n      destAddr: destAddr\r\n\r\n    })) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    founders[msg.sender] = 255", 
+   "./restContracts/0xaaec8b72a46be4aa4d8709ce182ed584c387e944.txt:23:3: Warning: Integer Overflow.\n  Tx[] public txs"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.0"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x989c3b228856c18771bc55c2bd59633cdcf459ec.txt:305:3: Warning: Integer Underflow.\n  string public name = \"CadetCoin\"", 
+   "./restContracts/0x989c3b228856c18771bc55c2bd59633cdcf459ec.txt:307:3: Warning: Integer Underflow.\n  string public symbol = \"CADET\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

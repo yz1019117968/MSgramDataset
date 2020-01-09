@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8338005b31bf37dadea7f76a7778dcf9150d8f02.txt:747:5: Warning: Integer Overflow.\n    uint[] public batchStartTimes", 
+   "./restContracts/0x8338005b31bf37dadea7f76a7778dcf9150d8f02.txt:1091:23: Warning: Integer Overflow.\n            if (now > batchStartTimes[i-1]\nInteger Overflow occurs if:\n    batchStartTimes.length = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    endTime = 0", 
+   "./restContracts/0x8338005b31bf37dadea7f76a7778dcf9150d8f02.txt:1061:19: Warning: Integer Overflow.\n        if (now > batchStartTimes[batch]\nInteger Overflow occurs if:\n    batch = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    endTime = 0\n    batchStartTimes.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312", 
+   "./restContracts/0x8338005b31bf37dadea7f76a7778dcf9150d8f02.txt:875:9: Warning: Integer Overflow.\n        batchStartTimes[_batchNumber]\nInteger Overflow occurs if:\n    _batchNumber = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    batchStartTimes[_batchNumber] = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    primaryOperator = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8338005b31bf37dadea7f76a7778dcf9150d8f02.txt:889:38: Warning: Integer Underflow.\n\trequire(_endTime >= batchStartTimes[batchStartTimes.length - 1\nInteger Underflow occurs if:\n    batchStartTimes.length = 0\n    primaryOperator = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.2"
+}

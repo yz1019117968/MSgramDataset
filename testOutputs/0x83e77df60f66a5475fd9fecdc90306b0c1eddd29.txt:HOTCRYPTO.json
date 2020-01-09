@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x83e77df60f66a5475fd9fecdc90306b0c1eddd29.txt:367:5: Warning: Integer Underflow.\n    string public name = \"HOTCRYPTO\"", 
+   "./restContracts/0x83e77df60f66a5475fd9fecdc90306b0c1eddd29.txt:369:5: Warning: Integer Underflow.\n    string public symbol = \"HCR\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

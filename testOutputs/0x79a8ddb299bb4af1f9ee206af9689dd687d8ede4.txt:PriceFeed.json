@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:811:5: Warning: Integer Overflow.\n    function getPrices(address[] ofAssets)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ofAssets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:365:5: Warning: Integer Overflow.\n    function updateDescriptiveInformation(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:653:5: Warning: Integer Overflow.\n    function update(address[] ofAssets, uint[] newPrices)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ofAssets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:781:13: Warning: Integer Overflow.\n            information[ofAsset].price\nInteger Overflow occurs if:\n    information[ofAsset].timestamp = 0\n    information[ofAsset].exists = 255", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:435:72: Warning: Integer Overflow.\n    function getDecimals(address ofAsset) view returns (uint) { return information[ofAsset].decimal", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:725:5: Warning: Integer Overflow.\n    function hasRecentPrices(address[] ofAssets)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ofAssets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:433:72: Warning: Integer Overflow.\n    function getSymbol(address ofAsset) view returns (string) { return information[ofAsset].symbol", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:297:5: Warning: Integer Overflow.\n    function register(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:261:5: Warning: Integer Overflow.\n    mapping (address => Asset) public information", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:431:70: Warning: Integer Overflow.\n    function getName(address ofAsset) view returns (string) { return information[ofAsset].name", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:783:13: Warning: Integer Overflow.\n            information[ofAsset].decimal\nInteger Overflow occurs if:\n    information[ofAsset].timestamp = 0\n    information[ofAsset].exists = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:261:5: Warning: Integer Underflow.\n    mapping (address => Asset) public information", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:433:65: Warning: Integer Underflow.\n    function getSymbol(address ofAsset) view returns (string) { return information[ofAsset].symbol\nInteger Underflow occurs if:\n    return information[ofAsset].symbol = 1", 
+   "./uniqueContractSourceCode/0x79a8ddb299bb4af1f9ee206af9689dd687d8ede4.txt:431:63: Warning: Integer Underflow.\n    function getName(address ofAsset) view returns (string) { return information[ofAsset].name\nInteger Underflow occurs if:\n    return information[ofAsset].name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.8"
+}

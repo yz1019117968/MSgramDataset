@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:263:5: Warning: Integer Overflow.\n    Item[] public items", 
+   "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:325:9: Warning: Integer Overflow.\n        item.priceSell\nInteger Overflow occurs if:\n    isAlive = 32767\n    itemID = 0\n    items.length = 1", 
+   "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:375:5: Warning: Integer Overflow.\n    function setSlogan(uint itemID, bytes slogan) gAlive(true) gRunning(true) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    slogan = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:229:1: Warning: Integer Overflow.\ncontract Planet is Cryptoy {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    items.push(Item({\r\n\r\n                owner: msg.sender, \r\n\r\n                round: 0,\r\n\r\n                priceOrg: 0, \r\n\r\n                priceSell: priceWei,\r\n\r\n                slogan: \"\"\r\n\r\n            })) = 19553522595453252762159207969660836113535560129003487626059407945321879306061\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isAlive = 255\n    addrAdmin = 0", 
+   "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:337:13: Warning: Integer Overflow.\n            items.push(Item({\r\n            ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    items.push(Item({\r\n\r\n                owner: msg.sender, \r\n\r\n                round: 0,\r\n\r\n                priceOrg: 0, \r\n\r\n                priceSell: priceWei,\r\n\r\n                slogan: \"\"\r\n\r\n            })) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isAlive = 255\n    addrAdmin = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:235:5: Warning: Integer Underflow.\n    string public version = \"1.0.0\"", 
+   "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:263:5: Warning: Integer Underflow.\n    Item[] public items"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:137:9: Warning: Transaction-Ordering Dependency.\n        addr.transfer(value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x13ddd5c273a027608a42727a46f8250011645166.txt:319:9: Warning: Transaction-Ordering Dependency.\n        item.owner.transfer(finalRefund)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.2"
+}

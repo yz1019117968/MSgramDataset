@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2d9498d0fd6f40760d53a847eb64eaf51c9b8e74.txt:63:5: Warning: Integer Overflow.\n    self.totalSupply", 
+   "./uniqueContractSourceCode/0x2d9498d0fd6f40760d53a847eb64eaf51c9b8e74.txt:93:7: Warning: Integer Overflow.\n      ErrorMsg(\"Balance too low for transfer\")", 
+   "./uniqueContractSourceCode/0x2d9498d0fd6f40760d53a847eb64eaf51c9b8e74.txt:233:12: Warning: Integer Overflow.\n    return self.allowed", 
+   "./uniqueContractSourceCode/0x2d9498d0fd6f40760d53a847eb64eaf51c9b8e74.txt:211:5: Warning: Integer Overflow.\n    self.allowed", 
+   "./uniqueContractSourceCode/0x2d9498d0fd6f40760d53a847eb64eaf51c9b8e74.txt:149:7: Warning: Integer Overflow.\n      ErrorMsg(\"Balance too low for transfer\")"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.2"
+}

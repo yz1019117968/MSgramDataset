@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb81c91bb97cf13758fde92457af5adc09eea3b8a.txt:27:1: Warning: Integer Overflow.\ncontract IEFBR14Contract {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    users.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558", 
+   "./restContracts/0xb81c91bb97cf13758fde92457af5adc09eea3b8a.txt:33:4: Warning: Integer Overflow.\n   address[] public sponsors", 
+   "./restContracts/0xb81c91bb97cf13758fde92457af5adc09eea3b8a.txt:31:4: Warning: Integer Overflow.\n   address[] public users", 
+   "./restContracts/0xb81c91bb97cf13758fde92457af5adc09eea3b8a.txt:89:8: Warning: Integer Overflow.\n       sponsors.push(msg.sender)\nInteger Overflow occurs if:\n    sponsors.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb81c91bb97cf13758fde92457af5adc09eea3b8a.txt:61:8: Warning: Integer Overflow.\n       users.push(msg.sender)\nInteger Overflow occurs if:\n    users.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.0"
+}

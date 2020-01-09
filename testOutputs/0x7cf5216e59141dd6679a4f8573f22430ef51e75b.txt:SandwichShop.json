@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:67:5: Warning: Integer Overflow.\n    mapping( address => OrderedSandwich[] ) public cart", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:267:16: Warning: Integer Overflow.\n        return cart[_curious][_slot].notes\nInteger Overflow occurs if:\n    _slot = 0\n    cart[_curious][_slot] = 1", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:213:5: Warning: Integer Overflow.\n    function addToCart(uint _sandwichID, string _notes) returns (uint)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _notes = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:295:5: Warning: Integer Overflow.\n    function checkoutCart(string _firstname) payable returns (uint)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _firstname = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:5:1: Warning: Integer Overflow.\ncontract SandwichShop\r\n^\nSpanning multiple lines.", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:267:16: Warning: Integer Overflow.\n        return cart[_curious][_slot]\nInteger Overflow occurs if:\n    _slot = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    cart[_curious][_slot] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:157:9: Warning: Integer Underflow.\n        return (shopSandwich[0].sandwichName, shopSandwich[1].sandwichName,\r\n        ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    return (shopSandwich[0].sandwichName, shopSandwich[1].sandwichName,\r\n\r\n                shopSandwich[2].sandwichName, shopSandwich[3].sandwichName,\r\n\r\n                shopSandwich[4].sandwichName ) = 1", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:67:5: Warning: Integer Underflow.\n    mapping( address => OrderedSandwich[] ) public cart", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:183:13: Warning: Integer Underflow.\n            return (shopSandwich[_sandwich].sandwichName, shopSandwich[_sandwich].sandwichDesc,\r\n            ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    _sandwich = 0\n    return (shopSandwich[_sandwich].sandwichName, shopSandwich[_sandwich].sandwichDesc,\r\n\r\n                shopSandwich[_sandwich].calories, shopSandwich[_sandwich].price, shopSandwich[_sandwich].quantity) = 1", 
+   "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:267:9: Warning: Integer Underflow.\n        return cart[_curious][_slot].notes\nInteger Underflow occurs if:\n    _slot = 0\n    return cart[_curious][_slot].notes = 1\n    cart[_curious][_slot] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:359:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0x7cf5216e59141dd6679a4f8573f22430ef51e75b.txt:347:13: Warning: Transaction-Ordering Dependency.\n            addr.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.2"
+}

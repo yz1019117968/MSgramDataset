@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xab7c49a95ba2f8c1ad95d18c8541cba650870618.txt:275:10: Warning: Transaction-Ordering Dependency.\n    if (!project_wallet.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0xab7c49a95ba2f8c1ad95d18c8541cba650870618.txt:247:10: Warning: Transaction-Ordering Dependency.\n    if (!msg.sender.send(refund_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.0"
+}

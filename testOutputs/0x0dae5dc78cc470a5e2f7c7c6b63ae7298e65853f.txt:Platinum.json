@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:1519:3: Warning: Integer Overflow.\n  bytes32[] public storehouseIndex", 
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:1771:3: Warning: Integer Overflow.\n  function ship(string _index) onlyOwner returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:2069:3: Warning: Integer Overflow.\n  function buy(string _index, address buyer) onlyOwner returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:2171:3: Warning: Integer Overflow.\n  function info(string _index) constant returns (string, string, uint256, string) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:1683:3: Warning: Integer Overflow.\n  function stock(string _index, string _unit, uint256 _amount, string _ipfs) onlyOwner returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:1499:3: Warning: Integer Underflow.\n  string public unit = \"oz\"", 
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:1495:3: Warning: Integer Underflow.\n  string public version = \"0.0.1\"", 
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:1521:3: Warning: Integer Underflow.\n  mapping (bytes32 => Bullion) public storehouse"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.7"
+}

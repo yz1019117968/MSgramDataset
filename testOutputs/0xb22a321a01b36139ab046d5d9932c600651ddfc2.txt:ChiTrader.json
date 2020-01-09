@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb22a321a01b36139ab046d5d9932c600651ddfc2.txt:145:17: Warning: Integer Underflow.\n        return (now - cooldown_start_time\nInteger Underflow occurs if:\n    cooldown_start_time = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb22a321a01b36139ab046d5d9932c600651ddfc2.txt:201:33: Warning: Transaction-Ordering Dependency.\n            if(eth_balance > 0) msg.sender.transfer(eth_balance)"
+   ], 
+   [
+    "./restContracts/0xb22a321a01b36139ab046d5d9932c600651ddfc2.txt:201:33: Warning: Transaction-Ordering Dependency.\n            if(eth_balance > 0) msg.sender.transfer(eth_balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.8"
+}

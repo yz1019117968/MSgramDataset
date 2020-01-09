@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb3af8d08975e5c6bc98cb2f8646e54539e2d8f0d.txt:1047:5: Warning: Integer Overflow.\n    function create(address[] _owners, uint _required, uint _dailyLimit)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _owners = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb3af8d08975e5c6bc98cb2f8646e54539e2d8f0d.txt:23:5: Warning: Integer Overflow.\n    mapping(address => address[]) public instantiations"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "5.1"
+}

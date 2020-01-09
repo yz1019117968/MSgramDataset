@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2e6d6d288b80107a1b549681a3725f778a46775a.txt:1025:5: Warning: Integer Overflow.\n    function transfer(address _to, uint _value, bytes _data)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2e6d6d288b80107a1b549681a3725f778a46775a.txt:805:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x2e6d6d288b80107a1b549681a3725f778a46775a.txt:849:48: Warning: Integer Underflow.\n    function getName() view returns (string) { return name\nInteger Underflow occurs if:\n    return name = 1", 
+   "./uniqueContractSourceCode/0x2e6d6d288b80107a1b549681a3725f778a46775a.txt:851:50: Warning: Integer Underflow.\n    function getSymbol() view returns (string) { return symbol\nInteger Underflow occurs if:\n    return symbol = 1", 
+   "./uniqueContractSourceCode/0x2e6d6d288b80107a1b549681a3725f778a46775a.txt:803:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.7"
+}

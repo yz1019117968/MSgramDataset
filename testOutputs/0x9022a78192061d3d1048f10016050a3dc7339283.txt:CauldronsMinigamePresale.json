@@ -1,0 +1,37 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1405:49: Warning: Integer Overflow.\n        uint256 winner1Reward = calculateReward(cauldron.totalContribution\nInteger Overflow occurs if:\n    enabled = 0\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1493:16: Warning: Integer Overflow.\n        return cauldron.contributors", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1529:16: Warning: Integer Overflow.\n        return cauldron.contributions", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:971:1: Warning: Integer Overflow.\ncontract CauldronsMinigamePresale is Floor, AcceptsTokens {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1493:38: Warning: Integer Overflow.\n        return cauldron.contributors[cauldron.currentRound", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1225:40: Warning: Integer Overflow.\n        uint256 existingContribution = cauldron.contributions\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1243:32: Warning: Integer Overflow.\n        cauldron.contributions[cauldron.currentRound\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1245:38: Warning: Integer Overflow.\n        cauldron.totalContribution = cauldron.totalContribution\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1243:9: Warning: Integer Overflow.\n        cauldron.contributions\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1517:16: Warning: Integer Overflow.\n        return cauldron.contributors", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1249:81: Warning: Integer Overflow.\n        if (userNewContribution > cauldron.contributions[cauldron.currentRound][cauldron.topContributor\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1231:35: Warning: Integer Overflow.\n            cauldron.contributors[cauldron.currentRound\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1249:58: Warning: Integer Overflow.\n        if (userNewContribution > cauldron.contributions[cauldron.currentRound\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:67:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1407:49: Warning: Integer Overflow.\n        uint256 winner2Reward = calculateReward(cauldron.totalContribution\nInteger Overflow occurs if:\n    enabled = 0\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1505:16: Warning: Integer Overflow.\n        return cauldron.contributions", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1245:9: Warning: Integer Overflow.\n        cauldron.totalContribution\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1231:13: Warning: Integer Overflow.\n            cauldron.contributors\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1249:35: Warning: Integer Overflow.\n        if (userNewContribution > cauldron.contributions\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1505:39: Warning: Integer Overflow.\n        return cauldron.contributions[cauldron.currentRound", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1225:63: Warning: Integer Overflow.\n        uint256 existingContribution = cauldron.contributions[cauldron.currentRound\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1021:5: Warning: Integer Overflow.\n    mapping(uint8 => Cauldron) public cauldrons", 
+   "./restContracts/0x9022a78192061d3d1048f10016050a3dc7339283.txt:1231:13: Warning: Integer Overflow.\n            cauldron.contributors[cauldron.currentRound].push(_from)\nInteger Overflow occurs if:\n    cauldrons[_cauldronId].cauldronType = 1\n    enabled = 372682917519380244141939632342652170012262798458880\n    cauldrons[_cauldronId].expirationTimer = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.5"
+}

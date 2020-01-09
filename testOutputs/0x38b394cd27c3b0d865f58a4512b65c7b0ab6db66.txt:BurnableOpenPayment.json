@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:505:3: Warning: Timestamp Dependency.\n\t\trequire(now >= autoreleaseTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:305:3: Warning: Integer Overflow.\n\t\tamountDeposited += msg.value\nInteger Overflow occurs if:\n    amountDeposited = 89660649888868366171417216235708288031085258661234677303951427843448891257349", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:367:21: Warning: Integer Overflow.\n\t\tautoreleaseTime = now + autoreleaseInterval\nInteger Overflow occurs if:\n    state = 0\n    autoreleaseInterval = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    serviceDeposit = 0", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:383:3: Warning: Integer Overflow.\n\t\tamountBurned += amount\nInteger Overflow occurs if:\n    amountBurned = 85653202831209899131921273706816539903532775246499121721910781021549923541581\n    state = 1\n    amount = 102265108473332165002814896571004827370864558958382085930706369379314096406528\n    payer = 0", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:469:2: Warning: Integer Overflow.\n\tfunction logWorkerStatement(string statement)\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    statement = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:353:4: Warning: Integer Overflow.\n\t\t\tamountDeposited += msg.value\nInteger Overflow occurs if:\n    amountDeposited = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    state = 0\n    serviceDeposit = 95320360308092064085158862026869462789128858612754216248428463844421952977271", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:425:3: Warning: Integer Overflow.\n\t\tamountReleased += amount\nInteger Overflow occurs if:\n    amountReleased = 85653202831209899131921273706816539903532775246499121721910781021549923541581\n    state = 1\n    amount = 102265108473332165002814896571004827370864558958382085930706369379314096406528\n    payer = 0", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:489:21: Warning: Integer Overflow.\n\t\tautoreleaseTime = now + autoreleaseInterval\nInteger Overflow occurs if:\n    state = 1\n    autoreleaseInterval = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    payer = 0", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:457:2: Warning: Integer Overflow.\n\tfunction logPayerStatement(string statement)\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    statement = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:287:3: Warning: Integer Underflow.\n\t\treturn (payer, title, state, worker, this.balance, serviceDeposit, amountDeposited, amountBurned, amountReleased, autoreleaseInterval, autoreleaseTime)\nInteger Underflow occurs if:\n    return (payer, title, state, worker, this.balance, serviceDeposit, amountDeposited, amountBurned, amountReleased, autoreleaseInterval, autoreleaseTime) = 1", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:99:5: Warning: Integer Underflow.\n    string public title"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:421:3: Warning: Transaction-Ordering Dependency.\n\t\tworker.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:379:3: Warning: Transaction-Ordering Dependency.\n\t\tburnAddress.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.6"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa245b449bd43ad363f81f18fd3c2b33f47c6baaf.txt:249:36: Warning: Integer Overflow.\n        if      (block.timestamp < startline + 19 days\nInteger Overflow occurs if:\n    startline = 115792089237316195423570985008687907853269984665640564039457584007913129081216\n    zeroAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    buyer = 1461501637330902918203684832716283019655932542975\n    paused = 0", 
+   "./restContracts/0xa245b449bd43ad363f81f18fd3c2b33f47c6baaf.txt:253:37: Warning: Integer Overflow.\n        else if (block.timestamp <= startline + 60 days\nInteger Overflow occurs if:\n    startline = 115792089237316195423570985008687907853269984665640564039457584007913128604547\n    zeroAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    buyer = 1461501637330902918203684832716283019655932542975\n    paused = 0", 
+   "./restContracts/0xa245b449bd43ad363f81f18fd3c2b33f47c6baaf.txt:251:37: Warning: Integer Overflow.\n        else if (block.timestamp <= startline + 46 days\nInteger Overflow occurs if:\n    startline = 115792089237316195423570985008687907853269984665640564039457584007913127998336\n    zeroAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    buyer = 1461501637330902918203684832716283019655932542975\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.9"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x299877687fd17ff592a5b443655eb565f7aadc7b.txt:795:3: Warning: Integer Underflow.\n  string public name = \"OMToken\"", 
+   "./uniqueContractSourceCode/0x299877687fd17ff592a5b443655eb565f7aadc7b.txt:797:3: Warning: Integer Underflow.\n  string public symbol = \"OMT\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.2"
+}

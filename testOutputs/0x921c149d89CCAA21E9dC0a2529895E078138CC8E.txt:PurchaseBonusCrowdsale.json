@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:747:16: Warning: Integer Overflow.\n        return bonus.bonus\nInteger Overflow occurs if:\n    bonuses[0] = 57896044618658097711785492504343953926634426255680390177491648566972897034240\n    value = 0\n    bonuses[0].limit = 0", 
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:659:12: Warning: Integer Overflow.\n    delete bonuses[number]\nInteger Overflow occurs if:\n    bonuses.length = 32\n    number = 30\n    owner = 0", 
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:681:27: Warning: Integer Overflow.\n    Bonus storage bonus = bonuses[number]\nInteger Overflow occurs if:\n    bonuses.length = 32\n    number = 30\n    owner = 0", 
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:647:5: Warning: Integer Overflow.\n    bonuses.push(Bonus(limit, bonus))\nInteger Overflow occurs if:\n    bonuses.push(Bonus(limit, bonus)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:751:23: Warning: Integer Overflow.\n        targetBonus = bonus.bonus\nInteger Overflow occurs if:\n    bonuses[0] = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    value = 0\n    bonuses[0].limit = 0", 
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:633:3: Warning: Integer Overflow.\n  Bonus[] public bonuses", 
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:743:29: Warning: Integer Overflow.\n      Bonus storage bonus = bonuses[i - 1]\nInteger Overflow occurs if:\n    bonuses[0] = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    value = 0\n    bonuses[0].limit = 0", 
+   "./restContracts/0x921c149d89CCAA21E9dC0a2529895E078138CC8E.txt:687:5: Warning: Integer Overflow.\n    bonus.bonus\nInteger Overflow occurs if:\n    bonuses.length = 115792089237316195423570985008687907853269984665639326099418298627638230515711\n    number = 254\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.8"
+}

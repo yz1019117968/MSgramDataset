@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:491:5: Warning: Integer Overflow.\n    address[] public pendingInvestContracts = [0x0]", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:833:56: Warning: Integer Overflow.\n        InvestContract investContract = InvestContract(pendingInvestContracts[index]\nInteger Overflow occurs if:\n    pendingInvestContractsIndices[msg.sender] = 1\n    pendingInvestContracts.length = 2", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:497:5: Warning: Integer Overflow.\n    address[] public investContracts = [0x0]", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:811:9: Warning: Integer Overflow.\n        pendingInvestContracts.push(investContract)\nInteger Overflow occurs if:\n    sealTimestamp = 0\n    _etherAmount = 0\n    minimalInvestment = 0\n    operator = 0", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:553:5: Warning: Integer Overflow.\n    Milestone[] public milestones", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:477:1: Warning: Integer Overflow.\ncontract ICOContract {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    sealTimestamp = 0\n    _etherAmount = 0\n    minimalInvestment = 0\n    operator = 0", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:721:5: Warning: Integer Overflow.\n    function finishMilestone(string _results) only(operator) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _results = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:673:5: Warning: Integer Overflow.\n    function editMilestone(uint _id, uint _etherAmount, uint _tokenAmount, uint _startTime, uint _duration, string _description, string _results) \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _description = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:641:5: Warning: Integer Overflow.\n    function addMilestone(uint _etherAmount, uint _tokenAmount, uint _startTime, uint _duration, string _description, string _result)        \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _description = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5890301587c4f9099d5ed4041cfc4bff332357a9.txt:553:5: Warning: Integer Underflow.\n    Milestone[] public milestones"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.5"
+}

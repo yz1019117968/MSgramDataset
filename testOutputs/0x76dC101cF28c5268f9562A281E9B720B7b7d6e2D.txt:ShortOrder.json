@@ -1,0 +1,38 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:689:12: Warning: Integer Overflow.\n    return orderRecord[tokenUserSender[1]][orderHash].shortBalance", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:391:41: Warning: Integer Overflow.\n    uint couponAmount = safeDiv(safeMul(orderRecord[tokenUser[1]][orderHash].longBalance\nInteger Overflow occurs if:\n    orderRecord[msg.sender][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:341:70: Warning: Integer Overflow.\n    orderRecord[sellerShort[1]][hashRS[0]].longBalance[msg.sender] = orderRecord[sellerShort[1]][hashRS[0]].longBalance", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:77:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    orderRecord[tokenUser[1]][orderHash].coupon = 1\n    orderRecord[tokenUser[1]][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    admin = 0", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:305:76: Warning: Integer Overflow.\n    orderRecord[tokenUser[1]][orderHash].longBalance[msg.sender] = safeAdd(orderRecord[tokenUser[1]][orderHash].longBalance\nInteger Overflow occurs if:\n    orderRecord[msg.sender][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    orderRecord[tokenUser[1]][orderHash].coupon = 0", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:591:12: Warning: Integer Overflow.\n    return orderRecord[_creator][orderHash].shortBalance", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:343:5: Warning: Integer Overflow.\n    orderRecord[sellerShort[1]][hashRS[0]].longBalance", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:465:72: Warning: Integer Overflow.\n    admin.transfer(safeAdd(orderRecord[tokenUser[1]][orderHash].coupon,orderRecord[tokenUser[1]][orderHash].balance\nInteger Overflow occurs if:\n    admin = 0", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:571:60: Warning: Integer Overflow.\n    orderRecord[tokenUser[1]][orderHash].balance = safeSub(orderRecord[tokenUser[1]][orderHash].balance\nInteger Overflow occurs if:\n    orderRecord[tokenUser[1]][orderHash].balance = 0", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:209:5: Warning: Integer Overflow.\n    orderRecord[msg.sender][orderHash].shortBalance\nInteger Overflow occurs if:\n    orderRecord[msg.sender][orderHash].shortBalance = 86843903012151563029709579345498201800631462889799172925065680790904876580864\n    orderRecord[msg.sender][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    orderRecord[msg.sender][orderHash].tokenDeposit = 0", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:209:63: Warning: Integer Overflow.\n    orderRecord[msg.sender][orderHash].shortBalance = safeAdd(orderRecord[msg.sender][orderHash].shortBalance\nInteger Overflow occurs if:\n    orderRecord[msg.sender][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    orderRecord[msg.sender][orderHash].tokenDeposit = 0", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:393:8: Warning: Integer Overflow.\n    if(orderRecord[msg.sender][orderHash].tokenDeposit\nInteger Overflow occurs if:\n    orderRecord[msg.sender][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:599:12: Warning: Integer Overflow.\n    return orderRecord[creatorUser[0]][orderHash].longBalance", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:615:12: Warning: Integer Overflow.\n    return orderRecord[_creator][orderHash].tokenDeposit", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:583:12: Warning: Integer Overflow.\n    return orderRecord[_creator][orderHash].balance", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:211:5: Warning: Integer Overflow.\n    orderRecord[msg.sender][orderHash].tokenDeposit\nInteger Overflow occurs if:\n    orderRecord[msg.sender][orderHash].shortBalance = 86843903012151563029709579345498201800631462889799172925065680790904876580864\n    orderRecord[msg.sender][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    orderRecord[msg.sender][orderHash].tokenDeposit = 0", 
+   "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:341:5: Warning: Integer Overflow.\n    orderRecord[sellerShort[1]][hashRS[0]].longBalance"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:519:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(orderRecord[msg.sender][orderHash].coupon)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x76dC101cF28c5268f9562A281E9B720B7b7d6e2D.txt:339:5: Warning: Transaction-Ordering Dependency.\n    sellerShort[0].transfer(amountNonceExpiry[0])"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.8"
+}

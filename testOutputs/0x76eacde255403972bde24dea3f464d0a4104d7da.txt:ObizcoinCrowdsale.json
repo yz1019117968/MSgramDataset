@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:451:13: Warning: Timestamp Dependency.\n        if (block.timestamp >= time0 && block.timestamp < time1", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:441:9: Warning: Timestamp Dependency.\n        require(!hasEnded())", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:455:14: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time3 && block.timestamp < time4) tokens = weiAmount.mul(9000);\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:455:18: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time3 && block.timestamp < time4", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:453:18: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time1 && block.timestamp < time2", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:459:18: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time5 && block.timestamp < time6", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:533:16: Warning: Timestamp Dependency.\n        return block.timestamp < time0 || (block.timestamp > time2 && block.timestamp < time3)", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:459:14: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time5 && block.timestamp < time6) tokens = weiAmount.mul(7000);\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:451:9: Warning: Timestamp Dependency.\n        if (block.timestamp >= time0 && block.timestamp < time1) tokens = weiAmount.mul(11000);\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:457:18: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time4 && block.timestamp < time5", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:461:14: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time6 && block.timestamp < time7) tokens = weiAmount.mul(6000)", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:453:14: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time1 && block.timestamp < time2) tokens = weiAmount.mul(10000);\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:533:16: Warning: Timestamp Dependency.\n        return block.timestamp < time0 || (block.timestamp > time2 && block.timestamp < time3) || block.timestamp > time7", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:457:14: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time4 && block.timestamp < time5) tokens = weiAmount.mul(8000);\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:461:18: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time6 && block.timestamp < time7", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:533:44: Warning: Timestamp Dependency.\n        return block.timestamp < time0 || (block.timestamp > time2 && block.timestamp < time3"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:543:5: Warning: Integer Overflow.\n    address[] public holders", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:595:1: Warning: Integer Overflow.\ncontract ObizcoinCrowdsale is Crowdsale {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    isHolder[newHolder] = 0\n    time6 = 1\n    time5 = 1\n    time4 = 1\n    time3 = 1\n    time1 = 1\n    time0 = 1\n    owner = 0\n    tokens = 0", 
+   "./uniqueContractSourceCode/0x76eacde255403972bde24dea3f464d0a4104d7da.txt:551:13: Warning: Integer Overflow.\n            holders.push(newHolder)\nInteger Overflow occurs if:\n    isHolder[newHolder] = 0\n    time6 = 1\n    time5 = 1\n    time4 = 1\n    time3 = 1\n    time1 = 1\n    time0 = 1\n    owner = 0\n    tokens = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.8"
+}

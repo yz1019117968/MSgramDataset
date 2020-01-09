@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:909:6: Warning: Integer Overflow.\n     function getGoldTransaction(string _userId, uint _index) public constant returns(int) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:893:6: Warning: Integer Overflow.\n     function getGoldTransactionsCount(string _userId) public constant returns (uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:1205:5: Warning: Integer Overflow.\n    function transferGoldFromHotWallet(address _to, uint _value, string _userId) onlyCreator public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:809:6: Warning: Integer Overflow.\n     function addDoc(string _ipfsDocLink) public onlyCreator returns(uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _ipfsDocLink = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:841:6: Warning: Integer Overflow.\n     function addFiatTransaction(string _userId, int _amountCents) public onlyCreator returns(uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:99:6: Warning: Integer Overflow.\n     function stringToBytes64(string s) constant returns(bytes32,bytes32){\r\n     ^\nSpanning multiple lines.", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:865:6: Warning: Integer Overflow.\n     function getFiatTransaction(string _userId, uint _index) public constant returns(int) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:917:6: Warning: Integer Overflow.\n     function getUserHotGoldBalance(string _userId) public constant returns(uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:927:6: Warning: Integer Overflow.\n     function addBuyTokensRequest(string _userId, string _requestHash) public returns(uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:937:6: Warning: Integer Overflow.\n     function addSellTokensRequest(string _userId, string _requestHash) public returns(uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:849:6: Warning: Integer Overflow.\n     function getFiatTransactionsCount(string _userId) public constant returns (uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:83:6: Warning: Integer Overflow.\n     function stringToBytes32(string s) constant returns(bytes32){\r\n     ^\nSpanning multiple lines.", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:1189:5: Warning: Integer Overflow.\n    function processInternalRequest(string _userId, bool _isBuy, uint _amountCents, uint _centsPerGold) onlyCreator public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:873:6: Warning: Integer Overflow.\n     function getUserFiatBalance(string _userId) public constant returns(uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:885:6: Warning: Integer Overflow.\n     function addGoldTransaction(string _userId, int _amount) public onlyCreator returns(uint) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _userId = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "32.1"
+}

@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x9a33a92b408b07d3be90e9828731b21a7d794af4.txt:271:22: Warning: Callstack Depth Attack Vulnerability.\n            result = dest.call(calldata)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9a33a92b408b07d3be90e9828731b21a7d794af4.txt:129:5: Warning: Integer Overflow.\n    function receiveApproval(address from, uint256 value, address token, bytes extraData) public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9a33a92b408b07d3be90e9828731b21a7d794af4.txt:259:5: Warning: Integer Overflow.\n    function proxy(address dest, HowToCall howToCall, bytes calldata)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9a33a92b408b07d3be90e9828731b21a7d794af4.txt:301:5: Warning: Integer Overflow.\n    function proxyAssert(address dest, HowToCall howToCall, bytes calldata)\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "39.7"
+}

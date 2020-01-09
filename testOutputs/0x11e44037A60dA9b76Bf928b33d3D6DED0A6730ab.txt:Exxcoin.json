@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x11e44037A60dA9b76Bf928b33d3D6DED0A6730ab.txt:665:3: Warning: Callstack Depth Attack Vulnerability.\n\t\t_to.send(_tokens)", 
+   "./uniqueContractSourceCode/0x11e44037A60dA9b76Bf928b33d3D6DED0A6730ab.txt:677:3: Warning: Callstack Depth Attack Vulnerability.\n\t\t_to.send(_tokens)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x11e44037A60dA9b76Bf928b33d3D6DED0A6730ab.txt:493:2: Warning: Integer Underflow.\n\tstring  public name        = \"Exxcoin\"", 
+   "./uniqueContractSourceCode/0x11e44037A60dA9b76Bf928b33d3D6DED0A6730ab.txt:495:5: Warning: Integer Underflow.\n    string  public symbol      = \"EXX\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.2"
+}

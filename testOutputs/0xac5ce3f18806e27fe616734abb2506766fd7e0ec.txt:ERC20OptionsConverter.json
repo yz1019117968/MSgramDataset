@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:749:5: Warning: Integer Overflow.\n    balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 91737424729988318453464752782150505591656384025060616430690990249528669175001\n    _value = 55470250847135623623496904566998602904930363708864891586893958795334840503989\n    balances[msg.sender] = 55470250847135623623496904566998602904930363708864891586893958795334840503989\n    optionsConversionDeadline = 4294901759\n    mockNow = 4294901759"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.2"
+}

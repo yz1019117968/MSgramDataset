@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:451:9: Warning: Timestamp Dependency.\n        require(now >= defaultTriggerTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:401:5: Warning: Integer Overflow.\n    function setRecipientString(string _string)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _string = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:305:9: Warning: Integer Overflow.\n        amountBurned += amount\nInteger Overflow occurs if:\n    amountBurned = 85653202831209899131921273706816539903532775246499121721910781021549923541581\n    state = 1\n    amount = 102265108473332165002814896571004827370864558958382085930706369379314096406528\n    payer = 0", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:269:13: Warning: Integer Overflow.\n            amountDeposited += msg.value\nInteger Overflow occurs if:\n    amountDeposited = 81880581632346154447501837939361325137171606057055576954786980028302474543500\n    state = 0\n    commitThreshold = 89162027706898390595631771814162138919675603842725975525052370684927041841647", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:385:5: Warning: Integer Overflow.\n    function setPayerString(string _string)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _string = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:285:34: Warning: Integer Overflow.\n            defaultTriggerTime = now + defaultTimeoutLength\nInteger Overflow occurs if:\n    defaultAction = 1\n    state = 0\n    defaultTimeoutLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    commitThreshold = 0", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:431:30: Warning: Integer Overflow.\n        defaultTriggerTime = now + defaultTimeoutLength\nInteger Overflow occurs if:\n    defaultAction = 1\n    state = 1\n    defaultTimeoutLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    payer = 0", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:219:9: Warning: Integer Overflow.\n        amountDeposited += msg.value\nInteger Overflow occurs if:\n    amountDeposited = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    payer = 0", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:351:9: Warning: Integer Overflow.\n        amountReleased += amount\nInteger Overflow occurs if:\n    amountReleased = 85653202831209899131921273706816539903532775246499121721910781021549923541581\n    state = 1\n    amount = 102265108473332165002814896571004827370864558958382085930706369379314096406528\n    payer = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:65:5: Warning: Integer Underflow.\n    string public recipientString", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:199:9: Warning: Integer Underflow.\n        return (state, payerString, recipient, recipientString, amountDeposited, amountBurned, amountReleased, defaultTriggerTime)\nInteger Underflow occurs if:\n    return (state, payerString, recipient, recipientString, amountDeposited, amountBurned, amountReleased, defaultTriggerTime) = 1", 
+   "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:63:5: Warning: Integer Underflow.\n    string public payerString"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:347:9: Warning: Transaction-Ordering Dependency.\n        recipient.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x711e10146e6c00f18e2805cf165d9bc5644b9dbe.txt:301:9: Warning: Transaction-Ordering Dependency.\n        burnAddress.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.3"
+}

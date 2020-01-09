@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa2772a351e984d0582ad80a8ba8863489939f6db.txt:355:13: Warning: Integer Overflow.\n            balances[_to]   += _value\nInteger Overflow occurs if:\n    balances[_from] = 91359565244205764494046440865162277347879156196197679177336098787923376209370\n    _value = 71764935798320434104384534647932231174846423889823000397610551275857649071101\n    balances[_to] = 92557293097667432832564632293208054189863917009912897853271905237461864014593\n    allowances[_from][msg.sender] = 91359565244205764494046440865162277347879156196197679177336098787923376209371", 
+   "./restContracts/0xa2772a351e984d0582ad80a8ba8863489939f6db.txt:381:9: Warning: Integer Overflow.\n        allowances[msg.sender][_spender] += _value\nInteger Overflow occurs if:\n    allowances[msg.sender][_spender] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2772a351e984d0582ad80a8ba8863489939f6db.txt:311:13: Warning: Integer Overflow.\n            balances[_to]        += _value\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa2772a351e984d0582ad80a8ba8863489939f6db.txt:215:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xa2772a351e984d0582ad80a8ba8863489939f6db.txt:213:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.6"
+}

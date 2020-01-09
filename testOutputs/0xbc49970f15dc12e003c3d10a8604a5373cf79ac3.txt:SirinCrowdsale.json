@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:1935:25: Warning: Integer Overflow.\n            token.issue(presaleGranteesMapKeys[i]\nInteger Overflow occurs if:\n    presaleGranteesMapKeys.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 0\n    isFinalized = 0\n    owner = 0", 
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:55:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    fiatRaisedConvertedToWei = 1\n    weiRaised = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:2117:41: Warning: Integer Overflow.\n        presaleGranteesMapKeys[index] = presaleGranteesMapKeys[presaleGranteesMapKeys.length - 1]\nInteger Overflow occurs if:\n    presaleGranteesMapKeys.length = 2\n    presaleGranteesMapKeys[i] = 0\n    presaleGranteesMapKeys[i] = 0\n    presaleGranteesMap[_grantee] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 1\n    startTime = 0\n    owner = 0", 
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:1767:5: Warning: Integer Overflow.\n    address[] public presaleGranteesMapKeys", 
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:2119:16: Warning: Integer Overflow.\n        delete presaleGranteesMapKeys[presaleGranteesMapKeys.length - 1]\nInteger Overflow occurs if:\n    presaleGranteesMapKeys.length = 57896044618658097711785492504343953926464851149359812787997104700240680714240\n    presaleGranteesMapKeys[i] = 1461501637330902918203684832716283019655932542975\n    presaleGranteesMapKeys[i] = 0\n    presaleGranteesMap[_grantee] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 1\n    startTime = 0\n    owner = 0", 
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:2107:17: Warning: Integer Overflow.\n            if (presaleGranteesMapKeys[i]\nInteger Overflow occurs if:\n    presaleGranteesMapKeys.length = 115792089237316195398462578067141184797926826972809898375048162230056991588351\n    presaleGranteesMapKeys[i] = 0\n    presaleGranteesMap[_grantee] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 1\n    startTime = 0\n    owner = 0", 
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:2117:9: Warning: Integer Overflow.\n        presaleGranteesMapKeys[index]\nInteger Overflow occurs if:\n    presaleGranteesMapKeys.length = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    presaleGranteesMapKeys[i] = 1461501637330902918203684832716283019655932542975\n    presaleGranteesMapKeys[i] = 0\n    presaleGranteesMap[_grantee] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 1\n    startTime = 0\n    owner = 0", 
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:1673:1: Warning: Integer Overflow.\ncontract SirinCrowdsale is FinalizableCrowdsale {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    presaleGranteesMapKeys.length = 1\n    presaleGranteesMapKeys[i] = 0\n    presaleGranteesMap[_grantee] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 1\n    startTime = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:2117:64: Warning: Integer Underflow.\n        presaleGranteesMapKeys[index] = presaleGranteesMapKeys[presaleGranteesMapKeys.length - 1\nInteger Underflow occurs if:\n    presaleGranteesMap[_grantee] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 1\n    startTime = 0\n    owner = 0\n    presaleGranteesMapKeys.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.4"
+}

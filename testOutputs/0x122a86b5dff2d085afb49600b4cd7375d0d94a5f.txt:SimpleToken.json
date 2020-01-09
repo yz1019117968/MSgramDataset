@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x122a86b5dff2d085afb49600b4cd7375d0d94a5f.txt:307:3: Warning: Integer Underflow.\n  string public symbol = \"ITL\"", 
+   "./uniqueContractSourceCode/0x122a86b5dff2d085afb49600b4cd7375d0d94a5f.txt:305:3: Warning: Integer Underflow.\n  string public name = \"ITL (Italian Lira)\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.5"
+}

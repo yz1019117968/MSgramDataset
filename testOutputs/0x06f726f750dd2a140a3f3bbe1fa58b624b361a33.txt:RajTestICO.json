@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:589:9: Warning: Timestamp Dependency.\n        require(endsAt < now)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:421:5: Warning: Integer Underflow.\n    string public state = \"Pre ICO\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:403:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:601:9: Warning: Transaction-Ordering Dependency.\n        receiver.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.0"
+}

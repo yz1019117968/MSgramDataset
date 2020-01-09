@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x85089389C14Bd9c77FC2b8F0c3d1dC3363Bf06Ef.txt:291:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) lockAffected public returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x85089389C14Bd9c77FC2b8F0c3d1dC3363Bf06Ef.txt:133:5: Warning: Integer Overflow.\n    function lockUntil(uint256 _untilBlock, string _reason) onlyOwner public {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x85089389C14Bd9c77FC2b8F0c3d1dC3363Bf06Ef.txt:207:5: Warning: Integer Underflow.\n    string public standard", 
+   "./restContracts/0x85089389C14Bd9c77FC2b8F0c3d1dC3363Bf06Ef.txt:209:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x85089389C14Bd9c77FC2b8F0c3d1dC3363Bf06Ef.txt:211:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.5"
+}

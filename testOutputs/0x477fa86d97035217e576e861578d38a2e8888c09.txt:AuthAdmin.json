@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x477fa86d97035217e576e861578d38a2e8888c09.txt:85:9: Warning: Integer Overflow.\n        users_array.push(_address)\nInteger Overflow occurs if:\n    users_array.push(_address) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    user_addresses[_address] = 0\n    admin_addresses[_address] = 255", 
+   "./uniqueContractSourceCode/0x477fa86d97035217e576e861578d38a2e8888c09.txt:5:1: Warning: Integer Overflow.\ncontract AuthAdmin {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    users_array.push(_address) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    user_addresses[_address] = 0\n    admin_addresses[_address] = 255", 
+   "./uniqueContractSourceCode/0x477fa86d97035217e576e861578d38a2e8888c09.txt:53:9: Warning: Integer Overflow.\n        admins_array.push(_address)\nInteger Overflow occurs if:\n    admins_array.push(_address) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    admin_addresses[_address] = 0\n    admin_addresses[_address] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.7"
+}

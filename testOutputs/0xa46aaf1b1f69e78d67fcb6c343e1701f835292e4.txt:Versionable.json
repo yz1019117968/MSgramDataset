@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:25:16: Warning: Integer Overflow.\n        return bytes(versionCode)[index]\nInteger Overflow occurs if:\n    index = 39614081257132168796771975166"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:25:16: Warning: Integer Underflow.\n        return bytes(versionCode)[index]", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:19:5: Warning: Integer Underflow.\n    string public versionCode", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:33:16: Warning: Integer Underflow.\n        return bytes(versionCode).length"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "52.4"
+}

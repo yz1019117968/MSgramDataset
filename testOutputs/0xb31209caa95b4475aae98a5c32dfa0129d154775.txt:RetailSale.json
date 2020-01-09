@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb31209caa95b4475aae98a5c32dfa0129d154775.txt:181:19: Warning: Timestamp Dependency.\n        require(!(now >= periodStart && now <= periodEnd", 
+   "./restContracts/0xb31209caa95b4475aae98a5c32dfa0129d154775.txt:181:9: Warning: Timestamp Dependency.\n        require(!(now >= periodStart && now <= periodEnd))"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb31209caa95b4475aae98a5c32dfa0129d154775.txt:361:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xb31209caa95b4475aae98a5c32dfa0129d154775.txt:361:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.4"
+}

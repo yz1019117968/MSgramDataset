@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5fb3D432bae33FCd418edE263D98D7440E7fA3ea.txt:249:3: Warning: Integer Overflow.\n  function addPresaleContributors(address[] _presaleContributors) onlyOwner {     \r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _presaleContributors = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5fb3D432bae33FCd418edE263D98D7440E7fA3ea.txt:447:29: Warning: Integer Overflow.\n        if (_blockNumber >= blocksInWeek * 2 + startBlock\nInteger Overflow occurs if:\n    icoHasSucessfulyEnded = 128\n    startBlock = 115792089237316195423570985008687907853269984665640525353831356339779539042305\n    blocksInWeek = 57896044618658097711785492504343953926634992332820243334102564335822974222335\n    maxEthToRaise = 1\n    totalEthRaised = 1\n    participantContribution[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endBlock = 115792089237316195423570985008687907853269984665640525353831356339779539042303"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5fb3D432bae33FCd418edE263D98D7440E7fA3ea.txt:189:30: Warning: Integer Underflow.\n      uint maxContribution = maxEthToRaise - totalEthRaised\nInteger Underflow occurs if:\n    icoHasSucessfulyEnded = 128\n    maxEthToRaise = 32766\n    totalEthRaised = 57896044618658097711785492504343953926634992332820282019728792003956564787200\n    endBlock = 0\n    participantContribution[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5fb3D432bae33FCd418edE263D98D7440E7fA3ea.txt:197:23: Warning: Integer Underflow.\n      uint toReturn = msg.value - maxContribution\nInteger Underflow occurs if:\n    icoHasSucessfulyEnded = 128\n    maxEthToRaise = 302231454903657293676575\n    totalEthRaised = 57896044618658097711785492504343953926634992332820281717497265042705233215487\n    startBlock = 0\n    presaleContributorAllowance[msg.sender] = 0\n    blocksInWeek = 1\n    endBlock = 0\n    participantContribution[msg.sender] = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5fb3D432bae33FCd418edE263D98D7440E7fA3ea.txt:389:9: Warning: Transaction-Ordering Dependency.\n    if (multisigAddress.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5fb3D432bae33FCd418edE263D98D7440E7fA3ea.txt:229:10: Warning: Transaction-Ordering Dependency.\n    if (!msg.sender.send(ethContributed)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.0"
+}

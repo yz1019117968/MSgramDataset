@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:611:9: Warning: Re-Entrancy Vulnerability.\n    if (destination.call.value(value)(data)"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:609:3: Warning: Integer Overflow.\n  function execute(address destination, uint value, bytes data) external isAllowed {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:611:9: Warning: Integer Overflow.\n    if (destination.call.value(value)(data)", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:613:7: Warning: Integer Overflow.\n      Execution(destination, value, data)\nInteger Overflow occurs if:\n    value = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:613:7: Warning: Integer Underflow.\n      Execution(destination, value, data)\nInteger Underflow occurs if:\n    value = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:611:9: Warning: Integer Underflow.\n    if (destination.call.value(value)(data)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

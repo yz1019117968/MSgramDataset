@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x833d404fc58ea23fe8be63130bdb2d1806843517.txt:827:9: Warning: Integer Overflow.\n        whitelistLength++\nInteger Overflow occurs if:\n    whitelistLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whitelist[_wallet] = 0\n    _wallet = 1461501637330902918203684832716283019655932542975\n    addressApi = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x833d404fc58ea23fe8be63130bdb2d1806843517.txt:851:9: Warning: Integer Underflow.\n        whitelistLength--\nInteger Underflow occurs if:\n    whitelistLength = 0\n    whitelist[_wallet] = 255\n    _wallet = 1461501637330902918203684832716283019655932542975\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

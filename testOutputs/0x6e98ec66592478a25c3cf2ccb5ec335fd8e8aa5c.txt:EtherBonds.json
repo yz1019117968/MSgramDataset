@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:319:5: Warning: Integer Overflow.\n    mapping(uint32 => Bond) public Bonds", 
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:1107:26: Warning: Integer Overflow.\n        var bond = Bonds[Users[msg.sender].bonds", 
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:861:9: Warning: Integer Overflow.\n        bond.sellingPrice", 
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:945:9: Warning: Integer Overflow.\n        bond.sellingPrice\nInteger Overflow occurs if:\n    sellingPrice = 0\n    MinNominalBondPrice = 0", 
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:869:9: Warning: Integer Overflow.\n        user.bonds", 
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:981:9: Warning: Integer Overflow.\n        bond.sellingPrice", 
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:1151:5: Warning: Integer Overflow.\n    function AdmChange_README(string value) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:191:5: Warning: Integer Underflow.\n    string public README = \"STATUS_OK\"", 
+   "./uniqueContractSourceCode/0x6e98ec66592478a25c3cf2ccb5ec335fd8e8aa5c.txt:395:9: Warning: Integer Underflow.\n        readme = README"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.0"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x0c90eac84c64f67aae9ed41492e018036ac29549.txt:473:9: Warning: Timestamp Dependency.\n        if (now < lock.releaseTime) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0c90eac84c64f67aae9ed41492e018036ac29549.txt:207:5: Warning: Integer Overflow.\n    function withdrawnTokens(address[] tokens, address _to) onlyContractOwner returns(uint) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.0"
+}

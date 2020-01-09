@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x168296bb09e24a88805cb9c33356536b980d3fc5.txt:173:5: Warning: Integer Underflow.\n    string public symbol = \"RHOC\"", 
+   "./uniqueContractSourceCode/0x168296bb09e24a88805cb9c33356536b980d3fc5.txt:171:5: Warning: Integer Underflow.\n    string public name = \"RHOC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.9"
+}

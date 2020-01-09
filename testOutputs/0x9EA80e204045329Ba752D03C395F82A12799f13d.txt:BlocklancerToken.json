@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9EA80e204045329Ba752D03C395F82A12799f13d.txt:685:17: Warning: Integer Overflow.\n             && balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    funding = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9EA80e204045329Ba752D03C395F82A12799f13d.txt:501:48: Warning: Integer Underflow.\n        if((msg.value  * getExchangeRate()) > (tokenCreationCap - totalTokens\nInteger Underflow occurs if:\n    fundingStart = 3\n    fundingEnd = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    totalTokens = 1000000000000000000000000001\n    funding = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.1"
+}

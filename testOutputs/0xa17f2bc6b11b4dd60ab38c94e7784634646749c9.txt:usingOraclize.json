@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa17f2bc6b11b4dd60ab38c94e7784634646749c9.txt:421:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa17f2bc6b11b4dd60ab38c94e7784634646749c9.txt:415:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.6"
+}

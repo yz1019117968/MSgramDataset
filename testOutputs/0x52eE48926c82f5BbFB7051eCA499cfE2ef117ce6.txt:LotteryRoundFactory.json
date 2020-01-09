@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:1131:5: Warning: Integer Overflow.\n    LotteryRoundCreated(address(newRound), VERSION)\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:1065:3: Warning: Integer Underflow.\n  string public VERSION = '0.1.2'", 
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:1131:5: Warning: Integer Underflow.\n    LotteryRoundCreated(address(newRound), VERSION)\nInteger Underflow occurs if:\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:89:10: Warning: Transaction-Ordering Dependency.\n    if (!owner.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:73:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "14.3"
+}

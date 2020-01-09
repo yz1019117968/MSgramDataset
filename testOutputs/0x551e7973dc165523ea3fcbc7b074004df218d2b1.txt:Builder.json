@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:215:16: Warning: Integer Overflow.\n        return sender_contracts[sender_contracts.length - 1]", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:275:5: Warning: Integer Overflow.\n    function setSecurityCheck(string _uri) onlyOwner\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:199:5: Warning: Integer Overflow.\n    mapping(address => address[]) public getContractsOf"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:215:33: Warning: Integer Underflow.\n        return sender_contracts[sender_contracts.length - 1", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:263:5: Warning: Integer Underflow.\n    string public securityCheckURI"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.3"
+}

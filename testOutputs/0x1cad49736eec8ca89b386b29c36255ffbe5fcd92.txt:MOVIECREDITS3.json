@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1cad49736eec8ca89b386b29c36255ffbe5fcd92.txt:241:2: Warning: Integer Underflow.\n string  public symbol = \"EMVC\"", 
+   "./uniqueContractSourceCode/0x1cad49736eec8ca89b386b29c36255ffbe5fcd92.txt:239:2: Warning: Integer Underflow.\n string  public name = \"MOVIECREDITS (EMVC)\"", 
+   "./uniqueContractSourceCode/0x1cad49736eec8ca89b386b29c36255ffbe5fcd92.txt:247:1: Warning: Integer Underflow.\nstring public version = 'EMVC3.0'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.1"
+}

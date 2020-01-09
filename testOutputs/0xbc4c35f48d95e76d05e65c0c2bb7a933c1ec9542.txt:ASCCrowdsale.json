@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:131:9: Warning: Timestamp Dependency.\n        if(now > 1517439600 && now < 1518649200) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:107:12: Warning: Timestamp Dependency.\n        if(now > startDate && now < 1516230000", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:119:9: Warning: Timestamp Dependency.\n        if(now > 1516230000 && now < 1517439600) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:107:9: Warning: Timestamp Dependency.\n        if(now > startDate && now < 1516230000) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:143:9: Warning: Timestamp Dependency.\n        if(now > 1518649200 && now < 1519858800) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:131:12: Warning: Timestamp Dependency.\n        if(now > 1517439600 && now < 1518649200", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:119:12: Warning: Timestamp Dependency.\n        if(now > 1516230000 && now < 1517439600", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:143:12: Warning: Timestamp Dependency.\n        if(now > 1518649200 && now < 1519858800", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:97:9: Warning: Timestamp Dependency.\n        require(now > startDate)", 
+   "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:99:9: Warning: Timestamp Dependency.\n        require(now < endDate)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:157:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0xbc4c35f48d95e76d05e65c0c2bb7a933c1ec9542.txt:87:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.0"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x36fc2821c1dba31ed04682b2277c89f33fd885b7.txt:261:3: Warning: Integer Overflow.\n  function upgrade(IApplication newContract, bytes data) public {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x36fc2821c1dba31ed04682b2277c89f33fd885b7.txt:197:34: Warning: Integer Underflow.\n      let result := delegatecall(sub(gas, 10000)\nInteger Underflow occurs if:\n    currentContract = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.7"
+}

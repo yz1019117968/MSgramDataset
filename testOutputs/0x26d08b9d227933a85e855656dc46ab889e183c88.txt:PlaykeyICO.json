@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x26d08b9d227933a85e855656dc46ab889e183c88.txt:175:22: Warning: Integer Underflow.\n    uint256 _step = (tokensForSale - presaleSold\nInteger Underflow occurs if:\n    icoState = 1461501637330902918203684832716283019655932542976\n    presaleSold = 60000000000000000000000001", 
+   "./uniqueContractSourceCode/0x26d08b9d227933a85e855656dc46ab889e183c88.txt:159:42: Warning: Integer Underflow.\n    uint256 _bonus = getBonus(_pktValue, pkt.totalSupply() - presaleSold\nInteger Underflow occurs if:\n    icoState = 1461501637330902918203684832716283019655932542976\n    presaleSold = 10894474682274239493831243662817379401261526446360622092269559273883068006401"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.7"
+}

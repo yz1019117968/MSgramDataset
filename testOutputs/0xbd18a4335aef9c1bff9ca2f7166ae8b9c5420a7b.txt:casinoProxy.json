@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:299:8: Warning: Timestamp Dependency.\n\t\telse if(closeAt < now) selfdestruct(owner)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:661:3: Warning: Integer Overflow.\n  function move(uint8 game, bytes data, uint8 v, bytes32 r, bytes32 s) public onlyAuthorized isAlive{\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:641:10: Warning: Integer Overflow.\n\t\tavgGas[casinoGames[game]\nInteger Overflow occurs if:\n    casinoGames[game] = 32\n    game = 30\n    owner = 0", 
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:369:3: Warning: Integer Overflow.\n  address[] public casinoGames", 
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:85:12: Warning: Integer Overflow.\n\t\tuint c = a + b\nInteger Overflow occurs if:\n    casinoGames.length = 6\n    balanceOf[player] = 57896044618658097711785492504343953926634992332186456719614677303208213217281\n    avgGas[msg.sender] = 1\n    gasPrice = 1\n    authorizedByUser[player][msg.sender] = 255\n    casinoGames[i] = 0\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:523:33: Warning: Integer Overflow.\n    if(game<casinoGames.length) casinoGames[game]\nInteger Overflow occurs if:\n    casinoGames.length = 32\n    game = 30\n    owner = 0", 
+   "./restContracts/0xbd18a4335aef9c1bff9ca2f7166ae8b9c5420a7b.txt:495:3: Warning: Integer Overflow.\n\t\tcount[receiver]++\nInteger Overflow occurs if:\n    count[receiver] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authorized[msg.sender] = 255\n    closeAt = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.0"
+}

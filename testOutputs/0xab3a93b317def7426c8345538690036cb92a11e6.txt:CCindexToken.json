@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:283:17: Warning: Integer Overflow.\n                lastIndex++\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 57896044726708508963725166057394559594760579255906496967348798980412752789502\n    balanceOf[_to] = 395605782569434035026604698797701227182884369773461629671369915357483499522\n    lastIndex = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    frozenAccount[msg.sender] = 0\n    indexes[_to] = 0", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:387:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    owner = 0", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:157:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:385:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:51:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:243:5: Warning: Integer Underflow.\n    string public tokenSymbol = \"T10\"", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:47:5: Warning: Integer Underflow.\n    string public standard = \"T10 1.0\"", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:241:5: Warning: Integer Underflow.\n    string public tokenName = \"CCindex10\"", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:277:17: Warning: Integer Underflow.\n                lastIndex--\nInteger Underflow occurs if:\n    balanceOf[_to] = 12333100880863922282125715613562361213333868498467712905561943429024790678603\n    lastIndex = 0\n    frozenAccount[msg.sender] = 0\n    balanceOf[msg.sender] = 96018576611034736664345009227763890215024570146130968329514748647031087524035", 
+   "./restContracts/0xab3a93b317def7426c8345538690036cb92a11e6.txt:49:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.4"
+}

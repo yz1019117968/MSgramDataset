@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8c2916ff8b7aafe08a62ed9e0e9d58f4e753ebe0.txt:369:5: Warning: Integer Underflow.\n    string public symbol = \"HCT\"", 
+   "./restContracts/0x8c2916ff8b7aafe08a62ed9e0e9d58f4e753ebe0.txt:367:5: Warning: Integer Underflow.\n    string public name = \"HOTCASH\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

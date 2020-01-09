@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x2cc572eA86ABcf75C113fE72752CAF0216c74837.txt:235:4: Warning: Timestamp Dependency.\n\t\t\trequire((now >= deadline) || (100*currentContractAllowance/initialContractAllowance <= 5))", 
+   "./uniqueContractSourceCode/0x2cc572eA86ABcf75C113fE72752CAF0216c74837.txt:277:4: Warning: Timestamp Dependency.\n\t\t\tif((now > reclaimForgottenEtherDeadline) && (msg.sender == beneficiary)) {\t//Reclaim forgotten ethers sub-function\r\n\t\t\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2cc572eA86ABcf75C113fE72752CAF0216c74837.txt:277:7: Warning: Timestamp Dependency.\n\t\t\tif((now > reclaimForgottenEtherDeadline) && (msg.sender == beneficiary)", 
+   "./uniqueContractSourceCode/0x2cc572eA86ABcf75C113fE72752CAF0216c74837.txt:235:12: Warning: Timestamp Dependency.\n\t\t\trequire((now >= deadline) || (100*currentContractAllowance/initialContractAllowance <= 5)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2cc572eA86ABcf75C113fE72752CAF0216c74837.txt:367:53: Warning: Integer Underflow.\n\tfunction name() public constant returns (string) { return name\nInteger Underflow occurs if:\n    return name = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2cc572eA86ABcf75C113fE72752CAF0216c74837.txt:311:5: Warning: Transaction-Ordering Dependency.\n\t\t\t\tmsg.sender.transfer(_etherAmount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2cc572eA86ABcf75C113fE72752CAF0216c74837.txt:311:5: Warning: Transaction-Ordering Dependency.\n\t\t\t\tmsg.sender.transfer(_etherAmount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.7"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5956e9888791e86baca2df137eb697156a2aa605.txt:65:13: Warning: Integer Overflow.\n        if (numOfCurrentEpoch * EPOCH_LENGTH + creationTime\nInteger Overflow occurs if:\n    creationTime = 1766847064778484763211063687635139888458255219538276595808717625844826880\n    tokenSwapLock = 0\n    numOfCurrentEpoch = 204601761936751971551493189864477982381495617789497902686126211013705442865"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5956e9888791e86baca2df137eb697156a2aa605.txt:87:10: Warning: Integer Underflow.\n        (numOfCurrentEpoch - 1\nInteger Underflow occurs if:\n    numOfCurrentEpoch = 0\n    creationTime = 0\n    tokenSwapLock = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.3"
+}

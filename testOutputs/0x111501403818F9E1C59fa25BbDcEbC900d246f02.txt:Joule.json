@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x111501403818F9E1C59fa25BbDcEbC900d246f02.txt:1403:9: Warning: Integer Underflow.\n        gas -= msg.gas", 
+   "./uniqueContractSourceCode/0x111501403818F9E1C59fa25BbDcEbC900d246f02.txt:1117:9: Warning: Integer Underflow.\n        length--\nInteger Underflow occurs if:\n    length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.8"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8069a35f91e92aead8e96c36a1117601f726b3d3.txt:1177:10: Warning: Timestamp Dependency.\n    else if (block.timestamp < startsAt) return State.PreFunding;\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.6"
+}

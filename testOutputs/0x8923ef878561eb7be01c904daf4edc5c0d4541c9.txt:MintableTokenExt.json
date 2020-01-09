@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:935:5: Warning: Integer Overflow.\n    function setReservedTokensListMultiple(address[] addrs, uint[] inTokens, uint[] inPercentageUnit, uint[] inPercentageDecimals) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:929:16: Warning: Integer Overflow.\n        return reservedTokensList[addr].inPercentageDecimals", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:847:1: Warning: Integer Overflow.\ncontract MintableTokenExt is StandardToken, Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:901:9: Warning: Integer Overflow.\n        reservedTokensDestinations.push(addr)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:921:16: Warning: Integer Overflow.\n        return reservedTokensList[addr].inPercentageUnit", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:891:5: Warning: Integer Overflow.\n    mapping (address => ReservedTokensData) public reservedTokensList", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:893:5: Warning: Integer Overflow.\n    address[] public reservedTokensDestinations", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:67:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.4"
+}

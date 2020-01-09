@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbc0f2fd3a3f5a625e23ec5dc07b49cf8ae1dac2b.txt:13:5: Warning: Integer Overflow.\n    function publishGraduatingClass(string cert) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cert = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbc0f2fd3a3f5a625e23ec5dc07b49cf8ae1dac2b.txt:29:9: Warning: Integer Underflow.\n        return certificate\nInteger Underflow occurs if:\n    return certificate = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.1"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:267:9: Warning: Integer Overflow.\n        balances[target] += mintedAmount\nInteger Overflow occurs if:\n    balances[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:161:12: Warning: Integer Overflow.\n        if(balances[to] + value\nInteger Overflow occurs if:\n    value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    frozenAccount[msg.sender] = 0", 
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:215:12: Warning: Integer Overflow.\n        if(balances[to] + value\nInteger Overflow occurs if:\n    value = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    balances[to] = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    frozenAccount[msg.sender] = 0", 
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:269:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:305:5: Warning: Integer Overflow.\n    function changeSymbol(string _symbol) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _symbol = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:295:5: Warning: Integer Overflow.\n    function changeName(string _name) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:221:9: Warning: Integer Underflow.\n        allowed[from][msg.sender] -= value\nInteger Underflow occurs if:\n    value = 34854167250581871405066246989256871414772772338490027241114662174608296847733\n    balances[to] = 57346295533576563428689019345578713683075960063462234266750547215274860937281\n    frozenAccount[msg.sender] = 0", 
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:87:5: Warning: Integer Underflow.\n    string  public symbol", 
+   "./restContracts/0x9653cFd0865ad8313BEA2f0C2EC0584BFd05115B.txt:85:5: Warning: Integer Underflow.\n    string  public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.5"
+}

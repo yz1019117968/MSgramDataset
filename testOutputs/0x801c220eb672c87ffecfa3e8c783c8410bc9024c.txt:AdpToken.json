@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x801c220eb672c87ffecfa3e8c783c8410bc9024c.txt:583:3: Warning: Integer Underflow.\n  string public name     = \"AdpToken\"", 
+   "./restContracts/0x801c220eb672c87ffecfa3e8c783c8410bc9024c.txt:585:3: Warning: Integer Underflow.\n  string public symbol   = \"ADP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.2"
+}

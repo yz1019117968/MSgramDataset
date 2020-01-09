@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x83f602311629f84929804b7e00adc67e17eda7fb.txt:185:5: Warning: Integer Overflow.\n    mapping(uint=>GodzBuyAccounts) public accountsHolding", 
+   "./restContracts/0x83f602311629f84929804b7e00adc67e17eda7fb.txt:309:13: Warning: Integer Overflow.\n            accountsHolding[index].sendGodz\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x83f602311629f84929804b7e00adc67e17eda7fb.txt:329:80: Warning: Integer Overflow.\n        return (accountsHolding[index].account, accountsHolding[index].amount, accountsHolding[index].sendGodz", 
+   "./restContracts/0x83f602311629f84929804b7e00adc67e17eda7fb.txt:329:17: Warning: Integer Overflow.\n        return (accountsHolding[index].account"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.7"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2ea41959c75bd4e8c8732f56dfa6c032a9d23cb0.txt:1157:23: Warning: Integer Underflow.\n    return milestones[milestoneCount-1\nInteger Underflow occurs if:\n    milestoneCount = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.4"
+}

@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x2ed86079b04a35402b473323927e7ea722e8057b.txt:571:9: Warning: Timestamp Dependency.\n        if ((preCrowdsaleStartTime == 0 || now < preCrowdsaleEndTime) && tokensSent != TOKEN_CAP) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2ed86079b04a35402b473323927e7ea722e8057b.txt:571:13: Warning: Timestamp Dependency.\n        if ((preCrowdsaleStartTime == 0 || now < preCrowdsaleEndTime) && tokensSent != TOKEN_CAP"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2ed86079b04a35402b473323927e7ea722e8057b.txt:543:31: Warning: Integer Overflow.\n        preCrowdsaleEndTime = now + PRE_CROWDSALE_DURATION\nInteger Overflow occurs if:\n    owner = 0\n    preCrowdsaleStartTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2ed86079b04a35402b473323927e7ea722e8057b.txt:579:14: Warning: Transaction-Ordering Dependency.\n        if (!preCrowdsaleOwner.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2ed86079b04a35402b473323927e7ea722e8057b.txt:579:14: Warning: Transaction-Ordering Dependency.\n        if (!preCrowdsaleOwner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.6"
+}

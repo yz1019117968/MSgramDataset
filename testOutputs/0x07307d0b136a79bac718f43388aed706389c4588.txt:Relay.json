@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x07307d0b136a79bac718f43388aed706389c4588.txt:2419:24: Warning: Callstack Depth Attack Vulnerability.\n                return contractAddress.call(abiSignature, data)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x07307d0b136a79bac718f43388aed706389c4588.txt:2411:9: Warning: Integer Overflow.\n        function relayCall(address contractAddress, bytes4 abiSignature, bytes data) public returns (bool) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "28.4"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6f7ad850ef94320cb88f5ae66e5eb8244e81c949.txt:241:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6f7ad850ef94320cb88f5ae66e5eb8244e81c949.txt:99:5: Warning: Integer Overflow.\n    function TokenERC20(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokenName = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6f7ad850ef94320cb88f5ae66e5eb8244e81c949.txt:61:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x6f7ad850ef94320cb88f5ae66e5eb8244e81c949.txt:185:19: Warning: Integer Underflow.\n            sell((minBalanceForAccounts - msg.sender.balance\nInteger Underflow occurs if:\n    minBalanceForAccounts = 1\n    frozenAccount[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x6f7ad850ef94320cb88f5ae66e5eb8244e81c949.txt:63:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.4"
+}

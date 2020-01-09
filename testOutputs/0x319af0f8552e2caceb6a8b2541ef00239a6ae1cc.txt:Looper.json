@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x319af0f8552e2caceb6a8b2541ef00239a6ae1cc.txt:33:24: Warning: Integer Underflow.\n    uint gasForLoops = gasLimit - _costSansLoops\nInteger Underflow occurs if:\n    _costSansLoops = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.4"
+}

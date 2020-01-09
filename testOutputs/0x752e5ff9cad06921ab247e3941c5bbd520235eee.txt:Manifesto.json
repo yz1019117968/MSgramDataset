@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x752e5ff9cad06921ab247e3941c5bbd520235eee.txt:35:3: Warning: Integer Overflow.\n  function set(bool _vote, string _message) public {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x752e5ff9cad06921ab247e3941c5bbd520235eee.txt:97:17: Warning: Integer Overflow.\n    r_message = votesArr[_addr].message", 
+   "./uniqueContractSourceCode/0x752e5ff9cad06921ab247e3941c5bbd520235eee.txt:27:3: Warning: Integer Overflow.\n  mapping(address => Vote) public votesArr"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x752e5ff9cad06921ab247e3941c5bbd520235eee.txt:27:3: Warning: Integer Underflow.\n  mapping(address => Vote) public votesArr", 
+   "./uniqueContractSourceCode/0x752e5ff9cad06921ab247e3941c5bbd520235eee.txt:97:5: Warning: Integer Underflow.\n    r_message = votesArr[_addr].message"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.2"
+}

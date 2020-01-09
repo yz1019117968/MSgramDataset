@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb61d57a3eff8c3a1c011265ea2b01f47be671767.txt:89:9: Warning: Integer Overflow.\n        amountRaised += amount\nInteger Overflow occurs if:\n    crowdSaleClosed = 0\n    amountRaised = 1", 
+   "./restContracts/0xb61d57a3eff8c3a1c011265ea2b01f47be671767.txt:87:9: Warning: Integer Overflow.\n        contributions[msg.sender] += amount\nInteger Overflow occurs if:\n    crowdSaleClosed = 0\n    contributions[msg.sender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.0"
+}

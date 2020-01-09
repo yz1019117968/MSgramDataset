@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x28eec9c792b7c68d225f2e8c12ba3c3d0183b368.txt:997:13: Warning: Timestamp Dependency.\n    require(now > start && refundOn"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x28eec9c792b7c68d225f2e8c12ba3c3d0183b368.txt:99:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[msg.sender] = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    invested = 0\n    hardcap = 1\n    end = 1\n    start = 0\n    minInvestedLimit = 69722843986276191112704802276904042686523943500539225692285358676886601247599", 
+   "./uniqueContractSourceCode/0x28eec9c792b7c68d225f2e8c12ba3c3d0183b368.txt:669:3: Warning: Integer Overflow.\n  Bonus[] public bonuses", 
+   "./uniqueContractSourceCode/0x28eec9c792b7c68d225f2e8c12ba3c3d0183b368.txt:803:5: Warning: Integer Overflow.\n    bonuses.push(Bonus(limit, bonus))\nInteger Overflow occurs if:\n    owner = 0\n    bonuses.push(Bonus(limit, bonus)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x28eec9c792b7c68d225f2e8c12ba3c3d0183b368.txt:1003:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x28eec9c792b7c68d225f2e8c12ba3c3d0183b368.txt:1051:5: Warning: Transaction-Ordering Dependency.\n    wallet.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.7"
+}

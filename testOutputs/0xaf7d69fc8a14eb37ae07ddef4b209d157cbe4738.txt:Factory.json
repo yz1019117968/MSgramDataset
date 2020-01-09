@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaf7d69fc8a14eb37ae07ddef4b209d157cbe4738.txt:375:5: Warning: Integer Overflow.\n    contracts.push(new_contract)\nInteger Overflow occurs if:\n    fee = 0", 
+   "./restContracts/0xaf7d69fc8a14eb37ae07ddef4b209d157cbe4738.txt:187:3: Warning: Integer Overflow.\n  address[] public contracts", 
+   "./restContracts/0xaf7d69fc8a14eb37ae07ddef4b209d157cbe4738.txt:123:1: Warning: Integer Overflow.\ncontract Factory {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    fee = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.7"
+}

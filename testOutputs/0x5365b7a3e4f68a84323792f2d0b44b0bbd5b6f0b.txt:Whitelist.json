@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:885:5: Warning: Integer Overflow.\n    function updateWallet(address _wallet, string _data) onlyPrivilegeAddresses public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:855:5: Warning: Integer Overflow.\n    function addWallet(address _wallet, string _data) onlyPrivilegeAddresses public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:963:16: Warning: Integer Overflow.\n        return whitelist[_wallet].createdTimestamp"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:785:1: Warning: Integer Underflow.\ncontract Whitelist is Ownable {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    whitelist[_wallet].whitelisted = 255\n    _wallet = 1461501637330902918203684832716283019655932542975\n    addressApi = 0", 
+   "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:947:9: Warning: Integer Underflow.\n        return whitelist[_wallet].data\nInteger Underflow occurs if:\n    return whitelist[_wallet].data = 1", 
+   "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:803:5: Warning: Integer Underflow.\n    mapping(address => WalletInfo) public whitelist"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "48.1"
+}

@@ -1,0 +1,56 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:787:13: Warning: Integer Overflow.\n      cap = c.cap", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:697:39: Warning: Integer Overflow.\n      if (contributionCaps[i]>amount) contributionCaps[i]\nInteger Overflow occurs if:\n    contributionCaps[0] = 6\n    amount = 100000000000000000\n    owner = 2\n    contributionCaps[i] = 100000000000000001\n    contributionCaps[i] = 100000000000000000\n    contributionCaps[i] = 100000000000000000\n    contributionCaps[i] = 100000000000000000\n    contributionCaps[i] = 100000000000000000", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:607:7: Warning: Integer Overflow.\n      c.balance\nInteger Overflow occurs if:\n    owner = 2\n    contributionCaps[c.cap] = 0\n    cap = 0\n    contributionCaps.length = 1\n    nextCapTime = 0", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:893:5: Warning: Integer Overflow.\n    ethRefundAmount.push(this.balance)\nInteger Overflow occurs if:\n    amountInWei = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    owner = 2\n    ethRefundAmount.push(this.balance) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:833:19: Warning: Integer Overflow.\n    for (uint i = c.tokensClaimed", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:799:17: Warning: Integer Overflow.\n          cap = contributionCaps[cap]\nInteger Overflow occurs if:\n    contributionCaps.length = 115792089237316195423570985008687907853269984665640564039457583867175641284608\n    contractStage = 1\n    nextCapTime = 0", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:631:5: Warning: Integer Overflow.\n    contributionCaps[level]\nInteger Overflow occurs if:\n    level = 2361183241434822606846\n    contributionCaps.length = 2361183241434822606848\n    cap = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 2\n    contributionCaps[0] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:369:5: Warning: Integer Overflow.\n    ethRefundAmount.push(msg.value)\nInteger Overflow occurs if:\n    ethRefundAmount.push(msg.value) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:941:5: Warning: Integer Overflow.\n    d.balanceRemaining\nInteger Overflow occurs if:\n    owner = 3\n    locked = 0\n    feePct = 0\n    notDefault = 0", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:835:47: Warning: Integer Overflow.\n      tokenAmount = tokenAmount.add(_applyPct(c.balance", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:113:3: Warning: Integer Overflow.\n  uint[] public contributionCaps", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:159:3: Warning: Integer Overflow.\n  uint[] public ethRefundAmount", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:951:3: Warning: Integer Overflow.\n  function tokenFallback (address from, uint value, bytes data) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:471:24: Warning: Integer Overflow.\n    if (d.pct.length > c.tokensClaimed\nInteger Overflow occurs if:\n    ethRefundAmount.length = 0\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:449:25: Warning: Integer Overflow.\n      uint pct = _toPct(c.balance\nInteger Overflow occurs if:\n    ethRefundAmount.length = 1\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:471:9: Warning: Integer Overflow.\n    if (d.pct\nInteger Overflow occurs if:\n    ethRefundAmount.length = 0\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:475:14: Warning: Integer Overflow.\n      for (i=c.tokensClaimed\nInteger Overflow occurs if:\n    ethRefundAmount.length = 0\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:599:19: Warning: Integer Overflow.\n    uint amount = c.balance\nInteger Overflow occurs if:\n    owner = 2\n    cap = 0\n    contributionCaps.length = 1", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:477:59: Warning: Integer Overflow.\n        tokenAmount = tokenAmount.add(_applyPct(c.balance,d.pct\nInteger Overflow occurs if:\n    ethRefundAmount.length = 0\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:351:5: Warning: Integer Overflow.\n    c.balance\nInteger Overflow occurs if:\n    contributionCaps[0] = 1\n    contributionCaps[0] = 0\n    contractStage = 1\n    nextCapTime = 0", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:835:58: Warning: Integer Overflow.\n      tokenAmount = tokenAmount.add(_applyPct(c.balance, d.pct", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:79:1: Warning: Integer Overflow.\ncontract PresalePool {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ethRefundAmount.push(msg.value) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:791:15: Warning: Integer Overflow.\n    balance = c.balance", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:835:58: Warning: Integer Overflow.\n      tokenAmount = tokenAmount.add(_applyPct(c.balance, d.pct[i]", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:833:51: Warning: Integer Overflow.\n    for (uint i = c.tokensClaimed[tokenAddr]; i < d.pct", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:803:17: Warning: Integer Overflow.\n          cap = nextContributionCaps[cap]\nInteger Overflow occurs if:\n    nextCapTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    nextContributionCaps[cap] = 115792089237316195423558725044360980742403117889423361565988634094660782915584\n    contributionCaps.length = 115792089237316195423558725044360980742403117889423361565988634094660782915584\n    contractStage = 1", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:475:44: Warning: Integer Overflow.\n      for (i=c.tokensClaimed[tokenAddr]; i<d.pct\nInteger Overflow occurs if:\n    ethRefundAmount.length = 0\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:943:5: Warning: Integer Overflow.\n    d.pct\nInteger Overflow occurs if:\n    owner = 3\n    locked = 0\n    feePct = 0\n    notDefault = 0", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:697:11: Warning: Integer Overflow.\n      if (contributionCaps[i]\nInteger Overflow occurs if:\n    contributionCaps[0] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    amount = 100000000000000000\n    owner = 2", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:477:49: Warning: Integer Overflow.\n        tokenAmount = tokenAmount.add(_applyPct(c.balance\nInteger Overflow occurs if:\n    ethRefundAmount.length = 0\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:535:3: Warning: Integer Overflow.\n  function authorizeMany (address[] addr, uint cap) public onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addr = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:151:3: Warning: Integer Overflow.\n  uint [] public nextContributionCaps", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:601:5: Warning: Integer Overflow.\n    c.cap\nInteger Overflow occurs if:\n    owner = 2\n    cap = 0\n    contributionCaps.length = 1", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:447:34: Warning: Integer Overflow.\n    if (ethRefundAmount.length > c.ethRefund\nInteger Overflow occurs if:\n    ethRefundAmount.length = 1\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3", 
+   "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:477:59: Warning: Integer Overflow.\n        tokenAmount = tokenAmount.add(_applyPct(c.balance,d.pct[i]\nInteger Overflow occurs if:\n    ethRefundAmount.length = 0\n    tokenAddr = 1461501637330902918203684832716283019655932542975\n    contractStage = 3"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:891:14: Warning: Transaction-Ordering Dependency.\n    require (receiverAddress.call.value(amountInWei).gas(msg.gas.sub(5000))()"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5aa24fb102c6b7b13ba353922746223348a4a8b3.txt:399:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(amountToTransfer)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.2"
+}

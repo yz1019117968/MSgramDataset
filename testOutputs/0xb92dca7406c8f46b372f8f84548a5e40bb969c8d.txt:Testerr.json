@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb92dca7406c8f46b372f8f84548a5e40bb969c8d.txt:327:3: Warning: Integer Underflow.\n  string public name = \"Coolcoin\"", 
+   "./restContracts/0xb92dca7406c8f46b372f8f84548a5e40bb969c8d.txt:329:3: Warning: Integer Underflow.\n  string public symbol = \"cool\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

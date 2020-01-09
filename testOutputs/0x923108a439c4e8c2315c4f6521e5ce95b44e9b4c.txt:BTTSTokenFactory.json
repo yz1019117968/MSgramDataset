@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x923108a439c4e8c2315c4f6521e5ce95b44e9b4c.txt:1499:5: Warning: Integer Overflow.\n    function deployBTTSTokenContract(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    symbol = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "10.4"
+}

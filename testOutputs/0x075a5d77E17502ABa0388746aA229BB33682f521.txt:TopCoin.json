@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x075a5d77E17502ABa0388746aA229BB33682f521.txt:693:5: Warning: Integer Underflow.\n    string public name = \"TopCoin\"", 
+   "./uniqueContractSourceCode/0x075a5d77E17502ABa0388746aA229BB33682f521.txt:695:5: Warning: Integer Underflow.\n    string public symbol = \"TPC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.6"
+}

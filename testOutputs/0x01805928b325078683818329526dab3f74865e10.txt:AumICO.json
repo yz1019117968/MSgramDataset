@@ -1,0 +1,39 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2797:3: Warning: Timestamp Dependency.\n\t\tif(now > endEpochTimestamp)\r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2903:3: Warning: Integer Overflow.\n\t\tallContacts[addressToAdd].isOnWhitelist\nInteger Overflow occurs if:\n    allContacts[addressToAdd].userExists = 65280\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2685:11: Warning: Integer Overflow.\n    \t\tif(!operationsInQueue[currentOperation].closed\nInteger Overflow occurs if:\n    currentOperation = 0\n    operationsInQueue.length = 1\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2689:11: Warning: Integer Overflow.\n    \t\t    operationsInQueue[currentOperation].closed\nInteger Overflow occurs if:\n    currentOperation = 0\n    operationsInQueue.length = 1\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2869:7: Warning: Integer Overflow.\n\t\t\t\t\t\tallContacts[contactsAddresses[i]].userLiquidated\nInteger Overflow occurs if:\n    currentSoftCapContact = 0\n    endEpochTimestamp = 0\n    usdEstimateInContract = 0\n    allContacts[contactsAddresses[i]].userLiquidated = 0\n    contactsAddresses.length = 1\n    softCap = 1\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2865:10: Warning: Integer Overflow.\n\t\t\t\t\tif(!allContacts[contactsAddresses[i]].userLiquidated\nInteger Overflow occurs if:\n    currentSoftCapContact = 0\n    endEpochTimestamp = 0\n    usdEstimateInContract = 0\n    contactsAddresses.length = 1\n    softCap = 1\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2939:10: Warning: Integer Overflow.\n\t\treturn allContacts[addressToCheck].isOnWhitelist", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2869:19: Warning: Integer Overflow.\n\t\t\t\t\t\tallContacts[contactsAddresses[i]\nInteger Overflow occurs if:\n    currentSoftCapContact = 1\n    endEpochTimestamp = 0\n    usdEstimateInContract = 0\n    allContacts[contactsAddresses[i]].userLiquidated = 0\n    contactsAddresses.length = 2\n    softCap = 1\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2897:7: Warning: Integer Overflow.\n    \t\tcontactsAddresses.push(addressToAdd)\nInteger Overflow occurs if:\n    contactsAddresses.push(addressToAdd) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    allContacts[addressToAdd].userExists = 0\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2685:11: Warning: Integer Overflow.\n    \t\tif(!operationsInQueue[currentOperation]\nInteger Overflow occurs if:\n    currentOperation = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    operationsInQueue.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2689:11: Warning: Integer Overflow.\n    \t\t    operationsInQueue[currentOperation]\nInteger Overflow occurs if:\n    currentOperation = 115792089237316195423570985008687907853269984665640564039457583867175641284607\n    operationsInQueue.length = 115792089237316195423570985008687907853269984665640564039457583867175641284608\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2865:22: Warning: Integer Overflow.\n\t\t\t\t\tif(!allContacts[contactsAddresses[i]\nInteger Overflow occurs if:\n    currentSoftCapContact = 1\n    endEpochTimestamp = 0\n    usdEstimateInContract = 0\n    contactsAddresses.length = 2\n    softCap = 1\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:363:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2917:4: Warning: Integer Overflow.\n\t\t\tallContacts[addressToRemove].isOnWhitelist\nInteger Overflow occurs if:\n    allContacts[addressToRemove].userExists = 65280\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2273:2: Warning: Integer Overflow.\n\tOperationInQueue[] public operationsInQueue", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2893:10: Warning: Integer Overflow.\n\t    if(!allContacts[addressToAdd].userExists\nInteger Overflow occurs if:\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2149:1: Warning: Integer Overflow.\ncontract AumICO is usingOraclize, SafeMath {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contactsAddresses.push(addressToAdd) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    allContacts[addressToAdd].userExists = 0\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2913:9: Warning: Integer Overflow.\n\t    if(allContacts[addressToRemove].userExists\nInteger Overflow occurs if:\n    admin = 0", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2255:2: Warning: Integer Overflow.\n\tmapping(address => Contact) public allContacts", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2549:2: Warning: Integer Overflow.\n\tfunction tokenFallback(address _from, uint _value, bytes _data) public\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2973:2: Warning: Integer Overflow.\n\tfunction __callback(bytes32 _myid, string _result) {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2257:2: Warning: Integer Overflow.\n\taddress[] public contactsAddresses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x01805928b325078683818329526dab3f74865e10.txt:2149:1: Warning: Integer Underflow.\ncontract AumICO is usingOraclize, SafeMath {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    OAR = 0\n    admin = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.4"
+}

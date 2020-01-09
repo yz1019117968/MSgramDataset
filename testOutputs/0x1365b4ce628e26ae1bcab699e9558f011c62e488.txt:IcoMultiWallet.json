@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1365b4ce628e26ae1bcab699e9558f011c62e488.txt:209:23: Warning: Integer Overflow.\n\t\tuint nDays = (now - m_mapAccounts[addr].nFirstDepositDate\nInteger Overflow occurs if:\n    m_mapAccounts[addr].nTotalAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1365b4ce628e26ae1bcab699e9558f011c62e488.txt:133:3: Warning: Integer Overflow.\n\t\tm_nTotalDeposited += msg.value\nInteger Overflow occurs if:\n    m_nTotalDeposited = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    m_nDailyPrice = 69722843986276191112704802276904042686523943500539225692285358676886601247599", 
+   "./uniqueContractSourceCode/0x1365b4ce628e26ae1bcab699e9558f011c62e488.txt:157:4: Warning: Integer Overflow.\n\t\t\tm_mapAccounts[msg.sender].nTotalAmount += msg.value\nInteger Overflow occurs if:\n    m_mapAccounts[msg.sender].nTotalAmount = 113191303225195248715504375370323613969417763200598005592893039890443272005892\n    m_nDailyPrice = 22699785768767124895104594647555058938818016553422357800779231780796710779831", 
+   "./uniqueContractSourceCode/0x1365b4ce628e26ae1bcab699e9558f011c62e488.txt:151:4: Warning: Integer Overflow.\n\t\t\tm_mapAccounts[msg.sender] = newAccount\nInteger Overflow occurs if:\n    m_nDailyPrice = 0\n    m_mapAccounts[msg.sender].nTotalAmount = 0", 
+   "./uniqueContractSourceCode/0x1365b4ce628e26ae1bcab699e9558f011c62e488.txt:195:87: Warning: Integer Overflow.\n\tfunction getCampaignDailyPrice(address addr) public constant returns (uint) { return m_mapAccounts[addr].nDailyPrice"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1365b4ce628e26ae1bcab699e9558f011c62e488.txt:209:17: Warning: Integer Underflow.\n\t\tuint nDays = (now - m_mapAccounts[addr].nFirstDepositDate\nInteger Underflow occurs if:\n    m_mapAccounts[addr].nFirstDepositDate = 1\n    m_mapAccounts[addr].nTotalAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.3"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x448a5065aebb8e423f0896e6c5d525c040f59af3.txt:221:9: Warning: Integer Overflow.\n        LogNote(msg.sig, msg.sender, foo, bar, msg.value, msg.data)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.9"
+}

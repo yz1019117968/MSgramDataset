@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:565:6: Warning: Timestamp Dependency.\n     if(GetNow()<start){\r\n     ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:591:9: Warning: Timestamp Dependency.\n     if(stageEnd[stageIndex]<GetNow() && amountOfEthBeforeBuy<stageMaxEthAmount"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:427:5: Warning: Integer Overflow.\n    uint256[] public stageSum", 
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:429:5: Warning: Integer Overflow.\n    uint256[] public stageCurrentSum", 
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:431:5: Warning: Integer Overflow.\n    uint256[] public stagePrice", 
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:433:5: Warning: Integer Overflow.\n    uint256[] public stageEnd"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:655:34: Warning: Integer Underflow.\n                amountToMint = ((stageMaxEthAmount - amountOfEthBeforeBuy\nInteger Underflow occurs if:\n    stageIndex = 0\n    stageEnd[stageIndex] = 1\n    stagePrice[stageIndex] = 1\n    stageSum[stageIndex] = 1\n    start = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:579:32: Warning: Integer Underflow.\n        amountOfEthBeforeBuy = this.balance - msg.value\nInteger Underflow occurs if:\n    start = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:611:10: Warning: Transaction-Ordering Dependency.\n         msg.sender.transfer(amountToReturn)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4eec479f6ca38cf69e04b875a28fbbb65754e0dc.txt:611:10: Warning: Transaction-Ordering Dependency.\n         msg.sender.transfer(amountToReturn)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.3"
+}

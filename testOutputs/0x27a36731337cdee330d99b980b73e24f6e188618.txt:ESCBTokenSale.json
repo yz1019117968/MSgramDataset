@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x27a36731337cdee330d99b980b73e24f6e188618.txt:3321:13: Warning: Integer Overflow.\n     assert(totalCollected + _amount\nInteger Overflow occurs if:\n    totalCollected = 1\n    ESCBDevMultisig = 0\n    activated[ESCBDevMultisig] = 255\n    activated[this] = 255\n    saleStopped = 0\n    controlTime = 1\n    initialTime = 0", 
+   "./uniqueContractSourceCode/0x27a36731337cdee330d99b980b73e24f6e188618.txt:3271:13: Warning: Integer Overflow.\n     assert(totalCollected + msg.value\nInteger Overflow occurs if:\n    totalCollected = 115378196040942429577071027188185181670791950309495326180518645047545375620033\n    activated[ESCBDevMultisig] = 255\n    activated[this] = 255\n    saleStopped = 0\n    controlTime = 1\n    initialTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.3"
+}

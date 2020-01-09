@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xBfD9A5911a655729660048bD8f91511b09A439A3.txt:621:9: Warning: Integer Overflow.\n        sup.hasKYC\nInteger Overflow occurs if:\n    kycManager = 0", 
+   "./restContracts/0xBfD9A5911a655729660048bD8f91511b09A439A3.txt:315:5: Warning: Integer Overflow.\n    mapping(address => Supporter) public supportersMap", 
+   "./restContracts/0xBfD9A5911a655729660048bD8f91511b09A439A3.txt:641:9: Warning: Integer Overflow.\n        sup.hasKYC\nInteger Overflow occurs if:\n    kycManager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.7"
+}

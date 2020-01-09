@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:113:9: Warning: Integer Overflow.\n        splitAgreements[msg.sender].to1", 
+   "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:97:9: Warning: Integer Overflow.\n        splitAgreements[msg.sender].to2", 
+   "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:135:27: Warning: Integer Overflow.\n        processSend(from, splitAgreements[agreementOwner].to1", 
+   "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:95:9: Warning: Integer Overflow.\n        splitAgreements[msg.sender].to1", 
+   "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:115:9: Warning: Integer Overflow.\n        splitAgreements[msg.sender].to2", 
+   "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:137:27: Warning: Integer Overflow.\n        processSend(from, splitAgreements[agreementOwner].to2"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:145:13: Warning: Transaction-Ordering Dependency.\n        if (to.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x038a4d4bacb8ffc2ca2b1732d1e755646cfc0086.txt:145:13: Warning: Transaction-Ordering Dependency.\n        if (to.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.0"
+}

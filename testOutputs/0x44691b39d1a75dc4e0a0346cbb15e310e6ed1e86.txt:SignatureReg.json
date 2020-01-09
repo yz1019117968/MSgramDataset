@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x44691b39d1a75dc4e0a0346cbb15e310e6ed1e86.txt:83:3: Warning: Integer Overflow.\n  function register(string _method) returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _method = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x44691b39d1a75dc4e0a0346cbb15e310e6ed1e86.txt:43:3: Warning: Integer Underflow.\n  mapping (bytes4 => string) public entries"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "36.5"
+}

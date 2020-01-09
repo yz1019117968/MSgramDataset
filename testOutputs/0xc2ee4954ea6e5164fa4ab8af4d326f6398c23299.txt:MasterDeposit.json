@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc2ee4954ea6e5164fa4ab8af4d326f6398c23299.txt:769:5: Warning: Integer Overflow.\n    function transferTokens(address[] _deposits, address _tokenContractAddress) public onlyDepositCreatorOrMaster nonReentrant {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _deposits = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.0"
+}

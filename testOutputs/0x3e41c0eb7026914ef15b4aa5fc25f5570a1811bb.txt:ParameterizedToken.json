@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3e41c0eb7026914ef15b4aa5fc25f5570a1811bb.txt:189:5: Warning: Integer Overflow.\n    function batchTransfer(address[] _addresses, uint256[] _value) public returns (bool) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3e41c0eb7026914ef15b4aa5fc25f5570a1811bb.txt:665:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x3e41c0eb7026914ef15b4aa5fc25f5570a1811bb.txt:669:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x3e41c0eb7026914ef15b4aa5fc25f5570a1811bb.txt:661:5: Warning: Integer Underflow.\n    string public version = \"1.2\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.4"
+}

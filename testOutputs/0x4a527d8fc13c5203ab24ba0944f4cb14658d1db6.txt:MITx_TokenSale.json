@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:781:5: Warning: Timestamp Dependency.\n    require (now >= startTimestamp)", 
+   "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:709:12: Warning: Timestamp Dependency.\n    } else if (now <= tier3Timestamp) { // during 3th period they get 20% bonus\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:733:5: Warning: Timestamp Dependency.\n    if (now > endTimestamp)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:693:5: Warning: Timestamp Dependency.\n    if (now <= tier1Timestamp) {  // during 1th period they get 50% bonus\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:701:12: Warning: Timestamp Dependency.\n    } else if (now <= tier2Timestamp) { // during 2th period they get 35% bonus\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:815:3: Warning: Integer Overflow.\n  function authoriseManyAccounts(address[] many) onlyCSorOwner public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    many = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:173:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _tokens = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    tokenRaised = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    endTimestamp = 0\n    maxTokens = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    tokensForSale = 115792089237316195423570985008687907852844631706989390960128365748614829458911\n    cs = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:943:5: Warning: Transaction-Ordering Dependency.\n    multiSig.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6.txt:943:5: Warning: Transaction-Ordering Dependency.\n    multiSig.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.2"
+}

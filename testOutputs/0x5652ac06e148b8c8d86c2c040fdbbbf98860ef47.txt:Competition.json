@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:135:5: Warning: Integer Overflow.\n    Hopeful[] public hopefuls", 
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:425:9: Warning: Integer Overflow.\n        hopefuls[withId]\nInteger Overflow occurs if:\n    withId = 17368813385598087515358576233720048165663520640048077700264891033132308889600\n    hopefuls[withId] = 17368813385598087515358576233720048165663520640048077700264891033132308889601\n    oracle = 0", 
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:371:9: Warning: Integer Overflow.\n        registrantToHopefulIds[msg.sender] = HopefulId({id: hopefuls.length, exists: true})\nInteger Overflow occurs if:\n    maxHopefulsNumber = 0\n    maxbuyinQuantity = 0\n    hopefuls.length = 0\n    buyinQuantity = 0\n    payoutAsset = 0\n    MELON_ASSET = 0\n    buyinAsset = 0\n    registrantToHopefulIds[msg.sender].exists = 0\n    registeredFundToRegistrants[fund] = 0\n    manager = 0", 
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:425:9: Warning: Integer Overflow.\n        hopefuls[withId].isDisqualified\nInteger Overflow occurs if:\n    withId = 0\n    hopefuls[withId] = 1\n    oracle = 0", 
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:139:5: Warning: Integer Overflow.\n    mapping(address => HopefulId) public registrantToHopefulIds"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:263:31: Warning: Integer Underflow.\n        for (uint i = 0; i <= hopefuls.length - 1\nInteger Underflow occurs if:\n    hopefuls.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.7"
+}

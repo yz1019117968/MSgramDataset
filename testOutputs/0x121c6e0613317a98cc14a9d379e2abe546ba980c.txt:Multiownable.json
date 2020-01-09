@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:5:1: Warning: Integer Overflow.\ncontract Multiownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    allOperations.length = 115792089237316195423570985008687902278083685032984778655528015845822753144832\n    allOperationsIndicies[operation] = 115792089237316195423570985008687902278083685032984778655528015845822753144831\n    votesMaskByOperation[operation] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownersIndices[wallet] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votesCountByOperation[operation] = 1", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:189:36: Warning: Integer Overflow.\n            allOperations[index] = allOperations[allOperations.length - 1]\nInteger Overflow occurs if:\n    allOperations.length = 115792089237316195423570985008687729447308396420655431753711402821021081796608\n    votesMaskByOperation[operation] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownersIndices[wallet] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votesCountByOperation[operation] = 1", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:17:5: Warning: Integer Overflow.\n    bytes32[] public allOperations", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:189:13: Warning: Integer Overflow.\n            allOperations[index]\nInteger Overflow occurs if:\n    allOperations.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    allOperationsIndicies[operation] = 28948015407582702065328958817050739276959317985750247631225001122643746750462\n    votesMaskByOperation[operation] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownersIndices[wallet] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votesCountByOperation[operation] = 1", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:191:35: Warning: Integer Overflow.\n            allOperationsIndicies[allOperations[index]\nInteger Overflow occurs if:\n    allOperations.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    allOperationsIndicies[operation] = 28948015407582702065328958817050739276959317985750247631225001122643746750462\n    votesMaskByOperation[operation] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownersIndices[wallet] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votesCountByOperation[operation] = 1", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:269:5: Warning: Integer Overflow.\n    function transferOwnershipWithHowMany(address[] newOwners, uint256 newHowManyOwnersDecide) public onlyManyOwners {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newOwners = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:251:5: Warning: Integer Overflow.\n    function transferOwnership(address[] newOwners) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newOwners = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:15:5: Warning: Integer Overflow.\n    address[] public owners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:195:9: Warning: Integer Underflow.\n        allOperations.length--\nInteger Underflow occurs if:\n    allOperations.length = 0\n    votesMaskByOperation[operation] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownersIndices[wallet] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votesCountByOperation[operation] = 1", 
+   "./uniqueContractSourceCode/0x121c6e0613317a98cc14a9d379e2abe546ba980c.txt:231:9: Warning: Integer Underflow.\n        votesCountByOperation[operation]--\nInteger Underflow occurs if:\n    votesCountByOperation[operation] = 0\n    votesMaskByOperation[operation] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownersIndices[wallet] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.4"
+}

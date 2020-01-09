@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1dcadad44aa14154e2393d83edf6c7c6f83cb795.txt:191:1: Warning: Integer Overflow.\ncontract DoggyEthPics is ERC721, Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contractOwner = 0", 
+   "./uniqueContractSourceCode/0x1dcadad44aa14154e2393d83edf6c7c6f83cb795.txt:293:27: Warning: Integer Overflow.\n    Doggy storage doggy = doggies[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    doggies[_tokenId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x1dcadad44aa14154e2393d83edf6c7c6f83cb795.txt:651:26: Warning: Integer Overflow.\n    uint256 newDoggyId = doggies.push(_doggy)\nInteger Overflow occurs if:\n    contractOwner = 0", 
+   "./uniqueContractSourceCode/0x1dcadad44aa14154e2393d83edf6c7c6f83cb795.txt:693:5: Warning: Integer Overflow.\n    ownershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    doggyIdToApproved[_tokenId] = 1461501637330902918203684832716283019655932542975\n    doggyIdToOwner[_tokenId] = 0\n    _from = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1dcadad44aa14154e2393d83edf6c7c6f83cb795.txt:703:7: Warning: Integer Underflow.\n      ownershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    doggyIdToApproved[_tokenId] = 1461501637330902918203684832716283019655932542975\n    doggyIdToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    _from = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x1dcadad44aa14154e2393d83edf6c7c6f83cb795.txt:295:5: Warning: Integer Underflow.\n    doggyName = doggy.name\nInteger Underflow occurs if:\n    _tokenId = 0\n    doggies[_tokenId] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.9"
+}

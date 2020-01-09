@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x904249766b2ccf6795d7b34441cc0bcae5cb7640.txt:1599:3: Warning: Integer Overflow.\n  function deregister(address[] bannedUsers) public onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x904249766b2ccf6795d7b34441cc0bcae5cb7640.txt:1583:3: Warning: Integer Overflow.\n  function register(address[] newUsers) public onlyOwner {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x904249766b2ccf6795d7b34441cc0bcae5cb7640.txt:2221:9: Warning: Transaction-Ordering Dependency.\n        vaultAddress.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0x904249766b2ccf6795d7b34441cc0bcae5cb7640.txt:1987:18: Warning: Transaction-Ordering Dependency.\n        require (_owner.send(feeValueOfTokens)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.7"
+}

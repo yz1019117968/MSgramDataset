@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xc27590378690620a44b1382e7cf31db5a1f9b99e.txt:103:14: Warning: Timestamp Dependency.\n    require (now > p.waitTime  //Didn't wait long enough.\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc27590378690620a44b1382e7cf31db5a1f9b99e.txt:113:9: Warning: Integer Overflow.\n        p.executed\nInteger Overflow occurs if:\n    hodlID = 0\n    hodls[hodlID] = 1", 
+   "./restContracts/0xc27590378690620a44b1382e7cf31db5a1f9b99e.txt:115:16: Warning: Integer Overflow.\n        return p.amount\nInteger Overflow occurs if:\n    hodlID = 0\n    hodls[hodlID] = 1", 
+   "./restContracts/0xc27590378690620a44b1382e7cf31db5a1f9b99e.txt:31:5: Warning: Integer Overflow.\n    HodlStruct[] public hodls"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.7"
+}

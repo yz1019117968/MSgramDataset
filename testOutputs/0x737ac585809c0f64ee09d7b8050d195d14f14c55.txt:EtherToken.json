@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x737ac585809c0f64ee09d7b8050d195d14f14c55.txt:329:21: Warning: Integer Overflow.\n        uint256 z = _x + _y\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x737ac585809c0f64ee09d7b8050d195d14f14c55.txt:3663:5: Warning: Integer Underflow.\n    string public name = ''", 
+   "./uniqueContractSourceCode/0x737ac585809c0f64ee09d7b8050d195d14f14c55.txt:3665:5: Warning: Integer Underflow.\n    string public symbol = ''", 
+   "./uniqueContractSourceCode/0x737ac585809c0f64ee09d7b8050d195d14f14c55.txt:3661:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x737ac585809c0f64ee09d7b8050d195d14f14c55.txt:3945:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x737ac585809c0f64ee09d7b8050d195d14f14c55.txt:3945:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.2"
+}

@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:283:13: Warning: Integer Overflow.\n            investorCount++\nInteger Overflow occurs if:\n    halted = 0\n    investorCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endsAt = 1\n    startsAt = 0\n    investedAmountOf[investor] = 0", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:117:5: Warning: Integer Overflow.\n    Investment[] public investments", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:111:5: Warning: Integer Overflow.\n    Milestone[] public milestones", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:410:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 87239799081390005477908579347554535541235619840010205502213480358621906734529\n    _value = 57896059367433934165484808966762940722808630277120722968557756723153677017081\n    allowed[_from][msg.sender] = 57896059367433934165484808966762940722808630277120722968557756723153677017081\n    balances[_from] = 57896059367433934165484808966762940722808630277120722968557756723153677017081\n    finalized = 255", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:396:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 65133050195990379209015234167281133095147684435423372658451573861256282502524\n    _value = 68751552984656754570584411003563399145763693172169129330728274976256198443008\n    balances[msg.sender] = 68751552984656754570584411003563399145763693172169129330728274976256198443008\n    _to = 1461501637330902918203684832716283019655932542975\n    finalized = 255", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:365:9: Warning: Integer Overflow.\n        milestones.push(Milestone(_start, _end, _bonus))\nInteger Overflow occurs if:\n    _start = 0\n    milestones.push(Milestone(_start, _end, _bonus)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _end = 1\n    _bonus = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    deployAgentWallet = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:32:5: Warning: Integer Underflow.\n    string public projectName", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:38:5: Warning: Integer Underflow.\n    string public teamEmail", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:14:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:11:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x292fd2bfdeb3d5b8eca1b941f91d7629e623ecd5.txt:35:5: Warning: Integer Underflow.\n    string public projectDescription"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.6"
+}

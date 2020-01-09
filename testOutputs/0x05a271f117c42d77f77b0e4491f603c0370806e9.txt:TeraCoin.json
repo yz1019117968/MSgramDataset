@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x05a271f117c42d77f77b0e4491f603c0370806e9.txt:269:5: Warning: Integer Underflow.\n    string public symbol = \"TERA\"", 
+   "./uniqueContractSourceCode/0x05a271f117c42d77f77b0e4491f603c0370806e9.txt:265:5: Warning: Integer Underflow.\n    string public name = \"TeraCoin\"", 
+   "./uniqueContractSourceCode/0x05a271f117c42d77f77b0e4491f603c0370806e9.txt:271:5: Warning: Integer Underflow.\n    string public version = '0.1'"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x05a271f117c42d77f77b0e4491f603c0370806e9.txt:99:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x05a271f117c42d77f77b0e4491f603c0370806e9.txt:107:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(_recipient)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.8"
+}

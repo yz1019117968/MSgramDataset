@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x741fC999F5B62c80831cF659AED04c64AC8eF24e.txt:295:3: Warning: Timestamp Dependency.\n\t\tif (now > end) \r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.5"
+}

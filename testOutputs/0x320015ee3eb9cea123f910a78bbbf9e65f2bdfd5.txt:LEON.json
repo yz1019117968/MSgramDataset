@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x320015ee3eb9cea123f910a78bbbf9e65f2bdfd5.txt:257:3: Warning: Integer Underflow.\n\t\tstring public name = \"LEONS Coin\"", 
+   "./uniqueContractSourceCode/0x320015ee3eb9cea123f910a78bbbf9e65f2bdfd5.txt:259:3: Warning: Integer Underflow.\n\t\tstring public symbol = \"LEONS\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.1"
+}

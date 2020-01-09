@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3dfaf3a340168a4552ab1937ea9527aae47c5ea1.txt:579:3: Warning: Integer Overflow.\n  function destroy(address[] tokens) onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3dfaf3a340168a4552ab1937ea9527aae47c5ea1.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3dfaf3a340168a4552ab1937ea9527aae47c5ea1.txt:631:3: Warning: Integer Underflow.\n  string public version = \"0.1\"", 
+   "./uniqueContractSourceCode/0x3dfaf3a340168a4552ab1937ea9527aae47c5ea1.txt:629:3: Warning: Integer Underflow.\n  string public symbol = \"Stop\"", 
+   "./uniqueContractSourceCode/0x3dfaf3a340168a4552ab1937ea9527aae47c5ea1.txt:625:3: Warning: Integer Underflow.\n  string public name = \"StopIco\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.5"
+}

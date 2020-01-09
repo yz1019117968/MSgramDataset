@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x209882b2fc83256fec39ca0dfe5490d89350d36b.txt:19:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x209882b2fc83256fec39ca0dfe5490d89350d36b.txt:135:5: Warning: Integer Underflow.\n    string public name = \"ETTCE\"", 
+   "./uniqueContractSourceCode/0x209882b2fc83256fec39ca0dfe5490d89350d36b.txt:137:5: Warning: Integer Underflow.\n    string public symbol = \"ETTCE\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.6"
+}

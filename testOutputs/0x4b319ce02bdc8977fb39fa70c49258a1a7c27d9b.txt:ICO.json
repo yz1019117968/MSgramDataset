@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4b319ce02bdc8977fb39fa70c49258a1a7c27d9b.txt:631:5: Warning: Integer Overflow.\n    ForeignBuy(_investor, _unlbValue, _txHash)\nInteger Overflow occurs if:\n    owner = 0\n    _unlbValue = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4b319ce02bdc8977fb39fa70c49258a1a7c27d9b.txt:631:5: Warning: Integer Underflow.\n    ForeignBuy(_investor, _unlbValue, _txHash)\nInteger Underflow occurs if:\n    owner = 0\n    _unlbValue = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.5"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1367:5: Warning: Integer Overflow.\n    function adminRemoveRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    roleName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1343:5: Warning: Integer Overflow.\n    function adminAddRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    roleName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1291:5: Warning: Integer Overflow.\n    function checkRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    roleName = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1317:5: Warning: Integer Overflow.\n    function hasRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    roleName = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "26.1"
+}

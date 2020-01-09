@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc310755f88145cabcaa06c714cd668b5465dceaa.txt:135:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc310755f88145cabcaa06c714cd668b5465dceaa.txt:51:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xc310755f88145cabcaa06c714cd668b5465dceaa.txt:47:5: Warning: Integer Underflow.\n    string public standard = \"PornCoin 1.0\"", 
+   "./restContracts/0xc310755f88145cabcaa06c714cd668b5465dceaa.txt:49:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.5"
+}

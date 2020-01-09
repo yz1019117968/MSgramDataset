@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:355:9: Warning: Integer Overflow.\n        getContractsOf[_client].push(inst)\nInteger Overflow occurs if:\n    _client = 1461501637330902918203684832716283019655932542975\n    buildingCostWei = 0", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:275:5: Warning: Integer Overflow.\n    function setSecurityCheck(string _uri) onlyOwner\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:199:5: Warning: Integer Overflow.\n    mapping(address => address[]) public getContractsOf", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:215:16: Warning: Integer Overflow.\n        return sender_contracts[sender_contracts.length - 1]", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:297:1: Warning: Integer Overflow.\ncontract BuilderComission is Builder {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _client = 1461501637330902918203684832716283019655932542975\n    buildingCostWei = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:215:33: Warning: Integer Underflow.\n        return sender_contracts[sender_contracts.length - 1", 
+   "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:263:5: Warning: Integer Underflow.\n    string public securityCheckURI"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:77:7: Warning: Transaction-Ordering Dependency.\n    { suicide(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x551e7973dc165523ea3fcbc7b074004df218d2b1.txt:335:22: Warning: Transaction-Ordering Dependency.\n                if (!msg.sender.send(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.4"
+}

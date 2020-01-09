@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb1733c9c3cb5d98c2c35db27e30de26081d4d30a.txt:219:29: Warning: Integer Overflow.\n            totalEthInWei = totalEthInWei + msg.value\nInteger Overflow occurs if:\n    totalEthInWei = 111438828845562471664989347453624837816551604050186618541112640349801269457553\n    paused = 0", 
+   "./restContracts/0xb1733c9c3cb5d98c2c35db27e30de26081d4d30a.txt:255:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb1733c9c3cb5d98c2c35db27e30de26081d4d30a.txt:71:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 12427099513320373900882841630848664866162974320367484795129369588488451918217\n    balances[msg.sender] = 112821133174939916978858458689011728444585036062900773616573511943048462249434"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb1733c9c3cb5d98c2c35db27e30de26081d4d30a.txt:149:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xb1733c9c3cb5d98c2c35db27e30de26081d4d30a.txt:151:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.8"
+}

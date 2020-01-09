@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9C6A4e63f449edc45Bd9962225A6e3470d060c7b.txt:1557:9: Warning: Integer Overflow.\n    if (earlyParticipantWhitelist[addr].maxCap\nInteger Overflow occurs if:\n    isWhiteListed = 16711680\n    owner = 0", 
+   "./restContracts/0x9C6A4e63f449edc45Bd9962225A6e3470d060c7b.txt:1561:7: Warning: Integer Overflow.\n      whitelistedParticipants.push(addr)\nInteger Overflow occurs if:\n    whitelistedParticipants.push(addr) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isWhiteListed = 16711680\n    owner = 0\n    earlyParticipantWhitelist[addr].maxCap = 0", 
+   "./restContracts/0x9C6A4e63f449edc45Bd9962225A6e3470d060c7b.txt:1559:7: Warning: Integer Overflow.\n      earlyParticipantWhitelist[addr] = WhiteListData({status:status, minCap:minCap, maxCap:maxCap})\nInteger Overflow occurs if:\n    isWhiteListed = 16711680\n    owner = 0\n    earlyParticipantWhitelist[addr].maxCap = 0", 
+   "./restContracts/0x9C6A4e63f449edc45Bd9962225A6e3470d060c7b.txt:1627:3: Warning: Integer Overflow.\n  function updateJoinedCrowdsalesMultiple(address[] addrs) onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x9C6A4e63f449edc45Bd9962225A6e3470d060c7b.txt:1571:3: Warning: Integer Overflow.\n  function setEarlyParticipantsWhitelist(address[] addrs, bool[] statuses, uint[] minCaps, uint[] maxCaps) onlyOwner {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9C6A4e63f449edc45Bd9962225A6e3470d060c7b.txt:739:3: Warning: Integer Underflow.\n  string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.0"
+}

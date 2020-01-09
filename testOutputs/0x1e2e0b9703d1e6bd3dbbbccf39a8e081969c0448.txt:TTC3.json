@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1e2e0b9703d1e6bd3dbbbccf39a8e081969c0448.txt:245:15: Warning: Integer Overflow.\n             (balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x1e2e0b9703d1e6bd3dbbbccf39a8e081969c0448.txt:301:13: Warning: Integer Overflow.\n            balances[_to] += _amount\nInteger Overflow occurs if:\n    _amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[_from] = 67419346655525027280071070946112097648534143608088887667851415925010121249705"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1e2e0b9703d1e6bd3dbbbccf39a8e081969c0448.txt:299:13: Warning: Integer Underflow.\n            allowed[_from][msg.sender] -= _amount\nInteger Underflow occurs if:\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    allowed[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.5"
+}

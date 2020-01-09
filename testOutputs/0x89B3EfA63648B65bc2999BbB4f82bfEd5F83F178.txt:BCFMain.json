@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:93:5: Warning: Integer Overflow.\n    function isOwnerOfAllPlayerCards(uint256[], address) public pure returns (bool) {}"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

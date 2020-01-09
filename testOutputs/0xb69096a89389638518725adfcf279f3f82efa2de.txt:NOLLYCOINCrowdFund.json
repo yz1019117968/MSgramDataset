@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:795:8: Warning: Timestamp Dependency.\n       if (now >= preSaleStartTime && now <= preSaleEndTime) {\r\n       ^\nSpanning multiple lines.", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:677:13: Warning: Timestamp Dependency.\n            require(now >= crowdfundStartDate && now <= crowdfundEndDate)", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:677:21: Warning: Timestamp Dependency.\n            require(now >= crowdfundStartDate && now <= crowdfundEndDate", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:801:9: Warning: Timestamp Dependency.\n        if (now >= crowdfundStartDate && now <= crowdfundEndDate) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:795:12: Warning: Timestamp Dependency.\n       if (now >= preSaleStartTime && now <= preSaleEndTime", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:801:13: Warning: Timestamp Dependency.\n        if (now >= crowdfundStartDate && now <= crowdfundEndDate"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.4"
+}

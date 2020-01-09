@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x656dfda5eb02047b3f4ddbb91777738a9d49eb99.txt:1045:20: Warning: Integer Overflow.\n    currentRound = rounds[1]\nInteger Overflow occurs if:\n    rounds[1] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    presaleFinalized = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x656dfda5eb02047b3f4ddbb91777738a9d49eb99.txt:821:3: Warning: Integer Overflow.\n  Round[] public rounds"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.8"
+}

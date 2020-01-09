@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x76bc944a26cdc38173842dacb787f98e6c7348a9.txt:351:16: Warning: Integer Overflow.\n            && balances[to] + amount\nInteger Overflow occurs if:\n    balances[to] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    amount = 14", 
+   "./uniqueContractSourceCode/0x76bc944a26cdc38173842dacb787f98e6c7348a9.txt:479:14: Warning: Integer Overflow.\n         if (totalSupply + amount\nInteger Overflow occurs if:\n    totalSupply = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x76bc944a26cdc38173842dacb787f98e6c7348a9.txt:295:16: Warning: Integer Overflow.\n            && balances[to] + amount\nInteger Overflow occurs if:\n    balances[to] = 108441513555775281345882864913739889838644726638330041709042004219452646191105\n    amount = 61571088475519808686368218622358281504781575361732411509775226972758898606069\n    balances[msg.sender] = 61571088475519808686368218622358281504781575361732411509775226972758898606069"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x76bc944a26cdc38173842dacb787f98e6c7348a9.txt:217:25: Warning: Integer Underflow.\n            var mins = (now - timestamps[addr]\nInteger Underflow occurs if:\n    balances[to] = 57888977230398984174467159314340951251486926432055004176616070115340257853435\n    amount = 28948022309329048855892746252171986719893520523557765431741140285636441276427\n    timestamps[addr] = 18446744073709551588\n    demurringFeeOwner = 0\n    transferFeeOwner = 0\n    to = 1461501637330902918203684832716283019655932542975\n    balances[msg.sender] = 28948022309329048855892746252171986719893520523557765431741140285636441276427\n    owner = 0", 
+   "./uniqueContractSourceCode/0x76bc944a26cdc38173842dacb787f98e6c7348a9.txt:499:11: Warning: Integer Underflow.\n          totalSupply -= amount\nInteger Underflow occurs if:\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.5"
+}

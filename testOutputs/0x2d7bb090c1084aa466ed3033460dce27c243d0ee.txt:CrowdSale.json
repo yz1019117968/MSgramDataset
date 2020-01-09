@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:593:17: Warning: Integer Overflow.\n            if (backer.weiReceivedTwo\nInteger Overflow occurs if:\n    backersIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:927:62: Warning: Integer Overflow.\n        tokensToSend = tokensToSend + (dollarPerEtherRatio * backer.weiReceivedMain\nInteger Overflow occurs if:\n    dateICOEnded = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:767:13: Warning: Integer Overflow.\n            backersIndex.push(_contributor)\nInteger Overflow occurs if:\n    minInvestment = 0\n    endBlock = 115792089237316195423472905294072490966335050455902944251705984701894355845119\n    startBlock = 115792089237316195423472905294072490966335050455902944251705984701894355845119\n    stopped = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:789:13: Warning: Integer Overflow.\n            backer.weiReceivedMain\nInteger Overflow occurs if:\n    currentStep = 2\n    minInvestment = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stopped = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:765:73: Warning: Integer Overflow.\n        if (backer.weiReceivedOne == 0 && backer.weiReceivedTwo == 0 && backer.weiReceivedMain\nInteger Overflow occurs if:\n    minInvestment = 0\n    endBlock = 115792089237316195423472905294072490966335050455902944251705984701894355845119\n    startBlock = 115792089237316195423472905294072490966335050455902944251705984701894355845119\n    stopped = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:917:47: Warning: Integer Overflow.\n        require (backer.weiReceivedOne > 0 || backer.weiReceivedTwo\nInteger Overflow occurs if:\n    dateICOEnded = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:597:17: Warning: Integer Overflow.\n            if (backer.weiReceivedMain\nInteger Overflow occurs if:\n    backersIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:1077:31: Warning: Integer Overflow.\n        ethReceiveMainSale -= backer.weiReceivedMain\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:409:1: Warning: Integer Overflow.\ncontract CrowdSale is  Pausable, Vesting {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    minInvestment = 0\n    endBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stopped = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:925:62: Warning: Integer Overflow.\n        tokensToSend = tokensToSend + (dollarPerEtherRatio * backer.weiReceivedTwo\nInteger Overflow occurs if:\n    dateICOEnded = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:1075:34: Warning: Integer Overflow.\n        ethReceivedPresaleTwo -= backer.weiReceivedTwo\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:587:45: Warning: Integer Overflow.\n            Backer storage backer = backers[backersIndex[i]\nInteger Overflow occurs if:\n    backersIndex.length = 115679011025170378826477653968640361068257025696240524426137801211030401974271", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:921:9: Warning: Integer Overflow.\n        claimCount++\nInteger Overflow occurs if:\n    claimCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    dateICOEnded = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:789:38: Warning: Integer Overflow.\n            backer.weiReceivedMain = backer.weiReceivedMain\nInteger Overflow occurs if:\n    currentStep = 2\n    minInvestment = 0\n    endBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stopped = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:1073:9: Warning: Integer Underflow.\n        ethReceivedPresaleOne -= backer.weiReceivedOne\nInteger Underflow occurs if:\n    ethReceivedPresaleOne = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:1077:9: Warning: Integer Underflow.\n        ethReceiveMainSale -= backer.weiReceivedMain\nInteger Underflow occurs if:\n    ethReceiveMainSale = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2d7bb090c1084aa466ed3033460dce27c243d0ee.txt:1075:9: Warning: Integer Underflow.\n        ethReceivedPresaleTwo -= backer.weiReceivedTwo\nInteger Underflow occurs if:\n    ethReceivedPresaleTwo = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.4"
+}

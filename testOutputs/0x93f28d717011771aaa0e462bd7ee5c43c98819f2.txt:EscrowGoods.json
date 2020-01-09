@@ -1,0 +1,37 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:661:9: Warning: Timestamp Dependency.\n        if(now < (info.frozenTime + freezePeriod)) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:693:23: Warning: Integer Overflow.\n            if(now < (info.frozenTime\nInteger Overflow occurs if:\n    freezePeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:725:13: Warning: Integer Overflow.\n            info.lockedFunds\nInteger Overflow occurs if:\n    atomicLock = 0\n    freezePeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:133:5: Warning: Integer Overflow.\n    mapping (uint => EscrowInfo) public escrows", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:259:9: Warning: Integer Overflow.\n        logsCount++\nInteger Overflow occurs if:\n    logsCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    freezePeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:893:5: Warning: Integer Overflow.\n    function reject(uint _lockId, string _dataInfo, uint _version) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _dataInfo = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:755:5: Warning: Integer Overflow.\n    function addDescription(string _dataInfo, uint _version) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _dataInfo = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:739:13: Warning: Integer Overflow.\n            info.lockedFunds\nInteger Overflow occurs if:\n    atomicLock = 0\n    freezePeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:421:5: Warning: Integer Overflow.\n    function no(uint _lockId, string _dataInfo, uint _version) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _dataInfo = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:693:23: Warning: Integer Overflow.\n            if(now < (info.frozenTime + freezePeriod\nInteger Overflow occurs if:\n    freezePeriod = 115792089237316195423570985008687907853269984665640564039457584007910982156288", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:853:5: Warning: Integer Overflow.\n    function accept(uint _lockId, string _dataInfo, uint _version) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _dataInfo = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:769:5: Warning: Integer Overflow.\n    function buy(uint _lockId, string _dataInfo, uint _version, uint16 _count) payable {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:337:5: Warning: Integer Overflow.\n    function yes(uint _lockId, string _dataInfo, uint _version) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:495:5: Warning: Integer Overflow.\n    function arbYes(uint _lockId, address _who, uint _payment, string _dataInfo, uint _version) onlyArbiter {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:931:5: Warning: Integer Overflow.\n    function cancel(string _dataInfo, uint _version) onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:317:15: Warning: Transaction-Ordering Dependency.\n        if (!(addr.call.gas(safeGas).value(value)()"
+   ], 
+   [
+    "./restContracts/0x93f28d717011771aaa0e462bd7ee5c43c98819f2.txt:317:15: Warning: Transaction-Ordering Dependency.\n        if (!(addr.call.gas(safeGas).value(value)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.4"
+}

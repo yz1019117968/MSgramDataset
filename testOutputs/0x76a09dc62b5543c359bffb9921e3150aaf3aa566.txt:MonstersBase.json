@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:473:7: Warning: Integer Overflow.\n      mapping(address => Trainer) public addressToTrainer"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:501:5: Warning: Integer Underflow.\n    mapping (uint256 => string) public monsterIdToNickname", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:473:7: Warning: Integer Underflow.\n      mapping(address => Trainer) public addressToTrainer"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.8"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x56c1e514d7d7ae8019670207365606f2a0ee7e81.txt:185:5: Warning: Integer Overflow.\n    candidate_ids.push(candidate)\nInteger Overflow occurs if:\n    candidate_ids.push(candidate) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    candidates[candidate].id = 0\n    end = 1\n    create_price = 0", 
+   "./uniqueContractSourceCode/0x56c1e514d7d7ae8019670207365606f2a0ee7e81.txt:183:5: Warning: Integer Overflow.\n    candidates[candidate] = Candidate(candidate, sender, 0)\nInteger Overflow occurs if:\n    candidates[candidate].id = 0\n    end = 1\n    create_price = 0", 
+   "./uniqueContractSourceCode/0x56c1e514d7d7ae8019670207365606f2a0ee7e81.txt:261:5: Warning: Integer Overflow.\n    return candidate_ids\nInteger Overflow occurs if:\n    return candidate_ids = 3618502788666131106986593281521497120414687020801267626233049500247285301247", 
+   "./uniqueContractSourceCode/0x56c1e514d7d7ae8019670207365606f2a0ee7e81.txt:215:5: Warning: Integer Overflow.\n    candidates[candidate].votes\nInteger Overflow occurs if:\n    end = 1\n    candidates[candidate].id = 4294967295\n    votes[msg.sender] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.9"
+}

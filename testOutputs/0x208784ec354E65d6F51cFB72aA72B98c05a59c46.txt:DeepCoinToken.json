@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x208784ec354E65d6F51cFB72aA72B98c05a59c46.txt:217:41: Warning: Integer Overflow.\n        if (balance[_from] >= _value && balance[_to] + _value\nInteger Overflow occurs if:\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balance[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    balance[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    m_allowance[_owner][_spender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    jail[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    jail[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    jail[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    transfersEnabled = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x208784ec354E65d6F51cFB72aA72B98c05a59c46.txt:83:5: Warning: Integer Underflow.\n    string  public name = \"Deepfin Coin\"", 
+   "./uniqueContractSourceCode/0x208784ec354E65d6F51cFB72aA72B98c05a59c46.txt:91:5: Warning: Integer Underflow.\n    string  public symbol = 'DFC'", 
+   "./uniqueContractSourceCode/0x208784ec354E65d6F51cFB72aA72B98c05a59c46.txt:95:5: Warning: Integer Underflow.\n    string  public version = 'v0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.9"
+}

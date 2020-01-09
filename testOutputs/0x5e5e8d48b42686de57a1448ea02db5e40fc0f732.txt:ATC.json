@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:907:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1235:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1061:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1209:20: Warning: Integer Overflow.\n            return checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 115792089237316195423570985008687907853269982069492134772043769742664965029881\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1223:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1253:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 170141183460469231731687303441006198781\n    blacklisted[_from] = 0\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1207:23: Warning: Integer Overflow.\n        if (_block >= checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 115792089237316195423570985008687194229423631685700034896472859260344938266624\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1263:51: Warning: Integer Overflow.\n               Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 1180591620717411303423\n    blacklisted[_from] = 0\n    controller = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:555:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:561:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.2'", 
+   "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:559:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1311:17: Warning: Transaction-Ordering Dependency.\n        require(TokenController(controller).proxyPayment.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5e5e8d48b42686de57a1448ea02db5e40fc0f732.txt:1333:13: Warning: Transaction-Ordering Dependency.\n            controller.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

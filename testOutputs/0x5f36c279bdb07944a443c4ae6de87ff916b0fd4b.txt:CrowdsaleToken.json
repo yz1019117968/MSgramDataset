@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5f36c279bdb07944a443c4ae6de87ff916b0fd4b.txt:1431:3: Warning: Integer Overflow.\n  function setTokenInformation(string _name, string _symbol) onlyOwner {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5f36c279bdb07944a443c4ae6de87ff916b0fd4b.txt:1287:3: Warning: Integer Underflow.\n  string public name", 
+   "./uniqueContractSourceCode/0x5f36c279bdb07944a443c4ae6de87ff916b0fd4b.txt:1291:3: Warning: Integer Underflow.\n  string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.2"
+}

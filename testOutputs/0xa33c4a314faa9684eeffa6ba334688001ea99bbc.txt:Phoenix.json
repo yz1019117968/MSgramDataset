@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa33c4a314faa9684eeffa6ba334688001ea99bbc.txt:129:9: Warning: Integer Overflow.\n        Account memory acc = accounts[user]\nInteger Overflow occurs if:\n    MAX_ROUND_TIME = 0\n    currentRoundStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa33c4a314faa9684eeffa6ba334688001ea99bbc.txt:279:13: Warning: Integer Underflow.\n            currentLimit - currentRoundCollected\nInteger Underflow occurs if:\n    currentLimit = 0\n    currentRoundCollected = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.0"
+}

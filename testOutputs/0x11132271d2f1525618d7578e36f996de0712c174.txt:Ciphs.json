@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:407:3: Warning: Integer Overflow.\n  function transferFrom(address _from, address _to, uint _value, bytes _data) returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:389:3: Warning: Integer Overflow.\n  function transfer(address _to, uint _value, bytes _data) returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:51:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    last_seen[investors[i]] = 115792089237316195423570985008687907853269984665640564039457584007913126472192\n    investors.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:705:9: Warning: Integer Overflow.\n        up++\nInteger Overflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003958226812929\n    up = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votes[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    propose = 255", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:615:25: Warning: Integer Overflow.\n           if(last_seen[investors[i]\nInteger Overflow occurs if:\n    last_seen[investors[i]] = 1361129467683753853853498429727072845056\n    investors.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:321:3: Warning: Integer Overflow.\n  function tokenFallback(address _sender, address _origin, uint _value, bytes _data) returns (bool ok) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:743:9: Warning: Integer Overflow.\n        down++\nInteger Overflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003958226812929\n    down = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votes[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    propose = 255", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:1003:5: Warning: Integer Overflow.\n    investors.push(msg.sender)\nInteger Overflow occurs if:\n    investors.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:171:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:147:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:1073:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x11132271d2f1525618d7578e36f996de0712c174.txt:1065:7: Warning: Transaction-Ordering Dependency.\n      owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.9"
+}

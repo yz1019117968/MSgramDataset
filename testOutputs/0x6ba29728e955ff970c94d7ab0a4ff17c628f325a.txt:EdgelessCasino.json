@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:143:3: Warning: Timestamp Dependency.\n\t\tif(closeAt < now || playerBalance == 0){\r\n\t\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:143:6: Warning: Timestamp Dependency.\n\t\tif(closeAt < now || playerBalance == 0"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:1125:3: Warning: Integer Overflow.\n  function logGameData(bytes32[] serverSeeds, bytes32[] clientSeeds, int[] results, uint8 v, bytes32 r, bytes32 s) public{\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    serverSeeds = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:745:3: Warning: Integer Overflow.\n\t\twithdrawCount[receiver]++\nInteger Overflow occurs if:\n    withdrawCount[receiver] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authorized[msg.sender] = 255\n    closeAt = 0", 
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:47:12: Warning: Integer Overflow.\n\t\tuint c = a + b\nInteger Overflow occurs if:\n    playerBalance = 1\n    gasPayback = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:927:3: Warning: Integer Overflow.\n  function updateBatch(int128[] winBalances,  uint128[] gameCounts, uint8[] v, bytes32[] r, bytes32[] s, bool chargeGas) public onlyAuthorized{\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    winBalances = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:567:31: Warning: Integer Overflow.\n\t\twithdrawAfter[msg.sender] = now + waitingTime\nInteger Overflow occurs if:\n    waitingTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6ba29728e955ff970c94d7ab0a4ff17c628f325a.txt:37:15: Warning: Integer Underflow.\n\t\telse assert(a - b\nInteger Underflow occurs if:\n    winBalance = 42535295865117307932921825928971026431\n    gameCount = 1\n    authorized[ecrecover(keccak256(player, winBalance, gameCount), v, r, s)] = 255\n    authorized[msg.sender] = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.0"
+}

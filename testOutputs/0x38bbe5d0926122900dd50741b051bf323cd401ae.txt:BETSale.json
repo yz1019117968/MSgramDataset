@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x38bbe5d0926122900dd50741b051bf323cd401ae.txt:157:7: Warning: Re-Entrancy Vulnerability.\n      token.proxyPayment.value(this.balance)(address(this))"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x38bbe5d0926122900dd50741b051bf323cd401ae.txt:175:5: Warning: Integer Overflow.\n    total_bet_available += _bet_amount\nInteger Overflow occurs if:\n    total_bet_available = 1\n    _bet_amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    seller = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x38bbe5d0926122900dd50741b051bf323cd401ae.txt:289:5: Warning: Transaction-Ordering Dependency.\n    seller.transfer(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x38bbe5d0926122900dd50741b051bf323cd401ae.txt:289:5: Warning: Transaction-Ordering Dependency.\n    seller.transfer(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.6"
+}

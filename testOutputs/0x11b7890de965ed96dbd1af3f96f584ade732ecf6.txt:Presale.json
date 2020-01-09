@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11b7890de965ed96dbd1af3f96f584ade732ecf6.txt:39:19: Warning: Integer Overflow.\n         uint c = a + b\nInteger Overflow occurs if:\n    balanceOf[_investor] = 1\n    manager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x11b7890de965ed96dbd1af3f96f584ade732ecf6.txt:85:9: Warning: Integer Underflow.\n        string public name", 
+   "./uniqueContractSourceCode/0x11b7890de965ed96dbd1af3f96f584ade732ecf6.txt:87:9: Warning: Integer Underflow.\n        string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.1"
+}

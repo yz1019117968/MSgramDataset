@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x72e80932a0a24b732891f5270a93d78f4e6e05b5.txt:13:1: Warning: Integer Overflow.\naddress[] public addresses1", 
+   "./uniqueContractSourceCode/0x72e80932a0a24b732891f5270a93d78f4e6e05b5.txt:15:1: Warning: Integer Overflow.\nuint256[] public balances1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

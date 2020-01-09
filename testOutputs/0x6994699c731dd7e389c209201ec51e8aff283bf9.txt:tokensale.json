@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:671:26: Warning: Callstack Depth Attack Vulnerability.\n        if(weiLeftOver>0)msg.sender.send(weiLeftOver)"
+  ], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:505:13: Warning: Timestamp Dependency.\n            if(now > dates[numberOfDates-1]) {\r\n            ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:629:19: Warning: Integer Underflow.\n                i=numberOfDates-1\nInteger Underflow occurs if:\n    numberOfDates = 0\n    dates[0] = 115792089234788546156713252798259423811534645862382292071841567337189583355903\n    tokensFromPreviousTokensale = 0\n    numberOfTokensLeft = 41586607520159664522989653961893712309976047992083354581156485152968345124863", 
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:579:28: Warning: Integer Underflow.\n            uint256 diff = tokensFromPreviousTokensale - prevTokensFromPreviousTokensale\nInteger Underflow occurs if:\n    tokensFromPreviousTokensale = 94998785477236363162076158027741051698281960669598886748879341431428957077505\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:615:63: Warning: Integer Underflow.\n        if(numberOfTokensLeft<=0 || now<dates[0] || now>dates[numberOfDates-1\nInteger Underflow occurs if:\n    numberOfDates = 0\n    dates[0] = 0\n    tokensFromPreviousTokensale = 0\n    numberOfTokensLeft = 41586607520159664522989653961893712309976047992083354581156485152968345124863", 
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:505:28: Warning: Integer Underflow.\n            if(now > dates[numberOfDates-1\nInteger Underflow occurs if:\n    numberOfDates = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:399:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:401:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:623:27: Warning: Integer Underflow.\n        for(uint256 i=0;i<numberOfDates-1\nInteger Underflow occurs if:\n    numberOfDates = 0\n    dates[0] = 0\n    tokensFromPreviousTokensale = 0\n    numberOfTokensLeft = 41586607520159664522989653961893712309976047992083354581156485152968345124863"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:549:21: Warning: Transaction-Ordering Dependency.\n                if(!finalAddress.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6994699c731dd7e389c209201ec51e8aff283bf9.txt:531:13: Warning: Transaction-Ordering Dependency.\n        if(!finalAddress.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.0"
+}

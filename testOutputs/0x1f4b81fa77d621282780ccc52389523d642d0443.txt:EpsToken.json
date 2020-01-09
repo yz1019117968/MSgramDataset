@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:193:52: Warning: Integer Overflow.\n            if (msg.sender == fundsWallet && now < icoEnd + blockPeriod\nInteger Overflow occurs if:\n    icoEnd = 1\n    allowed[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    blockPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fundsWallet = 0\n    lockedPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:155:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 92909685496078091657443674208443701078712599796717572827639311819085946684903\n    balances[msg.sender] = 70170199650386012247423699629533554085709065966350108429984921338319865579255\n    icoEnd = 0\n    blockPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fundsWallet = 0\n    lockedPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:185:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    fundsWallet = 0\n    lockedPeriod = 0\n    icoEnd = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:159:52: Warning: Integer Overflow.\n            if (msg.sender == fundsWallet && now < icoEnd + blockPeriod\nInteger Overflow occurs if:\n    icoEnd = 1\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    blockPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fundsWallet = 0\n    lockedPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:363:25: Warning: Integer Overflow.\n        totalEthInWei = totalEthInWei + msg.value\nInteger Overflow occurs if:\n    totalEthInWei = 1\n    tokensToSell = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    icoEnd = 115792089237316195021836473943940338967779461580349913408906835544622734770175\n    icoStart = 115792089237316195021836473943940338967779461580349913408906835544622734770175", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:409:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:307:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:243:31: Warning: Integer Underflow.\n    \t\tbalances[fundsWallet] = balances[fundsWallet] - difference\nInteger Underflow occurs if:\n    balances[fundsWallet] = 0\n    icoEnd = 0\n    tokensToSell = 1\n    burned = 0", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:311:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:313:5: Warning: Integer Underflow.\n    string public version = 'H1.0'", 
+   "./uniqueContractSourceCode/0x1f4b81fa77d621282780ccc52389523d642d0443.txt:245:21: Warning: Integer Underflow.\n    \t\ttotalSupply = totalSupply - difference\nInteger Underflow occurs if:\n    totalSupply = 0\n    icoEnd = 0\n    tokensToSell = 1\n    burned = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.4"
+}

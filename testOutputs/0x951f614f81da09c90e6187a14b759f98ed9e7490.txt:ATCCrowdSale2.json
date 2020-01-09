@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2855:9: Warning: Integer Overflow.\n    if (additionalBonusAmounts[1]\nInteger Overflow occurs if:\n    additionalBonusAmounts[0] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    periods.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    toFund = 0\n    additionalBonusAmounts[0] = 1\n    periods[i].endTime = 0\n    periods[i].startTime = 0\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2833:12: Warning: Integer Overflow.\n    return periods[currentPeriod]\nInteger Overflow occurs if:\n    periods.length = 7\n    periods[i].endTime = 0\n    periods[i].startTime = 0\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2861:9: Warning: Integer Overflow.\n    if (additionalBonusAmounts[2]\nInteger Overflow occurs if:\n    additionalBonusAmounts[0] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    periods.length = 6\n    toFund = 0\n    additionalBonusAmounts[1] = 1\n    additionalBonusAmounts[0] = 1\n    periods[i].endTime = 0\n    periods[i].startTime = 0\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2819:49: Warning: Integer Overflow.\n      if (periods[i].startTime <= now && now <= periods[i].endTime\nInteger Overflow occurs if:\n    periods.length = 3064991081731777716716694054300618367237478244367204352\n    weiRaised = 84531298683758872688791199638439372105736919108862485620243236066245938211857\n    maxEtherCap = 115781927278539570749296284467590993210644546535964255766806025526542540932937\n    isFinalized = 0\n    periods[i].endTime = 0\n    periods[i].startTime = 0\n    periods[i].startTime = 1\n    paused = 0", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2599:3: Warning: Integer Overflow.\n  function initialize (\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _additionalBonusAmounts = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2867:9: Warning: Integer Overflow.\n    if (additionalBonusAmounts[3]\nInteger Overflow occurs if:\n    additionalBonusAmounts[0] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    periods.length = 6\n    toFund = 0\n    additionalBonusAmounts[2] = 1\n    additionalBonusAmounts[1] = 1\n    additionalBonusAmounts[0] = 1\n    periods[i].endTime = 0\n    periods[i].startTime = 0\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1\n    periods[i].startTime = 1", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2557:3: Warning: Integer Overflow.\n  uint256[] public additionalBonusAmounts", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2819:49: Warning: Integer Overflow.\n      if (periods[i].startTime <= now && now <= periods[i]\nInteger Overflow occurs if:\n    periods.length = 3064991081731777716716694054300618367237478244367204352\n    weiRaised = 84531298683758872688791199638439372105736919108862485620243236066245938211857\n    maxEtherCap = 115781927278539570749296284467590993210644546535964255766806025526542540932937\n    isFinalized = 0\n    periods[i].endTime = 0\n    periods[i].startTime = 0\n    periods[i].startTime = 1\n    paused = 0", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2833:12: Warning: Integer Overflow.\n    return periods[currentPeriod].bonus\nInteger Overflow occurs if:\n    weiRaised = 11281647972648854507962173592406066229372141443652422503645114015404960493581\n    maxEtherCap = 101030854538265186078709601059005228951304118645140578721133489498446184570066\n    isFinalized = 0\n    periods[i].endTime = 0\n    periods[i].startTime = 0\n    periods.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:2559:3: Warning: Integer Overflow.\n  Period[] public periods"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:3079:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:3079:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.6"
+}

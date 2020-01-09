@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x56c1e514d7d7ae8019670207365606f2a0ee7e81.txt:11:11: Warning: Integer Overflow.\n      if (self[i]\nInteger Overflow occurs if:\n    self[i] = 14134776518252785645380510161059223966878929612162518121301019402155589632\n    self.length = 9\n    value = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

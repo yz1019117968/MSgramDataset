@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21.txt:2263:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21.txt:2067:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))", 
+   "./uniqueContractSourceCode/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21.txt:1959:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()", 
+   "./uniqueContractSourceCode/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21.txt:2073:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21.txt:1813:3: Warning: Integer Overflow.\n  address[] public investors"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21.txt:2225:9: Warning: Transaction-Ordering Dependency.\n    if(!investor.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21.txt:2067:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.8"
+}

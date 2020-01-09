@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8d06cbfdaf7066c739c71d70a2261d96d00d2d52.txt:787:5: Warning: Integer Overflow.\n    function transferAndPay(address to, uint value, bytes data) payable{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8d06cbfdaf7066c739c71d70a2261d96d00d2d52.txt:651:5: Warning: Integer Overflow.\n    function transfer(address to, uint value, bytes data){\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.4"
+}

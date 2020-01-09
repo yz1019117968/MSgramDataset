@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x926ec5905d4445701c2d3cc83567b4ffc490e037.txt:99:5: Warning: Integer Overflow.\n    Investor[] public investors", 
+   "./restContracts/0x926ec5905d4445701c2d3cc83567b4ffc490e037.txt:137:9: Warning: Integer Overflow.\n        investors[mapInvestors[inv]-1].kyced\nInteger Overflow occurs if:\n    mapInvestors[inv] = 1\n    kycStatus = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x926ec5905d4445701c2d3cc83567b4ffc490e037.txt:137:9: Warning: Integer Overflow.\n        investors[mapInvestors[inv]-1]\nInteger Overflow occurs if:\n    mapInvestors[inv] = 115792089237316195423570982015532554599580808184494026636509959682125817970686\n    kycStatus = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x926ec5905d4445701c2d3cc83567b4ffc490e037.txt:135:41: Warning: Integer Underflow.\n        require(kycStatus == !investors[mapInvestors[inv]-1\nInteger Underflow occurs if:\n    mapInvestors[inv] = 0\n    owner = 0", 
+   "./restContracts/0x926ec5905d4445701c2d3cc83567b4ffc490e037.txt:83:5: Warning: Integer Underflow.\n    string public version = \"1.9\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.1"
+}

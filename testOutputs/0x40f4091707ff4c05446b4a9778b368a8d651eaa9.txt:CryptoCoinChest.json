@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x40f4091707ff4c05446b4a9778b368a8d651eaa9.txt:5:5: Warning: Integer Underflow.\n    string public standard = 'CryptoCoinChest'", 
+   "./uniqueContractSourceCode/0x40f4091707ff4c05446b4a9778b368a8d651eaa9.txt:7:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x40f4091707ff4c05446b4a9778b368a8d651eaa9.txt:9:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.5"
+}

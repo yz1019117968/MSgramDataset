@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc1Ec39D8FB9D0f2e2B521d77573226eB0e77d1A1.txt:93:5: Warning: Integer Underflow.\n    string public name = 'KC19700 OP TOKEN'", 
+   "./restContracts/0xc1Ec39D8FB9D0f2e2B521d77573226eB0e77d1A1.txt:91:5: Warning: Integer Underflow.\n    string public symbol = 'KCFOB'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.6"
+}

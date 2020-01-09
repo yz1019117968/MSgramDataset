@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb62d18dea74045e822352ce4b3ee77319dc5ff2f.txt:55:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    released = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb62d18dea74045e822352ce4b3ee77319dc5ff2f.txt:685:5: Warning: Integer Underflow.\n    string public name = \"EventChain\"", 
+   "./restContracts/0xb62d18dea74045e822352ce4b3ee77319dc5ff2f.txt:687:5: Warning: Integer Underflow.\n    string public symbol = \"EVC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.7"
+}

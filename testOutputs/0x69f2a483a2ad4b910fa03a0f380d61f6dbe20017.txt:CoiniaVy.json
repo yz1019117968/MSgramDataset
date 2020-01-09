@@ -1,0 +1,41 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:177:5: Warning: Integer Overflow.\n    function changeName (string newName) ifAuthorised {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:155:13: Warning: Integer Overflow.\n            shareholders[target].shares += amount\nInteger Overflow occurs if:\n    shareholders[msg.sender].shares = 47110802633667306819103526355036137261778831956251633577348914369423001787376\n    amount = 42814466258159800433265244900638307735415945693321699516321116260655966182754\n    shareholders[target].shares = 115438946712883225587177212364673105217928252639658053562143928589771103473702", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:159:13: Warning: Integer Overflow.\n            shareholders[target].shares\nInteger Overflow occurs if:\n    shareholders[msg.sender].shares = 57896044618658097611351840792914235675748949712325320157399576781211809349630\n    amount = 18889465931478580854784\n    shareholders[target].shares = 0", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:155:13: Warning: Integer Overflow.\n            shareholders[target].shares\nInteger Overflow occurs if:\n    shareholders[msg.sender].shares = 57896044618658097611351840792914235675748949712325320157399576781211809349630\n    amount = 18889465931478580854784\n    shareholders[target].shares = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:15:1: Warning: Integer Overflow.\ncontract CoiniaVy {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    projectManagers.push (newManager) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    shareholders[msg.sender].limited = 0\n    shareholders[msg.sender].shares = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:33:5: Warning: Integer Overflow.\n    address[] public projectManagers", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:253:5: Warning: Integer Overflow.\n    function setIndustry (string newIndustry) ifAuthorised ifGeneralPartner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newIndustry = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:161:13: Warning: Integer Overflow.\n            shareholders[target].limited\nInteger Overflow occurs if:\n    shareholders[msg.sender].shares = 57896044618658097611351840792914235675748949712325320157399576781211809349630\n    amount = 18889465931478580854784\n    shareholders[target].shares = 0", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:285:5: Warning: Integer Overflow.\n    function setName (string newName) ifAuthorised ifGeneralPartner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:35:5: Warning: Integer Overflow.\n    address[] public treasuryManagers", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:151:9: Warning: Integer Overflow.\n        shareholders[msg.sender].shares\nInteger Overflow occurs if:\n    shareholders[msg.sender].shares = 57896044618658097611351840792914235675748949712325320157399576781211809349630\n    amount = 18889465931478580854784", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:239:9: Warning: Integer Overflow.\n        shareholders[target].limited\nInteger Overflow occurs if:\n    shareholders[msg.sender].limited = 0\n    shareholders[msg.sender].shares = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:305:9: Warning: Integer Overflow.\n        treasuryManagers.push (newManager)\nInteger Overflow occurs if:\n    treasuryManagers.push (newManager) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    shareholders[msg.sender].limited = 0\n    shareholders[msg.sender].shares = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:129:16: Warning: Integer Overflow.\n        return shareholders[target].shares", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:193:5: Warning: Integer Overflow.\n    function changeId (string newId) ifAuthorised {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:153:13: Warning: Integer Overflow.\n        if (shareholders[target].shares\nInteger Overflow occurs if:\n    shareholders[msg.sender].shares = 57896044618658097611351840792914235675748949712325320157399576781211809349630\n    amount = 18889465931478580854784", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:269:5: Warning: Integer Overflow.\n    function setHome (string newHome) ifAuthorised ifGeneralPartner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newHome = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:321:9: Warning: Integer Overflow.\n        projectManagers.push (newManager)\nInteger Overflow occurs if:\n    projectManagers.push (newManager) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    shareholders[msg.sender].limited = 0\n    shareholders[msg.sender].shares = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:15:1: Warning: Integer Underflow.\ncontract CoiniaVy {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    shareholders[msg.sender].shares = 0", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:31:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:49:5: Warning: Integer Underflow.\n    string public name = \"Coinia Vy\"", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:43:5: Warning: Integer Underflow.\n    mapping (address => Shareholder) public shareholders", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:211:13: Warning: Integer Underflow.\n        if (bytes(shareholders[msg.sender].name).length", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:51:5: Warning: Integer Underflow.\n    string public symbol = \"CIA\"", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:41:5: Warning: Integer Underflow.\n    string public industry = \"64190 Muu pankkitoiminta / Financial service nec\"", 
+   "./uniqueContractSourceCode/0x69f2a483a2ad4b910fa03a0f380d61f6dbe20017.txt:39:5: Warning: Integer Underflow.\n    string public home = \"PL 18, 30101 Forssa, FINLAND\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.6"
+}

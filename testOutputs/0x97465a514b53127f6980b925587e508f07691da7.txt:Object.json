@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:203:5: Warning: Integer Overflow.\n    function withdrawnTokens(address[] tokens, address _to) onlyContractOwner returns(uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.8"
+}

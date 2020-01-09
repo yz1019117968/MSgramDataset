@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:827:13: Warning: Integer Overflow.\n            pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:851:39: Warning: Integer Overflow.\n                delete m_pendingIndex[m_pending[_operation].index\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:867:17: Warning: Integer Overflow.\n                pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:1347:1: Warning: Integer Overflow.\ncontract Wallet is multisig, multiowned, daylimit, tokenswap {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    m_pendingIndex.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:653:13: Warning: Integer Overflow.\n            pending.yetNeeded++\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:793:18: Warning: Integer Overflow.\n        return !(pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(_owner)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:829:29: Warning: Integer Overflow.\n            pending.index = m_pendingIndex.length++\nInteger Overflow occurs if:\n    m_pendingIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:651:13: Warning: Integer Overflow.\n        if (pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:655:13: Warning: Integer Overflow.\n            pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:851:24: Warning: Integer Overflow.\n                delete m_pendingIndex[m_pending[_operation].index]\nInteger Overflow occurs if:\n    m_pending[_operation].index = 115792089237316195423570985008687907853269984665640564039455278164903915945983\n    m_pendingIndex[m_pending[_operation].index] = 115792089237316195423570985008687907853269984665640564039455278164903915945984\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:841:13: Warning: Integer Overflow.\n        if (pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:655:13: Warning: Integer Underflow.\n            pending.ownersDone -= ownerIndexBit\nInteger Underflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.5"
+}

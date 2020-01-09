@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9e17852142b297b7d7919698fa8b7e382c43bebd.txt:369:3: Warning: Integer Overflow.\n  uint256[] public milestoneShares", 
+   "./restContracts/0x9e17852142b297b7d7919698fa8b7e382c43bebd.txt:367:3: Warning: Integer Overflow.\n  address[] public milestoneRecipients"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.6"
+}

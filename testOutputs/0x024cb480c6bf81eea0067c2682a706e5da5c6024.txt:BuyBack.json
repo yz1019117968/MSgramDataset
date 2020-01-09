@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x024cb480c6bf81eea0067c2682a706e5da5c6024.txt:203:5: Warning: Integer Overflow.\n    function withdrawnTokens(address[] tokens, address _to) onlyContractOwner returns(uint) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x024cb480c6bf81eea0067c2682a706e5da5c6024.txt:1347:14: Warning: Transaction-Ordering Dependency.\n        if (!_recipient.send(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x024cb480c6bf81eea0067c2682a706e5da5c6024.txt:75:9: Warning: Transaction-Ordering Dependency.\n        suicide(msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.4"
+}

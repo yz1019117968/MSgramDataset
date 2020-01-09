@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x9be0754df1f8ebf8d6a6fc86e0bf186aa3f7a4f4.txt:587:9: Warning: Callstack Depth Attack Vulnerability.\n        owner.send(this.balance)"
+  ], 
+  "time_dependency": [
+   "./restContracts/0x9be0754df1f8ebf8d6a6fc86e0bf186aa3f7a4f4.txt:585:17: Warning: Timestamp Dependency.\n        require(now > endTime || SECCoinSold == MAX_CAP", 
+   "./restContracts/0x9be0754df1f8ebf8d6a6fc86e0bf186aa3f7a4f4.txt:585:9: Warning: Timestamp Dependency.\n        require(now > endTime || SECCoinSold == MAX_CAP)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9be0754df1f8ebf8d6a6fc86e0bf186aa3f7a4f4.txt:587:9: Warning: Transaction-Ordering Dependency.\n        owner.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0x9be0754df1f8ebf8d6a6fc86e0bf186aa3f7a4f4.txt:587:9: Warning: Transaction-Ordering Dependency.\n        owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.0"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:407:9: Warning: Integer Overflow.\n        totalAllocatedTokens += _amount\nInteger Overflow occurs if:\n    totalAllocatedTokens = 1\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    crowdFundAddress = 0", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:115:47: Warning: Integer Overflow.\n        if (balances[msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:155:82: Warning: Integer Overflow.\n        if (balances[_from] >= _value && allowed[_from][msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:265:5: Warning: Integer Underflow.\n    string public symbol = \"NOLLY\"", 
+   "./restContracts/0xb69096a89389638518725adfcf279f3f82efa2de.txt:263:5: Warning: Integer Underflow.\n    string public name = \"Nolly Coin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.3"
+}

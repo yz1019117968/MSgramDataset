@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7be3e5769ce2db28b082f40bc8629f233f465837.txt:653:23: Warning: Integer Overflow.\n        releaseTime = now + PRICER_DELAY\nInteger Overflow occurs if:\n    PRICER_DELAY = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

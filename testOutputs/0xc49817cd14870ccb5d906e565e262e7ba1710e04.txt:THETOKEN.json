@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc49817cd14870ccb5d906e565e262e7ba1710e04.txt:307:3: Warning: Integer Underflow.\n  string public name = \"SpineCoin\"", 
+   "./restContracts/0xc49817cd14870ccb5d906e565e262e7ba1710e04.txt:309:3: Warning: Integer Underflow.\n  string public symbol = \"SPN\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

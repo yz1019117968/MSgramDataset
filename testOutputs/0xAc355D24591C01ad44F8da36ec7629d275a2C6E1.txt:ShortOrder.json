@@ -1,0 +1,36 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:719:28: Warning: Integer Overflow.\n    return safeDiv(safeMul(orderRecord[tokenUserSender[1]][orderHash].longBalance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:345:76: Warning: Integer Overflow.\n    orderRecord[tokenUser[1]][orderHash].longBalance[msg.sender] = safeAdd(orderRecord[tokenUser[1]][orderHash].longBalance\nInteger Overflow occurs if:\n    orderRecord[tokenUser[1]][orderHash].balance = 0\n    orderRecord[tokenUser[1]][orderHash].coupon = 0", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:637:12: Warning: Integer Overflow.\n    return orderRecord[creatorUser[0]][orderHash].longBalance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:385:5: Warning: Integer Overflow.\n    orderRecord[sellerShort[1]][hashRS[0]].longBalance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:719:108: Warning: Integer Overflow.\n    return safeDiv(safeMul(orderRecord[tokenUserSender[1]][orderHash].longBalance[tokenUserSender[2]],100),orderRecord[tokenUserSender[1]][orderHash].balance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:621:12: Warning: Integer Overflow.\n    return orderRecord[_creator][orderHash].balance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:507:72: Warning: Integer Overflow.\n    admin.transfer(safeAdd(orderRecord[tokenUser[1]][orderHash].coupon,orderRecord[tokenUser[1]][orderHash].balance\nInteger Overflow occurs if:\n    admin = 0", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:431:111: Warning: Integer Overflow.\n    uint couponProportion = safeDiv(safeMul(orderRecord[tokenUser[1]][orderHash].longBalance[msg.sender],100),orderRecord[tokenUser[1]][orderHash].balance\nInteger Overflow occurs if:\n    orderRecord[tokenUser[1]][orderHash].balance = 0", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:629:12: Warning: Integer Overflow.\n    return orderRecord[creatorToken[0]][orderHash].shortBalance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:735:28: Warning: Integer Overflow.\n    return safeDiv(safeMul(orderRecord[tokenUserSender[1]][orderHash].shortBalance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:383:70: Warning: Integer Overflow.\n    orderRecord[sellerShort[1]][hashRS[0]].longBalance[msg.sender] = orderRecord[sellerShort[1]][hashRS[0]].longBalance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:653:12: Warning: Integer Overflow.\n    return orderRecord[_creator][orderHash].tokenDeposit", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:383:5: Warning: Integer Overflow.\n    orderRecord[sellerShort[1]][hashRS[0]].longBalance", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:121:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    orderRecord[tokenUser[1]][orderHash].coupon = 1\n    orderRecord[tokenUser[1]][orderHash].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    admin = 0", 
+   "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:431:45: Warning: Integer Overflow.\n    uint couponProportion = safeDiv(safeMul(orderRecord[tokenUser[1]][orderHash].longBalance\nInteger Overflow occurs if:\n    orderRecord[tokenUser[1]][orderHash].balance = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:381:5: Warning: Transaction-Ordering Dependency.\n    sellerShort[0].transfer(amountNonceExpiryDM[0])"
+   ], 
+   [
+    "./restContracts/0xAc355D24591C01ad44F8da36ec7629d275a2C6E1.txt:559:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(orderRecord[msg.sender][orderHash].coupon)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.0"
+}

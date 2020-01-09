@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5b53f9755f82439cba66007ec7073c59e0da4a7d.txt:281:9: Warning: Integer Overflow.\n        balances[to] += amount\nInteger Overflow occurs if:\n    balances[to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    amount = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[multiSigWallet] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    mintableAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5b53f9755f82439cba66007ec7073c59e0da4a7d.txt:211:5: Warning: Integer Underflow.\n    string public name = \"FlowchainCoin\"", 
+   "./uniqueContractSourceCode/0x5b53f9755f82439cba66007ec7073c59e0da4a7d.txt:217:5: Warning: Integer Underflow.\n    string public version = \"1.0\"", 
+   "./uniqueContractSourceCode/0x5b53f9755f82439cba66007ec7073c59e0da4a7d.txt:213:5: Warning: Integer Underflow.\n    string public symbol = \"FLC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.2"
+}

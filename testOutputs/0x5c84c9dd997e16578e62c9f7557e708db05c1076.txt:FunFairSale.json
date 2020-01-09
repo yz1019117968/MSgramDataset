@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x5c84c9dd997e16578e62c9f7557e708db05c1076.txt:153:9: Warning: Timestamp Dependency.\n        if (block.timestamp < deadline) throw"
+  ], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x5c84c9dd997e16578e62c9f7557e708db05c1076.txt:155:14: Warning: Re-Entrancy Vulnerability.\n        if (!owner.call.value(this.balance)()"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5c84c9dd997e16578e62c9f7557e708db05c1076.txt:141:13: Warning: Integer Overflow.\n        if (this.balance + msg.value\nInteger Overflow occurs if:\n    capAmount = 1\n    deadline = 1\n    startTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.4"
+}

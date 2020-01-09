@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9106708eb08a6fca144bcb45f8bcd020f903c0f5.txt:431:5: Warning: Integer Overflow.\n    Team[] public teams", 
+   "./restContracts/0x9106708eb08a6fca144bcb45f8bcd020f903c0f5.txt:573:38: Warning: Integer Overflow.\n        RaceBaseStats storage race = raceBaseStats[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853184914073910329423591740354955675959295\n    raceBaseStats[_id] = 115792089237316195423570985008687907853184914073910329423591740354955675959296", 
+   "./restContracts/0x9106708eb08a6fca144bcb45f8bcd020f903c0f5.txt:463:5: Warning: Integer Overflow.\n    uint256[] public deletedTeamIds", 
+   "./restContracts/0x9106708eb08a6fca144bcb45f8bcd020f903c0f5.txt:471:5: Warning: Integer Overflow.\n    uint8[] public genBaseStats = [\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9106708eb08a6fca144bcb45f8bcd020f903c0f5.txt:435:5: Warning: Integer Overflow.\n    RaceBaseStats[] public raceBaseStats"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.5"
+}

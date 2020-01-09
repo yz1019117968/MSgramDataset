@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:447:5: Warning: Integer Overflow.\n    newToken.lastPrice\nInteger Overflow occurs if:\n    owner = 0\n    tokens[_tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:455:5: Warning: Integer Overflow.\n    newToken.previousOwners\nInteger Overflow occurs if:\n    owner = 0\n    tokens[_tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:451:5: Warning: Integer Overflow.\n    newToken.kind\nInteger Overflow occurs if:\n    owner = 0\n    tokens[_tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:591:36: Warning: Integer Overflow.\n    uint256 priceDelta = price.sub(token.lastPrice\nInteger Overflow occurs if:\n    paused = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:1521:3: Warning: Integer Overflow.\n  function populateFromOldContract(uint256[] _ids) onlyOwner public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _ids = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:449:5: Warning: Integer Overflow.\n    newToken.payout\nInteger Overflow occurs if:\n    owner = 0\n    tokens[_tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:443:5: Warning: Integer Overflow.\n    newToken.owner\nInteger Overflow occurs if:\n    owner = 0\n    tokens[_tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:453:5: Warning: Integer Overflow.\n    newToken.bossTokenId\nInteger Overflow occurs if:\n    owner = 0\n    tokens[_tokenId].price = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:497:34: Warning: Integer Underflow.\n      return _price.mul(200).div(100 - feePercentage\nInteger Underflow occurs if:\n    feePercentage = 112\n    _price = 0\n    firstCap = 1", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:501:34: Warning: Integer Underflow.\n      return _price.mul(135).div(100 - feePercentage\nInteger Underflow occurs if:\n    feePercentage = 112\n    _price = 0\n    secondCap = 1\n    firstCap = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:505:34: Warning: Integer Underflow.\n      return _price.mul(125).div(100 - feePercentage\nInteger Underflow occurs if:\n    feePercentage = 112\n    _price = 0\n    thirdCap = 1\n    secondCap = 0\n    firstCap = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:509:34: Warning: Integer Underflow.\n      return _price.mul(117).div(100 - feePercentage\nInteger Underflow occurs if:\n    feePercentage = 112\n    _price = 0\n    finalCap = 1\n    thirdCap = 0\n    secondCap = 0\n    firstCap = 0", 
+   "./uniqueContractSourceCode/0x0604db7ebf0004ddf450020e0d8b0f0354b1345f.txt:513:34: Warning: Integer Underflow.\n      return _price.mul(115).div(100 - feePercentage\nInteger Underflow occurs if:\n    feePercentage = 112\n    _price = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    finalCap = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    thirdCap = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    secondCap = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    firstCap = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.2"
+}

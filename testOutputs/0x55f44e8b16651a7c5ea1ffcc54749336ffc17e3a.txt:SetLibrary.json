@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:85:35: Warning: Integer Overflow.\n            uint256 valueToMove = self.values[self.values.length-1]\nInteger Overflow occurs if:\n    self.values.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    self.valuesMapping[value].index = 115792089237316195423570985008687907853269984665640564039457584007913129639928\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:133:16: Warning: Integer Overflow.\n        return self.values\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:113:9: Warning: Integer Overflow.\n        self.values\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].index = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.values.length = 0\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:1:1: Warning: Integer Overflow.\n}\nInteger Overflow occurs if:\n    self.values.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    self.valuesMapping[value].exists = 0", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:85:47: Warning: Integer Overflow.\n            uint256 valueToMove = self.values[self.values\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    self.values.length = 0\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:89:13: Warning: Integer Overflow.\n            self.values[indexToMoveItTo]\nInteger Overflow occurs if:\n    self.values.length = 17126972312471518572699431633393941636592959488\n    self.valuesMapping[value].index = 5708990770823839524233143877797980545530986495\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:85:35: Warning: Integer Overflow.\n            uint256 valueToMove = self.values\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    self.values.length = 0\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:31:13: Warning: Integer Overflow.\n        if (self.valuesMapping[value].exists", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:37:69: Warning: Integer Overflow.\n        self.valuesMapping[value] = ArrayIndexAndExistsFlag({index: self.values\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].exists = 0", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:43:9: Warning: Integer Overflow.\n        self.values\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].exists = 0", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:89:13: Warning: Integer Overflow.\n            self.values\nInteger Overflow occurs if:\n    self.values.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].index = 115792089237316195423570985008687907853269984665640564039457584007913129639928\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:81:47: Warning: Integer Overflow.\n        if (self.valuesMapping[value].index < self.values\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:71:9: Warning: Integer Overflow.\n        self.valuesMapping[value].exists\nInteger Overflow occurs if:\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:37:9: Warning: Integer Overflow.\n        self.valuesMapping[value] = ArrayIndexAndExistsFlag({index: self.values.length, exists: true})\nInteger Overflow occurs if:\n    self.valuesMapping[value].exists = 0", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:43:9: Warning: Integer Overflow.\n        self.values.push(value)\nInteger Overflow occurs if:\n    self.values.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].exists = 0", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:65:13: Warning: Integer Overflow.\n        if (self.valuesMapping[value].exists", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:55:16: Warning: Integer Overflow.\n        return self.valuesMapping[value].exists"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:113:9: Warning: Integer Underflow.\n        self.values.length--\nInteger Underflow occurs if:\n    self.values.length = 0\n    self.valuesMapping[value].index = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:85:47: Warning: Integer Underflow.\n            uint256 valueToMove = self.values[self.values.length-1\nInteger Underflow occurs if:\n    self.values.length = 0\n    self.valuesMapping[value].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    self.valuesMapping[value].exists = 255", 
+   "./uniqueContractSourceCode/0x55f44e8b16651a7c5ea1ffcc54749336ffc17e3a.txt:81:47: Warning: Integer Underflow.\n        if (self.valuesMapping[value].index < self.values.length-1\nInteger Underflow occurs if:\n    self.values.length = 0\n    self.valuesMapping[value].exists = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.0"
+}

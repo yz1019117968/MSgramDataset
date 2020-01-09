@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:267:16: Warning: Integer Overflow.\n        delete members[members.length-1]\nInteger Overflow occurs if:\n    memberId[targetMember] = 115792089237316195420432434140994567471352089954037968771445691665956011507711\n    members.length = 3138550867693340381917894711603833208051177722232017256448\n    owner = 0", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:87:5: Warning: Integer Overflow.\n    Proposal[] public proposals", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:47:5: Warning: Integer Overflow.\n    function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:219:5: Warning: Integer Overflow.\n    function addMember(address targetMember, string memberName) onlyOwner public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:451:5: Warning: Integer Overflow.\n    function checkProposalCode(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:557:5: Warning: Integer Overflow.\n    function executeProposal(uint proposalNumber, bytes transactionBytecode) public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:339:5: Warning: Integer Overflow.\n    function newProposal(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:411:5: Warning: Integer Overflow.\n    function newProposalInEther(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:93:5: Warning: Integer Overflow.\n    Member[] public members", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:495:5: Warning: Integer Overflow.\n    function vote(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:261:49: Warning: Integer Underflow.\n        for (uint i = memberId[targetMember]; i<members.length-1\nInteger Underflow occurs if:\n    members.length = 0\n    memberId[targetMember] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:93:5: Warning: Integer Underflow.\n    Member[] public members", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:87:5: Warning: Integer Underflow.\n    Proposal[] public proposals", 
+   "./uniqueContractSourceCode/0x19397c7fde68a3b33503d491cac89011a5d9a61f.txt:267:24: Warning: Integer Underflow.\n        delete members[members.length-1\nInteger Underflow occurs if:\n    memberId[targetMember] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members.length = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "25.6"
+}

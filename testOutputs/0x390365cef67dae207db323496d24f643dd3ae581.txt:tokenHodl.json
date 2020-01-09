@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x390365cef67dae207db323496d24f643dd3ae581.txt:37:18: Warning: Timestamp Dependency.\n        require (block.timestamp > partyTime && hodlers[msg.sender] > 0"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x390365cef67dae207db323496d24f643dd3ae581.txt:29:9: Warning: Integer Overflow.\n        hodlers[msg.sender] += msg.value\nInteger Overflow occurs if:\n    hodlers[msg.sender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.5"
+}

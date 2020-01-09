@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x226a1f1460099321207c15931e6d6ce25e7c2832.txt:125:9: Warning: Integer Overflow.\n        administratorsLength++\nInteger Overflow occurs if:\n    administratorsLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    administrators[_wallet] = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x226a1f1460099321207c15931e6d6ce25e7c2832.txt:139:9: Warning: Integer Underflow.\n        administratorsLength--\nInteger Underflow occurs if:\n    administratorsLength = 0\n    administrators[_wallet] = 255\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

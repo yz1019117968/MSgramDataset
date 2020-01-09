@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x39e505e1518813ab3834d57d06c22b2e5a7fb9f2.txt:205:8: Warning: Integer Overflow.\n       SponsoredLink(SponsoredLink)\nInteger Overflow occurs if:\n    SponsoredLink(SponsoredLink) = 115792089237316195423570985008687907853269984665640564039457584007913129639681", 
+   "./uniqueContractSourceCode/0x39e505e1518813ab3834d57d06c22b2e5a7fb9f2.txt:195:5: Warning: Integer Overflow.\n    function setSponsor(string note_) public onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x39e505e1518813ab3834d57d06c22b2e5a7fb9f2.txt:291:38: Warning: Integer Underflow.\n             balances[msg.sender] -= _amount - gas\nInteger Underflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[_to] = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    _maxtotalSupply = 0\n    gas = 421249166674228746791672110734681729275580381602196445017243910146\n    reqfee = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _totalSupply = 0", 
+   "./uniqueContractSourceCode/0x39e505e1518813ab3834d57d06c22b2e5a7fb9f2.txt:205:8: Warning: Integer Underflow.\n       SponsoredLink(SponsoredLink)\nInteger Underflow occurs if:\n    SponsoredLink(SponsoredLink) = 1", 
+   "./uniqueContractSourceCode/0x39e505e1518813ab3834d57d06c22b2e5a7fb9f2.txt:193:5: Warning: Integer Underflow.\n    string public SponsoredLink = \"Ethereum White\"", 
+   "./uniqueContractSourceCode/0x39e505e1518813ab3834d57d06c22b2e5a7fb9f2.txt:291:14: Warning: Integer Underflow.\n             balances[msg.sender] -= _amount - gas\nInteger Underflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_to] = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    _maxtotalSupply = 0\n    gas = 421249166674228746791672110734681729275580381602196445017243910147\n    reqfee = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    _totalSupply = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

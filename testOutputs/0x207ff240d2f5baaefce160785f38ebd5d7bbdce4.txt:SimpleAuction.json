@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x207ff240d2f5baaefce160785f38ebd5d7bbdce4.txt:211:9: Warning: Timestamp Dependency.\n        require(now >= (auctionStart + biddingTime))"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x207ff240d2f5baaefce160785f38ebd5d7bbdce4.txt:127:13: Warning: Integer Overflow.\n            pendingReturns[highestBidder] += highestBid\nInteger Overflow occurs if:\n    pendingReturns[highestBidder] = 59218951627437310386411044169781991233084313256747678792531810087490296886273\n    highestBid = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    highestBidder = 1461501637330902918203684832716283019655932542975\n    biddingTime = 0\n    auctionStart = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x207ff240d2f5baaefce160785f38ebd5d7bbdce4.txt:227:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(highestBid)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x207ff240d2f5baaefce160785f38ebd5d7bbdce4.txt:159:18: Warning: Transaction-Ordering Dependency.\n            if (!msg.sender.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.7"
+}

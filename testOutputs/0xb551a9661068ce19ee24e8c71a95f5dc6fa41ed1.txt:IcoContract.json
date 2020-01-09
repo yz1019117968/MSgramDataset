@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1707:3: Warning: Timestamp Dependency.\n\t\tif(now>=phasePresale_From && now<phasePresale_To){\r\n\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1681:3: Warning: Timestamp Dependency.\n\t\tif(now<phasePresale_To){\r\n\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1707:6: Warning: Timestamp Dependency.\n\t\tif(now>=phasePresale_From && now<phasePresale_To", 
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1711:10: Warning: Timestamp Dependency.\n\t\t} else if (now>=phasePublicSale1_From && now<phasePublicSale1_To) {\r\n\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1683:4: Warning: Timestamp Dependency.\n\t\t\tif(now>=phasePresale_From)\r\n\t\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1711:14: Warning: Timestamp Dependency.\n\t\t} else if (now>=phasePublicSale1_From && now<phasePublicSale1_To", 
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1687:10: Warning: Timestamp Dependency.\n\t\t} else if(now<phasePublicSale3_To){\r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1495:5: Warning: Integer Overflow.\n\t\t\t\tbonusAccountCount++\nInteger Overflow occurs if:\n    maxGasRefund = 0\n    bonusAccountCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isBonus = 255\n    tokenRemainPreSale = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minContribution = 0\n    isFinalized = 0\n    paused = 0\n    bonusAccountBalances[msg.sender] = 0", 
+   "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:995:3: Warning: Integer Overflow.\n\t\treferralCount++\nInteger Overflow occurs if:\n    owner = 95406826884961342500336545879718955523139276405473280\n    referralCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1475:3: Warning: Transaction-Ordering Dependency.\n\t\tethFundDeposit.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xb551a9661068ce19ee24e8c71a95f5dc6fa41ed1.txt:1475:3: Warning: Transaction-Ordering Dependency.\n\t\tethFundDeposit.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.3"
+}

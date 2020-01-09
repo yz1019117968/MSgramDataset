@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x53a30b07bea5b8e9b5f710e038867a1531b0b5dc.txt:25:2: Warning: Integer Overflow.\n\tfunction sendEth(address[] _to, uint256[] _value) payable returns (bool _success) {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x53a30b07bea5b8e9b5f710e038867a1531b0b5dc.txt:65:2: Warning: Integer Overflow.\n\tfunction sendErc20(address _tokenAddress, address[] _to, uint256[] _value) returns (bool _success) {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "12.6"
+}

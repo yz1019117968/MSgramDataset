@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1385:1: Warning: Integer Overflow.\ncontract SafeWinner is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    pendingWinners.length = 1\n    owner = 0\n    pendingPayments[winner] = 0", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1393:5: Warning: Integer Overflow.\n    address[] public pendingWinners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1483:9: Warning: Transaction-Ordering Dependency.\n        winner.transfer(payment)"
+   ], 
+   [
+    "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1483:9: Warning: Transaction-Ordering Dependency.\n        winner.transfer(payment)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.6"
+}

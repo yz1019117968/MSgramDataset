@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1467:18: Warning: Timestamp Dependency.\n    succeeded = (complete && didOK", 
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1481:22: Warning: Timestamp Dependency.\n    didNotSucceed = (complete && didBad"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1421:19: Warning: Integer Overflow.\n        endDate = startDate + tranchePeriod\nInteger Overflow occurs if:\n    numTiers = 0\n    startDate = 2\n    owner = 0\n    tierNo = 0\n    period_ = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    coinsRemaining = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endDate = 115792089237316195423570985008687907853269984665640486668205128671645948444670", 
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1423:23: Warning: Integer Overflow.\n        if (endDate < now + tranchePeriod\nInteger Overflow occurs if:\n    numTiers = 0\n    owner = 0\n    tierNo = 0\n    period_ = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    coinsRemaining = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endDate = 115792089237316195423570985008687907853269984665640564039457584007363373826047\n    startDate = 115792089237316195423570985008687907853269984665640564039457584007363373826047", 
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1353:17: Warning: Integer Overflow.\n      endDate = when_ + tranchePeriod\nInteger Overflow occurs if:\n    tranchePeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:229:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    coinsRemaining = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    preallocCoins = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    numTokens = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    startDate = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1425:23: Warning: Integer Overflow.\n            endDate = now + tranchePeriod\nInteger Overflow occurs if:\n    owner = 372682917519380244141939632342652170012262798458880\n    period_ = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startDate = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1479:38: Warning: Integer Underflow.\n    bool didBad = (coinsRemaining > (MaxCoinsR1 - minimumCap\nInteger Underflow occurs if:\n    minimumCap = 18005602416459776", 
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1465:38: Warning: Integer Underflow.\n    bool didOK = (coinsRemaining <= (MaxCoinsR1 - minimumCap\nInteger Underflow occurs if:\n    minimumCap = 18005602416459776\n    coinsRemaining = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1787:15: Warning: Transaction-Ordering Dependency.\n              msg.sender.transfer(val)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:1805:18: Warning: Transaction-Ordering Dependency.\n            if (!multiSig.send(val)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.5"
+}

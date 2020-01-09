@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:2109:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:1811:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()", 
+   "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:1919:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))", 
+   "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:1913:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:1651:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 57896044618658097711785492504343953926634992332820282019710345101553180702902\n    weiMinimumLimit = 0\n    freezeEndsAt = 1\n    balances[investor] = 0\n    tokensBought = 0", 
+   "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:1863:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    weiMinimumLimit = 0\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    freezeEndsAt = 1\n    balances[investor] = 0\n    tokensBought = 0", 
+   "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:1673:3: Warning: Integer Overflow.\n  address[] public investors"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:2071:9: Warning: Transaction-Ordering Dependency.\n    if(!investor.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x0d3456099d32e297805c5b07d9bc0b0b579206e1.txt:1913:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.1"
+}

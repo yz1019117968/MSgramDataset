@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x07e9b9a2f6e916b641660f649afcba9b54edb3ef.txt:113:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    state = 4\n    balances[_to] = 108034400225318408420380440996632903434924151874951478569973452415569685626161\n    allowed[_from][msg.sender] = 31582706044363783228869092695952588749798531615273407166948120792925774349621\n    balances[_from] = 31582706044363783228869092695952588749798531615273407166948120792925774349621"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x07e9b9a2f6e916b641660f649afcba9b54edb3ef.txt:531:22: Warning: Integer Underflow.\n        uint nday = (date - crowdsaleStartTime\nInteger Underflow occurs if:\n    state = 1\n    crowdsaleFinishTime = 1\n    crowdsaleStartTime = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.7"
+}

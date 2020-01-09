@@ -1,0 +1,50 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:291:9: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD)", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:291:17: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:891:13: Warning: Integer Overflow.\n        if (p.numberOfVotes\nInteger Overflow occurs if:\n    state = 4\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _votesToProcess = 0", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:901:23: Warning: Integer Overflow.\n        _inSupport = (p.yea\nInteger Overflow occurs if:\n    state = 4\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _votesToProcess = 0", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:883:32: Warning: Integer Overflow.\n            delete p.votesIter[p.numberOfVotes\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:139:5: Warning: Integer Overflow.\n    mapping (address => Investor) public investors", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:901:31: Warning: Integer Overflow.\n        _inSupport = (p.yea > p.nay\nInteger Overflow occurs if:\n    state = 4\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _votesToProcess = 0", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:867:43: Warning: Integer Overflow.\n            address voter = p.votesIter[--p.numberOfVotes\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:879:17: Warning: Integer Overflow.\n                p.nay\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:865:39: Warning: Integer Overflow.\n        while (_votesToProcess > 0 && p.numberOfVotes\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:383:22: Warning: Integer Overflow.\n        uint value = investors[msg.sender].amountWei\nInteger Overflow occurs if:\n    state = 0", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:875:17: Warning: Integer Overflow.\n                p.yea += voteWeight\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balanceOf[voter] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:869:29: Warning: Integer Overflow.\n            Vote memory v = p.votes\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:783:5: Warning: Integer Overflow.\n    function deployProject(uint _proofReqFund, string _urlInfo) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _urlInfo = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:811:20: Warning: Integer Overflow.\n        _urlInfo = projects[_projectOwner].urlInfo\nInteger Overflow occurs if:\n    state = 4", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:883:20: Warning: Integer Overflow.\n            delete p.votesIter\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:649:18: Warning: Integer Overflow.\n        voteId = numberOfVotes++\nInteger Overflow occurs if:\n    state = 4\n    numberOfVotes = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votingDeadline = 1\n    votes[msg.sender].voted = 0\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:867:29: Warning: Integer Overflow.\n            address voter = p.votesIter\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:779:5: Warning: Integer Overflow.\n    mapping (address => Project) public projects", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:879:17: Warning: Integer Overflow.\n                p.nay += voteWeight\nInteger Overflow occurs if:\n    state = 4\n    balanceOf[voter] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:875:17: Warning: Integer Overflow.\n                p.yea\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:885:20: Warning: Integer Overflow.\n            delete p.votes\nInteger Overflow occurs if:\n    state = 4\n    _votesToProcess = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:779:5: Warning: Integer Underflow.\n    mapping (address => Project) public projects", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:405:5: Warning: Integer Underflow.\n    string  public name        = 'PROOF'", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:403:5: Warning: Integer Underflow.\n    string  public standard    = 'Token 0.1'", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:811:9: Warning: Integer Underflow.\n        _urlInfo = projects[_projectOwner].urlInfo\nInteger Underflow occurs if:\n    state = 4", 
+   "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:407:5: Warning: Integer Underflow.\n    string  public symbol      = \"PF\""
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:389:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(value)"
+   ], 
+   [
+    "./restContracts/0xa2f44d258b1714463099205eeedbee2337b120b5.txt:389:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.6"
+}

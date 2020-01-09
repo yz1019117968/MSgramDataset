@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x107bc486966ecddadb136463764a8eb73337c4df.txt:759:3: Warning: Integer Underflow.\n  string public name = \"ZTRToken\"", 
+   "./uniqueContractSourceCode/0x107bc486966ecddadb136463764a8eb73337c4df.txt:761:3: Warning: Integer Underflow.\n  string public symbol = \"ZTR\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.3"
+}

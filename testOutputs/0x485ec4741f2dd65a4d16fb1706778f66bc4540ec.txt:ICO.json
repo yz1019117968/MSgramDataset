@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x485ec4741f2dd65a4d16fb1706778f66bc4540ec.txt:1043:5: Warning: Integer Overflow.\n    milestones.push(Milestone(period, bonus))\nInteger Overflow occurs if:\n    milestones.push(Milestone(period, bonus)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x485ec4741f2dd65a4d16fb1706778f66bc4540ec.txt:1187:1: Warning: Integer Overflow.\ncontract ICO is StagedCrowdsale, CommonSale {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    milestones.push(Milestone(period, bonus)) = 41422112641837104714977910719459132799912797182732962724615910609143899352111\n    owner = 0", 
+   "./uniqueContractSourceCode/0x485ec4741f2dd65a4d16fb1706778f66bc4540ec.txt:1083:35: Warning: Integer Overflow.\n    Milestone storage milestone = milestones[number]\nInteger Overflow occurs if:\n    milestones.length = 32\n    owner = 0", 
+   "./uniqueContractSourceCode/0x485ec4741f2dd65a4d16fb1706778f66bc4540ec.txt:1061:12: Warning: Integer Overflow.\n    delete milestones[number]\nInteger Overflow occurs if:\n    milestones.length = 32\n    totalPeriod = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x485ec4741f2dd65a4d16fb1706778f66bc4540ec.txt:1055:35: Warning: Integer Overflow.\n    Milestone storage milestone = milestones[number]\nInteger Overflow occurs if:\n    milestones.length = 32\n    owner = 0", 
+   "./uniqueContractSourceCode/0x485ec4741f2dd65a4d16fb1706778f66bc4540ec.txt:1027:3: Warning: Integer Overflow.\n  Milestone[] public milestones", 
+   "./uniqueContractSourceCode/0x485ec4741f2dd65a4d16fb1706778f66bc4540ec.txt:1093:5: Warning: Integer Overflow.\n    milestone.bonus\nInteger Overflow occurs if:\n    milestones.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalPeriod = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.9"
+}

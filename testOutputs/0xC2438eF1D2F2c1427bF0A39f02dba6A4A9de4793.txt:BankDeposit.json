@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xC2438eF1D2F2c1427bF0A39f02dba6A4A9de4793.txt:93:9: Warning: Timestamp Dependency.\n        if (WithdrawEnabled()) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xC2438eF1D2F2c1427bF0A39f02dba6A4A9de4793.txt:77:17: Warning: Integer Overflow.\n                Deposits[msg.sender] += msg.value\nInteger Overflow occurs if:\n    Deposits[msg.sender] = 81880581632346154447501837939361325137171606057055576954786980028302474543500\n    minDeposit = 89162027706898390595631771814162138919675603842725975525052370684927041841647"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xC2438eF1D2F2c1427bF0A39f02dba6A4A9de4793.txt:99:17: Warning: Transaction-Ordering Dependency.\n                to.transfer(amount)"
+   ], 
+   [
+    "./restContracts/0xC2438eF1D2F2c1427bF0A39f02dba6A4A9de4793.txt:99:17: Warning: Transaction-Ordering Dependency.\n                to.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.3"
+}

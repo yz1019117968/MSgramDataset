@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x53a54c442583d2e844733f179d142c32f3c004b7.txt:225:9: Warning: Re-Entrancy Vulnerability.\n        crowdsale.buyTokens.value(bal)(investor)"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x53a54c442583d2e844733f179d142c32f3c004b7.txt:197:14: Warning: Transaction-Ordering Dependency.\n        if (!investor.send(bal)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x53a54c442583d2e844733f179d142c32f3c004b7.txt:225:9: Warning: Transaction-Ordering Dependency.\n        crowdsale.buyTokens.value(bal)(investor)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.0"
+}

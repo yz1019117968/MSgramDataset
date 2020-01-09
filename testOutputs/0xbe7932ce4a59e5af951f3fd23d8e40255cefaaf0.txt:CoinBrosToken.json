@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbe7932ce4a59e5af951f3fd23d8e40255cefaaf0.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"CBK\"", 
+   "./restContracts/0xbe7932ce4a59e5af951f3fd23d8e40255cefaaf0.txt:13:5: Warning: Integer Underflow.\n    string public name = \"CoinBros Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.0"
+}

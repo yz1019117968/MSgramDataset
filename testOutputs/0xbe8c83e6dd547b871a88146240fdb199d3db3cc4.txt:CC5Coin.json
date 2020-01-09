@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbe8c83e6dd547b871a88146240fdb199d3db3cc4.txt:77:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xbe8c83e6dd547b871a88146240fdb199d3db3cc4.txt:163:11: Warning: Integer Underflow.\n      if (now - timeOfLastHalving\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 86843903012151563029709579345498201800631462889799172925065680790904876580864\n    _value = 276264307361743429836353346285793484331694083858299551600374388820459729\n    timeOfLastHalving = 1\n    owner = 0", 
+   "./restContracts/0xbe8c83e6dd547b871a88146240fdb199d3db3cc4.txt:173:11: Warning: Integer Underflow.\n      if (now - timeOfLastIncrease\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 86843903012151563029709579345498201800631462889799172925065680790904876580864\n    _value = 276264307361743429836353346285793484331694083858299551600374388820459729\n    timeOfLastIncrease = 1\n    timeOfLastHalving = 115792089237316195423570985008687907853269984665640564039457584007913003639937\n    owner = 0", 
+   "./restContracts/0xbe8c83e6dd547b871a88146240fdb199d3db3cc4.txt:75:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xbe8c83e6dd547b871a88146240fdb199d3db3cc4.txt:193:28: Warning: Integer Underflow.\n      circulating_supply = pre_mined_supply - mined_coin_supply\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 86843903012151563029709579345498201800631462889799172925065680790904876580864\n    _value = 276264307361743429836353346285793484331694083858299551600374388820459729\n    pre_mined_supply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    mined_coin_supply = 276264307361743429836353346285793484331694083858299551600374388820459728\n    timeOfLastIncrease = 115792089237316195423570985008687907853269984665640564039457584007913129639787\n    timeOfLastHalving = 115792089237316195423570985008687907853269984665640564039457584007913003639937\n    owner = 0", 
+   "./restContracts/0xbe8c83e6dd547b871a88146240fdb199d3db3cc4.txt:349:13: Warning: Integer Underflow.\n            mined_coin_supply -= _value\nInteger Underflow occurs if:\n    mined_coin_supply = 0\n    _value = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.9"
+}

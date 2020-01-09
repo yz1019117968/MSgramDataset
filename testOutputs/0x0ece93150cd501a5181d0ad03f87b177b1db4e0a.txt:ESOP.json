@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0ece93150cd501a5181d0ad03f87b177b1db4e0a.txt:1263:3: Warning: Integer Overflow.\n  function increaseEmployeeExtraOptions(address e, uint32 extraOptions)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    codeUpdateState = 0\n    esopState = 1\n    companyAddress = 0", 
+   "./uniqueContractSourceCode/0x0ece93150cd501a5181d0ad03f87b177b1db4e0a.txt:1811:5: Warning: Integer Overflow.\n    ReturnCode(c)\nInteger Overflow occurs if:\n    codeUpdateState = 0\n    esopState = 1\n    companyAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0ece93150cd501a5181d0ad03f87b177b1db4e0a.txt:865:3: Warning: Integer Underflow.\n  bytes public ESOPLegalWrapperIPFSHash", 
+   "./uniqueContractSourceCode/0x0ece93150cd501a5181d0ad03f87b177b1db4e0a.txt:817:1: Warning: Integer Underflow.\ncontract ESOP is ESOPTypes, CodeUpdateable, TimeSource {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    codeUpdateState = 0\n    esopState = 0\n    pTotalPoolOptions = 16384\n    companyAddress = 0", 
+   "./uniqueContractSourceCode/0x0ece93150cd501a5181d0ad03f87b177b1db4e0a.txt:1263:3: Warning: Integer Underflow.\n  function increaseEmployeeExtraOptions(address e, uint32 extraOptions)\r\n  ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    codeUpdateState = 0\n    esopState = 1\n    companyAddress = 0", 
+   "./uniqueContractSourceCode/0x0ece93150cd501a5181d0ad03f87b177b1db4e0a.txt:1811:5: Warning: Integer Underflow.\n    ReturnCode(c)\nInteger Underflow occurs if:\n    codeUpdateState = 0\n    esopState = 1\n    companyAddress = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.1"
+}

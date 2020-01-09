@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:925:5: Warning: Integer Overflow.\n    function getMetadata(uint256 _tokenId, string) public view returns (bytes32[4] buffer, uint256 count) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "15.5"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x65174ea72a85bcbb562b37749b998f08037bc123.txt:11:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x65174ea72a85bcbb562b37749b998f08037bc123.txt:9:5: Warning: Integer Underflow.\n    string public standard = 'BitcoinSocial 0.1'", 
+   "./uniqueContractSourceCode/0x65174ea72a85bcbb562b37749b998f08037bc123.txt:13:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.9"
+}

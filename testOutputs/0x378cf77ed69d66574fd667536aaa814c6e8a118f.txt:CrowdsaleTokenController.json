@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x378cf77ed69d66574fd667536aaa814c6e8a118f.txt:155:5: Warning: Integer Overflow.\n    function removeFromWhitelist(address[] addresses) public onlyOwner returns (bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x378cf77ed69d66574fd667536aaa814c6e8a118f.txt:127:5: Warning: Integer Overflow.\n    function addToWhitelist(address[] addresses) public onlyOwner returns (bool) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.5"
+}

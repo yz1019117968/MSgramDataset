@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x23f47686c26aaf2cc3227b1cf7e19b6c8760ed4b.txt:77:7: Warning: Integer Overflow.\n      failedDonations[msg.sender] += msg.value\nInteger Overflow occurs if:\n    failedDonations[msg.sender] = 1\n    minimum = 1\n    donationMap[msg.sender] = 1", 
+   "./uniqueContractSourceCode/0x23f47686c26aaf2cc3227b1cf7e19b6c8760ed4b.txt:103:5: Warning: Integer Overflow.\n    donations += msg.value\nInteger Overflow occurs if:\n    donations = 1\n    minimum = 0\n    donationMap[msg.sender] = 1", 
+   "./uniqueContractSourceCode/0x23f47686c26aaf2cc3227b1cf7e19b6c8760ed4b.txt:129:5: Warning: Integer Overflow.\n    donationMap[msg.sender] += msg.value\nInteger Overflow occurs if:\n    donationMap[msg.sender] = 1", 
+   "./uniqueContractSourceCode/0x23f47686c26aaf2cc3227b1cf7e19b6c8760ed4b.txt:101:5: Warning: Integer Overflow.\n    donationMap[msg.sender] += msg.value\nInteger Overflow occurs if:\n    donationMap[msg.sender] = 1\n    minimum = 0", 
+   "./uniqueContractSourceCode/0x23f47686c26aaf2cc3227b1cf7e19b6c8760ed4b.txt:131:5: Warning: Integer Overflow.\n    donations += msg.value\nInteger Overflow occurs if:\n    donations = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x23f47686c26aaf2cc3227b1cf7e19b6c8760ed4b.txt:147:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x23f47686c26aaf2cc3227b1cf7e19b6c8760ed4b.txt:159:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.1"
+}

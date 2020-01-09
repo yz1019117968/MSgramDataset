@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8cdb6436f4e08f2aeb6f7b0473423bb30743afe2.txt:1627:21: Warning: Integer Underflow.\n    return tranches[trancheCount-1\nInteger Underflow occurs if:\n    trancheCount = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.2"
+}

@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:59:13: Warning: Integer Overflow.\n            self.tail\nInteger Overflow occurs if:\n    _shares = 32\n    companyIndexToOwners[_tokenId][claimant] = 32\n    shareTradingEnabled[_tokenId] = 255\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:57:13: Warning: Integer Overflow.\n        if (self.tail\nInteger Overflow occurs if:\n    _shares = 32\n    companyIndexToOwners[_tokenId][claimant] = 32\n    shareTradingEnabled[_tokenId] = 255\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:921:25: Warning: Integer Overflow.\n                        fifoStorage[_tokenId][FifoLib.insert(fifo[_tokenId], fifoKey, _nextFifoStorageKey(_tokenId))] = Holding({owner: _to, shares: fulfilled})\nInteger Overflow occurs if:\n    _shares = 1\n    companyIndexToOwners[_tokenId][claimant] = 1\n    shareTradingEnabled[_tokenId] = 255\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:967:9: Warning: Integer Overflow.\n        companyIndexToOwners[_tokenId][_to] += _shares\nInteger Overflow occurs if:\n    companyIndexToOwners[_tokenId][_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639884\n    companyIndexToOwners[_tokenId][claimant] = 100\n    shareTradingEnabled[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    _shares = 100", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:55:9: Warning: Integer Overflow.\n        self.size++\nInteger Overflow occurs if:\n    _shares = 32\n    companyIndexToOwners[_tokenId][claimant] = 32\n    shareTradingEnabled[_tokenId] = 255\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:55:9: Warning: Integer Overflow.\n        self.size\nInteger Overflow occurs if:\n    _shares = 32\n    companyIndexToOwners[_tokenId][claimant] = 32\n    shareTradingEnabled[_tokenId] = 255\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:383:31: Warning: Integer Overflow.\n        addrs = new address[](fifo[_tokenId].size", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:961:13: Warning: Integer Overflow.\n            fifoStorage[_tokenId][FifoLib.pushTail(fifo[_tokenId], _nextFifoStorageKey(_tokenId))] = Holding({owner: _to, shares: _shares})\nInteger Overflow occurs if:\n    _shares = 32\n    companyIndexToOwners[_tokenId][claimant] = 32\n    shareTradingEnabled[_tokenId] = 255\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:355:35: Warning: Integer Overflow.\n        Company storage company = companies[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    companies[_tokenId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:357:9: Warning: Integer Underflow.\n        companyName = company.name\nInteger Underflow occurs if:\n    _tokenId = 0\n    companies[_tokenId] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:563:13: Warning: Transaction-Ordering Dependency.\n            _to.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7817a31ea2f9789da18D12059d10283cab8E33E3.txt:559:13: Warning: Transaction-Ordering Dependency.\n            ceoAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "34.8"
+}

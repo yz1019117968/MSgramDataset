@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:501:1: Warning: Integer Overflow.\nfunction importAmountForAddresses(uint256[] amounts,address[] addressesToAddTo) public {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:529:1: Warning: Integer Overflow.\nfunction removeAmountForAddresses(uint256[] amounts,address[] addressesToRemoveFrom) public {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:447:1: Warning: Integer Overflow.\nfunction importGenesisPairs(address[] parents,address[] children) public {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    parents = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:191:42: Warning: Integer Overflow.\n                uint256 maximizationTime=deployTime+startTime\nInteger Overflow occurs if:\n    balances[_to] = 0\n    startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numRewardsAvailable[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numRewardsAvailableSetForChildAddress[msg.sender] = 255\n    balances[msg.sender] = 0\n    frozen = 0", 
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:315:1: Warning: Integer Overflow.\nfunction setNumRewardsAvailableForAddresses(uint256[] numRewardsAvailableForAddresses,address[] addressesToSetFor)    {\r\n^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:189:47: Warning: Integer Underflow.\n                uint256 secondsSinceStartTime=currDate-startTime\nInteger Underflow occurs if:\n    balances[_to] = 0\n    startTime = 1\n    numRewardsAvailable[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numRewardsAvailableSetForChildAddress[msg.sender] = 255\n    balances[msg.sender] = 0\n    frozen = 0", 
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:25:1: Warning: Integer Underflow.\nstring public name", 
+   "./uniqueContractSourceCode/0x4fc550cd2312ed67cb3938378c90c2a76fae0142.txt:27:1: Warning: Integer Underflow.\nstring public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.2"
+}

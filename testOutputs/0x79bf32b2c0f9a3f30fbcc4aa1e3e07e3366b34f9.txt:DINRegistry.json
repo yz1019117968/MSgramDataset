@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x79bf32b2c0f9a3f30fbcc4aa1e3e07e3366b34f9.txt:133:9: Warning: Integer Overflow.\n        records[DIN].updated\nInteger Overflow occurs if:\n    records[DIN].owner = 0", 
+   "./uniqueContractSourceCode/0x79bf32b2c0f9a3f30fbcc4aa1e3e07e3366b34f9.txt:163:9: Warning: Integer Overflow.\n        records[DIN].resolver\nInteger Overflow occurs if:\n    records[DIN].owner = 0", 
+   "./uniqueContractSourceCode/0x79bf32b2c0f9a3f30fbcc4aa1e3e07e3366b34f9.txt:165:9: Warning: Integer Overflow.\n        records[DIN].updated\nInteger Overflow occurs if:\n    records[DIN].owner = 0", 
+   "./uniqueContractSourceCode/0x79bf32b2c0f9a3f30fbcc4aa1e3e07e3366b34f9.txt:145:16: Warning: Integer Overflow.\n        return records[DIN].resolver", 
+   "./uniqueContractSourceCode/0x79bf32b2c0f9a3f30fbcc4aa1e3e07e3366b34f9.txt:177:16: Warning: Integer Overflow.\n        return records[DIN].updated", 
+   "./uniqueContractSourceCode/0x79bf32b2c0f9a3f30fbcc4aa1e3e07e3366b34f9.txt:195:9: Warning: Integer Overflow.\n        records[DIN].updated\nInteger Overflow occurs if:\n    registrar = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

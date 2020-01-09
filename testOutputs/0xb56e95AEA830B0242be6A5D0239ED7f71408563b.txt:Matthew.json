@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xb56e95AEA830B0242be6A5D0239ED7f71408563b.txt:75:29: Warning: Callstack Depth Attack Vulnerability.\n                isSuccess = whale.send(this.balance - nextStake)", 
+   "./restContracts/0xb56e95AEA830B0242be6A5D0239ED7f71408563b.txt:91:35: Warning: Callstack Depth Attack Vulnerability.\n            bool isOtherSuccess = msg.sender.send(this.balance)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb56e95AEA830B0242be6A5D0239ED7f71408563b.txt:153:20: Warning: Integer Overflow.\n            return blockheight + period\nInteger Overflow occurs if:\n    blockheight = 2\n    period = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb56e95AEA830B0242be6A5D0239ED7f71408563b.txt:151:13: Warning: Integer Overflow.\n        if (blockheight + period\nInteger Overflow occurs if:\n    blockheight = 1\n    period = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb56e95AEA830B0242be6A5D0239ED7f71408563b.txt:67:13: Warning: Integer Underflow.\n        if (block.number - period\nInteger Underflow occurs if:\n    period = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb56e95AEA830B0242be6A5D0239ED7f71408563b.txt:91:35: Warning: Transaction-Ordering Dependency.\n            bool isOtherSuccess = msg.sender.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0xb56e95AEA830B0242be6A5D0239ED7f71408563b.txt:91:35: Warning: Transaction-Ordering Dependency.\n            bool isOtherSuccess = msg.sender.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.4"
+}

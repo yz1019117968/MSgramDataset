@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaddc3395871e6f3e1c131f6acccbc2ddd63cbd4a.txt:1131:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _tokenName = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "1.2"
+}

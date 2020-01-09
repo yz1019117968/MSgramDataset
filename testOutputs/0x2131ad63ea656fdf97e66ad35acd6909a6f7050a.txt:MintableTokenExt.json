@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2131ad63ea656fdf97e66ad35acd6909a6f7050a.txt:1751:1: Warning: Integer Overflow.\ncontract MintableTokenExt is StandardToken, Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    reservedTokensDestinations.push(addr) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2131ad63ea656fdf97e66ad35acd6909a6f7050a.txt:47:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1", 
+   "./uniqueContractSourceCode/0x2131ad63ea656fdf97e66ad35acd6909a6f7050a.txt:1773:3: Warning: Integer Overflow.\n  address[] public reservedTokensDestinations", 
+   "./uniqueContractSourceCode/0x2131ad63ea656fdf97e66ad35acd6909a6f7050a.txt:1771:3: Warning: Integer Overflow.\n  mapping (address => ReservedTokensData) public reservedTokensList", 
+   "./uniqueContractSourceCode/0x2131ad63ea656fdf97e66ad35acd6909a6f7050a.txt:1779:5: Warning: Integer Overflow.\n    reservedTokensDestinations.push(addr)\nInteger Overflow occurs if:\n    reservedTokensDestinations.push(addr) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2131ad63ea656fdf97e66ad35acd6909a6f7050a.txt:1799:3: Warning: Integer Overflow.\n  function setReservedTokensListMultiple(address[] addrs, uint[] inTokens, uint[] inPercentage) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2131ad63ea656fdf97e66ad35acd6909a6f7050a.txt:1795:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentage"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.5"
+}

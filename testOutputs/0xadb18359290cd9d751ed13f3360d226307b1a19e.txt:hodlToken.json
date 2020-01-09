@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xadb18359290cd9d751ed13f3360d226307b1a19e.txt:247:3: Warning: Timestamp Dependency.\n\t\trequire(deadline < now)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xadb18359290cd9d751ed13f3360d226307b1a19e.txt:61:16: Warning: Integer Overflow.\n\t\t uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xadb18359290cd9d751ed13f3360d226307b1a19e.txt:611:2: Warning: Integer Underflow.\n\tstring public name = \"HODL Token\"", 
+   "./restContracts/0xadb18359290cd9d751ed13f3360d226307b1a19e.txt:613:2: Warning: Integer Underflow.\n\tstring public symbol = \"HOLD\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.4"
+}

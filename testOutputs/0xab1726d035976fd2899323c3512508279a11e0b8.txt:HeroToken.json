@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:537:40: Warning: Integer Overflow.\n    accounts[_account].allowedPoints = accounts[_account].allowedPoints\nInteger Overflow occurs if:\n    totalPointsPerToken = 0\n    accounts[_account].lastPointsPerToken = 0\n    tradingStarted = 255\n    balances[_account] = 0", 
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:559:12: Warning: Integer Overflow.\n    return accounts[_owner].allowedPoints\nInteger Overflow occurs if:\n    totalPointsPerToken = 0\n    accounts[_account].lastPointsPerToken = 0\n    balances[_account] = 0", 
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:127:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    owner = 0\n    totalSupply = 1\n    totalPointsPerToken = 0\n    accounts[_account].lastPointsPerToken = 0\n    balances[_account] = 0", 
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:539:5: Warning: Integer Overflow.\n    accounts[_account].lastPointsPerToken\nInteger Overflow occurs if:\n    totalPointsPerToken = 0\n    accounts[_account].lastPointsPerToken = 0\n    tradingStarted = 255\n    balances[_account] = 0", 
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:535:54: Warning: Integer Overflow.\n    uint newPointsPerToken = totalPointsPerToken.sub(accounts[_account].lastPointsPerToken\nInteger Overflow occurs if:\n    tradingStarted = 255", 
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:537:5: Warning: Integer Overflow.\n    accounts[_account].allowedPoints\nInteger Overflow occurs if:\n    totalPointsPerToken = 0\n    accounts[_account].lastPointsPerToken = 0\n    tradingStarted = 255\n    balances[_account] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:673:3: Warning: Integer Underflow.\n  string public name = \"Hero Token\"", 
+   "./restContracts/0xab1726d035976fd2899323c3512508279a11e0b8.txt:675:3: Warning: Integer Underflow.\n  string public symbol = \"HERO\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.5"
+}

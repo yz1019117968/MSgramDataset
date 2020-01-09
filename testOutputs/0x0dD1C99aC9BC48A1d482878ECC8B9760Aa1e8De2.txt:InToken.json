@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1367:5: Warning: Integer Overflow.\n    function adminRemoveRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1343:5: Warning: Integer Overflow.\n    function adminAddRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1757:3: Warning: Integer Overflow.\n  function destroy(address[] tokens) onlyOwner public {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1291:5: Warning: Integer Overflow.\n    function checkRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:2365:2: Warning: Integer Overflow.\n\tfunction transferFrom(address _from, address _to, uint256 _value, bytes _data) public whenNotPaused returns (bool) {\r\n\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:2413:2: Warning: Integer Overflow.\n\tfunction transfer(address _to, uint256 _value, bytes _data) public whenNotPaused returns (bool) {\r\n\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1317:5: Warning: Integer Overflow.\n    function hasRole(address addr, string roleName)\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:215:3: Warning: Integer Underflow.\n  string public name", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:1299:9: Warning: Integer Underflow.\n        roles[roleName]", 
+   "./uniqueContractSourceCode/0x0dD1C99aC9BC48A1d482878ECC8B9760Aa1e8De2.txt:217:3: Warning: Integer Underflow.\n  string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.0"
+}

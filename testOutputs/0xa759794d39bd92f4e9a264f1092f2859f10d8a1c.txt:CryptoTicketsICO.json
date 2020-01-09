@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa759794d39bd92f4e9a264f1092f2859f10d8a1c.txt:503:8: Warning: Integer Overflow.\n       LogBuyForInvestor(_investor, _tokenValue, _txHash)\nInteger Overflow occurs if:\n    SoldNoBonuses = 331586238538794042139366409\n    statusICO = 1\n    Controller_Address1 = 0", 
+   "./restContracts/0xa759794d39bd92f4e9a264f1092f2859f10d8a1c.txt:39:19: Warning: Integer Overflow.\n         uint c = a + b\nInteger Overflow occurs if:\n    SoldNoBonuses = 115564469538380189229366533273235797879776644863246352778533946732910228832897\n    statusICO = 1\n    Controller_Address1 = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa759794d39bd92f4e9a264f1092f2859f10d8a1c.txt:503:8: Warning: Integer Underflow.\n       LogBuyForInvestor(_investor, _tokenValue, _txHash)\nInteger Underflow occurs if:\n    SoldNoBonuses = 331586238538794042139366409\n    statusICO = 1\n    Controller_Address1 = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.7"
+}

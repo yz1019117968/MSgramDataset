@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa899495d47b6a575c830ffc330bc83318df46a44.txt:541:5: Warning: Timestamp Dependency.\n    require(now >= sunsetWithdrawDate)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa899495d47b6a575c830ffc330bc83318df46a44.txt:269:7: Warning: Integer Overflow.\n      funders[msg.sender].withdrawalEntry\nInteger Overflow occurs if:\n    funders[addr].balance = 18804388697659578927227942150655382095107577267147116306158018631409920436447\n    funders[addr].exists = 255\n    minimumFundingAmount = 48042179570338575657047014012568684196381168344916005727059496130598076873439\n    live = 255\n    funders[addr].withdrawalEntry = 0\n    withdrawalCounter = 0", 
+   "./restContracts/0xa899495d47b6a575c830ffc330bc83318df46a44.txt:265:7: Warning: Integer Overflow.\n      funders[msg.sender].balance\nInteger Overflow occurs if:\n    funders[addr].balance = 18804388697659578927227942150655382095107577267147116306158018631409920436447\n    funders[addr].exists = 255\n    minimumFundingAmount = 48042179570338575657047014012568684196381168344916005727059496130598076873439\n    live = 255\n    funders[addr].withdrawalEntry = 0\n    withdrawalCounter = 0", 
+   "./restContracts/0xa899495d47b6a575c830ffc330bc83318df46a44.txt:247:7: Warning: Integer Overflow.\n      funders[msg.sender] = Funder({\r\n      ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    totalCurrentFunders = 3369993333418349902987231107611187386639047999755471386092888915971\n    funders[addr].exists = 0\n    minimumFundingAmount = 0\n    live = 255", 
+   "./restContracts/0xa899495d47b6a575c830ffc330bc83318df46a44.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    funders[addr].balance = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    funders[addr].exists = 255\n    minimumFundingAmount = 69722843986276191112704802276904042686523943500539225692285358676886601247599\n    live = 255\n    funders[addr].withdrawalEntry = 0\n    withdrawalCounter = 0", 
+   "./restContracts/0xa899495d47b6a575c830ffc330bc83318df46a44.txt:87:3: Warning: Integer Overflow.\n  mapping(address => Funder) public funders"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "92.4"
+}

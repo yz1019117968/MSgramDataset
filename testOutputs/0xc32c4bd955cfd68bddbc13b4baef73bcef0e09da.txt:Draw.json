@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc32c4bd955cfd68bddbc13b4baef73bcef0e09da.txt:199:18: Warning: Integer Underflow.\n        tdelta = now - t0\nInteger Underflow occurs if:\n    counter = 7\n    MAX_PLAYERS = 8\n    t0 = 1\n    owner_balance = 0\n    owner = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975\n    players[i] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.2"
+}

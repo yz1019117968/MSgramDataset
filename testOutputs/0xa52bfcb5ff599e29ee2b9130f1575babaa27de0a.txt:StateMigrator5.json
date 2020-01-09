@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa52bfcb5ff599e29ee2b9130f1575babaa27de0a.txt:3:1: Warning: Integer Overflow.\ncontract StateMigrator5 {\r\n^\nSpanning multiple lines.", 
+   "./restContracts/0xa52bfcb5ff599e29ee2b9130f1575babaa27de0a.txt:13:5: Warning: Integer Overflow.\n    mapping (address => uint[]) public userToRobots"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "12.8"
+}

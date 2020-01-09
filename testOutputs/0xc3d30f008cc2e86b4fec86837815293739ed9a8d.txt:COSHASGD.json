@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc3d30f008cc2e86b4fec86837815293739ed9a8d.txt:7:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xc3d30f008cc2e86b4fec86837815293739ed9a8d.txt:5:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xc3d30f008cc2e86b4fec86837815293739ed9a8d.txt:3:5: Warning: Integer Underflow.\n    string public standard = 'CSGD 2.0'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.9"
+}

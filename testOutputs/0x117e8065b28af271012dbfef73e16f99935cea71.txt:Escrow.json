@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x117e8065b28af271012dbfef73e16f99935cea71.txt:127:5: Warning: Integer Overflow.\n    mapping (uint256 => Deal) public deals", 
+   "./uniqueContractSourceCode/0x117e8065b28af271012dbfef73e16f99935cea71.txt:195:9: Warning: Integer Overflow.\n        deals[_dealId].beneficiaryAns\nInteger Overflow occurs if:\n    deals[_dealId].beneficiary = 0", 
+   "./uniqueContractSourceCode/0x117e8065b28af271012dbfef73e16f99935cea71.txt:179:9: Warning: Integer Overflow.\n        deals[_dealId].customerAns\nInteger Overflow occurs if:\n    deals[_dealId].customer = 0", 
+   "./uniqueContractSourceCode/0x117e8065b28af271012dbfef73e16f99935cea71.txt:153:9: Warning: Integer Overflow.\n        deals[_dealId].state\nInteger Overflow occurs if:\n    deals[_dealId].value = 0\n    deals[_dealId].commission = 0", 
+   "./uniqueContractSourceCode/0x117e8065b28af271012dbfef73e16f99935cea71.txt:223:13: Warning: Integer Overflow.\n            deals[_dealId].state\nInteger Overflow occurs if:\n    deals[_dealId].state = 131072\n    deals[_dealId].endtime = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x117e8065b28af271012dbfef73e16f99935cea71.txt:241:9: Warning: Transaction-Ordering Dependency.\n        deals[_dealId].customer.transfer(deals[_dealId].value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x117e8065b28af271012dbfef73e16f99935cea71.txt:213:13: Warning: Transaction-Ordering Dependency.\n            deals[_dealId].beneficiary.transfer(deals[_dealId].value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.3"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4aeeccf1f828cf06fe302ed0c71acd65259f8c88.txt:165:3: Warning: Integer Overflow.\n  function set_token_address(address _token, string _password) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _password = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4aeeccf1f828cf06fe302ed0c71acd65259f8c88.txt:211:5: Warning: Integer Overflow.\n    balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    bought_tokens = 0", 
+   "./uniqueContractSourceCode/0x4aeeccf1f828cf06fe302ed0c71acd65259f8c88.txt:149:3: Warning: Integer Overflow.\n  function set_sale_address(address _sale, string _password) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _password = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4aeeccf1f828cf06fe302ed0c71acd65259f8c88.txt:121:3: Warning: Integer Overflow.\n  function buy_the_tokens(string _password) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4aeeccf1f828cf06fe302ed0c71acd65259f8c88.txt:77:5: Warning: Integer Underflow.\n    contract_eth_value -= balances[msg.sender]\nInteger Underflow occurs if:\n    contract_eth_value = 140737488355328\n    balances[msg.sender] = 140737488355329\n    emergency_used = 0\n    bought_tokens = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.9"
+}

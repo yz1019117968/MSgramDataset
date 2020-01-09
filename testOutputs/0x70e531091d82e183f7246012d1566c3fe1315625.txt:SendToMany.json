@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x70e531091d82e183f7246012d1566c3fe1315625.txt:27:5: Warning: Integer Overflow.\n    function setRecipients(address[] newRecipientsList) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newRecipientsList = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x70e531091d82e183f7246012d1566c3fe1315625.txt:13:5: Warning: Integer Overflow.\n    address[] public recipients", 
+   "./uniqueContractSourceCode/0x70e531091d82e183f7246012d1566c3fe1315625.txt:5:1: Warning: Integer Overflow.\ncontract SendToMany\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    recipients.push(newRecipient) = 105782898658114362639998236590588058411517566113314665475433552748888561006558", 
+   "./uniqueContractSourceCode/0x70e531091d82e183f7246012d1566c3fe1315625.txt:45:9: Warning: Integer Overflow.\n        recipients.push(newRecipient)\nInteger Overflow occurs if:\n    recipients.push(newRecipient) = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.2"
+}

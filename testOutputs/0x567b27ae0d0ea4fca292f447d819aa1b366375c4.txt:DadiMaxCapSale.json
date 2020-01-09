@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:1229:34: Warning: Integer Overflow.\n        return isEqualOrBelowCap(_amount + investors[_address].contribution\nInteger Overflow occurs if:\n    state = 1\n    whitelistedIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investors[_address].contribution = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whitelisted[userAddress].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:1229:44: Warning: Integer Overflow.\n        return isEqualOrBelowCap(_amount + investors[_address].contribution\nInteger Overflow occurs if:\n    state = 1\n    whitelistedIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whitelisted[userAddress].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:445:5: Warning: Integer Overflow.\n    address[] public saleWallets", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:605:9: Warning: Integer Overflow.\n        saleWallets.push(_wallet)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:437:1: Warning: Integer Overflow.\ncontract DadiMaxCapSale is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:1039:16: Warning: Integer Overflow.\n        return(investors[_address].contribution\nInteger Overflow occurs if:\n    investorIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investors[_address].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:1039:78: Warning: Integer Overflow.\n        return(investors[_address].contribution, investors[_address].tokens, investors[_address].distributed\nInteger Overflow occurs if:\n    investorIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investors[_address].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:1039:111: Warning: Integer Overflow.\n        return(investors[_address].contribution, investors[_address].tokens, investors[_address].distributed, investors[_address].index\nInteger Overflow occurs if:\n    investorIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investors[_address].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:621:5: Warning: Integer Overflow.\n    function addWhitelistUsers(address[] userAddresses) public onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:1265:48: Warning: Integer Underflow.\n        return (uint(keccak256(block.blockhash(block.number - 1\nInteger Underflow occurs if:\n    saleWallets.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x567b27ae0d0ea4fca292f447d819aa1b366375c4.txt:925:16: Warning: Integer Underflow.\n        return tokenSupply - tokensPurchased\nInteger Underflow occurs if:\n    tokenSupply = 0\n    tokensPurchased = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.1"
+}

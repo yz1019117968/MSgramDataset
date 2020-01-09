@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:1815:5: Warning: Integer Overflow.\n    ReturnCode(c)\nInteger Overflow occurs if:\n    codeUpdateState = 0\n    esopState = 1\n    companyAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:869:3: Warning: Integer Underflow.\n  bytes public ESOPLegalWrapperIPFSHash", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:1815:5: Warning: Integer Underflow.\n    ReturnCode(c)\nInteger Underflow occurs if:\n    codeUpdateState = 0\n    esopState = 1\n    terminationType = 0\n    companyAddress = 0", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:821:1: Warning: Integer Underflow.\ncontract ESOP is ESOPTypes, CodeUpdateable, TimeSource {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    codeUpdateState = 0\n    esopState = 0\n    pTotalPoolOptions = 16384\n    companyAddress = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.7"
+}

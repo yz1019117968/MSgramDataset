@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1677:8: Warning: Timestamp Dependency.\n    if(now > startDate && now <= endDate", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:2081:5: Warning: Timestamp Dependency.\n    require(now > endDate)", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1987:13: Warning: Timestamp Dependency.\n    require(now > endDate && getEthRaised() < SOFTCAP", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1677:5: Warning: Timestamp Dependency.\n    if(now > startDate && now <= endDate) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:2013:13: Warning: Timestamp Dependency.\n    require(now > endDate && getEthRaised() < SOFTCAP", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1687:7: Warning: Timestamp Dependency.\n      if (state != SaleState.ENDED && now > endDate) {\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1995:27: Warning: Integer Overflow.\n    uint ethContributed = contributorList[msg.sender].contributionAmount\nInteger Overflow occurs if:\n    endDate = 0\n    hasClaimedEthWhenFail[msg.sender] = 0\n    contributorList[msg.sender].contributionAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    SOFTCAP = 1\n    ethRaised = 96860686142617307185505266042254788284642929950227967369777038988899986178048\n    paused = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:2027:24: Warning: Integer Overflow.\n        contribution = contributorList[currentParticipantAddress].contributionAmount\nInteger Overflow occurs if:\n    owner = 0\n    endDate = 0\n    hasClaimedEthWhenFail[currentParticipantAddress] = 0\n    contributorIndexes[nextContributorToClaim] = 1461501637330902918203684832716283019655932542975\n    _numberOfReturns = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    SOFTCAP = 1\n    ethRaised = 96860686142617307185505266042254788284642929950227967369777038988899986178048", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1469:3: Warning: Integer Overflow.\n  mapping(address => ContributorData) public contributorList", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1961:11: Warning: Integer Overflow.\n          withdrawedTokens += tokensCount\nInteger Overflow occurs if:\n    state = 2\n    owner = 0\n    withdrawedTokens = 1\n    endDate = 0\n    contributorList[currentParticipantAddress].tokensIssued = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    hasWithdrawedTokens[currentParticipantAddress] = 0\n    contributorIndexes[nextContributorToTransferTokens] = 1461501637330902918203684832716283019655932542975\n    _numberOfReturns = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    HARDCAP = 0\n    ethRaised = 96860686142617307185505266042254788284642929950227967369777038988899986178048"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:2155:12: Warning: Integer Underflow.\n    return HARDCAP - getEthRaised()\nInteger Underflow occurs if:\n    HARDCAP = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    ethRaised = 96860686142617307185505266042254788284642929950227967369777038988899986178047"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1811:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:2085:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.3"
+}

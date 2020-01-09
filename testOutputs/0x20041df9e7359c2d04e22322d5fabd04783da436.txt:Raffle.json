@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x20041df9e7359c2d04e22322d5fabd04783da436.txt:181:29: Warning: Integer Overflow.\n\t\t\t\trangeEnd = rangeStart + players[current]\nInteger Overflow occurs if:\n    players.length = 3\n    total = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x20041df9e7359c2d04e22322d5fabd04783da436.txt:179:18: Warning: Integer Overflow.\n\t\t\t\trangeStart = players[current]\nInteger Overflow occurs if:\n    players.length = 3\n    total = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x20041df9e7359c2d04e22322d5fabd04783da436.txt:179:18: Warning: Integer Overflow.\n\t\t\t\trangeStart = players[current].previousTotal\nInteger Overflow occurs if:\n    players.length = 11972621413014756705924586149611790497021399392059392\n    total = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x20041df9e7359c2d04e22322d5fabd04783da436.txt:181:29: Warning: Integer Overflow.\n\t\t\t\trangeEnd = rangeStart + players[current].amount\nInteger Overflow occurs if:\n    players.length = 11972621413014756705924586149611790497021399392059392\n    total = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x20041df9e7359c2d04e22322d5fabd04783da436.txt:97:3: Warning: Integer Overflow.\n\t\tplayers.push(Player(msg.sender, msg.value, total))\nInteger Overflow occurs if:\n    players.push(Player(msg.sender, msg.value, total)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    userSeed = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x20041df9e7359c2d04e22322d5fabd04783da436.txt:5:1: Warning: Integer Overflow.\ncontract Raffle\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    players.push(Player(msg.sender, msg.value, total)) = 71035195276905978830841378541667856625157632706140231142381185849046086175071\n    userSeed = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x20041df9e7359c2d04e22322d5fabd04783da436.txt:181:16: Warning: Integer Overflow.\n\t\t\t\trangeEnd = rangeStart + players[current].amount\nInteger Overflow occurs if:\n    players.length = 11972621413014756705924586149611790497021399392059392\n    total = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.9"
+}

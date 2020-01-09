@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x15D0e6CEdd8eCc39DAa60C63A3A5830eECa7D720.txt:17:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x15D0e6CEdd8eCc39DAa60C63A3A5830eECa7D720.txt:31:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(this.balance + msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.6"
+}

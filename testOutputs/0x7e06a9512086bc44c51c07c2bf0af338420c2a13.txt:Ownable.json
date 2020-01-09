@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7e06a9512086bc44c51c07c2bf0af338420c2a13.txt:233:3: Warning: Integer Overflow.\n  function initialize(bytes data) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7e06a9512086bc44c51c07c2bf0af338420c2a13.txt:203:3: Warning: Integer Overflow.\n  function bytesToAddress (bytes b) pure public returns (address) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    b = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.6"
+}

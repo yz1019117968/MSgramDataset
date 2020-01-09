@@ -1,0 +1,37 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:435:13: Warning: Integer Overflow.\n            m.finalized\nInteger Overflow occurs if:\n    finalPrice = 0\n    admins[signer] = 255", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:849:17: Warning: Integer Overflow.\n        return (m.firstTradeTimestamp", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:501:39: Warning: Integer Overflow.\n        uint recoveryTimestamp = uint(m.firstTradeTimestamp", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:341:13: Warning: Integer Overflow.\n            LogTradeError(msg.sender, o.addr, o.matchId, o.orderHash, uint16(Status.ORDER_MALFORMED))", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:493:28: Warning: Integer Overflow.\n        if (m.finalized || m.firstTradeTimestamp", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:849:40: Warning: Integer Overflow.\n        return (m.firstTradeTimestamp, m.finalized", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:325:13: Warning: Integer Overflow.\n            LogOrderCancel(msg.sender, o.matchId, o.orderHash)", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:849:53: Warning: Integer Overflow.\n        return (m.firstTradeTimestamp, m.finalized, m.finalPrice", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:1021:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    balances[msg.sender] = 89660649888868366171417216235708288031085258661234677303951427843448891257349", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:437:13: Warning: Integer Overflow.\n            m.finalPrice\nInteger Overflow occurs if:\n    finalPrice = 0\n    admins[signer] = 255", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:493:13: Warning: Integer Overflow.\n        if (m.finalized"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:461:50: Warning: Integer Underflow.\n            delta = priceDivide(-senderPosition, 100 - finalPrice\nInteger Underflow occurs if:\n    finalPrice = 102", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:169:28: Warning: Integer Underflow.\n        o.orderHash = uint(keccak256(this, rawOrder)", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:209:13: Warning: Integer Underflow.\n        if (ecrecover(keccak256(\"\\x19Ethereum Signed Message:\\n32\", o.orderHash), v, r, s)", 
+   "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:461:33: Warning: Integer Underflow.\n            delta = priceDivide(-senderPosition\nInteger Underflow occurs if:\n    finalPrice = 0\n    admins[signer] = 255"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:299:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amountToWithdraw)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x37304b0ab297f13f5520c523102797121182fb5b.txt:299:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amountToWithdraw)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.8"
+}

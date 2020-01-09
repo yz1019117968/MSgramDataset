@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:169:9: Warning: Timestamp Dependency.\n        require(now < 1522566000)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:233:31: Warning: Integer Overflow.\n        Racer storage racer = races[_raceId].racers[_racerIndex]\nInteger Overflow occurs if:\n    _racerIndex = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    races[_raceId].racers[_racerIndex] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:217:92: Warning: Integer Overflow.\n        return (races[_raceId].blockJoinedFirstRacer, races[_raceId].blockJoinedLastRacer, races[_raceId].racers", 
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:279:39: Warning: Integer Overflow.\n        if (completedRaces[raceId] || race.racers\nInteger Overflow occurs if:\n    completedRaces[raceId] = 0\n    activeRacers[_kittyId] = 0\n    gameOn = 372682917519380244141939632342652170012262798458880\n    entryFee = 0", 
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:311:9: Warning: Integer Overflow.\n        race.racers\nInteger Overflow occurs if:\n    completedRaces[raceId] = 255\n    activeRacers[_kittyId] = 0\n    gameOn = 372682917519380244141939632342652170012262798458880\n    entryFee = 0", 
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:291:13: Warning: Integer Overflow.\n        if (race.racers\nInteger Overflow occurs if:\n    completedRaces[raceId] = 255\n    activeRacers[_kittyId] = 0\n    gameOn = 372682917519380244141939632342652170012262798458880\n    entryFee = 0", 
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:235:35: Warning: Integer Overflow.\n        return (racer.kittyOwner, racer.kittyId\nInteger Overflow occurs if:\n    _racerIndex = 0\n    races[_raceId].racers[_racerIndex] = 1", 
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:365:31: Warning: Integer Overflow.\n        Racer memory winner = races[_raceId].racers\nInteger Overflow occurs if:\n    races[_raceId].racers.length = 57896044618658096908316470374848816155653946162238980758627295112560147169280\n    races[_raceId].blockJoinedLastRacer = 18446744069414584320\n    maxRacers = 0", 
+   "./uniqueContractSourceCode/0x6b6220677b93e8fc9dc3ffe582e481b7a56c79a9.txt:233:31: Warning: Integer Overflow.\n        Racer storage racer = races[_raceId].racers"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.6"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x94585df99d9a4c13d6fe8daffa8e5e4f7c1b8ea8.txt:225:3: Warning: Integer Overflow.\n  function transfer(address _to, uint _value, bytes _data) public returns (bool success) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.9"
+}

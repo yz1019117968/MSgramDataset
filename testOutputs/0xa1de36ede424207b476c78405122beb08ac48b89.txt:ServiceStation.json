@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:47:9: Warning: Timestamp Dependency.\n        if (block.timestamp < Timestamp){\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:325:9: Warning: Integer Overflow.\n        RoundNumber++\nInteger Overflow occurs if:\n    CurrentGame = 0\n    RoundNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:891:13: Warning: Integer Overflow.\n            Market[id].price\nInteger Overflow occurs if:\n    owner = 0\n    HighGasAmount = 0\n    LowGasAmount = 0\n    CurrentGame = 0", 
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:69:21: Warning: Integer Overflow.\n        Timestamp = block.timestamp + RoundTimes[CurrentGame]\nInteger Overflow occurs if:\n    Timestamp = 115792089237316195423570985008687907853269984665640564039457581756113315954687\n    CurrentGame = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:745:32: Warning: Integer Underflow.\n                   timespent = now - CurrTimeHigh\nInteger Underflow occurs if:\n    HighGasAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    CurrTimeHigh = 1\n    HighJackpot[targ] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    Timestamp = 1\n    RoundNumber = 0\n    CurrentRound[targ] = 0\n    CurrentGame = 2", 
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:867:25: Warning: Integer Underflow.\n            timespent = Timestamp - CurrTimeHigh\nInteger Underflow occurs if:\n    CurrTimeHigh = 1\n    HighGasAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    LowGasAmount = 0\n    CurrentGame = 0", 
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:783:32: Warning: Integer Underflow.\n                   timespent = now - CurrTimeLow\nInteger Underflow occurs if:\n    LowGasAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    CurrTimeLow = 1\n    LowJackpot[targ] = 255\n    Timestamp = 1\n    HighJackpot[targ] = 0\n    RoundNumber = 0\n    CurrentRound[targ] = 0\n    CurrentGame = 2", 
+   "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:853:25: Warning: Integer Underflow.\n            timespent = Timestamp - CurrTimeLow\nInteger Underflow occurs if:\n    CurrTimeLow = 1\n    LowGasAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    CurrentGame = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:469:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(msg.value-price)"
+   ], 
+   [
+    "./restContracts/0xa1de36ede424207b476c78405122beb08ac48b89.txt:489:9: Warning: Transaction-Ordering Dependency.\n        fee_address.transfer(Fee)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.0"
+}

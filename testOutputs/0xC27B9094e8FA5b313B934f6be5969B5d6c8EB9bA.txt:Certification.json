@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:23:3: Warning: Integer Underflow.\n  string public CompanyName", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:33:3: Warning: Integer Underflow.\n  string public Scope", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:25:3: Warning: Integer Underflow.\n  string public Norm", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:31:3: Warning: Integer Underflow.\n  string public expires", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:29:3: Warning: Integer Underflow.\n  string public issued", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:27:3: Warning: Integer Underflow.\n  string public CertID", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:35:3: Warning: Integer Underflow.\n  string public issuingBody"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.5"
+}

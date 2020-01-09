@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x516130856e743090aF9d7Fd95D6fc94c8743A4e1.txt:1021:9: Warning: Timestamp Dependency.\n        require(totalWeiSale <= softcap && now >= finishSale)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x516130856e743090aF9d7Fd95D6fc94c8743A4e1.txt:785:5: Warning: Integer Overflow.\n    function addCertificate(string _id,  address _owner) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x516130856e743090aF9d7Fd95D6fc94c8743A4e1.txt:823:5: Warning: Integer Overflow.\n    function deleteCertificate(string _id) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x516130856e743090aF9d7Fd95D6fc94c8743A4e1.txt:803:5: Warning: Integer Overflow.\n    function editCertificate(string _id,  address _newowner) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x516130856e743090aF9d7Fd95D6fc94c8743A4e1.txt:959:78: Warning: Integer Underflow.\n        uint restrictedTokens = issuedTokenSupply.mul(restrictedPercent).div(100 - restrictedPercent\nInteger Underflow occurs if:\n    restrictedPercent = 112\n    totalWeiSale = 0\n    isFinished = 0\n    softcap = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x516130856e743090aF9d7Fd95D6fc94c8743A4e1.txt:877:13: Warning: Transaction-Ordering Dependency.\n            _customer.transfer(weiBalances[_customer])"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x516130856e743090aF9d7Fd95D6fc94c8743A4e1.txt:1027:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(weiBalances[msg.sender])"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.2"
+}

@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8005e968f848fa0c06bf24c221874fbc70d396bc.txt:37:21: Warning: Integer Overflow.\n        uint256 z = _x + _y\nInteger Overflow occurs if:\n    balanceOf[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balanceOf[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    allowance[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    _to = 1461501637330902918203684832716283019655932542975\n    _from = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8005e968f848fa0c06bf24c221874fbc70d396bc.txt:93:5: Warning: Integer Underflow.\n    string public symbol = \"SSS\"", 
+   "./restContracts/0x8005e968f848fa0c06bf24c221874fbc70d396bc.txt:91:5: Warning: Integer Underflow.\n    string public name = \"Sophon\"", 
+   "./restContracts/0x8005e968f848fa0c06bf24c221874fbc70d396bc.txt:89:5: Warning: Integer Underflow.\n    string public standard = \"ERC20Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.2"
+}

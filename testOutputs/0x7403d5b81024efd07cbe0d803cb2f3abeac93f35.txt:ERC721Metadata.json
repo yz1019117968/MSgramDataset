@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1425:5: Warning: Integer Underflow.\n    return _assetData[assetId]\nInteger Underflow occurs if:\n    return _assetData[assetId] = 1", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1407:5: Warning: Integer Underflow.\n    return _name\nInteger Underflow occurs if:\n    return _name = 1", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1419:5: Warning: Integer Underflow.\n    return _description\nInteger Underflow occurs if:\n    return _description = 1", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1413:5: Warning: Integer Underflow.\n    return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "20.7"
+}

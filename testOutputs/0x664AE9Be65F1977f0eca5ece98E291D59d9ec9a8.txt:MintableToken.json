@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:55:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:365:3: Warning: Integer Underflow.\n  string public name = \"ICScoin\"", 
+   "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:367:3: Warning: Integer Underflow.\n  string public symbol = \"ICS\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.5"
+}

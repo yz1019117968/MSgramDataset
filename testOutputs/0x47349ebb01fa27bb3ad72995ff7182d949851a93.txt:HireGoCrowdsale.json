@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x47349ebb01fa27bb3ad72995ff7182d949851a93.txt:783:9: Warning: Timestamp Dependency.\n        require(now >= icoEndTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x47349ebb01fa27bb3ad72995ff7182d949851a93.txt:799:24: Warning: Integer Overflow.\n            investor = investors_number[i]\nInteger Overflow occurs if:\n    investors_number.length = 115792089237210883131902427821989989825586314233321668944057034896658818662399\n    isRefundAllowed = 255\n    icoEndTime = 0\n    owner = 0\n    contributors[investor] = 0", 
+   "./uniqueContractSourceCode/0x47349ebb01fa27bb3ad72995ff7182d949851a93.txt:595:5: Warning: Integer Overflow.\n    address[] public investors_number", 
+   "./uniqueContractSourceCode/0x47349ebb01fa27bb3ad72995ff7182d949851a93.txt:759:24: Warning: Integer Overflow.\n            investor = investors_number[i]\nInteger Overflow occurs if:\n    investors_number.length = 115792089237314549919013663802645752884087427315135581303591950428049781030911\n    icoEndTime = 0\n    orderedTokens[investor] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x47349ebb01fa27bb3ad72995ff7182d949851a93.txt:51:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    icoEndTime = 91811798120155736752169908121582387934277584676010933461824506928346957020183\n    totalWeiRaised = 64583468092958857402101337409224633249817768218963486612219417037239827232717\n    hardCap = 64583468092958857402101337409224633249817768218963486612219417037239827232718\n    icoStartTime = 91811798120155736752169908121582387934277584676010933461824506928346957020183"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x47349ebb01fa27bb3ad72995ff7182d949851a93.txt:843:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(to_send)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x47349ebb01fa27bb3ad72995ff7182d949851a93.txt:823:17: Warning: Transaction-Ordering Dependency.\n                investor.transfer(contributedWei)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.1"
+}

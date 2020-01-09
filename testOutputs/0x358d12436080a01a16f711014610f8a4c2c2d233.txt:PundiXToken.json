@@ -1,0 +1,36 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:897:26: Warning: Integer Overflow.\n        uint64 maxTime = bonusTimeList[currentTimeIndex]\nInteger Overflow occurs if:\n    bonusTimeList.length = 184\n    currentTimeIndex = 183\n    _value = 31995326229524760900819196826016016078886177923891548552167572779144458108841\n    balances[_to] = 10737155325066979505894052879400257612653102005507294862769423768475444789305\n    allowed[_from][msg.sender] = 31995326229524760900819196826016016078886177923891548552167572779144458108841\n    balances[_from] = 31995326229524760900819196826016016078886177923891548552167572779144458108841\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1055:27: Warning: Integer Overflow.\n        uint256 balance = xuser.monthBalance\nInteger Overflow occurs if:\n    bonusTimeList.length = 73\n    currentTimeIndex = 78", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1029:31: Warning: Integer Overflow.\n        uint8 monthInterval = xuser.monthIndex\nInteger Overflow occurs if:\n    bonusTimeList.length = 1\n    currentTimeIndex = 1", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1067:13: Warning: Integer Overflow.\n            xuser.receiveBonus.push(preMonthBonus)\nInteger Overflow occurs if:\n    bonusTimeList.length = 59\n    currentTimeIndex = 63", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1055:27: Warning: Integer Overflow.\n        uint256 balance = xuser.monthBalance[xuser.monthIndex]\nInteger Overflow occurs if:\n    bonusTimeList.length = 2\n    currentTimeIndex = 1", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1059:48: Warning: Integer Overflow.\n        for (uint8 i = xuser.receiveIndex; i < xuser.monthIndex\nInteger Overflow occurs if:\n    bonusTimeList.length = 2\n    currentTimeIndex = 1", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:705:1: Warning: Integer Overflow.\ncontract PundiXToken is MintableToken, BurnableToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bonusTimeList.length = 128\n    currentTimeIndex = 128", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:55:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1029:50: Warning: Integer Overflow.\n        uint8 monthInterval = xuser.monthIndex - xuser.receiveIndex\nInteger Overflow occurs if:\n    bonusTimeList.length = 1\n    currentTimeIndex = 1", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1055:46: Warning: Integer Overflow.\n        uint256 balance = xuser.monthBalance[xuser.monthIndex\nInteger Overflow occurs if:\n    bonusTimeList.length = 73\n    currentTimeIndex = 78", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1165:26: Warning: Integer Overflow.\n        uint64 maxTime = bonusTimeList[currentTimeIndex]\nInteger Overflow occurs if:\n    bonusTimeList.length = 41\n    currentTimeIndex = 40\n    owner = 0", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:869:5: Warning: Integer Overflow.\n    mapping(address => User) public users", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1045:17: Warning: Integer Overflow.\n                xuser.receiveBonus\nInteger Overflow occurs if:\n    bonusTimeList.length = 3\n    currentTimeIndex = 6", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1045:17: Warning: Integer Overflow.\n                xuser.receiveBonus.push(0)\nInteger Overflow occurs if:\n    bonusTimeList.length = 3\n    currentTimeIndex = 6", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1067:13: Warning: Integer Overflow.\n            xuser.receiveBonus\nInteger Overflow occurs if:\n    bonusTimeList.length = 59\n    currentTimeIndex = 63", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:969:17: Warning: Integer Overflow.\n            if (bonusTimeList[currentTimeIndex]\nInteger Overflow occurs if:\n    bonusTimeList.length = 730750818665451459101842416358141509827966271488\n    currentTimeIndex = 195\n    _value = 110800955035739912491611890268421761109829163436802833072358825828000030506771\n    balances[_to] = 106575058584441115118563815310334919634300991809627506945564850253225540657\n    allowed[_from][msg.sender] = 110800955035739912491611890268421761109829163436802833072358825828000030506771\n    balances[_from] = 110800955035739912491611890268421761109829163436802833072358825828000030506771\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:1059:24: Warning: Integer Overflow.\n        for (uint8 i = xuser.receiveIndex\nInteger Overflow occurs if:\n    bonusTimeList.length = 2\n    currentTimeIndex = 1", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:765:13: Warning: Integer Overflow.\n            investors.push(_address)\nInteger Overflow occurs if:\n    owner = 0\n    investors.push(_address) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiBalance[_address] = 0", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:755:5: Warning: Integer Overflow.\n    address[] public investors", 
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:727:5: Warning: Integer Overflow.\n    uint64[] public bonusTimeList = [\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x358d12436080a01a16f711014610f8a4c2c2d233.txt:963:21: Warning: Integer Underflow.\n        uint8 len = uint8(bonusTimeList.length) - 1\nInteger Underflow occurs if:\n    bonusTimeList.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.2"
+}

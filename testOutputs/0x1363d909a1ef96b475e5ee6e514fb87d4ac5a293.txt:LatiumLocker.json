@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1363d909a1ef96b475e5ee6e514fb87d4ac5a293.txt:237:13: Warning: Integer Overflow.\n            tiersBalance += _releaseTiers[_timestamps[i]]\nInteger Overflow occurs if:\n    _timestamps.length = 115792089237316195423570985008687907853269984665640564039162436102733776814079\n    _releaseTiers[_timestamps[i]] = 1\n    _releaseTiers[_timestamps[i]] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _timestamps[i] = 4294967295\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1363d909a1ef96b475e5ee6e514fb87d4ac5a293.txt:241:17: Warning: Integer Overflow.\n                unlockedTokens += _releaseTiers[_timestamps[i]]\nInteger Overflow occurs if:\n    _timestamps[i] = 713624186801500440207569091169095081850306561\n    _timestamps.length = 7\n    _releaseTiers[_timestamps[i]] = 1\n    _releaseTiers[_timestamps[i]] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1363d909a1ef96b475e5ee6e514fb87d4ac5a293.txt:191:17: Warning: Integer Overflow.\n                unlocked += _releaseTiers[_timestamps[i]]\nInteger Overflow occurs if:\n    _timestamps[i] = 713624186801500440207569091169095081850306561\n    _timestamps.length = 7\n    _releaseTiers[_timestamps[i]] = 1\n    _releaseTiers[_timestamps[i]] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.9"
+}

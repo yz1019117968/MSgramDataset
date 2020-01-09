@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2255:25: Warning: Integer Overflow.\n        level = uint256(warrior.level\nInteger Overflow occurs if:\n    _id = 0\n    warriors[_id] = 1", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2247:45: Warning: Integer Overflow.\n        DataTypes.Warrior storage warrior = warriors[_id]\nInteger Overflow occurs if:\n    _id = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    warriors[_id] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2253:36: Warning: Integer Overflow.\n        cooldownEndBlock = uint256(warrior.cooldownEndBlock\nInteger Overflow occurs if:\n    _id = 0\n    warriors[_id] = 1", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:1231:45: Warning: Integer Overflow.\n        DataTypes.Warrior storage warrior = warriors[_warriorId]\nInteger Overflow occurs if:\n    warriors[_warriorId] = 3\n    paused = 0", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2257:20: Warning: Integer Overflow.\n\t\trating = uint256(warrior.rating\nInteger Overflow occurs if:\n    _id = 0\n    warriors[_id] = 1", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:1865:5: Warning: Integer Overflow.\n    function tournamentFinished(uint256[] packedContenders) public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2261:26: Warning: Integer Overflow.\n\t\tdungeonIndex = uint256(warrior.dungeonIndex\nInteger Overflow occurs if:\n    _id = 0\n    warriors[_id] = 1", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2259:20: Warning: Integer Overflow.\n\t\taction = uint256(warrior.action\nInteger Overflow occurs if:\n    _id = 0\n    warriors[_id] = 1", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2141:5: Warning: Integer Overflow.\n    function getWarriors(uint32[] _warriorIds) external view returns (uint256[] memory warriorsData, uint32 stepSize) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _warriorIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:1237:9: Warning: Integer Overflow.\n        warrior.action\nInteger Overflow occurs if:\n    warriors[_warriorId] = 115792089237316195423570985005764904578608178829233194374025017968601264553983\n    paused = 0", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:1673:9: Warning: Integer Overflow.\n        warrior.action\nInteger Overflow occurs if:\n    warriors[_warriorId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    battleProvider = 0", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2191:5: Warning: Integer Overflow.\n    function getWarriorOwners(uint32[] _warriorIds) external view returns (address[] memory owners) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _warriorIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:561:9: Warning: Integer Overflow.\n        ownersTokenCount[_to]++\nInteger Overflow occurs if:\n    ownersTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    warriors[_tokenId].action = 0\n    warriors[_tokenId] = 1\n    warriorToOwner[_tokenId] = 0\n    warriorToApproved[_tokenId] = 0\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:571:13: Warning: Integer Underflow.\n            ownersTokenCount[_from]--\nInteger Underflow occurs if:\n    ownersTokenCount[_from] = 0\n    warriors[_tokenId].action = 0\n    warriors[_tokenId] = 1\n    warriorToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    warriorToApproved[_tokenId] = 0\n    paused = 0", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2169:5: Warning: Integer Underflow.\n    function getWarriorsFromIndex(uint32 indexFrom, uint32 count) external view returns (uint256[] memory warriorsData, uint32 stepSize) {\r\n    ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    count = 0", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:2175:27: Warning: Integer Underflow.\n        uint256 lenght = (warriors.length - indexFrom\nInteger Underflow occurs if:\n    warriors.length = 4294967294\n    indexFrom = 4294967295"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "42.8"
+}

@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:733:17: Warning: Integer Overflow.\n    _paidTxID = allTransactions[_owner][index].paidTxID\nInteger Overflow occurs if:\n    index = 0\n    allTransactions[_owner][index] = 1", 
+   "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:733:17: Warning: Integer Overflow.\n    _paidTxID = allTransactions[_owner][index]\nInteger Overflow occurs if:\n    index = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    allTransactions[_owner][index] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:759:46: Warning: Integer Overflow.\n    Transaction storage newTx = transactions[transactions.length++\nInteger Overflow occurs if:\n    totalSupplyCap = 0\n    totalReserve = 0\n    _amount = 104897614555041955929739741345870528452008458219279941947188024734030061633536\n    _th = 1461501637330902918203684832716283019655932542975\n    controller = 0", 
+   "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:731:15: Warning: Integer Overflow.\n    _amount = allTransactions[_owner][index]\nInteger Overflow occurs if:\n    index = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    allTransactions[_owner][index] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:453:1: Warning: Integer Overflow.\ncontract Distribution is Controlled, TokenController {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    totalSupplyCap = 0\n    totalReserve = 0\n    _amount = 104897614555041955929739741345870528452008458219279941947188024734030061633536\n    _th = 1461501637330902918203684832716283019655932542975\n    controller = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:547:12: Warning: Integer Underflow.\n    return totalSupplyCap - totalReserve\nInteger Underflow occurs if:\n    totalSupplyCap = 0\n    totalReserve = 1\n    controller = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:683:7: Warning: Transaction-Ordering Dependency.\n      controller.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3ca53621001e34786d63311691ace2203cab61e8.txt:683:7: Warning: Transaction-Ordering Dependency.\n      controller.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.0"
+}

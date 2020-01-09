@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:131:5: Warning: Integer Overflow.\n    records[node].subSale\nInteger Overflow occurs if:\n    records[node].subSale = 0", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:135:5: Warning: Integer Overflow.\n    records[node].subExpiry\nInteger Overflow occurs if:\n    records[node].subSale = 0", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:165:5: Warning: Integer Overflow.\n    records[node].commitPeriod\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].subSale = 255\n    records[node].originalOwner = 0", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:137:32: Warning: Integer Overflow.\n    records[node].commitPeriod=now + commit\nInteger Overflow occurs if:\n    commit = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    records[node].subSale = 0", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:159:5: Warning: Integer Overflow.\n    records[node].subSale\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].subSale = 255\n    records[node].originalOwner = 0", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:197:12: Warning: Integer Overflow.\n    return records[node].subPrice", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:181:12: Warning: Integer Overflow.\n    return records[node].subExpiry", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:163:5: Warning: Integer Overflow.\n    records[node].subExpiry\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].subSale = 255\n    records[node].originalOwner = 0", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:189:12: Warning: Integer Overflow.\n    return records[node].subSale", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:205:12: Warning: Integer Overflow.\n    return records[node].commitPeriod", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:161:5: Warning: Integer Overflow.\n    records[node].subPrice\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].subSale = 255\n    records[node].originalOwner = 0", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:213:12: Warning: Integer Overflow.\n    return records[node].regPeriod", 
+   "./uniqueContractSourceCode/0x163c90d093109dccaa0efb55410b105eeb9fa02d.txt:133:5: Warning: Integer Overflow.\n    records[node].subPrice\nInteger Overflow occurs if:\n    records[node].subSale = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.9"
+}

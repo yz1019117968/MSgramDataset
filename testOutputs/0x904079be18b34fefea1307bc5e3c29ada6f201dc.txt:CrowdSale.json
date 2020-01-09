@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x904079be18b34fefea1307bc5e3c29ada6f201dc.txt:481:17: Warning: Timestamp Dependency.\n        require(now >= startDate && now <= endDate && active", 
+   "./restContracts/0x904079be18b34fefea1307bc5e3c29ada6f201dc.txt:481:17: Warning: Timestamp Dependency.\n        require(now >= startDate && now <= endDate"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.7"
+}

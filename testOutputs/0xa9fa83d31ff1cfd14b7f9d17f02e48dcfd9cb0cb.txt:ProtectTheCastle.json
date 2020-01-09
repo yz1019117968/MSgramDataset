@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:203:13: Warning: Callstack Depth Attack Vulnerability.\n            jester.send(amount * 3 / 100)", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:251:17: Warning: Callstack Depth Attack Vulnerability.\n                citizensAddresses[lastCitizenPaid].send(citizensAmounts[lastCitizenPaid])", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:163:17: Warning: Callstack Depth Attack Vulnerability.\n                citizensAddresses[citizensAddresses.length - 1].send(piggyBank * 55 / 100)", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:239:13: Warning: Callstack Depth Attack Vulnerability.\n            jester.send(amount * 3 / 100)", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:149:17: Warning: Callstack Depth Attack Vulnerability.\n                citizensAddresses[citizensAddresses.length - 1].send(piggyBank)", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:155:17: Warning: Callstack Depth Attack Vulnerability.\n                citizensAddresses[citizensAddresses.length - 1].send(piggyBank * 65 / 100)", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:165:17: Warning: Callstack Depth Attack Vulnerability.\n                citizensAddresses[citizensAddresses.length - 2].send(piggyBank * 30 / 100)", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:157:17: Warning: Callstack Depth Attack Vulnerability.\n                citizensAddresses[citizensAddresses.length - 2].send(piggyBank * 35 / 100)", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:167:17: Warning: Callstack Depth Attack Vulnerability.\n                citizensAddresses[citizensAddresses.length - 3].send(piggyBank * 15 / 100)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:63:5: Warning: Integer Overflow.\n    uint[] public citizensAmounts", 
+   "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:61:5: Warning: Integer Overflow.\n    address[] public citizensAddresses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:129:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.send(msg.value - 100 ether)"
+   ], 
+   [
+    "./restContracts/0xa9fa83d31ff1cfd14b7f9d17f02e48dcfd9cb0cb.txt:119:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.send(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "42.0"
+}

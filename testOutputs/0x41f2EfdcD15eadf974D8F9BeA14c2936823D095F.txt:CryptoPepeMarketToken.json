@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x41f2EfdcD15eadf974D8F9BeA14c2936823D095F.txt:337:3: Warning: Integer Overflow.\n  function createContractItem(string _name, bytes32 _message, address _creatoraddress) public onlyCOO {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x41f2EfdcD15eadf974D8F9BeA14c2936823D095F.txt:901:5: Warning: Integer Overflow.\n    ownershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    itemIndexToApproved[_tokenId] = 1461501637330902918203684832716283019655932542975\n    itemIndexToOwner[_tokenId] = 0\n    _from = 0", 
+   "./uniqueContractSourceCode/0x41f2EfdcD15eadf974D8F9BeA14c2936823D095F.txt:363:25: Warning: Integer Overflow.\n    Item storage item = items[_tokenId]\nInteger Overflow occurs if:\n    items[_tokenId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x41f2EfdcD15eadf974D8F9BeA14c2936823D095F.txt:367:5: Warning: Integer Underflow.\n    itemName = item.name\nInteger Underflow occurs if:\n    items[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x41f2EfdcD15eadf974D8F9BeA14c2936823D095F.txt:913:7: Warning: Integer Underflow.\n      ownershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    itemIndexToApproved[_tokenId] = 1461501637330902918203684832716283019655932542975\n    itemIndexToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    _from = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x41f2EfdcD15eadf974D8F9BeA14c2936823D095F.txt:887:7: Warning: Transaction-Ordering Dependency.\n      _to.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x41f2EfdcD15eadf974D8F9BeA14c2936823D095F.txt:883:7: Warning: Transaction-Ordering Dependency.\n      ceoAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.3"
+}

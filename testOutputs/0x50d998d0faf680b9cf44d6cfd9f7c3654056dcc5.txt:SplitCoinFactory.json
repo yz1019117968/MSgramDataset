@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:405:5: Warning: Integer Overflow.\n    contracts[msg.sender].push(sc)", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:361:1: Warning: Integer Overflow.\ncontract SplitCoinFactory {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:383:3: Warning: Integer Overflow.\n  function make(address[] users, uint[] ppms, address refer, bool claimable) public returns (address) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:393:25: Warning: Integer Overflow.\n        referContract = contracts[refer][referContractIndex]\nInteger Overflow occurs if:\n    contracts[refer].length = 95780971304118053647396689196894323976171195136475136\n    referralContracts[refer] = 95780971304118053647396689196894323976171195136475135\n    referredBy[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:371:3: Warning: Integer Overflow.\n  address[] public deployed", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:363:3: Warning: Integer Overflow.\n  mapping(address => address[]) public contracts", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:369:3: Warning: Integer Overflow.\n  mapping(address => address[]) public referrals", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:397:9: Warning: Integer Overflow.\n        referrals[refer].push(msg.sender)\nInteger Overflow occurs if:\n    contracts[refer].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    referralContracts[refer] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    referredBy[msg.sender] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:389:33: Warning: Integer Underflow.\n      uint referContractIndex = referralContracts[refer] - 1\nInteger Underflow occurs if:\n    referralContracts[refer] = 0\n    contracts[refer].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    referredBy[msg.sender] = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "25.0"
+}

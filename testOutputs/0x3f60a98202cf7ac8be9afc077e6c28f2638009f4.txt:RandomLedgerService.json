@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:593:13: Warning: Integer Overflow.\n            randomNumbers[_requestor].max\nInteger Overflow occurs if:\n    defaultMax = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    randomNumbers[_requestor].renderedNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[msg.sender] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:777:90: Warning: Integer Overflow.\n        return (randomNumbers[_requestor].renderedNumber, randomNumbers[_requestor].max, randomNumbers[_requestor].originBlock", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:777:59: Warning: Integer Overflow.\n        return (randomNumbers[_requestor].renderedNumber, randomNumbers[_requestor].max", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:777:17: Warning: Integer Overflow.\n        return (randomNumbers[_requestor].renderedNumber", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:613:118: Warning: Integer Overflow.\n        EventRandomLedgerRequested(_requestor, randomNumbers[_requestor].max, randomNumbers[_requestor].originBlock, randomNumbers[_requestor].waitTime\nInteger Overflow occurs if:\n    defaultWaitTime = 0\n    defaultMax = 0\n    randomNumbers[_requestor].renderedNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[msg.sender] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:793:13: Warning: Integer Overflow.\n        if (randomNumbers[_requestor].renderedNumber\nInteger Overflow occurs if:\n    whiteList[msg.sender] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:607:13: Warning: Integer Overflow.\n            randomNumbers[_requestor].waitTime\nInteger Overflow occurs if:\n    defaultWaitTime = 64\n    defaultMax = 0\n    randomNumbers[_requestor].renderedNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[msg.sender] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:731:74: Warning: Integer Overflow.\n        uint256 revealBlock = add(randomNumbers[_requestor].originBlock, randomNumbers[_requestor].waitTime\nInteger Overflow occurs if:\n    randomNumbers[_requestor].waitTime = 255\n    randomNumbers[_requestor].renderedNumber = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:371:5: Warning: Integer Overflow.\n    mapping (address => RandomNumber) public randomNumbers", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:573:9: Warning: Integer Overflow.\n        randomNumbers[_requestor] = RandomNumber({\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    randomNumbers[_requestor].renderedNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[msg.sender] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:613:48: Warning: Integer Overflow.\n        EventRandomLedgerRequested(_requestor, randomNumbers[_requestor].max\nInteger Overflow occurs if:\n    defaultWaitTime = 0\n    defaultMax = 0\n    randomNumbers[_requestor].renderedNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[msg.sender] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:731:35: Warning: Integer Overflow.\n        uint256 revealBlock = add(randomNumbers[_requestor].originBlock\nInteger Overflow occurs if:\n    randomNumbers[_requestor].waitTime = 255\n    randomNumbers[_requestor].renderedNumber = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:793:62: Warning: Integer Overflow.\n        if (randomNumbers[_requestor].renderedNumber == 0 && randomNumbers[_requestor].waitTime\nInteger Overflow occurs if:\n    whiteList[msg.sender] = 255\n    owner = 0\n    randomNumbers[_requestor].renderedNumber = 0", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:777:129: Warning: Integer Overflow.\n        return (randomNumbers[_requestor].renderedNumber, randomNumbers[_requestor].max, randomNumbers[_requestor].originBlock, randomNumbers[_requestor].expired", 
+   "./uniqueContractSourceCode/0x3f60a98202cf7ac8be9afc077e6c28f2638009f4.txt:613:79: Warning: Integer Overflow.\n        EventRandomLedgerRequested(_requestor, randomNumbers[_requestor].max, randomNumbers[_requestor].originBlock\nInteger Overflow occurs if:\n    defaultWaitTime = 0\n    defaultMax = 0\n    randomNumbers[_requestor].renderedNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[msg.sender] = 255\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.1"
+}

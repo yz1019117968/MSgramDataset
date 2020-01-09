@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x03c60795a9b4646752e25eed4bdadf5d8c62e13c.txt:461:32: Warning: Integer Overflow.\n    uint256 profit = price.sub(cryptoColor.lastPrice", 
+   "./uniqueContractSourceCode/0x03c60795a9b4646752e25eed4bdadf5d8c62e13c.txt:729:12: Warning: Integer Overflow.\n    return cryptoColorData[_tokenId].price", 
+   "./uniqueContractSourceCode/0x03c60795a9b4646752e25eed4bdadf5d8c62e13c.txt:315:5: Warning: Integer Overflow.\n    newCryptoColor.owner\nInteger Overflow occurs if:\n    owner = 0\n    cryptoColorData[_tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x03c60795a9b4646752e25eed4bdadf5d8c62e13c.txt:653:56: Warning: Integer Overflow.\n    uint256 cryptoColorOwed = totalcryptoColorOwed.sub(cryptoColorData[_itemId].withdrawn\nInteger Overflow occurs if:\n    _from = 1461501637330902918203684794937351156698770833407\n    tokenOwner[_tokenId] = 37778931862957161709568", 
+   "./uniqueContractSourceCode/0x03c60795a9b4646752e25eed4bdadf5d8c62e13c.txt:209:3: Warning: Integer Overflow.\n  mapping (uint256 => CryptoColor) public cryptoColorData", 
+   "./uniqueContractSourceCode/0x03c60795a9b4646752e25eed4bdadf5d8c62e13c.txt:651:48: Warning: Integer Overflow.\n    uint256 totalcryptoColorOwed = poolTotal * cryptoColorData[_itemId].payout\nInteger Overflow occurs if:\n    _from = 1461501637330902918203684794937351156698770833407\n    tokenOwner[_tokenId] = 37778931862957161709568"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.5"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:2345:12: Warning: Callstack Depth Attack Vulnerability.\n    assert(saleWallet.send(msg.value)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.7"
+}

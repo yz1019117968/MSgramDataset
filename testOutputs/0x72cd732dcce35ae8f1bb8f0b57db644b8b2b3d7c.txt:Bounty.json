@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x72cd732dcce35ae8f1bb8f0b57db644b8b2b3d7c.txt:39:9: Warning: Integer Overflow.\n        talks[title].witnessedPresenter\nInteger Overflow occurs if:\n    talks[title].witnessedBy[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x72cd732dcce35ae8f1bb8f0b57db644b8b2b3d7c.txt:23:9: Warning: Integer Overflow.\n        talks[title].balance += msg.value\nInteger Overflow occurs if:\n    talks[title].balance = 1", 
+   "./uniqueContractSourceCode/0x72cd732dcce35ae8f1bb8f0b57db644b8b2b3d7c.txt:37:9: Warning: Integer Overflow.\n        talks[title].witnessedBy\nInteger Overflow occurs if:\n    talks[title].witnessedBy[msg.sender] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.7"
+}

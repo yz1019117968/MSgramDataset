@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x51dd5df5a45bd76e7ec9358bb405d424ba02234a.txt:219:5: Warning: Integer Underflow.\n    string public name = \"TheCoinEconomy\"", 
+   "./uniqueContractSourceCode/0x51dd5df5a45bd76e7ec9358bb405d424ba02234a.txt:221:5: Warning: Integer Underflow.\n    string public symbol = \"TCE\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.4"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0fe70e559f825a3d548f44e51d2812d266099828.txt:465:5: Warning: Integer Overflow.\n    uint256[] public bb", 
+   "./uniqueContractSourceCode/0x0fe70e559f825a3d548f44e51d2812d266099828.txt:463:5: Warning: Integer Overflow.\n    address[] public aa", 
+   "./uniqueContractSourceCode/0x0fe70e559f825a3d548f44e51d2812d266099828.txt:483:5: Warning: Integer Overflow.\n    function setThings(address[] a, uint256[] b, uint256 length) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    a = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x0fe70e559f825a3d548f44e51d2812d266099828.txt:499:24: Warning: Integer Overflow.\n            t.transfer(aa[i]\nInteger Overflow occurs if:\n    l = 101318078082651670995624611882601919371611236582435493534525386006923988434943\n    aa[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    bb[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.7"
+}

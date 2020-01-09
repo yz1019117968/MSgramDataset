@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x7702cbba3e02788dd50535afb691fabcb64308cd.txt:145:5: Warning: Timestamp Dependency.\n    require(now > s.expiration)", 
+   "./uniqueContractSourceCode/0x7702cbba3e02788dd50535afb691fabcb64308cd.txt:115:5: Warning: Timestamp Dependency.\n    require(now < s.expiration)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7702cbba3e02788dd50535afb691fabcb64308cd.txt:57:3: Warning: Integer Overflow.\n  mapping(address => mapping(bytes20 => Swap)) public swaps", 
+   "./uniqueContractSourceCode/0x7702cbba3e02788dd50535afb691fabcb64308cd.txt:91:5: Warning: Integer Overflow.\n    swaps[_participant][_hash] = Swap(_expiration, msg.sender, _participant, _isToken ? _value : msg.value, _isToken, _token, true)\nInteger Overflow occurs if:\n    _expiration = 1\n    _isToken = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7702cbba3e02788dd50535afb691fabcb64308cd.txt:131:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(s.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7702cbba3e02788dd50535afb691fabcb64308cd.txt:167:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(s.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.3"
+}

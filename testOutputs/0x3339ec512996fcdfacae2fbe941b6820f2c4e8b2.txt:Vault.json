@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:523:9: Warning: Timestamp Dependency.\n        if (now < p.earliestPayTime) throw"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:241:5: Warning: Integer Overflow.\n    Payment[] public authorizedPayments", 
+   "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:577:14: Warning: Integer Overflow.\n        if ((p.securityGuardDelay\nInteger Overflow occurs if:\n    _delay = 6553601\n    _idPayment = 0\n    authorizedPayments.length = 1\n    securityGuard = 0", 
+   "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:431:5: Warning: Integer Overflow.\n    function authorizePayment(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:625:9: Warning: Integer Overflow.\n        p.canceled\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:573:21: Warning: Integer Overflow.\n        Payment p = authorizedPayments[_idPayment]\nInteger Overflow occurs if:\n    _idPayment = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    _delay = 0\n    authorizedPayments.length = 28948022309329048855892746252171976963317496166410141009864396001978282409985\n    securityGuard = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:241:5: Warning: Integer Underflow.\n    Payment[] public authorizedPayments"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:169:14: Warning: Transaction-Ordering Dependency.\n        if (!escapeHatchDestination.send(total)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3339ec512996fcdfacae2fbe941b6820f2c4e8b2.txt:169:14: Warning: Transaction-Ordering Dependency.\n        if (!escapeHatchDestination.send(total)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.1"
+}

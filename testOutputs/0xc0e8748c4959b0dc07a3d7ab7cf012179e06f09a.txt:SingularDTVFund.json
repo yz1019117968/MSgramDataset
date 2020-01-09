@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:563:9: Warning: Integer Overflow.\n        totalReward += msg.value\nInteger Overflow occurs if:\n    totalReward = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:491:5: Warning: Integer Underflow.\n    string public version = \"0.1.0\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.2"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x961bb40fd91453da2c9a40987cb85db494b8ec3d.txt:317:5: Warning: Integer Overflow.\n    function setNameAndTicker(string _name, string _symbol) onlyOwner public returns (bool success) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x961bb40fd91453da2c9a40987cb85db494b8ec3d.txt:93:5: Warning: Integer Underflow.\n    string public symbol = \"CPL\"", 
+   "./restContracts/0x961bb40fd91453da2c9a40987cb85db494b8ec3d.txt:91:5: Warning: Integer Underflow.\n    string public name = \"Tokensale of CPL\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.2"
+}

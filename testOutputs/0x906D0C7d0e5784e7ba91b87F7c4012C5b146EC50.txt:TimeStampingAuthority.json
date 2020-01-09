@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x906D0C7d0e5784e7ba91b87F7c4012C5b146EC50.txt:23:5: Warning: Integer Overflow.\n    function submitEntry(bytes _hash, string note) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _hash = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x906D0C7d0e5784e7ba91b87F7c4012C5b146EC50.txt:33:5: Warning: Integer Overflow.\n    function getEntry(bytes _hash) public constant returns (address, uint, string) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _hash = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "8.5"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x957c30aB0426e0C93CD8241E2c60392d08c6aC8e.txt:53:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    rounding = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    mintDone = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "1.8"
+}

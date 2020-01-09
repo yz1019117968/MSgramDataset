@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x050663fa3f625e9accf534fb188bcb1dca0579b5.txt:799:3: Warning: Integer Underflow.\n  string public symbol = \"HDT\"", 
+   "./uniqueContractSourceCode/0x050663fa3f625e9accf534fb188bcb1dca0579b5.txt:797:3: Warning: Integer Underflow.\n  string public name = \"Hard Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.5"
+}

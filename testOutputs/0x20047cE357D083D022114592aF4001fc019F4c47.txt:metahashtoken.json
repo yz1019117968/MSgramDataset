@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x20047cE357D083D022114592aF4001fc019F4c47.txt:227:13: Warning: Integer Overflow.\n            totalTokens += tokenCreate\nInteger Overflow occurs if:\n    totalTokens = 1\n    tokenCreate = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerContract = 0\n    finalyze = 0", 
+   "./uniqueContractSourceCode/0x20047cE357D083D022114592aF4001fc019F4c47.txt:229:13: Warning: Integer Overflow.\n            balance[ownerContract] += tokenCreate\nInteger Overflow occurs if:\n    balance[ownerContract] = 1\n    tokenCreate = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerContract = 0\n    finalyze = 0", 
+   "./uniqueContractSourceCode/0x20047cE357D083D022114592aF4001fc019F4c47.txt:159:9: Warning: Integer Overflow.\n        balance[_to] += _value\nInteger Overflow occurs if:\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balance[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    balance[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x20047cE357D083D022114592aF4001fc019F4c47.txt:253:9: Warning: Integer Underflow.\n        totalTokens -= _value\nInteger Underflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    totalTokens = 115792089237316195423570985008687907853269984665640564039457575000713874898942\n    balance[msg.sender] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x20047cE357D083D022114592aF4001fc019F4c47.txt:13:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x20047cE357D083D022114592aF4001fc019F4c47.txt:11:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.8"
+}

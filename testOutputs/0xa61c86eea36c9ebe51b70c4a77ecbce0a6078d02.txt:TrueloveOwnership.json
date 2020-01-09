@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:677:3: Warning: Integer Overflow.\n\t\townershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _from = 0\n    diamondIndexToOwner[_tokenId] = 0\n    diamondIndexToApproved[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    paused = 0", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1003:29: Warning: Integer Overflow.\n\t\tDiamond storage diamond = diamonds[_id]\nInteger Overflow occurs if:\n    _id = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    diamonds[_id] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1013:16: Warning: Integer Overflow.\n\t\tactivateAt = diamond.activateAt\nInteger Overflow occurs if:\n    _id = 0\n    diamonds[_id] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:817:11: Warning: Integer Underflow.\n\t\t\treturn diamonds.length - 1\nInteger Underflow occurs if:\n    diamonds.length = 0", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:683:4: Warning: Integer Underflow.\n\t\t\townershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    _from = 1461501637330902918203684832716283019655932542975\n    diamondIndexToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    diamondIndexToApproved[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.1"
+}

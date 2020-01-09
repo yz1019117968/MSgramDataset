@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x32ff276e98517ef6e0ad7bc7b2674baa0f1c388b.txt:327:5: Warning: Integer Overflow.\n    mapping (bytes32 => Promo) public promoMap", 
+   "./uniqueContractSourceCode/0x32ff276e98517ef6e0ad7bc7b2674baa0f1c388b.txt:611:29: Warning: Integer Overflow.\n            if (weiAmount < etherForCountBonus[i]\nInteger Overflow occurs if:\n    etherForCountBonus.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    weiAmount = 0\n    etherForCountBonus[i] = 0", 
+   "./uniqueContractSourceCode/0x32ff276e98517ef6e0ad7bc7b2674baa0f1c388b.txt:611:59: Warning: Integer Overflow.\n            if (weiAmount < etherForCountBonus[i]) return amountForCountBonus[i]\nInteger Overflow occurs if:\n    etherForCountBonus.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    amountForCountBonus[i] = 6\n    weiAmount = 0\n    etherForCountBonus[i] = 1\n    etherForCountBonus[i] = 0\n    etherForCountBonus[i] = 0\n    etherForCountBonus[i] = 0\n    etherForCountBonus[i] = 0\n    etherForCountBonus[i] = 0", 
+   "./uniqueContractSourceCode/0x32ff276e98517ef6e0ad7bc7b2674baa0f1c388b.txt:615:16: Warning: Integer Overflow.\n        return amountForCountBonus[amountForCountBonus.length - 1]\nInteger Overflow occurs if:\n    amountForCountBonus.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    etherForCountBonus.length = 0", 
+   "./uniqueContractSourceCode/0x32ff276e98517ef6e0ad7bc7b2674baa0f1c388b.txt:289:5: Warning: Integer Overflow.\n    address[] public holdTokenInvestors", 
+   "./uniqueContractSourceCode/0x32ff276e98517ef6e0ad7bc7b2674baa0f1c388b.txt:359:9: Warning: Integer Overflow.\n        promoMap[promoPublicKey] = Promo(true, userPercentToken, dealer, dealerPercentToken, dealerPercentETH, 0, 0, 0, 0, 0)\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x32ff276e98517ef6e0ad7bc7b2674baa0f1c388b.txt:615:36: Warning: Integer Underflow.\n        return amountForCountBonus[amountForCountBonus.length - 1\nInteger Underflow occurs if:\n    amountForCountBonus.length = 0\n    etherForCountBonus.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.7"
+}

@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:395:5: Warning: Integer Overflow.\n    mapping(address => Payment[]) public rewards", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:429:91: Warning: Integer Overflow.\n                uint amount = balances[_to] > 0 ? (repayments[i].amount * balances[_to] / repayments[i].total\nInteger Overflow occurs if:\n    rewards[_to].length = 0\n    balances[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    repayments.length = 1", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:429:52: Warning: Integer Overflow.\n                uint amount = balances[_to] > 0 ? (repayments[i].amount\nInteger Overflow occurs if:\n    rewards[_to].length = 0\n    balances[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    repayments.length = 1", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:393:5: Warning: Integer Overflow.\n    Payment[] public repayments", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:411:9: Warning: Integer Overflow.\n        repayments.push(Payment({time : now, amount : amount * 1 ether, total : totalSupply}))\nInteger Overflow occurs if:\n    amount = 1000\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:41:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    _value = 31596124246373291099409853014169454628809635589344995064336930295412493327789\n    balances[_to] = 88954274358534181718891049939338324097349198028875471571335294514393306788333\n    repayments.length = 0\n    balances[_from] = 31596124246373291099409853014169454628809635589344995064336930295412493327789\n    _to = 1461501637330902918203684832716283019655932542975\n    rewards[_to].length = 0\n    rewards[_to].length = 0", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:379:1: Warning: Integer Overflow.\ncontract RewardToken is StandardToken, Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    rewards[_to].length = 71035195276905978830841378541667856625157632706140231142381185849046086175071\n    balances[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    repayments.length = 71035195276905978830841378541667856625157632706140231142381185849046086175072", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:429:91: Warning: Integer Overflow.\n                uint amount = balances[_to] > 0 ? (repayments[i].amount * balances[_to] / repayments[i]\nInteger Overflow occurs if:\n    rewards[_to].length = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    balances[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    repayments.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312", 
+   "./uniqueContractSourceCode/0x3c83129d5eb5df2006c9b3d39841bd3a2bb6ebfd.txt:429:52: Warning: Integer Overflow.\n                uint amount = balances[_to] > 0 ? (repayments[i]\nInteger Overflow occurs if:\n    rewards[_to].length = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    balances[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    repayments.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.7"
+}

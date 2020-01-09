@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x7a8721a9d64c74da899424c1b52acbf58ddc9782.txt:95:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")", 
+   "./uniqueContractSourceCode/0x7a8721a9d64c74da899424c1b52acbf58ddc9782.txt:89:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.9"
+}

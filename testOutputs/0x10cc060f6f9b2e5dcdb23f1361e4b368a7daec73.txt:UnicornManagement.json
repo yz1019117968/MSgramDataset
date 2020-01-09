@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:311:9: Warning: Integer Overflow.\n        initList[initItems[_contract].listIndex]\nInteger Overflow occurs if:\n    initItems[_contract].listIndex = 4951760157141521099596496894\n    initList.length = 115792089237316195423570985008687907853269984665635612279300442486813533143040\n    initItems[_contract].exists = 255\n    paused = 255\n    ownerAddress = 0", 
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:285:14: Warning: Integer Overflow.\n        if (!initItems[_contract].exists\nInteger Overflow occurs if:\n    ownerAddress = 0\n    paused = 255", 
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:287:13: Warning: Integer Overflow.\n            initItems[_contract] = InitItem({\r\n            ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    initItems[_contract].exists = 0\n    ownerAddress = 0\n    paused = 255", 
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:295:13: Warning: Integer Overflow.\n            initList.push(_contract)\nInteger Overflow occurs if:\n    initList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    initItems[_contract].exists = 0\n    ownerAddress = 0\n    paused = 255", 
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:309:19: Warning: Integer Overflow.\n        initItems[initList[lastIdx]\nInteger Overflow occurs if:\n    initList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    initItems[_contract].exists = 255\n    paused = 255\n    ownerAddress = 0", 
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:311:52: Warning: Integer Overflow.\n        initList[initItems[_contract].listIndex] = initList[lastIdx]\nInteger Overflow occurs if:\n    initList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    initItems[_contract].exists = 255\n    paused = 255\n    ownerAddress = 0", 
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:51:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    createUnicornPrice = 1\n    oraclizeFee = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x10cc060f6f9b2e5dcdb23f1361e4b368a7daec73.txt:71:1: Warning: Integer Overflow.\ncontract UnicornManagement {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    initList.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    initItems[_contract].exists = 0\n    ownerAddress = 0\n    paused = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.7"
+}

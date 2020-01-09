@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:165:24: Warning: Integer Overflow.\n\t\t\tpersonalInfo.email, personalInfo.mobile", 
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:89:2: Warning: Integer Overflow.\n\taddress[] public users", 
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:163:35: Warning: Integer Overflow.\n\t\treturn (personalInfo.full_name, personalInfo.company", 
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:165:45: Warning: Integer Overflow.\n\t\t\tpersonalInfo.email, personalInfo.mobile, personalInfo.telephone", 
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:165:69: Warning: Integer Overflow.\n\t\t\tpersonalInfo.email, personalInfo.mobile, personalInfo.telephone, personalInfo.fax", 
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:163:57: Warning: Integer Overflow.\n\t\treturn (personalInfo.full_name, personalInfo.company, personalInfo.job_title", 
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:139:2: Warning: Integer Overflow.\n\tfunction addPersonalInfo(address user_wallet_address, string _full_name, string _company, \r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _full_name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:165:4: Warning: Integer Overflow.\n\t\t\tpersonalInfo.email"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x26557ef01cf73f0c8ea0c5f28c35b3cf089deb22.txt:163:3: Warning: Integer Underflow.\n\t\treturn (personalInfo.full_name, personalInfo.company, personalInfo.job_title, \r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "20.6"
+}

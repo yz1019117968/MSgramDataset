@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x7c457dffffdea37c790e9d96ce93b86b7606ad1e.txt:1129:9: Warning: Timestamp Dependency.\n        if (!isMaxCapReached() && !isSaleOver()) throw"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7c457dffffdea37c790e9d96ce93b86b7606ad1e.txt:927:9: Warning: Integer Overflow.\n        usdPerEthLog.push(UsdPerEthLog({ rate: usdPerEth, time: getNow(), changedBy: msg.sender }))\nInteger Overflow occurs if:\n    _usdPerEth = 115792089237316195222703729476314123410524723122995238724182209776267932205055\n    usdPerEthLog.push(UsdPerEthLog({ rate: usdPerEth, time: getNow(), changedBy: msg.sender })) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    usdPerEthMax = 115792089237316195222703729476314123410524723122995238724182209776267932205055\n    usdPerEthMin = 115792089237316195222703729476314123410524723122995238724182209776267932205055\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7c457dffffdea37c790e9d96ce93b86b7606ad1e.txt:795:5: Warning: Integer Overflow.\n    UsdPerEthLog[] public usdPerEthLog", 
+   "./uniqueContractSourceCode/0x7c457dffffdea37c790e9d96ce93b86b7606ad1e.txt:757:5: Warning: Integer Overflow.\n    mapping(address => Backer) public backers", 
+   "./uniqueContractSourceCode/0x7c457dffffdea37c790e9d96ce93b86b7606ad1e.txt:741:1: Warning: Integer Overflow.\ncontract BsPresale_SNOV is SafeMath, Ownable, Pausable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _usdPerEth = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    usdPerEthLog.push(UsdPerEthLog({ rate: usdPerEth, time: getNow(), changedBy: msg.sender })) = 57896044618657274959506831901322876441816415670288570036908383822896336644778\n    usdPerEthMax = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    usdPerEthMin = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7c457dffffdea37c790e9d96ce93b86b7606ad1e.txt:1133:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7c457dffffdea37c790e9d96ce93b86b7606ad1e.txt:1133:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.1"
+}

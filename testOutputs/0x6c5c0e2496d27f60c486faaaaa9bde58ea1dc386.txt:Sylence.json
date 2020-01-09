@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6c5c0e2496d27f60c486faaaaa9bde58ea1dc386.txt:37:3: Warning: Integer Overflow.\n  function registerNewPubKeyForHash(string phoneHash, string pubKey) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    phoneHash = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x6c5c0e2496d27f60c486faaaaa9bde58ea1dc386.txt:27:3: Warning: Integer Overflow.\n  function getPubKeyByHash(string phoneHash) constant returns (string pubKey) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    phoneHash = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "10.5"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2d9498d0fd6f40760d53a847eb64eaf51c9b8e74.txt:405:4: Warning: Integer Underflow.\n   string public symbol = \"THX\"", 
+   "./uniqueContractSourceCode/0x2d9498d0fd6f40760d53a847eb64eaf51c9b8e74.txt:403:4: Warning: Integer Underflow.\n   string public name = \"ETHCON-Early-Bird\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.5"
+}

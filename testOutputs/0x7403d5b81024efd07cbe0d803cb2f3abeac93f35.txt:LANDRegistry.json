@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:825:27: Warning: Integer Overflow.\n    uint256 lastAssetId = _assetsOf[from][lastAssetIndex]\nInteger Overflow occurs if:\n    _assetsOf[owner].length = 115792089237316195423570985008687907853269984665640564039457583990320943595520\n    _operators[assetHolder][operator] = 255\n    _holderOf[assetId] = 0", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1771:3: Warning: Integer Overflow.\n  function transferManyLand(int[] x, int[] y, address to) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    x = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1491:3: Warning: Integer Overflow.\n  function initialize(bytes) public {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1609:3: Warning: Integer Overflow.\n  function clearLand(int[] x, int[] y) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    x = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:835:5: Warning: Integer Overflow.\n    _assetsOf[from][assetIndex]\nInteger Overflow occurs if:\n    _indexOfAsset[assetId] = 12554203470773361527671578846395603162828600140796864200702\n    _assetsOf[owner].length = 115792089237316195411016781537914546325598405819243877679094609159375728672768\n    _operators[assetHolder][operator] = 255\n    _holderOf[assetId] = 0", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1821:3: Warning: Integer Overflow.\n  function updateManyLandData(int[] x, int[] y, string data) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    x = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1481:1: Warning: Integer Overflow.\ncontract LANDRegistry is Storage,\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _assetsOf[owner].length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    _holderOf[assetId] = 0\n    proxyOwner = 0", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:841:5: Warning: Integer Overflow.\n    _assetsOf[from][lastAssetIndex]\nInteger Overflow occurs if:\n    _assetsOf[owner].length = 115792089237316195423570985008687907853269984665640564039457583990320943595520\n    _indexOfAsset[assetId] = 115792089237316195423570985008687907853269984665640564039457583990320943595519\n    _operators[assetHolder][operator] = 255\n    _holderOf[assetId] = 0", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1807:3: Warning: Integer Overflow.\n  function updateLandData(int x, int y, string data) public onlyUpdateAuthorized (encodeTokenId(x, y)) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1689:3: Warning: Integer Overflow.\n  function ownerOfLandMany(int[] x, int[] y) view public returns (address[]) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    x = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:205:3: Warning: Integer Overflow.\n  function bytesToAddress (bytes b) pure public returns (address) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1571:3: Warning: Integer Overflow.\n  function assignMultipleParcels(int[] x, int[] y, address beneficiary) public onlyProxyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    x = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:805:5: Warning: Integer Overflow.\n    _assetsOf[to].push(assetId)\nInteger Overflow occurs if:\n    _assetsOf[owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _holderOf[assetId] = 0\n    proxyOwner = 0", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1339:12: Warning: Integer Overflow.\n    return _assetsOf[owner][index]\nInteger Overflow occurs if:\n    _assetsOf[owner].length = 42535295865117307932921825928971026433", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1027:3: Warning: Integer Overflow.\n  function safeTransferFrom(address from, address to, uint256 assetId, bytes userData) public {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1425:5: Warning: Integer Underflow.\n    return _assetData[assetId]\nInteger Underflow occurs if:\n    return _assetData[assetId] = 1", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1407:5: Warning: Integer Underflow.\n    return _name\nInteger Underflow occurs if:\n    return _name = 1", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1419:5: Warning: Integer Underflow.\n    return _description\nInteger Underflow occurs if:\n    return _description = 1", 
+   "./uniqueContractSourceCode/0x7403d5b81024efd07cbe0d803cb2f3abeac93f35.txt:1413:5: Warning: Integer Underflow.\n    return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "48.2"
+}

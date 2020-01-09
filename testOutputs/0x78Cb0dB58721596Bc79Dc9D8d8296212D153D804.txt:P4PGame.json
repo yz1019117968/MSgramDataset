@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x78Cb0dB58721596Bc79Dc9D8d8296212D153D804.txt:371:5: Warning: Integer Overflow.\n    function distributeTokens(address[] receivers, uint16[] amounts) onlyOwner onlyIfActive {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.3"
+}

@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:527:3: Warning: Integer Overflow.\n  function determineOutcome(bytes32 gameId, uint8[] cards, uint8[] numCards) constant public returns(uint totalWin) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cards = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:405:16: Warning: Integer Overflow.\n    Result(id, game.player\nInteger Overflow occurs if:\n    over[id] = 0\n    authorized[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:313:5: Warning: Integer Overflow.\n    games[srvSeed] = Game(deck, srvSeed, player, value)\nInteger Overflow occurs if:\n    value = 115792089237316195423472905294072490966335050455902944251705984702993867472895\n    games[id].player = 0\n    maximumBet = 115792089237316195423472905294072490966335050455902944251705984702993867472895\n    minimumBet = 115792089237316195423472905294072490966335050455902944251705984702993867472895\n    authorized[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:423:3: Warning: Integer Overflow.\n  function stand(uint8[] deck, bytes32 seed, uint8[] numCards) onlyAuthorized public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    deck = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:403:73: Warning: Integer Overflow.\n    assert(msg.sender.call(bytes4(keccak256(\"shift(address,uint256)\")), game.player\nInteger Overflow occurs if:\n    over[id] = 0\n    authorized[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:479:3: Warning: Integer Overflow.\n  function checkDeck(bytes32 gameId, uint8[] deck, bytes32 seed) constant public returns(bool correct) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    deck = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:457:9: Warning: Integer Overflow.\n    if (games[id].player", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:403:86: Warning: Integer Overflow.\n    assert(msg.sender.call(bytes4(keccak256(\"shift(address,uint256)\")), game.player, game.bet\nInteger Overflow occurs if:\n    over[id] = 0\n    authorized[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x7450f90f3e020e964829187697fcbc6d82735644.txt:405:29: Warning: Integer Overflow.\n    Result(id, game.player, game.bet\nInteger Overflow occurs if:\n    over[id] = 0\n    authorized[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.6"
+}

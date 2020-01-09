@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3629aae9babee473b5a453f94e12e7449c592dc9.txt:279:5: Warning: Integer Underflow.\n    string public symbol = \"NBC\"", 
+   "./uniqueContractSourceCode/0x3629aae9babee473b5a453f94e12e7449c592dc9.txt:277:5: Warning: Integer Underflow.\n    string public name = \" Niobium\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.6"
+}

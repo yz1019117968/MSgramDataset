@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa12ed3bf21bc6a4571ee12ee85c55ab407221d10.txt:661:17: Warning: Timestamp Dependency.\n        require((crowdsaleStartTime != 0 && now > crowdsaleEndTime) || tokensSent == TOKEN_CAP", 
+   "./restContracts/0xa12ed3bf21bc6a4571ee12ee85c55ab407221d10.txt:661:9: Warning: Timestamp Dependency.\n        require((crowdsaleStartTime != 0 && now > crowdsaleEndTime) || tokensSent == TOKEN_CAP)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa12ed3bf21bc6a4571ee12ee85c55ab407221d10.txt:527:5: Warning: Integer Overflow.\n    mapping(address => Contributor) public contributors"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa12ed3bf21bc6a4571ee12ee85c55ab407221d10.txt:671:16: Warning: Transaction-Ordering Dependency.\n        assert(crowdsaleOwner.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0xa12ed3bf21bc6a4571ee12ee85c55ab407221d10.txt:671:16: Warning: Transaction-Ordering Dependency.\n        assert(crowdsaleOwner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.7"
+}

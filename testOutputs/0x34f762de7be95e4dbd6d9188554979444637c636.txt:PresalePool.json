@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:57:5: Warning: Integer Overflow.\n    mapping (address => ParticipantState) public balances", 
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:37:5: Warning: Integer Overflow.\n    address[] public participants", 
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:261:13: Warning: Integer Overflow.\n            total += balances[msg.sender].contribution\nInteger Overflow occurs if:\n    state = 0\n    balances[msg.sender].remaining = 1\n    balances[msg.sender].contribution = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:25:5: Warning: Integer Overflow.\n    address[] public admins", 
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:355:5: Warning: Integer Overflow.\n    address[] public failures", 
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:423:5: Warning: Integer Overflow.\n    function modifyWhitelist(address[] toInclude, address[] toExclude) public onlyAdmins stateAllowsConfiguration {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    toInclude = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:699:32: Warning: Integer Underflow.\n            contribution = min(maxPoolTotal - poolTotal\nInteger Underflow occurs if:\n    state = 0\n    maxPoolTotal = 1\n    amount = 0\n    balances[msg.sender].remaining = 0\n    poolTotal = 2\n    whitelistAll = 255\n    balances[msg.sender].contribution = 0\n    maxContribution = 0", 
+   "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:273:13: Warning: Integer Underflow.\n            poolTotal -= balances[msg.sender].contribution\nInteger Underflow occurs if:\n    state = 0\n    poolTotal = 0\n    balances[msg.sender].contribution = 1\n    gasFundTotal = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:285:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(total)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x34f762de7be95e4dbd6d9188554979444637c636.txt:285:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(total)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.2"
+}

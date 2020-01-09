@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1219:39: Warning: Integer Underflow.\n        return uint64(now + cooldowns[speed - 1\nInteger Underflow occurs if:\n    speed = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.5"
+}

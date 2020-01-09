@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:463:5: Warning: Integer Overflow.\n    bountyOf[_dest].bountyState\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:403:5: Warning: Integer Overflow.\n    bountyOf[_dest] = Types.StructBountyAllocation({\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bountyOf[_dest].proposalAddress = 2923003274661805836407369665432566039311865085952\n    remainingBountyTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:343:3: Warning: Integer Overflow.\n  mapping (address => Types.StructBountyAllocation) public bountyOf", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:395:7: Warning: Integer Overflow.\n      allocationAddressList.push(_dest)\nInteger Overflow occurs if:\n    bountyOf[_dest].proposalAddress = 0\n    remainingBountyTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:437:5: Warning: Integer Overflow.\n    bountyOf[_dest].bountyState\nInteger Overflow occurs if:\n    bountyOf[_dest].bountyState = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:323:3: Warning: Integer Overflow.\n  address[] public allocationAddressList", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:465:29: Warning: Integer Overflow.\n    remainingBountyTokens = remainingBountyTokens + bountyOf[_dest].amount\nInteger Overflow occurs if:\n    remainingBountyTokens = 1\n    bountyOf[_dest].amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:393:9: Warning: Integer Overflow.\n    if (bountyOf[_dest].bountyState\nInteger Overflow occurs if:\n    bountyOf[_dest].proposalAddress = 0\n    remainingBountyTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5c743a35E903F6c584514ec617ACEe0611Cf44f3.txt:303:1: Warning: Integer Overflow.\ncontract BountyTokenAllocation is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bountyOf[_dest].proposalAddress = 0\n    remainingBountyTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.1"
+}

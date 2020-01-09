@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1391:9: Warning: Integer Overflow.\n        ownerTokens[_to].push(_tokenId)\nInteger Overflow occurs if:\n    ownerTokens[_to].push(_tokenId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenIndexToOwner[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    paused = 0", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1263:5: Warning: Integer Overflow.\n    Hero[] public heroes", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1557:9: Warning: Integer Overflow.\n        heroes[_id].genes\nInteger Overflow occurs if:\n    _id = 0\n    heroes.length = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1209:1: Warning: Integer Overflow.\ncontract HeroToken is ERC721, DungeonStructs, Pausable, JointOwnable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    heroes.push(Hero(uint64(now), 0, 0, _genes)) = 41422112641837104714977910719459132799912797182732962724615910609143899352111\n    owner = 0", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1557:9: Warning: Integer Overflow.\n        heroes[_id]\nInteger Overflow occurs if:\n    _id = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    heroes.length = 14474011154664524427946373126085988481658748083205070504932198000989141204993\n    owner = 0", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1299:5: Warning: Integer Overflow.\n    mapping(address => uint[]) public ownerTokens", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1571:29: Warning: Integer Overflow.\n        Hero storage hero = heroes[_id]\nInteger Overflow occurs if:\n    _id = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    heroes.length = 14474011154664524427946373126085988481658748083205070504932198000989141204993\n    owner = 0", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1519:9: Warning: Integer Overflow.\n        heroes.push(Hero(uint64(now), 0, 0, _genes))\nInteger Overflow occurs if:\n    heroes.push(Hero(uint64(now), 0, 0, _genes)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:1379:9: Warning: Integer Overflow.\n        ownershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenIndexToOwner[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.7"
+}

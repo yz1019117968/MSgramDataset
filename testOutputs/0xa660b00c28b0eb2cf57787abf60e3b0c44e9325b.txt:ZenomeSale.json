@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:699:2: Warning: Integer Overflow.\n\tfunction getRole(string role) constant public returns (address) {\r\n\t^\nSpanning multiple lines.", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:343:5: Warning: Integer Overflow.\n    function receiveWithData(bytes _data) payable public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:503:5: Warning: Integer Overflow.\n    function burnWithData(address _token, uint256 _value, bytes _data) onlyOwner public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:315:5: Warning: Integer Overflow.\n    function onTokenTransfer(address _from, uint256 _value, bytes _data) public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:707:2: Warning: Integer Overflow.\n\tfunction transferRole(string role, address to) onlyOwner public {\r\n\t^\nSpanning multiple lines.", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:307:5: Warning: Integer Overflow.\n    function tokenFallback(address _from, uint256 _value, bytes _data) public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:269:5: Warning: Integer Overflow.\n    function receive(address _token, uint256 _value, bytes _data) public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:749:3: Warning: Integer Overflow.\n\t\tWhitelistChange(addr, allow)\nInteger Overflow occurs if:\n    users[role] = 0", 
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:1351:2: Warning: Integer Overflow.\n\tfunction withdrawBtc(bytes _to, uint256 _value) onlyOwner public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa660b00c28b0eb2cf57787abf60e3b0c44e9325b.txt:701:10: Warning: Integer Underflow.\n\t\treturn users[role]"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.9"
+}

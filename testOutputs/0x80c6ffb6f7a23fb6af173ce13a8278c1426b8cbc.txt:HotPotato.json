@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:633:22: Warning: Integer Overflow.\n        uint stake = game.stakes\nInteger Overflow occurs if:\n    games[gameId].finished = 95780971304118053647396689196894323976171195136474880\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 0", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:257:5: Warning: Integer Overflow.\n    mapping(uint => Game) public games", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:623:29: Warning: Integer Overflow.\n            banishedStake = game.stakes\nInteger Overflow occurs if:\n    games[gameId].finished = 95780971304118053647396689196894323976171160776736512\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 524288", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:489:57: Warning: Integer Overflow.\n        GameStarted(currentGameId, game.hotPotatoOwner, game.gameStart\nInteger Overflow occurs if:\n    games[gameId].players = 3\n    games[gameId].running = 0", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:623:78: Warning: Integer Overflow.\n            banishedStake = game.stakes[game.hotPotatoOwner].add(game.stakes[game.maxTimeHolder\nInteger Overflow occurs if:\n    games[gameId].finished = 95780971304118053647396689196894323976170645380660992\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 8388608", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:483:9: Warning: Integer Overflow.\n        game.gameStart\nInteger Overflow occurs if:\n    games[gameId].players = 3\n    games[gameId].running = 0", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:517:38: Warning: Integer Overflow.\n        game.holdTimes[msg.sender] = game.holdTimes\nInteger Overflow occurs if:\n    games[gameId].running = 255", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:697:9: Warning: Integer Overflow.\n        game.gameStart", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:623:66: Warning: Integer Overflow.\n            banishedStake = game.stakes[game.hotPotatoOwner].add(game.stakes\nInteger Overflow occurs if:\n    games[gameId].finished = 95780971304118053647396689196894323976170645380660992\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 8388608", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:629:32: Warning: Integer Overflow.\n        uint collectiveStake = game.totalStake\nInteger Overflow occurs if:\n    games[gameId].finished = 95780971304118053647396689196894323976171195136455424\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 0", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:701:9: Warning: Integer Overflow.\n        game.players", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:73:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    games[gameId].finished = 95780971304118053647396689196894323976170911668598272\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 4325376", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:485:9: Warning: Integer Overflow.\n        game.maxTimeHolder\nInteger Overflow occurs if:\n    games[gameId].players = 3\n    games[gameId].running = 0", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:703:9: Warning: Integer Overflow.\n        game.blockCreated", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:617:36: Warning: Integer Overflow.\n        if (game.hotPotatoOwner == game.maxTimeHolder\nInteger Overflow occurs if:\n    games[gameId].finished = 65280\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 0", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:515:45: Warning: Integer Overflow.\n        uint timeHeld = block.timestamp.sub(game.hotPotatoReceiveTime\nInteger Overflow occurs if:\n    games[gameId].running = 255", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:619:29: Warning: Integer Overflow.\n            banishedStake = game.stakes\nInteger Overflow occurs if:\n    games[gameId].finished = 65280\n    games[gameId].withdrawals[msg.sender] = 0\n    games[gameId].maxTimeHolder = 0", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:699:9: Warning: Integer Overflow.\n        game.totalStake", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:705:9: Warning: Integer Overflow.\n        game.maxTimeHolder", 
+   "./restContracts/0x80c6ffb6f7a23fb6af173ce13a8278c1426b8cbc.txt:481:9: Warning: Integer Overflow.\n        game.hotPotatoReceiveTime\nInteger Overflow occurs if:\n    games[gameId].players = 3\n    games[gameId].running = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.3"
+}

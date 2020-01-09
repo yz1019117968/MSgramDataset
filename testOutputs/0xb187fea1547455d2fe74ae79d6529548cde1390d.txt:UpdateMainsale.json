@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1675:5: Warning: Integer Overflow.\n    function tokensByWavesTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1643:5: Warning: Integer Overflow.\n    function tokensByBtcTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1659:5: Warning: Integer Overflow.\n    function tokensByZecTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1635:5: Warning: Integer Overflow.\n    function tokensByTx(uint8 _currency, string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1651:5: Warning: Integer Overflow.\n    function tokensByLtcTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:727:5: Warning: Integer Overflow.\n    stage.price\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalHardcap = 0\n    owner = 0", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1447:5: Warning: Integer Overflow.\n    function externalSales(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _currencies = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:653:3: Warning: Integer Overflow.\n  Stage[] public stages", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1683:5: Warning: Integer Overflow.\n    function tokensByUsdTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:721:27: Warning: Integer Overflow.\n    Stage storage stage = stages[number]\nInteger Overflow occurs if:\n    stages.length = 32\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb187fea1547455d2fe74ae79d6529548cde1390d.txt:1405:81: Warning: Integer Underflow.\n        uint summaryFoundersTokens = mintedTokens.mul(summaryTokensPercent).div(percentRate - summaryTokensPercent\nInteger Underflow occurs if:\n    paused = 0\n    percentRate = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    foundersTokensPercent = 0\n    bountyTokensPercent = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.2"
+}

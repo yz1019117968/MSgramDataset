@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4b864991128799784649c85ccf11bdded3cbb987.txt:127:13: Warning: Integer Underflow.\n        r = q.back - q.front\nInteger Underflow occurs if:\n    q.back = 0\n    q.front = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4b864991128799784649c85ccf11bdded3cbb987.txt:53:21: Warning: Integer Underflow.\n        assert((z = x - y\nInteger Underflow occurs if:\n    lastScheduledTopUp = 1\n    owner = 0\n    cTime = 0", 
+   "./uniqueContractSourceCode/0x4b864991128799784649c85ccf11bdded3cbb987.txt:189:5: Warning: Integer Underflow.\n    string public symbol = 'DC'", 
+   "./uniqueContractSourceCode/0x4b864991128799784649c85ccf11bdded3cbb987.txt:187:5: Warning: Integer Underflow.\n    string public name = 'DeCenter'", 
+   "./uniqueContractSourceCode/0x4b864991128799784649c85ccf11bdded3cbb987.txt:185:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.1"
+}

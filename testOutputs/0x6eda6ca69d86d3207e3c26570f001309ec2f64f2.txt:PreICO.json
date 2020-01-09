@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:149:13: Warning: Integer Overflow.\n        if((amount+holders[msg.sender].balance\nInteger Overflow occurs if:\n    holders[msg.sender].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holders[msg.sender].init = 255\n    maxAmountSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isPreIco = 255", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:7:1: Warning: Integer Overflow.\ncontract PreICO {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    listHolders.push(msg.sender) = 48138390711815793021356134072070089116457727768701087165614699314359870353950\n    holders[msg.sender].init = 0\n    maxAmountSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isPreIco = 255", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:159:13: Warning: Integer Overflow.\n            holders[msg.sender].balance += amount\nInteger Overflow occurs if:\n    holders[msg.sender].balance = 115792089237316195423570937118202255794243160967295965592295595922315561402368\n    maxPreOrderAmount = 0\n    holders[msg.sender].init = 255\n    maxAmountSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isPreIco = 255", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:129:12: Warning: Integer Overflow.\n        if(this.balance + msg.value\nInteger Overflow occurs if:\n    isPreIco = 255", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:151:32: Warning: Integer Overflow.\n            return_amount += ((amount+holders[msg.sender].balance\nInteger Overflow occurs if:\n    maxPreOrderAmount = 0\n    holders[msg.sender].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holders[msg.sender].init = 255\n    maxAmountSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isPreIco = 255", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:141:13: Warning: Integer Overflow.\n            listHolders.push(msg.sender)\nInteger Overflow occurs if:\n    listHolders.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holders[msg.sender].init = 0\n    maxAmountSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isPreIco = 255", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:99:16: Warning: Integer Overflow.\n        return listHolders[index]\nInteger Overflow occurs if:\n    listHolders.length = 95780971304118053647396689196894323976171195136475136\n    index = 95780971304118053647396689196894323976171195136475134", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:139:12: Warning: Integer Overflow.\n        if(holders[msg.sender].init\nInteger Overflow occurs if:\n    maxAmountSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isPreIco = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:133:29: Warning: Integer Underflow.\n            return_amount = msg.value - amount\nInteger Underflow occurs if:\n    maxAmountSupply = 0\n    isPreIco = 255", 
+   "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:131:22: Warning: Integer Underflow.\n            amount = maxAmountSupply - this.balance\nInteger Underflow occurs if:\n    maxAmountSupply = 0\n    isPreIco = 255"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:57:9: Warning: Transaction-Ordering Dependency.\n        suicide(manager)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6eda6ca69d86d3207e3c26570f001309ec2f64f2.txt:65:12: Warning: Transaction-Ordering Dependency.\n        if(manager.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.4"
+}

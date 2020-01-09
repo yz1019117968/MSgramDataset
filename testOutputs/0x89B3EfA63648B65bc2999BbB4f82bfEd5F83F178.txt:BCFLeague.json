@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:579:29: Warning: Integer Overflow.\n        Team memory _team = teams[teamId]\nInteger Overflow occurs if:\n    teamId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    teams[teamId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:225:5: Warning: Integer Overflow.\n    Team[] public teams", 
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:587:5: Warning: Integer Overflow.\n    function enterLeague(uint[] cardIds, uint gkCardId, bytes teamName) public payable whenNotPaused {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cardIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:247:5: Warning: Integer Overflow.\n    uint[] public prizeBreakdown", 
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:411:29: Warning: Integer Overflow.\n        nextRoundStartsAt = now + 60 seconds\nInteger Overflow occurs if:\n    competitionStatus = 2\n    referee = 0", 
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:435:9: Warning: Integer Overflow.\n        currentRoundId++\nInteger Overflow occurs if:\n    competitionStatus = 3\n    nextRoundStartsAt = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    referee = 0\n    currentRoundId = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    roundId = 0", 
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:1307:17: Warning: Integer Overflow.\n            if (teams[i]\nInteger Overflow occurs if:\n    teams.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    competitionStatus = 4\n    winners[0] = 0\n    teams[i].manager = 1461501637330902918203684832716283019655932542975\n    winners[0] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:249:5: Warning: Integer Overflow.\n    address[] public winners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x89B3EfA63648B65bc2999BbB4f82bfEd5F83F178.txt:225:5: Warning: Integer Underflow.\n    Team[] public teams"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "26.3"
+}

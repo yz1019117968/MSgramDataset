@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:453:82: Warning: Integer Overflow.\n    if (_blockNumber >= crowdsaleStartBlock + blocksInADay * 2 && _blockNumber < crowdsaleStartBlock + blocksInADay * 7\nInteger Overflow occurs if:\n    crowdsaleStartBlock = 154742504910672534362390528\n    blocksInADay = 33083454067804627263877424288196545100934281333040150499219939988794995910549", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:489:9: Warning: Integer Overflow.\n    if (ethRaised + contributionAmount\nInteger Overflow occurs if:\n    ethRaised = 57898577559567369848695481059745409594976041889813068551594536650346699161600\n    crowdsaleState = 1\n    maxCap = 25329540225901958120597515274918066673979166498935789894791011989303668506624\n    crowdsaleEndedBlock = 0\n    crowdsaleStartBlock = 0\n    locked = 0", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:453:25: Warning: Integer Overflow.\n    if (_blockNumber >= crowdsaleStartBlock + blocksInADay * 2\nInteger Overflow occurs if:\n    crowdsaleStartBlock = 42576265861357467101768677533523434844853320204934935706881309831971027085643\n    blocksInADay = 46398325303375170701774605306318951157198237216850697165064163886413742340019", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:515:5: Warning: Integer Overflow.\n    contributorList[_contributor].contributionAmount += contributionAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].contributionAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    ethRaised = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    crowdsaleState = 1\n    maxCap = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    minCap = 45671926166590716194484121042026534501697454081\n    crowdsaleEndedBlock = 0\n    crowdsaleStartBlock = 0\n    locked = 0", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:517:5: Warning: Integer Overflow.\n    contributorList[_contributor].tokensIssued\nInteger Overflow occurs if:\n    ethRaised = 57896044618658097711785492504343953926634992332345532014662848668532750680064\n    crowdsaleState = 1\n    maxCap = 57896044618658097711785492504343953926634992332344294074623563288257851555840\n    contributorList[_contributor].contributionAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minCap = 57896044618658097711785492551112006321223885714863446661583905297522592055296\n    crowdsaleEndedBlock = 0\n    crowdsaleStartBlock = 0\n    locked = 0", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:497:9: Warning: Integer Overflow.\n    if (ethRaised + contributionAmount\nInteger Overflow occurs if:\n    ethRaised = 83677794166842808070630963231393536320076141050273176292877571195762481561600\n    crowdsaleState = 1\n    maxCap = 83677794151677838070357962099122907383753901752103691985192696086672317612032\n    minCap = 9950799916858541109466515758541135646050632130138921308278862401217650229248\n    crowdsaleEndedBlock = 0\n    crowdsaleStartBlock = 0\n    locked = 0", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:451:63: Warning: Integer Overflow.\n    if (_blockNumber >= crowdsaleStartBlock && _blockNumber < crowdsaleStartBlock + blocksInADay * 2\nInteger Overflow occurs if:\n    crowdsaleStartBlock = 91566830624136380881740173937095894822004818828442232701076834477073888184404\n    blocksInADay = 40261049506462102020739350329206843384683741610025310190328916528016973103102", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:541:14: Warning: Integer Overflow.\n      assert(ethRaised + _ethContributed\nInteger Overflow occurs if:\n    ethRaised = 1\n    _ethContributed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:245:3: Warning: Integer Overflow.\n  mapping(address => ContributorData) public contributorList", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:517:5: Warning: Integer Overflow.\n    contributorList[_contributor].tokensIssued += contributionAmount\nInteger Overflow occurs if:\n    ethRaised = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    crowdsaleState = 1\n    contributorList[_contributor].tokensIssued = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    maxCap = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    contributorList[_contributor].contributionAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minCap = 45671926166590716194484121042026534501697454081\n    crowdsaleEndedBlock = 0\n    crowdsaleStartBlock = 0\n    locked = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:479:20: Warning: Integer Underflow.\n    if (_amount > (maxCap - ethRaised\nInteger Underflow occurs if:\n    ethRaised = 1900244080879713496064124917334418177155137950051149229609195793723744059908\n    crowdsaleState = 1\n    maxCap = 1795006243792334499982680628445061915049406830896787044365572523670729947776\n    crowdsaleEndedBlock = 0\n    crowdsaleStartBlock = 0\n    locked = 0", 
+   "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:481:28: Warning: Integer Underflow.\n      contributionAmount = maxCap - ethRaised\nInteger Underflow occurs if:\n    ethRaised = 86844066927987146567678238756881306299306481876713902891738719673813315878912\n    crowdsaleState = 0\n    maxCap = 14474011154664524427946373126451363891012741460688550367077729668867609853952\n    crowdsaleEndedBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    crowdsaleStartBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    locked = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:429:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0x91C94BEe75786fBBFdCFefBa1102b68f48A002F4.txt:673:5: Warning: Transaction-Ordering Dependency.\n    multisigAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.1"
+}

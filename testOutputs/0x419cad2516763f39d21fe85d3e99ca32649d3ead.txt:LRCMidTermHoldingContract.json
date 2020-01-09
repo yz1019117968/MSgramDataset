@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x419cad2516763f39d21fe85d3e99ca32649d3ead.txt:367:26: Warning: Integer Overflow.\n        uint lrcAmount = lrcToken.balanceOf(address(this)) - lrcReceived + lrcSent\nInteger Overflow occurs if:\n    lrcSent = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    lrcReceived = 50942633119752846454219349998365661925608737367104304655302372697894809501697\n    owner = 0\n    _ethAmount = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x419cad2516763f39d21fe85d3e99ca32649d3ead.txt:367:26: Warning: Integer Underflow.\n        uint lrcAmount = lrcToken.balanceOf(address(this)) - lrcReceived\nInteger Underflow occurs if:\n    lrcReceived = 50942633119752846454219349998365661925608737367104304655302372697894809501697\n    owner = 0\n    _ethAmount = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x419cad2516763f39d21fe85d3e99ca32649d3ead.txt:359:21: Warning: Transaction-Ordering Dependency.\n            require(owner.send(ethAmount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x419cad2516763f39d21fe85d3e99ca32649d3ead.txt:359:21: Warning: Transaction-Ordering Dependency.\n            require(owner.send(ethAmount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.9"
+}

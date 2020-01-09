@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x26B06b2B76220e36b40Fa206543184fCF96Ed362.txt:305:3: Warning: Integer Underflow.\n  string public name = \"LUCRUM\"", 
+   "./uniqueContractSourceCode/0x26B06b2B76220e36b40Fa206543184fCF96Ed362.txt:307:3: Warning: Integer Underflow.\n  string public symbol = \"LUC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.5"
+}

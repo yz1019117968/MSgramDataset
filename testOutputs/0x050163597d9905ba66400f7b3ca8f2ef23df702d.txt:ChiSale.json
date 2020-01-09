@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:521:13: Warning: Callstack Depth Attack Vulnerability.\n            referralAddress.send(\r\n            ^\nSpanning multiple lines."
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:729:13: Warning: Integer Overflow.\n            bonusTiers[bonusTierIndex]\nInteger Overflow occurs if:\n    bonusTiers[bonusTierIndex] = 32\n    bonusTierIndex = 30", 
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:569:29: Warning: Integer Overflow.\n        maxBonusThreshold = bonusTiers[bonusTiers.length - 1].threshold\nInteger Overflow occurs if:\n    bonusTiers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owner = 0", 
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:569:29: Warning: Integer Overflow.\n        maxBonusThreshold = bonusTiers[bonusTiers.length - 1]\nInteger Overflow occurs if:\n    bonusTiers.length = 115792089237316195423570985008687907853227449369775446731524662181984158613504\n    owner = 0", 
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:731:13: Warning: Integer Overflow.\n            bonusTiers[bonusTierIndex].threshold\nInteger Overflow occurs if:\n    bonusTiers[bonusTierIndex] = 115792075433823476131434701995331774627825602304801172302808007073780931231743\n    bonusTierIndex = 254", 
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:791:13: Warning: Integer Overflow.\n            bonusTiers[bonusIndex].threshold\nInteger Overflow occurs if:\n    bonusTiers[bonusIndex] = 115792075433823476131434701995331774627825602304801172302808007073780931231743\n    bonusIndex = 254", 
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:791:13: Warning: Integer Overflow.\n            bonusTiers[bonusIndex]\nInteger Overflow occurs if:\n    bonusTiers[bonusIndex] = 32\n    bonusIndex = 30", 
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:731:13: Warning: Integer Overflow.\n            bonusTiers[bonusTierIndex]\nInteger Overflow occurs if:\n    bonusTiers[bonusTierIndex] = 32\n    bonusTierIndex = 30", 
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:789:13: Warning: Integer Overflow.\n            bonusTiers[bonusIndex]\nInteger Overflow occurs if:\n    bonusTiers[bonusIndex] = 32\n    bonusIndex = 30"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x050163597d9905ba66400f7b3ca8f2ef23df702d.txt:569:40: Warning: Integer Underflow.\n        maxBonusThreshold = bonusTiers[bonusTiers.length - 1\nInteger Underflow occurs if:\n    bonusTiers.length = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.4"
+}

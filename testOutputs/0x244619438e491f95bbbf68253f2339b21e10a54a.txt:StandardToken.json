@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x244619438e491f95bbbf68253f2339b21e10a54a.txt:263:9: Warning: Callstack Depth Attack Vulnerability.\n        account.send(owing)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x244619438e491f95bbbf68253f2339b21e10a54a.txt:275:43: Warning: Integer Overflow.\n      var newDividends = totalDividends - accounts[account].lastDividends"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x244619438e491f95bbbf68253f2339b21e10a54a.txt:275:26: Warning: Integer Underflow.\n      var newDividends = totalDividends - accounts[account].lastDividends\nInteger Underflow occurs if:\n    totalDividends = 0\n    accounts[account].lastDividends = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.6"
+}

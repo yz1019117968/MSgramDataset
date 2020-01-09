@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:617:2: Warning: Integer Overflow.\n\tfunction getAddress(address _who, string _field) constant returns (address) { return address(certs[_who].meta[_field]); }\nInteger Overflow occurs if:\n    _field = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:615:2: Warning: Integer Overflow.\n\tfunction get(address _who, string _field) constant returns (bytes32) { return certs[_who].meta[_field]; }\nInteger Overflow occurs if:\n    _field = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5652ac06e148b8c8d86c2c040fdbbbf98860ef47.txt:619:2: Warning: Integer Overflow.\n\tfunction getUint(address _who, string _field) constant returns (uint) { return uint(certs[_who].meta[_field]); }\nInteger Overflow occurs if:\n    _field = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.4"
+}

@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:807:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:1183:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:1171:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:987:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:385:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.1'", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:383:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:379:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:1267:19: Warning: Transaction-Ordering Dependency.\n            if (! TokenController(controller).proxyPayment.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:1303:13: Warning: Transaction-Ordering Dependency.\n            _claimer.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.6"
+}

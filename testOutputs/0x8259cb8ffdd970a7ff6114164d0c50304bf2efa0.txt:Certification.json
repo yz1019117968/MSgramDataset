@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8259cb8ffdd970a7ff6114164d0c50304bf2efa0.txt:25:3: Warning: Integer Underflow.\n  string public issued", 
+   "./restContracts/0x8259cb8ffdd970a7ff6114164d0c50304bf2efa0.txt:29:3: Warning: Integer Underflow.\n  string public Scope", 
+   "./restContracts/0x8259cb8ffdd970a7ff6114164d0c50304bf2efa0.txt:21:3: Warning: Integer Underflow.\n  string public Norm", 
+   "./restContracts/0x8259cb8ffdd970a7ff6114164d0c50304bf2efa0.txt:19:3: Warning: Integer Underflow.\n  string public CompanyName", 
+   "./restContracts/0x8259cb8ffdd970a7ff6114164d0c50304bf2efa0.txt:23:3: Warning: Integer Underflow.\n  string public CertID", 
+   "./restContracts/0x8259cb8ffdd970a7ff6114164d0c50304bf2efa0.txt:31:3: Warning: Integer Underflow.\n  string public issuingBody", 
+   "./restContracts/0x8259cb8ffdd970a7ff6114164d0c50304bf2efa0.txt:27:3: Warning: Integer Underflow.\n  string public expires"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "22.2"
+}

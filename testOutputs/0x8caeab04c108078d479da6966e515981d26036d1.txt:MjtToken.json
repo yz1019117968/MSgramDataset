@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:1539:5: Warning: Integer Overflow.\n    function setTokenInformation(string _name, string _symbol) onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:969:5: Warning: Integer Overflow.\n    address[] public reservedTokensDestinations", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:967:5: Warning: Integer Overflow.\n    mapping (address => ReservedTokensData) public reservedTokensList", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:977:9: Warning: Integer Overflow.\n        reservedTokensDestinations.push(addr)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:1559:1: Warning: Integer Overflow.\ncontract MjtToken is CrowdsaleTokenExt {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:1011:5: Warning: Integer Overflow.\n    function setReservedTokensListMultiple(address[] addrs, uint[] inTokens, uint[] inPercentageUnit, uint[] inPercentageDecimals) onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:1005:16: Warning: Integer Overflow.\n        return reservedTokensList[addr].inPercentageDecimals", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:143:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:997:16: Warning: Integer Overflow.\n        return reservedTokensList[addr].inPercentageUnit"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:1385:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x8caeab04c108078d479da6966e515981d26036d1.txt:1389:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.1"
+}

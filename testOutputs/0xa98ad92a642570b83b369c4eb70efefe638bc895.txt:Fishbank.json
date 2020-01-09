@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:2525:9: Warning: Integer Overflow.\n        fishes[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195373354171125594461742583669279979232710638740452200853536767\n    _from = 0\n    fishes[_tokenId].owner = 0\n    auction = 1461501637330902918203684832716283019655932542975\n    fishes[_tokenId] = 115792089237316195373354171125594461742583669279979232710638740452200853536768\n    approved[_tokenId] = 0", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1781:5: Warning: Integer Overflow.\n    function mintFish(address[] _owner, uint32[] _weight, uint8[] _power, uint8[] _agility, uint8[] _speed, bytes16[] _color) onlyMinter public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _owner = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:2077:5: Warning: Integer Overflow.\n    function batchResolveAquarium(uint256[] _seeds) onlyResolver public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _seeds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:2513:17: Warning: Integer Overflow.\n        owner = fishes[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457583999117036617727\n    fishes[_tokenId] = 115792089237316195423570985008687907853269984665640564039457583999117036617728", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1671:5: Warning: Integer Overflow.\n    bytes32[] public randomHashes", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1657:5: Warning: Integer Overflow.\n    Fish[] public fishes", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1929:5: Warning: Integer Overflow.\n    function batchFishAquarium(uint256[] _seeds, address _affiliate) payable public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _seeds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:2095:5: Warning: Integer Overflow.\n    function addHash(bytes32[] _hashes) onlyResolver public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _hashes = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1691:5: Warning: Integer Overflow.\n    mapping(bytes32 => FishingAttempt) public pendingFishing"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:2531:9: Warning: Integer Underflow.\n        balances[_from] -= 1\nInteger Underflow occurs if:\n    _tokenId = 0\n    balances[_from] = 0\n    _from = 0\n    fishes[_tokenId].owner = 0\n    auction = 1461501637330902918203684832716283019655932542975\n    fishes[_tokenId] = 1\n    approved[_tokenId] = 0", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1667:5: Warning: Integer Underflow.\n    string public name = \"Fishbank\"", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1669:5: Warning: Integer Underflow.\n    string public symbol = \"FISH\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.8"
+}

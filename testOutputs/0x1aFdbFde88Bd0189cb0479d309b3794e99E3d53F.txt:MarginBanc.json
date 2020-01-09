@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1aFdbFde88Bd0189cb0479d309b3794e99E3d53F.txt:253:9: Warning: Transaction-Ordering Dependency.\n        etherToken.deposit.value(msg.value)()"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1aFdbFde88Bd0189cb0479d309b3794e99E3d53F.txt:285:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.5"
+}

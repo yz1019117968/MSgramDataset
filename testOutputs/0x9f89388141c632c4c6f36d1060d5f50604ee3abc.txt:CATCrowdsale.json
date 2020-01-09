@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9f89388141c632c4c6f36d1060d5f50604ee3abc.txt:1123:5: Warning: Integer Overflow.\n    uint32[] public BONUS_TIMES", 
+   "./restContracts/0x9f89388141c632c4c6f36d1060d5f50604ee3abc.txt:1125:5: Warning: Integer Overflow.\n    uint32[] public BONUS_TIMES_VALUES", 
+   "./restContracts/0x9f89388141c632c4c6f36d1060d5f50604ee3abc.txt:103:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    tokens = 108555083659983933209597798445644913612440610624038028786991485007418559037440\n    owner = 0\n    endTime = 0\n    presaleWallet = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x9f89388141c632c4c6f36d1060d5f50604ee3abc.txt:1127:5: Warning: Integer Overflow.\n    uint32[] public BONUS_AMOUNTS", 
+   "./restContracts/0x9f89388141c632c4c6f36d1060d5f50604ee3abc.txt:1179:5: Warning: Integer Overflow.\n    function setBonusesForTimes(uint32[] times, uint32[] values) public onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9f89388141c632c4c6f36d1060d5f50604ee3abc.txt:1221:5: Warning: Integer Overflow.\n    function setBonusesForAmounts(uint32[] amounts, uint32[] values) public onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9f89388141c632c4c6f36d1060d5f50604ee3abc.txt:1129:5: Warning: Integer Overflow.\n    uint32[] public BONUS_AMOUNTS_VALUES"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.8"
+}

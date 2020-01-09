@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbd42e065f63c3a79b0de9b59b6a9ae62e17dda58.txt:175:9: Warning: Integer Overflow.\n        total += value\nInteger Overflow occurs if:\n    total = 1\n    gasPriceMaximum = 0\n    cap = 0\n    contributionMaximum = 0\n    contributionMinimum = 0\n    balances[sender] = 1\n    registered[sender] = 255\n    enabled = 255", 
+   "./restContracts/0xbd42e065f63c3a79b0de9b59b6a9ae62e17dda58.txt:203:5: Warning: Integer Overflow.\n    function registerMultiple(address[] accounts, bool valid) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    accounts = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbd42e065f63c3a79b0de9b59b6a9ae62e17dda58.txt:89:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbd42e065f63c3a79b0de9b59b6a9ae62e17dda58.txt:243:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0xbd42e065f63c3a79b0de9b59b6a9ae62e17dda58.txt:231:9: Warning: Transaction-Ordering Dependency.\n        recipient.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.0"
+}

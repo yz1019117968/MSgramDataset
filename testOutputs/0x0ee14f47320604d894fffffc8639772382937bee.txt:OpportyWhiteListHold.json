@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:665:7: Warning: Integer Overflow.\n      holderList[holder].tokens\nInteger Overflow occurs if:\n    holderList[holder].isActive = 0\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:681:7: Warning: Integer Overflow.\n      holderList[holder].holdPeriodTimestamp\nInteger Overflow occurs if:\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:727:34: Warning: Integer Overflow.\n    TokensTransfered(msg.sender, holderList[msg.sender].tokens\nInteger Overflow occurs if:\n    holderList[msg.sender].holdPeriodTimestamp = 0\n    holderList[msg.sender].withdrawed = 0\n    holderList[msg.sender].isActive = 255", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:677:7: Warning: Integer Overflow.\n      holderList[holder].tokens\nInteger Overflow occurs if:\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:669:7: Warning: Integer Overflow.\n      holderList[holder].holdPeriodTimestamp\nInteger Overflow occurs if:\n    holderList[holder].isActive = 0\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:667:7: Warning: Integer Overflow.\n      holderList[holder].holdPeriod\nInteger Overflow occurs if:\n    holderList[holder].isActive = 0\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:581:3: Warning: Integer Overflow.\n  mapping(address => Holder) public holderList", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:647:7: Warning: Integer Overflow.\n      holderList[holder].holdPeriodTimestamp\nInteger Overflow occurs if:\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:649:7: Warning: Integer Overflow.\n      holderList[holder].withdrawed\nInteger Overflow occurs if:\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:677:7: Warning: Integer Overflow.\n      holderList[holder].tokens += tokens\nInteger Overflow occurs if:\n    holderList[holder].tokens = 1\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:643:7: Warning: Integer Overflow.\n      holderList[holder].tokens\nInteger Overflow occurs if:\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:737:5: Warning: Integer Overflow.\n    assetOwnersIndexes++\nInteger Overflow occurs if:\n    assetOwnersIndexes = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:673:7: Warning: Integer Overflow.\n      holderIndex++\nInteger Overflow occurs if:\n    holderIndex = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holderList[holder].isActive = 0\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:645:7: Warning: Integer Overflow.\n      holderList[holder].holdPeriod\nInteger Overflow occurs if:\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:679:7: Warning: Integer Overflow.\n      holderList[holder].holdPeriod\nInteger Overflow occurs if:\n    holderList[holder].isActive = 255\n    assetOwnersIndex[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:725:5: Warning: Integer Overflow.\n    holderList[msg.sender].withdrawed\nInteger Overflow occurs if:\n    holderList[msg.sender].holdPeriodTimestamp = 0\n    holderList[msg.sender].withdrawed = 0\n    holderList[msg.sender].isActive = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0ee14f47320604d894fffffc8639772382937bee.txt:753:5: Warning: Integer Underflow.\n    assetOwnersIndexes--\nInteger Underflow occurs if:\n    assetOwnersIndexes = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

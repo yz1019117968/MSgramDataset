@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0e68e030c68604840017194d90b535eabe1ea059.txt:431:3: Warning: Integer Overflow.\n  function Site ( string _site ) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _site = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0e68e030c68604840017194d90b535eabe1ea059.txt:439:3: Warning: Integer Overflow.\n  function Why( string _why ) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _why = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0e68e030c68604840017194d90b535eabe1ea059.txt:47:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0e68e030c68604840017194d90b535eabe1ea059.txt:387:3: Warning: Integer Underflow.\n  string public why", 
+   "./uniqueContractSourceCode/0x0e68e030c68604840017194d90b535eabe1ea059.txt:383:3: Warning: Integer Underflow.\n  string public site"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.8"
+}

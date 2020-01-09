@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:595:9: Warning: Integer Overflow.\n        ownerAddressToTokenCount[_to]++\nInteger Overflow occurs if:\n    ownerAddressToTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    worldCupIdToAddressForApproved[_tokenId] = 1461501637330902918203684832716283019655932542975\n    worldCupIdToOwnerAddress[_tokenId] = 0\n    _from = 0", 
+   "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:281:19: Warning: Integer Overflow.\n        wctDesc = worldCupTeamDescribe[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    worldCupTeamDescribe[_tokenId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:333:5: Warning: Integer Overflow.\n    function setWorldCupTeamDesc(uint256 _tokenId, string descOfOwner) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    descOfOwner = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:603:13: Warning: Integer Underflow.\n            ownerAddressToTokenCount[_from]--\nInteger Underflow occurs if:\n    ownerAddressToTokenCount[_from] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    worldCupIdToAddressForApproved[_tokenId] = 1461501637330902918203684832716283019655932542975\n    worldCupIdToOwnerAddress[_tokenId] = 1461501637330902918203684832716283019655932542975\n    _from = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:527:16: Warning: Integer Underflow.\n        return uint256(now) - SHARE_BONUS_TIME\nInteger Underflow occurs if:\n    SHARE_BONUS_TIME = 1", 
+   "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:281:9: Warning: Integer Underflow.\n        wctDesc = worldCupTeamDescribe[_tokenId]\nInteger Underflow occurs if:\n    _tokenId = 0\n    worldCupTeamDescribe[_tokenId] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:223:8: Warning: Transaction-Ordering Dependency.\n       ceoAddress.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x08cdcf9ba0a4b5667f5a59b78b60fbefb145e64c.txt:223:8: Warning: Transaction-Ordering Dependency.\n       ceoAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.7"
+}

@@ -1,0 +1,53 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1365:21: Warning: Integer Overflow.\n                if (board.status\nInteger Overflow occurs if:\n    allBoards.length = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    tableStakesOptions.length = 6\n    paused = 0\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:941:26: Warning: Integer Overflow.\n        if (newStatus != board.status\nInteger Overflow occurs if:\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:477:5: Warning: Integer Overflow.\n    uint[] public tableStakesOptions", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1067:20: Warning: Integer Overflow.\n            return allBoards[boardId].blackAddress\nInteger Overflow occurs if:\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:615:9: Warning: Integer Overflow.\n        tableStakesOptions[priceTier]\nInteger Overflow occurs if:\n    tableStakesOptions[priceTier] = 32\n    owner = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:905:17: Warning: Integer Overflow.\n        return (board.status\nInteger Overflow occurs if:\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1077:20: Warning: Integer Overflow.\n            return allBoards[boardId].whiteAddress\nInteger Overflow occurs if:\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:763:28: Warning: Integer Overflow.\n                ethPaid += board.tableStakes\nInteger Overflow occurs if:\n    allBoards.length = 2", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1067:20: Warning: Integer Overflow.\n            return allBoards[boardId]\nInteger Overflow occurs if:\n    allBoards[boardId] = 28948022309329048855892746252171976963317496166410141009864396001978282409985", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:2111:17: Warning: Integer Overflow.\n        require(board.status\nInteger Overflow occurs if:\n    boardId = 0\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:749:37: Warning: Integer Overflow.\n            GoBoard storage board = allBoards[i - 1]\nInteger Overflow occurs if:\n    allBoards.length = 4", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:2109:33: Warning: Integer Overflow.\n        GoBoard storage board = allBoards[boardId]\nInteger Overflow occurs if:\n    boardId = 115792089237316195423570985008687907853269974281046846969802326946920471199743\n    allBoards[boardId] = 115792089237316195423570985008687907853269974281046846969802326946920471199744", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1353:21: Warning: Integer Overflow.\n            board = allBoards[i - 1]\nInteger Overflow occurs if:\n    allBoards.length = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    tableStakesOptions.length = 6\n    paused = 0\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:919:33: Warning: Integer Overflow.\n        GoBoard storage board = allBoards[boardId]\nInteger Overflow occurs if:\n    allBoards[boardId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:601:9: Warning: Integer Overflow.\n        tableStakesOptions.push(price)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1891:1: Warning: Integer Overflow.\ncontract GoGameLogic is GoBoardMetaDetails {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:903:33: Warning: Integer Overflow.\n        GoBoard storage board = allBoards[boardId]\nInteger Overflow occurs if:\n    allBoards[boardId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1551:22: Warning: Integer Overflow.\n        if (color == board.nextTurnColor\nInteger Overflow occurs if:\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1929:59: Warning: Integer Overflow.\n        require(board.status == BoardStatus.InProgress && board.nextTurnColor\nInteger Overflow occurs if:\n    boardId = 0\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:755:60: Warning: Integer Overflow.\n            if ((board.status == BoardStatus.BlackWin) || (board.status\nInteger Overflow occurs if:\n    allBoards.length = 3", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1077:20: Warning: Integer Overflow.\n            return allBoards[boardId]\nInteger Overflow occurs if:\n    allBoards[boardId] = 28948022309329048855892746252171976963317496166410141009864396001978282409985", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1665:20: Warning: Integer Overflow.\n            return board.blackPeriodsRemaining\nInteger Overflow occurs if:\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1359:17: Warning: Integer Overflow.\n            if (board.tableStakes\nInteger Overflow occurs if:\n    allBoards.length = 115792089237316195423570985008687907853269984665640564039457584007913129639929\n    tableStakesOptions.length = 6\n    paused = 0\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tableStakesOptions[i] = 0", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1929:17: Warning: Integer Overflow.\n        require(board.status\nInteger Overflow occurs if:\n    boardId = 0\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:2381:16: Warning: Integer Overflow.\n        return allBoards[boardId]\nInteger Overflow occurs if:\n    boardId = 115792089237316195423570985008687907853269974281046846969802308932521961717759\n    allBoards[boardId] = 115792089237316195423570985008687907853269974281046846969802308932521961717760", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:887:33: Warning: Integer Overflow.\n        GoBoard storage board = allBoards[boardId]\nInteger Overflow occurs if:\n    allBoards[boardId] = 115792089237316195423570985008687907853269984665640409296952673335378733694976", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:2381:16: Warning: Integer Overflow.\n        return allBoards[boardId].positionToColor\nInteger Overflow occurs if:\n    boardId = 0\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:1673:20: Warning: Integer Overflow.\n            return board.whitePeriodsRemaining\nInteger Overflow occurs if:\n    allBoards[boardId] = 1", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:755:18: Warning: Integer Overflow.\n            if ((board.status\nInteger Overflow occurs if:\n    allBoards.length = 2", 
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:921:17: Warning: Integer Overflow.\n        return (board.boardBalance\nInteger Overflow occurs if:\n    allBoards[boardId] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:2165:35: Warning: Integer Underflow.\n        if (playerTimeRemaining < now - board.lastUpdate\nInteger Underflow occurs if:\n    allBoards[boardId].nextTurnColor = 6277101735386680763835789423207666416102355444464034512896\n    boardId = 0\n    allBoards[boardId] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:373:12: Warning: Transaction-Ordering Dependency.\n    assert(payee.send(payment)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x34bd7814bfef669936f05e355abd882acfc569b2.txt:117:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.3"
+}

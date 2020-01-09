@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x523d98210cf8e9c5000b8de62274bd499d9bd78a.txt:309:12: Warning: Integer Underflow.\n    return sale.base.startingTokenBalance - sale.base.withdrawTokensMap[sale.base.owner]\nInteger Underflow occurs if:\n    sale.base.startingTokenBalance = 0\n    sale.base.withdrawTokensMap[sale.base.owner] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

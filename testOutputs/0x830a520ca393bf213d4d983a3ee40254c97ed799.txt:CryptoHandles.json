@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1707:9: Warning: Integer Overflow.\n        records[_handle][_key]\nInteger Overflow occurs if:\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1715:5: Warning: Integer Overflow.\n    function getRecord(bytes32 _handle, string _key) external view returns (string) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1717:16: Warning: Integer Overflow.\n        return records[_handle][_key]"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1717:9: Warning: Integer Underflow.\n        return records[_handle][_key]\nInteger Underflow occurs if:\n    return records[_handle][_key] = 1", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1707:9: Warning: Integer Underflow.\n        records[_handle][_key]\nInteger Underflow occurs if:\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1313:1: Warning: Integer Underflow.\ncontract CryptoHandles is ERC721Token {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1717:16: Warning: Integer Underflow.\n        return records[_handle][_key]"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.3"
+}

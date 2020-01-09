@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x77ce1c41db1baf27614a03b64c0b4995535d9179.txt:37:17: Warning: Integer Underflow.\n        players[currentPlayers-1\nInteger Underflow occurs if:\n    currentPlayers = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.8"
+}

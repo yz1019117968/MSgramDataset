@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:1281:16: Warning: Timestamp Dependency.\n        } else if (now < week4Start) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:1273:9: Warning: Timestamp Dependency.\n        if (now < week2Start) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:1055:9: Warning: Timestamp Dependency.\n        assert(now >= startTime && now < endTime)", 
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:1277:16: Warning: Timestamp Dependency.\n        } else if (now < week3Start) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:1055:16: Warning: Timestamp Dependency.\n        assert(now >= startTime && now < endTime"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.5"
+}

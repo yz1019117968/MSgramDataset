@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:285:37: Warning: Integer Overflow.\n            if (unlockAmounts[i] >= unlockAmounts[i + 1]\nInteger Overflow occurs if:\n    unlockAmounts.length = 115791205813783806231406193359937536394012070923692126229978523204812483330046\n    unlockDates.length = 115791205813783806231406193359937536394012070923692126229978523204812483330046", 
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:291:17: Warning: Integer Overflow.\n            if (unlockDates[i]\nInteger Overflow occurs if:\n    unlockAmounts.length = 576460752303423488\n    unlockDates.length = 576460752303423488\n    unlockDates[i] = 0\n    unlockAmounts[i] = 57896044618658097711785492504343953926634992332820282019728792003956564819967", 
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:337:5: Warning: Integer Overflow.\n    function setParams(        \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _unlockDates = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:185:5: Warning: Integer Overflow.\n    uint256[] public unlockAmounts", 
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:183:5: Warning: Integer Overflow.\n    uint256[] public unlockDates", 
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:285:17: Warning: Integer Overflow.\n            if (unlockAmounts[i]\nInteger Overflow occurs if:\n    unlockAmounts.length = 57896044618658097711785492504343953926634992332820282019728792003956564819970\n    unlockDates.length = 57896044618658097711785492504343953926634992332820282019728792003956564819970\n    unlockDates[i] = 0\n    unlockAmounts[i] = 0", 
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:291:35: Warning: Integer Overflow.\n            if (unlockDates[i] >= unlockDates[i + 1]\nInteger Overflow occurs if:\n    unlockAmounts.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    unlockDates.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    unlockAmounts[i] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:325:56: Warning: Integer Underflow.\n        require(token.balanceOf(this) == unlockAmounts[unlockAmounts.length - 1\nInteger Underflow occurs if:\n    unlockAmounts.length = 0\n    locked = 0\n    owner = 0", 
+   "./restContracts/0x94fa60ecd8071597672e937698575ac84bd52b79.txt:243:20: Warning: Integer Underflow.\n            return amountToWithdrawOnDate(now) - alreadyWithdrawn\nInteger Underflow occurs if:\n    alreadyWithdrawn = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 255\n    unlockDates.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.1"
+}

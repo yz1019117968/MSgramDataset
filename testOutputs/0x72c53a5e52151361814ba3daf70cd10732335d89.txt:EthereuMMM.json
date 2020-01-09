@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x72c53a5e52151361814ba3daf70cd10732335d89.txt:93:7: Warning: Integer Overflow.\n\t\tif(!investments[msg.sender].used", 
+   "./uniqueContractSourceCode/0x72c53a5e52151361814ba3daf70cd10732335d89.txt:97:4: Warning: Integer Overflow.\n\t\t\tinvestments[msg.sender].used\nInteger Overflow occurs if:\n    investments[msg.sender].used = 0", 
+   "./uniqueContractSourceCode/0x72c53a5e52151361814ba3daf70cd10732335d89.txt:21:2: Warning: Integer Overflow.\n\tmapping(address => Invest) public investments", 
+   "./uniqueContractSourceCode/0x72c53a5e52151361814ba3daf70cd10732335d89.txt:99:4: Warning: Integer Overflow.\n\t\t\t++lastID\nInteger Overflow occurs if:\n    lastID = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investments[msg.sender].used = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x72c53a5e52151361814ba3daf70cd10732335d89.txt:51:3: Warning: Integer Underflow.\n\t\tallInvestments -= investments[msg.sender].amount\nInteger Underflow occurs if:\n    allInvestments = 0\n    investments[msg.sender].amount = 1\n    investorWallet[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x72c53a5e52151361814ba3daf70cd10732335d89.txt:61:3: Warning: Transaction-Ordering Dependency.\n\t\tmsg.sender.transfer(tempWithdraw)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x72c53a5e52151361814ba3daf70cd10732335d89.txt:61:3: Warning: Transaction-Ordering Dependency.\n\t\tmsg.sender.transfer(tempWithdraw)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.9"
+}

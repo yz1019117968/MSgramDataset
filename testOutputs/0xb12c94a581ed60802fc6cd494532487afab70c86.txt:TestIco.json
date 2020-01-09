@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:159:27: Warning: Integer Overflow.\n            if (_token == allowedTokens[i]\nInteger Overflow occurs if:\n    allowedTokens.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    allowedTokens[i] = 0\n    manager = 0", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:129:17: Warning: Integer Overflow.\n            if (allowedTokens[i]\nInteger Overflow occurs if:\n    allowedTokens.length = 115792089237315372671292324405666830368678705990388072671524767217981455335423\n    allowedTokens[i] = 0\n    manager = 0", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:297:9: Warning: Integer Overflow.\n        balances[_user] += _value * ETH_PRICE\nInteger Overflow occurs if:\n    balances[_user] = 89660649888868366171417216235708288031085258661234677303951427843448891257349", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:163:40: Warning: Integer Overflow.\n                    allowedTokens[i] = allowedTokens[allowedTokens.length - 1]\nInteger Overflow occurs if:\n    allowedTokens.length = 115686078413429492363795987158643198937849144448089177687623758257519117467648\n    allowedTokens[i] = 0\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    manager = 0", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:163:21: Warning: Integer Overflow.\n                    allowedTokens[i]\nInteger Overflow occurs if:\n    allowedTokens.length = 115686078413429492363795987158643198937849144448089177687623758257519117467648\n    allowedTokens[i] = 0\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    manager = 0", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:45:5: Warning: Integer Overflow.\n    address[] public allowedTokens", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:27:1: Warning: Integer Overflow.\ncontract TestIco {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    allowedTokens.length = 115792089235631198756874070021521219410331257748518435472420232143445768011776\n    allowedTokens[i] = 0\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    manager = 0", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:277:5: Warning: Integer Overflow.\n    function returnFundsForUsers(address[] _users) public onlyManager {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:295:9: Warning: Integer Overflow.\n        ethBalances[_user] += _value\nInteger Overflow occurs if:\n    ethBalances[_user] = 89660649888868366171417216235708288031085258661234677303951427843448891257349", 
+   "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:167:17: Warning: Integer Overflow.\n                allowedTokens[allowedTokens.length - 1]\nInteger Overflow occurs if:\n    allowedTokens.length = 8\n    allowedTokens[i] = 0\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    allowedTokens[i] = 1461501637330902918203684832716283019655932542975\n    manager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:317:13: Warning: Transaction-Ordering Dependency.\n            _escrow.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xb12c94a581ed60802fc6cd494532487afab70c86.txt:317:13: Warning: Transaction-Ordering Dependency.\n            _escrow.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.1"
+}

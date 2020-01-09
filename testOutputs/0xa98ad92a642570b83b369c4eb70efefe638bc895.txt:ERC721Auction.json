@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1505:9: Warning: Timestamp Dependency.\n        if (now >= auction.auctionEnd) {//if auction ended return auction end price\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1469:9: Warning: Integer Overflow.\n        delete auctions[_tokenId]\nInteger Overflow occurs if:\n    auctions[_tokenId].auctionEnd = 170141183460469231713240559642174554112", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1387:9: Warning: Integer Overflow.\n        auctions[_tokenId] = auction\nInteger Overflow occurs if:\n    _endPrice = 18014604667912192\n    _startPrice = 18014604667912192\n    auctionDuration = 11692013098647223345629478661730264157247460343808", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1513:38: Warning: Integer Overflow.\n        uint256 hoursPassed = (now - auction.auctionBegin", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1337:5: Warning: Integer Overflow.\n    mapping(uint256 => Auction) public auctions"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:1513:32: Warning: Integer Underflow.\n        uint256 hoursPassed = (now - auction.auctionBegin"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.6"
+}

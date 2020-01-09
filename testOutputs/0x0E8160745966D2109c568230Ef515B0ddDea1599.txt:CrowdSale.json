@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x0E8160745966D2109c568230Ef515B0ddDea1599.txt:219:9: Warning: Timestamp Dependency.\n        require(now >= deadline)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x0E8160745966D2109c568230Ef515B0ddDea1599.txt:399:17: Warning: Transaction-Ordering Dependency.\n            if (beneficiary.send(amountRaised)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x0E8160745966D2109c568230Ef515B0ddDea1599.txt:381:21: Warning: Transaction-Ordering Dependency.\n                if (msg.sender.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.2"
+}

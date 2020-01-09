@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4ca68c8ecb94acbc736bcb4119fd76aa5170b226.txt:579:3: Warning: Integer Overflow.\n  function destroy(address[] tokens) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.9"
+}

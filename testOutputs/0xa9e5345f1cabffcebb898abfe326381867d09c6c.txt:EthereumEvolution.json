@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa9e5345f1cabffcebb898abfe326381867d09c6c.txt:103:5: Warning: Integer Overflow.\n    function setName(string _name) isOwner \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa9e5345f1cabffcebb898abfe326381867d09c6c.txt:9:5: Warning: Integer Underflow.\n    string public name = \"Ethereum Evolution\"", 
+   "./restContracts/0xa9e5345f1cabffcebb898abfe326381867d09c6c.txt:115:9: Warning: Integer Underflow.\n        balanceOf[owner] -= _amount\nInteger Underflow occurs if:\n    balanceOf[owner] = 0\n    _amount = 1\n    owner = 0", 
+   "./restContracts/0xa9e5345f1cabffcebb898abfe326381867d09c6c.txt:11:5: Warning: Integer Underflow.\n    string public symbol = \"ETHE\"", 
+   "./restContracts/0xa9e5345f1cabffcebb898abfe326381867d09c6c.txt:125:9: Warning: Integer Underflow.\n        totalSupply-= _amount\nInteger Underflow occurs if:\n    totalSupply = 0\n    _amount = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.3"
+}

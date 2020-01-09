@@ -1,0 +1,44 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:865:13: Warning: Integer Overflow.\n            certification.documents.push(document)\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:607:1: Warning: Integer Overflow.\ncontract CertificationDb is CertificationDbI, WithFee, PullPaymentCapable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:1029:20: Warning: Integer Overflow.\n        document = studentCertifications[student].documents[index]\nInteger Overflow occurs if:\n    queryFee = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:913:13: Warning: Integer Overflow.\n        if (certification.documentStatuses\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:915:29: Warning: Integer Overflow.\n            uint256 index = certification.documentStatuses[document].index\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:319:13: Warning: Integer Overflow.\n            totalBalance += amount\nInteger Overflow occurs if:\n    totalBalance = 81880581632346154447501837939361325137171606057055576954786980028302474543500\n    queryFee = 89162027706898390595631771814162138919675603842725975525052370684927041841647", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:397:13: Warning: Integer Overflow.\n            payments[dest] += amount\nInteger Overflow occurs if:\n    totalBalance = 0\n    payments[dest] = 1", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:857:13: Warning: Integer Overflow.\n            certification.documentStatuses\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:915:29: Warning: Integer Overflow.\n            uint256 index = certification.documentStatuses\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:321:13: Warning: Integer Overflow.\n            payments[dest] += amount\nInteger Overflow occurs if:\n    payments[dest] = 81880581632346154447501837939361325137171606057055576954786980028302474543500\n    queryFee = 89162027706898390595631771814162138919675603842725975525052370684927041841647", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:769:9: Warning: Integer Overflow.\n        certifiedStudents.push(student)\nInteger Overflow occurs if:\n    certifiedStudents.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    studentCertifications[student].certified = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:865:13: Warning: Integer Overflow.\n            certification.documents\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:1049:20: Warning: Integer Overflow.\n        isIndeed = studentCertifications[student].documentStatuses\nInteger Overflow occurs if:\n    queryFee = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:855:14: Warning: Integer Overflow.\n        if (!certification.documentStatuses\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:861:24: Warning: Integer Overflow.\n                index: certification.documents\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:757:13: Warning: Integer Overflow.\n            studentCertifications[student].documentStatuses\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:795:25: Warning: Integer Overflow.\n        uint256 index = studentCertifications[student].index\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255\n    studentCertifications[student].documents.length = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:757:13: Warning: Integer Overflow.\n            studentCertifications[student].documentStatuses[document] = DocumentStatus({\r\n            ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:917:20: Warning: Integer Overflow.\n            delete certification.documentStatuses\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:985:13: Warning: Integer Overflow.\n            certification.timestamp\nInteger Overflow occurs if:\n    queryFee = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:765:13: Warning: Integer Overflow.\n            studentCertifications[student].documents\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:761:24: Warning: Integer Overflow.\n                index: studentCertifications[student].documents\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:987:13: Warning: Integer Overflow.\n            certification.certifier\nInteger Overflow occurs if:\n    queryFee = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:961:19: Warning: Integer Overflow.\n        student = certifiedStudents[index]\nInteger Overflow occurs if:\n    certifiedStudents[index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944\n    queryFee = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:741:9: Warning: Integer Overflow.\n        studentCertifications[student] = Certification({\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:1029:20: Warning: Integer Overflow.\n        document = studentCertifications[student].documents\nInteger Overflow occurs if:\n    queryFee = 0", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:857:13: Warning: Integer Overflow.\n            certification.documentStatuses[document] = DocumentStatus({\r\n            ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    studentCertifications[student].certified = 255", 
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:989:13: Warning: Integer Overflow.\n            certification.documents\nInteger Overflow occurs if:\n    queryFee = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x65dBc8988557CE4260e84a467990a075115be771.txt:395:30: Warning: Integer Underflow.\n            uint256 amount = this.balance - totalBalance\nInteger Underflow occurs if:\n    totalBalance = 115792089237316195423570985008687907853269984665640564039457575000713874898943"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.9"
+}

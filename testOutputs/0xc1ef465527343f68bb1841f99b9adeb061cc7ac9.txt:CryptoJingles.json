@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:953:5: Warning: Integer Overflow.\n    function setAuthorName(string _name) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:907:5: Warning: Integer Overflow.\n    function composeJingle(string name, uint32[5] samples, uint8[20] settings) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:835:5: Warning: Integer Underflow.\n    mapping(address => string) public authors"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "31.9"
+}

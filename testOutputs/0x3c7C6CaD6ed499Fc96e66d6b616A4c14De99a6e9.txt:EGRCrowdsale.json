@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x3c7C6CaD6ed499Fc96e66d6b616A4c14De99a6e9.txt:295:7: Warning: Timestamp Dependency.\n\t\t    require(now > transferProposal.deadline)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3c7C6CaD6ed499Fc96e66d6b616A4c14De99a6e9.txt:659:13: Warning: Integer Overflow.\n            transferProposal.disapprovedWeight += weight\nInteger Overflow occurs if:\n    transferProposal.disapprovedWeight = 90124977372327004031758570853785828543150413892121215297380148023055890776064\n    stage = 4\n    transferProposal.deadline = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    transferProposal.voted[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    transferProposalEnd = 0\n    _approve = 0", 
+   "./uniqueContractSourceCode/0x3c7C6CaD6ed499Fc96e66d6b616A4c14De99a6e9.txt:605:23: Warning: Integer Overflow.\n            deadline: now + transferProposalEnd\nInteger Overflow occurs if:\n    stage = 3\n    transferProposalEnd = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    beneficiary = 0", 
+   "./uniqueContractSourceCode/0x3c7C6CaD6ed499Fc96e66d6b616A4c14De99a6e9.txt:655:13: Warning: Integer Overflow.\n            transferProposal.approvedWeight += weight\nInteger Overflow occurs if:\n    transferProposal.approvedWeight = 90124977372327004031758570853785828543150413892121215297380148023055890776064\n    stage = 4\n    transferProposal.deadline = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _approve = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    transferProposal.voted[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    transferProposalEnd = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3c7C6CaD6ed499Fc96e66d6b616A4c14De99a6e9.txt:569:17: Warning: Transaction-Ordering Dependency.\n        require(beneficiary.send(raised)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3c7C6CaD6ed499Fc96e66d6b616A4c14De99a6e9.txt:707:17: Warning: Transaction-Ordering Dependency.\n        require(transferProposal.engravedAddress.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.9"
+}

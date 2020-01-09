@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x337147582e349559db9c84c9a7d6aa7505e39787.txt:309:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x337147582e349559db9c84c9a7d6aa7505e39787.txt:409:5: Warning: Integer Underflow.\n    string public name = \"ThaneCoin\"", 
+   "./uniqueContractSourceCode/0x337147582e349559db9c84c9a7d6aa7505e39787.txt:411:5: Warning: Integer Underflow.\n    string public symbol = \"TPI\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.4"
+}

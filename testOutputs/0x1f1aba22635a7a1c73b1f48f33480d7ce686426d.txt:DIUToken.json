@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1f1aba22635a7a1c73b1f48f33480d7ce686426d.txt:261:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1f1aba22635a7a1c73b1f48f33480d7ce686426d.txt:71:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 67510370664490233506925552380706148586051015176134169117203489479141662036048\n    balances[msg.sender] = 83221975011734133266565142229451573841667187653546648906918434538223430982742", 
+   "./uniqueContractSourceCode/0x1f1aba22635a7a1c73b1f48f33480d7ce686426d.txt:219:29: Warning: Integer Overflow.\n            totalEthInWei = totalEthInWei + msg.value\nInteger Overflow occurs if:\n    totalEthInWei = 111438828845562471664989347453624837816551604050186618541112640349801269457553\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1f1aba22635a7a1c73b1f48f33480d7ce686426d.txt:149:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x1f1aba22635a7a1c73b1f48f33480d7ce686426d.txt:151:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.6"
+}

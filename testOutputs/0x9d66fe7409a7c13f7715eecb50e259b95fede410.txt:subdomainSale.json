@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:137:5: Warning: Integer Overflow.\n    records[node].subSale\nInteger Overflow occurs if:\n    expiry = 786432\n    commit = 786432\n    records[node].subSale = 0", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:139:5: Warning: Integer Overflow.\n    records[node].subPrice\nInteger Overflow occurs if:\n    expiry = 786432\n    commit = 786432\n    records[node].subSale = 0", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:169:5: Warning: Integer Overflow.\n    records[node].commitPeriod\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].originalOwner = 0", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:217:12: Warning: Integer Overflow.\n    return records[node].regPeriod", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:193:12: Warning: Integer Overflow.\n    return records[node].subSale", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:163:5: Warning: Integer Overflow.\n    records[node].subSale\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].originalOwner = 0", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:209:12: Warning: Integer Overflow.\n    return records[node].commitPeriod", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:201:12: Warning: Integer Overflow.\n    return records[node].subPrice", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:167:5: Warning: Integer Overflow.\n    records[node].subExpiry\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].originalOwner = 0", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:165:5: Warning: Integer Overflow.\n    records[node].subPrice\nInteger Overflow occurs if:\n    records[node].commitPeriod = 0\n    records[node].originalOwner = 0", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:141:5: Warning: Integer Overflow.\n    records[node].subExpiry\nInteger Overflow occurs if:\n    expiry = 786432\n    commit = 786432\n    records[node].subSale = 0", 
+   "./restContracts/0x9d66fe7409a7c13f7715eecb50e259b95fede410.txt:185:12: Warning: Integer Overflow.\n    return records[node].subExpiry"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.6"
+}

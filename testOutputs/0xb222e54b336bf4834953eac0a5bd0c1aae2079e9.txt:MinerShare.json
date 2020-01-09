@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb222e54b336bf4834953eac0a5bd0c1aae2079e9.txt:111:21: Warning: Integer Overflow.\n\t\tuint totalMined = this.balance + totalWithdrew\nInteger Overflow occurs if:\n    totalWithdrew = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    usersAddress[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb222e54b336bf4834953eac0a5bd0c1aae2079e9.txt:95:4: Warning: Integer Underflow.\n\t\t\tuserNumber -= 1\nInteger Underflow occurs if:\n    userNumber = 0\n    owner = 0\n    usersAddress[rmUser] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.7"
+}

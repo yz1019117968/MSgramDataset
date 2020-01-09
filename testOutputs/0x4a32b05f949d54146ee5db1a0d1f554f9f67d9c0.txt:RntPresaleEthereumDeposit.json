@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4a32b05f949d54146ee5db1a0d1f554f9f67d9c0.txt:1281:17: Warning: Integer Overflow.\n                donators[i].donated\nInteger Overflow occurs if:\n    overallTakenEther = 0\n    receivedEther[msg.sender] = 20282409603651670423947251286016\n    donators[i].addr = 0\n    donators.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0", 
+   "./uniqueContractSourceCode/0x4a32b05f949d54146ee5db1a0d1f554f9f67d9c0.txt:1311:37: Warning: Integer Overflow.\n        return (donators[pos].addr, donators[pos]\nInteger Overflow occurs if:\n    pos = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    donators[pos] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x4a32b05f949d54146ee5db1a0d1f554f9f67d9c0.txt:1311:37: Warning: Integer Overflow.\n        return (donators[pos].addr, donators[pos].donated\nInteger Overflow occurs if:\n    pos = 0\n    donators[pos] = 1", 
+   "./uniqueContractSourceCode/0x4a32b05f949d54146ee5db1a0d1f554f9f67d9c0.txt:211:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    overallTakenEther = 85653202831209899131921273706816539903532775246499121721910781021549923541581\n    paused = 0", 
+   "./uniqueContractSourceCode/0x4a32b05f949d54146ee5db1a0d1f554f9f67d9c0.txt:1311:17: Warning: Integer Overflow.\n        return (donators[pos]\nInteger Overflow occurs if:\n    pos = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    donators[pos] = 14474011154664524427946373126085988481658748083205070504932198000989141204993"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.3"
+}

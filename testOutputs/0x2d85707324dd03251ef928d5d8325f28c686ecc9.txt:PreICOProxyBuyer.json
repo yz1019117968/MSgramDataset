@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:2219:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:2017:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))", 
+   "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:2023:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))", 
+   "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:1909:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:1747:3: Warning: Integer Overflow.\n  address[] public investors", 
+   "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:1961:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    weiMinimumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:2181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2d85707324dd03251ef928d5d8325f28c686ecc9.txt:2017:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.0"
+}

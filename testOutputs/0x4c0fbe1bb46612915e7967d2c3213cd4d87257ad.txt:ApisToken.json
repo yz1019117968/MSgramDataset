@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:85:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:739:9: Warning: Integer Overflow.\n        lockedWalletInfo[_targetWallet].sendLock\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:829:72: Warning: Integer Overflow.\n        isSendLocked = (lockedWalletInfo[_addr].timeLockUpEnd > now && lockedWalletInfo[_addr].sendLock\nInteger Overflow occurs if:\n    lockedWalletInfo[_addr].timeLockUpEnd = 1\n    _addr = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:863:75: Warning: Integer Overflow.\n        isReceiveLocked = (lockedWalletInfo[_addr].timeLockUpEnd > now && lockedWalletInfo[_addr].receiveLock\nInteger Overflow occurs if:\n    lockedWalletInfo[_addr].timeLockUpEnd = 1", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:527:5: Warning: Integer Overflow.\n    mapping (address => LockedInfo) public lockedWalletInfo", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:741:9: Warning: Integer Overflow.\n        lockedWalletInfo[_targetWallet].receiveLock\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "100.0"
+}

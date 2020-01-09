@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:389:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:419:13: Warning: Integer Overflow.\n            numOfTransfers++\nInteger Overflow occurs if:\n    balances[_from] = 0\n    numOfTransfers = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _value = 0\n    admin = 0", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:415:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    admin = 0", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:393:9: Warning: Integer Overflow.\n        numOfTransfers++\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    numOfTransfers = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _value = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:337:9: Warning: Integer Underflow.\n        return date\nInteger Underflow occurs if:\n    return date = 1", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:57:5: Warning: Integer Underflow.\n    string public date", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:53:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:59:5: Warning: Integer Underflow.\n    string public venue", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:317:9: Warning: Integer Underflow.\n        return name\nInteger Underflow occurs if:\n    return name = 1", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:327:9: Warning: Integer Underflow.\n        return venue\nInteger Underflow occurs if:\n    return venue = 1", 
+   "./restContracts/0xb80463f354b54b958e88b4d5385693bb554cbd8e.txt:55:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.7"
+}

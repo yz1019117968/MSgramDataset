@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc3d4e5c33297f0ddadd56344c6ef242f5310c3e3.txt:629:39: Warning: Integer Overflow.\n        uint256 requireEtherReceived=(msg.sender.balance+msg.value\nInteger Overflow occurs if:\n    currentSupply = 0\n    endTime = 0\n    maxSupply = 1\n    isFinalized = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.4"
+}

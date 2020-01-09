@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc3ec3066c76e80b0643c523cbe82fc2befbb2de8.txt:413:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc3ec3066c76e80b0643c523cbe82fc2befbb2de8.txt:535:9: Warning: Integer Overflow.\n        _balanceOf[_owner] += mintedAmount\nInteger Overflow occurs if:\n    _balanceOf[_owner] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _owner = 0", 
+   "./restContracts/0xc3ec3066c76e80b0643c523cbe82fc2befbb2de8.txt:537:9: Warning: Integer Overflow.\n        _totalSupply += mintedAmount\nInteger Overflow occurs if:\n    _totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc3ec3066c76e80b0643c523cbe82fc2befbb2de8.txt:143:9: Warning: Integer Underflow.\n        return _name\nInteger Underflow occurs if:\n    return _name = 1", 
+   "./restContracts/0xc3ec3066c76e80b0643c523cbe82fc2befbb2de8.txt:159:9: Warning: Integer Underflow.\n        return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.1"
+}

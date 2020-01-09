@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9425503158208603dFF6FcD82De4dEE425290bA1.txt:109:32: Warning: Integer Underflow.\n    \t    lastblocknumberused = block.number - 1\nInteger Underflow occurs if:\n    gamblers = 1", 
+   "./restContracts/0x9425503158208603dFF6FcD82De4dEE425290bA1.txt:9:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9425503158208603dFF6FcD82De4dEE425290bA1.txt:133:21: Warning: Transaction-Ordering Dependency.\n                    gambler2.transfer(199500000000000000)"
+   ], 
+   [
+    "./restContracts/0x9425503158208603dFF6FcD82De4dEE425290bA1.txt:121:21: Warning: Transaction-Ordering Dependency.\n                    gambler1.transfer(199500000000000000)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.9"
+}

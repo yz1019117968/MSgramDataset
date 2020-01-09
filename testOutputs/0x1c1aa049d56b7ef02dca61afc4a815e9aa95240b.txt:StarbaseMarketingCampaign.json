@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1c1aa049d56b7ef02dca61afc4a815e9aa95240b.txt:433:9: Warning: Integer Overflow.\n        contributor[contributorAddress].contributions\nInteger Overflow occurs if:\n    owner = 0\n    contributor[contributorAddress].transferredRewardTokens = 0\n    contributor[contributorAddress].rewardTokens = 0", 
+   "./uniqueContractSourceCode/0x1c1aa049d56b7ef02dca61afc4a815e9aa95240b.txt:435:9: Warning: Integer Overflow.\n        contributors.push(contributorAddress)\nInteger Overflow occurs if:\n    contributors.push(contributorAddress) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    contributor[contributorAddress].transferredRewardTokens = 0\n    contributor[contributorAddress].rewardTokens = 0", 
+   "./uniqueContractSourceCode/0x1c1aa049d56b7ef02dca61afc4a815e9aa95240b.txt:213:1: Warning: Integer Overflow.\ncontract StarbaseMarketingCampaign is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contributors.push(contributorAddress) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0\n    contributor[contributorAddress].transferredRewardTokens = 0\n    contributor[contributorAddress].rewardTokens = 0", 
+   "./uniqueContractSourceCode/0x1c1aa049d56b7ef02dca61afc4a815e9aa95240b.txt:265:5: Warning: Integer Overflow.\n    address[] public contributors", 
+   "./uniqueContractSourceCode/0x1c1aa049d56b7ef02dca61afc4a815e9aa95240b.txt:267:5: Warning: Integer Overflow.\n    mapping (address => Contributor) public contributor", 
+   "./uniqueContractSourceCode/0x1c1aa049d56b7ef02dca61afc4a815e9aa95240b.txt:501:5: Warning: Integer Overflow.\n    function getContributorInfo(address contributorAddress, string contributionId)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contributionId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1c1aa049d56b7ef02dca61afc4a815e9aa95240b.txt:427:69: Warning: Integer Overflow.\n        assert(contributor[contributorAddress].rewardTokens == 0 && contributor[contributorAddress].transferredRewardTokens\nInteger Overflow occurs if:\n    owner = 0\n    contributor[contributorAddress].rewardTokens = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.3"
+}

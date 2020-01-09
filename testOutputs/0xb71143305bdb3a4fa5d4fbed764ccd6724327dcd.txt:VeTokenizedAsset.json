@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:45:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:501:5: Warning: Integer Overflow.\n    function changeSource(string newSource, string newProof, uint256 newTotalSupply) onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:439:5: Warning: Integer Overflow.\n    function setup(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:401:5: Warning: Integer Underflow.\n    string public description", 
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:407:5: Warning: Integer Underflow.\n    string public proof", 
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:399:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:397:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xb71143305bdb3a4fa5d4fbed764ccd6724327dcd.txt:405:5: Warning: Integer Underflow.\n    string public source"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "48.0"
+}

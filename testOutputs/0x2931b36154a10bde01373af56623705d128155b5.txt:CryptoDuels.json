@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:151:5: Warning: Integer Overflow.\n    address[] public playerList", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:127:1: Warning: Integer Overflow.\ncontract CryptoDuels is Owned {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    playerList.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:305:24: Warning: Integer Overflow.\n            playerList[p.listPosition\nInteger Overflow occurs if:\n    playerList.length = 115792034023345421099060685530641009637066365054233562847161139240993114030080\n    blockWithdrawBegin = 0\n    wad = 0", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:259:13: Warning: Integer Overflow.\n            p.lastJoin", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:149:5: Warning: Integer Overflow.\n    mapping (address => PLAYER) public player", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:261:13: Warning: Integer Overflow.\n            p.listPosition", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:305:42: Warning: Integer Overflow.\n            playerList[p.listPosition] = playerList[playerList.length - 1]\nInteger Overflow occurs if:\n    playerList.length = 115792034023345421099060685530641009637066365054233562847161139240993114030080\n    blockWithdrawBegin = 0\n    wad = 0", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:263:13: Warning: Integer Overflow.\n            playerList.push(msg.sender)\nInteger Overflow occurs if:\n    playerList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:305:53: Warning: Integer Underflow.\n            playerList[p.listPosition] = playerList[playerList.length - 1\nInteger Underflow occurs if:\n    wad = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    playerList.length = 0\n    blockWithdrawBegin = 0", 
+   "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:347:58: Warning: Integer Underflow.\n        uint fakeRandom = uint(keccak256(block.blockhash(block.number-1\nInteger Underflow occurs if:\n    player[msg.sender].wad = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    player[opp].wad = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    player[opp].lastJoin = 0\n    safeBlock = 0\n    player[msg.sender].lastDuel = 0\n    fatigueBlock = 0\n    blockDuelBegin = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:297:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(wad)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2931b36154a10bde01373af56623705d128155b5.txt:297:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(wad)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.3"
+}

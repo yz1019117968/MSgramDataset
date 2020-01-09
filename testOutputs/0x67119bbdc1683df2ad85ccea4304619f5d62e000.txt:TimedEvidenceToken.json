@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x67119bbdc1683df2ad85ccea4304619f5d62e000.txt:3201:9: Warning: Integer Overflow.\n        currentBatch += amount\nInteger Overflow occurs if:\n    currentBatch = 1\n    sister = 0", 
+   "./uniqueContractSourceCode/0x67119bbdc1683df2ad85ccea4304619f5d62e000.txt:3205:13: Warning: Integer Overflow.\n            buyPrice_ += priceIncrease\nInteger Overflow occurs if:\n    buyPrice_ = 1\n    priceIncrease = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    thresholdAmount = 0\n    currentBatch = 0\n    sister = 0", 
+   "./uniqueContractSourceCode/0x67119bbdc1683df2ad85ccea4304619f5d62e000.txt:2393:20: Warning: Integer Overflow.\n                && balances[_to] + _amount\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.6"
+}

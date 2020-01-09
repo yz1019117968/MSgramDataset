@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x94dc1cf66c8fd62ef3bd7da53f47423862839823.txt:735:5: Warning: Integer Overflow.\n    function distributeTimelockedTokens(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _beneficiaries = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x94dc1cf66c8fd62ef3bd7da53f47423862839823.txt:685:5: Warning: Integer Overflow.\n    function distributePreBuyersRewards(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _preBuyers = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x94dc1cf66c8fd62ef3bd7da53f47423862839823.txt:953:36: Warning: Integer Underflow.\n        freezeBlock = _newBlock - (startBlock - freezeBlock\nInteger Underflow occurs if:\n    freezeBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    _newBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x94dc1cf66c8fd62ef3bd7da53f47423862839823.txt:953:23: Warning: Integer Underflow.\n        freezeBlock = _newBlock - (startBlock - freezeBlock)\nInteger Underflow occurs if:\n    _newBlock = 1\n    freezeBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startBlock = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "28.6"
+}

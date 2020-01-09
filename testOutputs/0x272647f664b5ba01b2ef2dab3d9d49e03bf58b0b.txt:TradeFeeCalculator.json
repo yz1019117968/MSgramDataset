@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x272647f664b5ba01b2ef2dab3d9d49e03bf58b0b.txt:261:5: Warning: Integer Overflow.\n    function calcTradeFeeMulti(uint256[] _values, uint256[] _feeIndexes) public view returns (uint256[]) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _values = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.8"
+}

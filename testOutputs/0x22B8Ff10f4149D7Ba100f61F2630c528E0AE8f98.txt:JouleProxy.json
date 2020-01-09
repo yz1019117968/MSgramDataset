@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x22B8Ff10f4149D7Ba100f61F2630c528E0AE8f98.txt:2625:45: Warning: Integer Underflow.\n        Invoked(_invoker, _address, status, gas - msg.gas\nInteger Underflow occurs if:\n    _gasLimit = 1\n    joule = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x22B8Ff10f4149D7Ba100f61F2630c528E0AE8f98.txt:2337:23: Warning: Transaction-Ordering Dependency.\n        uint change = joule.registerFor.value(msg.value)(_registrant, _address, _timestamp, _gasLimit, _gasPrice)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x22B8Ff10f4149D7Ba100f61F2630c528E0AE8f98.txt:2337:23: Warning: Transaction-Ordering Dependency.\n        uint change = joule.registerFor.value(msg.value)(_registrant, _address, _timestamp, _gasLimit, _gasPrice)", 
+    "./uniqueContractSourceCode/0x22B8Ff10f4149D7Ba100f61F2630c528E0AE8f98.txt:2341:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(change)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.7"
+}

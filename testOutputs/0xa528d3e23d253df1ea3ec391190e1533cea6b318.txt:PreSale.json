@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa528d3e23d253df1ea3ec391190e1533cea6b318.txt:287:13: Warning: Timestamp Dependency.\n    require(now > start && now < start + period * 1 days", 
+   "./restContracts/0xa528d3e23d253df1ea3ec391190e1533cea6b318.txt:287:5: Warning: Timestamp Dependency.\n    require(now > start && now < start + period * 1 days)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa528d3e23d253df1ea3ec391190e1533cea6b318.txt:281:3: Warning: Integer Overflow.\n  address[] public investors"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.9"
+}

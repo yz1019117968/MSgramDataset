@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:167:39: Warning: Integer Overflow.\n        Registry storage r = registry[keccak256(ns)", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:169:38: Warning: Integer Overflow.\n        if (r.ttl > 0 && r.updated + r.ttl", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:169:26: Warning: Integer Overflow.\n        if (r.ttl > 0 && r.updated", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:175:9: Warning: Integer Overflow.\n        return ns", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:231:5: Warning: Integer Overflow.\n    function remove(string _namespace) onlyOwner public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _namespace = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:131:5: Warning: Integer Overflow.\n    function get(string _namespace) constant public returns (address) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _namespace = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:193:5: Warning: Integer Overflow.\n    function set(string _namespace, address _addr, uint32 _ttl) onlyOwner public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _namespace = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:169:26: Warning: Integer Overflow.\n        if (r.ttl > 0 && r.updated + r.ttl", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:169:13: Warning: Integer Overflow.\n        if (r.ttl"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:161:5: Warning: Integer Underflow.\n    function getNamespace(address _addr) constant public returns (string) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:175:9: Warning: Integer Underflow.\n        return ns", 
+   "./uniqueContractSourceCode/0x151b11892dd6ab1f91055dcd01d23d03a2c47570.txt:167:39: Warning: Integer Underflow.\n        Registry storage r = registry[keccak256(ns)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.8"
+}

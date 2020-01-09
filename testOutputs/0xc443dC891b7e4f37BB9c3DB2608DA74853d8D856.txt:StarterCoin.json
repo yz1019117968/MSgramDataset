@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc443dC891b7e4f37BB9c3DB2608DA74853d8D856.txt:45:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 115791604506874127092225986996011350166176224025844446342472408867955874726021\n    balances[_owner] = 88409867174462835783634769239707059024179214697228683382189751174560517983297\n    endTimeICO = 9007199254740991"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "96.1"
+}

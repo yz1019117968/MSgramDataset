@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:879:20: Warning: Callstack Depth Attack Vulnerability.\n        bool res = msg.sender.send(this.balance)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:605:13: Warning: Integer Overflow.\n            _auction.startingPrice", 
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:595:19: Warning: Integer Overflow.\n        if (now > _auction.startedAt", 
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:607:13: Warning: Integer Overflow.\n            _auction.endingPrice", 
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:609:13: Warning: Integer Overflow.\n            _auction.duration", 
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:405:33: Warning: Integer Overflow.\n        uint256 tokenQuantity = auction.tokenQuantity\nInteger Overflow occurs if:\n    owner = 0\n    paused = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:1349:28: Warning: Integer Overflow.\n        uint256 quantity = tokensAuction[_tokenAddress][_auctionNumber].tokenQuantity"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc3cb67158b87fd0615bf5976ea33f86bb10f198a.txt:671:39: Warning: Integer Underflow.\n            int256 totalPriceChange = int256(_endingPrice) - int256(_startingPrice)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "22.9"
+}

@@ -1,0 +1,48 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:3055:9: Warning: Timestamp Dependency.\n        require(elapsed >= 86400)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2645:56: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll\nInteger Overflow occurs if:\n    index = 0\n    gamesCompleted[index] = 1", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2645:88: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll, game.direction, game.winnings\nInteger Overflow occurs if:\n    index = 0\n    gamesCompleted[index] = 1", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2671:29: Warning: Integer Overflow.\n        Game storage game = playerGamesCompleted[player][index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    playerGamesCompleted[player][index] = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2573:13: Warning: Integer Overflow.\n            gamesInProgress[player].direction\nInteger Overflow occurs if:\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2645:40: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll\nInteger Overflow occurs if:\n    index = 0\n    gamesCompleted[index] = 1", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2567:13: Warning: Integer Overflow.\n            gamesInProgress[player].bet\nInteger Overflow occurs if:\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2673:56: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll\nInteger Overflow occurs if:\n    index = 0\n    playerGamesCompleted[player][index] = 1\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2645:72: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll, game.direction\nInteger Overflow occurs if:\n    index = 0\n    gamesCompleted[index] = 1", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2541:9: Warning: Integer Overflow.\n        game.direction\nInteger Overflow occurs if:\n    direction = 1\n    gamesInProgress[player].player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2307:5: Warning: Integer Overflow.\n    mapping(address => Game[]) public playerGamesCompleted", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2645:30: Warning: Integer Overflow.\n        return (game.player, game.bet\nInteger Overflow occurs if:\n    index = 0\n    gamesCompleted[index] = 1", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2673:72: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll, game.direction\nInteger Overflow occurs if:\n    index = 0\n    playerGamesCompleted[player][index] = 1\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2673:103: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll, game.direction, game.winnings, game.when\nInteger Overflow occurs if:\n    index = 0\n    playerGamesCompleted[player][index] = 1\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2645:103: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll, game.direction, game.winnings, game.when\nInteger Overflow occurs if:\n    index = 0\n    gamesCompleted[index] = 1", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2991:5: Warning: Integer Overflow.\n    function __callback(bytes32 _queryId, string _result, bytes _proof) onlyOraclize {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2673:30: Warning: Integer Overflow.\n        return (game.player, game.bet\nInteger Overflow occurs if:\n    index = 0\n    playerGamesCompleted[player][index] = 1\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2571:13: Warning: Integer Overflow.\n            gamesInProgress[player].finalRoll\nInteger Overflow occurs if:\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:427:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2305:5: Warning: Integer Overflow.\n    Game[] public gamesCompleted", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2643:29: Warning: Integer Overflow.\n        Game storage game = gamesCompleted[index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    gamesCompleted[index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2569:13: Warning: Integer Overflow.\n            gamesInProgress[player].firstRoll\nInteger Overflow occurs if:\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2673:88: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll, game.finalRoll, game.direction, game.winnings\nInteger Overflow occurs if:\n    index = 0\n    playerGamesCompleted[player][index] = 1\n    player = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2673:40: Warning: Integer Overflow.\n        return (game.player, game.bet, game.firstRoll\nInteger Overflow occurs if:\n    index = 0\n    playerGamesCompleted[player][index] = 1\n    player = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:2611:55: Warning: Integer Underflow.\n        return SafeMath.div(SafeMath.div(SafeMath.mul(this.balance - balanceInPlay\nInteger Underflow occurs if:\n    balanceInPlay = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:3059:9: Warning: Transaction-Ordering Dependency.\n        game.player.transfer(game.bet)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x15a1f9e9827bb0130b08479f3aa4d0f491274c8a.txt:3031:9: Warning: Transaction-Ordering Dependency.\n        to.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "29.1"
+}

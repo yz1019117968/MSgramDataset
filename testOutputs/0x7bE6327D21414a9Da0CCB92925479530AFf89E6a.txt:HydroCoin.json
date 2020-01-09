@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:659:39: Warning: Integer Overflow.\n            update(theQueue[pos].whom,theQueue[pos]\nInteger Overflow occurs if:\n    pos = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    theQueue.length = 14474011154664524427946373126085988481658748083205070504932198000989141204993\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:573:1: Warning: Integer Overflow.\ncontract HydroCoin is MintableToken, Pausable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    theQueue.length = 30419870264243361405717504472484088810140915741871025682920049907450169881086\n    pos = 30419870264243361405717504472484088810140915741871025682920049907450169881086\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:717:13: Warning: Integer Overflow.\n            theList[whom] = XRec(false,0x0,0x0,0)\nInteger Overflow occurs if:\n    balances[_to] = 0\n    first = 0\n    theList[whom].inList = 255\n    theList[whom].inList = 0\n    queueMode = 0\n    allowed[_from][msg.sender] = 0\n    paused = 0\n    balances[_from] = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:659:20: Warning: Integer Overflow.\n            update(theQueue[pos]\nInteger Overflow occurs if:\n    pos = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    theQueue.length = 14474011154664524427946373126085988481658748083205070504932198000989141204993\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:735:13: Warning: Integer Overflow.\n            theList[next].prev\nInteger Overflow occurs if:\n    theList[whom].inList = 187072209578355573530071658587684226515959365501056\n    balances[_to] = 0\n    theList[whom].prev = 0\n    first = 1461501637330902918203684832716283019655932542975\n    theList[whom].inList = 0\n    queueMode = 0\n    allowed[_from][msg.sender] = 0\n    paused = 0\n    balances[_from] = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:659:39: Warning: Integer Overflow.\n            update(theQueue[pos].whom,theQueue[pos].val\nInteger Overflow occurs if:\n    pos = 0\n    theQueue.length = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:691:9: Warning: Integer Overflow.\n        theList[whom] = XRec(true,0x0,last,value)\nInteger Overflow occurs if:\n    balances[_from] = 57896044620343094378482407491510642369573719249922603546137577784025540460544\n    balances[_to] = 28948022308486550522544288758588632741848132707858980244298819870508971982848\n    theList[whom].inList = 0\n    theList[whom].inList = 255\n    queueMode = 0\n    allowed[_from][msg.sender] = 1684996666696914987166688442938726917102321526408785780068975640576\n    paused = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:739:9: Warning: Integer Overflow.\n        theList[whom] =XRec(false,0x0,0x0,0)\nInteger Overflow occurs if:\n    theList[whom].inList = 128\n    balances[_to] = 0\n    theList[whom].prev = 0\n    first = 1461501637330902918203684832716283019655932542975\n    theList[whom].inList = 0\n    queueMode = 0\n    allowed[_from][msg.sender] = 0\n    paused = 0\n    balances[_from] = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:725:24: Warning: Integer Overflow.\n        address prev = theList[whom].prev\nInteger Overflow occurs if:\n    balances[_to] = 0\n    first = 1461501637330902918203684832716283019655932542975\n    theList[whom].inList = 255\n    theList[whom].inList = 0\n    queueMode = 0\n    allowed[_from][msg.sender] = 0\n    paused = 0\n    balances[_from] = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:227:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    paused = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:681:9: Warning: Integer Overflow.\n        theQueue.push(QueueRecord(whom,val))\nInteger Overflow occurs if:\n    balances[_to] = 101203156591728993912974697584962051606042850717919459392596131617805891501319\n    theQueue.push(QueueRecord(whom,val)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    queueMode = 372682917519380244141939632342652170012262798458880\n    allowed[_from][msg.sender] = 99430008745038257212078734794128839466748894972714806297463119455725170155\n    balances[_from] = 99430008745038257212078734794128839466748894972714806297463119455725170155\n    paused = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:765:17: Warning: Integer Overflow.\n                theList[whom].val\nInteger Overflow occurs if:\n    balances[_from] = 88879480295323197968266618883023677023552229272351433129648230592076960497662\n    balances[_to] = 33923405113700764593309876142141657228319785077424750411166670061823877493016\n    theList[whom].inList = 255\n    queueMode = 0\n    allowed[_from][msg.sender] = 74179309189651687729719306299694069487094506711932563110895706267251162751772\n    paused = 0", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:627:5: Warning: Integer Overflow.\n    mapping (address => XRec) public theList"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:577:3: Warning: Integer Underflow.\n  string public symbol = \"H2O\"", 
+   "./uniqueContractSourceCode/0x7bE6327D21414a9Da0CCB92925479530AFf89E6a.txt:575:3: Warning: Integer Underflow.\n  string public name = \"H2O Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.7"
+}

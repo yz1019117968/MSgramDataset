@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x17d67ac402b014af1894c63379976b46930b1337.txt:855:5: Warning: Integer Overflow.\n    function newCrowdSale(string _projectName, string _tokenName,\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _projectName = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x17d67ac402b014af1894c63379976b46930b1337.txt:777:5: Warning: Integer Underflow.\n    string public tokenName", 
+   "./uniqueContractSourceCode/0x17d67ac402b014af1894c63379976b46930b1337.txt:773:5: Warning: Integer Underflow.\n    string public projectName", 
+   "./uniqueContractSourceCode/0x17d67ac402b014af1894c63379976b46930b1337.txt:779:5: Warning: Integer Underflow.\n    string public tokenSymbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "25.0"
+}

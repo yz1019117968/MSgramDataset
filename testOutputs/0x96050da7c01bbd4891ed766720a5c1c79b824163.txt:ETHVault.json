@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x96050da7c01bbd4891ed766720a5c1c79b824163.txt:39:21: Warning: Integer Overflow.\n                if (Deposits[msg.sender] + msg.value\nInteger Overflow occurs if:\n    Deposits[msg.sender] = 51513620988405768647681812089986362386326259626473120825206503091546134463453"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x96050da7c01bbd4891ed766720a5c1c79b824163.txt:51:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amount)"
+   ], 
+   [
+    "./restContracts/0x96050da7c01bbd4891ed766720a5c1c79b824163.txt:73:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.3"
+}

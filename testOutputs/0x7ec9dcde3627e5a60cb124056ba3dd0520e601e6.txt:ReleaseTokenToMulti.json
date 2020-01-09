@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7ec9dcde3627e5a60cb124056ba3dd0520e601e6.txt:459:5: Warning: Integer Overflow.\n    function releaseAllOldBalanceOf(address[] _targets) onlyOwner public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _targets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7ec9dcde3627e5a60cb124056ba3dd0520e601e6.txt:413:5: Warning: Integer Overflow.\n    function transferAndFreezeMulti(address[] _targets, uint256[] _values, uint256[] _frozenEndTimes, uint256[] _releasePeriods) onlyOwner public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _targets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7ec9dcde3627e5a60cb124056ba3dd0520e601e6.txt:311:5: Warning: Integer Overflow.\n    function releaseMultiWithStage(address[] _targets, address[] _dests) onlyOwner public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _targets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7ec9dcde3627e5a60cb124056ba3dd0520e601e6.txt:365:5: Warning: Integer Overflow.\n    function freezeMulti(address[] _targets, uint256[] _values, uint256[] _frozenEndTimes, uint256[] _releasePeriods) onlyOwner public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _targets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7ec9dcde3627e5a60cb124056ba3dd0520e601e6.txt:271:5: Warning: Integer Overflow.\n    function releaseMultiAccounts(address[] _targets) onlyOwner public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _targets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7ec9dcde3627e5a60cb124056ba3dd0520e601e6.txt:497:5: Warning: Integer Overflow.\n    function releaseMultiByStage(address[] _targets) onlyOwner public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _targets = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "25.8"
+}

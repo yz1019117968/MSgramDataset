@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x92ae973f0549c7d51370a236fe7b1dfe9ea5aa56.txt:115:5: Warning: Integer Overflow.\n    function multisend(address _tokenAddr, address[] dests, uint256 value)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dests = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.2"
+}

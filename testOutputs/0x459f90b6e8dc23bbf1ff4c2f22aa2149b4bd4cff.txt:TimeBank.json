@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x459f90b6e8dc23bbf1ff4c2f22aa2149b4bd4cff.txt:51:9: Warning: Timestamp Dependency.\n        require(holders[msg.sender].withdrawTime < block.timestamp)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x459f90b6e8dc23bbf1ff4c2f22aa2149b4bd4cff.txt:39:54: Warning: Integer Overflow.\n        if (!(holders[msg.sender].withdrawTime > 0)) holders[msg.sender].withdrawTime\nInteger Overflow occurs if:\n    _withdrawTime = 295147905179352825856\n    holders[msg.sender].withdrawTime = 0", 
+   "./uniqueContractSourceCode/0x459f90b6e8dc23bbf1ff4c2f22aa2149b4bd4cff.txt:39:15: Warning: Integer Overflow.\n        if (!(holders[msg.sender].withdrawTime\nInteger Overflow occurs if:\n    _withdrawTime = 295147905179352825856", 
+   "./uniqueContractSourceCode/0x459f90b6e8dc23bbf1ff4c2f22aa2149b4bd4cff.txt:23:51: Warning: Integer Overflow.\n        return(holders[msg.sender].fundsDeposited,holders[msg.sender].withdrawTime"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.9"
+}

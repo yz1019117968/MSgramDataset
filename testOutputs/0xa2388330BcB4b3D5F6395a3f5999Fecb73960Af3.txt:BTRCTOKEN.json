@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa2388330BcB4b3D5F6395a3f5999Fecb73960Af3.txt:461:10: Warning: Integer Overflow.\n      && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    _value = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    workingState = 255", 
+   "./restContracts/0xa2388330BcB4b3D5F6395a3f5999Fecb73960Af3.txt:333:6: Warning: Integer Overflow.\n\t\tif(_totalSupply+_amount\nInteger Overflow occurs if:\n    _totalSupply = 32697693305697485713309696\n    owner = 8388736", 
+   "./restContracts/0xa2388330BcB4b3D5F6395a3f5999Fecb73960Af3.txt:523:10: Warning: Integer Overflow.\n      && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[_from] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    cur_coin = 0\n    workingState = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa2388330BcB4b3D5F6395a3f5999Fecb73960Af3.txt:159:5: Warning: Transaction-Ordering Dependency.\n    _client.transfer(_amount)"
+   ], 
+   [
+    "./restContracts/0xa2388330BcB4b3D5F6395a3f5999Fecb73960Af3.txt:173:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.3"
+}

@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:2369:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [
+   "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:2125:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))", 
+   "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:1995:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:1821:3: Warning: Integer Overflow.\n  address[] public investors", 
+   "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:2047:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0", 
+   "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:1801:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 57866347099847516836782424590464903051612188226041551322124066261715333098921\n    weiMaximumLimit = 57866891633657531536338902057972701639799234101611942927272425371195947220991\n    weiMinimumLimit = 57866891633657531536338902057972701639799234101611942927272425371195947220991\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:2287:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+   ], 
+   [
+    "./restContracts/0x88466183e69c8f681bdeb538d57cf270255f8762.txt:2287:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.4"
+}

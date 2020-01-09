@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:153:9: Warning: Integer Overflow.\n        Clients[msg.sender].Hash", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:99:5: Warning: Integer Overflow.\n    function Register(uint8 ratio, string Hash) payable external {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    Hash = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:101:25: Warning: Integer Overflow.\n        var NewClient = SimpleClient(ratio>=MininumPercent?ratio:MininumPercent, msg.value, Hash, now)\nInteger Overflow occurs if:\n    ratio = 5", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:67:5: Warning: Integer Overflow.\n    mapping(address => SimpleClient) public Clients", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:213:9: Warning: Integer Overflow.\n        Clients[client].dosh\nInteger Overflow occurs if:\n    Clients[client].dosh = 1000000000000000\n    Clients[client].time = 0", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:151:5: Warning: Integer Overflow.\n    function ChangeNumber(string NewHash) external { // The way this modifies state is invisible to the contract,so no problemo\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    NewHash = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:167:28: Warning: Integer Overflow.\n        uint timedif = now-Clients[client].time", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:217:9: Warning: Integer Overflow.\n        Clients[client].time\nInteger Overflow occurs if:\n    Clients[client].dosh = 1000000000000000\n    Clients[client].time = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:215:9: Warning: Integer Underflow.\n        obligations -= Fee\nInteger Underflow occurs if:\n    obligations = 999999999999999\n    Clients[client].dosh = 1000000000000000\n    Clients[client].time = 0", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:167:24: Warning: Integer Underflow.\n        uint timedif = now-Clients[client].time\nInteger Underflow occurs if:\n    Clients[client].time = 1", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:45:1: Warning: Integer Underflow.\ncontract Tracker is Ownable{\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:67:5: Warning: Integer Underflow.\n    mapping(address => SimpleClient) public Clients"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:241:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2e8f82c00670915b300fc355f55529d3655eef6b.txt:143:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(tosend)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.5"
+}

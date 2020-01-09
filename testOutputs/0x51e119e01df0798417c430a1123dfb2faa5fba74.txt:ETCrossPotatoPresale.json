@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x51e119e01df0798417c430a1123dfb2faa5fba74.txt:195:9: Warning: Timestamp Dependency.\n        require(!auctionExpired())", 
+   "./uniqueContractSourceCode/0x51e119e01df0798417c430a1123dfb2faa5fba74.txt:269:9: Warning: Timestamp Dependency.\n        require(auctionExpired())"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x51e119e01df0798417c430a1123dfb2faa5fba74.txt:249:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(change)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x51e119e01df0798417c430a1123dfb2faa5fba74.txt:219:13: Warning: Transaction-Ordering Dependency.\n            highestBidder.transfer(highestBid.add(reward))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.5"
+}

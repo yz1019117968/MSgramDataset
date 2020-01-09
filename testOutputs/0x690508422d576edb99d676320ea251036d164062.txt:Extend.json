@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x690508422d576edb99d676320ea251036d164062.txt:2677:5: Warning: Integer Overflow.\n    function __callback(bytes32 _myid, string _result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x690508422d576edb99d676320ea251036d164062.txt:2645:5: Warning: Integer Overflow.\n    function buyGold(bytes32 _to,  \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _months = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x690508422d576edb99d676320ea251036d164062.txt:617:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x690508422d576edb99d676320ea251036d164062.txt:2539:5: Warning: Integer Overflow.\n    function createUser(bytes32 _username, string _token) public payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _token = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x690508422d576edb99d676320ea251036d164062.txt:2415:1: Warning: Integer Underflow.\ncontract Extend is usingOraclize {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    OAR = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "38.2"
+}

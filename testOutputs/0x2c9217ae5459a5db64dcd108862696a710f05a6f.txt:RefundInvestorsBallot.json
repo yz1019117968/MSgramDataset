@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2c9217ae5459a5db64dcd108862696a710f05a6f.txt:1581:5: Warning: Integer Overflow.\n    function vote(bytes _vote) public onlyWhenBallotStarted {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vote = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2c9217ae5459a5db64dcd108862696a710f05a6f.txt:1601:5: Warning: Integer Overflow.\n    function isDataYes(bytes data) public constant returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2c9217ae5459a5db64dcd108862696a710f05a6f.txt:1623:5: Warning: Integer Overflow.\n    function isDataNo(bytes data) public constant returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.6"
+}

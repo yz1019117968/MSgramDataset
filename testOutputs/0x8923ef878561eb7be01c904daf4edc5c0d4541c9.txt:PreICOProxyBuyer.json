@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:4281:13: Warning: Timestamp Dependency.\n            if(now >= freezeEndsAt) {\r\n            ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:4037:9: Warning: Re-Entrancy Vulnerability.\n        crowdsale.invest.value(weiRaised)(address(this))", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:3907:16: Warning: Re-Entrancy Vulnerability.\n        return crowdsale.token()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:3959:13: Warning: Integer Overflow.\n            investors.push(investor)\nInteger Overflow occurs if:\n    weiMinimumLimit = 0\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 46152787455146861247439886096176547487069325693987528210303979507065286557696\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:3713:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 57896044618658097711785492504343953926634992332820282019710345101553180702902\n    weiMinimumLimit = 0\n    weiMaximumLimit = 46152787455146861247439886096176547487069325693987528210303979507065286557696\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0", 
+   "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:3733:5: Warning: Integer Overflow.\n    address[] public investors"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:4199:14: Warning: Transaction-Ordering Dependency.\n        if(!(investor.call.value(amount)()"
+   ], 
+   [
+    "./restContracts/0x8923ef878561eb7be01c904daf4edc5c0d4541c9.txt:4199:14: Warning: Transaction-Ordering Dependency.\n        if(!(investor.call.value(amount)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "92.9"
+}

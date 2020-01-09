@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x059468db0af9a1c0079ee0fc1d5773aec585cc72.txt:521:16: Warning: Integer Overflow.\n               balanceOf[ tokenHolder ] +=  studio.getBalance( tokenHolder ) * profit_per_token\nInteger Overflow occurs if:\n    balanceOf[ tokenHolder ] = 80985315913036799507931877122857125575368886666851766953299529542994602491904\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.4"
+}

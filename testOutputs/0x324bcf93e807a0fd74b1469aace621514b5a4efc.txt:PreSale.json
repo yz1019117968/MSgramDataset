@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x324bcf93e807a0fd74b1469aace621514b5a4efc.txt:475:5: Warning: Integer Overflow.\n    function setContactInformation(string info) onlyOwner public {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x324bcf93e807a0fd74b1469aace621514b5a4efc.txt:463:5: Warning: Integer Underflow.\n    string public contactInformation"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.0"
+}

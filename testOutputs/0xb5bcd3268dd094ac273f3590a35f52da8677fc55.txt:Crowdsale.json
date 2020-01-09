@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb5bcd3268dd094ac273f3590a35f52da8677fc55.txt:371:3: Warning: Timestamp Dependency.\n\t\trequire(now < endIco)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb5bcd3268dd094ac273f3590a35f52da8677fc55.txt:407:61: Warning: Integer Underflow.\n\t\tuint restrictedTokens = tokens.mul(restrictedPercent).div(100 - restrictedPercent\nInteger Underflow occurs if:\n    restrictedPercent = 112\n    startIco = 0\n    startPreIco = 0\n    endIco = 1\n    rate = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.1"
+}

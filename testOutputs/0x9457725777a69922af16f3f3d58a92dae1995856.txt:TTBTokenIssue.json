@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9457725777a69922af16f3f3d58a92dae1995856.txt:41:21: Warning: Integer Underflow.\n        uint256 c = a - b\nInteger Underflow occurs if:\n    lastBlockNumber = 1\n    initialYear = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.0"
+}

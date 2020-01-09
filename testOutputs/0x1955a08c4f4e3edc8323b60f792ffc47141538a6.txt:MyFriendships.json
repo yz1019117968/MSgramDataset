@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1955a08c4f4e3edc8323b60f792ffc47141538a6.txt:55:9: Warning: Integer Overflow.\n        numberOfFriends++\nInteger Overflow occurs if:\n    numberOfFriends = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    me = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

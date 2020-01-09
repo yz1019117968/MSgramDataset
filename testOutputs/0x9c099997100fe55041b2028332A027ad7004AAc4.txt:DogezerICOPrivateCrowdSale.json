@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9c099997100fe55041b2028332A027ad7004AAc4.txt:451:5: Warning: Integer Underflow.\n    string public name = \"Dogezer Private Sale ITO\"", 
+   "./restContracts/0x9c099997100fe55041b2028332A027ad7004AAc4.txt:715:3: Warning: Integer Underflow.\n\t\ttokensContractBalance -= _amount\nInteger Underflow occurs if:\n    tokensContractBalance = 0\n    _amount = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.4"
+}

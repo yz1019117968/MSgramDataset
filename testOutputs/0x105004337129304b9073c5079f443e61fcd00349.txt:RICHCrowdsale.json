@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:529:80: Warning: Integer Overflow.\n        return 1 + ((timeBehind - (timeBehind % (icoPeriod + noIcoPeriod))) / (icoPeriod + noIcoPeriod\nInteger Overflow occurs if:\n    icoPeriod = 1\n    noIcoPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    start = 0", 
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:529:50: Warning: Integer Overflow.\n        return 1 + ((timeBehind - (timeBehind % (icoPeriod + noIcoPeriod\nInteger Overflow occurs if:\n    icoPeriod = 1\n    noIcoPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    start = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:631:32: Warning: Integer Underflow.\n        uint256 amountToSend = ethBalance - 100000000\nInteger Underflow occurs if:\n    creator = 0", 
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:475:76: Warning: Integer Underflow.\n        return 1000000 * (tokenBalances[_investor] - deductionInvestor) / (totalTokenIssued - deductionIco\nInteger Underflow occurs if:\n    totalTokenIssued = 1261710171816824807663200761512987165847759827402554525999913192368325019324\n    icoTokenIssued[exeptInIco] = 7268812633433444290086202602463044064410156692978811829684431635086488117248", 
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:467:13: Warning: Integer Underflow.\n        if (totalTokenIssued - deductionIco\nInteger Underflow occurs if:\n    totalTokenIssued = 0\n    icoTokenIssued[exeptInIco] = 1", 
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:475:27: Warning: Integer Underflow.\n        return 1000000 * (tokenBalances[_investor] - deductionInvestor\nInteger Underflow occurs if:\n    tokenBalances[_investor] = 0\n    tokenBalancesPerIco[_investor][exeptInIco] = 1\n    icoTokenIssued[exeptInIco] = 0\n    totalTokenIssued = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:543:30: Warning: Integer Underflow.\n        uint256 timeBehind = now - start\nInteger Underflow occurs if:\n    start = 1", 
+   "./uniqueContractSourceCode/0x105004337129304b9073c5079f443e61fcd00349.txt:519:30: Warning: Integer Underflow.\n        uint256 timeBehind = now - start\nInteger Underflow occurs if:\n    start = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.8"
+}

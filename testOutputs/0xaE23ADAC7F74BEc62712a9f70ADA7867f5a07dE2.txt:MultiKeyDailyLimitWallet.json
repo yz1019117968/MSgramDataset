@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaE23ADAC7F74BEc62712a9f70ADA7867f5a07dE2.txt:93:15: Warning: Integer Overflow.\n\t\tvar amt = ((this.balance + _dailyCount\nInteger Overflow occurs if:\n    dailyCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    lastWithdrawalTime = 0\n    credentials[key] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xaE23ADAC7F74BEc62712a9f70ADA7867f5a07dE2.txt:109:2: Warning: Integer Overflow.\n\tfunction withdrawTo(uint amount, address to, bytes signature) public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    signature = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaE23ADAC7F74BEc62712a9f70ADA7867f5a07dE2.txt:87:8: Warning: Integer Underflow.\n\t\tif ((block.timestamp - lastWithdrawalTime\nInteger Underflow occurs if:\n    lastWithdrawalTime = 1\n    credentials[key] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "42.3"
+}

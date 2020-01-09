@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x45d993af0a16b0419f06fe23a508cc75bfdb447d.txt:261:5: Warning: Integer Underflow.\n    string public symbol = \"HTLR\"", 
+   "./uniqueContractSourceCode/0x45d993af0a16b0419f06fe23a508cc75bfdb447d.txt:259:5: Warning: Integer Underflow.\n    string public name = \"White Pride\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.0"
+}

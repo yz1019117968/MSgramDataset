@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:219:4: Warning: Integer Overflow.\n\t\t\tself.splits[splitIndex].ppm\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:107:31: Warning: Integer Overflow.\n\t\t\tuint value = (msg.value) * self.splits[index].ppm", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:181:48: Warning: Integer Overflow.\n\t\t\t\tuint value = self.deposits[depositIndex] * self.splits[splitIndex]\nInteger Overflow occurs if:\n    user = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:233:4: Warning: Integer Overflow.\n\t\t\tself.deposits.push(msg.value)", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:215:24: Warning: Integer Overflow.\n\t\tif(splitIndex > 0 && self.splits[splitIndex]\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:89:4: Warning: Integer Overflow.\n\t\t\tself.splits[index]\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:181:18: Warning: Integer Overflow.\n\t\t\t\tuint value = self.deposits[depositIndex]\nInteger Overflow occurs if:\n    user = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:89:4: Warning: Integer Overflow.\n\t\t\tself.splits[index] = newSplit\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:301:11: Warning: Integer Overflow.\n\t\treturn (csclib.splits[index]\nInteger Overflow occurs if:\n    index = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    csclib.splits[index] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:181:48: Warning: Integer Overflow.\n\t\t\t\tuint value = self.deposits[depositIndex] * self.splits[splitIndex].ppm\nInteger Overflow occurs if:\n    user = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:301:36: Warning: Integer Overflow.\n\t\treturn (csclib.splits[index].to, csclib.splits[index].ppm\nInteger Overflow occurs if:\n    index = 0\n    csclib.splits[index] = 1", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:247:1: Warning: Integer Overflow.\ncontract ClaimableSplitCoin {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:301:36: Warning: Integer Overflow.\n\t\treturn (csclib.splits[index].to, csclib.splits[index]\nInteger Overflow occurs if:\n    index = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    csclib.splits[index] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:87:20: Warning: Integer Overflow.\n\t\t\tnewSplit.ppm += self.splits[index].ppm\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:87:20: Warning: Integer Overflow.\n\t\t\tnewSplit.ppm += self.splits[index]\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:215:68: Warning: Integer Overflow.\n\t\tif(splitIndex > 0 && self.splits[splitIndex].to == msg.sender && self.splits[splitIndex].ppm\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:219:4: Warning: Integer Overflow.\n\t\t\tself.splits[splitIndex]\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:215:68: Warning: Integer Overflow.\n\t\tif(splitIndex > 0 && self.splits[splitIndex].to == msg.sender && self.splits[splitIndex]\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0", 
+   "./uniqueContractSourceCode/0x50d998d0faf680b9cf44d6cfd9f7c3654056dcc5.txt:87:4: Warning: Integer Overflow.\n\t\t\tnewSplit.ppm += self.splits[index].ppm\nInteger Overflow occurs if:\n    ppm = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    to = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.3"
+}

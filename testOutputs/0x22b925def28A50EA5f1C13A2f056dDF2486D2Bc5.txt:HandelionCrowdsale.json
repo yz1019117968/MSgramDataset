@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x22b925def28A50EA5f1C13A2f056dDF2486D2Bc5.txt:1447:3: Warning: Transaction-Ordering Dependency.\n\t\tmultisigWallet.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x22b925def28A50EA5f1C13A2f056dDF2486D2Bc5.txt:1341:3: Warning: Transaction-Ordering Dependency.\n\t\tmsg.sender.transfer(investedAmount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.8"
+}

@@ -1,0 +1,40 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:641:9: Warning: Timestamp Dependency.\n        if (now < p.earliestPayTime) return;"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:577:9: Warning: Integer Overflow.\n        authorizedPayments.length++\nInteger Overflow occurs if:\n    authorizedPayments.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    allowedSpenders[msg.sender] = 255", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:203:5: Warning: Integer Overflow.\n    function withdrawnTokens(address[] tokens, address _to) onlyContractOwner returns(uint) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:641:19: Warning: Integer Overflow.\n        if (now < p.earliestPayTime\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:659:37: Warning: Integer Overflow.\n        PaymentExecuted(_idPayment, p.recipient\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:645:13: Warning: Integer Overflow.\n        if (p.paid\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:647:28: Warning: Integer Overflow.\n        if (this.balance < p.amount\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:743:9: Warning: Integer Overflow.\n        p.canceled\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1\n    contractOwner = 0", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:633:21: Warning: Integer Overflow.\n        Payment p = authorizedPayments[_idPayment]\nInteger Overflow occurs if:\n    _idPayment = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    authorizedPayments.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:643:13: Warning: Integer Overflow.\n        if (p.canceled\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:639:27: Warning: Integer Overflow.\n        if (msg.sender != p.recipient\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:651:9: Warning: Integer Overflow.\n        p.paid\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:691:21: Warning: Integer Overflow.\n        Payment p = authorizedPayments[_idPayment]\nInteger Overflow occurs if:\n    _idPayment = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    _delay = 0\n    authorizedPayments.length = 28948022309329048855892746252171976963317496166410141009864396001978282409985\n    securityGuard = 0", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:653:14: Warning: Integer Overflow.\n        if (!p.recipient\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:653:31: Warning: Integer Overflow.\n        if (!p.recipient.send(p.amount\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:323:5: Warning: Integer Overflow.\n    Payment[] public authorizedPayments", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:695:14: Warning: Integer Overflow.\n        if ((p.securityGuardDelay\nInteger Overflow occurs if:\n    _delay = 6553601\n    _idPayment = 0\n    authorizedPayments.length = 1\n    securityGuard = 0", 
+   "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:659:50: Warning: Integer Overflow.\n        PaymentExecuted(_idPayment, p.recipient, p.amount\nInteger Overflow occurs if:\n    _idPayment = 0\n    authorizedPayments.length = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:75:9: Warning: Transaction-Ordering Dependency.\n        suicide(msg.sender)"
+   ], 
+   [
+    "./restContracts/0x97465a514b53127f6980b925587e508f07691da7.txt:653:14: Warning: Transaction-Ordering Dependency.\n        if (!p.recipient.send(p.amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.7"
+}

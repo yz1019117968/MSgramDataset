@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6248211b830ce0191c7643b19f5ddb059e018672.txt:133:3: Warning: Integer Overflow.\n\t\tbalanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    admin = 0", 
+   "./uniqueContractSourceCode/0x6248211b830ce0191c7643b19f5ddb059e018672.txt:135:3: Warning: Integer Overflow.\n\t\ttotalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    admin = 0", 
+   "./uniqueContractSourceCode/0x6248211b830ce0191c7643b19f5ddb059e018672.txt:203:3: Warning: Integer Overflow.\n\t\tbalanceOf[_to] += _value\nInteger Overflow occurs if:\n    balanceOf[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balanceOf[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    admin = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6248211b830ce0191c7643b19f5ddb059e018672.txt:47:2: Warning: Integer Underflow.\n\tstring public name", 
+   "./uniqueContractSourceCode/0x6248211b830ce0191c7643b19f5ddb059e018672.txt:49:2: Warning: Integer Underflow.\n\tstring public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.3"
+}

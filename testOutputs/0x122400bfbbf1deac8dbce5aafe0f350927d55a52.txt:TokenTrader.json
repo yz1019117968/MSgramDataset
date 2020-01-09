@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x122400bfbbf1deac8dbce5aafe0f350927d55a52.txt:1043:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x122400bfbbf1deac8dbce5aafe0f350927d55a52.txt:1097:23: Warning: Transaction-Ordering Dependency.\n        else require (msg.sender.send(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x122400bfbbf1deac8dbce5aafe0f350927d55a52.txt:1015:20: Warning: Transaction-Ordering Dependency.\n            return owner.send(ethers)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.6"
+}

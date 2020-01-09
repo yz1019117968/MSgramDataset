@@ -1,0 +1,45 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2103:17: Warning: Timestamp Dependency.\n        require(now > endTime || closed == true", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2103:9: Warning: Timestamp Dependency.\n        require(now > endTime || closed == true)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2017:41: Warning: Integer Overflow.\n        saleStatus.totalReservedApis -= fundersProperty[funder].reservedApis\nInteger Overflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2033:9: Warning: Integer Overflow.\n        fundersProperty[funder].reservedApis\nInteger Overflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2019:9: Warning: Integer Overflow.\n        saleStatus.totalWithdrawedApis += fundersProperty[funder].reservedApis\nInteger Overflow occurs if:\n    saleStatus.totalWithdrawedApis = 1\n    fundersProperty[funder].reservedApis = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2013:9: Warning: Integer Overflow.\n        saleStatus.totalPaidFunds += fundersProperty[funder].reservedFunds\nInteger Overflow occurs if:\n    saleStatus.totalPaidFunds = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    fundersProperty[_target].reservedFunds = 95320360308092064085158862026869462789128858612754216248428463844421952977271", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:1415:5: Warning: Integer Overflow.\n    mapping (address => Property) public fundersProperty", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2019:43: Warning: Integer Overflow.\n        saleStatus.totalWithdrawedApis += fundersProperty[funder].reservedApis\nInteger Overflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2025:71: Warning: Integer Overflow.\n        WithdrawalApis(funder, fundersProperty[funder].reservedFunds, fundersProperty[funder].reservedApis\nInteger Overflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2081:9: Warning: Integer Overflow.\n        fundersProperty[_funder].reservedApis\nInteger Overflow occurs if:\n    fundersProperty[_funder].reservedFunds = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2005:9: Warning: Integer Overflow.\n        fundersProperty[funder].paidFunds\nInteger Overflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2005:9: Warning: Integer Overflow.\n        fundersProperty[funder].paidFunds += fundersProperty[funder].reservedFunds\nInteger Overflow occurs if:\n    fundersProperty[funder].paidFunds = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    fundersProperty[_target].reservedFunds = 95320360308092064085158862026869462789128858612754216248428463844421952977271", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2003:51: Warning: Integer Overflow.\n        fundersProperty[funder].withdrawedApis += fundersProperty[funder].reservedApis\nInteger Overflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2003:9: Warning: Integer Overflow.\n        fundersProperty[funder].withdrawedApis += fundersProperty[funder].reservedApis\nInteger Overflow occurs if:\n    fundersProperty[funder].withdrawedApis = 1\n    fundersProperty[funder].reservedApis = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2003:9: Warning: Integer Overflow.\n        fundersProperty[funder].withdrawedApis\nInteger Overflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2073:9: Warning: Integer Underflow.\n        saleStatus.totalSoldApis -= amountApis\nInteger Underflow occurs if:\n    fundersProperty[_funder].reservedFunds = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    saleStatus.totalSoldApis = 0\n    fundersProperty[_funder].reservedApis = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2075:9: Warning: Integer Underflow.\n        saleStatus.totalReservedApis -= amountApis\nInteger Underflow occurs if:\n    fundersProperty[_funder].reservedFunds = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    saleStatus.totalReservedApis = 0\n    fundersProperty[_funder].reservedApis = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2067:9: Warning: Integer Underflow.\n        saleStatus.totalReceivedFunds -= amountFunds\nInteger Underflow occurs if:\n    fundersProperty[_funder].reservedFunds = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    saleStatus.totalReceivedFunds = 57896044618658097711785492504343953926634992332820282019728792003956564819966\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2011:9: Warning: Integer Underflow.\n        saleStatus.totalReservedFunds -= fundersProperty[funder].reservedFunds\nInteger Underflow occurs if:\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    saleStatus.totalReservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2111:22: Warning: Integer Underflow.\n            amount = this.balance - saleStatus.totalReservedFunds\nInteger Underflow occurs if:\n    endTime = 0\n    saleStatus.totalReservedFunds = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2017:9: Warning: Integer Underflow.\n        saleStatus.totalReservedApis -= fundersProperty[funder].reservedApis\nInteger Underflow occurs if:\n    saleStatus.totalReservedApis = 0\n    fundersProperty[funder].reservedApis = 1\n    fundersProperty[_target].reservedFunds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2069:9: Warning: Integer Underflow.\n        saleStatus.totalReservedFunds -= amountFunds\nInteger Underflow occurs if:\n    fundersProperty[_funder].reservedFunds = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    saleStatus.totalReservedFunds = 57896044618658097711785492504343953926634992332820282019728792003956564819966\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2063:9: Warning: Transaction-Ordering Dependency.\n        _funder.transfer(amountFunds)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:2123:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.2"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:543:9: Warning: Integer Overflow.\n        tokenHolder.revoked\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x7d193819ad03d0dc90f00cccb26e190e95f1f2ac.txt:413:5: Warning: Integer Overflow.\n    mapping(address => TokenHolder) public tokenHolders"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb0d15abb7ef3167cfad71b6e8302a5f9d7b51e77.txt:217:2: Warning: Integer Overflow.\n\tfunction setMotd(string _m) onlyOwner {\r\n\t^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb0d15abb7ef3167cfad71b6e8302a5f9d7b51e77.txt:205:2: Warning: Integer Underflow.\n\tstring public motd"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.1"
+}

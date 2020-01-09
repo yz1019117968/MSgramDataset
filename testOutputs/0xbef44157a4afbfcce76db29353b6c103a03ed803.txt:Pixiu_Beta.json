@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:663:5: Warning: Integer Overflow.\n    function set_exchange_rate(uint[] exchangeRates) onlyAdmin{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    exchangeRates = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:51:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _value = 57896044618658406243889870410726622959457708819736603062141355578937581764608\n    balances[_to] = 94081072505319428064907980419453110058465196176188788072430956560702876136828\n    allowed[_from][msg.sender] = 57896044618658406243889870410726622959457708819736603062141355578937581764608\n    isPayable = 255\n    _from = 1461501637330902918203684832716283019655932542975\n    deposit_address = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:1003:9: Warning: Integer Overflow.\n        members[msg.sender].withdraw += _remain\nInteger Overflow occurs if:\n    members[msg.sender].isExists = 8388736\n    members[msg.sender].dividend = 1140850688\n    members[msg.sender].withdraw = 2147483648\n    isWithdrawable = 65280", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:1129:4: Warning: Integer Overflow.\n\t\t\tmemberArray.push(_to)\nInteger Overflow occurs if:\n    _value = 64454581142138801784915334437474320284769447924155155946150495990921558731889\n    balances[_to] = 46051101657100501394629572781090621324964648790473627641054406070427273300041\n    memberArray.push(_to) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[_to].isExists = 0\n    balances[_from] = 64454581142138801784915334437474320284769447924155155946150495990921558731889\n    allowed[_from][msg.sender] = 64454581142138801784915334437474320284769447924155155946150495990921558731889\n    isPayable = 255\n    _from = 1461501637330902918203684832716283019655932542975\n    deposit_address = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:959:29: Warning: Integer Overflow.\n        uint256 _devidend = members[_member].dividend", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:1087:4: Warning: Integer Overflow.\n\t\t\tmemberArray.push(_to)\nInteger Overflow occurs if:\n    balances[_to] = 43863413946373679788912701092727818559884303025868817347787477804997522938785\n    _value = 36190632104665292862034961949088691625060837226655192873741527527453396738564\n    memberArray.push(_to) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[_to].isExists = 0\n    balances[msg.sender] = 36190632104665292862034961949088691625060837226655192873741527527453396738564\n    isPayable = 255\n    deposit_address = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:1003:9: Warning: Integer Overflow.\n        members[msg.sender].withdraw\nInteger Overflow occurs if:\n    members[msg.sender].isExists = 8388736\n    members[msg.sender].dividend = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    members[msg.sender].withdraw = 0\n    isWithdrawable = 65280", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:1203:17: Warning: Integer Overflow.\n                memberArray.push(msg.sender)\nInteger Overflow occurs if:\n    memberArray.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[msg.sender].isExists = 0\n    deposit_address = 0\n    isPayable = 255\n    exchangeRateArray.length = 0", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:1181:14: Warning: Integer Overflow.\n             deposit_amount += msg.value\nInteger Overflow occurs if:\n    deposit_amount = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    deposit_address = 0\n    isPayable = 255", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:331:1: Warning: Integer Overflow.\ncontract Pixiu_Beta is StandardToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    memberArray.push(_to) = 57896044618658097711785492504343953926622769288254174227419975551710797750118\n    _value = 0\n    balances[_to] = 680564733841876926926749214863536422912\n    members[_to].isExists = 0\n    balances[_from] = 0\n    allowed[_from][msg.sender] = 0\n    isPayable = 255\n    _from = 1461501637330902918203684832716283019655932542975\n    deposit_address = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:961:29: Warning: Integer Overflow.\n        uint256 _withdraw = members[_member].withdraw"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbef44157a4afbfcce76db29353b6c103a03ed803.txt:963:27: Warning: Integer Underflow.\n        uint256 _remain = _devidend - _withdraw\nInteger Underflow occurs if:\n    members[_member].dividend = 0\n    members[_member].withdraw = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.8"
+}

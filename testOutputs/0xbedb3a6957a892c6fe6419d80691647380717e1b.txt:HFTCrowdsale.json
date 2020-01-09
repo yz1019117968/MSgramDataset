@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:113:9: Warning: Integer Overflow.\n        prices.push(_price)\nInteger Overflow occurs if:\n    prices.push(_price) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    creator = 0", 
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:121:9: Warning: Integer Overflow.\n        prices[index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    prices[index] = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    creator = 0", 
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:13:1: Warning: Integer Overflow.\ncontract HFTCrowdsale {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    periods.push(_period) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    creator = 0", 
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:137:9: Warning: Integer Overflow.\n        periods[index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    periods[index] = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    creator = 0", 
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:27:5: Warning: Integer Overflow.\n    uint256[] public periods", 
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:25:5: Warning: Integer Overflow.\n    uint256[] public prices", 
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:129:9: Warning: Integer Overflow.\n        periods.push(_period)\nInteger Overflow occurs if:\n    periods.push(_period) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    creator = 0", 
+   "./restContracts/0xbedb3a6957a892c6fe6419d80691647380717e1b.txt:205:38: Warning: Integer Overflow.\n        uint256 amount = msg.value * prices[price]\nInteger Overflow occurs if:\n    price = 115792089237316195423570961063445081823756406662968791701392476989231810478079\n    period = 0\n    prices.length = 115792089237316195423570961063445081823756406662968791701392476989231810478080\n    periods.length = 1\n    endDate = 2\n    startDate = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.1"
+}

@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb38beba95e0e21a97466c452454debe2658527f7.txt:59:24: Warning: Integer Overflow.\n        if(hashPass == sha3(pass)", 
+   "./restContracts/0xb38beba95e0e21a97466c452454debe2658527f7.txt:25:5: Warning: Integer Overflow.\n    function GetHash(bytes pass) public constant returns (bytes32) {return sha3(pass);}", 
+   "./restContracts/0xb38beba95e0e21a97466c452454debe2658527f7.txt:51:5: Warning: Integer Overflow.\n    function GetGift(bytes pass)\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb38beba95e0e21a97466c452454debe2658527f7.txt:59:24: Warning: Integer Underflow.\n        if(hashPass == sha3(pass)"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb38beba95e0e21a97466c452454debe2658527f7.txt:63:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xb38beba95e0e21a97466c452454debe2658527f7.txt:83:13: Warning: Transaction-Ordering Dependency.\n            sender.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.7"
+}

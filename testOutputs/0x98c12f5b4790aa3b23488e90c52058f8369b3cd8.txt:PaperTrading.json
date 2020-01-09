@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x98c12f5b4790aa3b23488e90c52058f8369b3cd8.txt:29:1: Warning: Integer Overflow.\nfunction addRecord(bytes32 shasum,string remarks) public returns (uint256 recordID) {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    remarks = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./restContracts/0x98c12f5b4790aa3b23488e90c52058f8369b3cd8.txt:9:1: Warning: Integer Overflow.\nrebalance[] public record"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x98c12f5b4790aa3b23488e90c52058f8369b3cd8.txt:9:1: Warning: Integer Underflow.\nrebalance[] public record"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "16.7"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2347:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:55:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    balances[_from] = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    allowance[_from][msg.sender] = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    locked = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2173:5: Warning: Integer Underflow.\n    string public standard", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2177:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2181:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.5"
+}

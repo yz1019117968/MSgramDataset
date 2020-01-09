@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:397:5: Warning: Integer Overflow.\n    function parseInt(string _a, uint _b)  \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _a = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:385:5: Warning: Integer Overflow.\n    function parseInt128(string _a)  constant  returns (uint128) { \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _a = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "17.5"
+}

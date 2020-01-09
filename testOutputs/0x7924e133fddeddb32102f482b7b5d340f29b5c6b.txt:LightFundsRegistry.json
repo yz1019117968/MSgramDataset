@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7924e133fddeddb32102f482b7b5d340f29b5c6b.txt:873:5: Warning: Integer Overflow.\n    address[] public m_investors", 
+   "./uniqueContractSourceCode/0x7924e133fddeddb32102f482b7b5d340f29b5c6b.txt:787:13: Warning: Integer Overflow.\n            m_investors.push(_investor)\nInteger Overflow occurs if:\n    m_state = 0\n    m_investors.push(_investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    m_weiBalances[_investor] = 0", 
+   "./uniqueContractSourceCode/0x7924e133fddeddb32102f482b7b5d340f29b5c6b.txt:645:1: Warning: Integer Overflow.\ncontract LightFundsRegistry is ArgumentsChecker, Ownable, ReentrancyGuard {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    m_state = 0\n    m_investors.push(_investor) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0\n    m_weiBalances[_investor] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7924e133fddeddb32102f482b7b5d340f29b5c6b.txt:753:13: Warning: Transaction-Ordering Dependency.\n            m_owner20.transfer(_20percent)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7924e133fddeddb32102f482b7b5d340f29b5c6b.txt:835:9: Warning: Transaction-Ordering Dependency.\n        payee.transfer(payment)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.6"
+}

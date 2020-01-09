@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:111:17: Warning: Callstack Depth Attack Vulnerability.\n                addr.send(betSize)", 
+   "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:185:17: Warning: Callstack Depth Attack Vulnerability.\n                addr.send(betSize)", 
+   "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:195:13: Warning: Callstack Depth Attack Vulnerability.\n            addr.send(betSize)", 
+   "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:151:13: Warning: Callstack Depth Attack Vulnerability.\n            addr.send(winAmount)", 
+   "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:121:13: Warning: Callstack Depth Attack Vulnerability.\n            addr.send(betSize)", 
+   "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:227:13: Warning: Callstack Depth Attack Vulnerability.\n            addr.send(winAmount)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:59:9: Warning: Integer Underflow.\n        return sWelcome\nInteger Underflow occurs if:\n    return sWelcome = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:281:13: Warning: Transaction-Ordering Dependency.\n            suicide(casino.addr)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5fe5b7546d1628f7348b023a0393de1fc825a4fd.txt:87:13: Warning: Transaction-Ordering Dependency.\n            casino.addr.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.2"
+}

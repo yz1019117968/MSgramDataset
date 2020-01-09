@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3b912fb1b5b9e07e50e43f0404fee038f9a0353c.txt:177:13: Warning: Integer Overflow.\n            balances[msg.sender] += amount\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    votes[country][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    history[msg.sender].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3b912fb1b5b9e07e50e43f0404fee038f9a0353c.txt:161:9: Warning: Integer Overflow.\n        rating[_country] += _amount\nInteger Overflow occurs if:\n    _amount = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    rating[_country] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    votes[_country][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _country = 999\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x3b912fb1b5b9e07e50e43f0404fee038f9a0353c.txt:163:9: Warning: Integer Overflow.\n        votes[_country][msg.sender] += _amount\nInteger Overflow occurs if:\n    _amount = 44369063854674067291029404066660873444229566625561783605068124348664876234748\n    votes[_country][msg.sender] = 85653202831209899131921273706816539903532775246499103660989786173632789612288\n    _country = 999\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561783605068124348664876234748", 
+   "./uniqueContractSourceCode/0x3b912fb1b5b9e07e50e43f0404fee038f9a0353c.txt:155:13: Warning: Integer Overflow.\n            history[msg.sender].push(_country)\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    history[msg.sender].push(_country) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _country = 999\n    _amount = 0\n    votes[_country][msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x3b912fb1b5b9e07e50e43f0404fee038f9a0353c.txt:5:1: Warning: Integer Overflow.\ncontract CountryCoin {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    history[msg.sender].length = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3b912fb1b5b9e07e50e43f0404fee038f9a0353c.txt:91:9: Warning: Integer Underflow.\n        balances[_from] -= _value\nInteger Underflow occurs if:\n    balances[_to] = 7527057961452809734537614991172572888532687760968886376983555329961736011906\n    _value = 81695309390842358055710032141216837164235314346582438525123009498233184454784\n    balances[_from] = 81695309390842358055710032141216837164235314346582438525123009498233184454783\n    allowed[_from][_to] = 81695309390842358055710032141216837164235314346582438525123009498233184454784\n    balances[msg.sender] = 81695309390842358055710032141216837164235314346582438525123009498233184454784", 
+   "./uniqueContractSourceCode/0x3b912fb1b5b9e07e50e43f0404fee038f9a0353c.txt:179:13: Warning: Integer Underflow.\n            rating[country] -= amount\nInteger Underflow occurs if:\n    rating[country] = 0\n    votes[country][msg.sender] = 1\n    history[msg.sender].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.9"
+}

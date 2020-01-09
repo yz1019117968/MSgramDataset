@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x61E24B1E180707dCf883bEb23B09a0845Be09DB4.txt:9:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'", 
+   "./uniqueContractSourceCode/0x61E24B1E180707dCf883bEb23B09a0845Be09DB4.txt:13:5: Warning: Integer Underflow.\n    string public symbol = \"TTNM\"", 
+   "./uniqueContractSourceCode/0x61E24B1E180707dCf883bEb23B09a0845Be09DB4.txt:11:5: Warning: Integer Underflow.\n    string public name = \"Titaneum\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.0"
+}

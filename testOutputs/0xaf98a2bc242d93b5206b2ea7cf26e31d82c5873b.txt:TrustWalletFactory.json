@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xaf98a2bc242d93b5206b2ea7cf26e31d82c5873b.txt:243:44: Warning: Callstack Depth Attack Vulnerability.\n        transaction.execution_successful = transaction.destination.call.value(\r\n        ^\nSpanning multiple lines."
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaf98a2bc242d93b5206b2ea7cf26e31d82c5873b.txt:377:1: Warning: Integer Overflow.\ncontract TrustWalletFactory {\r\n^\nSpanning multiple lines.", 
+   "./restContracts/0xaf98a2bc242d93b5206b2ea7cf26e31d82c5873b.txt:385:9: Warning: Integer Overflow.\n        wallets[msg.sender].push(new TrustWallet(msg.sender))", 
+   "./restContracts/0xaf98a2bc242d93b5206b2ea7cf26e31d82c5873b.txt:379:5: Warning: Integer Overflow.\n    mapping (address => TrustWallet[]) public wallets"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "5.3"
+}

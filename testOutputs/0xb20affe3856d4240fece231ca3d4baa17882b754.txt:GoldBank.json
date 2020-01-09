@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb20affe3856d4240fece231ca3d4baa17882b754.txt:253:51: Warning: Integer Underflow.\n\t    uint256 correctedQuantity = quantity * (10**(decimals-1\nInteger Underflow occurs if:\n    decimals = 0\n    admin = 0", 
+   "./restContracts/0xb20affe3856d4240fece231ca3d4baa17882b754.txt:183:5: Warning: Integer Underflow.\n    string public symbol = \"DNC\"", 
+   "./restContracts/0xb20affe3856d4240fece231ca3d4baa17882b754.txt:273:51: Warning: Integer Underflow.\n\t    uint256 correctedQuantity = quantity * (10**(decimals-1\nInteger Underflow occurs if:\n    decimals = 0\n    admin = 0", 
+   "./restContracts/0xb20affe3856d4240fece231ca3d4baa17882b754.txt:181:2: Warning: Integer Underflow.\n\tstring public name = \"DinarCoin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.4"
+}

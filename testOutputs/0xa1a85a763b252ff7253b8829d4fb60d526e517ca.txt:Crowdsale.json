@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa1a85a763b252ff7253b8829d4fb60d526e517ca.txt:551:9: Warning: Timestamp Dependency.\n        if (now < endTime)  throw"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa1a85a763b252ff7253b8829d4fb60d526e517ca.txt:645:3: Warning: Integer Overflow.\n\t\tbacker.coinSent\nInteger Overflow occurs if:\n    coinSentToEther = 1440256\n    owner = 0", 
+   "./restContracts/0xa1a85a763b252ff7253b8829d4fb60d526e517ca.txt:409:2: Warning: Integer Overflow.\n\tmapping(address => Backer) public backers", 
+   "./restContracts/0xa1a85a763b252ff7253b8829d4fb60d526e517ca.txt:479:14: Warning: Integer Overflow.\n\t\tendTime =  now + CROWDSALE_PERIOD\nInteger Overflow occurs if:\n    owner = 0\n    startTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa1a85a763b252ff7253b8829d4fb60d526e517ca.txt:559:8: Warning: Transaction-Ordering Dependency.\n\t\tif (!multisigEther.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0xa1a85a763b252ff7253b8829d4fb60d526e517ca.txt:559:8: Warning: Transaction-Ordering Dependency.\n\t\tif (!multisigEther.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.1"
+}

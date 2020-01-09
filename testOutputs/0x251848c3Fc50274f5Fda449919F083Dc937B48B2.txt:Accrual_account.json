@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x251848c3Fc50274f5Fda449919F083Dc937B48B2.txt:77:15: Warning: Re-Entrancy Vulnerability.\n           if(_to.call.value(_am)()"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x251848c3Fc50274f5Fda449919F083Dc937B48B2.txt:49:12: Warning: Integer Overflow.\n           investors[_to] += _am\nInteger Overflow occurs if:\n    investors[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x251848c3Fc50274f5Fda449919F083Dc937B48B2.txt:79:12: Warning: Integer Underflow.\n           investors[_to] -= _am\nInteger Underflow occurs if:\n    investors[_to] = 57896044618658097711785492504343953926634992332820282019728792003956564819967"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.2"
+}

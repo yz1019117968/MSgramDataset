@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc006c3cf9141b5b15ce1a3162dda95435d212e61.txt:121:24: Warning: Integer Overflow.\n    Card memory card = cards[_cardId]\nInteger Overflow occurs if:\n    _cardId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    cards[_cardId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0xc006c3cf9141b5b15ce1a3162dda95435d212e61.txt:27:3: Warning: Integer Overflow.\n  Card[] public cards"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.5"
+}

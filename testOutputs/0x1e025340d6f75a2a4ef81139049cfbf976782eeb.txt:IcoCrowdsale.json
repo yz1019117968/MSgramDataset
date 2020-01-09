@@ -1,0 +1,38 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2549:21: Warning: Callstack Depth Attack Vulnerability.\n                    p.investor.send(p.weiAmount)"
+  ], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2015:9: Warning: Timestamp Dependency.\n        require(confirmationPeriodOver || now > endTime.add(confirmationPeriod))"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2593:21: Warning: Integer Overflow.\n                    p.completedSettlement\nInteger Overflow occurs if:\n    investments[_investmentId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    confirmationPeriodOver = 255\n    _investmentId = 0", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2535:30: Warning: Integer Overflow.\n            uint256 tokens = p.tokenAmount\nInteger Overflow occurs if:\n    capReached = 0\n    investments[_investmentId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    confirmationPeriodOver = 255\n    _investmentId = 0", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2527:13: Warning: Integer Overflow.\n        if (p.confirmed\nInteger Overflow occurs if:\n    investments[_investmentId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    confirmationPeriodOver = 255\n    _investmentId = 0", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2589:45: Warning: Integer Overflow.\n            if (p.investor != address(0) && p.weiAmount\nInteger Overflow occurs if:\n    investments[_investmentId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    confirmationPeriodOver = 255\n    _investmentId = 0", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2297:9: Warning: Integer Overflow.\n        investments[_investmentId].confirmed\nInteger Overflow occurs if:\n    endTime = 0\n    _investmentId = 0\n    investments[_investmentId] = 1\n    confirmationPeriodOver = 0\n    confirmationPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    isManager[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:1925:5: Warning: Integer Overflow.\n    address[] public vestingWallets", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2359:5: Warning: Integer Overflow.\n    function batchMintTokenDirect(address[] _toList, uint256[] _tokenList) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _toList = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2591:37: Warning: Integer Overflow.\n                if (p.investor.send(p.weiAmount\nInteger Overflow occurs if:\n    investments[_investmentId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    confirmationPeriodOver = 255\n    _investmentId = 0", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2299:54: Warning: Integer Overflow.\n        ChangedInvestmentConfirmation(_investmentId, investments[_investmentId]\nInteger Overflow occurs if:\n    _investmentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    endTime = 0\n    investments[_investmentId] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    confirmationPeriodOver = 0\n    confirmationPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isManager[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2297:9: Warning: Integer Overflow.\n        investments[_investmentId]\nInteger Overflow occurs if:\n    _investmentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    endTime = 0\n    investments[_investmentId] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    confirmationPeriodOver = 0\n    confirmationPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isManager[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2517:9: Warning: Integer Overflow.\n        p.attemptedSettlement\nInteger Overflow occurs if:\n    investments[_investmentId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    confirmationPeriodOver = 255\n    _investmentId = 0", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2313:5: Warning: Integer Overflow.\n    function batchConfirmPayments(uint256[] _investmentIds) public onlyManager onlyConfirmPayment {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _investmentIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2613:5: Warning: Integer Overflow.\n    function batchSettleInvestments(uint256[] _investmentIds) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _investmentIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2591:21: Warning: Transaction-Ordering Dependency.\n                if (p.investor.send(p.weiAmount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:2591:21: Warning: Transaction-Ordering Dependency.\n                if (p.investor.send(p.weiAmount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "29.4"
+}

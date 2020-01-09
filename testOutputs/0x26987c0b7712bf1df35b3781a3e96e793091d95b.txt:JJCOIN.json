@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x26987c0b7712bf1df35b3781a3e96e793091d95b.txt:3:164: Warning: Integer Overflow.\n contract JJCOIN{string public standard='Token 0.1';string public name;string public symbol;uint8 public decimals;uint256 public totalSupply;address public owner; address [] public users"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x26987c0b7712bf1df35b3781a3e96e793091d95b.txt:3:18: Warning: Integer Underflow.\n contract JJCOIN{string public standard='Token 0.1'", 
+   "./uniqueContractSourceCode/0x26987c0b7712bf1df35b3781a3e96e793091d95b.txt:3:72: Warning: Integer Underflow.\n contract JJCOIN{string public standard='Token 0.1';string public name;string public symbol", 
+   "./uniqueContractSourceCode/0x26987c0b7712bf1df35b3781a3e96e793091d95b.txt:3:232: Warning: Integer Underflow.\n contract JJCOIN{string public standard='Token 0.1';string public name;string public symbol;uint8 public decimals;uint256 public totalSupply;address public owner; address [] public users; mapping(address=>uint256)public balanceOf; string public filehash", 
+   "./uniqueContractSourceCode/0x26987c0b7712bf1df35b3781a3e96e793091d95b.txt:11:47: Warning: Integer Underflow.\n function collectExcess()onlyOwner{owner.send(this.balance-2100000\nInteger Underflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x26987c0b7712bf1df35b3781a3e96e793091d95b.txt:3:53: Warning: Integer Underflow.\n contract JJCOIN{string public standard='Token 0.1';string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.0"
+}

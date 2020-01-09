@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5af9ec6df6edea0761fa841ce56c2e4deb000b31.txt:2107:28: Warning: Integer Overflow.\n\telse if(transStartTime <= startTime + postGoldPeriod\nInteger Overflow occurs if:\n    ethCap = 115792089237316195423570985008687907156371697211558590866466378980452577837054\n    mainWeiRaised = 0\n    startTime = 2\n    postGoldPeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 115792089237316195423570985008687907853269984665640564039457582882013222797310\n    goldListPeriod = 115792089237316195423570985008687907853269984665640564039457582882013222797307\n    goldList[beneficiary] = 255\n    minTransAmount = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.0"
+}

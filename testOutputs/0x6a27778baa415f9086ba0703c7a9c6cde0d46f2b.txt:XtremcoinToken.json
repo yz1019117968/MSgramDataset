@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6a27778baa415f9086ba0703c7a9c6cde0d46f2b.txt:109:2: Warning: Integer Underflow.\n\tstring \tpublic name = \"Xtremcoin\"", 
+   "./uniqueContractSourceCode/0x6a27778baa415f9086ba0703c7a9c6cde0d46f2b.txt:111:2: Warning: Integer Underflow.\n\tstring \tpublic symbol = \"XTR\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.4"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3bd2f6fba04c33b3ee8b7796ed72cb7dd0cac2ff.txt:13:5: Warning: Integer Underflow.\n    string public symbol = 'TDT'", 
+   "./uniqueContractSourceCode/0x3bd2f6fba04c33b3ee8b7796ed72cb7dd0cac2ff.txt:11:5: Warning: Integer Underflow.\n    string public name = 'TDT'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.8"
+}

@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:369:23: Warning: Integer Overflow.\n        uint degree = node.inviteeIndex", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:413:26: Warning: Integer Overflow.\n                shares = node.invitees", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:425:32: Warning: Integer Overflow.\n        shares = node.invitees[node.inviteeIndex", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:391:22: Warning: Integer Overflow.\n            shares = node.invitees", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:425:18: Warning: Integer Overflow.\n        shares = node.invitees", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:391:36: Warning: Integer Overflow.\n            shares = node.invitees[node.inviteeIndex", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:357:13: Warning: Integer Overflow.\n        if(!node.exists", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:425:32: Warning: Integer Overflow.\n        shares = node.invitees[node.inviteeIndex[degree - 1]", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:371:50: Warning: Integer Overflow.\n        uint tierPercentage = getBonusPercentage(node.inviteeIndex", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:413:40: Warning: Integer Overflow.\n                shares = node.invitees[node.inviteeIndex", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:413:40: Warning: Integer Overflow.\n                shares = node.invitees[node.inviteeIndex[i]"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.7"
+}

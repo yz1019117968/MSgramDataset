@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:95:9: Warning: Integer Overflow.\n        ListOfUsers.push(msg.sender)\nInteger Overflow occurs if:\n    ListOfUsers.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    Users[msg.sender].parent = 0\n    RegCost = 0", 
+   "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:117:9: Warning: Integer Overflow.\n        ListOfUsers.push(msg.sender)\nInteger Overflow occurs if:\n    ListOfUsers.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    addr = 0\n    Users[addr].parent = 1461501637330902918203684832716283019655932542975\n    Users[msg.sender].parent = 0\n    RegCost = 0", 
+   "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:5:1: Warning: Integer Overflow.\ncontract EtherGame \r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ListOfUsers.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    addr = 0\n    Users[addr].parent = 1461501637330902918203684832716283019655932542975\n    Users[msg.sender].parent = 0\n    RegCost = 0", 
+   "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:253:21: Warning: Integer Overflow.\n            child = ListOfUsers[i]\nInteger Overflow occurs if:\n    ListOfUsers.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    ListOfUsers[i] = 0", 
+   "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:233:9: Warning: Integer Overflow.\n        return ListOfUsers\nInteger Overflow occurs if:\n    return ListOfUsers = 3618502788666131106986593281521497120414687020801267626233049500247285301247"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:155:45: Warning: Integer Underflow.\n            ToTransfer.transfer(Price/1000*(1000-ParentFee\nInteger Underflow occurs if:\n    Users[msg.sender].level = 730750818665451459101842416358141509827966271488\n    ParentFee = 1001\n    Users[ToTransfer].level = 1461501637330902918203684832716283019655932542976\n    FirstLevelCost = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:113:13: Warning: Transaction-Ordering Dependency.\n            addr.transfer(RegCost)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1f4ee7184e1944aff86fb5ee95e247d1ea05c721.txt:213:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(Owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.1"
+}

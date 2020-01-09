@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x03f6278e5c359a5e8947a62e87d85ac394580d13.txt:11:15: Warning: Integer Overflow.\n\t\tuint256 c = a + b\nInteger Overflow occurs if:\n    remainingAmount = 1\n    releasedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.6"
+}

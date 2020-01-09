@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x320274f5dd332cc3b617b360e8554d95a0b96978.txt:899:3: Warning: Integer Overflow.\n  function whitelistRemove(address[] _addresses) public onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x320274f5dd332cc3b617b360e8554d95a0b96978.txt:875:3: Warning: Integer Overflow.\n  function whitelistAdd(address[] _addresses) public onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x320274f5dd332cc3b617b360e8554d95a0b96978.txt:1069:3: Warning: Integer Overflow.\n  function grantPresaleTokens(address[] recipients, uint256[] eths) public isStarted onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x320274f5dd332cc3b617b360e8554d95a0b96978.txt:1025:7: Warning: Integer Overflow.\n      p.remaining\nInteger Overflow occurs if:\n    state = 1461501637330902918203684832716283019655932542976\n    unlimited = 1\n    end = 1\n    start = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.2"
+}

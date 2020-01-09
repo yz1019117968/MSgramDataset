@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2c6537795def9ee3a4ff5a99dab508fe1c8d2d25.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[msg.sender] = 103261609853907893758166239336489416339792445770894580282987575192288157629439\n    balances[_to] = 115792089213726447777944085582041915672880697073454039525772278253368776491019"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.1"
+}

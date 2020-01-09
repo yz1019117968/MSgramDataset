@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2ceedb62c316665fc30ee8f9657ffcb36be09a96.txt:519:5: Warning: Integer Underflow.\n    string public symbol = \"ETIT\"", 
+   "./uniqueContractSourceCode/0x2ceedb62c316665fc30ee8f9657ffcb36be09a96.txt:517:5: Warning: Integer Underflow.\n    string public name = \"ETH.TOWN Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.6"
+}

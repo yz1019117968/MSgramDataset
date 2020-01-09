@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6f5ac0ad55a612ea106c07d0cd6f5b84ade69ba3.txt:101:1: Warning: Integer Overflow.\ncontract TokenAdder {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6f5ac0ad55a612ea106c07d0cd6f5b84ade69ba3.txt:145:5: Warning: Integer Overflow.\n    address[] public newTokens = [\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.9"
+}

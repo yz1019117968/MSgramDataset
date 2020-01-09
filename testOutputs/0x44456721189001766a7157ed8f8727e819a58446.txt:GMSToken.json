@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x44456721189001766a7157ed8f8727e819a58446.txt:175:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x44456721189001766a7157ed8f8727e819a58446.txt:173:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x44456721189001766a7157ed8f8727e819a58446.txt:171:5: Warning: Integer Underflow.\n    string public standard = 'GMSToken 1.0'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.3"
+}

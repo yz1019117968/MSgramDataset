@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:603:1: Warning: Integer Overflow.\ncontract FishbankChests is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    chests.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    minters[msg.sender] = 255", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:691:9: Warning: Integer Overflow.\n        chests.length++\nInteger Overflow occurs if:\n    chests.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minters[msg.sender] = 255", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:875:17: Warning: Integer Overflow.\n        owner = chests[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853184914073910329423591740356055187587071\n    chests[_tokenId] = 115792089237316195423570985008687907853184914073910329423591740356055187587072", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:885:9: Warning: Integer Overflow.\n        chests[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570961063445081823756572816468264815876589964564589707263\n    _from = 0\n    chests[_tokenId].owner = 0\n    chests[_tokenId] = 115792089237316195423570961063445081823756572816468264815876589964564589707264\n    approved[_tokenId] = 0", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:627:5: Warning: Integer Overflow.\n    Chest[] public chests"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:889:9: Warning: Integer Underflow.\n        balances[_from] -= 1\nInteger Underflow occurs if:\n    _tokenId = 0\n    balances[_from] = 0\n    _from = 0\n    chests[_tokenId].owner = 0\n    chests[_tokenId] = 1\n    approved[_tokenId] = 0", 
+   "./restContracts/0xa98ad92a642570b83b369c4eb70efefe638bc895.txt:773:82: Warning: Integer Underflow.\n                uint24 random = uint16(keccak256(block.coinbase, block.blockhash(block.number - 1\nInteger Underflow occurs if:\n    chests[_tokenId].owner = 95779509802480722744478485512061607693151539203932160\n    chests[_tokenId] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.8"
+}

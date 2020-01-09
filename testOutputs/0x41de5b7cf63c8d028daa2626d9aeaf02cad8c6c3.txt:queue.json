@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x41de5b7cf63c8d028daa2626d9aeaf02cad8c6c3.txt:127:13: Warning: Integer Underflow.\n        r = q.back - q.front\nInteger Underflow occurs if:\n    q.front = 1\n    q.back = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

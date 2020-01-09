@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x375b3ff1df2288630a5372c484ce3f2095e832f3.txt:747:5: Warning: Integer Overflow.\n    lock.releaseTime\nInteger Overflow occurs if:\n    _tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _releaseTime = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x375b3ff1df2288630a5372c484ce3f2095e832f3.txt:723:3: Warning: Integer Overflow.\n  mapping(address => TokenTimeLockVault) public tokenLocks", 
+   "./uniqueContractSourceCode/0x375b3ff1df2288630a5372c484ce3f2095e832f3.txt:749:5: Warning: Integer Overflow.\n    lock.arrayIndex\nInteger Overflow occurs if:\n    _tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _releaseTime = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x375b3ff1df2288630a5372c484ce3f2095e832f3.txt:671:3: Warning: Integer Overflow.\n  address[] public lockIndexes", 
+   "./uniqueContractSourceCode/0x375b3ff1df2288630a5372c484ce3f2095e832f3.txt:661:1: Warning: Integer Overflow.\ncontract FKXTokenTimeLock is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    lockIndexes.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    _tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _releaseTime = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x375b3ff1df2288630a5372c484ce3f2095e832f3.txt:751:5: Warning: Integer Overflow.\n    lockIndexes.push(_beneficiary)\nInteger Overflow occurs if:\n    lockIndexes.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _releaseTime = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x375b3ff1df2288630a5372c484ce3f2095e832f3.txt:827:29: Warning: Integer Overflow.\n      address beneficiary = lockIndexes[i]\nInteger Overflow occurs if:\n    to = 3\n    lockIndexes.length = 115792089237316195423570985008687907853269984665640564039457584007913125445627\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

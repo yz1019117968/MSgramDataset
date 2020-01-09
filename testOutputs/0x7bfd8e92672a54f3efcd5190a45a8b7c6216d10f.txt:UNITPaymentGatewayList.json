@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7bfd8e92672a54f3efcd5190a45a8b7c6216d10f.txt:163:20: Warning: Integer Overflow.\n            delete whitelist[whitelist.length - 1]\nInteger Overflow occurs if:\n    whitelist.length = 16381\n    wlIndex[_checkAddress] = 16384\n    administrator = 0", 
+   "./uniqueContractSourceCode/0x7bfd8e92672a54f3efcd5190a45a8b7c6216d10f.txt:67:5: Warning: Integer Overflow.\n    address[] public whitelist", 
+   "./uniqueContractSourceCode/0x7bfd8e92672a54f3efcd5190a45a8b7c6216d10f.txt:157:17: Warning: Integer Overflow.\n                whitelist[i]\nInteger Overflow occurs if:\n    whitelist.length = 131072\n    wlIndex[_checkAddress] = 64510\n    administrator = 0", 
+   "./uniqueContractSourceCode/0x7bfd8e92672a54f3efcd5190a45a8b7c6216d10f.txt:115:5: Warning: Integer Overflow.\n    function addBulk(address[] _wlAddresses)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x7bfd8e92672a54f3efcd5190a45a8b7c6216d10f.txt:175:5: Warning: Integer Overflow.\n    function removeBulk(address[] _wlAddresses)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x7bfd8e92672a54f3efcd5190a45a8b7c6216d10f.txt:157:32: Warning: Integer Overflow.\n                whitelist[i] = whitelist[i + 1]\nInteger Overflow occurs if:\n    whitelist.length = 32768\n    wlIndex[_checkAddress] = 32190\n    administrator = 0", 
+   "./uniqueContractSourceCode/0x7bfd8e92672a54f3efcd5190a45a8b7c6216d10f.txt:245:1: Warning: Integer Overflow.\ncontract UNITPaymentGatewayList is BasicWhitelist {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    whitelist.length = 1\n    wlIndex[_checkAddress] = 0\n    administrator = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.4"
+}

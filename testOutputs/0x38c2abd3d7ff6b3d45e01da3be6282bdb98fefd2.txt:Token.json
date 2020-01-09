@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x38c2abd3d7ff6b3d45e01da3be6282bdb98fefd2.txt:245:3: Warning: Integer Overflow.\n\t\tbalances[msg.sender] += _amount\nInteger Overflow occurs if:\n    balances[msg.sender] = 101437632267027568767234173898549865436158429376943242789893846124642359570715\n    totalSupply = 12960906724586455698482945406084649359149428105415842839018699840769184763841\n    owner = 0", 
+   "./uniqueContractSourceCode/0x38c2abd3d7ff6b3d45e01da3be6282bdb98fefd2.txt:167:10: Warning: Integer Overflow.\n\t\treturn _transfer(msg.sender, _to, _amount, _data)", 
+   "./uniqueContractSourceCode/0x38c2abd3d7ff6b3d45e01da3be6282bdb98fefd2.txt:165:2: Warning: Integer Overflow.\n\tfunction transfer(address _to, uint256 _amount, bytes _data) external returns (bool) {\r\n\t^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x38c2abd3d7ff6b3d45e01da3be6282bdb98fefd2.txt:267:3: Warning: Integer Underflow.\n\t\ttotalSupply -= _amount\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457575000713874898942\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x38c2abd3d7ff6b3d45e01da3be6282bdb98fefd2.txt:73:2: Warning: Integer Underflow.\n\tstring public name", 
+   "./uniqueContractSourceCode/0x38c2abd3d7ff6b3d45e01da3be6282bdb98fefd2.txt:75:2: Warning: Integer Underflow.\n\tstring public symbol", 
+   "./uniqueContractSourceCode/0x38c2abd3d7ff6b3d45e01da3be6282bdb98fefd2.txt:269:3: Warning: Integer Underflow.\n\t\tbalances[owner] -= _amount\nInteger Underflow occurs if:\n    balances[owner] = 115792089237316195423570985008687907853269984665640564039457575000713874898942\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.3"
+}

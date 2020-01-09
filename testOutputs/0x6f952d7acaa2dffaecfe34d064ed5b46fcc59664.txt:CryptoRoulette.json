@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6f952d7acaa2dffaecfe34d064ed5b46fcc59664.txt:75:9: Warning: Integer Overflow.\n        gamesPlayed.push(game)\nInteger Overflow occurs if:\n    number = 15\n    betPrice = 0", 
+   "./uniqueContractSourceCode/0x6f952d7acaa2dffaecfe34d064ed5b46fcc59664.txt:39:5: Warning: Integer Overflow.\n    Game[] public gamesPlayed"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.2"
+}

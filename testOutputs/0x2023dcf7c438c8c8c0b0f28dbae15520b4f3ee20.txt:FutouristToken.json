@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2023dcf7c438c8c8c0b0f28dbae15520b4f3ee20.txt:85:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    lockedUntilTime = 0\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x2023dcf7c438c8c8c0b0f28dbae15520b4f3ee20.txt:297:3: Warning: Integer Overflow.\n  function approveAndCall(address _spender, uint256 _value, bytes _extraData) lockAffected returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2023dcf7c438c8c8c0b0f28dbae15520b4f3ee20.txt:189:3: Warning: Integer Overflow.\n  function lockUntil(uint256 _untilTime, string _reason) onlyOwner {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2023dcf7c438c8c8c0b0f28dbae15520b4f3ee20.txt:213:3: Warning: Integer Underflow.\n  string public standard", 
+   "./uniqueContractSourceCode/0x2023dcf7c438c8c8c0b0f28dbae15520b4f3ee20.txt:215:3: Warning: Integer Underflow.\n  string public name", 
+   "./uniqueContractSourceCode/0x2023dcf7c438c8c8c0b0f28dbae15520b4f3ee20.txt:217:3: Warning: Integer Underflow.\n  string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.4"
+}

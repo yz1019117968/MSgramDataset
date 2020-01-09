@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1513:17: Warning: Timestamp Dependency.\n        require(time() >= startTimeEarlyBird &&\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1941:9: Warning: Timestamp Dependency.\n        if(now<startTime)\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1513:17: Warning: Timestamp Dependency.\n        require(time() >= startTimeEarlyBird &&\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1653:9: Warning: Integer Overflow.\n        ratio[_day]\nInteger Overflow occurs if:\n    ratio[_day] = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1769:9: Warning: Integer Overflow.\n        totalContributedETH +=_amount\nInteger Overflow occurs if:\n    totalContributedETH = 1\n    FCC = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1483:5: Warning: Integer Overflow.\n    uint256[] public ratio"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1717:13: Warning: Transaction-Ordering Dependency.\n            destEthFoundationDev.transfer(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1a41cdcb663cf672fbc6344b851736af2edbe703.txt:1899:13: Warning: Transaction-Ordering Dependency.\n            owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.4"
+}

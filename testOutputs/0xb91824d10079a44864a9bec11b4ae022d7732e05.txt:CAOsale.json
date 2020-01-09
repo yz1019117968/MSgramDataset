@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:263:9: Warning: Timestamp Dependency.\n        if (now >= deadline) _"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:75:8: Warning: Integer Overflow.\n       balanceOf[_to] += _value\nInteger Overflow occurs if:\n    balanceOf[_to] = 1", 
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:239:9: Warning: Integer Overflow.\n        amountRaised += amount\nInteger Overflow occurs if:\n    amountRaised = 1\n    crowdsaleClosed = 0", 
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:99:24: Warning: Integer Overflow.\n         totalSupply = totalSupply + _amount\nInteger Overflow occurs if:\n    totalSupply = 1", 
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:233:9: Warning: Integer Overflow.\n        balance[msg.sender] += amount\nInteger Overflow occurs if:\n    balance[msg.sender] = 1\n    crowdsaleClosed = 0", 
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:101:10: Warning: Integer Overflow.\n         balanceOf[_to] += _amount\nInteger Overflow occurs if:\n    balanceOf[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:69:8: Warning: Integer Underflow.\n       balanceOf[msg.sender] -= _value\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 0", 
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:9:6: Warning: Integer Underflow.\n     string public name = \"cao token\"", 
+   "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:11:6: Warning: Integer Underflow.\n     string public symbol = \"CAO\""
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:349:13: Warning: Transaction-Ordering Dependency.\n            beneficiary.transfer(amountRaised)"
+   ], 
+   [
+    "./restContracts/0xb91824d10079a44864a9bec11b4ae022d7732e05.txt:329:17: Warning: Transaction-Ordering Dependency.\n                msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.2"
+}

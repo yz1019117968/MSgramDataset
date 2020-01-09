@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1d95a10ee67595aee46f82983c567b92f5e6534a.txt:207:7: Warning: Integer Overflow.\n      voters.push(msg.sender)\nInteger Overflow occurs if:\n    voters.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    votes[msg.sender] = 0\n    candidates = 372682917519380244141939632342652170012262798458880\n    _candidate = 255\n    endBlock = 0", 
+   "./uniqueContractSourceCode/0x1d95a10ee67595aee46f82983c567b92f5e6534a.txt:167:3: Warning: Integer Overflow.\n  address[] public voters", 
+   "./uniqueContractSourceCode/0x1d95a10ee67595aee46f82983c567b92f5e6534a.txt:141:1: Warning: Integer Overflow.\ncontract Voting is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    voters.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    votes[msg.sender] = 0\n    candidates = 372682917519380244141939632342652170012262798458880\n    _candidate = 255\n    endBlock = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1d95a10ee67595aee46f82983c567b92f5e6534a.txt:343:25: Warning: Integer Underflow.\n      _candidateIndex = votes[voters[i]] - 1\nInteger Underflow occurs if:\n    endBlock = 0\n    votes[voters[i]] = 0\n    voters.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    candidates = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.9"
+}

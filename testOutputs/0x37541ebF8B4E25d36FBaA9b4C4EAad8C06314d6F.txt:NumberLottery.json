@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x37541ebF8B4E25d36FBaA9b4C4EAad8C06314d6F.txt:95:11: Warning: Integer Overflow.\n          log.push(gameHistory)\nInteger Overflow occurs if:\n    _number = 0\n    minBet = 0", 
+   "./uniqueContractSourceCode/0x37541ebF8B4E25d36FBaA9b4C4EAad8C06314d6F.txt:17:1: Warning: Integer Overflow.\ncontract NumberLottery \r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _number = 2\n    minBet = 0", 
+   "./uniqueContractSourceCode/0x37541ebF8B4E25d36FBaA9b4C4EAad8C06314d6F.txt:45:3: Warning: Integer Overflow.\n  GameHistory[] public log"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.3"
+}

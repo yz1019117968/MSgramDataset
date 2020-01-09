@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2aec18c5500f21359ce1bea5dc1777344df4c0dc.txt:825:46: Warning: Integer Underflow.\n            balances[unsoldVestingAddress] = FT_TOKEN_SALE_CAP - fttIssued\nInteger Underflow occurs if:\n    fttIssued = 600231669438663385241616384\n    tdeActive = 47890485652059026823698344598447161988085597568237568\n    owner = 0\n    tdeDuration = 0\n    tdeStartTime = 0", 
+   "./uniqueContractSourceCode/0x2aec18c5500f21359ce1bea5dc1777344df4c0dc.txt:833:47: Warning: Integer Underflow.\n        balances[operationalReserveAddress] = FT_OPERATIONAL_FUND - FT_TEAM_FUND\nInteger Underflow occurs if:\n    tdeActive = 4683306745569073870523352656910977207791036769655886708736\n    FT_OPERATIONAL_FUND = 0\n    FT_TEAM_FUND = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2aec18c5500f21359ce1bea5dc1777344df4c0dc.txt:435:5: Warning: Integer Underflow.\n    string public symbol = \"FTT\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.1"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x452a72e290feeeb08ff80a08acdac2267cc29c06.txt:145:3: Warning: Integer Overflow.\n  function setIPFSParameter(string _name, string _ipfsValue) onlyOwner public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x452a72e290feeeb08ff80a08acdac2267cc29c06.txt:135:3: Warning: Integer Overflow.\n  function setParameter(string _name, string _value) onlyOwner public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x452a72e290feeeb08ff80a08acdac2267cc29c06.txt:155:3: Warning: Integer Overflow.\n  function getParameter(string _name) public constant returns (string){\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.5"
+}

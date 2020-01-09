@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xacaf29c12c91268a0d87c2a35d8e6063ffb939b5.txt:127:13: Warning: Callstack Depth Attack Vulnerability.\n            beneficiary.send(amountToSend)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xacaf29c12c91268a0d87c2a35d8e6063ffb939b5.txt:91:13: Warning: Integer Overflow.\n            balanceOf[msg.sender] += amount\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 89660649888868366171417216235708288031085258661234677303951427843448891257349", 
+   "./restContracts/0xacaf29c12c91268a0d87c2a35d8e6063ffb939b5.txt:93:13: Warning: Integer Overflow.\n            amountRaised += amount\nInteger Overflow occurs if:\n    amountRaised = 89660649888868366171417216235708288031085258661234677303951427843448891257349", 
+   "./restContracts/0xacaf29c12c91268a0d87c2a35d8e6063ffb939b5.txt:95:13: Warning: Integer Overflow.\n            currentBalance += amount\nInteger Overflow occurs if:\n    currentBalance = 89660649888868366171417216235708288031085258661234677303951427843448891257349"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "11.9"
+}

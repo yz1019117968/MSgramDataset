@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:373:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:157:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:371:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:67:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:401:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269983367566349405750676875289047334910\n    totalSupply = 1", 
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:421:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    balanceOf[_from] = 115565932813024562229384322928592814283244066726840484812818018414147674308606\n    totalSupply = 1\n    allowance[_from][msg.sender] = 2", 
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:63:5: Warning: Integer Underflow.\n    string public standard = \"Token 0.1\"", 
+   "./restContracts/0xa6b0412276b2484cfb370890b9d07e0c8f1f7684.txt:65:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.4"
+}

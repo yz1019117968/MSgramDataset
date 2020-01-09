@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x937251fca959f81f7fbb7cd2f3ea7f94941a78b2.txt:1029:9: Warning: Integer Overflow.\n        contractIds.push(_id)\nInteger Overflow occurs if:\n    contractIds.push(_id) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x937251fca959f81f7fbb7cd2f3ea7f94941a78b2.txt:915:1: Warning: Integer Overflow.\ncontract FlightDelayController is Owned, FlightDelayConstants {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contractIds.push(_id) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0", 
+   "./restContracts/0x937251fca959f81f7fbb7cd2f3ea7f94941a78b2.txt:933:5: Warning: Integer Overflow.\n    bytes32[] public contractIds"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.2"
+}

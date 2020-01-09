@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:577:3: Warning: Integer Overflow.\n  function approveAndCall(address _spender, uint256 _amount, bytes _extraData) returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:871:50: Warning: Integer Overflow.\n              Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640254554447762662844404858880\n    controller = 1461501637330902918203684832716283019655932542975\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 0\n    allowed[_from][msg.sender] = 1\n    transfersEnabled = 255", 
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:861:41: Warning: Integer Overflow.\n      if ((checkpoints.length == 0) || (checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    controller = 1461501637330902918203684832716283019655932542975\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 170141183460469231731687302616372477949\n    allowed[_from][msg.sender] = 1\n    transfersEnabled = 255", 
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:923:3: Warning: Integer Overflow.\n  function createCloneToken(\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:729:3: Warning: Integer Overflow.\n  function importPresaleBalances(address[] _addresses, uint256[] _balances) onlyController returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:229:3: Warning: Integer Underflow.\n  string public name", 
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:233:3: Warning: Integer Underflow.\n  string public version", 
+   "./uniqueContractSourceCode/0x51541130834f4408f0ac2a3af88318e1c30a1d3d.txt:231:3: Warning: Integer Underflow.\n  string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.3"
+}

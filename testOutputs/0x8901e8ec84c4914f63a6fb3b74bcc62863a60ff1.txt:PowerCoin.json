@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x8901e8ec84c4914f63a6fb3b74bcc62863a60ff1.txt:265:14: Warning: Re-Entrancy Vulnerability.\n        if (!_pd.call.value(_etA)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8901e8ec84c4914f63a6fb3b74bcc62863a60ff1.txt:245:5: Warning: Integer Underflow.\n    string public name = \"CapricornCoin\"", 
+   "./restContracts/0x8901e8ec84c4914f63a6fb3b74bcc62863a60ff1.txt:247:5: Warning: Integer Underflow.\n    string public symbol = \"CCC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.5"
+}

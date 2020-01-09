@@ -1,0 +1,59 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Re-Entrancy Vulnerability.\n    return _to.call.value(_value).gas(_gas)(_code)"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:765:25: Warning: Integer Overflow.\n    return rawDetailsOf(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:655:3: Warning: Integer Overflow.\n  function register(string _name) external payable {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:711:3: Warning: Integer Overflow.\n  function setAttribute(string _name, string _key, bytes _value) external {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:713:21: Warning: Integer Overflow.\n    rawSetAttribute(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:721:23: Warning: Integer Overflow.\n    rawWipeAttributes(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:719:3: Warning: Integer Overflow.\n  function wipeAttributes(string _name, bytes32[] _keys) external {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:697:12: Warning: Integer Overflow.\n    rawBuy(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:315:3: Warning: Integer Overflow.\n  function rawSetAttribute(bytes32 _name, bytes32 _key, bytes _value)\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:423:14: Warning: Integer Overflow.\n    _value = nameToRecord[_name].attrs", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:679:3: Warning: Integer Overflow.\n  function transferFrom(address _from, address _to, string _name) external {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:747:3: Warning: Integer Overflow.\n  function ownerOf(string _name) external view returns (address _owner) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:755:3: Warning: Integer Overflow.\n  function detailsOf(string _name, string _key)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:421:28: Warning: Integer Overflow.\n    _price = _computePrice(nameToRecord[_name].price", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:687:3: Warning: Integer Overflow.\n  function setPrice(string _name, uint256 _price) external {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:525:22: Warning: Integer Overflow.\n    return _price * (10000 + commission\nInteger Overflow occurs if:\n    commission = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:665:22: Warning: Integer Overflow.\n    rawTransfer(_to, _stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:705:16: Warning: Integer Overflow.\n    rawUseName(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:749:25: Warning: Integer Overflow.\n    _owner = rawOwnerOf(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:673:21: Warning: Integer Overflow.\n    rawApprove(_to, _stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:271:5: Warning: Integer Overflow.\n    nameToRecord[_name].price\nInteger Overflow occurs if:\n    nameToRecord[_name].owner = 0", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Integer Overflow.\n    return _to.call.value(_value).gas(_gas)(_code)\nInteger Overflow occurs if:\n    manager = 0", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:727:3: Warning: Integer Overflow.\n  function sendEther(string _name) external payable returns (bool _result) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:671:3: Warning: Integer Overflow.\n  function approve(address _to, string _name) external {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:689:17: Warning: Integer Overflow.\n    rawSetPrice(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:485:5: Warning: Integer Overflow.\n    nameToRecord[_name] = Record(_to, 0)\nInteger Overflow occurs if:\n    ownerToName[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    nameToApproved[_name] = 0\n    nameToRecord[_name].owner = 0", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:681:33: Warning: Integer Overflow.\n    rawTransferFrom(_from, _to, _stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:199:3: Warning: Integer Overflow.\n  mapping (bytes32 => Record) public nameToRecord", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:657:17: Warning: Integer Overflow.\n    rawRegister(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:695:3: Warning: Integer Overflow.\n  function buy(string _name) external payable {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:333:3: Warning: Integer Overflow.\n  function rawWipeAttributes(bytes32 _name, bytes32[] _keys)\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:729:28: Warning: Integer Overflow.\n    _result = rawSendEther(_stringToBytes32(_name)", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:703:3: Warning: Integer Overflow.\n  function useName(string _name) external {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:663:3: Warning: Integer Overflow.\n  function transfer(address _to, string _name) external {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:423:5: Warning: Integer Underflow.\n    _value = nameToRecord[_name].attrs[_key]\nInteger Underflow occurs if:\n    _value = 1", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Integer Underflow.\n    return _to.call.value(_value).gas(_gas)(_code)\nInteger Underflow occurs if:\n    manager = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:59:5: Warning: Transaction-Ordering Dependency.\n    manager.transfer(address(this).balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:365:7: Warning: Transaction-Ordering Dependency.\n      _to.send(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.1"
+}

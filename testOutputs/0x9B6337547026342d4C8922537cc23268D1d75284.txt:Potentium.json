@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9B6337547026342d4C8922537cc23268D1d75284.txt:77:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    owner = 0\n    balancesHold[userAdder] = 28948022309329048855892746252536857540965498693236855333733239976696728411411\n    balances[_to] = 101318078082651670996016930740970119644222732245901282737997742367656388534055\n    allParticipants.length = 1461501637330902918203684832716283019655932542980\n    allowed[_from][msg.sender] = 28948022309329048855892746252536857540965498693236855333733239976696728411411\n    balances[_from] = 28948022309329048855892746252536857540965498693236855333733239976696728411411\n    allParticipants[i] = 1461501637330902918203684832716283019655932542975\n    balancesHold[userAdder] = 0\n    balancesHold[userAdder] = 0\n    balancesHold[userAdder] = 0\n    balancesHold[userAdder] = 0\n    balancesHold[userAdder] = 0\n    balancesHold[userAdder] = 0", 
+   "./restContracts/0x9B6337547026342d4C8922537cc23268D1d75284.txt:741:7: Warning: Integer Overflow.\n      balances[owner] +=userBal\nInteger Overflow occurs if:\n    balances[owner] = 1\n    balances[_userAdd] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x9B6337547026342d4C8922537cc23268D1d75284.txt:713:16: Warning: Integer Overflow.\n        return allParticipants[index]\nInteger Overflow occurs if:\n    allParticipants[index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9B6337547026342d4C8922537cc23268D1d75284.txt:175:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0x9B6337547026342d4C8922537cc23268D1d75284.txt:755:9: Warning: Transaction-Ordering Dependency.\n        _accountByOwner.transfer(balanceToTransfer)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.9"
+}

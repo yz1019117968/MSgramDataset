@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1bee0ba6c6dee64b3ea062ba2f779e0e8ff4d733.txt:379:5: Warning: Integer Underflow.\n    string public symbol = \"SIM\"", 
+   "./uniqueContractSourceCode/0x1bee0ba6c6dee64b3ea062ba2f779e0e8ff4d733.txt:377:5: Warning: Integer Underflow.\n    string public name = \"SIMPLECOIN\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1bee0ba6c6dee64b3ea062ba2f779e0e8ff4d733.txt:783:14: Warning: Transaction-Ordering Dependency.\n        if (!TEAM_WALLET.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1bee0ba6c6dee64b3ea062ba2f779e0e8ff4d733.txt:843:14: Warning: Transaction-Ordering Dependency.\n        if (!TEAM_WALLET.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.2"
+}

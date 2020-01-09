@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2e87fbbf2f222e8dc16ae29441a47ffc07503063.txt:933:47: Warning: Integer Overflow.\n            uint256 lastNftWithSubstitution = _tokensOfOwnerWithSubstitutions[from][_tokensOfOwnerWithSubstitutions[from].length - 1]\nInteger Overflow occurs if:\n    _ownedTokensIndexWithSubstitutions[_tokenId] = 115792089237316195323137357242501015631897353894317901381819896896488576385021\n    _tokenOwnerWithSubstitutions[_tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x2e87fbbf2f222e8dc16ae29441a47ffc07503063.txt:945:13: Warning: Integer Overflow.\n            _tokensOfOwnerWithSubstitutions[from][indexToDelete]\nInteger Overflow occurs if:\n    _ownedTokensIndexWithSubstitutions[_tokenId] = 57894277771488007035787352020145292980435494416604511305370121286500961222655\n    _tokenOwnerWithSubstitutions[_tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x2e87fbbf2f222e8dc16ae29441a47ffc07503063.txt:1159:1: Warning: Integer Overflow.\ncontract SuOperation is SuNFT {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _tokenOwnerWithSubstitutions[_tokenId] = 1461501637330902918203684832716283019655932542975\n    _ownedTokensIndexWithSubstitutions[_tokenId] = 115792089237316195423570985008676489871728336986592097751701988046822067666944", 
+   "./uniqueContractSourceCode/0x2e87fbbf2f222e8dc16ae29441a47ffc07503063.txt:951:16: Warning: Integer Overflow.\n        delete _tokensOfOwnerWithSubstitutions[from][_tokensOfOwnerWithSubstitutions[from].length - 1]\nInteger Overflow occurs if:\n    _tokenOwnerWithSubstitutions[_tokenId] = 1461501637330902918203684832716283019655932542975\n    _ownedTokensIndexWithSubstitutions[_tokenId] = 115792089237315989735501319857932638482122164996827441197474379810430211063808", 
+   "./uniqueContractSourceCode/0x2e87fbbf2f222e8dc16ae29441a47ffc07503063.txt:863:20: Warning: Integer Overflow.\n        _tokenId = _tokensOfOwnerWithSubstitutions[_owner][_index]\nInteger Overflow occurs if:\n    _tokensOfOwnerWithSubstitutions[_owner].length = 115792089237316195423570985008687907853269984665640564039457583867175641284608"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2e87fbbf2f222e8dc16ae29441a47ffc07503063.txt:933:85: Warning: Integer Underflow.\n            uint256 lastNftWithSubstitution = _tokensOfOwnerWithSubstitutions[from][_tokensOfOwnerWithSubstitutions[from].length - 1\nInteger Underflow occurs if:\n    _ownedTokensIndexWithSubstitutions[_tokenId] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _tokenOwnerWithSubstitutions[_tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x2e87fbbf2f222e8dc16ae29441a47ffc07503063.txt:931:30: Warning: Integer Underflow.\n        if (indexToDelete != _tokensOfOwnerWithSubstitutions[from].length - 1\nInteger Underflow occurs if:\n    _ownedTokensIndexWithSubstitutions[_tokenId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _tokenOwnerWithSubstitutions[_tokenId] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.5"
+}

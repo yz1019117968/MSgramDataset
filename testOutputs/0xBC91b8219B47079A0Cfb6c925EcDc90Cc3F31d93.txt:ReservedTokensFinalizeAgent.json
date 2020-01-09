@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xBC91b8219B47079A0Cfb6c925EcDc90Cc3F31d93.txt:3177:23: Warning: Integer Overflow.\n    uint endLooping = startLooping + batch\nInteger Overflow occurs if:\n    reservedTokensDistributionBatch = 110794988524387396331809141918678073524593265992944051760320974634531384459265\n    distributedReservedTokensDestinationsLen = 87321226144298698987138247421811360582692040390041828142092621723982266105856\n    reservedTokensAreDistributed = 0\n    crowdsale = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.8"
+}

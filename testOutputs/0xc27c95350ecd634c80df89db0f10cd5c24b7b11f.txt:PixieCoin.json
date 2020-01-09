@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc27c95350ecd634c80df89db0f10cd5c24b7b11f.txt:201:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc27c95350ecd634c80df89db0f10cd5c24b7b11f.txt:107:5: Warning: Integer Overflow.\n    function multisend(address _tokenAddr, address[] dests, uint256[] values)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dests = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc27c95350ecd634c80df89db0f10cd5c24b7b11f.txt:85:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xc27c95350ecd634c80df89db0f10cd5c24b7b11f.txt:83:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.5"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1d4105534da120da243281cfc3f26aaf038e2d6f.txt:65:21: Warning: Integer Overflow.\n        uint256 z = _x + _y\nInteger Overflow occurs if:\n    tokensReleasedToEarlyInvestor = 27633488312183497605865080524521908186309323324830908263660058109049469515470\n    balanceOf[_investorAddress] = 66041209806336016143798884077648113510312356050462300305224003817556575980659\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    currentSupply = 27633488312183497605865080524521908186309323324830852600982126602271874915516\n    stopped = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1d4105534da120da243281cfc3f26aaf038e2d6f.txt:177:5: Warning: Integer Underflow.\n    string public symbol = \"\"", 
+   "./uniqueContractSourceCode/0x1d4105534da120da243281cfc3f26aaf038e2d6f.txt:815:42: Warning: Integer Underflow.\n        uint256 currentTranche = uint256(now - createTime\nInteger Underflow occurs if:\n    createTime = 115792089237316195423570985008687907853269984665640564039457584007913124659201\n    tokensReleasedToTeam = 1199999999999999999999999999\n    stopped = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1d4105534da120da243281cfc3f26aaf038e2d6f.txt:767:42: Warning: Integer Underflow.\n        uint256 currentTranche = uint256(now - createTime\nInteger Underflow occurs if:\n    createTime = 115792089237316195423570985008687907853269984665640564039457584007913124659201\n    tokensReleasedToEcosystem = 1799999999999999999999999999\n    stopped = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1d4105534da120da243281cfc3f26aaf038e2d6f.txt:175:5: Warning: Integer Underflow.\n    string public name = \"\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.4"
+}

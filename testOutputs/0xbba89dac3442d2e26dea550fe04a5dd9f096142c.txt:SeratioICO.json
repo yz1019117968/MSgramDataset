@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbba89dac3442d2e26dea550fe04a5dd9f096142c.txt:695:25: Warning: Integer Overflow.\n        return time >= (IcoPhaseOneArray[IcoPhaseOneArray.length-1]\nInteger Overflow occurs if:\n    IcoPhaseOneArray.length = 115792089237316195423570985008687907853227449369775446731524662181984158613504", 
+   "./restContracts/0xbba89dac3442d2e26dea550fe04a5dd9f096142c.txt:687:16: Warning: Integer Overflow.\n        return todaysConfig.tokenPriceInPoundPences\nInteger Overflow occurs if:\n    IcoPhaseOneArray.length = 1\n    time = 0", 
+   "./restContracts/0xbba89dac3442d2e26dea550fe04a5dd9f096142c.txt:685:50: Warning: Integer Overflow.\n        IcoPhaseOneConfig storage todaysConfig = IcoPhaseOneArray[getIcoPhaseOneThreeDayIndex(time)]\nInteger Overflow occurs if:\n    IcoPhaseOneArray.length = 115792089237316195423570985008687907853227449369775446731524662181984158613504\n    time = 0", 
+   "./restContracts/0xbba89dac3442d2e26dea550fe04a5dd9f096142c.txt:673:25: Warning: Integer Overflow.\n            if (time >= IcoPhaseOneArray[indexToEvaluate]\nInteger Overflow occurs if:\n    IcoPhaseOneArray.length = 115792089237316195423570985008687907853227449369775446731524662181984158613504"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbba89dac3442d2e26dea550fe04a5dd9f096142c.txt:695:42: Warning: Integer Underflow.\n        return time >= (IcoPhaseOneArray[IcoPhaseOneArray.length-1\nInteger Underflow occurs if:\n    IcoPhaseOneArray.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.7"
+}

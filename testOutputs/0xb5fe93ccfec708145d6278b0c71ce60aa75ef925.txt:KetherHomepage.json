@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:275:9: Warning: Integer Overflow.\n        Publish(_idx, ad.link, ad.image, ad.title, ad.NSFW || ad.forceNSFW)\nInteger Overflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:125:5: Warning: Integer Overflow.\n    Ad[] public ads", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:275:42: Warning: Integer Overflow.\n        Publish(_idx, ad.link, ad.image, ad.title\nInteger Overflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:269:25: Warning: Integer Overflow.\n        Ad storage ad = ads[_idx]\nInteger Overflow occurs if:\n    _idx = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    ads[_idx] = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:275:32: Warning: Integer Overflow.\n        Publish(_idx, ad.link, ad.image\nInteger Overflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:271:9: Warning: Integer Overflow.\n        ad.forceNSFW\nInteger Overflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:275:23: Warning: Integer Overflow.\n        Publish(_idx, ad.link\nInteger Overflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:223:5: Warning: Integer Overflow.\n    function publish(uint _idx, string _link, string _image, string _title, bool _NSFW) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _link = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:275:52: Warning: Integer Overflow.\n        Publish(_idx, ad.link, ad.image, ad.title, ad.NSFW\nInteger Overflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:275:63: Warning: Integer Overflow.\n        Publish(_idx, ad.link, ad.image, ad.title, ad.NSFW || ad.forceNSFW\nInteger Overflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:275:9: Warning: Integer Underflow.\n        Publish(_idx, ad.link, ad.image, ad.title, ad.NSFW || ad.forceNSFW)\nInteger Underflow occurs if:\n    _idx = 0\n    ads[_idx] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925.txt:125:5: Warning: Integer Underflow.\n    Ad[] public ads"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.5"
+}

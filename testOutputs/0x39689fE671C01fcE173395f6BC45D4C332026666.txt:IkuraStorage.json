@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x39689fE671C01fcE173395f6BC45D4C332026666.txt:155:21: Warning: Integer Overflow.\n        assert((z = x + y\nInteger Overflow occurs if:\n    coinAllowances[owner_][spender] = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.6"
+}

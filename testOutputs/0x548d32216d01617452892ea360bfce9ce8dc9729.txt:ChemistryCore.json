@@ -1,0 +1,36 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1163:5: Warning: Integer Overflow.\n    function getElementOwners(uint256[] _elementIds) external view returns (address[] memory owners) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _elementIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1017:2: Warning: Integer Overflow.\n\tfunction priceOfElements(uint256[] _elementIds) external view returns (uint256[] _prices) {\r\n\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:413:9: Warning: Integer Overflow.\n        ownersTokenCount[_to]++\nInteger Overflow occurs if:\n    ownersTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    elementToOwner[_tokenId] = 0\n    elementToApproved[_tokenId] = 0", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:463:32: Warning: Integer Overflow.\n        uint256 newElementId = elements.push(_element)\nInteger Overflow occurs if:\n    tableSize = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    elements.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    elementToOwner[elementId] = 0\n    authorized[msg.sender] = 255\n    currentPrice[elementId] = 0", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:343:5: Warning: Integer Overflow.\n    Element[] public elements", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1191:12: Warning: Integer Overflow.\n\t\tsymbol = elements[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    elements[_id] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1215:89: Warning: Integer Overflow.\n\t\treturn (elementToOwner[_itemId], _price, calculateNextPrice(_price), _bytes32ToString(elements[_itemId]\nInteger Overflow occurs if:\n    _itemId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    elements[_itemId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944\n    currentPrice[_itemId] = 0", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1225:72: Warning: Integer Overflow.\n\t\treturn (elementToOwner[_itemId], _price, calculateNextPrice(_price), elements[_itemId]\nInteger Overflow occurs if:\n    _itemId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    elements[_itemId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944\n    currentPrice[_itemId] = 0", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1197:5: Warning: Integer Overflow.\n    function getElements(uint256[] _elementIds) external view returns (bytes32[] memory elementsData) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _elementIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1047:1: Warning: Integer Overflow.\ncontract ChemistryCore is ContractOfSale {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    elements.length = 69722843986276191112704802276904042686523943500539225692285358676886601247599\n    tableSize = 69722843986276191112704802276904042686523943500539225692285358676886601247599\n    elementToOwner[elementId] = 0\n    authorized[msg.sender] = 255\n    currentPrice[elementId] = 0", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1183:29: Warning: Integer Overflow.\n\t\tsymbol = _bytes32ToString(elements[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    elements[_id] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1143:5: Warning: Integer Underflow.\n    function getElementsFromIndex(uint32 indexFrom, uint32 count) external view returns (bytes32[] memory elementsData) {\r\n    ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    count = 0", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:423:13: Warning: Integer Underflow.\n            ownersTokenCount[_from]--\nInteger Underflow occurs if:\n    ownersTokenCount[_from] = 0\n    elementToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    elementToApproved[_tokenId] = 0", 
+   "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1147:27: Warning: Integer Underflow.\n        uint256 lenght = (elements.length - indexFrom\nInteger Underflow occurs if:\n    elements.length = 4294967294\n    indexFrom = 4294967295"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1129:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x548d32216d01617452892ea360bfce9ce8dc9729.txt:1121:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.8"
+}

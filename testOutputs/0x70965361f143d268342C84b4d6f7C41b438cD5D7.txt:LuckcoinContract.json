@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x70965361f143d268342C84b4d6f7C41b438cD5D7.txt:277:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {            \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x70965361f143d268342C84b4d6f7C41b438cD5D7.txt:373:9: Warning: Integer Overflow.\n        totalRemainSupply += _amount\nInteger Overflow occurs if:\n    _amount = 31769636791936532929661760715285583354076941682947407161600322099437000056173\n    totalRemainSupply = 96943655105911162741802056509404709410348723981800351264466039153235703480681\n    balances[msg.sender] = 31769636791936532929661760715285583354076941682947407161600322099437000056172\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x70965361f143d268342C84b4d6f7C41b438cD5D7.txt:225:16: Warning: Integer Underflow.\n        return totalSupply - totalRemainSupply\nInteger Underflow occurs if:\n    totalSupply = 0\n    totalRemainSupply = 1", 
+   "./uniqueContractSourceCode/0x70965361f143d268342C84b4d6f7C41b438cD5D7.txt:375:9: Warning: Integer Underflow.\n        balances[_addr] -= _amount\nInteger Underflow occurs if:\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.2"
+}

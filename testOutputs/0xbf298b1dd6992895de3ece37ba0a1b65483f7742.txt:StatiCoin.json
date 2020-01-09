@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbf298b1dd6992895de3ece37ba0a1b65483f7742.txt:655:2: Warning: Integer Overflow.\n\tfunction approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool ok){\r\n\t^\nSpanning multiple lines.", 
+   "./restContracts/0xbf298b1dd6992895de3ece37ba0a1b65483f7742.txt:161:15: Warning: Integer Overflow.\n     uint c = a + b\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbf298b1dd6992895de3ece37ba0a1b65483f7742.txt:571:5: Warning: Integer Underflow.\n    string public version = 'H0.1'", 
+   "./restContracts/0xbf298b1dd6992895de3ece37ba0a1b65483f7742.txt:569:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xbf298b1dd6992895de3ece37ba0a1b65483f7742.txt:565:2: Warning: Integer Underflow.\n\tstring public name"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbf298b1dd6992895de3ece37ba0a1b65483f7742.txt:765:9: Warning: Transaction-Ordering Dependency.\n        mint.NewStaticAdr.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./restContracts/0xbf298b1dd6992895de3ece37ba0a1b65483f7742.txt:39:30: Warning: Transaction-Ordering Dependency.\n    if (msg.sender == owner) selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.0"
+}

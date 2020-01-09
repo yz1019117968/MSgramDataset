@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb2069ca2122e652c0f6ed4d408c915bc103e24b8.txt:409:22: Warning: Integer Underflow.\n\t\t\t} else if (now <= deadline - 20 days\nInteger Underflow occurs if:\n    crowdsaleClosed = 0\n    deadline = 0", 
+   "./restContracts/0xb2069ca2122e652c0f6ed4d408c915bc103e24b8.txt:405:15: Warning: Integer Underflow.\n\t\t\tif (now <= deadline - 35 days\nInteger Underflow occurs if:\n    crowdsaleClosed = 0\n    deadline = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "13.3"
+}

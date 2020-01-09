@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x918becb3a725caaa5f8e277bb0b914d271331e99.txt:125:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    ethQuantity = 98398101487999599192334172377135965226041322233911705352818269235081253570146\n    maxEth = 55834488712195064146142868317955505328518862786295954674510665394290977246027\n    minEth = 55834488712195064146142868317955505328518862786295954674510665394290977246027\n    gameState = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x918becb3a725caaa5f8e277bb0b914d271331e99.txt:711:19: Warning: Integer Underflow.\n            lef = this.balance - opponentAmount\nInteger Underflow occurs if:\n    opponentAmount = 1\n    opponent = 1461501637330902918203684832716283019655932542975\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.4"
+}

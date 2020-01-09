@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xc2a0da9cd06266fb1d599acee77daa5b5e0f901f.txt:259:9: Warning: Timestamp Dependency.\n        require(now > lastDivideRewardTime + rewardDays * 1 days)"
+  ], 
+  "reentrancy": [
+   "./restContracts/0xc2a0da9cd06266fb1d599acee77daa5b5e0f901f.txt:461:17: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.gas(3000000).value(this.balance)()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0xc2a0da9cd06266fb1d599acee77daa5b5e0f901f.txt:379:13: Warning: Integer Overflow.\n        if (holders[msg.sender].rewardWithdrawTime", 
+   "./restContracts/0xc2a0da9cd06266fb1d599acee77daa5b5e0f901f.txt:473:13: Warning: Integer Overflow.\n            holders[_who].balanceUpdateTime\nInteger Overflow occurs if:\n    blockedUntil = 0\n    lastDivideRewardTime = 0\n    holders[_who].balanceUpdateTime = 0\n    holders[_who].balanceUpdateTime = 1", 
+   "./restContracts/0xc2a0da9cd06266fb1d599acee77daa5b5e0f901f.txt:471:13: Warning: Integer Overflow.\n        if (holders[_who].balanceUpdateTime\nInteger Overflow occurs if:\n    blockedUntil = 0", 
+   "./restContracts/0xc2a0da9cd06266fb1d599acee77daa5b5e0f901f.txt:53:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    lastDivideRewardTime = 0\n    blockedUntil = 0\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holders[_who].balanceUpdateTime = 1\n    holders[_who].balanceUpdateTime = 1", 
+   "./restContracts/0xc2a0da9cd06266fb1d599acee77daa5b5e0f901f.txt:387:13: Warning: Integer Overflow.\n        if (holders[msg.sender].balanceUpdateTime\nInteger Overflow occurs if:\n    holders[msg.sender].rewardWithdrawTime = 0\n    lastDivideRewardTime = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.9"
+}

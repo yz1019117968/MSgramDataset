@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x852de008100cbd305589d8d65850f864056148bd.txt:825:5: Warning: Integer Overflow.\n    function allocateTokens(address[] _owners, uint256[] _values) public onlyController {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x852de008100cbd305589d8d65850f864056148bd.txt:861:5: Warning: Integer Overflow.\n    function allocateEcoFundToken(address[] _owners, uint256[] _values) public onlyController {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x852de008100cbd305589d8d65850f864056148bd.txt:367:5: Warning: Integer Overflow.\n    function approveAndCall(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.8"
+}

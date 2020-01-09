@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Re-Entrancy Vulnerability.\n    return _to.call.value(_value).gas(_gas)(_code)"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:485:5: Warning: Integer Overflow.\n    nameToRecord[_name] = Record(_to, 0)\nInteger Overflow occurs if:\n    _name = 0\n    ownerToName[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    nameToApproved[_name] = 0\n    _from = 0\n    nameToRecord[_name].owner = 0", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Integer Overflow.\n    return _to.call.value(_value).gas(_gas)(_code)\nInteger Overflow occurs if:\n    manager = 0", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:525:22: Warning: Integer Overflow.\n    return _price * (10000 + commission\nInteger Overflow occurs if:\n    commission = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:421:28: Warning: Integer Overflow.\n    _price = _computePrice(nameToRecord[_name].price", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:315:3: Warning: Integer Overflow.\n  function rawSetAttribute(bytes32 _name, bytes32 _key, bytes _value)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:199:3: Warning: Integer Overflow.\n  mapping (bytes32 => Record) public nameToRecord", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:271:5: Warning: Integer Overflow.\n    nameToRecord[_name].price\nInteger Overflow occurs if:\n    _price = 0\n    nameToRecord[_name].owner = 0", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:333:3: Warning: Integer Overflow.\n  function rawWipeAttributes(bytes32 _name, bytes32[] _keys)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _keys = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:423:14: Warning: Integer Overflow.\n    _value = nameToRecord[_name].attrs"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:423:5: Warning: Integer Underflow.\n    _value = nameToRecord[_name].attrs[_key]", 
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Integer Underflow.\n    return _to.call.value(_value).gas(_gas)(_code)\nInteger Underflow occurs if:\n    manager = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:59:5: Warning: Transaction-Ordering Dependency.\n    manager.transfer(address(this).balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:365:7: Warning: Transaction-Ordering Dependency.\n      _to.send(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.6"
+}

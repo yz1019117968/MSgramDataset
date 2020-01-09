@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x31A6ba952064f3895E29A5A7f0731287368AB89E.txt:103:5: Warning: Integer Overflow.\n    function setName(string _name) isOwner \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x31A6ba952064f3895E29A5A7f0731287368AB89E.txt:9:5: Warning: Integer Underflow.\n    string public name = \"NutrioCoin\"", 
+   "./uniqueContractSourceCode/0x31A6ba952064f3895E29A5A7f0731287368AB89E.txt:11:5: Warning: Integer Underflow.\n    string public symbol = \"NTRC\"", 
+   "./uniqueContractSourceCode/0x31A6ba952064f3895E29A5A7f0731287368AB89E.txt:125:9: Warning: Integer Underflow.\n        totalSupply-= _amount\nInteger Underflow occurs if:\n    totalSupply = 0\n    _amount = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x31A6ba952064f3895E29A5A7f0731287368AB89E.txt:115:9: Warning: Integer Underflow.\n        balanceOf[owner] -= _amount\nInteger Underflow occurs if:\n    balanceOf[owner] = 0\n    _amount = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.3"
+}

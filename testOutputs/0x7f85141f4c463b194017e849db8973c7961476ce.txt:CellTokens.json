@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7f85141f4c463b194017e849db8973c7961476ce.txt:419:3: Warning: Integer Overflow.\n  function setUserName(string _name)payable public{\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7f85141f4c463b194017e849db8973c7961476ce.txt:573:22: Warning: Integer Overflow.\n          if(ownerOf(listedItems[i]\nInteger Overflow occurs if:\n    listedItems.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    ownerOfItem[_itemId] = 0", 
+   "./restContracts/0x7f85141f4c463b194017e849db8973c7961476ce.txt:593:19: Warning: Integer Overflow.\n      if (ownerOf(listedItems[i]\nInteger Overflow occurs if:\n    listedItems.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    _owner = 0\n    ownerOfItem[_itemId] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7f85141f4c463b194017e849db8973c7961476ce.txt:437:7: Warning: Integer Underflow.\n      return usernameOfAddress[msg.sender]\nInteger Underflow occurs if:\n    return usernameOfAddress[msg.sender] = 1", 
+   "./restContracts/0x7f85141f4c463b194017e849db8973c7961476ce.txt:443:7: Warning: Integer Underflow.\n      return usernameOfAddress[_user]\nInteger Underflow occurs if:\n    return usernameOfAddress[_user] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x7f85141f4c463b194017e849db8973c7961476ce.txt:271:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(_amount)"
+   ], 
+   [
+    "./restContracts/0x7f85141f4c463b194017e849db8973c7961476ce.txt:477:9: Warning: Transaction-Ordering Dependency.\n        oldOwner.transfer(price.sub(devCut))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.4"
+}

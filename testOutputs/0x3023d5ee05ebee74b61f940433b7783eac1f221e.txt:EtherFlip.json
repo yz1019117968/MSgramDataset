@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3023d5ee05ebee74b61f940433b7783eac1f221e.txt:235:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3023d5ee05ebee74b61f940433b7783eac1f221e.txt:2277:5: Warning: Integer Overflow.\n    function __callback(bytes32 _queryId, string _result, bytes _proof) oraclizeAction { \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3023d5ee05ebee74b61f940433b7783eac1f221e.txt:2087:1: Warning: Integer Underflow.\ncontract EtherFlip is usingOraclize {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    OAR = 0\n    minBet = 0\n    maxBet = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.0"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc094d10e8c0f5f507bb986f01b0c44a83cbf8440.txt:645:12: Warning: Integer Overflow.\n    return tokensSoldPre + tokensSoldIco\nInteger Overflow occurs if:\n    tokensSoldPre = 1\n    tokensSoldIco = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc094d10e8c0f5f507bb986f01b0c44a83cbf8440.txt:573:3: Warning: Integer Overflow.\n  function changeIcoPhaseAmounts(uint256[] icoPhaseAmounts) public onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    icoPhaseAmounts = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.9"
+}

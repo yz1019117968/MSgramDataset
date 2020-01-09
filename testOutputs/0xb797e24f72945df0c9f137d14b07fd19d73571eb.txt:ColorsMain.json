@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb797e24f72945df0c9f137d14b07fd19d73571eb.txt:85:32: Warning: Integer Overflow.\n        Color storage color1 = colors[_id]\nInteger Overflow occurs if:\n    colors[_id] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./restContracts/0xb797e24f72945df0c9f137d14b07fd19d73571eb.txt:99:31: Warning: Integer Overflow.\n        Color memory _Color = Color({\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb797e24f72945df0c9f137d14b07fd19d73571eb.txt:87:3: Warning: Integer Underflow.\n\t\tlabel = color1.label\nInteger Underflow occurs if:\n    colors[_id] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.7"
+}

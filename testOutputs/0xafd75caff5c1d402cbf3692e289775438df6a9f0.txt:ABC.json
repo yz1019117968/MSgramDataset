@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xafd75caff5c1d402cbf3692e289775438df6a9f0.txt:217:3: Warning: Integer Overflow.\n\t\ttotalSupply += _issueQty\nInteger Overflow occurs if:\n    totalSupply = 1\n    _issueQty = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xafd75caff5c1d402cbf3692e289775438df6a9f0.txt:215:9: Warning: Integer Overflow.\n        balances[owner] += _issueQty\nInteger Overflow occurs if:\n    balances[owner] = 1\n    _issueQty = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xafd75caff5c1d402cbf3692e289775438df6a9f0.txt:175:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xafd75caff5c1d402cbf3692e289775438df6a9f0.txt:235:3: Warning: Integer Underflow.\n\t\ttotalSupply -= _vanishQty\nInteger Underflow occurs if:\n    _vanishQty = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xafd75caff5c1d402cbf3692e289775438df6a9f0.txt:39:5: Warning: Integer Underflow.\n    string public version = 'ABCv1.0'", 
+   "./restContracts/0xafd75caff5c1d402cbf3692e289775438df6a9f0.txt:37:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xafd75caff5c1d402cbf3692e289775438df6a9f0.txt:33:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.3"
+}

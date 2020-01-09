@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x63a2442e4ad6c1c3c9c7e32021c2db37b8b34a25.txt:3285:71: Warning: Integer Overflow.\n    function getFundById(uint withId) view returns (address) { return listOfFunds[withId]\nInteger Overflow occurs if:\n    listOfFunds[withId] = 115792089237316195423570985008687907853269974281046846969802326946920471199744", 
+   "./uniqueContractSourceCode/0x63a2442e4ad6c1c3c9c7e32021c2db37b8b34a25.txt:3059:5: Warning: Integer Overflow.\n    address[] public listOfFunds", 
+   "./uniqueContractSourceCode/0x63a2442e4ad6c1c3c9c7e32021c2db37b8b34a25.txt:3143:5: Warning: Integer Overflow.\n    function setupFund(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x63a2442e4ad6c1c3c9c7e32021c2db37b8b34a25.txt:3287:59: Warning: Integer Underflow.\n    function getLastFundId() view returns (uint) { return listOfFunds.length - 1\nInteger Underflow occurs if:\n    listOfFunds.length = 0", 
+   "./uniqueContractSourceCode/0x63a2442e4ad6c1c3c9c7e32021c2db37b8b34a25.txt:3049:5: Warning: Integer Underflow.\n    string public VERSION_NUMBER"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "6.8"
+}

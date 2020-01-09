@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x26f5ada7295f4557822b5ca8636381b6ac07206b.txt:13:8: Warning: Integer Overflow.\n       readings[msg.sender]+=_delta\nInteger Overflow occurs if:\n    readings[msg.sender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x26f5ada7295f4557822b5ca8636381b6ac07206b.txt:23:39: Warning: Integer Underflow.\n       pinged(msg.sender,now,_reading,_reading-readings[msg.sender]\nInteger Underflow occurs if:\n    readings[msg.sender] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

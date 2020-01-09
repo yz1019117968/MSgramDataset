@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x12458c69ec849af2854fdec7e0761e60d4ee7ed3.txt:5:1: Warning: Integer Overflow.\ncontract ConsensysAcademy{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addresses.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    names[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x12458c69ec849af2854fdec7e0761e60d4ee7ed3.txt:23:9: Warning: Integer Overflow.\n        addresses.push(msg.sender)\nInteger Overflow occurs if:\n    addresses.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    names[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x12458c69ec849af2854fdec7e0761e60d4ee7ed3.txt:9:5: Warning: Integer Overflow.\n    address[] public addresses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.8"
+}

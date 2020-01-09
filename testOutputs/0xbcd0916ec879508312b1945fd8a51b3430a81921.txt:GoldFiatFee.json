@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:639:6: Warning: Integer Overflow.\n     function setGoldmintFeeAccount(string _gmUserId) public onlyCreator {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _gmUserId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:83:6: Warning: Integer Overflow.\n     function stringToBytes32(string s) constant returns(bytes32){\r\n     ^\nSpanning multiple lines.", 
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:99:6: Warning: Integer Overflow.\n     function stringToBytes64(string s) constant returns(bytes32,bytes32){\r\n     ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbcd0916ec879508312b1945fd8a51b3430a81921.txt:631:31: Warning: Integer Underflow.\n          bytes32 userBytes = stringToBytes32(gmUserId)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.9"
+}

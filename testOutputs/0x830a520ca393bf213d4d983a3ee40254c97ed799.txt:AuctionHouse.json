@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:971:13: Warning: Integer Overflow.\n            _auction.startingPrice\nInteger Overflow occurs if:\n    supportedTokens[_tokenAddress] = 255", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:975:13: Warning: Integer Overflow.\n            _auction.duration\nInteger Overflow occurs if:\n    supportedTokens[_tokenAddress] = 255", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:927:17: Warning: Integer Overflow.\n        return (_auction.startedAt\nInteger Overflow occurs if:\n    supportedTokens[_tokenAddress] = 255", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:961:19: Warning: Integer Overflow.\n        if (now > _auction.startedAt\nInteger Overflow occurs if:\n    supportedTokens[_tokenAddress] = 255", 
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:973:13: Warning: Integer Overflow.\n            _auction.endingPrice\nInteger Overflow occurs if:\n    supportedTokens[_tokenAddress] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x830a520ca393bf213d4d983a3ee40254c97ed799.txt:1037:39: Warning: Integer Underflow.\n            int256 totalPriceChange = int256(_endingPrice) - int256(_startingPrice)\nInteger Underflow occurs if:\n    supportedTokens[_tokenAddress] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "14.5"
+}

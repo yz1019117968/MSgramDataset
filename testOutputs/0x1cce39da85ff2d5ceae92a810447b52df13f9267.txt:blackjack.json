@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:223:5: Warning: Integer Overflow.\n    games[id] = Game(id, deck, srvSeed, msg.sender, bet, now)\nInteger Overflow occurs if:\n    games[id].player = 0\n    maximumBet = 115792089237316195423472905294072490966335050455902944251705984701894355845119\n    minimumBet = 115792089237316195423472905294072490966335050455902944251705984701894355845119", 
+   "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:185:3: Warning: Integer Overflow.\n  function standAndRebet(uint oldGameId, uint8[] oldDeck, bytes32 oldSeed, uint8 numCards, uint8 v, bytes32 r, bytes32 s, uint newGameId, bytes32 newDeck, bytes32 newSrvSeed, bytes32 newCSeed){\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    oldDeck = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:315:3: Warning: Integer Overflow.\n  function convertToBytes(uint8[] byteArray) returns (bytes b){\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    byteArray = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:303:3: Warning: Integer Overflow.\n  function checkDeck(uint gameId, uint8[] deck, bytes32 seed) constant returns (bool correct){\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    deck = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:351:3: Warning: Integer Overflow.\n  function determineOutcome(uint gameId, uint8[] cards, uint8 numCards) constant returns(uint win) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cards = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:171:3: Warning: Integer Overflow.\n  function stand(uint gameId, uint8[] deck, bytes32 seed, uint8 numCards, uint8 v, bytes32 r, bytes32 s) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    deck = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:549:11: Warning: Transaction-Ordering Dependency.\n      if(!owner.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1cce39da85ff2d5ceae92a810447b52df13f9267.txt:47:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.4"
+}

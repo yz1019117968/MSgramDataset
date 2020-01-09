@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9c23d67aea7b95d80942e3836bcdf7e708a747c2.txt:473:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0x9c23d67aea7b95d80942e3836bcdf7e708a747c2.txt:413:5: Warning: Integer Overflow.\n    function setContactInformation(string info) onlyOwner public {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9c23d67aea7b95d80942e3836bcdf7e708a747c2.txt:499:5: Warning: Integer Underflow.\n    string public symbol = \"\"", 
+   "./restContracts/0x9c23d67aea7b95d80942e3836bcdf7e708a747c2.txt:495:1: Warning: Integer Underflow.\ncontract LOCIcoin is StandardToken, Ownable, Contactable {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    tokenActive = 0\n    owner = 0", 
+   "./restContracts/0x9c23d67aea7b95d80942e3836bcdf7e708a747c2.txt:401:5: Warning: Integer Underflow.\n    string public contactInformation", 
+   "./restContracts/0x9c23d67aea7b95d80942e3836bcdf7e708a747c2.txt:497:5: Warning: Integer Underflow.\n    string public name = \"\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.7"
+}

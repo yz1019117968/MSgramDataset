@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb6bbf89c3dbba20cb4d5cabaa4a386acbbab455e.txt:127:13: Warning: Integer Overflow.\n        if (zoneStructs[zoneId].owner\nInteger Overflow occurs if:\n    zoneId = 2\n    zoneStructs[zoneId].sellPrice = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    zoneStructs[zoneId].owner = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xb6bbf89c3dbba20cb4d5cabaa4a386acbbab455e.txt:241:11: Warning: Integer Overflow.\n          zoneStructs[zoneId].sellPrice\nInteger Overflow occurs if:\n    zoneId = 2", 
+   "./restContracts/0xb6bbf89c3dbba20cb4d5cabaa4a386acbbab455e.txt:239:11: Warning: Integer Overflow.\n          zoneStructs[zoneId].owner\nInteger Overflow occurs if:\n    zoneId = 2", 
+   "./restContracts/0xb6bbf89c3dbba20cb4d5cabaa4a386acbbab455e.txt:201:9: Warning: Integer Overflow.\n        zoneStructs[zoneId].owner\nInteger Overflow occurs if:\n    zoneId = 2\n    zoneStructs[zoneId].owner = 0", 
+   "./restContracts/0xb6bbf89c3dbba20cb4d5cabaa4a386acbbab455e.txt:181:9: Warning: Integer Overflow.\n        zoneStructs[zoneId].sellPrice\nInteger Overflow occurs if:\n    zoneId = 2\n    zoneStructs[zoneId].owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.3"
+}

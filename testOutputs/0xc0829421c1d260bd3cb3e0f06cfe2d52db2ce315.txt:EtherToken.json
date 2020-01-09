@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315.txt:83:21: Warning: Integer Overflow.\n        uint256 z = _x + _y\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315.txt:383:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'", 
+   "./restContracts/0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315.txt:387:5: Warning: Integer Underflow.\n    string public symbol = ''", 
+   "./restContracts/0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315.txt:385:5: Warning: Integer Underflow.\n    string public name = ''"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315.txt:693:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(_amount)"
+   ], 
+   [
+    "./restContracts/0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315.txt:693:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.5"
+}

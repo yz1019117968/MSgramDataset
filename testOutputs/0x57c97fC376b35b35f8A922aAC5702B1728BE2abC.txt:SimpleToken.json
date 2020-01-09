@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x57c97fC376b35b35f8A922aAC5702B1728BE2abC.txt:305:3: Warning: Integer Underflow.\n  string public name = \"TesterrCoin\"", 
+   "./uniqueContractSourceCode/0x57c97fC376b35b35f8A922aAC5702B1728BE2abC.txt:307:3: Warning: Integer Underflow.\n  string public symbol = \"TST\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

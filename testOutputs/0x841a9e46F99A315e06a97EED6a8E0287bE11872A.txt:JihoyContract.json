@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x841a9e46F99A315e06a97EED6a8E0287bE11872A.txt:247:3: Warning: Integer Underflow.\n  string public symbol = \"JIHOY\"", 
+   "./restContracts/0x841a9e46F99A315e06a97EED6a8E0287bE11872A.txt:245:3: Warning: Integer Underflow.\n  string public name = \"Jihoy\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

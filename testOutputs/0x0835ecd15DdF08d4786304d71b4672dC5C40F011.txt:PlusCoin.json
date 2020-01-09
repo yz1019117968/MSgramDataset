@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:577:82: Warning: Integer Overflow.\n        if (balances[_from] >= _value && allowed[_from][msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    current_state = 5\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807", 
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:553:47: Warning: Integer Overflow.\n        if (balances[msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    current_state = 5\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:471:21: Warning: Integer Underflow.\n            coins = TOKEN_PRESALE_LIMIT - soldAmount\nInteger Underflow occurs if:\n    current_state = 1\n    soldAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:477:21: Warning: Integer Underflow.\n            coins = TOKEN_PRESALE_LIMIT - soldAmount\nInteger Underflow occurs if:\n    current_state = 2\n    soldAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:495:21: Warning: Integer Underflow.\n            coins = balances[owner] - owner_MIN_LIMIT\nInteger Underflow occurs if:\n    current_state = 5\n    balances[owner] = 49499999999999999999999999999", 
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:483:21: Warning: Integer Underflow.\n            coins = TOKEN_PRESALE_LIMIT - soldAmount\nInteger Underflow occurs if:\n    current_state = 3\n    soldAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:489:21: Warning: Integer Underflow.\n            coins = TOKEN_PRESALE_LIMIT - soldAmount\nInteger Underflow occurs if:\n    current_state = 4\n    soldAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:31:5: Warning: Integer Underflow.\n    string public standard = 'PlusCoin 1.0'"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:647:11: Warning: Transaction-Ordering Dependency.\n          suicide(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x0835ecd15DdF08d4786304d71b4672dC5C40F011.txt:523:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.8"
+}

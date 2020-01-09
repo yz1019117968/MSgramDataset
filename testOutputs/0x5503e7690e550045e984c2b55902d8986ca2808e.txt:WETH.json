@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5503e7690e550045e984c2b55902d8986ca2808e.txt:141:9: Warning: Integer Overflow.\n        balanceOf[dst] += wad\nInteger Overflow occurs if:\n    wad = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balanceOf[dst] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    src = 0\n    balanceOf[src] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x5503e7690e550045e984c2b55902d8986ca2808e.txt:69:9: Warning: Integer Overflow.\n        balanceOf[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5503e7690e550045e984c2b55902d8986ca2808e.txt:37:5: Warning: Integer Underflow.\n    string public name     = \"Wrapped Ether\"", 
+   "./uniqueContractSourceCode/0x5503e7690e550045e984c2b55902d8986ca2808e.txt:39:5: Warning: Integer Underflow.\n    string public symbol   = \"WETH\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.4"
+}

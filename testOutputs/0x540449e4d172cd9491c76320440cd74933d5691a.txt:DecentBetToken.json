@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x540449e4d172cd9491c76320440cd74933d5691a.txt:1083:5: Warning: Integer Overflow.\n    address[] public communitySaleWhitelist", 
+   "./uniqueContractSourceCode/0x540449e4d172cd9491c76320440cd74933d5691a.txt:1635:5: Warning: Integer Overflow.\n    function addToCommunitySaleWhitelist(address[] addresses) onlyTeam {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x540449e4d172cd9491c76320440cd74933d5691a.txt:1075:5: Warning: Integer Overflow.\n    address[] public preSaleWhitelist"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.1"
+}

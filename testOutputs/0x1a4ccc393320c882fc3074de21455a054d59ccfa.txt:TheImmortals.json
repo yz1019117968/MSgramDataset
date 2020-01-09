@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1a4ccc393320c882fc3074de21455a054d59ccfa.txt:57:5: Warning: Integer Overflow.\n    address[] public accounts", 
+   "./uniqueContractSourceCode/0x1a4ccc393320c882fc3074de21455a054d59ccfa.txt:55:5: Warning: Integer Overflow.\n    mapping (address => address[]) public immortals", 
+   "./uniqueContractSourceCode/0x1a4ccc393320c882fc3074de21455a054d59ccfa.txt:87:5: Warning: Integer Overflow.\n    function addFace(string _photoData, string _photoText) payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _photoData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "29.1"
+}

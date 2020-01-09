@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:577:32: Warning: Timestamp Dependency.\n    modifier afterDeadline() { if (now >  endTime) _"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:701:34: Warning: Integer Underflow.\n            if (beneficiary.send(amountRaised - 10 ether\nInteger Underflow occurs if:\n    amountRaised = 0\n    crowdsaleClosed = 8388736\n    endTime = 0\n    beneficiary = 0\n    fundingGoal = 1", 
+   "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:703:43: Warning: Integer Underflow.\n                FundTransfer(beneficiary, amountRaised - 10 ether\nInteger Underflow occurs if:\n    amountRaised = 0\n    crowdsaleClosed = 8388736\n    endTime = 0\n    beneficiary = 0\n    fundingGoal = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:701:17: Warning: Transaction-Ordering Dependency.\n            if (beneficiary.send(amountRaised - 10 ether)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x664AE9Be65F1977f0eca5ece98E291D59d9ec9a8.txt:683:21: Warning: Transaction-Ordering Dependency.\n                if (msg.sender.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.1"
+}

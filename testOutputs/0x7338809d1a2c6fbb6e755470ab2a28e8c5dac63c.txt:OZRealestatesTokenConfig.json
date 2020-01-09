@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7338809d1a2c6fbb6e755470ab2a28e8c5dac63c.txt:67:5: Warning: Integer Underflow.\n    string public           symbol          = \"OZR\"", 
+   "./uniqueContractSourceCode/0x7338809d1a2c6fbb6e755470ab2a28e8c5dac63c.txt:65:5: Warning: Integer Underflow.\n    string public           name            = \"OZRealestates\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.4"
+}

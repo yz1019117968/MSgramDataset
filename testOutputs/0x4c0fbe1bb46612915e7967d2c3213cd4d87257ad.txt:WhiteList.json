@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:1239:5: Warning: Integer Overflow.\n    function addWhiteBackersByList(address[] _backers) onlyOwner public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4c0fbe1bb46612915e7967d2c3213cd4d87257ad.txt:1209:5: Warning: Integer Overflow.\n    function setWhiteBackersByList(address[] _backers, bool[] _allows) onlyOwner public {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

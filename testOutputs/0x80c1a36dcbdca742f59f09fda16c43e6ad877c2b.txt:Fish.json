@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x80c1a36dcbdca742f59f09fda16c43e6ad877c2b.txt:673:66: Warning: Integer Overflow.\n      referrals[msg.sender] = [_referral, referral_referrals[0], referral_referrals[1]\nInteger Overflow occurs if:\n    referrals[msg.sender][0] = 0\n    balances[_referral] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[msg.sender] = 0", 
+   "./restContracts/0x80c1a36dcbdca742f59f09fda16c43e6ad877c2b.txt:87:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1", 
+   "./restContracts/0x80c1a36dcbdca742f59f09fda16c43e6ad877c2b.txt:251:1: Warning: Integer Overflow.\ncontract Fish is owned, StandardToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    referrals[msg.sender][0] = 0\n    balances[_referral] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[msg.sender] = 0", 
+   "./restContracts/0x80c1a36dcbdca742f59f09fda16c43e6ad877c2b.txt:739:9: Warning: Integer Overflow.\n        bounties[_account] + _amount\nInteger Overflow occurs if:\n    _amount = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    bounties[_account] = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    balances[_account] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4dac1801ffa1534346ce8a1114e9a40ef908d7fd.txt:197:48: Warning: Integer Overflow.\n        return (listing.seller, listing.price, listing.dateStarts", 
+   "./uniqueContractSourceCode/0x4dac1801ffa1534346ce8a1114e9a40ef908d7fd.txt:197:68: Warning: Integer Overflow.\n        return (listing.seller, listing.price, listing.dateStarts, listing.dateEnds", 
+   "./uniqueContractSourceCode/0x4dac1801ffa1534346ce8a1114e9a40ef908d7fd.txt:129:5: Warning: Integer Overflow.\n    mapping (bytes5 => Listing) public tokenIdToListing", 
+   "./uniqueContractSourceCode/0x4dac1801ffa1534346ce8a1114e9a40ef908d7fd.txt:197:33: Warning: Integer Overflow.\n        return (listing.seller, listing.price", 
+   "./uniqueContractSourceCode/0x4dac1801ffa1534346ce8a1114e9a40ef908d7fd.txt:185:9: Warning: Integer Overflow.\n        tokenIdToListing[tokenId] = Listing(msg.sender, price, now, dateEnds)\nInteger Overflow occurs if:\n    price = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.3"
+}

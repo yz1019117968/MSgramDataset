@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x39689fE671C01fcE173395f6BC45D4C332026666.txt:2171:19: Warning: Integer Underflow.\n    return bytes4(sha3(str)\nInteger Underflow occurs if:\n    authority = 1461501637330902918203684832716283019655932542975\n    owner = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.9"
+}

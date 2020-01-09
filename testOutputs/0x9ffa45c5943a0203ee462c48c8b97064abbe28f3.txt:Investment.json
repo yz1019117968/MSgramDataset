@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9ffa45c5943a0203ee462c48c8b97064abbe28f3.txt:27:1: Warning: Integer Overflow.\ncontract Investment{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.length = 1\n    investors[i] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x9ffa45c5943a0203ee462c48c8b97064abbe28f3.txt:59:3: Warning: Integer Overflow.\n\t\tbalanceOf[msg.sender] += msg.value\nInteger Overflow occurs if:\n    investors.length = 10\n    balanceOf[msg.sender] = 1\n    investors[i] = 0\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975\n    investors[i] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x9ffa45c5943a0203ee462c48c8b97064abbe28f3.txt:31:2: Warning: Integer Overflow.\n\taddress[] public investors", 
+   "./restContracts/0x9ffa45c5943a0203ee462c48c8b97064abbe28f3.txt:71:7: Warning: Integer Overflow.\n\t\t\tif(investors[i]\nInteger Overflow occurs if:\n    investors.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investors[i] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9ffa45c5943a0203ee462c48c8b97064abbe28f3.txt:119:3: Warning: Transaction-Ordering Dependency.\n\t\tmsg.sender.send(balanceOf[msg.sender])"
+   ], 
+   [
+    "./restContracts/0x9ffa45c5943a0203ee462c48c8b97064abbe28f3.txt:103:5: Warning: Transaction-Ordering Dependency.\n\t\t\t\tico.invest.value(amount)(investors[i])"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.3"
+}

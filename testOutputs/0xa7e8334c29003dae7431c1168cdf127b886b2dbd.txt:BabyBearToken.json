@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa7e8334c29003dae7431c1168cdf127b886b2dbd.txt:13:5: Warning: Integer Underflow.\n    string public name = \"BabyBearToken\"", 
+   "./restContracts/0xa7e8334c29003dae7431c1168cdf127b886b2dbd.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"BBEAR\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.7"
+}

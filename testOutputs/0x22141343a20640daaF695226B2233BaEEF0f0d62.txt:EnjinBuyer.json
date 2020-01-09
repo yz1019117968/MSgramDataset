@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x22141343a20640daaF695226B2233BaEEF0f0d62.txt:349:5: Warning: Timestamp Dependency.\n    if (now < earliest_buy_time) return;"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x22141343a20640daaF695226B2233BaEEF0f0d62.txt:409:5: Warning: Integer Overflow.\n    balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    eth_cap = 1\n    bought_tokens = 0\n    kill_switch = 0", 
+   "./uniqueContractSourceCode/0x22141343a20640daaF695226B2233BaEEF0f0d62.txt:325:5: Warning: Integer Overflow.\n    withdraw_bounty += msg.value\nInteger Overflow occurs if:\n    withdraw_bounty = 1\n    developer = 0", 
+   "./uniqueContractSourceCode/0x22141343a20640daaF695226B2233BaEEF0f0d62.txt:165:3: Warning: Integer Overflow.\n  function activate_kill_switch(string password) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x22141343a20640daaF695226B2233BaEEF0f0d62.txt:309:5: Warning: Integer Overflow.\n    buy_bounty += msg.value\nInteger Overflow occurs if:\n    buy_bounty = 1\n    developer = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.1"
+}

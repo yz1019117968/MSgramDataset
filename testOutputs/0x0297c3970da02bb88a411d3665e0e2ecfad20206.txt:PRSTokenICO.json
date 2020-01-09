@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0297c3970da02bb88a411d3665e0e2ecfad20206.txt:115:9: Warning: Integer Overflow.\n        totalSupply += tokensIssued\nInteger Overflow occurs if:\n    totalSupply = 1\n    totalContribution = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    purchasingAllowed = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x0297c3970da02bb88a411d3665e0e2ecfad20206.txt:109:13: Warning: Integer Overflow.\n            tokensIssued += totalContribution\nInteger Overflow occurs if:\n    totalContribution = 101318078729690391046471852805293561557624066688383820726461783447593306557439\n    purchasingAllowed = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x0297c3970da02bb88a411d3665e0e2ecfad20206.txt:99:9: Warning: Integer Overflow.\n        totalContribution += msg.value\nInteger Overflow occurs if:\n    totalContribution = 64446661169182518171252612193038542884516429807151413998973703848003529950672\n    purchasingAllowed = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x0297c3970da02bb88a411d3665e0e2ecfad20206.txt:117:9: Warning: Integer Overflow.\n        balances[msg.sender] += tokensIssued\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    totalContribution = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    purchasingAllowed = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.7"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7b1309c1522afd4e66c31e1e6d0ec1319e1eba5e.txt:383:14: Warning: Integer Overflow.\n      return tokensCap[currentStage]\nInteger Overflow occurs if:\n    tokensCap[currentStage] = 32\n    currentStage = 30", 
+   "./uniqueContractSourceCode/0x7b1309c1522afd4e66c31e1e6d0ec1319e1eba5e.txt:587:31: Warning: Integer Overflow.\n      return _amountInWei.mul(tokensRate[currentStage]\nInteger Overflow occurs if:\n    tokensRate[currentStage] = 32\n    investments[beneficiary] = 0\n    rewardToken = 30\n    LIMIT_ON_BENEFICIARY = 1", 
+   "./uniqueContractSourceCode/0x7b1309c1522afd4e66c31e1e6d0ec1319e1eba5e.txt:389:14: Warning: Integer Overflow.\n      return tokensRate[currentStage]\nInteger Overflow occurs if:\n    tokensRate[currentStage] = 32\n    currentStage = 30", 
+   "./uniqueContractSourceCode/0x7b1309c1522afd4e66c31e1e6d0ec1319e1eba5e.txt:367:16: Warning: Integer Overflow.\n        return tokensCap[currentStage]\nInteger Overflow occurs if:\n    tokensCap[currentStage] = 32\n    currentStage = 30"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7b1309c1522afd4e66c31e1e6d0ec1319e1eba5e.txt:331:5: Warning: Integer Underflow.\n    string public version = \"1.0\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "28.0"
+}

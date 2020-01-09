@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4e9d3792ff24babf36b83c0c36113da6714917c6.txt:3093:9: Warning: Timestamp Dependency.\n        require(vault_state == State.Refunding && now >= refundDeadline)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4e9d3792ff24babf36b83c0c36113da6714917c6.txt:2235:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    totalSupply = 1\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4e9d3792ff24babf36b83c0c36113da6714917c6.txt:2725:3: Warning: Integer Overflow.\n  function transferFrom(address _from, address _to, uint _value, bytes _data) returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4e9d3792ff24babf36b83c0c36113da6714917c6.txt:3109:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4e9d3792ff24babf36b83c0c36113da6714917c6.txt:2709:3: Warning: Integer Overflow.\n  function transfer(address _to, uint _value, bytes _data) returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4e9d3792ff24babf36b83c0c36113da6714917c6.txt:371:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.5"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb2233FCEC42c588Ee71A594d9A25AA695345426c.txt:175:16: Warning: Integer Overflow.\n        return sweeperList.sweeperOf(_token).delegatecall(msg.data)", 
+   "./restContracts/0xb2233FCEC42c588Ee71A594d9A25AA695345426c.txt:157:5: Warning: Integer Overflow.\n    function tokenFallback(address _from, uint _value, bytes _data) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.9"
+}

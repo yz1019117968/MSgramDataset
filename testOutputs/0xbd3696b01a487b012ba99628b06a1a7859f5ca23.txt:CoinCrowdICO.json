@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbd3696b01a487b012ba99628b06a1a7859f5ca23.txt:455:19: Warning: Integer Overflow.\n        endTime = startTime + 12*weekInSeconds\nInteger Overflow occurs if:\n    _startTime = 115792089237316195423570985008687907853269984665640564039457584007913125543936\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.7"
+}

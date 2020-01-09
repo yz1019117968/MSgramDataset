@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb28a3dd24036151c819c6d401f7a222d9aa3671b.txt:509:5: Warning: Timestamp Dependency.\n    require(now <= PRESALE_END_TIMESTAMP)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb28a3dd24036151c819c6d401f7a222d9aa3671b.txt:265:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    plantQuantity = 1\n    currentPrices[clazz] = 1\n    priceIncrements[clazz] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    referrer = 0\n    paused = 0\n    aquaticQuantity = 0\n    beastQuantity = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb28a3dd24036151c819c6d401f7a222d9aa3671b.txt:727:7: Warning: Integer Underflow.\n      totalAxiesRewarded -= quantity\nInteger Underflow occurs if:\n    quantity = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalAxiesRewarded = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    axiesRewarded[receiver] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xb28a3dd24036151c819c6d401f7a222d9aa3671b.txt:895:7: Warning: Integer Underflow.\n      totalAxiesAdopted[clazz] -= quantity\nInteger Underflow occurs if:\n    plantQuantity = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalAxiesAdopted[clazz] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    axiesAdopted[receiver][clazz] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    aquaticQuantity = 0\n    beastQuantity = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb28a3dd24036151c819c6d401f7a222d9aa3671b.txt:615:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(value)"
+   ], 
+   [
+    "./restContracts/0xb28a3dd24036151c819c6d401f7a222d9aa3671b.txt:347:12: Warning: Transaction-Ordering Dependency.\n    assert(owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.1"
+}

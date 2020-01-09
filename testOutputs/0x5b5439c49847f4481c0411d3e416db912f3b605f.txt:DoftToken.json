@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5b5439c49847f4481c0411d3e416db912f3b605f.txt:295:9: Warning: Integer Overflow.\n        totalSupply += _mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    _mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _target = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5b5439c49847f4481c0411d3e416db912f3b605f.txt:293:9: Warning: Integer Overflow.\n        balanceOf[_target] += _mintedAmount\nInteger Overflow occurs if:\n    balanceOf[_target] = 1\n    _mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _target = 1461501637330902918203684832716283019655932542975\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5b5439c49847f4481c0411d3e416db912f3b605f.txt:237:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x5b5439c49847f4481c0411d3e416db912f3b605f.txt:249:5: Warning: Integer Underflow.\n    string public version", 
+   "./uniqueContractSourceCode/0x5b5439c49847f4481c0411d3e416db912f3b605f.txt:239:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.2"
+}

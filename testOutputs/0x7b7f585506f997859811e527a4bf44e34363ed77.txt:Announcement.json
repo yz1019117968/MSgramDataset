@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7b7f585506f997859811e527a4bf44e34363ed77.txt:267:13: Warning: Integer Overflow.\n            maa.msg", 
+   "./uniqueContractSourceCode/0x7b7f585506f997859811e527a4bf44e34363ed77.txt:77:5: Warning: Integer Overflow.\n    uint256[] public alarms", 
+   "./uniqueContractSourceCode/0x7b7f585506f997859811e527a4bf44e34363ed77.txt:67:5: Warning: Integer Overflow.\n    address[] public auditorsList", 
+   "./uniqueContractSourceCode/0x7b7f585506f997859811e527a4bf44e34363ed77.txt:265:13: Warning: Integer Overflow.\n            maa.nAlarms", 
+   "./uniqueContractSourceCode/0x7b7f585506f997859811e527a4bf44e34363ed77.txt:195:13: Warning: Integer Overflow.\n            msgWaiting.nAlarms\nInteger Overflow occurs if:\n    alarmRaised[msgWaitingN] = 0\n    msgsWaitingDone[msgWaitingN] = 0\n    auditors[msg.sender] = 255\n    msgGood = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7b7f585506f997859811e527a4bf44e34363ed77.txt:85:5: Warning: Integer Underflow.\n    mapping(uint256 => Message) public msgMap"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.5"
+}

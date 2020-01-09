@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8b7b6c61238088593bf75eec8fbf58d0a615d30c.txt:1059:18: Warning: Timestamp Dependency.\n        else if (t >= publicStart && t < publicEnd", 
+   "./restContracts/0x8b7b6c61238088593bf75eec8fbf58d0a615d30c.txt:1041:14: Warning: Timestamp Dependency.\n        else if (t >= whitelistStart && t < publicStart) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x8b7b6c61238088593bf75eec8fbf58d0a615d30c.txt:1059:14: Warning: Timestamp Dependency.\n        else if (t >= publicStart && t < publicEnd)\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x8b7b6c61238088593bf75eec8fbf58d0a615d30c.txt:1031:9: Warning: Timestamp Dependency.\n        if (t >= privateStart && t < whitelistStart) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x8b7b6c61238088593bf75eec8fbf58d0a615d30c.txt:1041:18: Warning: Timestamp Dependency.\n        else if (t >= whitelistStart && t < publicStart", 
+   "./restContracts/0x8b7b6c61238088593bf75eec8fbf58d0a615d30c.txt:1031:13: Warning: Timestamp Dependency.\n        if (t >= privateStart && t < whitelistStart"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.5"
+}

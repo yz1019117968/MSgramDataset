@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb37fdb09a5793ecddc1efc48014d6d4f55096e4b.txt:821:9: Warning: Integer Overflow.\n        disbursements.push(disbursement)\nInteger Overflow occurs if:\n    owner = 0\n    setupCompleteFlag = 255\n    endBlock = 0", 
+   "./restContracts/0xb37fdb09a5793ecddc1efc48014d6d4f55096e4b.txt:1095:5: Warning: Integer Overflow.\n    function addWhitelist(address[] _purchaser, uint[] _amount)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _purchaser = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb37fdb09a5793ecddc1efc48014d6d4f55096e4b.txt:899:5: Warning: Integer Overflow.\n    function distributePresaleTokens(address[] _buyers, uint[] _amounts)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _buyers = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb37fdb09a5793ecddc1efc48014d6d4f55096e4b.txt:665:5: Warning: Integer Overflow.\n    address[] public disbursements", 
+   "./restContracts/0xb37fdb09a5793ecddc1efc48014d6d4f55096e4b.txt:833:5: Warning: Integer Overflow.\n    function distributeTimelockedTokens(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _beneficiaries = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb37fdb09a5793ecddc1efc48014d6d4f55096e4b.txt:971:9: Warning: Transaction-Ordering Dependency.\n        _tokenHolder.transfer(refund)"
+   ], 
+   [
+    "./restContracts/0xb37fdb09a5793ecddc1efc48014d6d4f55096e4b.txt:965:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(excessAmount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.4"
+}

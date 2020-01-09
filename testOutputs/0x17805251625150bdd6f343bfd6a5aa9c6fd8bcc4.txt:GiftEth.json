@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x17805251625150bdd6f343bfd6a5aa9c6fd8bcc4.txt:41:5: Warning: Timestamp Dependency.\n    require(now >= lockTs)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x17805251625150bdd6f343bfd6a5aa9c6fd8bcc4.txt:19:3: Warning: Integer Underflow.\n  string public giftMessage"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.8"
+}

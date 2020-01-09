@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:453:4: Warning: Integer Overflow.\n\t\t\tinfo.ethForReederem\nInteger Overflow occurs if:\n    periods.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owner = 0\n    _ethForReederem = 0", 
+   "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:403:9: Warning: Integer Overflow.\n        accounts.push(_userWallet)", 
+   "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:437:29: Warning: Integer Overflow.\n\t\tActualInfo storage info = periods[period.sub(1)]\nInteger Overflow occurs if:\n    periods.length = 115792089237316195423570985008687907853227449369775446731524662181984158613504\n    owner = 0", 
+   "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:453:28: Warning: Integer Overflow.\n\t\t\tinfo.ethForReederem = ((info.tokensAtThePeriod\nInteger Overflow occurs if:\n    periods.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owner = 0\n    _ethForReederem = 0", 
+   "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:443:9: Warning: Integer Overflow.\n        info.price\nInteger Overflow occurs if:\n    periods.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owner = 0", 
+   "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:439:32: Warning: Integer Overflow.\n\t\tuint256 tokensAtThisPeriod = info.tokensAtThePeriod\nInteger Overflow occurs if:\n    periods.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owner = 0", 
+   "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:295:1: Warning: Integer Overflow.\ncontract ExchangeManager is Owned {\r\n^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:757:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0xb8c07c219202afd165b7ecfd5800b7e941338193.txt:725:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "29.5"
+}

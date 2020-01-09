@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x877fBe7945DE011a91333ba76eD38FFd41314801.txt:741:3: Warning: Integer Underflow.\n  string public symbol = \"BKA\"", 
+   "./restContracts/0x877fBe7945DE011a91333ba76eD38FFd41314801.txt:739:3: Warning: Integer Underflow.\n  string public name = \"BKAToken\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.4"
+}

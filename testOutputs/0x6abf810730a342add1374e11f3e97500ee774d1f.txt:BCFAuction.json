@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1153:38: Warning: Integer Overflow.\n        return calculateCurrentPrice(auction.startPrice\nInteger Overflow occurs if:\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1153:58: Warning: Integer Overflow.\n        return calculateCurrentPrice(auction.startPrice, auction.endPrice\nInteger Overflow occurs if:\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1057:9: Warning: Integer Overflow.\n        playerCardIdToAuction[cardId] = auction\nInteger Overflow occurs if:\n    endPrice = 0\n    duration = 256\n    startPrice = 0\n    dataStore = 1461501637330902918203684832716283019655932542975\n    seller = 1461501637330902918203684832716283019655932542975\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1145:19: Warning: Integer Overflow.\n        if (now > auction.startedAt\nInteger Overflow occurs if:\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1087:17: Warning: Integer Overflow.\n        return (auction.startedAt\nInteger Overflow occurs if:\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1153:76: Warning: Integer Overflow.\n        return calculateCurrentPrice(auction.startPrice, auction.endPrice, auction.duration\nInteger Overflow occurs if:\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1177:35: Warning: Integer Underflow.\n        int256 totalPriceChange = int256(endPrice) - int256(startPrice)\nInteger Underflow occurs if:\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.6"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x0807a2d6a675e7196a3d9b1910700cae9795b72a.txt:165:32: Warning: Timestamp Dependency.\n    modifier afterDeadline() { if (now >= deadlines[deadlines.length-1]) _"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.7"
+}

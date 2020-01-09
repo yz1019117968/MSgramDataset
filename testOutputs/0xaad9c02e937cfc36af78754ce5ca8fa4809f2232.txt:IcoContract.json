@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xaad9c02e937cfc36af78754ce5ca8fa4809f2232.txt:565:5: Warning: Timestamp Dependency.\n    require (now >= fundingStartTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xaad9c02e937cfc36af78754ce5ca8fa4809f2232.txt:609:5: Warning: Transaction-Ordering Dependency.\n    ethFundDeposit.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xaad9c02e937cfc36af78754ce5ca8fa4809f2232.txt:625:5: Warning: Transaction-Ordering Dependency.\n    ethFundDeposit.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.6"
+}

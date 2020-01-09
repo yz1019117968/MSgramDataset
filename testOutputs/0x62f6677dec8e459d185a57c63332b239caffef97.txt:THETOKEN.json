@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x62f6677dec8e459d185a57c63332b239caffef97.txt:307:3: Warning: Integer Underflow.\n  string public name = \"StrikeCoin\"", 
+   "./uniqueContractSourceCode/0x62f6677dec8e459d185a57c63332b239caffef97.txt:309:3: Warning: Integer Underflow.\n  string public symbol = \"STRIKE\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

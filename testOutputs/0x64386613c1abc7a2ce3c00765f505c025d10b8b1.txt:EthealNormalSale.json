@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x64386613c1abc7a2ce3c00765f505c025d10b8b1.txt:1853:9: Warning: Integer Overflow.\n        _bonus += bonusExtra[ _addr ]\nInteger Overflow occurs if:\n    _size = 0\n    startTime = 0\n    bonusExtra[ _addr ] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x64386613c1abc7a2ce3c00765f505c025d10b8b1.txt:1541:5: Warning: Integer Overflow.\n    function depositOffchain(address _beneficiary, uint256 _amount, uint256 _time, bytes _whitelistSign) public onlyOwner whenNotPaused {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _whitelistSign = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x64386613c1abc7a2ce3c00765f505c025d10b8b1.txt:1377:5: Warning: Integer Overflow.\n    function buyTokensSigned(address _beneficiary, bytes _whitelistSign) public payable whenNotPaused {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _whitelistSign = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x64386613c1abc7a2ce3c00765f505c025d10b8b1.txt:1133:5: Warning: Integer Overflow.\n    address[] public contributorsKeys", 
+   "./uniqueContractSourceCode/0x64386613c1abc7a2ce3c00765f505c025d10b8b1.txt:1527:5: Warning: Integer Overflow.\n    function depositEth(address _beneficiary, uint256 _time, bytes _whitelistSign) public payable whenNotPaused {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _whitelistSign = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.0"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2fd25efb3e998e0809646cf933a9df82219b582c.txt:29:3: Warning: Integer Overflow.\n\t\tstake+=msg.value\nInteger Overflow occurs if:\n    stake = 96943655105911162741802056509404709410348723981800351264466039153235703480681\n    solveTime = 1\n    curMax = 31769636791936532929661760715285583354076941682947407161600322099437000056172"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.6"
+}

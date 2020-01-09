@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x36EFEE477f68C136139ABeb219Be6C2254711d0a.txt:241:13: Warning: Integer Overflow.\n            balanceOf[owner] += unsoldTokens\nInteger Overflow occurs if:\n    icoTill = 0\n    balanceOf[owner] = 1\n    balanceOf[this] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x36EFEE477f68C136139ABeb219Be6C2254711d0a.txt:49:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x36EFEE477f68C136139ABeb219Be6C2254711d0a.txt:51:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x36EFEE477f68C136139ABeb219Be6C2254711d0a.txt:47:5: Warning: Integer Underflow.\n    string public standard = 'FLiK 0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.2"
+}

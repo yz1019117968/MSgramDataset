@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbffdbbb3c6e77ba88627a181dd8edc3c2f89da50.txt:313:3: Warning: Integer Underflow.\n  string public name = \"AIRDROP\"", 
+   "./restContracts/0xbffdbbb3c6e77ba88627a181dd8edc3c2f89da50.txt:315:3: Warning: Integer Underflow.\n  string public symbol = \"ADROP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2e14e0c5589f5d6c4f34d230950f82177e001f53.txt:45:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2e14e0c5589f5d6c4f34d230950f82177e001f53.txt:303:3: Warning: Integer Underflow.\n  string public name = \"SSA\"", 
+   "./uniqueContractSourceCode/0x2e14e0c5589f5d6c4f34d230950f82177e001f53.txt:305:3: Warning: Integer Underflow.\n  string public symbol = \"SSA\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.2"
+}

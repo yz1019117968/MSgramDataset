@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2b08f3aB8986075F8691ea9abC393642964e64c5.txt:241:2: Warning: Integer Underflow.\n string public symbol = \"SDAO\"", 
+   "./uniqueContractSourceCode/0x2b08f3aB8986075F8691ea9abC393642964e64c5.txt:239:2: Warning: Integer Underflow.\n string public name = \"Solar DAO Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.3"
+}

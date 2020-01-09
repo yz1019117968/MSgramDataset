@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:275:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:135:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:273:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:219:5: Warning: Integer Underflow.\n    string public tokenSymbol = \"LEGIT\"", 
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:217:5: Warning: Integer Underflow.\n    string public tokenName = \"Ethereum Legit\"", 
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:49:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:51:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xbaf9d121d6447b19e95f48fad834a0dff1a92691.txt:47:5: Warning: Integer Underflow.\n    string public standard = \"LEGIT 1.0\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.1"
+}

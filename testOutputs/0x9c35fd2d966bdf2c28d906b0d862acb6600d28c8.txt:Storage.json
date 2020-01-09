@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9c35fd2d966bdf2c28d906b0d862acb6600d28c8.txt:61:16: Warning: Integer Overflow.\n        assert(slot[userAddress]+data\nInteger Overflow occurs if:\n    slot[userAddress] = 1\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    changeable = 372682917519380244141939632342652170012262798458880\n    adminStatus[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

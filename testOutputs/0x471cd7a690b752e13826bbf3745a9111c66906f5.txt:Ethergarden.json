@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:207:3: Warning: Integer Overflow.\n  Tree[] public forest", 
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:277:27: Warning: Integer Overflow.\n    Tree storage myTree = forest[_treeId]\nInteger Overflow occurs if:\n    _treeId = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    forest[_treeId] = 28948022309329048855892746252171976963317496166410141009864396001978282409985", 
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:85:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _treeId = 0\n    forest[_treeId] = 1", 
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:295:27: Warning: Integer Overflow.\n    Tree storage myTree = forest[_treeId]\nInteger Overflow occurs if:\n    forest[_treeId] = 38597363079105398474523661669562635951089994888546854679819194669304376546647\n    _treeId = 38597363079105398474523661669562635951089994888546854679819194669304376546645", 
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:237:5: Warning: Integer Overflow.\n    _createTree(_name, _url, msg.value)", 
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:257:27: Warning: Integer Overflow.\n    Tree storage myTree = forest[_treeId]\nInteger Overflow occurs if:\n    _treeId = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    forest[_treeId] = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    treeToOwner[_treeId] = 0", 
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:259:5: Warning: Integer Overflow.\n    myTree.name\nInteger Overflow occurs if:\n    _treeId = 0\n    forest[_treeId] = 1\n    treeToOwner[_treeId] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:207:3: Warning: Integer Underflow.\n  Tree[] public forest", 
+   "./uniqueContractSourceCode/0x471cd7a690b752e13826bbf3745a9111c66906f5.txt:179:1: Warning: Integer Underflow.\ncontract Ethergarden is Ownable {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    _treeId = 0\n    forest[_treeId] = 1\n    treeToOwner[_treeId] = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "39.6"
+}

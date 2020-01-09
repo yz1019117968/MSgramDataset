@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8f2ecccc42ed88348ad39a1985188dc57d75bdf0.txt:1555:30: Warning: Integer Underflow.\n            return _ether * (200 - _rate\nInteger Underflow occurs if:\n    _rate = 201\n    _status = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8f2ecccc42ed88348ad39a1985188dc57d75bdf0.txt:1295:13: Warning: Transaction-Ordering Dependency.\n            namiMultiSigWallet.transfer(_amount)"
+   ], 
+   [
+    "./restContracts/0x8f2ecccc42ed88348ad39a1985188dc57d75bdf0.txt:1317:13: Warning: Transaction-Ordering Dependency.\n            _withdraw.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.7"
+}

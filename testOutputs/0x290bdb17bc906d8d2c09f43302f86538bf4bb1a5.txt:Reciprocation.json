@@ -1,0 +1,40 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:243:13: Warning: Integer Overflow.\n            users[target] = User(false, false, 0, true)\nInteger Overflow occurs if:\n    users[target].isset = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:241:13: Warning: Integer Overflow.\n        if(!users[target].isset", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:201:9: Warning: Integer Overflow.\n        users[getFirstAdmin()].balance += userBalance\nInteger Overflow occurs if:\n    users[getFirstAdmin()].balance = 1\n    users[banUser].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    users[banUser].isset = 255\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:247:16: Warning: Integer Overflow.\n        return users[target].balance\nInteger Overflow occurs if:\n    users[target].isset = 255", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:5:1: Warning: Integer Overflow.\ncontract Reciprocation {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    balancesKeys.length = 1\n    users[msg.sender].banned = 0\n    balancesKeys[i] = 1461501637330902918203684832716283019655932542975\n    users[_to].isset = 255\n    users[msg.sender].isset = 255", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:225:13: Warning: Integer Overflow.\n        if(!users[freezAccount].isset\nInteger Overflow occurs if:\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:337:16: Warning: Integer Overflow.\n        return balancesKeys[balancesIndex]\nInteger Overflow occurs if:\n    balancesIndex = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    balancesKeys.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:197:27: Warning: Integer Overflow.\n        var userBalance = users[banUser].balance\nInteger Overflow occurs if:\n    users[banUser].isset = 255\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:311:9: Warning: Integer Overflow.\n        users[_to].balance\nInteger Overflow occurs if:\n    balancesKeys.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    users[msg.sender].banned = 0\n    _value = 0\n    users[_to].balance = 0\n    users[msg.sender].balance = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    balancesKeys[i] = 0\n    balancesKeys[i] = 1461501637330902918203684832716283019655932542975\n    balancesKeys[i] = 1461501637330902918203684832716283019655932542975\n    balancesKeys[i] = 1461501637330902918203684832716283019655932542975\n    users[_to].isset = 255\n    users[msg.sender].isset = 255", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:201:9: Warning: Integer Overflow.\n        users[getFirstAdmin()].balance\nInteger Overflow occurs if:\n    users[banUser].isset = 255\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:285:13: Warning: Integer Overflow.\n            users[_to] = User(false, false, 0, true)\nInteger Overflow occurs if:\n    users[msg.sender].banned = 0\n    users[_to].isset = 0\n    users[msg.sender].isset = 255", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:309:9: Warning: Integer Overflow.\n        users[msg.sender].balance\nInteger Overflow occurs if:\n    balancesKeys.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    users[msg.sender].banned = 0\n    _value = 0\n    users[_to].balance = 0\n    users[msg.sender].balance = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    balancesKeys[i] = 0\n    balancesKeys[i] = 1461501637330902918203684832716283019655932542975\n    balancesKeys[i] = 1461501637330902918203684832716283019655932542975\n    balancesKeys[i] = 1461501637330902918203684832716283019655932542975\n    users[_to].isset = 255\n    users[msg.sender].isset = 255", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:227:13: Warning: Integer Overflow.\n            users[freezAccount] = User(false, false, 0, true)\nInteger Overflow occurs if:\n    users[freezAccount].isset = 0\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:165:13: Warning: Integer Overflow.\n        if(!users[msg.sender].isset\nInteger Overflow occurs if:\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:203:9: Warning: Integer Overflow.\n        users[banUser].balance\nInteger Overflow occurs if:\n    users[banUser].isset = 255\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:189:13: Warning: Integer Overflow.\n        if(!users[banUser].isset\nInteger Overflow occurs if:\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:279:13: Warning: Integer Overflow.\n            users[msg.sender] = User(false, false, 0, true)\nInteger Overflow occurs if:\n    users[msg.sender].banned = 0\n    users[msg.sender].isset = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:167:13: Warning: Integer Overflow.\n            users[msg.sender] = User(false, false, 0, true)\nInteger Overflow occurs if:\n    users[msg.sender].isset = 0\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:191:13: Warning: Integer Overflow.\n            users[banUser] = User(false, false, 0, true)\nInteger Overflow occurs if:\n    users[banUser].isset = 0\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:215:9: Warning: Integer Overflow.\n        users[addressToDestroy].balance\nInteger Overflow occurs if:\n    admin1 = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:9:4: Warning: Integer Underflow.\n   string public standard = 'Token 0.1'", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:11:4: Warning: Integer Underflow.\n   string public name", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:215:9: Warning: Integer Underflow.\n        users[addressToDestroy].balance -= amount\nInteger Underflow occurs if:\n    users[addressToDestroy].balance = 0\n    amount = 1\n    admin1 = 0", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:13:4: Warning: Integer Underflow.\n   string public symbol", 
+   "./uniqueContractSourceCode/0x290bdb17bc906d8d2c09f43302f86538bf4bb1a5.txt:217:9: Warning: Integer Underflow.\n        totalSupply -= amount\nInteger Underflow occurs if:\n    totalSupply = 0\n    amount = 1\n    admin1 = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.6"
+}

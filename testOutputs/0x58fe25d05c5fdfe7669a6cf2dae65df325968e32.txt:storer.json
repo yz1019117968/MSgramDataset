@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x58fe25d05c5fdfe7669a6cf2dae65df325968e32.txt:31:2: Warning: Integer Overflow.\n\tfunction store(string _log) onlyOwner() {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _log = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x58fe25d05c5fdfe7669a6cf2dae65df325968e32.txt:7:2: Warning: Integer Underflow.\n\tstring public log"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.0"
+}

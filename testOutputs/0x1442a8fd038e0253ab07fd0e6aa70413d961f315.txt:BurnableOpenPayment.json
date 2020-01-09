@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:219:24: Warning: Callstack Depth Attack Vulnerability.\n        bool success = burnAddress.send(amount)", 
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:269:24: Warning: Callstack Depth Attack Vulnerability.\n        bool success = recipient.send(amount)"
+  ], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:375:9: Warning: Timestamp Dependency.\n        if (now < defaultTriggerTime) throw"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:357:30: Warning: Integer Overflow.\n        defaultTriggerTime = now + defaultTimeoutLength\nInteger Overflow occurs if:\n    state = 1\n    defaultAction = 1\n    defaultTimeoutLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    payer = 0", 
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:309:5: Warning: Integer Overflow.\n    function setPayerString(string _string)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _string = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:201:34: Warning: Integer Overflow.\n            defaultTriggerTime = now + defaultTimeoutLength\nInteger Overflow occurs if:\n    state = 0\n    defaultAction = 1\n    defaultTimeoutLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    commitThreshold = 0", 
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:325:5: Warning: Integer Overflow.\n    function setRecipientString(string _string)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _string = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:43:5: Warning: Integer Underflow.\n    string public payerString", 
+   "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:45:5: Warning: Integer Underflow.\n    string public recipientString"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:269:24: Warning: Transaction-Ordering Dependency.\n        bool success = recipient.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1442a8fd038e0253ab07fd0e6aa70413d961f315.txt:219:24: Warning: Transaction-Ordering Dependency.\n        bool success = burnAddress.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.8"
+}

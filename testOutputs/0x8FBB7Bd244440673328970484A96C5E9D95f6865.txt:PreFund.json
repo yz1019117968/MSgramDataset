@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8FBB7Bd244440673328970484A96C5E9D95f6865.txt:447:4: Warning: Timestamp Dependency.\n  \trequire(now <= endTime)", 
+   "./restContracts/0x8FBB7Bd244440673328970484A96C5E9D95f6865.txt:399:5: Warning: Timestamp Dependency.\n    require(now >= endTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8FBB7Bd244440673328970484A96C5E9D95f6865.txt:125:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    deposited[beneficiary] = 89441541128781016767142973959400142541504689303939942133021960946669071077376\n    endTime = 0\n    startTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8FBB7Bd244440673328970484A96C5E9D95f6865.txt:401:5: Warning: Transaction-Ordering Dependency.\n    wallet.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0x8FBB7Bd244440673328970484A96C5E9D95f6865.txt:465:5: Warning: Transaction-Ordering Dependency.\n    _wallet.transfer(depositedValue)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.3"
+}

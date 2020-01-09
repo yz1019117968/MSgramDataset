@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:1479:27: Warning: Integer Overflow.\n        _numberOfTokens = r.numberOfTokens\nInteger Overflow occurs if:\n    self.cll[n][PREV] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:1593:9: Warning: Integer Overflow.\n        rewards.push(tokenReward)\nInteger Overflow occurs if:\n    distCtx.distributionAmount = 1048576\n    distCtx.receivedRedemptionAmount = 1048576\n    tokenStatus = 2923003274661805836407369665432566039311865085952\n    totalSupplyOfTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    distCtx.redemptionAmount = 0\n    distCtx.currentRedemptionId = 0", 
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:1787:9: Warning: Integer Overflow.\n        rewards.push(tokenReward)\nInteger Overflow occurs if:\n    owner = 1461501637330902918203684832716283019655932542976\n    totalSupplyOfTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:109:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    distCtx.distributionAmount = 115792089237316195423570985008687907853269984665640564039457579504313502269438\n    distCtx.receivedRedemptionAmount = 0\n    tokenStatus = 2923003274661805836407369665432566039311865085952\n    distCtx.redemptionAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    distCtx.currentRedemptionId = 0", 
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:1477:26: Warning: Integer Overflow.\n        _holderAddress = r.holderAddress\nInteger Overflow occurs if:\n    self.cll[n][PREV] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:947:1: Warning: Integer Overflow.\ncontract AquaToken is Owned, Token {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    distCtx.distributionAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    distCtx.receivedRedemptionAmount = 0\n    tokenStatus = 2923003274661805836407369665432566039311865085952\n    totalSupplyOfTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    distCtx.redemptionAmount = 0\n    distCtx.currentRedemptionId = 0", 
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:1711:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:1083:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x1d97bccc6296aac6f0be796c7e8cb270eca4c6c6.txt:1079:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.9"
+}

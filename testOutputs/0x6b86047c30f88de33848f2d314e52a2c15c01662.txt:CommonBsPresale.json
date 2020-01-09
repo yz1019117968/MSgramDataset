@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1259:9: Warning: Timestamp Dependency.\n        require(isMaxCapReached() || isSaleOver())"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:961:5: Warning: Integer Overflow.\n    function externalSales(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _currencies = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1143:5: Warning: Integer Overflow.\n    function tokensByBtcTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1159:5: Warning: Integer Overflow.\n    function tokensByZecTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:745:5: Warning: Integer Overflow.\n    mapping(address => Backer) public backers", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1183:5: Warning: Integer Overflow.\n    function tokensByUsdTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:47:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    totalInWei = 86044229132212345804863048864560258897152858107702498605390724608804476430219\n    minWeiToAccept = 72993951923977451234557491544841229550235665336403630972904477577693495780771\n    endTime = 0\n    startTime = 0\n    paused = 0\n    saleEnabled = 255", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1151:5: Warning: Integer Overflow.\n    function tokensByLtcTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1175:5: Warning: Integer Overflow.\n    function tokensByWavesTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1167:5: Warning: Integer Overflow.\n    function tokensByDashTx(string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1135:5: Warning: Integer Overflow.\n    function tokensByTx(uint8 _currency, string _txId) public constant returns (uint256) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txId = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1263:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:1263:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.3"
+}

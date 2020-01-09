@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4e09bec79180b52b8fa109099bb22e64e771c195.txt:231:9: Warning: Timestamp Dependency.\n        if (now < end) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4e09bec79180b52b8fa109099bb22e64e771c195.txt:261:9: Warning: Timestamp Dependency.\n        if((tokensSold >= fundingGoal && now >= end) || (tokensSold >= maxGoal)) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4e09bec79180b52b8fa109099bb22e64e771c195.txt:261:12: Warning: Timestamp Dependency.\n        if((tokensSold >= fundingGoal && now >= end) || (tokensSold >= maxGoal)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4e09bec79180b52b8fa109099bb22e64e771c195.txt:303:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4e09bec79180b52b8fa109099bb22e64e771c195.txt:303:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.5"
+}

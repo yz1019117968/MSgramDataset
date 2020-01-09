@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x05d5cd67b6274ace2eb72a17beafdb06bdd9fca3.txt:27:5: Warning: Integer Underflow.\n    string public symbol = \"ETN\"", 
+   "./uniqueContractSourceCode/0x05d5cd67b6274ace2eb72a17beafdb06bdd9fca3.txt:25:5: Warning: Integer Underflow.\n    string public name = \"Electron\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

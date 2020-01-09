@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:363:9: Warning: Callstack Depth Attack Vulnerability.\n        requests[requestId].callbackAddr.call.gas(callbackGas)(requests[requestId].callbackFID, requestId, error, respData)", 
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:309:13: Warning: Callstack Depth Attack Vulnerability.\n            SGX_ADDRESS.send(CANCELLATION_FEE)", 
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:341:13: Warning: Callstack Depth Attack Vulnerability.\n            requests[requestId].requester.call.gas(2300).value(fee)()"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:175:18: Warning: Re-Entrancy Vulnerability.\n            if (!requests[0].requester.call.value(this.balance)()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:187:5: Warning: Integer Overflow.\n    function request(uint8 requestType, address callbackAddr, bytes4 callbackFID, uint timestamp, bytes32[] requestData) public payable returns (int) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    requestData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:353:27: Warning: Integer Underflow.\n        if (callbackGas > msg.gas - 5000\nInteger Underflow occurs if:\n    requests[requestId].fee = 57896044618658097711785492504343953926634992332820282019728792003956564819966\n    error = 2\n    requests[requestId].requester = 1461501637330902918203684832716283019655932542975\n    requestId = 18446744073709551615\n    paramsHash = 0\n    requests[requestId].paramsHash = 0", 
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:323:9: Warning: Integer Underflow.\n        unrespondedCnt--\nInteger Underflow occurs if:\n    requests[requestId].fee = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    unrespondedCnt = 0\n    requests[requestId].requester = 1461501637330902918203684832716283019655932542975\n    requestId = 18446744073709551615\n    paramsHash = 0\n    requests[requestId].paramsHash = 0", 
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:349:29: Warning: Integer Underflow.\n        uint callbackGas = (fee - MIN_FEE\nInteger Underflow occurs if:\n    requests[requestId].fee = 23945242826029513411849172299223580994042936223072256\n    MIN_FEE = 23945242826029513411849172299223580994042936223072257\n    error = 2\n    requests[requestId].requester = 1461501637330902918203684832716283019655932542975\n    requestId = 18446744073709551615\n    paramsHash = 0\n    requests[requestId].paramsHash = 0", 
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:117:26: Warning: Integer Underflow.\n            newVersion = -int(newAddr)\nInteger Underflow occurs if:\n    unrespondedCnt = 0\n    newAddr = 1\n    requests[0].requester = 0", 
+   "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:313:13: Warning: Integer Underflow.\n            unrespondedCnt--\nInteger Underflow occurs if:\n    unrespondedCnt = 0\n    CANCELLATION_FEE = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    requests[requestId].requester = 1461501637330902918203684832716283019655932542975\n    requestId = 18446744073709551615\n    requests[requestId].fee = 1\n    paramsHash = 0\n    requests[requestId].paramsHash = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:175:18: Warning: Transaction-Ordering Dependency.\n            if (!requests[0].requester.call.value(this.balance)()"
+   ], 
+   [
+    "./restContracts/0x89c1b3807d4c67df034fffb62f3509561218d30b.txt:341:13: Warning: Transaction-Ordering Dependency.\n            requests[requestId].requester.call.gas(2300).value(fee)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.7"
+}

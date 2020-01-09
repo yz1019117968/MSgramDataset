@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb5e5585d0057501c91c48094029a6f4fb10b5a01.txt:1293:47: Warning: Integer Overflow.\n        return price_start * (1 + elapsed) / (1 + elapsed\nInteger Overflow occurs if:\n    stage = 2\n    bids[msg.sender] = 231103738228765622\n    start_time = 0\n    price_constant = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5e5585d0057501c91c48094029a6f4fb10b5a01.txt:947:5: Warning: Integer Overflow.\n    function removeFromWhitelist(address[] _bidder_addresses) public isWhitelister {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _bidder_addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5e5585d0057501c91c48094029a6f4fb10b5a01.txt:1041:16: Warning: Integer Overflow.\n        assert(bids[msg.sender] + msg.value\nInteger Overflow occurs if:\n    stage = 2\n    bids[msg.sender] = 111209767491424479617009207221031590831178909548169703273519543293376657646025", 
+   "./restContracts/0xb5e5585d0057501c91c48094029a6f4fb10b5a01.txt:929:5: Warning: Integer Overflow.\n    function addToWhitelist(address[] _bidder_addresses) public isWhitelister {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _bidder_addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb5e5585d0057501c91c48094029a6f4fb10b5a01.txt:1285:23: Warning: Integer Underflow.\n            elapsed = now - start_time\nInteger Underflow occurs if:\n    stage = 2\n    bids[msg.sender] = 231103738228765622\n    start_time = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.9"
+}

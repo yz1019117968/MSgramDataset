@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:109:5: Warning: Integer Overflow.\n    function convertToEach(uint amount, string unit, uint unitIndex) external constant returns (uint convAmt, string convUnit) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    unit = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:81:25: Warning: Integer Overflow.\n        return amount * etherUnits[unit]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:89:22: Warning: Integer Overflow.\n        uint input = etherUnits[unit]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:79:5: Warning: Integer Overflow.\n    function convertToWei(uint amount, string unit) external constant returns (uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    unit = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:173:27: Warning: Integer Overflow.\n            uint output = etherUnits[unitsArray[i]]\nInteger Overflow occurs if:\n    etherUnits[unitsArray[i]] = 0", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:5:1: Warning: Integer Overflow.\ncontract EtherUnitConverter {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:91:23: Warning: Integer Overflow.\n        uint output = etherUnits[convertTo]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:87:5: Warning: Integer Overflow.\n    function convertTo(uint amount, string unit, string convertTo) external constant returns (uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    unit = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:133:5: Warning: Integer Overflow.\n    function convertToAllTable(uint amount, string unit) \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    unit = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:115:23: Warning: Integer Overflow.\n        uint output = etherUnits[unitsArray[unitIndex]]\nInteger Overflow occurs if:\n    etherUnits[unitsArray[unitIndex]] = 0\n    unitIndex = 10", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:113:22: Warning: Integer Overflow.\n        uint input = etherUnits[unit]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:153:22: Warning: Integer Overflow.\n        uint input = etherUnits[unit]"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:173:27: Warning: Integer Underflow.\n            uint output = etherUnits[unitsArray[i]]\nInteger Underflow occurs if:\n    etherUnits[unitsArray[i]] = 1", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:113:22: Warning: Integer Underflow.\n        uint input = etherUnits[unit]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:89:22: Warning: Integer Underflow.\n        uint input = etherUnits[unit]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:115:23: Warning: Integer Underflow.\n        uint output = etherUnits[unitsArray[unitIndex]]\nInteger Underflow occurs if:\n    etherUnits[unitsArray[unitIndex]] = 1\n    unitIndex = 10", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:153:22: Warning: Integer Underflow.\n        uint input = etherUnits[unit]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:91:23: Warning: Integer Underflow.\n        uint output = etherUnits[convertTo]", 
+   "./uniqueContractSourceCode/0x52070b253406fc4F2bf71dBaF910F66c45828DBA.txt:81:25: Warning: Integer Underflow.\n        return amount * etherUnits[unit]"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.5"
+}

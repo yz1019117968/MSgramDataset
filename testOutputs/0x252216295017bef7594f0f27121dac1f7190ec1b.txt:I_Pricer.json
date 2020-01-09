@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:525:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {}\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:519:5: Warning: Integer Underflow.\n    string public sURL"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.9"
+}

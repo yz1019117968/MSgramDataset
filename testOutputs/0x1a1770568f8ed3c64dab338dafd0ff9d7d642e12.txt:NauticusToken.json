@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1a1770568f8ed3c64dab338dafd0ff9d7d642e12.txt:381:25: Warning: Integer Overflow.\n\t\tbalances[recipient] = balances[recipient] + val\nInteger Overflow occurs if:\n    balances[recipient] = 98197962156583950141564040171970036922595166398042244069145494213675164469567\n    val = 62455751066196988966365097129707659242924462712197589199992405599766759672735\n    recipient = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1a1770568f8ed3c64dab338dafd0ff9d7d642e12.txt:321:18: Warning: Integer Overflow.\n\t\tbalances[to] = balances[to] + val\nInteger Overflow occurs if:\n    val = 57896044618658097711785492504343953926634992332820282019710345101553180702902\n    balances[to] = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019710345101553180702902\n    to = 1461501637330902918203684832716283019655932542975\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.9"
+}

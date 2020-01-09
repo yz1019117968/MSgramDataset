@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6bdfc84ebc6db38c55649260ac308a7aec7e441b.txt:1:163: Warning: Integer Overflow.\n"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6bdfc84ebc6db38c55649260ac308a7aec7e441b.txt:1:231: Warning: Integer Underflow.\n", 
+   "./uniqueContractSourceCode/0x6bdfc84ebc6db38c55649260ac308a7aec7e441b.txt:9:47: Warning: Integer Underflow.\n function collectExcess()onlyOwner{owner.send(this.balance-2100000\nInteger Underflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6bdfc84ebc6db38c55649260ac308a7aec7e441b.txt:1:71: Warning: Integer Underflow.\n", 
+   "./uniqueContractSourceCode/0x6bdfc84ebc6db38c55649260ac308a7aec7e441b.txt:1:52: Warning: Integer Underflow.\n", 
+   "./uniqueContractSourceCode/0x6bdfc84ebc6db38c55649260ac308a7aec7e441b.txt:1:17: Warning: Integer Underflow.\n"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.0"
+}

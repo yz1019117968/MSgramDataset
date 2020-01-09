@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x24a77c1f17c547105e14813e517be06b0040aa76.txt:425:9: Warning: Timestamp Dependency.\n        require(now >= time)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x24a77c1f17c547105e14813e517be06b0040aa76.txt:53:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    collected = 110769008617052717948565346184836292851965594253073146643181315916637230769185\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    halted = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x24a77c1f17c547105e14813e517be06b0040aa76.txt:381:5: Warning: Integer Underflow.\n    string public name = \"Live Stars Token Presale\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.2"
+}

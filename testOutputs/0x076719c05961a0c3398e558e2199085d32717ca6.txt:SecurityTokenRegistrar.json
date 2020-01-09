@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:2773:5: Warning: Integer Overflow.\n    function getSecurityTokenAddress(string _ticker) public constant returns (address) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _ticker = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:2533:5: Warning: Integer Underflow.\n    string public VERSION = \"1\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "3.9"
+}

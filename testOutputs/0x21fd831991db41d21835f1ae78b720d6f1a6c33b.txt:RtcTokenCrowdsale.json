@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:559:20: Warning: Timestamp Dependency.\n        } else if ((amountRaisedInWei >= fundingMinCapInWei) && (block.timestamp > fundingEndTime) && (tokensRemaining > 0)", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:535:16: Warning: Timestamp Dependency.\n        } else if ((amountRaisedInWei < fundingMinCapInWei) && (block.timestamp < fundingStartTime)) { // ICO has not started\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:527:9: Warning: Timestamp Dependency.\n        if ((amountRaisedInWei < fundingMinCapInWei) && (block.timestamp <= fundingEndTime && block.timestamp >= fundingStartTime)) { // ICO in progress, under softcap\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:567:16: Warning: Timestamp Dependency.\n        } else if ((amountRaisedInWei >= fundingMinCapInWei) && (tokensRemaining > 0) && (block.timestamp <= fundingEndTime)) { // ICO in progress, over softcap!\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:527:58: Warning: Timestamp Dependency.\n        if ((amountRaisedInWei < fundingMinCapInWei) && (block.timestamp <= fundingEndTime && block.timestamp >= fundingStartTime", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:587:18: Warning: Timestamp Dependency.\n        require ((amountRaisedInWei < fundingMinCapInWei)\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:543:16: Warning: Timestamp Dependency.\n        } else if ((amountRaisedInWei < fundingMinCapInWei) && (block.timestamp > fundingEndTime)) { // ICO ended, under softcap\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:559:16: Warning: Timestamp Dependency.\n        } else if ((amountRaisedInWei >= fundingMinCapInWei) && (block.timestamp > fundingEndTime) && (tokensRemaining > 0)) { // ICO ended, over softcap!\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:143:5: Warning: Integer Overflow.\n    function removeFromWhitelist(address[] addresses) public onlyOwner returns (bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:351:45: Warning: Integer Overflow.\n        } else if (now > p1_start && now <= p1_start + p1_duration\nInteger Overflow occurs if:\n    p1_start = 57896044618658101180282747071437627975025734434928978679088360470447935979010\n    maxGasPrice = 0\n    p2_start = 57896044606020625571563108286150213627387751555191814341917665735607874224126\n    p1_duration = 115792089224678719814851346223400493505632001785903399702286889273073067885052\n    tokensRemaining = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fundingEndTime = 57896044618658123422794585292035639060204332386490078771342563474597744738304\n    fundingStartTime = 57896044618658123422794585292035639060204332386490078771342563474597744738304\n    isCrowdSaleSetup = 16711680", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:115:5: Warning: Integer Overflow.\n    function addToWhitelist(address[] addresses) public onlyOwner returns (bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:393:32: Warning: Integer Overflow.\n            && !(_newP2Start > p1_start + p1_duration\nInteger Overflow occurs if:\n    p1_start = 1\n    p1_duration = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _newP2Start = 0\n    p2_start = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isCrowdSaleSetup = 16711680\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:515:9: Warning: Transaction-Ordering Dependency.\n        beneficiaryWallet.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x21fd831991db41d21835f1ae78b720d6f1a6c33b.txt:515:9: Warning: Transaction-Ordering Dependency.\n        beneficiaryWallet.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.2"
+}

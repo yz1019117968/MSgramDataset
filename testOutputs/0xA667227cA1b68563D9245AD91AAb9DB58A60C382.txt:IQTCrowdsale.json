@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xA667227cA1b68563D9245AD91AAb9DB58A60C382.txt:345:4: Warning: Integer Overflow.\n\t\t\tcontributorList[_contributor].contributionAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].isActive = 0\n    crowdsaleClosed = 0", 
+   "./restContracts/0xA667227cA1b68563D9245AD91AAb9DB58A60C382.txt:347:4: Warning: Integer Overflow.\n\t\t\tcontributorList[_contributor].tokensAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].isActive = 0\n    crowdsaleClosed = 0", 
+   "./restContracts/0xA667227cA1b68563D9245AD91AAb9DB58A60C382.txt:305:9: Warning: Integer Overflow.\n        amountRaised += contributionEthAmount\nInteger Overflow occurs if:\n    amountRaised = 1\n    crowdsaleClosed = 0", 
+   "./restContracts/0xA667227cA1b68563D9245AD91AAb9DB58A60C382.txt:363:4: Warning: Integer Overflow.\n\t\t\tcontributorList[_contributor].tokensAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].isActive = 255\n    crowdsaleClosed = 0", 
+   "./restContracts/0xA667227cA1b68563D9245AD91AAb9DB58A60C382.txt:361:4: Warning: Integer Overflow.\n\t\t\tcontributorList[_contributor].contributionAmount += contributionEthAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].contributionAmount = 1\n    contributorList[_contributor].isActive = 255\n    crowdsaleClosed = 0", 
+   "./restContracts/0xA667227cA1b68563D9245AD91AAb9DB58A60C382.txt:361:4: Warning: Integer Overflow.\n\t\t\tcontributorList[_contributor].contributionAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].isActive = 255\n    crowdsaleClosed = 0", 
+   "./restContracts/0xA667227cA1b68563D9245AD91AAb9DB58A60C382.txt:307:3: Warning: Integer Overflow.\n\t\tremainAmount += contributionEthAmount\nInteger Overflow occurs if:\n    remainAmount = 1\n    crowdsaleClosed = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "9.7"
+}

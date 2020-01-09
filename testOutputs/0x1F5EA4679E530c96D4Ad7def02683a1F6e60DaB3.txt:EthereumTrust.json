@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1F5EA4679E530c96D4Ad7def02683a1F6e60DaB3.txt:7:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x1F5EA4679E530c96D4Ad7def02683a1F6e60DaB3.txt:9:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x1F5EA4679E530c96D4Ad7def02683a1F6e60DaB3.txt:5:5: Warning: Integer Underflow.\n    string public standard = 'EthereumTrust 0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.9"
+}

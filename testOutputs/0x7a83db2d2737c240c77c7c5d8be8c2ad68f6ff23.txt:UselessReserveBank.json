@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7a83db2d2737c240c77c7c5d8be8c2ad68f6ff23.txt:505:5: Warning: Integer Overflow.\n    address[] public treasuryOfficials"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7a83db2d2737c240c77c7c5d8be8c2ad68f6ff23.txt:649:9: Warning: Integer Underflow.\n        totalSupply -= amountOfTokens\nInteger Underflow occurs if:\n    amountOfTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.9"
+}

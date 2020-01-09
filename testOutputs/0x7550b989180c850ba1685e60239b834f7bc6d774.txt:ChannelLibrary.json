@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7550b989180c850ba1685e60239b834f7bc6d774.txt:295:9: Warning: Integer Overflow.\n        self.close_requested\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.sender = 0\n    self.close_requested = 0", 
+   "./uniqueContractSourceCode/0x7550b989180c850ba1685e60239b834f7bc6d774.txt:451:5: Warning: Integer Overflow.\n    function validateTransfer(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    lock_data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7550b989180c850ba1685e60239b834f7bc6d774.txt:269:13: Warning: Integer Overflow.\n            self.balance\nInteger Overflow occurs if:\n    amount = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.opened = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.sender = 0\n    self.closed = 0", 
+   "./uniqueContractSourceCode/0x7550b989180c850ba1685e60239b834f7bc6d774.txt:431:9: Warning: Integer Overflow.\n        self.settled\nInteger Overflow occurs if:\n    self.closed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.settle_timeout = 0\n    self.balance = 0\n    self.completed_transfers = 0\n    self.settled = 0", 
+   "./uniqueContractSourceCode/0x7550b989180c850ba1685e60239b834f7bc6d774.txt:445:9: Warning: Integer Overflow.\n        self.audited\nInteger Overflow occurs if:\n    self.closed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.audit_timeout = 1\n    auditor = 0\n    self.auditor = 0\n    self.audited = 0", 
+   "./uniqueContractSourceCode/0x7550b989180c850ba1685e60239b834f7bc6d774.txt:491:5: Warning: Integer Overflow.\n    function hashTransfer(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    lock_data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7550b989180c850ba1685e60239b834f7bc6d774.txt:301:5: Warning: Integer Overflow.\n    function close(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    signature = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.8"
+}

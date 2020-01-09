@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:193:9: Warning: Integer Overflow.\n        zs.power_out+=delta_power_out", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:189:9: Warning: Integer Overflow.\n        zs.time+=delta_time", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:137:10: Warning: Integer Overflow.\n         zs.oracle\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:195:9: Warning: Integer Overflow.\n        zss[link]=zs", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:117:5: Warning: Integer Overflow.\n    mapping(address=>ZS) public zss", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:191:9: Warning: Integer Overflow.\n        zs.power_in+=delta_power_in", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:141:10: Warning: Integer Overflow.\n         zs.power_in\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:143:10: Warning: Integer Overflow.\n         zs.power_out\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:191:9: Warning: Integer Overflow.\n        zs.power_in", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:177:13: Warning: Integer Overflow.\n            zs.oracle", 
+   "./uniqueContractSourceCode/0x06ba669680584b8bf8be2df362cfcf10a7430085.txt:193:9: Warning: Integer Overflow.\n        zs.power_out"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.7"
+}

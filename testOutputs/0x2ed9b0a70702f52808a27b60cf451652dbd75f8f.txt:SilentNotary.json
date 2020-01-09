@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2ed9b0a70702f52808a27b60cf451652dbd75f8f.txt:211:6: Warning: Integer Overflow.\n\t    entryStorage[hash] = Entry(block.number, timestamp)\nInteger Overflow occurs if:\n    owner = 0\n    entryStorage[hash].blockNumber = 0", 
+   "./uniqueContractSourceCode/0x2ed9b0a70702f52808a27b60cf451652dbd75f8f.txt:109:2: Warning: Integer Overflow.\n\tmapping (bytes32 => Entry) public entryStorage"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.7"
+}

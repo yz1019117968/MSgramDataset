@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:611:9: Warning: Re-Entrancy Vulnerability.\n    if (destination.call.value(value)(data)"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:611:9: Warning: Integer Overflow.\n    if (destination.call.value(value)(data)\nInteger Overflow occurs if:\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:137:11: Warning: Integer Overflow.\n      if (owners[i]\nInteger Overflow occurs if:\n    owners.length = 13164036458569648337239753460458804039861886925068638906788872192\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:163:5: Warning: Integer Overflow.\n    owners.push(_owner)\nInteger Overflow occurs if:\n    isOwner[_owner] = 0\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:139:9: Warning: Integer Overflow.\n        owners[i]\nInteger Overflow occurs if:\n    owners.length = 57896044618658097711785492504343953921190474462085266604314798285047736565757\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:613:7: Warning: Integer Overflow.\n      Execution(destination, value, data)\nInteger Overflow occurs if:\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:139:21: Warning: Integer Overflow.\n        owners[i] = owners[SafeMath.sub(owners.length, 1)]\nInteger Overflow occurs if:\n    owners.length = 57896044618658097711785492504343953921190474462085266604314798285047736565757\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:665:1: Warning: Integer Overflow.\ncontract Stake is Owned, Validating, GenericCall {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owners.length = 2\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:89:3: Warning: Integer Overflow.\n  address[] public owners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:613:7: Warning: Integer Underflow.\n      Execution(destination, value, data)\nInteger Underflow occurs if:\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x1ed8691cea15e9573282175ffa3e23281fce85c0.txt:611:9: Warning: Integer Underflow.\n    if (destination.call.value(value)(data)\nInteger Underflow occurs if:\n    isOwner[msg.sender] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.7"
+}

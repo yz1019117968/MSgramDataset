@@ -1,0 +1,36 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:267:9: Warning: Timestamp Dependency.\n        if (expiration < now) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:301:13: Warning: Integer Overflow.\n            Failed(3,\r\n            ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    expiration = 0\n    fills[hash] = 255\n    takerAddress = 1461501637330902918203684832716283019655932542975\n    makerAddress = 0", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:433:17: Warning: Integer Overflow.\n                Failed(6,\r\n                ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    expiration = 0\n    takerToken = 1461501637330902918203684832716283019655932542975\n    fills[hash] = 0\n    takerAddress = 0\n    makerAddress = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:383:17: Warning: Integer Overflow.\n                Failed(5,\r\n                ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    expiration = 0\n    takerToken = 1461501637330902918203684832716283019655932542975\n    fills[hash] = 0\n    takerAddress = 1461501637330902918203684832716283019655932542975\n    makerAddress = 0", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:421:17: Warning: Integer Overflow.\n                Filled(\r\n                ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    expiration = 0\n    takerToken = 1461501637330902918203684832716283019655932542975\n    fills[hash] = 0\n    takerAddress = 0\n    makerAddress = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:349:17: Warning: Integer Overflow.\n                Filled(makerAddress, makerAmount, makerToken,\r\n                ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    expiration = 0\n    takerToken = 0\n    fills[hash] = 0\n    takerAddress = 1461501637330902918203684832716283019655932542975\n    makerAddress = 0\n    takerAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:511:17: Warning: Integer Overflow.\n                Failed(7,\r\n                ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    fills[hash] = 255\n    makerAddress = 0", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:361:17: Warning: Integer Overflow.\n                Failed(4,\r\n                ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    expiration = 0\n    takerAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    takerToken = 0\n    fills[hash] = 0\n    takerAddress = 1461501637330902918203684832716283019655932542975\n    makerAddress = 0", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:501:17: Warning: Integer Overflow.\n                Canceled(makerAddress, makerAmount, makerToken,\r\n                ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    fills[hash] = 0\n    makerAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:511:17: Warning: Integer Underflow.\n                Failed(7,\r\n                ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    fills[hash] = 255\n    makerAddress = 0", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:301:13: Warning: Integer Underflow.\n            Failed(3,\r\n            ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    expiration = 0\n    fills[hash] = 255\n    takerAddress = 1461501637330902918203684832716283019655932542975\n    makerAddress = 0", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:361:17: Warning: Integer Underflow.\n                Failed(4,\r\n                ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    expiration = 0\n    takerAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    takerToken = 0\n    fills[hash] = 0\n    takerAddress = 1461501637330902918203684832716283019655932542975\n    makerAddress = 0", 
+   "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:433:17: Warning: Integer Underflow.\n                Failed(6,\r\n                ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    expiration = 0\n    takerToken = 1461501637330902918203684832716283019655932542975\n    fills[hash] = 0\n    takerAddress = 0\n    makerAddress = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:381:17: Warning: Transaction-Ordering Dependency.\n                msg.sender.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0x8fd3121013A07C57f0D69646E86E7a4880b467b7.txt:343:17: Warning: Transaction-Ordering Dependency.\n                makerAddress.transfer(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.0"
+}

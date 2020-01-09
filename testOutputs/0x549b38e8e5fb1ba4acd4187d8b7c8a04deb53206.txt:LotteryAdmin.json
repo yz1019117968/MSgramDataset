@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x549b38e8e5fb1ba4acd4187d8b7c8a04deb53206.txt:99:9: Warning: Timestamp Dependency.\n        require(allowsAllowance())"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x549b38e8e5fb1ba4acd4187d8b7c8a04deb53206.txt:91:16: Warning: Integer Underflow.\n        return now - lastAllowancePaymentTimestamp\nInteger Underflow occurs if:\n    lastAllowancePaymentTimestamp = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x549b38e8e5fb1ba4acd4187d8b7c8a04deb53206.txt:197:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x549b38e8e5fb1ba4acd4187d8b7c8a04deb53206.txt:145:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(_value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.6"
+}

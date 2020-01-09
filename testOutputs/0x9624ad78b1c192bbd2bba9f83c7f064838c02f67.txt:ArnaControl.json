@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x9624ad78b1c192bbd2bba9f83c7f064838c02f67.txt:405:16: Warning: Callstack Depth Attack Vulnerability.\n        return arnaControl.send(this.balance)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "38.6"
+}

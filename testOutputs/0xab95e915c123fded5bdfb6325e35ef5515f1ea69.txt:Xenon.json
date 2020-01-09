@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab95e915c123fded5bdfb6325e35ef5515f1ea69.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xab95e915c123fded5bdfb6325e35ef5515f1ea69.txt:301:2: Warning: Integer Underflow.\n\tstring public symbol = 'XNN'", 
+   "./restContracts/0xab95e915c123fded5bdfb6325e35ef5515f1ea69.txt:299:2: Warning: Integer Underflow.\n\tstring public name = 'XENON'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.6"
+}

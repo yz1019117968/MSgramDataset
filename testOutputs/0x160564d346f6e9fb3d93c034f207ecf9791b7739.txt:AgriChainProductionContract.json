@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:135:5: Warning: Integer Overflow.\n    function setNotes(string _Notes)  onlyBy(creator)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _Notes = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:119:5: Warning: Integer Overflow.\n    function setAgriChainSeal(string _AgriChainSeal)  onlyBy(creator)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _AgriChainSeal = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:71:5: Warning: Integer Overflow.\n    function setOrganization(string _Organization)  onlyBy(creator)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _Organization = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:83:5: Warning: Integer Overflow.\n    function setProduct(string _Product)  onlyBy(creator)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _Product = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:95:5: Warning: Integer Overflow.\n    function setDescription(string _Description)  onlyBy(creator)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _Description = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:53:5: Warning: Integer Underflow.\n    string  public  AgriChainSeal", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:55:5: Warning: Integer Underflow.\n    string  public  Notes", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:45:5: Warning: Integer Underflow.\n    string  public  Organization", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:47:5: Warning: Integer Underflow.\n    string  public  Product", 
+   "./uniqueContractSourceCode/0x160564d346f6e9fb3d93c034f207ecf9791b7739.txt:49:5: Warning: Integer Underflow.\n    string  public  Description"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.6"
+}

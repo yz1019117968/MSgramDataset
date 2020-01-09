@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x62e66080900fe39cd52bf5c0f8385b1339bedae5.txt:367:5: Warning: Integer Underflow.\n    string public name = \"HOTCRYPTOGOLD\"", 
+   "./uniqueContractSourceCode/0x62e66080900fe39cd52bf5c0f8385b1339bedae5.txt:369:5: Warning: Integer Underflow.\n    string public symbol = \"HCG\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

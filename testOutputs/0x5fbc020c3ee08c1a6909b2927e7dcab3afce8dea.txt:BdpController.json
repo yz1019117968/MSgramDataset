@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5fbc020c3ee08c1a6909b2927e7dcab3afce8dea.txt:2299:2: Warning: Integer Overflow.\n\tfunction setupRegion(uint256 _regionId, uint256 _imageId, uint256[] _imageData, bool _swapImages, uint8[128] _url) whenContractActive public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5fbc020c3ee08c1a6909b2927e7dcab3afce8dea.txt:2307:2: Warning: Integer Overflow.\n\tfunction updateRegion(uint256 _regionId, uint256 _imageId, uint256[] _imageData, bool _swapImages, bool _clearImage, uint8[128] _url, bool _deleteUrl, address _newOwner) whenContractActive public payable {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5fbc020c3ee08c1a6909b2927e7dcab3afce8dea.txt:2337:2: Warning: Integer Overflow.\n\tfunction setNextImagePart(uint256 _regionId, uint16 _part, uint16 _partsCount, uint16 _imageDescriptor, uint256[] _imageData) whenContractActive public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5fbc020c3ee08c1a6909b2927e7dcab3afce8dea.txt:2329:2: Warning: Integer Overflow.\n\tfunction checkImageInput(uint256 _regionId, uint256 _imageId, uint256[] _imageData, bool _swapImages, bool _clearImage) view public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5fbc020c3ee08c1a6909b2927e7dcab3afce8dea.txt:205:3: Warning: Transaction-Ordering Dependency.\n\t\tselfdestruct(ownerAddress)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5fbc020c3ee08c1a6909b2927e7dcab3afce8dea.txt:2421:3: Warning: Transaction-Ordering Dependency.\n\t\townerAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.3"
+}

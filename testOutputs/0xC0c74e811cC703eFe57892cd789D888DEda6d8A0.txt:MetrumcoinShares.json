@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:529:9: Warning: Integer Overflow.\n        votes[_proposalID].push(msg.sender)\nInteger Overflow occurs if:\n    deadline[_proposalID] = 0\n    voted[_proposalID][msg.sender] = 0\n    balanceOf[msg.sender] = 1", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:357:9: Warning: Integer Overflow.\n        balanceOf[_to] += _value\nInteger Overflow occurs if:\n    balanceOf[_to] = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    shareholderID[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    allowance[_from][msg.sender] = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    balanceOf[_from] = 57896044618658097711785492504343953926634992332820282019710345259882855102646", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:439:5: Warning: Integer Overflow.\n    function makeNewProposal(string _proposalDescription,\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:35:1: Warning: Integer Overflow.\ncontract MetrumcoinShares {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    deadline[_proposalID] = 0\n    voted[_proposalID][msg.sender] = 0\n    balanceOf[msg.sender] = 1", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:81:5: Warning: Integer Overflow.\n    address[] public activeShareholdersArray", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:149:27: Warning: Integer Overflow.\n            if (balanceOf[shareholder[i]\nInteger Overflow occurs if:\n    shareholder.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[shareholder[i]] = 0", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:413:5: Warning: Integer Overflow.\n    mapping (address => uint256[]) public proposalsByShareholder", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:569:22: Warning: Integer Overflow.\n            result = result + balanceOf[voter]\nInteger Overflow occurs if:\n    votes[_proposalID].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[voter] = 1\n    balanceOf[voter] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    deadline[_proposalID] = 0\n    results[_proposalID] = 0", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:73:5: Warning: Integer Overflow.\n    address[] public shareholder", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:389:5: Warning: Integer Overflow.\n    string[] public proposalText", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:401:5: Warning: Integer Overflow.\n    mapping (uint256 => address[]) public votes", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:567:29: Warning: Integer Overflow.\n            address voter = votes[_proposalID][i]\nInteger Overflow occurs if:\n    votes[_proposalID].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    deadline[_proposalID] = 0\n    results[_proposalID] = 0", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:255:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, // another contract's adress\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:343:34: Warning: Integer Overflow.\n            shareholderID[_to] = shareholder.push(_to)\nInteger Overflow occurs if:\n    allowance[_from][msg.sender] = 2\n    balanceOf[_from] = 2\n    shareholderID[_to] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:51:5: Warning: Integer Underflow.\n    string public symbol = \"Metrumcoin Shares\"", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:389:5: Warning: Integer Underflow.\n    string[] public proposalText", 
+   "./restContracts/0xC0c74e811cC703eFe57892cd789D888DEda6d8A0.txt:47:5: Warning: Integer Underflow.\n    string public name = \"Metrumcoin Shares\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "52.4"
+}

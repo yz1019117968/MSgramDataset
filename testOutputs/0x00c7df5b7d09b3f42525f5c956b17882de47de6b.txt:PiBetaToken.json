@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x00c7df5b7d09b3f42525f5c956b17882de47de6b.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"PBTK\"", 
+   "./uniqueContractSourceCode/0x00c7df5b7d09b3f42525f5c956b17882de47de6b.txt:13:5: Warning: Integer Underflow.\n    string public name = \"PiBeta Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.7"
+}

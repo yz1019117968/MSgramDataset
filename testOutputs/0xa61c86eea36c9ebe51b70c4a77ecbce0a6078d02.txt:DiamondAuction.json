@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:2319:9: Warning: Callstack Depth Attack Vulnerability.\n        nftAddress.send(this.balance)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:2127:13: Warning: Integer Overflow.\n            _auction.duration", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1899:9: Warning: Integer Overflow.\n        tokenIdToAuction[_tokenId] = _auction\nInteger Overflow occurs if:\n    _endingPrice = 0\n    _startingPrice = 0\n    _duration = 64\n    nonFungibleContract = 0", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:2113:19: Warning: Integer Overflow.\n        if (now > _auction.startedAt", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:2079:17: Warning: Integer Overflow.\n        return (_auction.startedAt", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:2123:13: Warning: Integer Overflow.\n            _auction.startingPrice", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:2125:13: Warning: Integer Overflow.\n            _auction.endingPrice"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:2189:39: Warning: Integer Underflow.\n            int256 totalPriceChange = int256(_endingPrice) - int256(_startingPrice)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "36.6"
+}

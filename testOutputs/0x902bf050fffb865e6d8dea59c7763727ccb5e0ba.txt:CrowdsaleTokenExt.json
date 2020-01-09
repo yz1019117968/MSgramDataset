@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2891:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentageUnit", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2853:3: Warning: Integer Overflow.\n  mapping (address => ReservedTokensData) public reservedTokensList", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:3021:1: Warning: Integer Overflow.\ncontract CrowdsaleTokenExt is ReleasableToken, MintableTokenExt, UpgradeableToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0\n    mintingFinished = 0\n    reservedTokensList[addr].inPercentageUnit = 0\n    reservedTokensList[addr].inTokens = 0", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:87:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2875:5: Warning: Integer Overflow.\n    reservedTokensList[addr] = ReservedTokensData({inTokens:inTokens, inPercentageUnit:inPercentageUnit, inPercentageDecimals: inPercentageDecimals})\nInteger Overflow occurs if:\n    reservedTokensList[addr].inTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    mintingFinished = 0", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2855:3: Warning: Integer Overflow.\n  address[] public reservedTokensDestinations", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2905:3: Warning: Integer Overflow.\n  function setReservedTokensListMultiple(address[] addrs, uint[] inTokens, uint[] inPercentageUnit, uint[] inPercentageDecimals) canMint onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2867:7: Warning: Integer Overflow.\n      reservedTokensDestinations.push(addr)\nInteger Overflow occurs if:\n    owner = 0\n    mintingFinished = 0\n    reservedTokensList[addr].inPercentageUnit = 0\n    reservedTokensList[addr].inTokens = 0", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2865:51: Warning: Integer Overflow.\n    if (reservedTokensList[addr].inTokens == 0 && reservedTokensList[addr].inPercentageUnit\nInteger Overflow occurs if:\n    owner = 0\n    mintingFinished = 0\n    reservedTokensList[addr].inTokens = 0", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:2899:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentageDecimals", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:3189:3: Warning: Integer Overflow.\n  function setTokenInformation(string _name, string _symbol) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:3039:3: Warning: Integer Underflow.\n  string public symbol", 
+   "./restContracts/0x902bf050fffb865e6d8dea59c7763727ccb5e0ba.txt:3035:3: Warning: Integer Underflow.\n  string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.5"
+}

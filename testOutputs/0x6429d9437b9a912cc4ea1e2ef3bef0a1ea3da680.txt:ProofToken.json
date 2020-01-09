@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:727:3: Warning: Integer Overflow.\n  function importPresaleBalances(address[] _addresses, uint256[] _balances) public onlyController returns (bool) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:921:3: Warning: Integer Overflow.\n  function createCloneToken(\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:573:3: Warning: Integer Overflow.\n  function approveAndCall(address _spender, uint256 _amount, bytes _extraData) public returns (bool success) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:869:50: Warning: Integer Overflow.\n              Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640254554447762662844404858880\n    controller = 1461501637330902918203684832716283019655932542975\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 0\n    transfersEnabled = 255\n    allowed[_from][msg.sender] = 1", 
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:859:41: Warning: Integer Overflow.\n      if ((checkpoints.length == 0) || (checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    controller = 1461501637330902918203684832716283019655932542975\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 170141183460469231731687302616372477949\n    transfersEnabled = 255\n    allowed[_from][msg.sender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:231:3: Warning: Integer Underflow.\n  string public version", 
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:227:3: Warning: Integer Underflow.\n  string public name", 
+   "./uniqueContractSourceCode/0x6429d9437b9a912cc4ea1e2ef3bef0a1ea3da680.txt:229:3: Warning: Integer Underflow.\n  string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.2"
+}

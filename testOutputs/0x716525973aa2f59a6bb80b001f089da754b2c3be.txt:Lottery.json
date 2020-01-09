@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x716525973aa2f59a6bb80b001f089da754b2c3be.txt:157:5: Warning: Timestamp Dependency.\n    require((now > buy_end_time) && (now <= commit_end_time))", 
+   "./uniqueContractSourceCode/0x716525973aa2f59a6bb80b001f089da754b2c3be.txt:157:13: Warning: Timestamp Dependency.\n    require((now > buy_end_time) && (now <= commit_end_time)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x716525973aa2f59a6bb80b001f089da754b2c3be.txt:173:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(total_user_eth)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x716525973aa2f59a6bb80b001f089da754b2c3be.txt:289:5: Warning: Transaction-Ordering Dependency.\n    user.transfer(eth_to_withdraw)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.8"
+}

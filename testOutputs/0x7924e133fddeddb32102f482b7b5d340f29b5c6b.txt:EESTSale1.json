@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x7924e133fddeddb32102f482b7b5d340f29b5c6b.txt:331:9: Warning: Timestamp Dependency.\n        if (getCurrentTime() >= getEndTime())\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7924e133fddeddb32102f482b7b5d340f29b5c6b.txt:217:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    m_finished = 0\n    rentrancy_lock = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.0"
+}

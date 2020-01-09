@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x82665764ea0b58157E1e5E9bab32F68c76Ec0CdF.txt:63:5: Warning: Integer Underflow.\n    string public symbol = 'VSM'", 
+   "./restContracts/0x82665764ea0b58157E1e5E9bab32F68c76Ec0CdF.txt:59:5: Warning: Integer Underflow.\n    string public standard = 'ERC20'", 
+   "./restContracts/0x82665764ea0b58157E1e5E9bab32F68c76Ec0CdF.txt:61:5: Warning: Integer Underflow.\n    string public name = 'VOISE'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.0"
+}

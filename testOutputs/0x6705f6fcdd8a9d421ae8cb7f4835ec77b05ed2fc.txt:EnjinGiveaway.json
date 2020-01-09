@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6705f6fcdd8a9d421ae8cb7f4835ec77b05ed2fc.txt:157:89: Warning: Integer Overflow.\n        tokenContract.call(bytes4(sha3(\"transferFrom(address,address,uint256)\")), this, payees[i]\nInteger Overflow occurs if:\n    payees.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6705f6fcdd8a9d421ae8cb7f4835ec77b05ed2fc.txt:157:107: Warning: Integer Overflow.\n        tokenContract.call(bytes4(sha3(\"transferFrom(address,address,uint256)\")), this, payees[i], shares[payees[i]\nInteger Overflow occurs if:\n    payees.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6705f6fcdd8a9d421ae8cb7f4835ec77b05ed2fc.txt:79:3: Warning: Integer Overflow.\n  address[] public payees"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.5"
+}

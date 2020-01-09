@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:165:5: Warning: Integer Overflow.\n    EscrowTfr[] public escrowTransferList", 
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:379:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:151:5: Warning: Integer Overflow.\n    mapping (address => mapping (uint => EscrowTrade)) public escrowTransferInfo", 
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:317:34: Warning: Integer Overflow.\n        uint previousbalanceOf = balanceOf[_from] + balanceOf[_to]\nInteger Overflow occurs if:\n    escrowTransferInfo[_sender][_no].value = 383123885216472214589586756787586740637650519836327937\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[_to] = 57896044618658097711797752468670881037501859109037484493197741916934033637375\n    escrowTransferInfo[_sender][_no].open = 730750818665451459101842416358141509827966271488\n    escrowTransferInfo[_sender][_no].price = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:489:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:513:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:123:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x064c9d27aab976536b0df42b3191abf11a5fc791.txt:121:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.6"
+}

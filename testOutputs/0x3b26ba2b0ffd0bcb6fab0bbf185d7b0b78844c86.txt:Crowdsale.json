@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3b26ba2b0ffd0bcb6fab0bbf185d7b0b78844c86.txt:483:18: Warning: Integer Overflow.\n      if (now >= starts[i]\nInteger Overflow occurs if:\n    starts.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    starts[i] = 1\n    endTime = 0\n    startTime = 0", 
+   "./uniqueContractSourceCode/0x3b26ba2b0ffd0bcb6fab0bbf185d7b0b78844c86.txt:485:16: Warning: Integer Overflow.\n        rate = rates[i]\nInteger Overflow occurs if:\n    starts.length = 7\n    ends[i] = 7\n    rates[i] = 7\n    ends[i] = 0\n    starts[i] = 0\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    endTime = 0\n    startTime = 0", 
+   "./uniqueContractSourceCode/0x3b26ba2b0ffd0bcb6fab0bbf185d7b0b78844c86.txt:483:38: Warning: Integer Overflow.\n      if (now >= starts[i] && now <= ends[i]\nInteger Overflow occurs if:\n    starts.length = 7\n    ends[i] = 7\n    starts[i] = 0\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    starts[i] = 1\n    endTime = 0\n    startTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.7"
+}

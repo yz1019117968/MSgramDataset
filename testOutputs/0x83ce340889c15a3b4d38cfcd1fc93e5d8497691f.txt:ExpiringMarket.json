@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x83ce340889c15a3b4d38cfcd1fc93e5d8497691f.txt:379:35: Warning: Integer Overflow.\n              offer.buy_how_much, offer.buy_which_token", 
+   "./restContracts/0x83ce340889c15a3b4d38cfcd1fc93e5d8497691f.txt:321:5: Warning: Integer Overflow.\n    mapping (uint => OfferInfo) public offers", 
+   "./restContracts/0x83ce340889c15a3b4d38cfcd1fc93e5d8497691f.txt:363:16: Warning: Integer Overflow.\n        return offers[id].active", 
+   "./restContracts/0x83ce340889c15a3b4d38cfcd1fc93e5d8497691f.txt:369:16: Warning: Integer Overflow.\n        return offers[id].owner", 
+   "./restContracts/0x83ce340889c15a3b4d38cfcd1fc93e5d8497691f.txt:379:15: Warning: Integer Overflow.\n              offer.buy_how_much", 
+   "./restContracts/0x83ce340889c15a3b4d38cfcd1fc93e5d8497691f.txt:377:36: Warning: Integer Overflow.\n      return (offer.sell_how_much, offer.sell_which_token"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "38.8"
+}

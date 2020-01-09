@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x690508422d576edb99d676320ea251036d164062.txt:271:5: Warning: Integer Overflow.\n    function goldBought(uint _price, \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _months = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.8"
+}

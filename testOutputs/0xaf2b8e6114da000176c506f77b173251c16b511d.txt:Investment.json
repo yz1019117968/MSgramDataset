@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaf2b8e6114da000176c506f77b173251c16b511d.txt:87:5: Warning: Integer Overflow.\n\t\t\t\tinvestors.push(msg.sender)\nInteger Overflow occurs if:\n    investors.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    invested[msg.sender] = 0", 
+   "./restContracts/0xaf2b8e6114da000176c506f77b173251c16b511d.txt:55:2: Warning: Integer Overflow.\n\taddress[] public investors", 
+   "./restContracts/0xaf2b8e6114da000176c506f77b173251c16b511d.txt:51:1: Warning: Integer Overflow.\ncontract Investment is SafeMath{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    invested[msg.sender] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xaf2b8e6114da000176c506f77b173251c16b511d.txt:147:7: Warning: Transaction-Ordering Dependency.\n\t\tif(!msg.sender.send(amount)"
+   ], 
+   [
+    "./restContracts/0xaf2b8e6114da000176c506f77b173251c16b511d.txt:127:5: Warning: Transaction-Ordering Dependency.\n\t\t\t\tico.invest.value(amount)(investors[i])"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.1"
+}

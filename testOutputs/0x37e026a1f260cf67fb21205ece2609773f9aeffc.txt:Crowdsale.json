@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x37e026a1f260cf67fb21205ece2609773f9aeffc.txt:329:21: Warning: Callstack Depth Attack Vulnerability.\n                    msg.sender.send(amount)"
+  ], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x37e026a1f260cf67fb21205ece2609773f9aeffc.txt:407:9: Warning: Timestamp Dependency.\n        if (now >= deadline) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x37e026a1f260cf67fb21205ece2609773f9aeffc.txt:439:21: Warning: Transaction-Ordering Dependency.\n                if (beneficiary.send(amountRaised)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x37e026a1f260cf67fb21205ece2609773f9aeffc.txt:417:25: Warning: Transaction-Ordering Dependency.\n                    if (msg.sender.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.0"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9e2419c8fc0a7c2f2b22cc8de9ac484ad00d1f57.txt:97:1: Warning: Integer Underflow.\ncontract iGniter is SafeMath {\r\n^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "5.5"
+}

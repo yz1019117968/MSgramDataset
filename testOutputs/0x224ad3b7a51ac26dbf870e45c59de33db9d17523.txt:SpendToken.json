@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x224ad3b7a51ac26dbf870e45c59de33db9d17523.txt:263:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x224ad3b7a51ac26dbf870e45c59de33db9d17523.txt:357:16: Warning: Integer Underflow.\n        return _totalSupply  - balances[address(0)]\nInteger Underflow occurs if:\n    _totalSupply = 0\n    balances[address(0)] = 1", 
+   "./uniqueContractSourceCode/0x224ad3b7a51ac26dbf870e45c59de33db9d17523.txt:267:5: Warning: Integer Underflow.\n    string public  name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.0"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x794eb1f985f472c0b44c4041b4198478366f9940.txt:277:5: Warning: Integer Overflow.\n    function transfer(address to, uint value, bytes data) public returns (bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x794eb1f985f472c0b44c4041b4198478366f9940.txt:303:5: Warning: Integer Overflow.\n    function transferFrom(address _from, address _to, uint256 _amount, bytes _data) public returns (bool) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.9"
+}

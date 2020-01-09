@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2465:10: Warning: Integer Overflow.\n    bets[betterInfo[addr].betOption", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2139:3: Warning: Integer Overflow.\n  address[] public betters", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2529:7: Warning: Integer Overflow.\n      betterInfo[msg.sender].betOption\nInteger Overflow occurs if:\n    canceled = 0\n    BETTING_CLOSES = 1521516877\n    betterInfo[msg.sender].betAmount = 0", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2493:56: Warning: Integer Overflow.\n    return (completed && winningOption != 2 && now >= (winnerDeterminedDate + 600\nInteger Overflow occurs if:\n    winnerDeterminedDate = 115792089237316195423570985008687907853269984665640564039457584007913129639392\n    winningOption = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    completed = 255", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2531:7: Warning: Integer Overflow.\n      numberOfBets[option]++\nInteger Overflow occurs if:\n    canceled = 0\n    numberOfBets[option] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    option = 1\n    BETTING_CLOSES = 1521516877\n    betterInfo[msg.sender].betAmount = 0", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2535:7: Warning: Integer Overflow.\n      betters.push(msg.sender)\nInteger Overflow occurs if:\n    canceled = 0\n    betters.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    option = 1\n    BETTING_CLOSES = 1521516877\n    betterInfo[msg.sender].betAmount = 0", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2545:5: Warning: Integer Overflow.\n    totalBetAmount += msg.value\nInteger Overflow occurs if:\n    totalBetAmount = 66947630249747791122920323302608075858818137251208988102338324107013997202436\n    canceled = 0\n    betterInfo[msg.sender].betAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    BETTING_CLOSES = 2054193549\n    option = 0\n    betterInfo[msg.sender].betOption = 0", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2547:5: Warning: Integer Overflow.\n    totalAmountsBet[option] += msg.value\nInteger Overflow occurs if:\n    canceled = 0\n    totalAmountsBet[option] = 66947630249747791122920323302608075858818137251208988102338324107013997202436\n    option = 1\n    betterInfo[msg.sender].betAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    BETTING_CLOSES = 2054193549\n    betterInfo[msg.sender].betOption = 1", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2341:5: Warning: Integer Overflow.\n    oraclizeFees += oraclize_getPrice(datasource, gas)\nInteger Overflow occurs if:\n    oraclizeFees = 104951158869359237133766095869857390442880818069066072679434997700134111805440\n    completed = 0\n    oraclize = 0\n    OAR = 1461501637330902918203684832716283019655932542975\n    EXPECTED_END = 8\n    BETTING_CLOSES = 7\n    OWNERS = 0\n    winningOption = 2", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2315:24: Warning: Integer Overflow.\n    CANCELATION_DATE = EXPECTED_END + 60 * 60 * 24\nInteger Overflow occurs if:\n    _EXPECTED_END = 115792089237316195423570985008687907853269984665640564039457584007913129623552\n    EXPECTED_START = 115792089237316195423570985008687907853269984665640564039457584007913129623551\n    OWNERS = 0", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2369:3: Warning: Integer Overflow.\n  function __callback(bytes32 queryId, string result, bytes proof) public canDetermineWinner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:243:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2543:5: Warning: Integer Overflow.\n    betterInfo[msg.sender].betAmount += msg.value\nInteger Overflow occurs if:\n    betterInfo[msg.sender].betAmount = 94397342592524310665801747490831116140042398834334973029957614377706181124127\n    canceled = 0\n    BETTING_CLOSES = 2059436429\n    option = 0\n    betterInfo[msg.sender].betOption = 0", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2481:12: Warning: Integer Overflow.\n    return betterInfo[addr].withdrawn", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2049:1: Warning: Integer Overflow.\ncontract KansasvsClemson is usingOraclize {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    betters.push(msg.sender) = 89403545051961286748999860126727861280394687347458852347782407057893766700265\n    canceled = 0\n    option = 1\n    BETTING_CLOSES = 1823507781\n    betterInfo[msg.sender].betAmount = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2299:22: Warning: Integer Underflow.\n    BETTING_CLOSES = EXPECTED_START - 60\nInteger Underflow occurs if:\n    _EXPECTED_START = 59\n    OWNERS = 0", 
+   "./uniqueContractSourceCode/0x3bf9aa2574d47580084fe622a10f9abaa61c7166.txt:2049:1: Warning: Integer Underflow.\ncontract KansasvsClemson is usingOraclize {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    completed = 0\n    OAR = 0\n    EXPECTED_END = 115792089237316195373354171125594461742583669279979232710638740452063414583295\n    BETTING_CLOSES = 115792089237316195373354171125594461742583669279979232710638740452063414583294\n    OWNERS = 0\n    winningOption = 2"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.3"
+}

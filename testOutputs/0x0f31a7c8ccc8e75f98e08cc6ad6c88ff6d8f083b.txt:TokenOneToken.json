@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0f31a7c8ccc8e75f98e08cc6ad6c88ff6d8f083b.txt:61:5: Warning: Integer Underflow.\n    string public name = 'TokenOne'", 
+   "./uniqueContractSourceCode/0x0f31a7c8ccc8e75f98e08cc6ad6c88ff6d8f083b.txt:59:5: Warning: Integer Underflow.\n    string public standard = 'ERC20'", 
+   "./uniqueContractSourceCode/0x0f31a7c8ccc8e75f98e08cc6ad6c88ff6d8f083b.txt:63:5: Warning: Integer Underflow.\n    string public symbol = 'TKN1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

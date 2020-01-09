@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:2351:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:1977:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()", 
+   "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:2107:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:2029:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0", 
+   "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:1803:3: Warning: Integer Overflow.\n  address[] public investors", 
+   "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:1783:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 57866347099847516836782424590464903051612188226041551322124066261715333098921\n    weiMaximumLimit = 57866891633657531536338902057972701639799234101611942927272425371195947220991\n    weiMinimumLimit = 57866891633657531536338902057972701639799234101611942927272425371195947220991\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:2269:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc.txt:2269:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.2"
+}

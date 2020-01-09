@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbad8c49bb504ec95403116b0cf348dab85ad6851.txt:369:5: Warning: Integer Underflow.\n    string public symbol = \"FSRST\"", 
+   "./restContracts/0xbad8c49bb504ec95403116b0cf348dab85ad6851.txt:367:5: Warning: Integer Underflow.\n    string public name = \"FS Rooster Coin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

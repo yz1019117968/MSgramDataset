@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:21:3: Warning: Integer Overflow.\n  mapping (address => address[]) public children", 
+   "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:183:3: Warning: Integer Overflow.\n  function registerAdmin(address admin, string name) onlyGenesis public {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:247:3: Warning: Integer Overflow.\n  function registration(address parent, string nickname) payable public {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:423:7: Warning: Integer Overflow.\n      children[msg.sender].push(children[child][i])\nInteger Overflow occurs if:\n    lastActivity[child] = 182687704666362864775460604089535377456991567876\n    children[msg.sender].push(children[child][i]) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    children[child].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    parents[child] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:33:3: Warning: Integer Underflow.\n  mapping (address => string) public nicknames", 
+   "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:5:1: Warning: Integer Underflow.\ncontract Genesis {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    parents[addr] = 0\n    genesis = 0\n    children[genesis].length = 0\n    children[addr].length = 0", 
+   "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:389:5: Warning: Integer Underflow.\n    nicknames[newGen] = nicknames[genesis]\nInteger Underflow occurs if:\n    nicknames[newGen] = 1\n    parents[addr] = 0\n    genesis = 0\n    children[genesis].length = 0\n    children[addr].length = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:295:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(mine)"
+   ], 
+   [
+    "./restContracts/0x910e476b926663afa62f9e5efea048eed5a5c060.txt:337:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(mine)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "52.5"
+}

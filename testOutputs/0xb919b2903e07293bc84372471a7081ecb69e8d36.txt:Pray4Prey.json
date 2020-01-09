@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xb919b2903e07293bc84372471a7081ecb69e8d36.txt:2569:4: Warning: Callstack Depth Attack Vulnerability.\n\t\t\tanimals[ids[i]].owner.send(animals[ids[i]].value)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb919b2903e07293bc84372471a7081ecb69e8d36.txt:2273:30: Warning: Integer Overflow.\n\t\t\t\twhile (numAnimals > 0 && animals[ids[numAnimals - 1]].owner\nInteger Overflow occurs if:\n    numAnimals = 16760832\n    ids[i] = 65472\n    animals[ids[i]].owner = 0\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    costs.length = 0", 
+   "./restContracts/0xb919b2903e07293bc84372471a7081ecb69e8d36.txt:2273:38: Warning: Integer Overflow.\n\t\t\t\twhile (numAnimals > 0 && animals[ids[numAnimals - 1]\nInteger Overflow occurs if:\n    numAnimals = 157696\n    ids[i] = 8192\n    animals[ids[i]].owner = 0\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    costs.length = 0", 
+   "./restContracts/0xb919b2903e07293bc84372471a7081ecb69e8d36.txt:2269:16: Warning: Integer Overflow.\n\t\t\tif (animals[ids[i]\nInteger Overflow occurs if:\n    numAnimals = 2560\n    ids[i] = 9\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    animals[ids[i]].owner = 1461501637330902918203684832716283019655932542975\n    costs.length = 0", 
+   "./restContracts/0xb919b2903e07293bc84372471a7081ecb69e8d36.txt:2269:8: Warning: Integer Overflow.\n\t\t\tif (animals[ids[i]].owner\nInteger Overflow occurs if:\n    ids[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numAnimals = 16776960\n    costs.length = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "4.5"
+}

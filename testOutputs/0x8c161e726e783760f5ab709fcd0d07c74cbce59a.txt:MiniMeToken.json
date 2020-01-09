@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:1095:43: Warning: Integer Overflow.\n               Checkpoint oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    _amount = 1\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    parentSnapShotBlock = 1180591620717411303423\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:1065:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663", 
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:865:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:685:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:1085:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    _amount = 1\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    parentSnapShotBlock = 170141183460469231731687303441006198781\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:1053:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:255:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:259:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:261:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.1'"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:1149:19: Warning: Transaction-Ordering Dependency.\n            if (! TokenController(controller).proxyPayment.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./restContracts/0x8c161e726e783760f5ab709fcd0d07c74cbce59a.txt:1203:13: Warning: Transaction-Ordering Dependency.\n            controller.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.5"
+}

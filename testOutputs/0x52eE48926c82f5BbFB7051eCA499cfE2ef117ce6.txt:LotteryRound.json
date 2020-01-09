@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:625:5: Warning: Integer Overflow.\n    tickets[picks].push(msg.sender)\nInteger Overflow occurs if:\n    closingBlock = 0", 
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:913:26: Warning: Integer Overflow.\n        address winner = winners[i]\nInteger Overflow occurs if:\n    winners.length = 115792089210356248756420345214020892766250353992003419616917011526809519390719\n    winningsClaimable[winner] = 0\n    winningNumbersPicked = 1095216660480\n    owner = 0", 
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:163:1: Warning: Integer Overflow.\ncontract LotteryRound is LotteryRoundInterface, Owned {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    closingBlock = 0", 
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:267:3: Warning: Integer Overflow.\n  mapping(bytes4 => address[]) public tickets", 
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:973:49: Warning: Integer Overflow.\n        claimed = claimed && !winningsClaimable[winners[i]\nInteger Overflow occurs if:\n    winners.length = 115792089210356248756420345214020892766250353992003419616917011526809519390719\n    winningsClaimable[winners[i]] = 0\n    winningNumbersPicked = 1095216660480\n    owner = 0", 
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:247:3: Warning: Integer Overflow.\n  address[] public winners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:495:33: Warning: Integer Underflow.\n    uint256 pseudoRandomBlock = block.number - pseudoRandomOffset\nInteger Underflow occurs if:\n    closingBlock = 14", 
+   "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:495:33: Warning: Integer Underflow.\n    uint256 pseudoRandomBlock = block.number - pseudoRandomOffset - 1\nInteger Underflow occurs if:\n    closingBlock = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:841:12: Warning: Transaction-Ordering Dependency.\n      if (!payout.send(value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x52eE48926c82f5BbFB7051eCA499cfE2ef117ce6.txt:867:12: Warning: Transaction-Ordering Dependency.\n      if (!owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.6"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x95c38ce6647c91205d53d73b0e8552062b095f91.txt:253:27: Warning: Integer Overflow.\n    uint lotterynumber = (uint(curhash)+block.timestamp\nInteger Overflow occurs if:\n    curhash = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x95c38ce6647c91205d53d73b0e8552062b095f91.txt:159:20: Warning: Integer Underflow.\n      diff = (int)((int)(value)-(int)(guesses[i].guess)\nInteger Underflow occurs if:\n    value = 21778071482940061661803548828222842946238\n    numguesses = 1\n    guesses[i].guess = 86844066927987146567678238756515930911730559982170484691249162881568012763136", 
+   "./restContracts/0x95c38ce6647c91205d53d73b0e8552062b095f91.txt:139:20: Warning: Integer Underflow.\n      diff = (int)((int)(value)-(int)(guesses[i].guess)\nInteger Underflow occurs if:\n    value = 0\n    guesses[i].guess = 1\n    numguesses = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.7"
+}

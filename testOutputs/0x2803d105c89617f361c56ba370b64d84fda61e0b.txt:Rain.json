@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2803d105c89617f361c56ba370b64d84fda61e0b.txt:13:5: Warning: Integer Underflow.\n    string public standard = 'RAINToken'", 
+   "./uniqueContractSourceCode/0x2803d105c89617f361c56ba370b64d84fda61e0b.txt:15:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x2803d105c89617f361c56ba370b64d84fda61e0b.txt:17:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.5"
+}

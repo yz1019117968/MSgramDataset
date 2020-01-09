@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:51:32: Warning: Timestamp Dependency.\n    modifier afterDeadline() { if (now >= deadline) _"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:141:15: Warning: Integer Overflow.\n              funders[i]\nInteger Overflow occurs if:\n    funders.length = 115792089237105570840233870635292071797902643801002773848656485785404507684863\n    funders[i].amount = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    creator = 0\n    deadline = 0\n    _withdraw_en = 0", 
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:1:1: Warning: Integer Overflow.\n}\nInteger Overflow occurs if:\n    funders.length = 27634262145731887461014411615919391556341517705731995607702412241726622062577\n    deadline = 1\n    start = 0", 
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:113:17: Warning: Integer Overflow.\n        funders[funders.length++\nInteger Overflow occurs if:\n    funders.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    start = 1\n    deadline = 1645504557321206042154969182557350504982735865633579863348609025", 
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:141:36: Warning: Integer Overflow.\n              funders[i].addr.send(funders[i]\nInteger Overflow occurs if:\n    funders.length = 115792089237105570840233870635292071797902643801002773848656485785404507684863\n    funders[i].amount = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    creator = 0\n    deadline = 0\n    _withdraw_en = 0", 
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:141:36: Warning: Integer Overflow.\n              funders[i].addr.send(funders[i].amount\nInteger Overflow occurs if:\n    funders.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    creator = 0\n    deadline = 0\n    _withdraw_en = 0", 
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:19:5: Warning: Integer Overflow.\n    Funder[] public funders", 
+   "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:143:45: Warning: Integer Overflow.\n              FundTransfer(funders[i].addr, funders[i].amount\nInteger Overflow occurs if:\n    funders[i].amount = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    funders.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    creator = 0\n    deadline = 0\n    _withdraw_en = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:155:7: Warning: Transaction-Ordering Dependency.\n      suicide(beneficiary)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2d6cb85e108326a8bbb72ca6f3c9f0f3c7f53638.txt:141:15: Warning: Transaction-Ordering Dependency.\n              funders[i].addr.send(funders[i].amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.2"
+}

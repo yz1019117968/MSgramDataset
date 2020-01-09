@@ -1,0 +1,49 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:277:5: Warning: Integer Overflow.\n    function initialBuyCard(uint8 cardId, string title, string url, string image) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    title = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:619:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].image", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:619:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:385:5: Warning: Integer Overflow.\n    function editCard(uint8 cardId, string title, string url, string image) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    title = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:421:9: Warning: Integer Overflow.\n        cardDetailsStructs[cardId].availableBuy\nInteger Overflow occurs if:\n    cardId = 1\n    cardStructs[cardId].owner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:477:9: Warning: Integer Overflow.\n        cardDetailsStructs[cardId].priceLease\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].availableBuy = 0\n    cardStructs[cardId].owner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:729:9: Warning: Integer Overflow.\n        cardStructs[cardId].nsfw\nInteger Overflow occurs if:\n    cardId = 1\n    contractOwner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:611:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].tenant", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:613:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:229:11: Warning: Integer Overflow.\n          cardDetailsStructs[cardId].priceLease\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].id = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:479:9: Warning: Integer Overflow.\n        cardDetailsStructs[cardId].availableLease\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].availableBuy = 0\n    cardStructs[cardId].owner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:419:9: Warning: Integer Overflow.\n        cardDetailsStructs[cardId].price\nInteger Overflow occurs if:\n    cardId = 1\n    cardStructs[cardId].owner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:481:9: Warning: Integer Overflow.\n        cardDetailsStructs[cardId].leaseDuration\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].availableBuy = 0\n    cardStructs[cardId].owner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:617:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].url", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:609:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:513:5: Warning: Integer Overflow.\n    function leaseCard(uint8 cardId, string title, string url, string image) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    title = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:235:11: Warning: Integer Overflow.\n          cardDetailsStructs[cardId].availableLease\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].id = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:615:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:331:5: Warning: Integer Overflow.\n    function buyCard(uint8 cardId, string title, string url, string image) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    title = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:503:9: Warning: Integer Overflow.\n        cardDetailsStructs[cardId].availableLease\nInteger Overflow occurs if:\n    cardId = 1\n    cardStructs[cardId].owner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:231:11: Warning: Integer Overflow.\n          cardDetailsStructs[cardId].leaseDuration\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].id = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:265:11: Warning: Integer Overflow.\n          cardStructs[cardId].nsfw\nInteger Overflow occurs if:\n    cardId = 1", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:613:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].untilBlock", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:227:11: Warning: Integer Overflow.\n          cardDetailsStructs[cardId].price\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].id = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:215:51: Warning: Integer Overflow.\n        if (cardDetailsStructs[cardId].id == 0 || cardDetailsStructs[cardId].availableBuy\nInteger Overflow occurs if:\n    cardId = 1\n    cardDetailsStructs[cardId].id = 255", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:615:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].title", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:441:9: Warning: Integer Overflow.\n        cardDetailsStructs[cardId].availableBuy\nInteger Overflow occurs if:\n    cardId = 1\n    cardStructs[cardId].owner = 0", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:617:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:261:11: Warning: Integer Overflow.\n          cardStructs[cardId].url\nInteger Overflow occurs if:\n    cardId = 1", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:611:13: Warning: Integer Overflow.\n            cardDetailsStructs[cardId].leaseCardStructs", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:259:11: Warning: Integer Overflow.\n          cardStructs[cardId].title\nInteger Overflow occurs if:\n    cardId = 1", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:263:11: Warning: Integer Overflow.\n          cardStructs[cardId].image\nInteger Overflow occurs if:\n    cardId = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:253:9: Warning: Integer Underflow.\n        return(\r\n        ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    cardId = 1\n    return(\r\n\r\n          cardStructs[cardId].id,\r\n\r\n          cardStructs[cardId].owner,\r\n\r\n          cardStructs[cardId].title,\r\n\r\n          cardStructs[cardId].url,\r\n\r\n          cardStructs[cardId].image,\r\n\r\n          cardStructs[cardId].nsfw\r\n\r\n        ) = 1", 
+   "./restContracts/0x7f57292bf494a8c9342d37395d1378a65d59c499.txt:607:9: Warning: Integer Underflow.\n        return(\r\n        ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    return(\r\n\r\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].id,\r\n\r\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].tenant,\r\n\r\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].untilBlock,\r\n\r\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].title,\r\n\r\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].url,\r\n\r\n            cardDetailsStructs[cardId].leaseCardStructs[leaseId].image\r\n\r\n        ) = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.5"
+}

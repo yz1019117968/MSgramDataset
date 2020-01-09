@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb1F4ca3C6256f415E420dE511504Af8ea8a9C8e0.txt:41:5: Warning: Integer Overflow.\n    Game[] public gamesPlayed", 
+   "./restContracts/0xb1F4ca3C6256f415E420dE511504Af8ea8a9C8e0.txt:77:9: Warning: Integer Overflow.\n        gamesPlayed.push(game)\nInteger Overflow occurs if:\n    number = 0\n    betPrice = 0", 
+   "./restContracts/0xb1F4ca3C6256f415E420dE511504Af8ea8a9C8e0.txt:19:1: Warning: Integer Overflow.\ncontract CryptoRoulette {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    number = 2\n    betPrice = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.4"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x79ebd9040baeb547863a31305a3247df5037f329.txt:747:5: Warning: Timestamp Dependency.\n    if      (block.timestamp < START)            return 200; // presale, 100% bonus\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x79ebd9040baeb547863a31305a3247df5037f329.txt:751:10: Warning: Timestamp Dependency.\n    else if (block.timestamp <= START + 28 days) return 133", 
+   "./uniqueContractSourceCode/0x79ebd9040baeb547863a31305a3247df5037f329.txt:749:10: Warning: Timestamp Dependency.\n    else if (block.timestamp <= START + 14 days) return 167; // day 1 to 14, 67% bonus\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x79ebd9040baeb547863a31305a3247df5037f329.txt:775:5: Warning: Timestamp Dependency.\n    require(block.timestamp <= END)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x79ebd9040baeb547863a31305a3247df5037f329.txt:579:3: Warning: Integer Overflow.\n  function destroy(address[] tokens) onlyOwner {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.8"
+}

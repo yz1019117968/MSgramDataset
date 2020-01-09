@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8b5fe260f2b7bdd03efc833f78557a349600ae46.txt:571:1: Warning: Integer Overflow.\ncontract LooksCoin is StandardToken, Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    vips.push(_to) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    balances[_to] = 24000000000000000000000\n    viprank[_to] = 0", 
+   "./restContracts/0x8b5fe260f2b7bdd03efc833f78557a349600ae46.txt:763:13: Warning: Integer Overflow.\n            vips.push(_to)\nInteger Overflow occurs if:\n    vips.push(_to) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[_to] = 24000000000000000000000\n    viprank[_to] = 0", 
+   "./restContracts/0x8b5fe260f2b7bdd03efc833f78557a349600ae46.txt:917:17: Warning: Integer Overflow.\n        return (vips[index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    vips[index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x8b5fe260f2b7bdd03efc833f78557a349600ae46.txt:955:17: Warning: Integer Overflow.\n        return (patrons[index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    patrons[index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x8b5fe260f2b7bdd03efc833f78557a349600ae46.txt:77:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.4"
+}

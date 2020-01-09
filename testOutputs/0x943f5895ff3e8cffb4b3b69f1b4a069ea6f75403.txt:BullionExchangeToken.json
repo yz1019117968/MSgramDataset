@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x943f5895ff3e8cffb4b3b69f1b4a069ea6f75403.txt:11:87: Warning: Integer Overflow.\n function add(uint256 a, uint256 b) internal constant returns (uint256) { uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x943f5895ff3e8cffb4b3b69f1b4a069ea6f75403.txt:25:2: Warning: Integer Underflow.\n string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.3"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x32a3ee39aa653eddb69c1469c7d3619322599f27.txt:143:1: Warning: Integer Underflow.\ncontract MoyTokenStorage is owned, safeMath {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    admin = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x32a3ee39aa653eddb69c1469c7d3619322599f27.txt:157:3: Warning: Integer Underflow.\n  string  public CurrentStatus = \"\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.5"
+}

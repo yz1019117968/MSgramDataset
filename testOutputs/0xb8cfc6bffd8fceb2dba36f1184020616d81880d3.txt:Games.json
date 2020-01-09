@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1143:9: Warning: Integer Overflow.\n        participants.push(Participant(sender,sendValue,1))\nInteger Overflow occurs if:\n    c.gameType = 3\n    participants.push(Participant(sender,sendValue,1)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    d.gameEnd = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    d.gameStart = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:999:5: Warning: Integer Overflow.\n    Participant[] public participants", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:33:21: Warning: Integer Overflow.\n        assert((z = x + y\nInteger Overflow occurs if:\n    winners[d.currentYear][sender] = 1\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:41:21: Warning: Integer Underflow.\n        assert((z = x - y\nInteger Underflow occurs if:\n    winners[d.currentYear][sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokTakers[d.currentYear][sender] = 0\n    winPrizes[d.currentYear] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:211:17: Warning: Integer Underflow.\n                year -= 1", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1431:52: Warning: Integer Underflow.\n        winPrizes[d.currentYear-1] = sub(winPrizes[d.currentYear-1\nInteger Underflow occurs if:\n    tokTakers[d.currentYear][sender] = 0\n    tokPrizes[d.currentYear] = 3975405895751364741562419376671566660611838767970142655773613952908460032\n    winPrizes[d.currentYear] = 57896044510818311043182933325675893578556469638271704329566502079542123823104\n    winners[d.currentYear][sender] = 107839786668602559178668060348078522694548577690162289924414440996864\n    d.currentYear = 0\n    owner = 0", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1415:63: Warning: Integer Underflow.\n        ethPrize = add(winners[d.currentYear][sender],winners[d.currentYear-1\nInteger Underflow occurs if:\n    d.currentYear = 0\n    owner = 0", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1431:77: Warning: Integer Underflow.\n        winPrizes[d.currentYear-1] = sub(winPrizes[d.currentYear-1],winners[d.currentYear-1\nInteger Underflow occurs if:\n    tokTakers[d.currentYear][sender] = 0\n    tokPrizes[d.currentYear] = 3975405895751364741562419376671566660611838767970142655773613952908460032\n    winPrizes[d.currentYear] = 57896044510818311043182933325675893578556469638271704329566502079542123823104\n    winners[d.currentYear][sender] = 107839786668602559178668060348078522694548577690162289924414440996864\n    d.currentYear = 0\n    owner = 0", 
+   "./restContracts/0xb8cfc6bffd8fceb2dba36f1184020616d81880d3.txt:1417:67: Warning: Integer Underflow.\n        tokPrize = add(tokTakers[d.currentYear][sender],tokTakers[d.currentYear-1\nInteger Underflow occurs if:\n    winners[d.currentYear][sender] = 0\n    d.currentYear = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.2"
+}

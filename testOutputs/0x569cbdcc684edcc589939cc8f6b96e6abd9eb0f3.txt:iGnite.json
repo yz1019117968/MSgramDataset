@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x569cbdcc684edcc589939cc8f6b96e6abd9eb0f3.txt:291:23: Warning: Integer Underflow.\n        minedBlocks = block.number - genesisBlockCount\nInteger Underflow occurs if:\n    genesisBlockCount = 1", 
+   "./uniqueContractSourceCode/0x569cbdcc684edcc589939cc8f6b96e6abd9eb0f3.txt:83:1: Warning: Integer Underflow.\ncontract iGnite is SafeMath { \r\n^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "10.8"
+}

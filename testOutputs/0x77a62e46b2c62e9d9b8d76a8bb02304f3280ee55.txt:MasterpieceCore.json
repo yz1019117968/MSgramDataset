@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:2783:43: Warning: Integer Overflow.\n        Masterpiece storage masterpiece = masterpieces[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    masterpieces[_tokenId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:2553:5: Warning: Integer Overflow.\n    function createPromoMasterpiece(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:2521:5: Warning: Integer Overflow.\n    function createMasterpiece(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:675:9: Warning: Integer Overflow.\n        ownerMasterpieceCount[_to]++\nInteger Overflow occurs if:\n    ownerMasterpieceCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    masterpieceToOwner[_tokenId] = 0\n    masterpieceToApproved[_tokenId] = 0\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:2785:9: Warning: Integer Underflow.\n        name = masterpiece.name\nInteger Underflow occurs if:\n    _tokenId = 0\n    masterpieces[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:2399:14: Warning: Integer Underflow.\n            (now - masterpieces[_tokenId].birthTime\nInteger Underflow occurs if:\n    masterpieces[_tokenId].birthTime = 18446744073709551615\n    masterpieces[_tokenId] = 1\n    masterpieceToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    paused = 0", 
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:683:13: Warning: Integer Underflow.\n            ownerMasterpieceCount[_from]--\nInteger Underflow occurs if:\n    ownerMasterpieceCount[_from] = 0\n    masterpieceToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    masterpieceToApproved[_tokenId] = 0\n    paused = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:2755:13: Warning: Transaction-Ordering Dependency.\n            _to.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:2751:13: Warning: Transaction-Ordering Dependency.\n            cfoAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.7"
+}

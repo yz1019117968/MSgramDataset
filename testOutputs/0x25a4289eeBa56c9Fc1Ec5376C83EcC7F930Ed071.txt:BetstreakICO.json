@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x25a4289eeBa56c9Fc1Ec5376C83EcC7F930Ed071.txt:379:64: Warning: Integer Overflow.\n      if (block.number >= fundingStartBlock && block.number <= fundingStartBlock+25200\nInteger Overflow occurs if:\n    fundingStartBlock = 115792089237316195423570985008687907853269984665640564039457584007913129622656"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x25a4289eeBa56c9Fc1Ec5376C83EcC7F930Ed071.txt:193:3: Warning: Integer Underflow.\n  string  public CurrentStatus                   = \"\"", 
+   "./uniqueContractSourceCode/0x25a4289eeBa56c9Fc1Ec5376C83EcC7F930Ed071.txt:145:1: Warning: Integer Underflow.\ncontract BetstreakICO is owned, safeMath {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    fundingEndBlock = 0\n    amountRaisedInWei = 0\n    tokensRemaining = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    fundingMinCapInWei = 0\n    isCrowdSaleSetup = 16711680\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x25a4289eeBa56c9Fc1Ec5376C83EcC7F930Ed071.txt:659:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(ethRefund)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x25a4289eeBa56c9Fc1Ec5376C83EcC7F930Ed071.txt:509:7: Warning: Transaction-Ordering Dependency.\n      beneficiaryWallet.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.0"
+}

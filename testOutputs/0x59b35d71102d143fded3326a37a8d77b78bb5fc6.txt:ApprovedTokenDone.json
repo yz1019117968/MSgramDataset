@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x59b35d71102d143fded3326a37a8d77b78bb5fc6.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x59b35d71102d143fded3326a37a8d77b78bb5fc6.txt:313:2: Warning: Integer Underflow.\n\tstring public publisher = 'TokenDone.io'", 
+   "./uniqueContractSourceCode/0x59b35d71102d143fded3326a37a8d77b78bb5fc6.txt:305:2: Warning: Integer Underflow.\n\tstring public name = 'JOINT'", 
+   "./uniqueContractSourceCode/0x59b35d71102d143fded3326a37a8d77b78bb5fc6.txt:307:2: Warning: Integer Underflow.\n\tstring public symbol = 'JOINT'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.0"
+}

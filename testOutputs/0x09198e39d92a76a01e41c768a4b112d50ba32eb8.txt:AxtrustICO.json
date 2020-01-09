@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x09198e39d92a76a01e41c768a4b112d50ba32eb8.txt:579:3: Warning: Integer Underflow.\n  string public saleStatus = \"Not started\"", 
+   "./uniqueContractSourceCode/0x09198e39d92a76a01e41c768a4b112d50ba32eb8.txt:543:1: Warning: Integer Underflow.\ncontract AxtrustICO is Ownable {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "26.2"
+}

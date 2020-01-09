@@ -1,0 +1,39 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:69:5: Warning: Integer Overflow.\n    proposal[] public proposals", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1309:21: Warning: Integer Overflow.\n        uint _sum = c.orderAmount\nInteger Overflow occurs if:\n    _proposalID = 0\n    proposals[_proposalID] = 1\n    recipient = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:909:16: Warning: Integer Overflow.\n        return holders[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    holders[_index] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1037:5: Warning: Integer Overflow.\n    function cloneProposal(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _description = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1405:13: Warning: Integer Overflow.\n            totalTokenSupply += _quantity\nInteger Overflow occurs if:\n    _to = 405876423104911555581564422391193537887205717063164490097438885854775723190\n    totalTokenSupply = 101062747194713700740939909044133543291428518270532861830240546471259836252160\n    _from = 3975520475524700131781546712912945075784227596734147645497045391627002113\n    holderID[_holder] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[_holder] = 0\n    smartContractStartDate = 0", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1253:5: Warning: Integer Overflow.\n    function newProposal(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _description = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1371:30: Warning: Integer Overflow.\n            uint _holderID = holders.length++\nInteger Overflow occurs if:\n    _to = 271705415945464203023590770086703758166811936124828059089825029903167258624\n    _from = 98079714615416886934934209737619787751599303819750539264\n    holders.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holderID[_holder] = 0\n    balances[_holder] = 0\n    smartContractStartDate = 0", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:789:1: Warning: Integer Overflow.\ncontract PassManager is PassManagerInterface {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    holders.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    _quantity = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _recipient = 1461501637330902918203684832716283019655932542975\n    creator = 0\n    holderID[_holder] = 0\n    balances[_holder] = 0\n    smartContractStartDate = 0", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1305:22: Warning: Integer Overflow.\n        proposal c = proposals[_proposalID]\nInteger Overflow occurs if:\n    _proposalID = 115792089237316195423570985008687907853269984665640564039457579504313502138367\n    proposals[_proposalID] = 115792089237316195423570985008687907853269984665640564039457579504313502138368\n    recipient = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1309:21: Warning: Integer Overflow.\n        uint _sum = c.orderAmount + _orderAmount\nInteger Overflow occurs if:\n    _proposalID = 0\n    _orderAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    proposals[_proposalID] = 1\n    recipient = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1313:23: Warning: Integer Overflow.\n            || _sum < c.orderAmount\nInteger Overflow occurs if:\n    _proposalID = 0\n    _orderAmount = 0\n    proposals[_proposalID] = 1\n    recipient = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:861:57: Warning: Integer Underflow.\n        return 100 + 100*FundingRules[0].inflationRate*(_date - FundingRules[0].startTime\nInteger Underflow occurs if:\n    FundingRules[0].startTime = 1\n    FundingRules[0].closingTime = 0", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:901:16: Warning: Integer Underflow.\n        return holders.length - 1\nInteger Underflow occurs if:\n    holders.length = 0", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:147:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:151:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:917:16: Warning: Integer Underflow.\n        return proposals.length - 1\nInteger Underflow occurs if:\n    proposals.length = 0", 
+   "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:69:5: Warning: Integer Underflow.\n    proposal[] public proposals"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1221:14: Warning: Transaction-Ordering Dependency.\n        if (!recipient.send(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x58F792248d5fE5cadcc8Cc222eAA97c1F4089F8b.txt:1349:13: Warning: Transaction-Ordering Dependency.\n        if (_recipient.send(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.8"
+}

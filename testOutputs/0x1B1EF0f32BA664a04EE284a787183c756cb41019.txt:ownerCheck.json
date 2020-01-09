@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1B1EF0f32BA664a04EE284a787183c756cb41019.txt:47:3: Warning: Integer Overflow.\n  function checkPrevOwner(bytes32 label) returns(address){\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1B1EF0f32BA664a04EE284a787183c756cb41019.txt:35:3: Warning: Integer Overflow.\n  function checkOwner(bytes32 label) returns(address){\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "96.5"
+}

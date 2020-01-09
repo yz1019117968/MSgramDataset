@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x2f665527b0a8b3710adcde917220de7d6b68d67d.txt:857:21: Warning: Timestamp Dependency.\n            require(now < crowdfundEndTime && isCrowdFundActive"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2f665527b0a8b3710adcde917220de7d6b68d67d.txt:1053:32: Warning: Integer Overflow.\n            crowdfundEndTime = crowdfundStartTime + 5 * 1 weeks\nInteger Overflow occurs if:\n    founderMultiSigAddress = 8192\n    _exchangeRate = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.5"
+}

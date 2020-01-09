@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9fa76b2401c0b1cccfa207b5539df9313a265151.txt:629:13: Warning: Integer Overflow.\n        if (msg.value + userPurchaseNumMap[msg.sender]\nInteger Overflow occurs if:\n    userPurchaseNumMap[msg.sender] = 67561451903253525352916154730603452806069689523074529449971943701984565806129\n    maxPurchaseNum = 67561451903253525352916154730603452806069689523074529449971943701984565806130\n    minPurchaseNum = 95540524636757164515578595421084856997931815643466727433833607637600102326841\n    owner = 0\n    seedContract = 1461501637330902918203684832716283019655932542975\n    preSaleLimit = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    preSaleOpened = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.6"
+}

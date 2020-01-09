@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:149:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:257:5: Warning: Integer Overflow.\n    mapping(address=>epoch[]) public lockEpochsMap", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:497:41: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance=needLockBalance.add(epochs[i]\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:551:14: Warning: Integer Overflow.\n\t\t\tif( now < epochs[i]", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:493:14: Warning: Integer Overflow.\n\t\t\tif( now < epochs[i]\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:555:43: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance = needLockBalance.add(epochs[i].lockAmount", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:633:33: Warning: Integer Overflow.\n        \tpublicFundingWhiteList[_list [i]\nInteger Overflow occurs if:\n    _list = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:617:4: Warning: Integer Overflow.\n\t\t epochs.push(epoch(lockEndTime,lockAmount))\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:497:41: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance=needLockBalance.add(epochs[i].lockAmount\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbb29c238e70b80d89c28b498c31081a604d3d083.txt:555:43: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance = needLockBalance.add(epochs[i]"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.9"
+}

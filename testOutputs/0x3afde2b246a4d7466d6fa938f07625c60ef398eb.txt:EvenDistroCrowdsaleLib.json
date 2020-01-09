@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:555:23: Warning: Integer Overflow.\n      _leftoverWei = (self.base.ownerBalance\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 0\n    self.base.currentMilestone = 255\n    self.base.capAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    self.base.ownerBalance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.isRegistered[msg.sender] = 255\n    self.endTime = 115792089237316195423570985008687907853269984665640564039457584007913125445631\n    self.startTime = 115792089237316195423570985008687907853269984665640564039457584007913125445631\n    self.base.owner = 0", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:167:3: Warning: Integer Overflow.\n  function init(EvenDistroCrowdsaleStorage storage self,\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:287:3: Warning: Integer Overflow.\n  function registerUsers(EvenDistroCrowdsaleStorage storage self, address[] _registrants)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _registrants = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:453:47: Warning: Integer Overflow.\n    self.addressTokenCap = self.base.saleData[self.base.milestoneTimes\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.rateSet = 0\n    self.staticCap = 0\n    self.numRegistered = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.milestoneTimes.length = 0", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:453:28: Warning: Integer Overflow.\n    self.addressTokenCap = self.base.saleData\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.rateSet = 0\n    self.staticCap = 0\n    self.numRegistered = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.milestoneTimes.length = 0", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:555:23: Warning: Integer Overflow.\n      _leftoverWei = (self.base.ownerBalance + _amount\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 0\n    self.base.ownerBalance = 166153499473114484112975882535043073\n    self.base.currentMilestone = 255\n    self.base.capAmount = 166153499473114484112975882535043071\n    self.isRegistered[msg.sender] = 255\n    self.endTime = 0\n    self.startTime = 0\n    self.base.owner = 0", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:377:3: Warning: Integer Overflow.\n  function unregisterUsers(EvenDistroCrowdsaleStorage storage self, address[] _registrants)\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:555:59: Warning: Integer Overflow.\n      _leftoverWei = (self.base.ownerBalance + _amount) - self.base.capAmount\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 0\n    self.base.currentMilestone = 255\n    self.base.capAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    self.base.ownerBalance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.isRegistered[msg.sender] = 255\n    self.endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:237:38: Warning: Integer Underflow.\n    if ((!self.staticCap) && (now >= self.base.startTime - 2 hours\nInteger Underflow occurs if:\n    self.base.startTime = 7199\n    self.staticCap = 0\n    self.base.owner = 0", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:721:3: Warning: Integer Underflow.\n  function getSaleData(EvenDistroCrowdsaleStorage storage self, uint256 timestamp)\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3afde2b246a4d7466d6fa938f07625c60ef398eb.txt:327:38: Warning: Integer Underflow.\n    if ((!self.staticCap) && (now >= self.base.startTime - 2 hours\nInteger Underflow occurs if:\n    self.base.startTime = 7199\n    self.staticCap = 0\n    self.base.owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

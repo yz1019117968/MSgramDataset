@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4884273db32a4a078e8088a58f34011db7304174.txt:55:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4884273db32a4a078e8088a58f34011db7304174.txt:309:5: Warning: Integer Underflow.\n    string public name = 'WIT'", 
+   "./uniqueContractSourceCode/0x4884273db32a4a078e8088a58f34011db7304174.txt:311:5: Warning: Integer Underflow.\n    string public symbol = 'WIT'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.0"
+}

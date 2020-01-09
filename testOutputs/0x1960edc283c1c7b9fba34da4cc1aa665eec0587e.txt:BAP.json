@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1960edc283c1c7b9fba34da4cc1aa665eec0587e.txt:65:5: Warning: Integer Underflow.\n    string public name = 'BAP token'", 
+   "./uniqueContractSourceCode/0x1960edc283c1c7b9fba34da4cc1aa665eec0587e.txt:67:5: Warning: Integer Underflow.\n    string public symbol = 'BAP'", 
+   "./uniqueContractSourceCode/0x1960edc283c1c7b9fba34da4cc1aa665eec0587e.txt:63:5: Warning: Integer Underflow.\n    string public standard = 'ERC20'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.6"
+}

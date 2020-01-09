@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1061:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1]\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1069:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1].soldFromUnreserved\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1069:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1].soldFromUnreserved + statsByDay[currentDay()-1].soldFromReserved\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1085:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1].fuelBoughtByAddress\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1069:60: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1].soldFromUnreserved + statsByDay[currentDay()-1].soldFromReserved\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1077:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1]\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1283:5: Warning: Integer Overflow.\n    statsByDay.push(Day(daysSupply, 0, reservedTokensNextDay, 0))\nInteger Overflow occurs if:\n    statsByDay.push(Day(daysSupply, 0, reservedTokensNextDay, 0)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    newTotalSupply = 10894474682274239493831243662817379401261526446360622092269559273883068006400\n    updater = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1077:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1].reserved\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1069:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1]\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1085:12: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1]\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:933:3: Warning: Integer Overflow.\n  Day[] public statsByDay", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1069:60: Warning: Integer Overflow.\n    return statsByDay[currentDay()-1].soldFromUnreserved + statsByDay[currentDay()-1]\nInteger Overflow occurs if:\n    statsByDay.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1145:29: Warning: Integer Overflow.\n    uint256 alreadyBought = today.fuelBoughtByAddress\nInteger Overflow occurs if:\n    statsByDay.length = 57896044618658097711785492503978578517302266603269360811549721249042581684224\n    endBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1061:23: Warning: Integer Underflow.\n    return statsByDay[currentDay()-1\nInteger Underflow occurs if:\n    statsByDay.length = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1077:23: Warning: Integer Underflow.\n    return statsByDay[currentDay()-1\nInteger Underflow occurs if:\n    statsByDay.length = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1069:71: Warning: Integer Underflow.\n    return statsByDay[currentDay()-1].soldFromUnreserved + statsByDay[currentDay()-1\nInteger Underflow occurs if:\n    statsByDay.length = 0", 
+   "./restContracts/0x82A48004789B9aA6516eA14b6B2164d0382c5387.txt:1085:23: Warning: Integer Underflow.\n    return statsByDay[currentDay()-1\nInteger Underflow occurs if:\n    statsByDay.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.9"
+}

@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7F93BAFc01ffa46D8735cc7F51914aC90cBa061d.txt:1213:9: Warning: Integer Overflow.\n        ballers[_wallet].weiValue\nInteger Overflow occurs if:\n    ballers[_wallet].weiValue = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    ballers[_wallet].tokenAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ballers[_wallet].referralBeneficiary = 0\n    tokensOnHold = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7F93BAFc01ffa46D8735cc7F51914aC90cBa061d.txt:1557:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7F93BAFc01ffa46D8735cc7F51914aC90cBa061d.txt:275:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.5"
+}

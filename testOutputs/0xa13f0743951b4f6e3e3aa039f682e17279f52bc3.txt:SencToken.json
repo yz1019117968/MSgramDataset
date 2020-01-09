@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa13f0743951b4f6e3e3aa039f682e17279f52bc3.txt:651:5: Warning: Integer Overflow.\n    function airdrop(address bountyWallet, address[] dests, uint[] values) public onlyOwner returns (uint) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa13f0743951b4f6e3e3aa039f682e17279f52bc3.txt:571:5: Warning: Integer Underflow.\n    string public symbol = SYMBOL", 
+   "./restContracts/0xa13f0743951b4f6e3e3aa039f682e17279f52bc3.txt:569:5: Warning: Integer Underflow.\n    string public name = NAME"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.8"
+}

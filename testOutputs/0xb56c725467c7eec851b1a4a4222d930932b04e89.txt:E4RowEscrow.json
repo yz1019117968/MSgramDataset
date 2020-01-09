@@ -1,0 +1,42 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:939:35: Warning: Integer Overflow.\n                        _feeCap = xarb.feeCap", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:479:17: Warning: Integer Overflow.\n                arbiters[msg.sender].locked\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:337:22: Warning: Integer Overflow.\n                if ((arbiters[_addr].registered", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:879:17: Warning: Integer Overflow.\n                xgame.playerPots[pidx]\nInteger Overflow occurs if:\n    games[_hGame].active = 100663424\n    _hGame = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    arbiterTokens[ArbTokFromHGame(_hGame)] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:935:41: Warning: Integer Overflow.\n                        _escFeePctX10 = xarb.escFeePctX10", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:513:25: Warning: Integer Overflow.\n                        houseFeeHoldover += msg.value\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    houseFeeHoldover = 1\n    registrationFee = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenPartner = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:359:21: Warning: Integer Overflow.\n                if (arbiters[_addr].registered", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:485:17: Warning: Integer Overflow.\n                arbiters[msg.sender].arbFeePctX10\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:879:17: Warning: Integer Overflow.\n                xgame.playerPots[pidx] += uint128(msg.value)\nInteger Overflow occurs if:\n    games[_hGame].active = 2147483776\n    _hGame = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    arbiterTokens[ArbTokFromHGame(_hGame)] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:879:17: Warning: Integer Overflow.\n                xgame.playerPots\nInteger Overflow occurs if:\n    games[_hGame].active = 100663424\n    _hGame = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    arbiterTokens[ArbTokFromHGame(_hGame)] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:1231:29: Warning: Integer Overflow.\n                        if (xarb.arbHoldover\nInteger Overflow occurs if:\n    arbiters[_addr].registered = 255", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:491:17: Warning: Integer Overflow.\n                arbiters[msg.sender].registered\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:937:41: Warning: Integer Overflow.\n                        _arbFeePctX10 = xarb.arbFeePctX10", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:487:17: Warning: Integer Overflow.\n                arbiters[msg.sender].arbToken\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:497:32: Warning: Integer Overflow.\n                arbiterIndexes[numArbiters++\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    numArbiters = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:881:17: Warning: Integer Overflow.\n                xgame.totalPot += uint128(msg.value)\nInteger Overflow occurs if:\n    games[_hGame].active = 730750818665451459101842416358141509830113755264\n    _hGame = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    arbiterTokens[ArbTokFromHGame(_hGame)] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:481:17: Warning: Integer Overflow.\n                arbiters[msg.sender].numPlayers\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:489:17: Warning: Integer Overflow.\n                arbiters[msg.sender].feeCap\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:339:29: Warning: Integer Overflow.\n                        && (arbiters[_addr].arbToken\nInteger Overflow occurs if:\n    arbiters[_addr].registered = 255", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:483:17: Warning: Integer Overflow.\n                arbiters[msg.sender].escFeePctX10\nInteger Overflow occurs if:\n    _arbToken = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    _arbFeePctX10 = 0\n    _numPlayers = 0\n    _escFeePctX10 = 20\n    arbiters[msg.sender].registered = 0\n    registrationFee = 0", 
+   "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:941:37: Warning: Integer Overflow.\n                        _holdOver = xarb.arbHoldover"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:1243:38: Warning: Transaction-Ordering Dependency.\n                                if (!msg.sender.call.gas(acctCallGas).value(_amount)()"
+   ], 
+   [
+    "./restContracts/0xb56c725467c7eec851b1a4a4222d930932b04e89.txt:503:30: Warning: Transaction-Ordering Dependency.\n                        if (!tokenPartner.call.gas(tokCallGas).value(msg.value)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.4"
+}

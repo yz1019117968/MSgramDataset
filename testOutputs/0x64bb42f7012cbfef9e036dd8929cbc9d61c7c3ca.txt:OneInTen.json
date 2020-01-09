@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x64bb42f7012cbfef9e036dd8929cbc9d61c7c3ca.txt:19:5: Warning: Transaction-Ordering Dependency.\n    LuckyNumber(contract_address).takeAGuess.value(msg.value)(guess)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x64bb42f7012cbfef9e036dd8929cbc9d61c7c3ca.txt:23:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(this.balance)", 
+    "./uniqueContractSourceCode/0x64bb42f7012cbfef9e036dd8929cbc9d61c7c3ca.txt:19:5: Warning: Transaction-Ordering Dependency.\n    LuckyNumber(contract_address).takeAGuess.value(msg.value)(guess)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "96.4"
+}

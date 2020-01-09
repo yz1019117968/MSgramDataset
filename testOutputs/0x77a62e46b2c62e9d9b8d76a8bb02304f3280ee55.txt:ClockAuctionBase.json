@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x77a62e46b2c62e9d9b8d76a8bb02304f3280ee55.txt:1401:5: Warning: Integer Overflow.\n    mapping (uint256 => Auction) public tokenIdToAuction"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

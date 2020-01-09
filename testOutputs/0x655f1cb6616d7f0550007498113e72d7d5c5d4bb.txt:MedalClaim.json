@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:145:26: Warning: Integer Overflow.\n        uint256 genNum = uint256(block.blockhash(block.number-1)) + uint256(privateAddress)", 
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:147:32: Warning: Integer Overflow.\n        return uint8(genNum % (maxRandom - min + 1", 
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:643:5: Warning: Integer Overflow.\n    function getPetCardSeries (uint64 petId) public constant returns (uint8) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    petId = 4611686018427387904", 
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:911:14: Warning: Integer Overflow.\n             EventMedalSuccessful(msg.sender,7)\nInteger Overflow occurs if:\n    petId = 4611686018427387904\n    claimedbyAddress[msg.sender][7] = 0", 
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:653:32: Warning: Integer Overflow.\n         (,seriesId,,,,,,,,) = petCardData.getPet(petId)\nInteger Overflow occurs if:\n    petId = 4611686018427387904\n    claimedbyAddress[msg.sender][7] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:145:50: Warning: Integer Underflow.\n        uint256 genNum = uint256(block.blockhash(block.number-1", 
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:147:32: Warning: Integer Underflow.\n        return uint8(genNum % (maxRandom - min", 
+   "./uniqueContractSourceCode/0x655f1cb6616d7f0550007498113e72d7d5c5d4bb.txt:81:13: Warning: Integer Underflow.\n            totalSeraphims -= 1\nInteger Underflow occurs if:\n    creatorAddress = 0\n    seraphims[_oldSeraphim] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "28.9"
+}

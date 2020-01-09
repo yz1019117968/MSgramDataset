@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:713:9: Warning: Timestamp Dependency.\n        if(wallets[msg.sender].balance > 0 && wallets[msg.sender].nextWithdrawTime <= block.timestamp){\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:669:47: Warning: Integer Overflow.\n        if(investStart > 1 && block.number >= investStart + (hashesSize * 5)\nInteger Overflow occurs if:\n    investStart = 115792089237316195423570985008687907853269984665640564039457584007913129558016\n    wallets[msg.sender].balance = 1000000000622592"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:719:13: Warning: Integer Underflow.\n            walletBalance -= balance\nInteger Underflow occurs if:\n    wallets[msg.sender].balance = 411376139318328889125727538933413040096072175911373566445092863\n    walletBalance = 411376139318328889125727538933413040096072175911373566445092862\n    investStart = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:1425:23: Warning: Integer Underflow.\n        uint delta = (_block - hashFirst\nInteger Underflow occurs if:\n    hashFirst = 134086920\n    investStart = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:681:29: Warning: Integer Underflow.\n                if(period > dividends.length - 2\nInteger Underflow occurs if:\n    investStart = 1\n    wallets[msg.sender].balance = 1000000000016384\n    dividends.length = 1\n    hashFirst = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:679:26: Warning: Integer Underflow.\n\t\t        uint period = (block.number - hashFirst\nInteger Underflow occurs if:\n    investStart = 1\n    wallets[msg.sender].balance = 1000000000016384\n    hashFirst = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:755:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(maxpay)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c.txt:735:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.9"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x67499A8bCdd401eE18c1F8A62C903EDbc1883954.txt:107:1: Warning: Integer Overflow.\ncontract Authorizable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    authorizers.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    authorizerIndex[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x67499A8bCdd401eE18c1F8A62C903EDbc1883954.txt:199:5: Warning: Integer Overflow.\n    authorizers.length++\nInteger Overflow occurs if:\n    authorizers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authorizerIndex[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.3"
+}

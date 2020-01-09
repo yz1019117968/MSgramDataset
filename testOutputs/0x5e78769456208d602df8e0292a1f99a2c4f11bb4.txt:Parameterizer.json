@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:1709:12: Warning: Integer Overflow.\n    return proposals[_propID].processBy", 
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:1773:3: Warning: Integer Overflow.\n  function get(string _name) public view returns (uint value) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:1299:3: Warning: Integer Overflow.\n  mapping(bytes32 => ParamProposal) public proposals", 
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:1759:17: Warning: Integer Overflow.\n    return (2 * challenges[_challengeID].stake"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:1299:3: Warning: Integer Underflow.\n  mapping(bytes32 => ParamProposal) public proposals", 
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:1759:12: Warning: Integer Underflow.\n    return (2 * challenges[_challengeID].stake) - challenges[_challengeID].rewardPool\nInteger Underflow occurs if:\n    challenges[_challengeID].stake = 0\n    challenges[_challengeID].rewardPool = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.6"
+}

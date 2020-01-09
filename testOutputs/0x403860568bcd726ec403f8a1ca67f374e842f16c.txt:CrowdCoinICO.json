@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x403860568bcd726ec403f8a1ca67f374e842f16c.txt:1035:9: Warning: Timestamp Dependency.\n        if (total_raised >= goal || time() < end_time) revert()"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x403860568bcd726ec403f8a1ca67f374e842f16c.txt:53:21: Warning: Integer Underflow.\n        assert((z = x - y\nInteger Underflow occurs if:\n    start_time = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x403860568bcd726ec403f8a1ca67f374e842f16c.txt:1045:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x403860568bcd726ec403f8a1ca67f374e842f16c.txt:1059:9: Warning: Transaction-Ordering Dependency.\n        dev_multisig.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.4"
+}

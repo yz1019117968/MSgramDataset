@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6604c5f48cd5ee85b56daa678e7531db869c5ea6.txt:279:2: Warning: Integer Overflow.\n\tfunction appendPricePoints(uint64[] _pricePoints) public storageAccessControl {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _pricePoints = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6604c5f48cd5ee85b56daa678e7531db869c5ea6.txt:269:2: Warning: Integer Overflow.\n\tfunction setPricePoints(uint64[] _pricePoints) public storageAccessControl {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _pricePoints = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.8"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4E4019c632579fB81E8c26503140aa2C9b55c065.txt:119:15: Warning: Integer Overflow.\n        key = self.keys[keyIndex]\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4E4019c632579fB81E8c26503140aa2C9b55c065.txt:121:17: Warning: Integer Overflow.\n        value = self.data[key].value\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4E4019c632579fB81E8c26503140aa2C9b55c065.txt:107:47: Warning: Integer Overflow.\n        while (keyIndex < self.keys.length && self.keys[keyIndex]\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4E4019c632579fB81E8c26503140aa2C9b55c065.txt:445:5: Warning: Integer Underflow.\n    string public name = \"GBCToken\"", 
+   "./uniqueContractSourceCode/0x4E4019c632579fB81E8c26503140aa2C9b55c065.txt:447:5: Warning: Integer Underflow.\n    string public symbol = \"GBC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.8"
+}

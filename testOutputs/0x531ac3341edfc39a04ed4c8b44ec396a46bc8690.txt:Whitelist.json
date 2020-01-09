@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x531ac3341edfc39a04ed4c8b44ec396a46bc8690.txt:473:17: Warning: Integer Overflow.\n                entry.accepted\nInteger Overflow occurs if:\n    listIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _account = 0\n    list[_account].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./uniqueContractSourceCode/0x531ac3341edfc39a04ed4c8b44ec396a46bc8690.txt:435:62: Warning: Integer Overflow.\n        return listIndex.length > 0 && _account == listIndex[list[_account].index\nInteger Overflow occurs if:\n    listIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x531ac3341edfc39a04ed4c8b44ec396a46bc8690.txt:435:52: Warning: Integer Overflow.\n        return listIndex.length > 0 && _account == listIndex[list[_account].index]\nInteger Overflow occurs if:\n    listIndex.length = 95780971304118053647396689196894323976171195136475136\n    list[_account].index = 95780971304118053647396689196894323976171195136475134\n    owner = 0", 
+   "./uniqueContractSourceCode/0x531ac3341edfc39a04ed4c8b44ec396a46bc8690.txt:539:16: Warning: Integer Overflow.\n        return list[_account].accepted", 
+   "./uniqueContractSourceCode/0x531ac3341edfc39a04ed4c8b44ec396a46bc8690.txt:471:18: Warning: Integer Overflow.\n            if (!entry.accepted\nInteger Overflow occurs if:\n    listIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _account = 0\n    list[_account].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./uniqueContractSourceCode/0x531ac3341edfc39a04ed4c8b44ec396a46bc8690.txt:509:13: Warning: Integer Overflow.\n            entry.accepted\nInteger Overflow occurs if:\n    listIndex.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _account = 0\n    list[_account].index = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.7"
+}

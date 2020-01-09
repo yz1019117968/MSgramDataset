@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x833d404fc58ea23fe8be63130bdb2d1806843517.txt:1187:5: Warning: Integer Overflow.\n    address[] public preIcoTokenHoldersAddresses", 
+   "./restContracts/0x833d404fc58ea23fe8be63130bdb2d1806843517.txt:1117:5: Warning: Integer Overflow.\n    address[] public preIcoInvestorsAddresses", 
+   "./restContracts/0x833d404fc58ea23fe8be63130bdb2d1806843517.txt:1137:5: Warning: Integer Overflow.\n    address[] public icoInvestorsAddresses", 
+   "./restContracts/0x833d404fc58ea23fe8be63130bdb2d1806843517.txt:1207:5: Warning: Integer Overflow.\n    address[] public icoTokenHoldersAddresses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.0"
+}

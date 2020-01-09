@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:659:9: Warning: Integer Overflow.\n        customers[msg.sender][_customer].verified\nInteger Overflow occurs if:\n    _expires = 1\n    providers[msg.sender].details = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:571:5: Warning: Integer Overflow.\n    function newProvider(address _providerAddress, string _name, bytes32 _details, uint256 _fee) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:657:9: Warning: Integer Overflow.\n        customers[msg.sender][_customer].expires\nInteger Overflow occurs if:\n    _expires = 1\n    providers[msg.sender].details = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:707:9: Warning: Integer Overflow.\n        customers[_provider][_customer].divisionJurisdiction", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:711:9: Warning: Integer Overflow.\n        customers[_provider][_customer].role", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:709:9: Warning: Integer Overflow.\n        customers[_provider][_customer].accredited", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:655:9: Warning: Integer Overflow.\n        customers[msg.sender][_customer].accredited\nInteger Overflow occurs if:\n    _expires = 1\n    providers[msg.sender].details = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:713:9: Warning: Integer Overflow.\n        customers[_provider][_customer].verified", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:653:9: Warning: Integer Overflow.\n        customers[msg.sender][_customer].role\nInteger Overflow occurs if:\n    _expires = 1\n    providers[msg.sender].details = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:751:9: Warning: Integer Overflow.\n        providers[_providerAddress].fee", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:749:9: Warning: Integer Overflow.\n        providers[_providerAddress].details", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:601:9: Warning: Integer Overflow.\n        providers[msg.sender].fee\nInteger Overflow occurs if:\n    providers[msg.sender].details = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:715:9: Warning: Integer Overflow.\n        customers[_provider][_customer].expires", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:501:5: Warning: Integer Overflow.\n    mapping(address => mapping(address => Customer)) public customers", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:651:9: Warning: Integer Overflow.\n        customers[msg.sender][_customer].divisionJurisdiction\nInteger Overflow occurs if:\n    _expires = 1\n    providers[msg.sender].details = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:747:9: Warning: Integer Overflow.\n        providers[_providerAddress].joined"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:519:5: Warning: Integer Underflow.\n    mapping(address => Provider) public providers", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:743:7: Warning: Integer Underflow.\n      return (\r\n      ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    return (\r\n\r\n        providers[_providerAddress].name,\r\n\r\n        providers[_providerAddress].joined,\r\n\r\n        providers[_providerAddress].details,\r\n\r\n        providers[_providerAddress].fee\r\n\r\n      ) = 1", 
+   "./uniqueContractSourceCode/0x076719c05961a0c3398e558e2199085d32717ca6.txt:471:5: Warning: Integer Underflow.\n    string public VERSION = \"1\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.4"
+}

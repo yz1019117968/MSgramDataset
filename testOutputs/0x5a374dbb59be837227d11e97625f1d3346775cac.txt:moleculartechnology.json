@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5a374dbb59be837227d11e97625f1d3346775cac.txt:15:5: Warning: Integer Underflow.\n    string public name = \"molecular technology\"", 
+   "./uniqueContractSourceCode/0x5a374dbb59be837227d11e97625f1d3346775cac.txt:17:5: Warning: Integer Underflow.\n    string public symbol = \"MCRT\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

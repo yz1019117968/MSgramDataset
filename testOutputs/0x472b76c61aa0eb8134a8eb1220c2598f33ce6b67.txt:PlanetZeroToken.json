@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x472b76c61aa0eb8134a8eb1220c2598f33ce6b67.txt:151:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x472b76c61aa0eb8134a8eb1220c2598f33ce6b67.txt:307:3: Warning: Integer Overflow.\n  function approveAndCall(address _spender, uint256 _value, bytes _extraData) public{    \r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x472b76c61aa0eb8134a8eb1220c2598f33ce6b67.txt:167:3: Warning: Integer Underflow.\n  string public name", 
+   "./uniqueContractSourceCode/0x472b76c61aa0eb8134a8eb1220c2598f33ce6b67.txt:169:3: Warning: Integer Underflow.\n  string public symbol", 
+   "./uniqueContractSourceCode/0x472b76c61aa0eb8134a8eb1220c2598f33ce6b67.txt:173:3: Warning: Integer Underflow.\n  string public version = 'v0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.0"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x435ad5cae6ea3e065ce540464366b71fba8f0c52.txt:371:20: Warning: Callstack Depth Attack Vulnerability.\n        bool ret = med_.call(bytes4(keccak256(\"poke()\")))"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "20.3"
+}

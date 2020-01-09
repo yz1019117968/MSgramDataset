@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:1151:9: Warning: Timestamp Dependency.\n        require(refundStartTime + REFUND_TIME_FRAME < now)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbc49970f15dc12e003c3d10a8604a5373cf79ac3.txt:55:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    state = 0\n    depositedETH[investor] = 1\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.6"
+}

@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x897c6cf1996edfb2126703dcecf038df646298fa.txt:163:17: Warning: Re-Entrancy Vulnerability.\n        require(_to.call.value(_value)(_data)", 
+   "./restContracts/0x897c6cf1996edfb2126703dcecf038df646298fa.txt:239:9: Warning: Re-Entrancy Vulnerability.\n        ethDelta.deposit.value(amount)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x897c6cf1996edfb2126703dcecf038df646298fa.txt:59:5: Warning: Integer Underflow.\n    string public version"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x897c6cf1996edfb2126703dcecf038df646298fa.txt:239:9: Warning: Transaction-Ordering Dependency.\n        ethDelta.deposit.value(amount)()"
+   ], 
+   [
+    "./restContracts/0x897c6cf1996edfb2126703dcecf038df646298fa.txt:265:9: Warning: Transaction-Ordering Dependency.\n        suicide(msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.7"
+}

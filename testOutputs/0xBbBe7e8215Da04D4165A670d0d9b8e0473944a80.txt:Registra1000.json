@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xBbBe7e8215Da04D4165A670d0d9b8e0473944a80.txt:5:1: Warning: Integer Overflow.\ncontract Registra1000 {\r\n^\nSpanning multiple lines.", 
+   "./restContracts/0xBbBe7e8215Da04D4165A670d0d9b8e0473944a80.txt:29:4: Warning: Integer Overflow.\n   function setArquivo(bytes shacode) public {\r\n   ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    shacode = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.0"
+}

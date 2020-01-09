@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4c24fd04063e8b1c881e5ec0f46208d66d010c64.txt:67:34: Warning: Integer Underflow.\n\t    if (!_from.send((msg.value*(100-ethTaxRate\nInteger Underflow occurs if:\n    ethTaxRate = 112\n    balanceOf[_from] = 0\n    tokensOfferedOf[_from] = 0\n    tradeActive[_from] = 255\n    weiWantedOf[_from] = 0", 
+   "./uniqueContractSourceCode/0x4c24fd04063e8b1c881e5ec0f46208d66d010c64.txt:41:30: Warning: Integer Underflow.\n\t\tbalanceOf[_to] += (_value*(100-tokenTaxRate\nInteger Underflow occurs if:\n    balanceOf[_to] = 43422033463993521861821703090569148102189289332134632236109619193610314456511\n    tokenTaxRate = 116\n    _value = 79228162251351011526994266144\n    balanceOf[msg.sender] = 79228162251351011526994266144"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.1"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4e9547d1a1154ee0451f063c253ad8dc39d5384c.txt:763:5: Warning: Integer Overflow.\n    function buyOptions(address buyer, uint usdCents, string txHash) icoOnly {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    txHash = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x4e9547d1a1154ee0451f063c253ad8dc39d5384c.txt:719:5: Warning: Integer Overflow.\n    function executeOptions(address buyer, uint usdCents, string txHash) icoOnly\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    txHash = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.5"
+}

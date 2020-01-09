@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:777:5: Warning: Integer Overflow.\n    self.withdrawTokensMap\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 1\n    self.tokensSet = 0\n    self.owner = 0", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:781:5: Warning: Integer Overflow.\n    self.tokensSet\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 1\n    self.tokensSet = 0\n    self.owner = 0", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:539:19: Warning: Integer Overflow.\n  \treturn (now >= self.startTime\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:619:71: Warning: Integer Overflow.\n          uint256 _burnAmount = (self.withdrawTokensMap[msg.sender] * self.percentBurn\nInteger Overflow occurs if:\n    self.endTime = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.percentBurn = 65280\n    self.owner = 0\n    self.withdrawTokensMap[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:779:5: Warning: Integer Overflow.\n    self.startingTokenBalance\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 1\n    self.tokensSet = 0\n    self.owner = 0", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:847:12: Warning: Integer Overflow.\n    return self.startingTokenBalance\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:847:40: Warning: Integer Overflow.\n    return self.startingTokenBalance - self.withdrawTokensMap\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:539:44: Warning: Integer Overflow.\n  \treturn (now >= self.startTime && now <= self.endTime\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.startTime = 0", 
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:619:34: Warning: Integer Overflow.\n          uint256 _burnAmount = (self.withdrawTokensMap\nInteger Overflow occurs if:\n    self.endTime = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.percentBurn = 65280\n    self.owner = 0\n    self.withdrawTokensMap[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0ecbfc56242fcf0915477cd6e0c24382f11a4af3.txt:847:12: Warning: Integer Underflow.\n    return self.startingTokenBalance - self.withdrawTokensMap[self.owner]\nInteger Underflow occurs if:\n    self.startingTokenBalance = 0\n    self.withdrawTokensMap[self.owner] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.5"
+}

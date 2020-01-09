@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xB854728AFAA9f8dAe90794De4b9C19F0C5Eb969a.txt:527:37: Warning: Integer Overflow.\n            whitelistedContributors[addrs[x]\nInteger Overflow occurs if:\n    addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    contractOwner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xB854728AFAA9f8dAe90794De4b9C19F0C5Eb969a.txt:107:5: Warning: Integer Underflow.\n    string public version = \"1.0\""
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xB854728AFAA9f8dAe90794De4b9C19F0C5Eb969a.txt:545:9: Warning: Transaction-Ordering Dependency.\n        contractOwner.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xB854728AFAA9f8dAe90794De4b9C19F0C5Eb969a.txt:627:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.5"
+}

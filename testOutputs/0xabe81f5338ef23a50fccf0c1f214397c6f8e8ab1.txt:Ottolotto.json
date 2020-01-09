@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:581:9: Warning: Integer Overflow.\n        tickets[msg.sender][gameNext].push(tBet)\nInteger Overflow occurs if:\n    ticketPrice = 0", 
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:657:28: Warning: Integer Overflow.\n        uint256 endBlock = _game + gameDuration\nInteger Overflow occurs if:\n    tickets[_player][_game].length = 9671406556917033397649408\n    gameStartBlock[_game] = 115792089237316195423570985008687907853269984665640564039457584007913129639873\n    gameDuration = 169", 
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:933:35: Warning: Integer Overflow.\n        TicketBet memory ticket = tickets[_player][_game][_index]\nInteger Overflow occurs if:\n    tickets[_player][_game][_index] = 1024\n    _index = 1022", 
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:471:17: Warning: Integer Overflow.\n            if (tickets[_player][_game][i]\nInteger Overflow occurs if:\n    tickets[_player][_game].length = 115791205813783806231406193359937536394012070923692126229978523204812483330047", 
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:473:56: Warning: Integer Overflow.\n                uint8 matches = getMatches(startBlock, tickets[_player][_game][i]\nInteger Overflow occurs if:\n    tickets[_player][_game].length = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:347:28: Warning: Integer Overflow.\n            lastGames[j] = allGames[i]\nInteger Overflow occurs if:\n    allGames.length = 57896044618658097711785492504343953926634992332820282019728792003956564819971", 
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:197:1: Warning: Integer Overflow.\ncontract Ottolotto is OwnableExtended {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ticketPrice = 0", 
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:283:5: Warning: Integer Overflow.\n    uint256[] public allGames"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xabe81f5338ef23a50fccf0c1f214397c6f8e8ab1.txt:345:26: Warning: Integer Underflow.\n        for (uint256 i = allGames.length - 11\nInteger Underflow occurs if:\n    allGames.length = 10"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.4"
+}

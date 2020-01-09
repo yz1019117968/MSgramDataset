@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0565043602218b8bcc3b1470a33de427561d9f79.txt:43:15: Warning: Integer Overflow.\n\t\tuint256 c = _a + _b\nInteger Overflow occurs if:\n    balanceOf[_to] = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    _value = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    allowance[_from][msg.sender] = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    balanceOf[_from] = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    _to = 1461501637330902918203684832716283019655932542975\n    _from = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0565043602218b8bcc3b1470a33de427561d9f79.txt:111:2: Warning: Integer Underflow.\n\tstring public name = ''", 
+   "./uniqueContractSourceCode/0x0565043602218b8bcc3b1470a33de427561d9f79.txt:113:2: Warning: Integer Underflow.\n\tstring public symbol = ''"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.4"
+}

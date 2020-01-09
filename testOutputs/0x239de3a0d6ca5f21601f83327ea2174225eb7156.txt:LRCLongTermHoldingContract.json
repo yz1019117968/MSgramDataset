@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x239de3a0d6ca5f21601f83327ea2174225eb7156.txt:587:39: Warning: Integer Underflow.\n        return internalCalculateBonus(lrcBalance() - lrcDeposited\nInteger Underflow occurs if:\n    lrcDeposited = 50942633133232819787794669895699169469118552703922876866572658938446614626304\n    depositStartTime = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    depositStopTime = 57896044618658097711785492504343953926634992332820282019728792003956564819967"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.7"
+}

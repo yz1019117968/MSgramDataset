@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x23a3db04432123ccdf6ef4459684329cc7c0b022.txt:295:8: Warning: Timestamp Dependency.\n\t\telse if (closeAt < now) selfdestruct(owner)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x23a3db04432123ccdf6ef4459684329cc7c0b022.txt:489:34: Warning: Integer Overflow.\n\t\tif (game < casinoGames.length) casinoGames[game]\nInteger Overflow occurs if:\n    casinoGames.length = 32\n    game = 30\n    owner = 0", 
+   "./uniqueContractSourceCode/0x23a3db04432123ccdf6ef4459684329cc7c0b022.txt:461:3: Warning: Integer Overflow.\n\t\tcount[receiver]++\nInteger Overflow occurs if:\n    count[receiver] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authorized[msg.sender] = 255\n    closeAt = 0", 
+   "./uniqueContractSourceCode/0x23a3db04432123ccdf6ef4459684329cc7c0b022.txt:357:2: Warning: Integer Overflow.\n\taddress[] public casinoGames", 
+   "./uniqueContractSourceCode/0x23a3db04432123ccdf6ef4459684329cc7c0b022.txt:85:12: Warning: Integer Overflow.\n\t\tuint c = a + b\nInteger Overflow occurs if:\n    casinoGames.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balanceOf[receiver] = 1\n    numTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    casinoGames[i] = 0\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975\n    casinoGames[i] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x23a3db04432123ccdf6ef4459684329cc7c0b022.txt:561:2: Warning: Integer Overflow.\n\tfunction move(uint8 game, uint value, bytes data, uint8 v, bytes32 r, bytes32 s) public onlyAuthorized isAlive {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.2"
+}

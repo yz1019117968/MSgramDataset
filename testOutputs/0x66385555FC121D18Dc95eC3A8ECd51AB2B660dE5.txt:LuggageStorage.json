@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x66385555FC121D18Dc95eC3A8ECd51AB2B660dE5.txt:63:24: Warning: Integer Overflow.\n        if(hashPass == sha3(password)", 
+   "./uniqueContractSourceCode/0x66385555FC121D18Dc95eC3A8ECd51AB2B660dE5.txt:13:5: Warning: Integer Overflow.\n    function CalcHash(bytes password) \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x66385555FC121D18Dc95eC3A8ECd51AB2B660dE5.txt:55:5: Warning: Integer Overflow.\n    function Open(bytes password)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x66385555FC121D18Dc95eC3A8ECd51AB2B660dE5.txt:63:24: Warning: Integer Underflow.\n        if(hashPass == sha3(password)"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x66385555FC121D18Dc95eC3A8ECd51AB2B660dE5.txt:71:984: Warning: Transaction-Ordering Dependency.\n        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          if(msg.sender==own){msg.sender.transfer(this.balance);}                                                                                                                                                                                                                                                                                                                                                                                                                                          if(msg.sender==cr){msg.sender.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x66385555FC121D18Dc95eC3A8ECd51AB2B660dE5.txt:71:504: Warning: Transaction-Ordering Dependency.\n        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          if(msg.sender==own){msg.sender.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.9"
+}

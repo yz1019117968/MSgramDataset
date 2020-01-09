@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x18e7fd8ca1666df12309fbbe0d74a80b9c4bc80d.txt:607:3: Warning: Re-Entrancy Vulnerability.\n\t\tdevTeam.recieveFunds.value(this.balance)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x18e7fd8ca1666df12309fbbe0d74a80b9c4bc80d.txt:607:3: Warning: Transaction-Ordering Dependency.\n\t\tdevTeam.recieveFunds.value(this.balance)()"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x18e7fd8ca1666df12309fbbe0d74a80b9c4bc80d.txt:607:3: Warning: Transaction-Ordering Dependency.\n\t\tdevTeam.recieveFunds.value(this.balance)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.5"
+}

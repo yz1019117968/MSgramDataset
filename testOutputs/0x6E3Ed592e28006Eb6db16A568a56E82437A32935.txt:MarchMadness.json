@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:629:9: Warning: Timestamp Dependency.\n        if (now < contestOverTime) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:597:9: Warning: Integer Overflow.\n        submission.score\nInteger Overflow occurs if:\n    results = 9223372036854775808\n    contestOverTime = 1", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:611:13: Warning: Integer Overflow.\n            numWinners++\nInteger Overflow occurs if:\n    results = 9223372036854775808\n    numWinners = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    contestOverTime = 1", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:601:13: Warning: Integer Overflow.\n        if (submission.score\nInteger Overflow occurs if:\n    results = 9223372036854775808\n    contestOverTime = 1", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:737:16: Warning: Integer Overflow.\n        return submissions[account].bracket", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:535:27: Warning: Integer Overflow.\n        contestOverTime = now + scoringDuration\nInteger Overflow occurs if:\n    results = 0\n    scoringDuration = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    noContestTime = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    tournamentStartTime = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:589:13: Warning: Integer Overflow.\n        if (submission.score\nInteger Overflow occurs if:\n    results = 9223372036854775808\n    contestOverTime = 1", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:645:13: Warning: Integer Overflow.\n        if (submission.collectedWinnings\nInteger Overflow occurs if:\n    winningScore = 0\n    contestOverTime = 0", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:639:13: Warning: Integer Overflow.\n        if (submission.score\nInteger Overflow occurs if:\n    contestOverTime = 0", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:609:13: Warning: Integer Overflow.\n        if (submission.score\nInteger Overflow occurs if:\n    results = 9223372036854775808\n    contestOverTime = 1", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:557:9: Warning: Integer Overflow.\n        submission.bracket", 
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:583:13: Warning: Integer Overflow.\n        if (submission.bracket\nInteger Overflow occurs if:\n    results = 4611686018427387904\n    contestOverTime = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6E3Ed592e28006Eb6db16A568a56E82437A32935.txt:417:5: Warning: Integer Underflow.\n    string public tournamentDataIPFSHash"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.3"
+}

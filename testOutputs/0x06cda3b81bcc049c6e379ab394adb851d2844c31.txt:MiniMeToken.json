@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:1009:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663", 
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:809:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:1039:43: Warning: Integer Overflow.\n               Checkpoint oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 1180591620717411303423\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:997:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:629:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:1029:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    balances[_owner].length = 2\n    balances[_owner][0].fromBlock = 115792089233946202090177155034354530967392530831435920986640012447775178358784\n    parentSnapShotBlock = 170141183460469231731687286123698061309\n    controller = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:201:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:207:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.1'", 
+   "./uniqueContractSourceCode/0x06cda3b81bcc049c6e379ab394adb851d2844c31.txt:205:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.3"
+}

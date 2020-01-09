@@ -1,0 +1,38 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:443:10: Warning: Integer Overflow.\n\t\treturn data[_id].currentPixelPrice", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:339:2: Warning: Integer Overflow.\n\tmapping (uint256 => Region) public data", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:475:10: Warning: Integer Overflow.\n\t\treturn data[_id].updatedAt", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:395:10: Warning: Integer Overflow.\n\t\treturn data[_id].currentImageId", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:467:3: Warning: Integer Overflow.\n\t\tdata[_id].blockUpdatedAt\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:451:3: Warning: Integer Overflow.\n\t\tdata[_id].currentPixelPrice\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:483:3: Warning: Integer Overflow.\n\t\tdata[_id].updatedAt\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:507:11: Warning: Integer Overflow.\n\t\treturn (data[_id].updatedAt", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:523:3: Warning: Integer Overflow.\n\t\tdata[_id].purchasedPixelPrice\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:373:53: Warning: Integer Overflow.\n\t\treturn (data[_id].x1, data[_id].y1, data[_id].x2, data[_id].y2", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:403:3: Warning: Integer Overflow.\n\t\tdata[_id].currentImageId\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:419:3: Warning: Integer Overflow.\n\t\tdata[_id].nextImageId\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:459:10: Warning: Integer Overflow.\n\t\treturn data[_id].blockUpdatedAt", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:491:10: Warning: Integer Overflow.\n\t\treturn data[_id].purchasedAt", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:385:3: Warning: Integer Overflow.\n\t\tdata[_id].x2\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:383:3: Warning: Integer Overflow.\n\t\tdata[_id].y1\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:435:3: Warning: Integer Overflow.\n\t\tdata[_id].url\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:507:32: Warning: Integer Overflow.\n\t\treturn (data[_id].updatedAt, data[_id].purchasedAt", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:373:39: Warning: Integer Overflow.\n\t\treturn (data[_id].x1, data[_id].y1, data[_id].x2", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:411:10: Warning: Integer Overflow.\n\t\treturn data[_id].nextImageId", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:499:3: Warning: Integer Overflow.\n\t\tdata[_id].purchasedAt\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:373:25: Warning: Integer Overflow.\n\t\treturn (data[_id].x1, data[_id].y1", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:515:10: Warning: Integer Overflow.\n\t\treturn data[_id].purchasedPixelPrice", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:387:3: Warning: Integer Overflow.\n\t\tdata[_id].y2\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupComplete = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.7"
+}

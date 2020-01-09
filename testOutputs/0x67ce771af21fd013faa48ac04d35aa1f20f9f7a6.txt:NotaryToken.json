@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:309:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    associateContracts[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:137:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705", 
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:421:13: Warning: Integer Overflow.\n            balances[msg.sender] += allocations[msg.sender]\nInteger Overflow occurs if:\n    allocations[msg.sender] = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    balances[msg.sender] = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    unlockedAt = 0", 
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:153:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:279:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:307:13: Warning: Integer Underflow.\n            balances[_from] -= _value\nInteger Underflow occurs if:\n    balances[_from] = 0\n    _value = 1\n    associateContracts[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:247:5: Warning: Integer Underflow.\n    string public name = \"Notary Platform Token\"", 
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:253:5: Warning: Integer Underflow.\n    string public version = 'NTRY-1.0'", 
+   "./uniqueContractSourceCode/0x67ce771af21fd013faa48ac04d35aa1f20f9f7a6.txt:251:5: Warning: Integer Underflow.\n    string public symbol = \"NTRY\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.5"
+}

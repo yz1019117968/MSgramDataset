@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7585f835ae2d522722d2684323a0ba83401f32f5.txt:661:17: Warning: Integer Underflow.\n        return (time - UTC2MYT\nInteger Underflow occurs if:\n    start = 1483199999\n    startAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.0"
+}

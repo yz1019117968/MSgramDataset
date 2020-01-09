@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:293:3: Warning: Integer Overflow.\n  function getImpactValue(string outcome, address addr) returns(uint) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    outcome = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:115:7: Warning: Integer Overflow.\n      accountIndex.push(_from)\nInteger Overflow occurs if:\n    accountIndex.push(_from) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    accountBalances[_from] = 0", 
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:269:3: Warning: Integer Overflow.\n  function getImpactCount(string outcome) returns(uint) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    outcome = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:149:3: Warning: Integer Overflow.\n  function registerOutcome(string _name, uint _value) onlyMaster{\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:157:3: Warning: Integer Overflow.\n  function linkImpact(string _name) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:39:1: Warning: Integer Overflow.\ncontract ImpactRegistry is Owned {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    accountIndex.push(_from) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0\n    accountBalances[_from] = 0", 
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:277:3: Warning: Integer Overflow.\n  function getImpactLinked(string outcome) returns(uint) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    outcome = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbd897c8885b40d014fb7941b3043b21adcc9ca1c.txt:285:3: Warning: Integer Overflow.\n  function getImpactDonor(string outcome, uint index) returns(address) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    outcome = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "26.9"
+}

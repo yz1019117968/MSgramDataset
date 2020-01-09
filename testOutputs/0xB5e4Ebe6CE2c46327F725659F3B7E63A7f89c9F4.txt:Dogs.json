@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xB5e4Ebe6CE2c46327F725659F3B7E63A7f89c9F4.txt:91:1: Warning: Integer Overflow.\ncontract Dogs {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokens.push(_tokenId) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    collectibleIndexToOwner[_tokenId] = 0\n    collectibleIndexToPrice[_tokenId] = 0", 
+   "./restContracts/0xB5e4Ebe6CE2c46327F725659F3B7E63A7f89c9F4.txt:827:5: Warning: Integer Overflow.\n    tokens.push(tokenId)\nInteger Overflow occurs if:\n    promoCreatedCount = 49999\n    collectibleIndexToOwner[tokenId] = 0\n    cooAddress = 0", 
+   "./restContracts/0xB5e4Ebe6CE2c46327F725659F3B7E63A7f89c9F4.txt:345:7: Warning: Integer Overflow.\n      tokens.push(_tokenId)\nInteger Overflow occurs if:\n    tokens.push(_tokenId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    collectibleIndexToOwner[_tokenId] = 0\n    collectibleIndexToPrice[_tokenId] = 0", 
+   "./restContracts/0xB5e4Ebe6CE2c46327F725659F3B7E63A7f89c9F4.txt:879:19: Warning: Integer Overflow.\n        tokenId = tokens[tokenIndex]\nInteger Overflow occurs if:\n    tokens.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    collectibleIndexToOwner[tokenId] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xB5e4Ebe6CE2c46327F725659F3B7E63A7f89c9F4.txt:853:7: Warning: Transaction-Ordering Dependency.\n      _to.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xB5e4Ebe6CE2c46327F725659F3B7E63A7f89c9F4.txt:849:7: Warning: Transaction-Ordering Dependency.\n      ceoAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.3"
+}

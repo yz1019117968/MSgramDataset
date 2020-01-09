@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:341:9: Warning: Callstack Depth Attack Vulnerability.\n        owner.call.value(lastPaidPrice + win / 2).gas(24000)()", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:349:13: Warning: Callstack Depth Attack Vulnerability.\n            richestPlayer.call.value(win / 10).gas(24000)()"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:409:24: Warning: Integer Overflow.\n            nextPool = pool + price\nInteger Overflow occurs if:\n    tokenPrice = 86610392773907120606006462294498860391742317388623022688023637038851136880637\n    tokenStartPrice = 113869642295936459395807922691023877317153210133399946922523146881158629358775\n    tokenPrice2 = 57896044618605441565951213910994994912834200590530324541774919911026640574453\n    tokenStartPrice2 = 57896044618605441565951213910994994912834200590530324541774919911026640574453", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:151:16: Warning: Integer Overflow.\n        return round*1000000+flips\nInteger Overflow occurs if:\n    round = 440762587681844099525327511756776563398441379187111311998931159161671516160\n    flips = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    tokenOwner = 1461501637330902918203684832716283019655932542975\n    tokenOwner2 = 1461501637330902918203684832716283019655932542975\n    tokenPrice2 = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenPrice = 0", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:265:16: Warning: Integer Overflow.\n        return lastBuyBlock + newRoundDelay\nInteger Overflow occurs if:\n    lastBuyBlock = 1\n    newRoundDelay = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:233:9: Warning: Integer Overflow.\n        flips++\nInteger Overflow occurs if:\n    flips = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenOwner = 1461501637330902918203684832716283019655932542975\n    tokenPrice2 = 0", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:415:24: Warning: Integer Overflow.\n            nextPool = pool + price / 2\nInteger Overflow occurs if:\n    tokenPrice = 115792089237316195419555897481724185230038105556916580763887290270246059669428\n    tokenStartPrice = 115792089237316195419555969598060983261298333339195717252978054189025121386224\n    tokenPrice2 = 115792089237316195419555879442154123530560537023550367099759427743364185369397\n    tokenStartPrice2 = 4015105566533784322709447642090196939698156264548944270538", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:403:24: Warning: Integer Overflow.\n            nextPool = pool + price\nInteger Overflow occurs if:\n    tokenPrice = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    tokenPrice2 = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    tokenStartPrice = 105782898658114362639998236590588058411517566113314665475433552748888561006558", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:259:13: Warning: Integer Overflow.\n        if (lastBuyBlock + newRoundDelay\nInteger Overflow occurs if:\n    lastBuyBlock = 1\n    newRoundDelay = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:397:56: Warning: Integer Overflow.\n        canFinish = (tokenPrice > tokenStartPrice) && (lastBuyBlock + newRoundDelay\nInteger Overflow occurs if:\n    tokenPrice = 115792089237316195423570985008687907853269984665640564039457583937544385462271\n    lastBuyBlock = 1\n    newRoundDelay = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenStartPrice = 115792089237316195423570985008687907853269984665640564039457583937544385462270\n    tokenPrice2 = 115792089237316195423570985008687907853269984665640564039457583937544385462271"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:421:20: Warning: Integer Underflow.\n        nextWin = (nextPool-price\nInteger Underflow occurs if:\n    tokenPrice = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    tokenPrice2 = 115792089237316195423570985008687907853269984665640564039457575000713874898944\n    tokenStartPrice = 115792089237316195423570985008687907853269984665640564039457575000713874898943", 
+   "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:243:27: Warning: Integer Underflow.\n            payoutRound = getRoundId()-3\nInteger Underflow occurs if:\n    round = 0\n    flips = 1\n    tokenOwner = 1461501637330902918203684832716283019655932542975\n    tokenOwner2 = 1461501637330902918203684832716283019655932542975\n    tokenPrice2 = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenPrice = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:251:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(paidTooMuch)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x66b1e7e51a441f41a0584820a629ba36fd2e2dda.txt:251:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(paidTooMuch)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.2"
+}

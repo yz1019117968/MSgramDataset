@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6063f73fd4701ae7ffe7e5d990f2804538a4c199.txt:837:5: Warning: Integer Underflow.\n    string public name = 'Flora Fic'", 
+   "./uniqueContractSourceCode/0x6063f73fd4701ae7ffe7e5d990f2804538a4c199.txt:839:5: Warning: Integer Underflow.\n    string public symbol = 'FIC'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "13.1"
+}

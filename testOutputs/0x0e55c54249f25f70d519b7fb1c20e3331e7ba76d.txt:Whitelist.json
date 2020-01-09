@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0e55c54249f25f70d519b7fb1c20e3331e7ba76d.txt:1647:3: Warning: Integer Overflow.\n  function register(address[] newUsers) public onlyAdmins {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newUsers = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0e55c54249f25f70d519b7fb1c20e3331e7ba76d.txt:1663:3: Warning: Integer Overflow.\n  function deregister(address[] bannedUsers) public onlyAdmins {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bannedUsers = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.8"
+}

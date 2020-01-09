@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:333:5: Warning: Integer Overflow.\n    mapping(uint => TOKEN) public token", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:427:23: Warning: Integer Overflow.\n            tokenId = tokenList[tokenIndex]\nInteger Overflow occurs if:\n    tokenList.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    token[tokenId].owner = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:371:17: Warning: Integer Overflow.\n        price = token[_tokenId].price", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:295:9: Warning: Integer Overflow.\n        token[_tokenId].approved\nInteger Overflow occurs if:\n    token[_tokenId].owner = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:515:22: Warning: Integer Overflow.\n        uint price = token[_tokenId].lastPrice", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:351:9: Warning: Integer Overflow.\n        token[_tokenId].approved\nInteger Overflow occurs if:\n    token[_tokenId].owner = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:303:5: Warning: Integer Overflow.\n    uint[] public tokenList", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:227:5: Warning: Integer Overflow.\n    function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:517:25: Warning: Integer Overflow.\n        uint priceLow = token[_tokenId].lastPrice\nInteger Overflow occurs if:\n    priceFactorB = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:175:16: Warning: Integer Underflow.\n        return _totalSupply  - balances[address(0)]\nInteger Underflow occurs if:\n    _totalSupply = 0\n    balances[address(0)] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:261:9: Warning: Transaction-Ordering Dependency.\n        ceoAddress.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:261:9: Warning: Transaction-Ordering Dependency.\n        ceoAddress.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.4"
+}

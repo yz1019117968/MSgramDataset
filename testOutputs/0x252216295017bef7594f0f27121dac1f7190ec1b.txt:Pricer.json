@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:397:5: Warning: Integer Overflow.\n    function parseInt(string _a, uint _b)  \r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:385:5: Warning: Integer Overflow.\n    function parseInt128(string _a)  constant  returns (uint128) { \r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:663:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:771:16: Warning: Integer Underflow.\n        TrasID=oraclize_query(DELAY, \"URL\", sURL)\nInteger Underflow occurs if:\n    mint = 0", 
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:519:5: Warning: Integer Underflow.\n    string public sURL", 
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:549:1: Warning: Integer Underflow.\ncontract Pricer is I_Pricer, \r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    OAR = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:655:25: Warning: Integer Underflow.\n        bytes32 TrasID =oraclize_query(1, \"URL\", sURL)"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:41:30: Warning: Transaction-Ordering Dependency.\n    if (msg.sender == owner) selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x252216295017bef7594f0f27121dac1f7190ec1b.txt:733:16: Warning: Transaction-Ordering Dependency.\n        return owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.6"
+}

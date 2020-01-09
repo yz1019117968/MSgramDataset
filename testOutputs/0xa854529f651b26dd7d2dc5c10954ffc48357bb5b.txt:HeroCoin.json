@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:233:5: Warning: Integer Overflow.\n    function setContactInformation(string info) onlyOwner public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:591:5: Warning: Integer Overflow.\n    function transferFrom(address _from, address _to, uint _value, bytes _data) public returns (bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:501:5: Warning: Integer Overflow.\n    function transfer(address _to, uint _value, bytes _data) public activeForHolder(msg.sender) returns (bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:103:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    minter = 0\n    totalSupply = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:221:5: Warning: Integer Underflow.\n    string public contactInformation"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.7"
+}

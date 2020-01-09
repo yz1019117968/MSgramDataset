@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa5ca78d849fa2b1cd4f37e81e99f6c5cc6c92a7e.txt:1317:10: Warning: Timestamp Dependency.\n    else if (block.timestamp < startsAt) return State.PreFunding;\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa5ca78d849fa2b1cd4f37e81e99f6c5cc6c92a7e.txt:1969:5: Warning: Integer Overflow.\n    investedAmountOf[_addr] += _weiAmount\nInteger Overflow occurs if:\n    investedAmountOf[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _weiAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xa5ca78d849fa2b1cd4f37e81e99f6c5cc6c92a7e.txt:1977:5: Warning: Integer Overflow.\n    tokensSold += _tokenAmount\nInteger Overflow occurs if:\n    tokensSold = 1\n    _tokenAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investedAmountOf[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xa5ca78d849fa2b1cd4f37e81e99f6c5cc6c92a7e.txt:1975:5: Warning: Integer Overflow.\n    weiRaised += _weiAmount\nInteger Overflow occurs if:\n    weiRaised = 1\n    _weiAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investedAmountOf[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xa5ca78d849fa2b1cd4f37e81e99f6c5cc6c92a7e.txt:1963:7: Warning: Integer Overflow.\n      investorCount++\nInteger Overflow occurs if:\n    investorCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    investedAmountOf[_addr] = 0", 
+   "./restContracts/0xa5ca78d849fa2b1cd4f37e81e99f6c5cc6c92a7e.txt:1971:5: Warning: Integer Overflow.\n    tokenAmountOf[_addr] += _tokenAmount\nInteger Overflow occurs if:\n    tokenAmountOf[_addr] = 1\n    _tokenAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investedAmountOf[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.6"
+}

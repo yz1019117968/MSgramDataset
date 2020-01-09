@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1b7f9de410d5ba09fd26ce133fdf59515e0bf728.txt:309:3: Warning: Integer Underflow.\n  string public symbol = \"Reth\"", 
+   "./uniqueContractSourceCode/0x1b7f9de410d5ba09fd26ce133fdf59515e0bf728.txt:307:3: Warning: Integer Underflow.\n  string public name = \"Rethereum\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

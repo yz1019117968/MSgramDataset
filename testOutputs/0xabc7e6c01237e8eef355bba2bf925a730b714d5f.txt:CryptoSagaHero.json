@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:2251:5: Warning: Integer Overflow.\n    _heroInstance.currentExp\nInteger Overflow occurs if:\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1793:12: Warning: Integer Overflow.\n    return tokenIdToHeroInstance[_tokenId].availableAt", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:2205:5: Warning: Integer Overflow.\n    _heroInstance.availableAt\nInteger Overflow occurs if:\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:2009:3: Warning: Integer Overflow.\n  function defineType(string _className, uint8 _classRank, uint8 _classRace, uint32 _classAge, uint8 _classType, uint32 _maxLevel, uint8 _aura, uint32[5] _baseStats, uint32[5] _minIVForStats, uint32[5] _maxIVForStats)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _className = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1777:12: Warning: Integer Overflow.\n    return tokenIdToHeroInstance[_tokenId].lastLocationId", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1677:12: Warning: Integer Overflow.\n    return heroClasses[_classId].classRank", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1745:12: Warning: Integer Overflow.\n    return tokenIdToHeroInstance[_tokenId].heroName", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1809:16: Warning: Integer Overflow.\n    var _tmp = tokenIdToHeroInstance[_tokenId].currentStats", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1909:3: Warning: Integer Overflow.\n  function setHeroName(uint256 _tokenId, string _name)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:2403:7: Warning: Integer Overflow.\n      addressToGoldDeposit[msg.sender] += _amount\nInteger Overflow occurs if:\n    _amount = 84866118337548023708539250030602333975573692217970731584783833647397746754425\n    addressToGoldDeposit[msg.sender] = 55719429421508508976793514117463937859375841643323408340865564831297399585145\n    paused = 0", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1563:3: Warning: Integer Overflow.\n  mapping(uint256 => HeroInstance) public tokenIdToHeroInstance", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:2203:5: Warning: Integer Overflow.\n    _heroInstance.lastLocationId\nInteger Overflow occurs if:\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:2205:33: Warning: Integer Overflow.\n    _heroInstance.availableAt = now + _duration\nInteger Overflow occurs if:\n    _duration = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:2273:5: Warning: Integer Overflow.\n    addressToGoldDeposit[_to] += _amount\nInteger Overflow occurs if:\n    addressToGoldDeposit[_to] = 1\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1563:3: Warning: Integer Underflow.\n  mapping(uint256 => HeroInstance) public tokenIdToHeroInstance", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1745:5: Warning: Integer Underflow.\n    return tokenIdToHeroInstance[_tokenId].heroName\nInteger Underflow occurs if:\n    return tokenIdToHeroInstance[_tokenId].heroName = 1", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1551:3: Warning: Integer Underflow.\n  mapping(uint32 => HeroClass) public heroClasses", 
+   "./restContracts/0xabc7e6c01237e8eef355bba2bf925a730b714d5f.txt:1661:5: Warning: Integer Underflow.\n    return heroClasses[_classId].className\nInteger Underflow occurs if:\n    return heroClasses[_classId].className = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "39.0"
+}

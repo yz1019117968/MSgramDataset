@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:609:3: Warning: Integer Overflow.\n  function isPermissionGranted(\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:527:5: Warning: Integer Overflow.\n    managerPermissions[_manager][_permissionName]\nInteger Overflow occurs if:\n    managerPermissions[_manager][_permissionName] = 0\n    owner = 0", 
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:645:3: Warning: Integer Overflow.\n  function isManagerAllowed(\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:565:5: Warning: Integer Overflow.\n    managerPermissions[_manager][_permissionName]\nInteger Overflow occurs if:\n    managerPermissions[_manager][_permissionName] = 255\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:663:41: Warning: Integer Underflow.\n    return (managerEnabled[_manager] && managerPermissions[_manager][_permissionName]\nInteger Underflow occurs if:\n    managerEnabled[_manager] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.0"
+}

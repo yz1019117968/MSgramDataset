@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x61904fa1d7b7b1df21bd6c3053a07a04ab6a87af.txt:1207:5: Warning: Integer Overflow.\n    ICOBonus[] public icoBonuses", 
+   "./uniqueContractSourceCode/0x61904fa1d7b7b1df21bd6c3053a07a04ab6a87af.txt:1395:13: Warning: Integer Overflow.\n            icoBonuses.push(ICOBonus({expire:expires[i], percent:percents[i]}))\nInteger Overflow occurs if:\n    owner = 0\n    icoBonuses.push(ICOBonus({expire:expires[i], percent:percents[i]})) = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x61904fa1d7b7b1df21bd6c3053a07a04ab6a87af.txt:1179:1: Warning: Integer Overflow.\ncontract DNTXCrowdsale is Ownable, Destructible {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0\n    icoBonuses.push(ICOBonus({expire:expires[i], percent:percents[i]})) = 38343553286097199760059888313139593062594853663438606194084905353473693086694", 
+   "./uniqueContractSourceCode/0x61904fa1d7b7b1df21bd6c3053a07a04ab6a87af.txt:1285:5: Warning: Integer Overflow.\n    function mintTokens(address beneficiary, uint256 amount, string description) onlyOwner public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    description = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x61904fa1d7b7b1df21bd6c3053a07a04ab6a87af.txt:1325:38: Warning: Integer Overflow.\n                ICOBonus storage b = icoBonuses[i]\nInteger Overflow occurs if:\n    icoBonuses.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    state = 2923003274661805836407369665432566039311865085952"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x61904fa1d7b7b1df21bd6c3053a07a04ab6a87af.txt:1471:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x61904fa1d7b7b1df21bd6c3053a07a04ab6a87af.txt:1471:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.8"
+}

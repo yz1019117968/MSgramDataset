@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:735:28: Warning: Integer Overflow.\n            Transfer(mint, addresses[i]\nInteger Overflow occurs if:\n    addresses.length = 115792085786443022028289091291309976714757258440086077954264306426651017740287\n    needToDrain = 0\n    owner = 0\n    currentPhase = 5", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:485:19: Warning: Integer Overflow.\n        endDate = startDate + 11 days + 9 hours\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:731:22: Warning: Integer Overflow.\n            balances[addresses[i]\nInteger Overflow occurs if:\n    addresses.length = 115792085786443022028289091291309976714757258440086077954264306426651017740287\n    needToDrain = 0\n    owner = 0\n    currentPhase = 5", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:891:99: Warning: Integer Overflow.\n        if (balances[_from] >= _amount && allowed[_from][msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:563:19: Warning: Integer Overflow.\n        endDate = startDate + 31 days\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:619:9: Warning: Integer Overflow.\n        totalSupply += balances[address(this)]\nInteger Overflow occurs if:\n    tokenSaleLot3X = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 77194726158210796949047323339125271902179989777093709359638389338608753093291\n    needToDrain = 0\n    owner = 0\n    currentPhase = 4", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:739:13: Warning: Integer Overflow.\n            sentBonus += (2 * curr1XBalance)\nInteger Overflow occurs if:\n    sentBonus = 61120080476354877662050440179618118500159419431642594779113048764856853201176\n    balances[addresses[i]] = 41422112641837104714977910719459132799912797182732962724615910609143899352111\n    addresses.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    needToDrain = 0\n    owner = 0\n    currentPhase = 5", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:485:19: Warning: Integer Overflow.\n        endDate = startDate + 11 days\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:727:43: Warning: Integer Overflow.\n            uint curr1XBalance = balances[addresses[i]\nInteger Overflow occurs if:\n    addresses.length = 115792085786443022028289091291309976714757258440086077954264306426651017740287\n    needToDrain = 0\n    owner = 0\n    currentPhase = 5"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:1203:13: Warning: Integer Underflow.\n            balances[_from] -= _amount\nInteger Underflow occurs if:\n    balances[_from] = 9007199254740992\n    _amount = 9007199254740993\n    owner = 0", 
+   "./uniqueContractSourceCode/0x39013f961c378f02c2b82a6e1d31e9812786fd9d.txt:1205:13: Warning: Integer Underflow.\n            totalSupply -= _amount\nInteger Underflow occurs if:\n    totalSupply = 0\n    _amount = 1\n    balances[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.8"
+}

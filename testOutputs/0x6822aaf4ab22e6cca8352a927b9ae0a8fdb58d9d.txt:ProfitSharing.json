@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1441:12: Warning: Integer Overflow.\n      if ((dividends[i].claimed\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 0\n    dividends.length = 1", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1421:43: Warning: Integer Overflow.\n    dividend.claimedAmount = SafeMath.add(dividend.claimedAmount\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1419:5: Warning: Integer Overflow.\n    dividend.claimed\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1377:5: Warning: Integer Overflow.\n    dividends.push(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dividends.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1339:3: Warning: Integer Overflow.\n  Dividend[] public dividends", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1441:59: Warning: Integer Overflow.\n      if ((dividends[i].claimed[msg.sender] == false) && (dividends[i].recycled\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 49012918909529160264878774549973267347198945947287551\n    dividends.length = 49387063328685871411938917867148635800230864678289408\n    dividends[i].claimed[msg.sender] = 0\n    dividends[i].claimed[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1417:54: Warning: Integer Overflow.\n    uint256 claim = balance.mul(dividend.amount).div(dividend.totalSupply\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1473:44: Warning: Integer Overflow.\n    uint256 remainingAmount = SafeMath.sub(dividend.amount\nInteger Overflow occurs if:\n    RECYCLE_TIME = 0\n    _dividendIndex = 0\n    dividends.length = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1441:59: Warning: Integer Overflow.\n      if ((dividends[i].claimed[msg.sender] == false) && (dividends[i]\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 57896044618658097711785492503978578517302266603269360811549721249042581684222\n    dividends.length = 115792089237316195423570985008322532443937258936089642831278513252999146504192\n    dividends[i].claimed[msg.sender] = 0\n    dividends[i].claimed[msg.sender] = 255\n    dividends[i].claimed[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1473:61: Warning: Integer Overflow.\n    uint256 remainingAmount = SafeMath.sub(dividend.amount, dividend.claimedAmount\nInteger Overflow occurs if:\n    RECYCLE_TIME = 0\n    _dividendIndex = 0\n    dividends.length = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1441:12: Warning: Integer Overflow.\n      if ((dividends[i]\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    dividends.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x6822aaf4ab22e6cca8352a927b9ae0a8fdb58d9d.txt:1417:33: Warning: Integer Overflow.\n    uint256 claim = balance.mul(dividend.amount\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.1"
+}

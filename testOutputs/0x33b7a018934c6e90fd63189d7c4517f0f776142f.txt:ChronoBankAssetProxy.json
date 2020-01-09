@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:225:6: Warning: Integer Overflow.\n     function stringToBytes32(string memory source) returns (bytes32 result) {\r\n     ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:487:6: Warning: Integer Overflow.\n     function __transferWithReference(address _to, uint _value, string _reference, address _sender) onlyAccess(_sender) returns(bool) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:557:6: Warning: Integer Overflow.\n     function __transferFromWithReference(address _from, address _to, uint _value, string _reference, address _sender) onlyAccess(_sender) returns(bool) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:425:6: Warning: Integer Overflow.\n     function transferWithReference(address _to, uint _value, string _reference) returns(bool) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:173:6: Warning: Integer Underflow.\n     string public name", 
+   "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:177:6: Warning: Integer Underflow.\n     string public symbol"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:675:10: Warning: Transaction-Ordering Dependency.\n         _getAsset().__process.value(msg.value)(msg.data, msg.sender)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x33b7a018934c6e90fd63189d7c4517f0f776142f.txt:675:10: Warning: Transaction-Ordering Dependency.\n         _getAsset().__process.value(msg.value)(msg.data, msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.1"
+}

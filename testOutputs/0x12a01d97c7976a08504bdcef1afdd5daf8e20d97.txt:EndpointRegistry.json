@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x12a01d97c7976a08504bdcef1afdd5daf8e20d97.txt:135:5: Warning: Integer Overflow.\n    function findAddressByEndpoint(string socket) public constant returns (address eth_address)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    socket = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x12a01d97c7976a08504bdcef1afdd5daf8e20d97.txt:65:5: Warning: Integer Overflow.\n    function registerEndpoint(string socket)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    socket = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x12a01d97c7976a08504bdcef1afdd5daf8e20d97.txt:117:9: Warning: Integer Underflow.\n        return address_to_socket[eth_address]\nInteger Underflow occurs if:\n    return address_to_socket[eth_address] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "20.8"
+}

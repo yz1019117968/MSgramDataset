@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:1403:3: Warning: Integer Overflow.\n  function generateTokensByList(address[] _owners, uint[] _amounts) public onlyController onlySudoEnabled returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _owners = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:1051:51: Warning: Integer Overflow.\n               Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    _amount = 1\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    parentSnapShotBlock = 1180591620717411303423\n    controller = 1461501637330902918203684832716283019655932542975\n    blocked[_addr] = 0", 
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:1041:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    _amount = 1\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    parentSnapShotBlock = 170141183460469231731687303441006198781\n    controller = 1461501637330902918203684832716283019655932542975\n    blocked[_addr] = 0", 
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:821:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:641:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:213:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:219:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.2'", 
+   "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:217:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:1105:17: Warning: Transaction-Ordering Dependency.\n        require(TokenController(controller).proxyPayment.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1829aa045e21e0d59580024a951db48096e01782.txt:1131:13: Warning: Transaction-Ordering Dependency.\n            controller.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.2"
+}

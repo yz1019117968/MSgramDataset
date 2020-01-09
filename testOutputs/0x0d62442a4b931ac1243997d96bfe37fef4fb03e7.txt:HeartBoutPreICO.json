@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:343:59: Warning: Integer Overflow.\n            GetBindTokensAccountEvent(bindAccountsAddress[accounts[i]\nInteger Overflow occurs if:\n    accounts.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    bindAccountsAddress[accounts[i]] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:349:5: Warning: Integer Overflow.\n    function getBindAccountAddress(string _account) public constant returns (address) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _account = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:343:39: Warning: Integer Overflow.\n            GetBindTokensAccountEvent(bindAccountsAddress[accounts[i]]\nInteger Overflow occurs if:\n    bindAccountsAddress[accounts[i]] = 0\n    bindAccountsAddress[accounts[i]] = 115792089237316195423570985005764904578608178829233194374025017968566904815361\n    bindAccountsAddress[accounts[i]] = 0\n    bindAccountsAddress[accounts[i]] = 0\n    bindAccountsAddress[accounts[i]] = 0\n    accounts.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    bindAccountsAddress[accounts[i]] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:343:13: Warning: Integer Overflow.\n            GetBindTokensAccountEvent(bindAccountsAddress[accounts[i]], accounts[i])\nInteger Overflow occurs if:\n    bindAccountsAddress[accounts[i]] = 0\n    bindAccountsAddress[accounts[i]] = 0\n    bindAccountsAddress[accounts[i]] = 0\n    bindAccountsAddress[accounts[i]] = 259\n    accounts.length = 6\n    bindAccountsAddress[accounts[i]] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:297:5: Warning: Integer Overflow.\n    function buyTokens(string _account) public payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _account = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:343:73: Warning: Integer Overflow.\n            GetBindTokensAccountEvent(bindAccountsAddress[accounts[i]], accounts[i]\nInteger Overflow occurs if:\n    bindAccountsAddress[accounts[i]] = 0\n    accounts.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    bindAccountsAddress[accounts[i]] = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:357:9: Warning: Integer Underflow.\n        return bindAddressAccounts[_accountAddress]\nInteger Underflow occurs if:\n    return bindAddressAccounts[_accountAddress] = 1", 
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:343:13: Warning: Integer Underflow.\n            GetBindTokensAccountEvent(bindAccountsAddress[accounts[i]], accounts[i])\nInteger Underflow occurs if:\n    bindAccountsAddress[accounts[i]] = 1\n    accounts.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x0d62442a4b931ac1243997d96bfe37fef4fb03e7.txt:343:39: Warning: Integer Underflow.\n            GetBindTokensAccountEvent(bindAccountsAddress[accounts[i]]\nInteger Underflow occurs if:\n    bindAccountsAddress[accounts[i]] = 1\n    accounts.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.8"
+}

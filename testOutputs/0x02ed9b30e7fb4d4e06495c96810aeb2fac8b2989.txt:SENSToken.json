@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x02ed9b30e7fb4d4e06495c96810aeb2fac8b2989.txt:549:8: Warning: Re-Entrancy Vulnerability.\n\t\tif (!devETHDestination.call.value(this.balance)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.0"
+}

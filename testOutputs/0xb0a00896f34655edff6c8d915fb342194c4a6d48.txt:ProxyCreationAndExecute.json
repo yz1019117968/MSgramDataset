@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0xb0a00896f34655edff6c8d915fb342194c4a6d48.txt:179:17: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.value(wethAmt)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb0a00896f34655edff6c8d915fb342194c4a6d48.txt:179:17: Warning: Transaction-Ordering Dependency.\n        require(msg.sender.call.value(wethAmt)()"
+   ], 
+   [
+    "./restContracts/0xb0a00896f34655edff6c8d915fb342194c4a6d48.txt:205:9: Warning: Transaction-Ordering Dependency.\n        wethToken.deposit.value(msg.value)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "92.5"
+}

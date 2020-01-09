@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb6b2aadddbef17d3a2e67d2e1e321a394176784a.txt:67:52: Warning: Integer Overflow.\n            if (!ERC20(token).transferFrom(sender, receivers[i]"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.7"
+}

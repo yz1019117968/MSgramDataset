@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:71:33: Warning: Integer Overflow.\n        uint previousBalances = balanceOf[_from] + balanceOf[_to]\nInteger Overflow occurs if:\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[_to] = 395773742510358089826658827238623325900929922971797234303466305048912330751\n    owner = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:153:5: Warning: Integer Overflow.\n    mapping (bytes32 => Good) public goods", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:133:5: Warning: Integer Overflow.\n    address[] public investors", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:325:5: Warning: Integer Overflow.\n    function decision(bytes32 _preset, string _presetSrc, address[] _buyers, uint[] _amounts) onlyOwner public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:319:9: Warning: Integer Overflow.\n        goods[_preset] = Good({preset: _preset, price: _price, seller: _seller, time: now})\nInteger Overflow occurs if:\n    owner = 0\n    goods[_preset].preset = 0", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:475:9: Warning: Integer Overflow.\n        allEther += etherAmount\nInteger Overflow occurs if:\n    allEther = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:427:28: Warning: Integer Underflow.\n        uint finalAmount = _amount - _fee\nInteger Underflow occurs if:\n    _amount = 0\n    _fee = 1\n    quotaOf[_target] = 0", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:43:5: Warning: Integer Underflow.\n    string public name = 'Transaction Network'", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:45:5: Warning: Integer Underflow.\n    string public symbol = 'TNTOO'", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:41:5: Warning: Integer Underflow.\n    string public standard = 'https://www.tntoo.com'", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:307:31: Warning: Integer Underflow.\n        _transfer(_from, _to, _value - _fee\nInteger Underflow occurs if:\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.2"
+}

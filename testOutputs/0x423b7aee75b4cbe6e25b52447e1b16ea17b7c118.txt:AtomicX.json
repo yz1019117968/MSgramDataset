@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x423b7aee75b4cbe6e25b52447e1b16ea17b7c118.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"ATOM\"", 
+   "./uniqueContractSourceCode/0x423b7aee75b4cbe6e25b52447e1b16ea17b7c118.txt:13:5: Warning: Integer Underflow.\n    string public name = \"AtomicX\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

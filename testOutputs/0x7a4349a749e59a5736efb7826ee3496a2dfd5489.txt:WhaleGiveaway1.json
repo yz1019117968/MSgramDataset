@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x7a4349a749e59a5736efb7826ee3496a2dfd5489.txt:73:9: Warning: Callstack Depth Attack Vulnerability.\n        adr.call.value(msg.value)(data)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7a4349a749e59a5736efb7826ee3496a2dfd5489.txt:57:9: Warning: Transaction-Ordering Dependency.\n        Owner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7a4349a749e59a5736efb7826ee3496a2dfd5489.txt:57:9: Warning: Transaction-Ordering Dependency.\n        Owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.9"
+}

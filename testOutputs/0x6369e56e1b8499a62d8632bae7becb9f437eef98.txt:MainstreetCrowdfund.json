@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6369e56e1b8499a62d8632bae7becb9f437eef98.txt:483:13: Warning: Timestamp Dependency.\n        if (block.timestamp < start || block.timestamp >= end", 
+   "./uniqueContractSourceCode/0x6369e56e1b8499a62d8632bae7becb9f437eef98.txt:483:9: Warning: Timestamp Dependency.\n        if (block.timestamp < start || block.timestamp >= end) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6369e56e1b8499a62d8632bae7becb9f437eef98.txt:667:9: Warning: Integer Overflow.\n        recipientETH[recipient] += msg.value\nInteger Overflow occurs if:\n    recipientETH[recipient] = 64446661169182518171252612193038542884516429807151413998973703848003529950672\n    recipient = 1461501637330902918203684832716283019655932542975\n    limitETH = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalETH = 25329519520662917748906152222361641529347549551543953417178753183776221620773\n    end = 1\n    start = 0\n    mainstreetToken = 1461501637330902918203684832716283019655932542975\n    whitelistedAddresses[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x6369e56e1b8499a62d8632bae7becb9f437eef98.txt:665:9: Warning: Integer Overflow.\n        senderETH[msg.sender] += msg.value\nInteger Overflow occurs if:\n    senderETH[msg.sender] = 64446661169182518171252612193038542884516429807151413998973703848003529950672\n    recipient = 1461501637330902918203684832716283019655932542975\n    limitETH = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalETH = 25329519520662917748906152222361641529347549551543953417178753183776221620773\n    end = 1\n    start = 0\n    mainstreetToken = 1461501637330902918203684832716283019655932542975\n    whitelistedAddresses[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x6369e56e1b8499a62d8632bae7becb9f437eef98.txt:669:9: Warning: Integer Overflow.\n        totalETH += msg.value\nInteger Overflow occurs if:\n    totalETH = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    recipient = 1461501637330902918203684832716283019655932542975\n    limitETH = 0\n    end = 1\n    start = 0\n    mainstreetToken = 1461501637330902918203684832716283019655932542975\n    whitelistedAddresses[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.5"
+}

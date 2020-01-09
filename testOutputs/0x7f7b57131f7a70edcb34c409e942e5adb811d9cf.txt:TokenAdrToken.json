@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7f7b57131f7a70edcb34c409e942e5adb811d9cf.txt:129:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to].value = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[holder].exist = 255\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0x7f7b57131f7a70edcb34c409e942e5adb811d9cf.txt:177:1: Warning: Integer Overflow.\ncontract TokenAdrToken is SafeMath, ERC20, Killable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    balances[holder].exist = 0\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0x7f7b57131f7a70edcb34c409e942e5adb811d9cf.txt:187:3: Warning: Integer Overflow.\n  address[] public holders", 
+   "./restContracts/0x7f7b57131f7a70edcb34c409e942e5adb811d9cf.txt:257:7: Warning: Integer Overflow.\n      holders.push(holder)\nInteger Overflow occurs if:\n    balances[holder].exist = 0\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0x7f7b57131f7a70edcb34c409e942e5adb811d9cf.txt:409:5: Warning: Integer Overflow.\n    balances[_to].exist\nInteger Overflow occurs if:\n    balances[_to].value = 65189590919660068253343785548068587187251710600273871349348651392073880700173\n    _value = 22050251368434236433199600998681821670293503893769647065294244561975539271172\n    balances[_from].value = 22050251368434236433199600998681821670293503893769647065294244561975539271172\n    balances[holder].exist = 255\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0x7f7b57131f7a70edcb34c409e942e5adb811d9cf.txt:255:9: Warning: Integer Overflow.\n    if(!balances[holder].exist\nInteger Overflow occurs if:\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./restContracts/0x7f7b57131f7a70edcb34c409e942e5adb811d9cf.txt:205:3: Warning: Integer Overflow.\n  mapping(address => Balance) public balances"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.3"
+}

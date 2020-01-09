@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb5b8749355b89bcb04dd70001cea1b98a81ffe61.txt:83:9: Warning: Integer Overflow.\n        balanceOf[msg.sender] += amount\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 100484850547282084754811720337743310008994223997089685946973201218292605329937\n    amountRaised = 268693987169925070848\n    crowdsaleClosed = 0", 
+   "./restContracts/0xb5b8749355b89bcb04dd70001cea1b98a81ffe61.txt:85:9: Warning: Integer Overflow.\n        amountRaised += amount\nInteger Overflow occurs if:\n    amountRaised = 85120319448064784825379243305425628370395210054661265537380417245917814767193\n    crowdsaleClosed = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "15.6"
+}

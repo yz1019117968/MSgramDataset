@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:89:17: Warning: Integer Overflow.\n                _depositor[msg.sender]._limit", 
+   "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:107:9: Warning: Integer Overflow.\n        _depositor[msg.sender]._deposit\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904", 
+   "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:109:41: Warning: Integer Overflow.\n        _depositor[msg.sender]._limit = block.number + period\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904", 
+   "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:91:17: Warning: Integer Overflow.\n                _depositor[msg.sender]._deposit", 
+   "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:107:9: Warning: Integer Overflow.\n        _depositor[msg.sender]._deposit += msg.value\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904\n    _depositor[msg.sender]._deposit = 1", 
+   "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:109:9: Warning: Integer Overflow.\n        _depositor[msg.sender]._limit\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:121:10: Warning: Transaction-Ordering Dependency.\n         msg.sender.transfer(tempDeposit + msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2322f82d952116d044edd05b0bdcd098335502c3.txt:133:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(tempDeposit + msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

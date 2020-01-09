@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0f70aa8ac96a873d6cb94cb83cb8d621cb2f85d7.txt:1089:5: Warning: Integer Overflow.\n    function distributeEther(address[] sellers) onlyOwner payable public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0f70aa8ac96a873d6cb94cb83cb8d621cb2f85d7.txt:61:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    currentState = 0\n    _value = 57896044672577991046282931519346452235040453682288909086052413093111480188928\n    currentPeriodTokenCollected = 100822807981423769180618368146982805407330165668116935250414178306564627238447\n    minSellAmount = 57896044672577991046282931519346452235040453682288909086052413093111480188928\n    currentPeriodEndTimestamp = 1\n    allowed[_from][msg.sender] = 57896044672577991046282931519346452235040453682288909086052413093111480188928\n    _to = 0\n    mintingFinished = 255", 
+   "./uniqueContractSourceCode/0x0f70aa8ac96a873d6cb94cb83cb8d621cb2f85d7.txt:1037:5: Warning: Integer Overflow.\n    function distributeTokens(address[] buyers) onlyOwner public {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0f70aa8ac96a873d6cb94cb83cb8d621cb2f85d7.txt:1161:5: Warning: Integer Underflow.\n    string public symbol = \"UP1K\"", 
+   "./uniqueContractSourceCode/0x0f70aa8ac96a873d6cb94cb83cb8d621cb2f85d7.txt:1163:5: Warning: Integer Underflow.\n    string public name = \"UpStart 1000\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.2"
+}

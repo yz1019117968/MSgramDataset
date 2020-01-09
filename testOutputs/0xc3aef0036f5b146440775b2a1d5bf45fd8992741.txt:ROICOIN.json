@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc3aef0036f5b146440775b2a1d5bf45fd8992741.txt:95:47: Warning: Integer Overflow.\n        if (balances[msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xc3aef0036f5b146440775b2a1d5bf45fd8992741.txt:157:14: Warning: Integer Overflow.\n             allowed[msg.sender][_spender] += _value\nInteger Overflow occurs if:\n    balances[msg.sender] = 57896044618658097711785636175800911497512038336019256811533408264498641862654\n    allowed[msg.sender][_spender] = 57896044618658097711785492504343977621176765771607369901429402956356181295070\n    _value = 57896044618658097711785540394829608773254965847494006263191855899679106531392", 
+   "./restContracts/0xc3aef0036f5b146440775b2a1d5bf45fd8992741.txt:153:70: Warning: Integer Overflow.\n       if (balances[msg.sender] >= _value && balances[msg.sender] >= allowed[msg.sender][_spender] + _value\nInteger Overflow occurs if:\n    allowed[msg.sender][_spender] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xc3aef0036f5b146440775b2a1d5bf45fd8992741.txt:123:82: Warning: Integer Overflow.\n       if (balances[_from] >= _value && allowed[_from][msg.sender] >= _value  && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc3aef0036f5b146440775b2a1d5bf45fd8992741.txt:57:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xc3aef0036f5b146440775b2a1d5bf45fd8992741.txt:61:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.1"
+}

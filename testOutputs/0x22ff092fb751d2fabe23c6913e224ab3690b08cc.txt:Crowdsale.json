@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x22ff092fb751d2fabe23c6913e224ab3690b08cc.txt:727:3: Warning: Integer Overflow.\n  mapping(address => Investor) public investors"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x22ff092fb751d2fabe23c6913e224ab3690b08cc.txt:333:3: Warning: Integer Underflow.\n  string public name", 
+   "./uniqueContractSourceCode/0x22ff092fb751d2fabe23c6913e224ab3690b08cc.txt:339:3: Warning: Integer Underflow.\n  string public symbol", 
+   "./uniqueContractSourceCode/0x22ff092fb751d2fabe23c6913e224ab3690b08cc.txt:351:3: Warning: Integer Underflow.\n  string public version = 'v1.0'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.1"
+}

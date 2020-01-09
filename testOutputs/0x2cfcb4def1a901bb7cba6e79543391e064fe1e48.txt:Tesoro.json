@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2cfcb4def1a901bb7cba6e79543391e064fe1e48.txt:225:3: Warning: Integer Overflow.\n  function publish( string _hexprivkey, string _magicnumber )\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _hexprivkey = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2cfcb4def1a901bb7cba6e79543391e064fe1e48.txt:217:3: Warning: Integer Underflow.\n  string public magicnumsig = \"0x28c599e8564c4e477fe69c712df9a6ad232b2dbadf77ffd9e406f1d5fa32ef7509ec26fa7fd559217ecd0d47ca04bb2d40613d0ad0b8aec2ea545baae9f763571b\"", 
+   "./uniqueContractSourceCode/0x2cfcb4def1a901bb7cba6e79543391e064fe1e48.txt:213:3: Warning: Integer Underflow.\n  string public pubaddr = \"0xff982b2a62eb872d01eb98761f1ff66f6055a8e6\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.3"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:175:25: Warning: Integer Underflow.\n        if (!owner.send(this.balance - newValue\nInteger Underflow occurs if:\n    newValue = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    active = 255\n    registrar = 0", 
+   "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:193:27: Warning: Integer Underflow.\n        if (! burn.send(((1000 - refundRatio\nInteger Underflow occurs if:\n    refundRatio = 1001\n    active = 255\n    registrar = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:221:12: Warning: Transaction-Ordering Dependency.\n        if(owner.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:223:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(burn)", 
+    "./uniqueContractSourceCode/0x6090a6e47849629b7245dfa1ca21d94cd15878ef.txt:221:12: Warning: Transaction-Ordering Dependency.\n        if(owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.4"
+}

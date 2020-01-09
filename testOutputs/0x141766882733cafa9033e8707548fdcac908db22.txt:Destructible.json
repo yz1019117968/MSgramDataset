@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:317:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:325:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(_recipient)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x03425fA34130C148Fe922Ff8880409C79410A879.txt:259:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x03425fA34130C148Fe922Ff8880409C79410A879.txt:47:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x03425fA34130C148Fe922Ff8880409C79410A879.txt:49:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.8"
+}

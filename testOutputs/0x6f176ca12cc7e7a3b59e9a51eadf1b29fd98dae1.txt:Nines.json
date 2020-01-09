@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6f176ca12cc7e7a3b59e9a51eadf1b29fd98dae1.txt:135:3: Warning: Integer Overflow.\n  function setMessage(string message) public payable {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    message = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6f176ca12cc7e7a3b59e9a51eadf1b29fd98dae1.txt:81:12: Warning: Integer Overflow.\n    cost = nines[_slot].cost", 
+   "./uniqueContractSourceCode/0x6f176ca12cc7e7a3b59e9a51eadf1b29fd98dae1.txt:21:3: Warning: Integer Overflow.\n  mapping (uint256 => Nine) public nines"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6f176ca12cc7e7a3b59e9a51eadf1b29fd98dae1.txt:23:3: Warning: Integer Underflow.\n  mapping (address => string) public msgs", 
+   "./uniqueContractSourceCode/0x6f176ca12cc7e7a3b59e9a51eadf1b29fd98dae1.txt:83:5: Warning: Integer Underflow.\n    message = msgs[nines[_slot].owner]\nInteger Underflow occurs if:\n    message = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.8"
+}

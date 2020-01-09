@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:195:55: Warning: Integer Overflow.\n                mapLoveItems[love_hash].love_message, mapLoveItems[love_hash].love_url\nInteger Overflow occurs if:\n    mapLoveItems[love_hash].block_number = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:193:57: Warning: Integer Overflow.\n        return (mapLoveItems[love_hash].lovers_address, mapLoveItems[love_hash].block_number\nInteger Overflow occurs if:\n    mapLoveItems[love_hash].block_number = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:157:5: Warning: Integer Overflow.\n    function addLovers(bytes32 love_hash, string lovemsg, string loveurl) payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    lovemsg = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:193:95: Warning: Integer Overflow.\n        return (mapLoveItems[love_hash].lovers_address, mapLoveItems[love_hash].block_number, mapLoveItems[love_hash].block_timestamp\nInteger Overflow occurs if:\n    mapLoveItems[love_hash].block_number = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:195:17: Warning: Integer Overflow.\n                mapLoveItems[love_hash].love_message\nInteger Overflow occurs if:\n    mapLoveItems[love_hash].block_number = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:193:9: Warning: Integer Underflow.\n        return (mapLoveItems[love_hash].lovers_address, mapLoveItems[love_hash].block_number, mapLoveItems[love_hash].block_timestamp,  \r\n        ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    return (mapLoveItems[love_hash].lovers_address, mapLoveItems[love_hash].block_number, mapLoveItems[love_hash].block_timestamp,  \r\n\r\n                mapLoveItems[love_hash].love_message, mapLoveItems[love_hash].love_url) = 1\n    mapLoveItems[love_hash].block_number = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:111:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x61CCA6c941c6629df67439694889C2d1877a17Eb.txt:123:9: Warning: Transaction-Ordering Dependency.\n        mapLoveItems[loveHash].lovers_address.transfer(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "42.9"
+}

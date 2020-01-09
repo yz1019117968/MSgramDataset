@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0356a7871e3ab819a5183bd367ea6187f6e3acc8.txt:181:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    state = 0\n    deposited[investor] = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x0356a7871e3ab819a5183bd367ea6187f6e3acc8.txt:1545:3: Warning: Integer Overflow.\n  address[] public reserveWallet"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.5"
+}

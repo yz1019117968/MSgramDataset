@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:343:9: Warning: Integer Overflow.\n        accessorySeries.price\nInteger Overflow occurs if:\n    totalAccessorySeries = 4352\n    creatorAddress = 0", 
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:395:11: Warning: Integer Overflow.\n          owners.push(_accessoryId)\nInteger Overflow occurs if:\n    owners.push(_accessoryId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    _from = 0\n    seraphims[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:61:26: Warning: Integer Overflow.\n        uint256 genNum = uint256(block.blockhash(block.number-1)) + uint256(privateAddress)", 
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:311:5: Warning: Integer Overflow.\n    mapping(address => uint64[]) public ownerAccessoryCollection", 
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:63:32: Warning: Integer Overflow.\n        return uint8(genNum % (maxRandom - min + 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:193:13: Warning: Integer Underflow.\n            totalSeraphims -= 1\nInteger Underflow occurs if:\n    creatorAddress = 0\n    seraphims[_oldSeraphim] = 255", 
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:63:32: Warning: Integer Underflow.\n        return uint8(genNum % (maxRandom - min", 
+   "./uniqueContractSourceCode/0x466c44812835f57b736ef9f63582b8a6693a14d0.txt:61:50: Warning: Integer Underflow.\n        uint256 genNum = uint256(block.blockhash(block.number-1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.3"
+}

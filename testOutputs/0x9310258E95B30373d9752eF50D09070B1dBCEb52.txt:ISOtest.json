@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:57:5: Warning: Integer Overflow.\n    function getData(string key) public constant returns(string) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    key = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:45:5: Warning: Integer Overflow.\n    function setData(string key, string value) public{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    key = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:123:9: Warning: Integer Underflow.\n        return certificateIssued\nInteger Underflow occurs if:\n    return certificateIssued = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:99:9: Warning: Integer Underflow.\n        return issuedBy\nInteger Underflow occurs if:\n    return issuedBy = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:107:9: Warning: Integer Underflow.\n        return signerBy\nInteger Underflow occurs if:\n    return signerBy = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:91:9: Warning: Integer Underflow.\n        return companyAddress\nInteger Underflow occurs if:\n    return companyAddress = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:139:9: Warning: Integer Underflow.\n        return certificateExpires\nInteger Underflow occurs if:\n    return certificateExpires = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:75:9: Warning: Integer Underflow.\n        return issuedTo\nInteger Underflow occurs if:\n    return issuedTo = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:83:9: Warning: Integer Underflow.\n        return scope\nInteger Underflow occurs if:\n    return scope = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:115:9: Warning: Integer Underflow.\n        return title\nInteger Underflow occurs if:\n    return title = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:131:9: Warning: Integer Underflow.\n        return certificateSince\nInteger Underflow occurs if:\n    return certificateSince = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:147:9: Warning: Integer Underflow.\n        return ctype\nInteger Underflow occurs if:\n    return ctype = 1", 
+   "./restContracts/0x9310258E95B30373d9752eF50D09070B1dBCEb52.txt:67:9: Warning: Integer Underflow.\n        return data[keccak256('name')]\nInteger Underflow occurs if:\n    return data[keccak256('name')] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "16.7"
+}

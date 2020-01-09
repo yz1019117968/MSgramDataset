@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x87dde390e9d458dca2692c29facaa33b7636f7fa.txt:265:5: Warning: Integer Overflow.\n    function transfer(address _to, uint _value, bytes _data) public returns (bool ok) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x87dde390e9d458dca2692c29facaa33b7636f7fa.txt:353:9: Warning: Integer Overflow.\n        Transfer(msg.sender, _to, _value, empty)\nInteger Overflow occurs if:\n    _value = 0\n    balances[_to] = 0\n    balances[msg.sender] = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x87dde390e9d458dca2692c29facaa33b7636f7fa.txt:59:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[target] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    amount = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    _amounToSale = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    _saledTotal = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x87dde390e9d458dca2692c29facaa33b7636f7fa.txt:221:9: Warning: Integer Underflow.\n        return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1", 
+   "./restContracts/0x87dde390e9d458dca2692c29facaa33b7636f7fa.txt:213:9: Warning: Integer Underflow.\n        return _name\nInteger Underflow occurs if:\n    return _name = 1", 
+   "./restContracts/0x87dde390e9d458dca2692c29facaa33b7636f7fa.txt:353:9: Warning: Integer Underflow.\n        Transfer(msg.sender, _to, _value, empty)\nInteger Underflow occurs if:\n    _value = 3618502788666131106986593281521497131303722762294239043173921554575579178944\n    balances[_to] = 50206726192742569109438981781110772518531193059905449911455788521722004657677\n    balances[msg.sender] = 3618502788666131106986593281521497131303722762294239043173921554575579178944\n    _to = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.5"
+}

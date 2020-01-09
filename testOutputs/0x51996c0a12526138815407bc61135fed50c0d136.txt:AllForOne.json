@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x51996c0a12526138815407bc61135fed50c0d136.txt:167:13: Warning: Integer Overflow.\n            currentGame++\nInteger Overflow occurs if:\n    currentGame = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    revealBlock = 0\n    currentPlayersRequired = 0\n    playerCount = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x51996c0a12526138815407bc61135fed50c0d136.txt:163:13: Warning: Integer Underflow.\n        if (_thisBlock - revealBlock\nInteger Underflow occurs if:\n    revealBlock = 1\n    currentPlayersRequired = 0\n    playerCount = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.8"
+}

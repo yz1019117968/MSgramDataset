@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0927feb960012fbceaac13612300d565ed50ae57.txt:605:71: Warning: Integer Underflow.\n\tuint restrictedTokens = issuedTokenSupply.mul(restrictedPercent).div(100 - restrictedPercent\nInteger Underflow occurs if:\n    restrictedPercent = 112\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.7"
+}

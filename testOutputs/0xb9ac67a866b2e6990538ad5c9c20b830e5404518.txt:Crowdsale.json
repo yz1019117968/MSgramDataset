@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb9ac67a866b2e6990538ad5c9c20b830e5404518.txt:2383:3: Warning: Integer Overflow.\n  Tranche[] public tranches", 
+   "./restContracts/0xb9ac67a866b2e6990538ad5c9c20b830e5404518.txt:2463:69: Warning: Integer Overflow.\n      if (tranches[i].start <= block.timestamp && block.timestamp < tranches[i]\nInteger Overflow occurs if:\n    requiredSignedAddress = 0\n    tranches.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tranches[i].start = 0\n    tranches[i].start = 1\n    earlyParticipantWhitelist[msg.sender] = 255\n    startsAt = 1\n    halted = 0\n    minimum_buy_value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investedAmountOf[agent] = 0", 
+   "./restContracts/0xb9ac67a866b2e6990538ad5c9c20b830e5404518.txt:2487:12: Warning: Integer Overflow.\n    return getCurrentTranche(tokensSold).price\nInteger Overflow occurs if:\n    requiredSignedAddress = 0\n    tokensSold = 0\n    tranches[i].amount = 1\n    tranches[i].end = 1\n    tranches[i].start = 0\n    tranches.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    earlyParticipantWhitelist[msg.sender] = 255\n    startsAt = 1\n    halted = 0\n    minimum_buy_value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investedAmountOf[agent] = 0", 
+   "./restContracts/0xb9ac67a866b2e6990538ad5c9c20b830e5404518.txt:2463:101: Warning: Integer Overflow.\n      if (tranches[i].start <= block.timestamp && block.timestamp < tranches[i].end && tokensSold < tranches[i]\nInteger Overflow occurs if:\n    requiredSignedAddress = 0\n    tranches.length = 115792089237316195423570985008687907853269984503381287210244220616335119351807\n    tranches[i].end = 1\n    tranches[i].start = 0\n    tranches[i].start = 1\n    earlyParticipantWhitelist[msg.sender] = 255\n    startsAt = 1\n    halted = 0\n    minimum_buy_value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    investedAmountOf[agent] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.9"
+}

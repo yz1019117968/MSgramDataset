@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:47:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    totalSupply = 0\n    stakeStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stakeMinAge = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    transferIns[_address][i].time = 18446744073709551615\n    transferIns[msg.sender].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxTotalSupply = 1", 
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:483:29: Warning: Integer Overflow.\n            if( _now < uint(transferIns[_address][i]\nInteger Overflow occurs if:\n    stakeStartTime = 14762799303122481108\n    transferIns[msg.sender].length = 56539106072908298546665520023773392506479484700019806659891398441363832832\n    totalSupply = 0\n    stakeMaxAge = 7424160346329316586\n    stakeMinAge = 7421932186149846218\n    transferIns[_address][i].time = 7338638957061598954\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxTotalSupply = 1", 
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:165:1: Warning: Integer Overflow.\ncontract TIPToken is ERC20,TIPbotRegulation,Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:541:5: Warning: Integer Overflow.\n    function batchTransfer(address[] _recipients, uint[] _values) public onlyOwner returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:483:29: Warning: Integer Overflow.\n            if( _now < uint(transferIns[_address][i].time\nInteger Overflow occurs if:\n    totalSupply = 0\n    stakeStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    transferIns[msg.sender].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxTotalSupply = 1", 
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:487:47: Warning: Integer Overflow.\n            uint nCoinSeconds = _now.sub(uint(transferIns[_address][i].time\nInteger Overflow occurs if:\n    stakeStartTime = 1\n    totalSupply = 0\n    stakeMinAge = 5846006549323611672814739330865123071424475430911\n    transferIns[_address][i].time = 9007199254740991\n    transferIns[msg.sender].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxTotalSupply = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:171:5: Warning: Integer Underflow.\n    string public name = \"TIPbot\"", 
+   "./uniqueContractSourceCode/0x153e140548c6bfca761b6a4a45730bd1401c74d2.txt:173:5: Warning: Integer Underflow.\n    string public symbol = \"TIP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.8"
+}

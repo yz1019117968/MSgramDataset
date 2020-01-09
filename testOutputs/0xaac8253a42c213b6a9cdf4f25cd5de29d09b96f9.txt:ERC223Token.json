@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaac8253a42c213b6a9cdf4f25cd5de29d09b96f9.txt:253:5: Warning: Integer Overflow.\n    function transfer(address _to, uint256 _value, bytes _metadata) returns (bool _success)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaac8253a42c213b6a9cdf4f25cd5de29d09b96f9.txt:171:9: Warning: Integer Underflow.\n        return symbol\nInteger Underflow occurs if:\n    return symbol = 1", 
+   "./restContracts/0xaac8253a42c213b6a9cdf4f25cd5de29d09b96f9.txt:163:9: Warning: Integer Underflow.\n        return name\nInteger Underflow occurs if:\n    return name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.7"
+}

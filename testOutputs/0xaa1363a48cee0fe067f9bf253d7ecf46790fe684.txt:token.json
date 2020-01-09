@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:43:5: Warning: Integer Underflow.\n    string public name = 'Transaction Network'", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:45:5: Warning: Integer Underflow.\n    string public symbol = 'TNTOO'", 
+   "./restContracts/0xaa1363a48cee0fe067f9bf253d7ecf46790fe684.txt:41:5: Warning: Integer Underflow.\n    string public standard = 'https://www.tntoo.com'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.5"
+}

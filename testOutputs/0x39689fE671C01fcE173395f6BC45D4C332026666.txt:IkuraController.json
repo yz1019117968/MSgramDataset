@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x39689fE671C01fcE173395f6BC45D4C332026666.txt:2429:3: Warning: Integer Overflow.\n  function confirmProposal(string type_, uint proposalId) auth {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    type_ = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x39689fE671C01fcE173395f6BC45D4C332026666.txt:2447:3: Warning: Integer Overflow.\n  function numberOfProposals(string type_) auth constant returns (uint) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    type_ = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x39689fE671C01fcE173395f6BC45D4C332026666.txt:2193:3: Warning: Integer Underflow.\n  string public name = \"XJP 0.6.0\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.2"
+}

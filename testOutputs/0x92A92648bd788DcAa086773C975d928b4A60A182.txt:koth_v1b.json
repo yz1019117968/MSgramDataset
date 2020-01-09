@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x92A92648bd788DcAa086773C975d928b4A60A182.txt:97:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0x92A92648bd788DcAa086773C975d928b4A60A182.txt:253:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(feeAddress)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.0"
+}

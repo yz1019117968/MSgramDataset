@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:13:1: Warning: Integer Overflow.\ncontract SYCEarlyPurchase {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    earlyPurchases.push(EarlyPurchase(purchaser, amount, purchasedAt)) = 62321049360142884831088626381133692569187478864276815515389981112439375666804\n    totalEarlyPurchaseRaised = 6959999999999999999999\n    earlyPurchaseClosedAt = 0", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:127:27: Warning: Integer Overflow.\n                amount += earlyPurchases[i].amount\nInteger Overflow occurs if:\n    earlyPurchases.length = 10\n    earlyPurchases[i].purchaser = 0\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    purchaser = 0\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:125:17: Warning: Integer Overflow.\n            if (earlyPurchases[i]\nInteger Overflow occurs if:\n    earlyPurchases.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    purchaser = 0\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:211:27: Warning: Integer Overflow.\n           purchaser.send(totalEarlyPurchaseRaised + amount\nInteger Overflow occurs if:\n    totalEarlyPurchaseRaised = 76735335503926152874033536641767042420282600433948352611454530677243167571975\n    earlyPurchaseClosedAt = 0", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:127:17: Warning: Integer Overflow.\n                amount += earlyPurchases[i].amount\nInteger Overflow occurs if:\n    earlyPurchases.length = 12\n    earlyPurchases[i].amount = 1\n    earlyPurchases[i].amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    earlyPurchases[i].purchaser = 0\n    earlyPurchases[i].purchaser = 0\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    purchaser = 0\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:209:12: Warning: Integer Overflow.\n        if(totalEarlyPurchaseRaised + amount\nInteger Overflow occurs if:\n    totalEarlyPurchaseRaised = 73743386538894652285448823136218496506652056614733714970505566820167819857560\n    earlyPurchaseClosedAt = 0", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:29:5: Warning: Integer Overflow.\n    EarlyPurchase[] public earlyPurchases", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:221:12: Warning: Integer Overflow.\n           earlyPurchases.push(EarlyPurchase(purchaser, amount, purchasedAt))\nInteger Overflow occurs if:\n    earlyPurchases.push(EarlyPurchase(purchaser, amount, purchasedAt)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalEarlyPurchaseRaised = 6959999999999999999999\n    earlyPurchaseClosedAt = 0", 
+   "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:127:27: Warning: Integer Overflow.\n                amount += earlyPurchases[i]\nInteger Overflow occurs if:\n    earlyPurchases.length = 10\n    earlyPurchases[i].purchaser = 0\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975\n    purchaser = 0\n    earlyPurchases[i].purchaser = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:259:15: Warning: Transaction-Ordering Dependency.\n          if(!owner.send(withdrawalAmount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x011585ba96aa16b803e239defd807465073b883c.txt:267:15: Warning: Transaction-Ordering Dependency.\n          if(!owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.1"
+}

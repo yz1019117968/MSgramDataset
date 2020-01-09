@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x951b83dcfb7a9865b6343c051de6d495290b469a.txt:1729:5: Warning: Integer Overflow.\n    function batchMintTokenPresale(address[] _beneficiaries, uint256[] _amounts) public onlyOwner onlyPresalePhase {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _beneficiaries = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x951b83dcfb7a9865b6343c051de6d495290b469a.txt:1663:5: Warning: Integer Overflow.\n    function batchWhiteListInvestors(address[] _investors) public onlyManager {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _investors = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.1"
+}

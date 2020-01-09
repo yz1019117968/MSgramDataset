@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x42D2b05b20565de5f2beF7503ebdaD0754A5d4b4.txt:51:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    halted = 0\n    crowdEther = 1\n    whiteList[user] = 255\n    walletOwnerAddress = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "11.0"
+}

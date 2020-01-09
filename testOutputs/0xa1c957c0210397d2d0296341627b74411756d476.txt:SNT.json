@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1569:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1201:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1381:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1601:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 170141183460469231731687303441006198781\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1581:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663", 
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1611:43: Warning: Integer Overflow.\n               Checkpoint oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 1180591620717411303423\n    controller = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:771:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:775:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:777:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.1'"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1665:19: Warning: Transaction-Ordering Dependency.\n            if (! TokenController(controller).proxyPayment.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./restContracts/0xa1c957c0210397d2d0296341627b74411756d476.txt:1719:13: Warning: Transaction-Ordering Dependency.\n            controller.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.5"
+}

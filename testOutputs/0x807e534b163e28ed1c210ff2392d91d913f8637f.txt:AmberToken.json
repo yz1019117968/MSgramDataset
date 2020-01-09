@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:303:3: Warning: Integer Overflow.\n\t\taccounts[msg.sender].allowanceOf\nInteger Overflow occurs if:\n    locked = 0\n    _value = 0", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:149:3: Warning: Integer Overflow.\n\t\ttotalSupply += _value\nInteger Overflow occurs if:\n    totalSupply = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:127:3: Warning: Integer Overflow.\n\t\ttotalSupply += _value\nInteger Overflow occurs if:\n    totalSupply = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:275:3: Warning: Integer Overflow.\n\t\taccounts[_to].balance += _value\nInteger Overflow occurs if:\n    accounts[_to].balance = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    locked = 0\n    accounts[_owner].allowanceOf[_spender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    accounts[_owner].balance = 37717208912933073374861050775867160511051478474789766132129094234564326678807", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:125:3: Warning: Integer Overflow.\n\t\taccounts[_who].balance += _value\nInteger Overflow occurs if:\n    accounts[_who].balance = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:271:3: Warning: Integer Overflow.\n\t\taccounts[_from].allowanceOf\nInteger Overflow occurs if:\n    _value = 0\n    locked = 0\n    accounts[_owner].allowanceOf[_spender] = 0\n    accounts[_owner].balance = 0", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:147:3: Warning: Integer Overflow.\n\t\taccounts[_who].tokensPerPhase += _value / UNLOCK_PHASES\nInteger Overflow occurs if:\n    accounts[_who].tokensPerPhase = 108050928559579195193553351457711550614394960283399221381806970412047999310087\n    _value = 52017887158718952894271809376236580801712546154181430576598245656000845822444\n    owner = 0", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:333:10: Warning: Integer Overflow.\n\t\treturn accounts[_owner].allowanceOf", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:147:3: Warning: Integer Overflow.\n\t\taccounts[_who].tokensPerPhase\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:245:3: Warning: Integer Overflow.\n\t\taccounts[_to].balance += _value\nInteger Overflow occurs if:\n    accounts[_to].balance = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    locked = 0\n    accounts[_owner].balance = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x807e534b163e28ed1c210ff2392d91d913f8637f.txt:195:13: Warning: Integer Underflow.\n\t\tuint p = (now - phaseStart\nInteger Underflow occurs if:\n    phaseStart = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "92.8"
+}

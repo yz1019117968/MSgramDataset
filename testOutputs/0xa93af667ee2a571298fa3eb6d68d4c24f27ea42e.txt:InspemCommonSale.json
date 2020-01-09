@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e.txt:1035:35: Warning: Integer Overflow.\n    Milestone storage milestone = milestones[number]\nInteger Overflow occurs if:\n    milestones.length = 32\n    owner = 0", 
+   "./restContracts/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e.txt:995:5: Warning: Integer Overflow.\n    milestones.push(Milestone(period, bonus))\nInteger Overflow occurs if:\n    milestones.push(Milestone(period, bonus)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e.txt:1007:35: Warning: Integer Overflow.\n    Milestone storage milestone = milestones[number]\nInteger Overflow occurs if:\n    milestones.length = 32\n    owner = 0", 
+   "./restContracts/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e.txt:1139:1: Warning: Integer Overflow.\ncontract InspemCommonSale is StagedCrowdsale, RetrieveTokensFeature, ReferersRewardFeature {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    milestones.push(Milestone(period, bonus)) = 41422112641837104714977910719459132799912797182732962724615910609143899352111\n    owner = 0", 
+   "./restContracts/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e.txt:1045:5: Warning: Integer Overflow.\n    milestone.bonus\nInteger Overflow occurs if:\n    milestones.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalPeriod = 0\n    owner = 0", 
+   "./restContracts/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e.txt:1013:12: Warning: Integer Overflow.\n    delete milestones[number]\nInteger Overflow occurs if:\n    milestones.length = 32\n    totalPeriod = 0\n    owner = 0", 
+   "./restContracts/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e.txt:979:3: Warning: Integer Overflow.\n  Milestone[] public milestones"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.1"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:835:9: Warning: Timestamp Dependency.\n        require(block.timestamp > sale.end)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:207:13: Warning: Integer Overflow.\n            payments[from].paymentHistory.push(newContribution)\nInteger Overflow occurs if:\n    tokensAwardedForSale = 800000001\n    preSale.start = 1\n    hasStarted = 0\n    owner = 0\n    tokensRemainingForSale = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:143:5: Warning: Integer Overflow.\n    address[] public paymentAddresses", 
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:933:107: Warning: Integer Overflow.\n        uint len = paymentAddresses.length < startIndex + numberOfContributors? paymentAddresses.length : startIndex + numberOfContributors\nInteger Overflow occurs if:\n    paymentAddresses.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    distributionTime = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:207:13: Warning: Integer Overflow.\n            payments[from].paymentHistory\nInteger Overflow occurs if:\n    tokensAwardedForSale = 800000001\n    preSale.start = 1\n    hasStarted = 0\n    owner = 0\n    tokensRemainingForSale = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:43:1: Warning: Integer Overflow.\ncontract TRLCoinSale is ApproveAndCallFallBack {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokensAwardedForSale = 800000001\n    preSale.start = 1\n    hasStarted = 0\n    owner = 0\n    tokensRemainingForSale = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:601:13: Warning: Integer Overflow.\n            sale.tokens += savePreSaleTomens\nInteger Overflow occurs if:\n    sale.tokens = 70862601633952815590595634567947361870066111087283282901925537077828564600233\n    preSale.tokens = 82603597412299316067099703057998482488776651682166854669584283640845243676107\n    preSale.end = 77371252455336267181195263\n    sale.end = 77371252455336267181195264\n    sale.start = 77371252455336267181195264\n    preSale.start = 77371252455336267181195265\n    hasStarted = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x033fd9f42f7e1566b893b31078a62b2b959ebd72.txt:505:9: Warning: Integer Underflow.\n        preSale.tokens -= tokens\nInteger Underflow occurs if:\n    preSale.tokens = 0\n    preSale.start = 1\n    hasStarted = 0\n    owner = 0\n    tokensAwardedForSale = 0\n    tokensRemainingForSale = 800000000"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.5"
+}

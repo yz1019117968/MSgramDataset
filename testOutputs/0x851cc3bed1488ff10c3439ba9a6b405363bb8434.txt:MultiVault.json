@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x851cc3bed1488ff10c3439ba9a6b405363bb8434.txt:1669:3: Warning: Integer Overflow.\n  address[] public investors", 
+   "./restContracts/0x851cc3bed1488ff10c3439ba9a6b405363bb8434.txt:1647:1: Warning: Integer Overflow.\ncontract MultiVault is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    freezeEndsAt = 0\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    balances[investor] = 0", 
+   "./restContracts/0x851cc3bed1488ff10c3439ba9a6b405363bb8434.txt:1835:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    freezeEndsAt = 0\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    balances[investor] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.7"
+}

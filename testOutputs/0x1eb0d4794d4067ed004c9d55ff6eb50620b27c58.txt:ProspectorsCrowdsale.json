@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1eb0d4794d4067ed004c9d55ff6eb50620b27c58.txt:649:9: Warning: Timestamp Dependency.\n        if (time() > end_time + 180 days)\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1eb0d4794d4067ed004c9d55ff6eb50620b27c58.txt:573:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1eb0d4794d4067ed004c9d55ff6eb50620b27c58.txt:653:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(dev_multisig)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.8"
+}

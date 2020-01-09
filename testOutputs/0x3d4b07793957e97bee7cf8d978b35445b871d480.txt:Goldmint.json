@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3d4b07793957e97bee7cf8d978b35445b871d480.txt:1093:36: Warning: Integer Overflow.\n          issuedExternallyTokens = issuedExternallyTokens + _tokens\nInteger Overflow occurs if:\n    _tokens = 47040969879811892175110000058383499075008139884452015147997686795564431739143\n    currentState = 287342913912354160942190067590682971928513585409425408\n    issuedExternallyTokens = 68751119357504303248460984950304408778261844781188549827667654403893195923743\n    tokenManager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.6"
+}

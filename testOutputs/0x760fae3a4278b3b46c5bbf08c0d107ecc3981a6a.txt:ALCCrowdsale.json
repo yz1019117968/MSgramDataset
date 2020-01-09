@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x760fae3a4278b3b46c5bbf08c0d107ecc3981a6a.txt:347:4: Warning: Integer Overflow.\n\t\t\tcontributorList[_contributor].tokensAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].isActive = 0\n    crowdsaleClosed = 0", 
+   "./uniqueContractSourceCode/0x760fae3a4278b3b46c5bbf08c0d107ecc3981a6a.txt:307:3: Warning: Integer Overflow.\n\t\tremainAmount += contributionEthAmount\nInteger Overflow occurs if:\n    remainAmount = 1\n    crowdsaleClosed = 0", 
+   "./uniqueContractSourceCode/0x760fae3a4278b3b46c5bbf08c0d107ecc3981a6a.txt:345:4: Warning: Integer Overflow.\n\t\t\tcontributorList[_contributor].contributionAmount\nInteger Overflow occurs if:\n    contributorList[_contributor].isActive = 0\n    crowdsaleClosed = 0", 
+   "./uniqueContractSourceCode/0x760fae3a4278b3b46c5bbf08c0d107ecc3981a6a.txt:305:9: Warning: Integer Overflow.\n        amountRaised += contributionEthAmount\nInteger Overflow occurs if:\n    amountRaised = 1\n    crowdsaleClosed = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "8.7"
+}

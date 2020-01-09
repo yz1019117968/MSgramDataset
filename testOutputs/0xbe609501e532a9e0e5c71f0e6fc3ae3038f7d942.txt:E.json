@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbe609501e532a9e0e5c71f0e6fc3ae3038f7d942.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbe609501e532a9e0e5c71f0e6fc3ae3038f7d942.txt:313:2: Warning: Integer Underflow.\n\tstring public publisher = 'TokenDone.io'", 
+   "./restContracts/0xbe609501e532a9e0e5c71f0e6fc3ae3038f7d942.txt:307:2: Warning: Integer Underflow.\n\tstring public symbol = 'E'", 
+   "./restContracts/0xbe609501e532a9e0e5c71f0e6fc3ae3038f7d942.txt:305:2: Warning: Integer Underflow.\n\tstring public name = 'E'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

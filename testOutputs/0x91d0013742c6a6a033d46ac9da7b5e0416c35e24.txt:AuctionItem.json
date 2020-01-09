@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x91d0013742c6a6a033d46ac9da7b5e0416c35e24.txt:79:5: Warning: Integer Overflow.\n    function bid(string _squak) payable higherBid auctionNotOver {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x91d0013742c6a6a033d46ac9da7b5e0416c35e24.txt:9:5: Warning: Integer Underflow.\n    string public auctionName", 
+   "./restContracts/0x91d0013742c6a6a033d46ac9da7b5e0416c35e24.txt:33:5: Warning: Integer Underflow.\n    string public squak"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x91d0013742c6a6a033d46ac9da7b5e0416c35e24.txt:99:9: Warning: Transaction-Ordering Dependency.\n        highBidder.transfer(currentHighestBid)"
+   ], 
+   [
+    "./restContracts/0x91d0013742c6a6a033d46ac9da7b5e0416c35e24.txt:115:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.0"
+}

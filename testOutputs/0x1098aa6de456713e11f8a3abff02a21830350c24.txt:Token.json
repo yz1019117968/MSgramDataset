@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1098aa6de456713e11f8a3abff02a21830350c24.txt:127:5: Warning: Integer Underflow.\n    string public version = '1.1'", 
+   "./uniqueContractSourceCode/0x1098aa6de456713e11f8a3abff02a21830350c24.txt:121:5: Warning: Integer Underflow.\n    string public name = \"Legends\"", 
+   "./uniqueContractSourceCode/0x1098aa6de456713e11f8a3abff02a21830350c24.txt:125:5: Warning: Integer Underflow.\n    string public symbol = \"LGD\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.8"
+}

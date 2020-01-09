@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x472d4827266f0e83d12feb52f785c7e22ab5f0b6.txt:79:4: Warning: Callstack Depth Attack Vulnerability.\n\t\t\tmsg.sender.send(this.balance)", 
+   "./uniqueContractSourceCode/0x472d4827266f0e83d12feb52f785c7e22ab5f0b6.txt:71:5: Warning: Callstack Depth Attack Vulnerability.\n\t\t\t\tmsg.sender.send(this.balance)", 
+   "./uniqueContractSourceCode/0x472d4827266f0e83d12feb52f785c7e22ab5f0b6.txt:65:5: Warning: Callstack Depth Attack Vulnerability.\n\t\t\t\towner.send(this.balance)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x472d4827266f0e83d12feb52f785c7e22ab5f0b6.txt:49:2: Warning: Integer Overflow.\n\tfunction StoreFile(uint storePrice, bytes32 key, string title, string category, string extension, string created, string updated, uint version, bytes data)\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    title = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x472d4827266f0e83d12feb52f785c7e22ab5f0b6.txt:7:2: Warning: Integer Overflow.\n\tmapping (bytes32=>File[]) public files"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x472d4827266f0e83d12feb52f785c7e22ab5f0b6.txt:91:10: Warning: Integer Underflow.\n\t\treturn files[key].length -1\nInteger Underflow occurs if:\n    files[key].length = 0", 
+   "./uniqueContractSourceCode/0x472d4827266f0e83d12feb52f785c7e22ab5f0b6.txt:7:2: Warning: Integer Underflow.\n\tmapping (bytes32=>File[]) public files"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "10.7"
+}

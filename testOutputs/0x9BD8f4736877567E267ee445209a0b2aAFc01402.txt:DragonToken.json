@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:947:39: Warning: Integer Overflow.\n        Unfreeze(frozenBalance.owner, frozenBalance.value\nInteger Overflow occurs if:\n    frozenBalanceCount = 7\n    balances[frozenBalance.owner] = 0\n    frozenBalances[index].value = 0\n    frozenBalances[index].unFrozenTime = 0\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:549:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:867:9: Warning: Integer Overflow.\n        frozenBalanceCount++\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    frozenBalanceCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    createTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    rentrancy_lock = 0", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:885:9: Warning: Integer Overflow.\n        frozenBalances[frozenBalanceCount] = FrozenBalance({owner: owner, value: _value, unFrozenTime: _unFrozenTime})\nInteger Overflow occurs if:\n    balances[owner] = 0\n    createTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    operator = 0", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:865:9: Warning: Integer Overflow.\n        frozenBalances[frozenBalanceCount] = FrozenBalance({owner: msg.sender, value: _value, unFrozenTime: _unFrozenTime})\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    createTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    rentrancy_lock = 0", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:843:5: Warning: Integer Overflow.\n    mapping (uint => FrozenBalance) public frozenBalances", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:945:75: Warning: Integer Overflow.\n        balances[frozenBalance.owner] = balances[frozenBalance.owner].add(frozenBalance.value\nInteger Overflow occurs if:\n    frozenBalanceCount = 7\n    frozenBalances[index].unFrozenTime = 0\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:925:34: Warning: Integer Overflow.\n                releaseAmount += frozenBalances[index].value\nInteger Overflow occurs if:\n    frozenBalanceCount = 115792089237316195423558725044360980742403117889423361565988634094935660822527\n    frozenBalances[index].unFrozenTime = 0\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:947:60: Warning: Integer Overflow.\n        Unfreeze(frozenBalance.owner, frozenBalance.value, frozenBalance.unFrozenTime\nInteger Overflow occurs if:\n    frozenBalanceCount = 7\n    balances[frozenBalance.owner] = 0\n    frozenBalances[index].value = 0\n    frozenBalances[index].unFrozenTime = 0\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1\n    frozenBalances[index].unFrozenTime = 1", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:923:24: Warning: Integer Overflow.\n            if (now >= frozenBalances[index].unFrozenTime\nInteger Overflow occurs if:\n    frozenBalanceCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:905:35: Warning: Integer Overflow.\n                value = value.add(frozenBalance.value\nInteger Overflow occurs if:\n    frozenBalanceCount = 7", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:979:5: Warning: Integer Overflow.\n    mapping (uint => ReleaseRecord) public releasedRecords", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:887:9: Warning: Integer Overflow.\n        frozenBalanceCount++\nInteger Overflow occurs if:\n    balances[owner] = 0\n    frozenBalanceCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    createTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    operator = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:1095:5: Warning: Integer Underflow.\n    string public standard = '2017111504'", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:1097:5: Warning: Integer Underflow.\n    string public name = 'DragonToken'", 
+   "./restContracts/0x9BD8f4736877567E267ee445209a0b2aAFc01402.txt:1099:5: Warning: Integer Underflow.\n    string public symbol = 'DT'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.8"
+}

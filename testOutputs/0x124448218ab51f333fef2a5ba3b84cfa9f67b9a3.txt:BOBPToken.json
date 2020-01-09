@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x124448218ab51f333fef2a5ba3b84cfa9f67b9a3.txt:127:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    transfersEnabled = 1\n    balances[_to] = 86909027033281470279957145972878974484462796601407401036195232476919723736991\n    allowed[_from][msg.sender] = 90039963709783185383182011671143028455142572725495511918016039672582865158160\n    balances[_from] = 90039963709783185383182011671143028455142572725495511918016039672582865158160"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x124448218ab51f333fef2a5ba3b84cfa9f67b9a3.txt:853:5: Warning: Integer Underflow.\n    string public symbol = 'BOBP'", 
+   "./uniqueContractSourceCode/0x124448218ab51f333fef2a5ba3b84cfa9f67b9a3.txt:855:5: Warning: Integer Underflow.\n    string public name = 'BOB Promo'"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x124448218ab51f333fef2a5ba3b84cfa9f67b9a3.txt:503:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x124448218ab51f333fef2a5ba3b84cfa9f67b9a3.txt:329:12: Warning: Transaction-Ordering Dependency.\n    assert(owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.0"
+}

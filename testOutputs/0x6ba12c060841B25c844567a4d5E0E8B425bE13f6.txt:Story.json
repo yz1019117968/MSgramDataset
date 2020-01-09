@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:67:3: Warning: Integer Overflow.\n  function next(string newPrompt, string choice0, string choice1, string newPrompt2, string choice20, string choice21) public onlyDev returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newPrompt = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:19:3: Warning: Integer Overflow.\n  string[] public history", 
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:27:3: Warning: Integer Overflow.\n  string[] public choices", 
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:15:3: Warning: Integer Overflow.\n  string[] public prompts", 
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:59:27: Warning: Integer Overflow.\n    votes[optionNumber] = votes[optionNumber] + msg.value\nInteger Overflow occurs if:\n    votes[optionNumber] = 1\n    optionNumber = 0\n    iteration = 0\n    clientStoryIndex = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:15:3: Warning: Integer Underflow.\n  string[] public prompts", 
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:27:3: Warning: Integer Underflow.\n  string[] public choices", 
+   "./uniqueContractSourceCode/0x6ba12c060841B25c844567a4d5E0E8B425bE13f6.txt:19:3: Warning: Integer Underflow.\n  string[] public history"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "22.2"
+}

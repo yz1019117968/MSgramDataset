@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x77eC4fC3013eEA1598E449b09afaA3E1e0d85897.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    totalFundedEther = 77182667738089914098727062472196353080554259135303815766905103575028658256385\n    ENDDATE = 90147734465454789856136913270204528643266360454646557691216619194905897074501\n    STARTDATE = 90147734465454789856136913270204528643266360454646557691216619194905897074501"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.9"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x405c5e9804206cfe4f982310c48cda4e3b8471a3.txt:3653:26: Warning: Integer Underflow.\n        uint soldToken = totalSupply - balances[address(this)]\nInteger Underflow occurs if:\n    totalSupply = 0\n    balances[address(this)] = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x405c5e9804206cfe4f982310c48cda4e3b8471a3.txt:3457:1: Warning: Integer Underflow.\ncontract BAF is ERC20,usingOraclize\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    halted = 0\n    OAR = 0\n    enddate = 0\n    startdate = 0\n    owner = 0\n    pre_Sale = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "19.2"
+}

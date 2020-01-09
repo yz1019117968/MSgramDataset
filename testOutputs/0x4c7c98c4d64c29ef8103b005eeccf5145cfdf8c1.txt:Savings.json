@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4c7c98c4d64c29ef8103b005eeccf5145cfdf8c1.txt:75:9: Warning: Timestamp Dependency.\n        if (isOwner() && now >= openDate) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4c7c98c4d64c29ef8103b005eeccf5145cfdf8c1.txt:63:13: Warning: Integer Overflow.\n            deposits[msg.sender] += msg.value\nInteger Overflow occurs if:\n    deposits[msg.sender] = 65671277709405268910487195956150116595597414210496125914632832503559645662975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4c7c98c4d64c29ef8103b005eeccf5145cfdf8c1.txt:81:17: Warning: Transaction-Ordering Dependency.\n                msg.sender.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4c7c98c4d64c29ef8103b005eeccf5145cfdf8c1.txt:95:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(msg.sender)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

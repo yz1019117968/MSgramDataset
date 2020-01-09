@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x7600431745bd5bb27315f8376971c81cc8026a78.txt:191:3: Warning: Timestamp Dependency.\n\t\tassert(now >= preIcoEnd)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7600431745bd5bb27315f8376971c81cc8026a78.txt:199:2: Warning: Integer Overflow.\n\tfunction buy(string promo) payable {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    promo = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7600431745bd5bb27315f8376971c81cc8026a78.txt:131:10: Warning: Integer Underflow.\n\t\tassert(now - lastCallstopPreICO\nInteger Underflow occurs if:\n    lastCallstopPreICO = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.0"
+}

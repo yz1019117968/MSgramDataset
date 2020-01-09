@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1379:5: Warning: Integer Overflow.\n    dividends.push(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dividends.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1419:33: Warning: Integer Overflow.\n    uint256 claim = balance.mul(dividend.amount\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1443:59: Warning: Integer Overflow.\n      if ((dividends[i].claimed[msg.sender] == false) && (dividends[i]\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 57896044618658097711785492503978578517302266603269360811549721249042581684222\n    dividends.length = 115792089237316195423570985008322532443937258936089642831278513252999146504192\n    dividends[i].claimed[msg.sender] = 0\n    dividends[i].claimed[msg.sender] = 255\n    dividends[i].claimed[msg.sender] = 255", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1475:44: Warning: Integer Overflow.\n    uint256 remainingAmount = SafeMath.sub(dividend.amount\nInteger Overflow occurs if:\n    RECYCLE_TIME = 0\n    _dividendIndex = 0\n    dividends.length = 1\n    owner = 0", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1341:3: Warning: Integer Overflow.\n  Dividend[] public dividends", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1423:43: Warning: Integer Overflow.\n    dividend.claimedAmount = SafeMath.add(dividend.claimedAmount\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1421:5: Warning: Integer Overflow.\n    dividend.claimed\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1443:12: Warning: Integer Overflow.\n      if ((dividends[i].claimed\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 0\n    dividends.length = 1", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1419:54: Warning: Integer Overflow.\n    uint256 claim = balance.mul(dividend.amount).div(dividend.totalSupply\nInteger Overflow occurs if:\n    _dividendIndex = 0\n    dividends.length = 1", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1475:61: Warning: Integer Overflow.\n    uint256 remainingAmount = SafeMath.sub(dividend.amount, dividend.claimedAmount\nInteger Overflow occurs if:\n    RECYCLE_TIME = 0\n    _dividendIndex = 0\n    dividends.length = 1\n    owner = 0", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1443:12: Warning: Integer Overflow.\n      if ((dividends[i]\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    dividends.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0xafcc79d4cbe7e5b6e6997bbe7233e8e9179f664a.txt:1443:59: Warning: Integer Overflow.\n      if ((dividends[i].claimed[msg.sender] == false) && (dividends[i].recycled\nInteger Overflow occurs if:\n    dividendsClaimed[msg.sender] = 57896044618658097711785492503978578517302266603269360811549721249042581684222\n    dividends.length = 115792089237316195423570985008322532443937258936089642831278513252999146504192\n    dividends[i].claimed[msg.sender] = 0\n    dividends[i].claimed[msg.sender] = 255\n    dividends[i].claimed[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.1"
+}

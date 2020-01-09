@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x554FFc77F4251a9fB3c0E3590a6a205f8d4e067D.txt:59:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x554FFc77F4251a9fB3c0E3590a6a205f8d4e067D.txt:461:23: Warning: Integer Underflow.\n        totalSupply = totalSupply - _amount\nInteger Underflow occurs if:\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x554FFc77F4251a9fB3c0E3590a6a205f8d4e067D.txt:431:5: Warning: Integer Underflow.\n    string public symbol = \"ZMN\"", 
+   "./uniqueContractSourceCode/0x554FFc77F4251a9fB3c0E3590a6a205f8d4e067D.txt:429:5: Warning: Integer Underflow.\n    string public name = \"ZMINE Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.8"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4763768d6938353c9c8849115c58a32142b0f9ea.txt:413:33: Warning: Integer Underflow.\n\t\tbytes32 rnd = block.blockhash(block.number - 1\nInteger Underflow occurs if:\n    gamblers.length = 9\n    lotteryRunners[msg.sender] = 255\n    paused = 0\n    prizeFund = 0", 
+   "./uniqueContractSourceCode/0x4763768d6938353c9c8849115c58a32142b0f9ea.txt:449:10: Warning: Integer Underflow.\n\t\treturn gamblers.length - 1\nInteger Underflow occurs if:\n    gamblers.length = 0\n    ticketPrice = 1\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.6"
+}

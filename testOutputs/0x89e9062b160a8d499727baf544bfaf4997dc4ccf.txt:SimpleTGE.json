@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x89e9062b160a8d499727baf544bfaf4997dc4ccf.txt:193:3: Warning: Integer Overflow.\n  address[] public contributors", 
+   "./restContracts/0x89e9062b160a8d499727baf544bfaf4997dc4ccf.txt:205:3: Warning: Integer Overflow.\n  mapping (address => Contribution)  public contributions"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.4"
+}

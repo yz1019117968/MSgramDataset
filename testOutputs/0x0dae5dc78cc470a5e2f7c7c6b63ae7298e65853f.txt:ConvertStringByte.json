@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0dae5dc78cc470a5e2f7c7c6b63ae7298e65853f.txt:41:3: Warning: Integer Overflow.\n  function stringToBytes32(string memory source) returns (bytes32 result) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    source = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.9"
+}

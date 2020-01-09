@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbbca42657b1aecf77afde117ef095dc7c9d37c3a.txt:759:3: Warning: Timestamp Dependency.\n\t\tif (now < endTime) { // Cannot finalise before CROWDSALE_PERIOD or before selling all coins\r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbbca42657b1aecf77afde117ef095dc7c9d37c3a.txt:593:2: Warning: Integer Overflow.\n\tmapping(address => Backer) public backers"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbbca42657b1aecf77afde117ef095dc7c9d37c3a.txt:847:17: Warning: Integer Underflow.\n\t\tvar remains = MAX_CAP - coinSentToEther\nInteger Underflow occurs if:\n    coinSentToEther = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbbca42657b1aecf77afde117ef095dc7c9d37c3a.txt:777:8: Warning: Transaction-Ordering Dependency.\n\t\tif (!multisigEther.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0xbbca42657b1aecf77afde117ef095dc7c9d37c3a.txt:777:8: Warning: Transaction-Ordering Dependency.\n\t\tif (!multisigEther.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.6"
+}

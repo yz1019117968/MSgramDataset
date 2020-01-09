@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb0eb230be288c45e439a0e9eb737686bcf834594.txt:619:10: Warning: Integer Overflow.\n\t\treturn images[_imageId].blurredAt", 
+   "./restContracts/0xb0eb230be288c45e439a0e9eb737686bcf834594.txt:611:3: Warning: Integer Overflow.\n\t\timages[_imageId].imageDescriptor\nInteger Overflow occurs if:\n    images[_imageId].owner = 1461501637330902918203684832716283019655932542975\n    _imageId = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./restContracts/0xb0eb230be288c45e439a0e9eb737686bcf834594.txt:551:3: Warning: Integer Overflow.\n\t\timages[_imageId].partsCount\nInteger Overflow occurs if:\n    images[_imageId].owner = 1461501637330902918203684832716283019655932542975\n    _imageId = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddress = 0\n    setupCompleted = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "17.6"
+}

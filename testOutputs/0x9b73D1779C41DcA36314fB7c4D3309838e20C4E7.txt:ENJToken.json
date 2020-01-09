@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:183:21: Warning: Integer Overflow.\n        uint256 z = _x + _y\nInteger Overflow occurs if:\n    balanceOf[_to] = 88478780122920140272816248588304210999910516868243850019296739527109298224885\n    balanceOf[_from] = 84243275867017924025502975263664931893575942972370831094700717916285518831808\n    allowance[_from][msg.sender] = 84243275867017924025502975263664931893575942972370831094700717916285518831808"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:373:5: Warning: Integer Underflow.\n    string public name = \"\"", 
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:375:5: Warning: Integer Underflow.\n    string public symbol = \"\"", 
+   "./restContracts/0x9b73D1779C41DcA36314fB7c4D3309838e20C4E7.txt:371:5: Warning: Integer Underflow.\n    string public standard = \"Token 0.1\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.7"
+}

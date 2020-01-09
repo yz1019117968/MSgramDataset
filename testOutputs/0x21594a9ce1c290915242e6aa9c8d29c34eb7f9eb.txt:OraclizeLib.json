@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:285:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, string datasource, string arg1, string arg2) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    datasource = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:229:5: Warning: Integer Overflow.\n    function oraclize_getPrice(OraclizeData storage self, string datasource, uint gaslimit) public returns (uint) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:317:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, uint timestamp, string datasource, string arg1, string arg2, uint gaslimit) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    arg = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:309:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, string datasource, string arg1, string arg2, uint gaslimit) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    datasource = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:221:5: Warning: Integer Overflow.\n    function oraclize_getPrice(OraclizeData storage self, string datasource) public returns (uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    datasource = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:237:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, string datasource, string arg) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    datasource = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:261:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, string datasource, string arg, uint gaslimit) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    datasource = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:269:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, uint timestamp, string datasource, string arg, uint gaslimit) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    arg = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:245:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, uint timestamp, string datasource, string arg) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    arg = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:293:5: Warning: Integer Overflow.\n    function oraclize_query(OraclizeData storage self, uint timestamp, string datasource, string arg1, string arg2) public returns (bytes32 id) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    arg = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:207:9: Warning: Integer Overflow.\n        self.oraclizeNetworkName\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x21594a9ce1c290915242e6aa9c8d29c34eb7f9eb.txt:115:1: Warning: Integer Underflow.\nlibrary OraclizeLib {\r\n^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "25.3"
+}

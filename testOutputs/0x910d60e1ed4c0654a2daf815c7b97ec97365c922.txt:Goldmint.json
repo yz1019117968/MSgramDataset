@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x910d60e1ed4c0654a2daf815c7b97ec97365c922.txt:1135:36: Warning: Integer Overflow.\n          issuedExternallyTokens = issuedExternallyTokens + _tokens\nInteger Overflow occurs if:\n    issuedExternallyTokens = 68751119357504303248460984950304408778261844781188549827667654403893195923743\n    _tokens = 47040969879811892175110000058383499075008139884452015147997686795564431739143\n    currentState = 4384504911992708754611054498148849058967797628928\n    tokenManager = 0", 
+   "./restContracts/0x910d60e1ed4c0654a2daf815c7b97ec97365c922.txt:541:6: Warning: Integer Overflow.\n     address[] public multisigs = [\r\n     ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.6"
+}

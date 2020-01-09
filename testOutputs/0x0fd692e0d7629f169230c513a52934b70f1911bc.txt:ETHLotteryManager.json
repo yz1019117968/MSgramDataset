@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0fd692e0d7629f169230c513a52934b70f1911bc.txt:45:9: Warning: Integer Overflow.\n        return lottery_list\nInteger Overflow occurs if:\n    return lottery_list = 3618502788666131106986593281521497120414687020801267626233049500247285301247", 
+   "./uniqueContractSourceCode/0x0fd692e0d7629f169230c513a52934b70f1911bc.txt:53:9: Warning: Integer Overflow.\n        lottery_list.push(msg.sender)\nInteger Overflow occurs if:\n    lottery_list.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x0fd692e0d7629f169230c513a52934b70f1911bc.txt:5:1: Warning: Integer Overflow.\ncontract ETHLotteryManager {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    lottery_list.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "52.5"
+}

@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x99925CC9a57f5E473Ff22314CFE0627A0bfcceb4.txt:169:13: Warning: Integer Overflow.\n            balances[thebank] += deposit_fee\nInteger Overflow occurs if:\n    balances[thebank] = 1\n    deposit_fee = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    thebank = 0\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minimum_payment = 0", 
+   "./restContracts/0x99925CC9a57f5E473Ff22314CFE0627A0bfcceb4.txt:353:9: Warning: Integer Overflow.\n        balances[thebank] += msg.value\nInteger Overflow occurs if:\n    balances[thebank] = 1", 
+   "./restContracts/0x99925CC9a57f5E473Ff22314CFE0627A0bfcceb4.txt:167:13: Warning: Integer Overflow.\n            balances[msg.sender] += msg.value - deposit_fee\nInteger Overflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    deposit_fee = 1\n    thebank = 0\n    minimum_payment = 0", 
+   "./restContracts/0x99925CC9a57f5E473Ff22314CFE0627A0bfcceb4.txt:159:13: Warning: Integer Overflow.\n            balances[thebank] += msg.value\nInteger Overflow occurs if:\n    balances[thebank] = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    thebank = 0\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minimum_payment = 69722843986276191112704802276904042686523943500539225692285358676886601247599"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x99925CC9a57f5E473Ff22314CFE0627A0bfcceb4.txt:167:37: Warning: Integer Underflow.\n            balances[msg.sender] += msg.value - deposit_fee\nInteger Underflow occurs if:\n    deposit_fee = 1\n    thebank = 0\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minimum_payment = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x99925CC9a57f5E473Ff22314CFE0627A0bfcceb4.txt:333:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(thebank)"
+   ], 
+   [
+    "./restContracts/0x99925CC9a57f5E473Ff22314CFE0627A0bfcceb4.txt:231:14: Warning: Transaction-Ordering Dependency.\n        if (!msg.sender.send(withdraw_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.9"
+}

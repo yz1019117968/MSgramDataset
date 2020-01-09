@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x748f9a0ac36b123c7e4f687f7737f759628c4392.txt:89:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    totalSupply = 1\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owners[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x748f9a0ac36b123c7e4f687f7737f759628c4392.txt:565:16: Warning: Integer Overflow.\n            if(transactions[i].amount\nInteger Overflow occurs if:\n    lastMint[_owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    transactions[i].blockNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[_address] = 255\n    enabledMint = 255", 
+   "./uniqueContractSourceCode/0x748f9a0ac36b123c7e4f687f7737f759628c4392.txt:567:51: Warning: Integer Overflow.\n                balanceToMint = balanceToMint.add(transactions[i].amount\nInteger Overflow occurs if:\n    transactions[i].blockNumber = 57896044618658097711785492504343953926624358508854002697458704658307112501248\n    lastMint[_owner] = 4722366482869645213697\n    transactions[i].blockNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    mintPerBlock = 0\n    transactions[i].amount = 1\n    transactions[i].amount = 0\n    members[_address] = 255\n    enabledMint = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x748f9a0ac36b123c7e4f687f7737f759628c4392.txt:555:34: Warning: Integer Underflow.\n        uint256 balanceToMint = (block.number - lastMint[_address]\nInteger Underflow occurs if:\n    lastMint[_address] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    allowed[_from][msg.sender] = 0\n    members[_address] = 255\n    enabledMint = 255", 
+   "./uniqueContractSourceCode/0x748f9a0ac36b123c7e4f687f7737f759628c4392.txt:559:22: Warning: Integer Underflow.\n        for(uint i = totalTransactions - 1\nInteger Underflow occurs if:\n    allowed[_from][msg.sender] = 0\n    totalTransactions = 0\n    lastMint[_address] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[_address] = 255\n    enabledMint = 255", 
+   "./uniqueContractSourceCode/0x748f9a0ac36b123c7e4f687f7737f759628c4392.txt:559:53: Warning: Integer Underflow.\n        for(uint i = totalTransactions - 1; i >= 0; i--\nInteger Underflow occurs if:\n    lastMint[_owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    mintPerBlock = 0\n    transactions[i].blockNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalTransactions = 1\n    transactions[i].amount = 0\n    members[_address] = 255\n    enabledMint = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.3"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x354c68f9d5db6e88d7da10477792cac301a1f603.txt:243:3: Warning: Integer Underflow.\n  function getSaleData(uint256 timestamp) constant returns (uint256[3]) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.3"
+}

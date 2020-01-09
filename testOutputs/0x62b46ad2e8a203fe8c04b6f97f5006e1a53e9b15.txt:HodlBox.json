@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x62b46ad2e8a203fe8c04b6f97f5006e1a53e9b15.txt:51:5: Warning: Integer Overflow.\n    hodling += msg.value\nInteger Overflow occurs if:\n    hodling = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x62b46ad2e8a203fe8c04b6f97f5006e1a53e9b15.txt:93:21: Warning: Integer Underflow.\n    var hodlCount = hodlTillBlock - block.number\nInteger Underflow occurs if:\n    hodlTillBlock = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.4"
+}

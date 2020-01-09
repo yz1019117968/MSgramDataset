@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2d66e75ad68c4a4f24eafca690ee3b1e6e0ffea3.txt:457:3: Warning: Integer Underflow.\n  string public symbol = \"RBC\"", 
+   "./uniqueContractSourceCode/0x2d66e75ad68c4a4f24eafca690ee3b1e6e0ffea3.txt:455:3: Warning: Integer Underflow.\n  string public name = \"RBCToken\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.4"
+}

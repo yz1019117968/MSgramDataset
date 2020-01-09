@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9e0da7575f66f13714b75e106fc9b1cfe9662635.txt:325:5: Warning: Transaction-Ordering Dependency.\n    presaleAddressAmountHolder.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0x9e0da7575f66f13714b75e106fc9b1cfe9662635.txt:307:5: Warning: Transaction-Ordering Dependency.\n    investor.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

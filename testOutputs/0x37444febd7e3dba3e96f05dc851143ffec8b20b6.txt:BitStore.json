@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x37444febd7e3dba3e96f05dc851143ffec8b20b6.txt:417:1: Warning: Integer Overflow.\nbalanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x37444febd7e3dba3e96f05dc851143ffec8b20b6.txt:419:1: Warning: Integer Overflow.\ntotalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x37444febd7e3dba3e96f05dc851143ffec8b20b6.txt:255:1: Warning: Integer Overflow.\nfunction approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x37444febd7e3dba3e96f05dc851143ffec8b20b6.txt:49:1: Warning: Integer Underflow.\nstring public symbol", 
+   "./uniqueContractSourceCode/0x37444febd7e3dba3e96f05dc851143ffec8b20b6.txt:47:1: Warning: Integer Underflow.\nstring public name", 
+   "./uniqueContractSourceCode/0x37444febd7e3dba3e96f05dc851143ffec8b20b6.txt:295:1: Warning: Integer Underflow.\ntotalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x37444febd7e3dba3e96f05dc851143ffec8b20b6.txt:331:1: Warning: Integer Underflow.\ntotalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.6"
+}

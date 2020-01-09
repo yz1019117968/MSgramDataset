@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x188eaed79dd3a4b3c0a745f99beacd0860ebb084.txt:255:3: Warning: Integer Overflow.\n  function temporaryEscapeHatch(address to, uint256 value, bytes data) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x188eaed79dd3a4b3c0a745f99beacd0860ebb084.txt:197:3: Warning: Integer Overflow.\n  function doDistributionRange(uint256 start, address[] contributors,\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contributors = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x188eaed79dd3a4b3c0a745f99beacd0860ebb084.txt:141:33: Warning: Integer Underflow.\n      uint256 tokensRemaining = actualTotalTokens - _tokensTransferred\nInteger Underflow occurs if:\n    state = 2923003274661805836407369665432566039311865085952\n    tokensTransferred = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    expectedTotalTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    actualTotalTokens = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.4"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc2cb0401d640a150a74d92c9b1814974bede8d87.txt:1007:5: Warning: Integer Overflow.\n    function buyAlt(address to, uint etherAmount, string _txHash) onlyRobot {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _txHash = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.0"
+}

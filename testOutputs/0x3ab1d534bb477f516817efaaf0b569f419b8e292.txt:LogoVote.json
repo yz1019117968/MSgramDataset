@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3ab1d534bb477f516817efaaf0b569f419b8e292.txt:473:2: Warning: Integer Overflow.\n\tLogo[] public logos", 
+   "./uniqueContractSourceCode/0x3ab1d534bb477f516817efaaf0b569f419b8e292.txt:551:2: Warning: Integer Overflow.\n\tfunction registLogo(address _owner, address _author, string _metadatUrl) \r\n\t^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "36.1"
+}

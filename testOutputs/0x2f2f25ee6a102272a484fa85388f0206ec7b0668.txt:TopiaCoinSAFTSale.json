@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:435:26: Warning: Integer Overflow.\n\t\tbool forwardPayment = (p.status\nInteger Overflow occurs if:\n    isFinalized = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:535:25: Warning: Integer Overflow.\n\t\treturn (payment.from, payment.paymentAmount\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:535:48: Warning: Integer Overflow.\n\t\treturn (payment.from, payment.paymentAmount, payment.date\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:445:3: Warning: Integer Overflow.\n\t\tp.paymentAmount\nInteger Overflow occurs if:\n    isFinalized = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:379:3: Warning: Integer Overflow.\n\t\tp.date\nInteger Overflow occurs if:\n    owner = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:329:3: Warning: Integer Overflow.\n\t\tp.date\nInteger Overflow occurs if:\n    owner = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:377:3: Warning: Integer Overflow.\n\t\tp.paymentHash\nInteger Overflow occurs if:\n    owner = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:381:3: Warning: Integer Overflow.\n\t\tp.status\nInteger Overflow occurs if:\n    owner = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:535:83: Warning: Integer Overflow.\n\t\treturn (payment.from, payment.paymentAmount, payment.date, payment.paymentHash, payment.status\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:443:3: Warning: Integer Overflow.\n\t\tp.date\nInteger Overflow occurs if:\n    isFinalized = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:447:3: Warning: Integer Overflow.\n\t\tp.status\nInteger Overflow occurs if:\n    isFinalized = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:535:62: Warning: Integer Overflow.\n\t\treturn (payment.from, payment.paymentAmount, payment.date, payment.paymentHash\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:327:3: Warning: Integer Overflow.\n\t\tp.paymentHash\nInteger Overflow occurs if:\n    owner = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x2f2f25ee6a102272a484fa85388f0206ec7b0668.txt:331:3: Warning: Integer Overflow.\n\t\tp.status\nInteger Overflow occurs if:\n    owner = 0\n    saleStarted = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.1"
+}

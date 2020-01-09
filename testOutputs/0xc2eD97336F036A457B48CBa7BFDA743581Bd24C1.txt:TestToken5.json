@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc2eD97336F036A457B48CBa7BFDA743581Bd24C1.txt:9:5: Warning: Integer Underflow.\n    string public name = \"TestToken5\"", 
+   "./restContracts/0xc2eD97336F036A457B48CBa7BFDA743581Bd24C1.txt:11:5: Warning: Integer Underflow.\n    string public symbol = \"TT5\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.1"
+}

@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5adc961d6ac3f7062d2ea45fefb8d8167d44b190.txt:671:9: Warning: Integer Overflow.\n        disbursements[vestor][index]\nInteger Overflow occurs if:\n    index = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    disbursements[vestor].length = 14474011154664524427946373126085988481658748083205070504932198000989141204993\n    timestamp = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5adc961d6ac3f7062d2ea45fefb8d8167d44b190.txt:571:1: Warning: Integer Overflow.\ncontract DisbursementHandler is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    timestamp = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5adc961d6ac3f7062d2ea45fefb8d8167d44b190.txt:727:53: Warning: Integer Overflow.\n                maxTokens = SafeMath.add(maxTokens, temp[i].tokens", 
+   "./uniqueContractSourceCode/0x5adc961d6ac3f7062d2ea45fefb8d8167d44b190.txt:635:9: Warning: Integer Overflow.\n        disbursements[vestor].push(Disbursement(timestamp, tokens))\nInteger Overflow occurs if:\n    timestamp = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5adc961d6ac3f7062d2ea45fefb8d8167d44b190.txt:727:53: Warning: Integer Overflow.\n                maxTokens = SafeMath.add(maxTokens, temp[i]", 
+   "./uniqueContractSourceCode/0x5adc961d6ac3f7062d2ea45fefb8d8167d44b190.txt:595:5: Warning: Integer Overflow.\n    mapping(address => Disbursement[]) public disbursements", 
+   "./uniqueContractSourceCode/0x5adc961d6ac3f7062d2ea45fefb8d8167d44b190.txt:725:35: Warning: Integer Overflow.\n            if (block.timestamp > temp[i]"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.7"
+}

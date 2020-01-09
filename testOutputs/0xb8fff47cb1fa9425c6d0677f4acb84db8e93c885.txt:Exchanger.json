@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8fff47cb1fa9425c6d0677f4acb84db8e93c885.txt:119:53: Warning: Integer Underflow.\n    usdt.transfer(msg.sender, _amountInDollars.mul(((10 ** 6) - feeUSDT\nInteger Underflow occurs if:\n    feeUSDT = 1000192", 
+   "./restContracts/0xb8fff47cb1fa9425c6d0677f4acb84db8e93c885.txt:105:52: Warning: Integer Underflow.\n    dai.transfer(msg.sender, _amountInDollars.mul(((10 ** 18) - feeDAI\nInteger Underflow occurs if:\n    feeDAI = 1000000000000000001"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.6"
+}

@@ -1,0 +1,40 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1749:17: Warning: Callstack Depth Attack Vulnerability.\n      success = _transaction.mediator.call.gas(gasLimitForMediatorCall)(bytes4(keccak256(\"confirmTransactionFee(uint256)\")), _transaction.amount)", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1773:17: Warning: Callstack Depth Attack Vulnerability.\n      success = _transaction.mediator.call.gas(gasLimitForMediatorCall)(bytes4(keccak256(\"refundTransactionAfterDisputeFee(uint256)\")), _transaction.amount)", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1769:17: Warning: Callstack Depth Attack Vulnerability.\n      success = _transaction.mediator.call.gas(gasLimitForMediatorCall)(bytes4(keccak256(\"refundTransactionAfterExpiryFee(uint256)\")), _transaction.amount)", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1757:17: Warning: Callstack Depth Attack Vulnerability.\n      success = _transaction.mediator.call.gas(gasLimitForMediatorCall)(bytes4(keccak256(\"confirmTransactionAfterDisputeFee(uint256)\")), _transaction.amount)", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1691:17: Warning: Callstack Depth Attack Vulnerability.\n      success = _transaction.policy.call.gas(gasLimitForExpiryCall)(bytes4(keccak256(\"fulfillmentExpiry()\")))", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1765:17: Warning: Callstack Depth Attack Vulnerability.\n      success = _transaction.mediator.call.gas(gasLimitForMediatorCall)(bytes4(keccak256(\"refundTransactionFee(uint256)\")), _transaction.amount)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1477:28: Warning: Integer Overflow.\n    uint256 sellerAmount = _transaction.amount\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1305:9: Warning: Integer Overflow.\n    if (_transaction.mediator\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1865:20: Warning: Integer Overflow.\n    return now.sub(_transaction.stateTime\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1473:27: Warning: Integer Overflow.\n    uint256 buyerAmount = _transaction.amount\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1317:9: Warning: Integer Overflow.\n    if (_transaction.mediator\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1961:5: Warning: Integer Overflow.\n    _transaction.state\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1687:17: Warning: Integer Overflow.\n      success = _transaction.policy\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1691:17: Warning: Integer Overflow.\n      success = _transaction.policy\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1695:17: Warning: Integer Overflow.\n      success = _transaction.policy\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1963:5: Warning: Integer Overflow.\n    _transaction.stateTime\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1803:25: Warning: Integer Overflow.\n      if (mediatorFee > _transaction.amount\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1371:84: Warning: Integer Overflow.\n    _completeTransaction(_id, _transaction, TransactionState.ConfirmedAfterExpiry, _transaction.seller\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1665:38: Warning: Integer Overflow.\n    _transferFromEscrow(_transferTo, _transaction.amount\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1753:137: Warning: Integer Overflow.\n      success = _transaction.mediator.call.gas(gasLimitForMediatorCall)(bytes4(keccak256(\"confirmTransactionAfterExpiryFee(uint256)\")), _transaction.amount\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1553:5: Warning: Integer Overflow.\n    TransactionSettledByMediator({\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1753:17: Warning: Integer Overflow.\n      success = _transaction.mediator\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1699:17: Warning: Integer Overflow.\n      success = _transaction.mediator\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1321:75: Warning: Integer Overflow.\n      _completeTransaction(_id, _transaction, TransactionState.Confirmed, _transaction.seller\nInteger Overflow occurs if:\n    globalTransactionId = 1", 
+   "./restContracts/0xbc86727e770de68b1060c91f6bb6945c73e10388.txt:1733:9: Warning: Integer Overflow.\n    if (_transaction.mediator\nInteger Overflow occurs if:\n    globalTransactionId = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.0"
+}

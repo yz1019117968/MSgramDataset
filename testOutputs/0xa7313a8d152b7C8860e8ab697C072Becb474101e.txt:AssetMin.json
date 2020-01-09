@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa7313a8d152b7C8860e8ab697C072Becb474101e.txt:245:5: Warning: Integer Overflow.\n    function transferWithReference(address _to, uint _value, string _reference) returns(bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa7313a8d152b7C8860e8ab697C072Becb474101e.txt:273:5: Warning: Integer Overflow.\n    function transferToICAPWithReference(bytes32 _icap, uint _value, string _reference) returns(bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa7313a8d152b7C8860e8ab697C072Becb474101e.txt:185:5: Warning: Integer Overflow.\n    function setName(string _name) returns(bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa7313a8d152b7C8860e8ab697C072Becb474101e.txt:161:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.2"
+}

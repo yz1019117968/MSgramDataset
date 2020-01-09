@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9D8B33f8719470478DBD48711d004a0736d86956.txt:1243:5: Warning: Integer Overflow.\n    function takeOwnershipMultiple(uint256[] _deedIds) public whenNotPaused {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _deedIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9D8B33f8719470478DBD48711d004a0736d86956.txt:1113:5: Warning: Integer Overflow.\n    function approveMultiple(address _to, uint256[] _deedIds) public whenNotPaused {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _deedIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9D8B33f8719470478DBD48711d004a0736d86956.txt:549:5: Warning: Integer Overflow.\n    uint256[] public identifiers", 
+   "./restContracts/0x9D8B33f8719470478DBD48711d004a0736d86956.txt:1349:34: Warning: Integer Overflow.\n            uint256 identifier = identifiers[deedNumber]\nInteger Overflow occurs if:\n    identifiers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _index = 0\n    _owner = 0\n    identifierToOwner[identifier] = 1461501637330902918203684832716283019655932542975\n    ownershipDeedCount[_owner] = 1", 
+   "./restContracts/0x9D8B33f8719470478DBD48711d004a0736d86956.txt:1179:5: Warning: Integer Overflow.\n    function transferMultiple(address _to, uint256[] _deedIds) public whenNotPaused {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _deedIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9D8B33f8719470478DBD48711d004a0736d86956.txt:1003:9: Warning: Integer Overflow.\n        ownershipDeedCount[_to]++\nInteger Overflow occurs if:\n    ownershipDeedCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    identifierToOwner[_deedId] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9D8B33f8719470478DBD48711d004a0736d86956.txt:1019:13: Warning: Integer Underflow.\n            ownershipDeedCount[_from]--\nInteger Underflow occurs if:\n    ownershipDeedCount[_from] = 0\n    identifierToOwner[_deedId] = 1461501637330902918203684832716283019655932542975\n    _to = 1461501637330902918203684832716283019655932542975\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.1"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:323:9: Warning: Integer Overflow.\n        balanceOf[msg.sender] += _value\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 1\n    owner = 0\n    paused = 0", 
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:325:9: Warning: Integer Overflow.\n        totalSupply += _value\nInteger Overflow occurs if:\n    totalSupply = 1\n    owner = 0\n    paused = 0", 
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:491:9: Warning: Integer Overflow.\n        freezeOf[_target] += _value\nInteger Overflow occurs if:\n    freezeOf[_target] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    _value = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balanceOf[_target] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    owner = 0\n    paused = 0", 
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:255:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) isRunning\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:509:3: Warning: Integer Overflow.\n\t\tbalanceOf[_target]+=  _value\nInteger Overflow occurs if:\n    _value = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balanceOf[_target] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    freezeOf[_target] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    owner = 0\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:365:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0", 
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:49:5: Warning: Integer Underflow.\n    string public symbol = \"GLK\"", 
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:47:5: Warning: Integer Underflow.\n    string public name = \"GoodLuck\"", 
+   "./uniqueContractSourceCode/0x284ff8b2acda5bbf3e7aa72dad0894ea716b5ffd.txt:295:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.2"
+}

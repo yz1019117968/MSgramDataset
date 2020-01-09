@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x18dfd8c468ed83397C0E1caDAe01E1e65E86d275.txt:193:17: Warning: Integer Overflow.\n    assert((z = x + y\nInteger Overflow occurs if:\n    totalSupply = 1\n    picos = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerA = 0", 
+   "./uniqueContractSourceCode/0x18dfd8c468ed83397C0E1caDAe01E1e65E86d275.txt:647:7: Warning: Integer Overflow.\n      contributors++\nInteger Overflow occurs if:\n    ownerA = 0\n    iTokensOwnedM[ownerA] = 0\n    contributors = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    saleInProgressB = 255\n    iTokensOwnedM[dst] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x18dfd8c468ed83397C0E1caDAe01E1e65E86d275.txt:723:23: Warning: Integer Underflow.\n    tokensAvailable = totalSupply - founderTokensAllocated\nInteger Underflow occurs if:\n    totalSupply = 0\n    founderTokensAllocated = 1\n    ownerA = 0", 
+   "./uniqueContractSourceCode/0x18dfd8c468ed83397C0E1caDAe01E1e65E86d275.txt:723:23: Warning: Integer Underflow.\n    tokensAvailable = totalSupply - founderTokensAllocated - foundationTokensAllocated\nInteger Underflow occurs if:\n    foundationTokensAllocated = 1\n    totalSupply = 0\n    founderTokensAllocated = 0\n    ownerA = 0", 
+   "./uniqueContractSourceCode/0x18dfd8c468ed83397C0E1caDAe01E1e65E86d275.txt:723:23: Warning: Integer Underflow.\n    tokensAvailable = totalSupply - founderTokensAllocated - foundationTokensAllocated - tokensIssued\nInteger Underflow occurs if:\n    tokensIssued = 1\n    totalSupply = 0\n    foundationTokensAllocated = 0\n    founderTokensAllocated = 0\n    ownerA = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.1"
+}

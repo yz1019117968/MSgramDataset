@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaa63c8683647ef91b3fdab4b4989ee9588da297b.txt:407:5: Warning: Integer Overflow.\n    mapping(address=>DSProxy[]) public proxies", 
+   "./restContracts/0xaa63c8683647ef91b3fdab4b4989ee9588da297b.txt:405:1: Warning: Integer Overflow.\ncontract ProxyRegistry {\r\n^\nSpanning multiple lines.", 
+   "./restContracts/0xaa63c8683647ef91b3fdab4b4989ee9588da297b.txt:443:9: Warning: Integer Overflow.\n        proxies[owner].push(proxy)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.9"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x03a2d646d36ffc371e04e840604c5ba46393dd26.txt:665:66: Warning: Integer Overflow.\n\t\treturn ((t0special + periodAt(blockTimestamp)) * precision) / (t0special + periods\nInteger Overflow occurs if:\n    t0special = 1\n    periods = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x03a2d646d36ffc371e04e840604c5ba46393dd26.txt:613:2: Warning: Integer Overflow.\n\tfunction bulkDepositTo(uint256[] bits) onlyOwner {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bits = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x03a2d646d36ffc371e04e840604c5ba46393dd26.txt:601:6: Warning: Integer Overflow.\n\t    deposited[beneficiary] += tokens\nInteger Overflow occurs if:\n    deposited[beneficiary] = 1\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    nullified = 0\n    owner = 0\n    startBlockTimestamp = 0", 
+   "./uniqueContractSourceCode/0x03a2d646d36ffc371e04e840604c5ba46393dd26.txt:803:2: Warning: Integer Overflow.\n\tfunction bulkWithdraw(address[] addrs) notNullified {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x03a2d646d36ffc371e04e840604c5ba46393dd26.txt:825:2: Warning: Integer Overflow.\n\tfunction multiMint(uint nonce, uint256[] bits) onlyOwner preLock {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bits = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x03a2d646d36ffc371e04e840604c5ba46393dd26.txt:603:3: Warning: Integer Overflow.\n\t\ttotalfv += tokens\nInteger Overflow occurs if:\n    totalfv = 1\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    nullified = 0\n    owner = 0\n    startBlockTimestamp = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.9"
+}

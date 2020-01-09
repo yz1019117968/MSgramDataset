@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:387:69: Warning: Integer Overflow.\n                require((balances[msg.sender].balance - tokens) >= (balances[msg.sender].airDropQty\nInteger Overflow occurs if:\n    balances[msg.sender].balance = 0\n    balances[msg.sender].airDropQty = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 1461501637330902918203684832716283019655932542975\n    _whitelistAll = 0\n    tokens = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:431:40: Warning: Integer Overflow.\n        balances[msg.sender].balance = balances[msg.sender].balance\nInteger Overflow occurs if:\n    balances[msg.sender].balance = 0\n    _whitelistAll = 255\n    tokens = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:433:32: Warning: Integer Overflow.\n        balances[to].balance = balances[to].balance\nInteger Overflow occurs if:\n    balances[msg.sender].balance = 0\n    _whitelistAll = 255\n    tokens = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:437:39: Warning: Integer Overflow.\n            balances[to].airDropQty = balances[to].airDropQty\nInteger Overflow occurs if:\n    tokens = 0\n    balances[to].balance = 0\n    owner = 0\n    _whitelistAll = 255\n    balances[msg.sender].balance = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:269:31: Warning: Integer Overflow.\n        return _totalSupply - balances[owner].balance", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:329:16: Warning: Integer Overflow.\n        return balances[tokenOwner].balance", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:505:5: Warning: Integer Overflow.\n    function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:385:76: Warning: Integer Overflow.\n            if (msg.sender != owner && block.timestamp < dec_31_2018_ts && balances[msg.sender].airDropQty\nInteger Overflow occurs if:\n    balances[msg.sender].balance = 0\n    owner = 1461501637330902918203684832716283019655932542975\n    _whitelistAll = 0\n    tokens = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:59:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    tokens = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[to].balance = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _whitelistAll = 255\n    balances[msg.sender].balance = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:417:68: Warning: Integer Overflow.\n                require((balances[msg.sender].balance - tokens) >= balances[msg.sender].airDropQty\nInteger Overflow occurs if:\n    balances[msg.sender].balance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[msg.sender].airDropQty = 4\n    tokens = 1\n    owner = 1461501637330902918203684832716283019655932542975\n    _whitelistAll = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:415:76: Warning: Integer Overflow.\n            if (msg.sender != owner && block.timestamp < jun_30_2019_ts && balances[msg.sender].airDropQty\nInteger Overflow occurs if:\n    balances[msg.sender].balance = 0\n    owner = 1461501637330902918203684832716283019655932542975\n    _whitelistAll = 0\n    tokens = 0\n    to = 1461501637330902918203684832716283019655932542975\n    balances[msg.sender].airDropQty = 0", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:433:9: Warning: Integer Overflow.\n        balances[to].balance\nInteger Overflow occurs if:\n    tokens = 0\n    balances[to].balance = 0\n    _whitelistAll = 255\n    balances[msg.sender].balance = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:431:9: Warning: Integer Overflow.\n        balances[msg.sender].balance\nInteger Overflow occurs if:\n    balances[msg.sender].balance = 0\n    _whitelistAll = 255\n    tokens = 0\n    to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:285:3: Warning: Integer Overflow.\n\t\tbalances[to].airDropQty\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:269:16: Warning: Integer Underflow.\n        return _totalSupply - balances[owner].balance\nInteger Underflow occurs if:\n    _totalSupply = 0\n    balances[owner].balance = 1", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:191:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xa3db848dd84beb0da60fec0005ad40272cc75562.txt:189:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.7"
+}

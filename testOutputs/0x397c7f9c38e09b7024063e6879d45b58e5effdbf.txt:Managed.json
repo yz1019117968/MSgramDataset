@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Re-Entrancy Vulnerability.\n    return _to.call.value(_value).gas(_gas)(_code)"
+  ], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Integer Overflow.\n    return _to.call.value(_value).gas(_gas)(_code)\nInteger Overflow occurs if:\n    manager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Integer Underflow.\n    return _to.call.value(_value).gas(_gas)(_code)\nInteger Underflow occurs if:\n    manager = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:59:5: Warning: Transaction-Ordering Dependency.\n    manager.transfer(address(this).balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x397c7f9c38e09b7024063e6879d45b58e5effdbf.txt:85:12: Warning: Transaction-Ordering Dependency.\n    return _to.call.value(_value).gas(_gas)(_code)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

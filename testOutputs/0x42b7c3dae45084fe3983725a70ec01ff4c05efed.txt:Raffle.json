@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:2817:3: Warning: Integer Overflow.\n\t\tfunds += msg.value\nInteger Overflow occurs if:\n    funds = 1\n    owner = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:251:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:2613:28: Warning: Integer Overflow.\n\t\t\taddress playerAddress = players[i]\nInteger Overflow occurs if:\n    currentRoundIndex = 1\n    forceAbortRound = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    running = 255\n    oraclizeGasPrice = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 1461501637330902918203684832716283019655932542975\n    roundEntries[currentRoundIndex][playerAddress] = 0", 
+   "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:2507:21: Warning: Integer Overflow.\n\t\treturn (funds / ((oraclizeRoundGasFee + oraclizeWinnerGasFee\nInteger Overflow occurs if:\n    oraclizeRoundGasFee = 1\n    oraclizeWinnerGasFee = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:2655:29: Warning: Integer Overflow.\n\t\t\t\taddress playerAddress = players[i]\nInteger Overflow occurs if:\n    owner = 1461501637330902918203684832716283019655932542975\n    roundEntries[j][playerAddress] = 0", 
+   "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:3009:2: Warning: Integer Overflow.\n\tfunction __callback(bytes32 _queryId, string _result, bytes _proof) public\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:2095:1: Warning: Integer Underflow.\ncontract Raffle is usingOraclize\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    OAR = 0\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:2267:3: Warning: Transaction-Ordering Dependency.\n\t\tselfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x42b7c3dae45084fe3983725a70ec01ff4c05efed.txt:2665:6: Warning: Transaction-Ordering Dependency.\n\t\t\t\t\tplayerAddress.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "34.3"
+}

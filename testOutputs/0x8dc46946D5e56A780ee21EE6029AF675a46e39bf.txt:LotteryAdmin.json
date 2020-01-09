@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x8dc46946D5e56A780ee21EE6029AF675a46e39bf.txt:111:9: Warning: Re-Entrancy Vulnerability.\n        EthereumLottery(ethereumLottery).initLottery.value(_jackpot)(\r\n        ^\nSpanning multiple lines."
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8dc46946D5e56A780ee21EE6029AF675a46e39bf.txt:165:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0x8dc46946D5e56A780ee21EE6029AF675a46e39bf.txt:121:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(_value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.3"
+}

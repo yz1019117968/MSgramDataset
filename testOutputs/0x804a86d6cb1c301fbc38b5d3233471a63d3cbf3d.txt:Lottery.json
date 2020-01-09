@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x804a86d6cb1c301fbc38b5d3233471a63d3cbf3d.txt:71:17: Warning: Integer Underflow.\n                player_count -=1\nInteger Underflow occurs if:\n    ante = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    player_count = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x804a86d6cb1c301fbc38b5d3233471a63d3cbf3d.txt:75:13: Warning: Transaction-Ordering Dependency.\n            gamblers[1].transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0x804a86d6cb1c301fbc38b5d3233471a63d3cbf3d.txt:69:17: Warning: Transaction-Ordering Dependency.\n                gamblers[player_count].transfer(ante)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.4"
+}

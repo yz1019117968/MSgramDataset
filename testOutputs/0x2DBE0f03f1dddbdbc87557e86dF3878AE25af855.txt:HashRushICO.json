@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2DBE0f03f1dddbdbc87557e86dF3878AE25af855.txt:573:9: Warning: Integer Overflow.\n        totalSupply += addTokens\nInteger Overflow occurs if:\n    totalSupply = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2DBE0f03f1dddbdbc87557e86dF3878AE25af855.txt:601:49: Warning: Integer Overflow.\n        if ((balance[msg.sender] >= _value) && (balance[_to] + _value\nInteger Overflow occurs if:\n    balance[_to] = 65133050195990379209015234167281133095147684435423372658451573861256282502524\n    balance[msg.sender] = 68751552984656754570584411003563399145763693172169129330728274976256198443008", 
+   "./uniqueContractSourceCode/0x2DBE0f03f1dddbdbc87557e86dF3878AE25af855.txt:569:9: Warning: Integer Overflow.\n        balance[target] += addTokens\nInteger Overflow occurs if:\n    balance[target] = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2DBE0f03f1dddbdbc87557e86dF3878AE25af855.txt:649:86: Warning: Integer Overflow.\n        if ((balance[_from] >= _value) && (allowed[_from][msg.sender] >= _value) && (balance[_to] + _value\nInteger Overflow occurs if:\n    balance[_to] = 108034400225318408420380440996632903434924151874951478569973452415569685626161\n    allowed[_from][msg.sender] = 31582706044363783228869092695952588749798531615273407166948120792925774349621\n    balance[_from] = 31582706044363783228869092695952588749798531615273407166948120792925774349621"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2DBE0f03f1dddbdbc87557e86dF3878AE25af855.txt:381:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x2DBE0f03f1dddbdbc87557e86dF3878AE25af855.txt:385:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.9"
+}

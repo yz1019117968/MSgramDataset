@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x02f63293d2028a6de37f1d9545e66246a0a45911.txt:69:9: Warning: Integer Overflow.\n        DragonsBurned += _amount\nInteger Overflow occurs if:\n    DragonsBurned = 1\n    dragon = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.5"
+}

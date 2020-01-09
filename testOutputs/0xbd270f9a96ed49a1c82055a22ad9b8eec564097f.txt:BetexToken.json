@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbd270f9a96ed49a1c82055a22ad9b8eec564097f.txt:821:5: Warning: Integer Overflow.\n    address[] public holders", 
+   "./restContracts/0xbd270f9a96ed49a1c82055a22ad9b8eec564097f.txt:85:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    allowed[msg.sender][_spender] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.5"
+}

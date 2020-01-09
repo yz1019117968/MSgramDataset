@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:115:5: Warning: Integer Overflow.\n    function isPlatinumLevel(address user, string hashedID) public constant returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    hashedID = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:179:5: Warning: Integer Overflow.\n    function setBudget(address account, string campaign) public onlyOperator returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    campaign = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:165:5: Warning: Integer Overflow.\n    function rejectCampaign(address account, string campaign) public onlyOperator returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    campaign = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:123:5: Warning: Integer Overflow.\n    function setPermanentPlatinumLevel(address user, string hashedID) public onlyOwner returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    hashedID = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:137:5: Warning: Integer Overflow.\n    function activateCampaign(string campaign, uint256 budget) public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    campaign = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:9:5: Warning: Integer Underflow.\n    string public name = \"Shping Coin\"", 
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:11:5: Warning: Integer Underflow.\n    string public symbol = \"SHPING\"", 
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:277:9: Warning: Integer Underflow.\n        balances[msg.sender] -= value\nInteger Underflow occurs if:\n    value = 34854167250581871405066246989256871414772772338490027241114662174608296847733\n    balances[to] = 57346295533576563428689019345578713683075960063462234266750547215274860937281\n    balances[msg.sender] = 34854167250581871405066246989256871414772772338490027241114662174608296847732\n    budgets[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x7c84e62859d0715eb77d1b1c4154ecd6abb21bec.txt:301:9: Warning: Integer Underflow.\n        balances[from] -= value\nInteger Underflow occurs if:\n    value = 29926322771044712166809470747467567368394074773505344909335292992190962961235\n    balances[to] = 54864086230613960579171762181494912878126554077871588179455654170770622483027\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.6"
+}

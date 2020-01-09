@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x76914ca27f3c7422a14c22aaeafbbd05d3f3526b.txt:13:5: Warning: Integer Underflow.\n    string public name = \"DatBoi\"", 
+   "./uniqueContractSourceCode/0x76914ca27f3c7422a14c22aaeafbbd05d3f3526b.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"DATBOI\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.6"
+}

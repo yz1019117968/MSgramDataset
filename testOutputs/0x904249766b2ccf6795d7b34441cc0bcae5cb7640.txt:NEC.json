@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x904249766b2ccf6795d7b34441cc0bcae5cb7640.txt:1147:51: Warning: Integer Overflow.\n               Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 1180591620717411303423\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x904249766b2ccf6795d7b34441cc0bcae5cb7640.txt:1137:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    balances[_owner].length = 2\n    balances[_owner][0].fromBlock = 115792089233946202090177155034354530967392530831435920986640012447775178358784\n    parentSnapShotBlock = 170141183460469231731687286123698061309\n    controller = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x904249766b2ccf6795d7b34441cc0bcae5cb7640.txt:183:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.1"
+}

@@ -1,0 +1,43 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:973:35: Warning: Integer Overflow.\n            order.feesBaseOrCntr, order.feesRwrd\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:895:45: Warning: Integer Overflow.\n    return (order.status, order.reasonCode, order.executedBase", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:971:27: Warning: Integer Overflow.\n            order.status, order.reasonCode\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:761:5: Warning: Integer Overflow.\n    balanceCntrForClient[client] += amountCntr\nInteger Overflow occurs if:\n    balanceCntrForClient[client] = 89660649888868366171417216235708288031085258661234677303951427843448891257349", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:971:45: Warning: Integer Overflow.\n            order.status, order.reasonCode, order.executedBase\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:963:42: Warning: Integer Overflow.\n      if (order.status == Status.Open || order.status\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:871:65: Warning: Integer Overflow.\n            order.status, order.reasonCode, order.executedBase, order.executedCntr", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:871:27: Warning: Integer Overflow.\n            order.status, order.reasonCode", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:895:13: Warning: Integer Overflow.\n    return (order.status", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:971:13: Warning: Integer Overflow.\n            order.status\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:869:56: Warning: Integer Overflow.\n    return (order.client, order.price, order.sizeBase, order.terms", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:963:11: Warning: Integer Overflow.\n      if (order.status\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:897:35: Warning: Integer Overflow.\n            order.feesBaseOrCntr, order.feesRwrd", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:871:13: Warning: Integer Overflow.\n            order.status", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:897:13: Warning: Integer Overflow.\n            order.feesBaseOrCntr", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:969:51: Warning: Integer Overflow.\n    return (orderId, order.price, order.sizeBase, order.terms\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:873:35: Warning: Integer Overflow.\n            order.feesBaseOrCntr, order.feesRwrd", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:871:45: Warning: Integer Overflow.\n            order.status, order.reasonCode, order.executedBase", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:973:13: Warning: Integer Overflow.\n            order.feesBaseOrCntr\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:869:40: Warning: Integer Overflow.\n    return (order.client, order.price, order.sizeBase", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:873:13: Warning: Integer Overflow.\n            order.feesBaseOrCntr", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:895:27: Warning: Integer Overflow.\n    return (order.status, order.reasonCode", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:895:65: Warning: Integer Overflow.\n    return (order.status, order.reasonCode, order.executedBase, order.executedCntr", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:971:65: Warning: Integer Overflow.\n            order.status, order.reasonCode, order.executedBase, order.executedCntr\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:969:35: Warning: Integer Overflow.\n    return (orderId, order.price, order.sizeBase\nInteger Overflow occurs if:\n    minClosedOrderIdCutoff = 2\n    clientPreviousOrderIdBeforeOrderId[maybeLastOrderIdReturned] = 1\n    maybeLastOrderIdReturned = 340282366920938463463374607431768211455"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:741:83: Warning: Integer Underflow.\n    ClientPaymentEvent(client, ClientPaymentEventType.Transfer, BalanceType.Base, -int(amountBase)\nInteger Underflow occurs if:\n    amountBase = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceBaseForClient[client] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:845:83: Warning: Integer Underflow.\n    ClientPaymentEvent(client, ClientPaymentEventType.Transfer, BalanceType.Rwrd, -int(amountRwrd)\nInteger Underflow occurs if:\n    amountRwrd = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceRwrdForClient[client] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8216deae8744a0286c8c53d8f237b65f661644e3.txt:789:83: Warning: Integer Underflow.\n    ClientPaymentEvent(client, ClientPaymentEventType.Withdraw, BalanceType.Cntr, -int(amountCntr)\nInteger Underflow occurs if:\n    amountCntr = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balanceCntrForClient[client] = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "37.7"
+}

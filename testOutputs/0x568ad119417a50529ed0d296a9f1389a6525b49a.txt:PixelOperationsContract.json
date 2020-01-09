@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x568ad119417a50529ed0d296a9f1389a6525b49a.txt:115:3: Warning: Integer Overflow.\n\t\tpixelsOnSale[pxHash].isValue\nInteger Overflow occurs if:\n    pixelsOnSale[pxHash].blockPrice = 57896044618658097510918236971970169483889730790174956704453417772311367385087\n    pixelsOnSale[pxHash].isValue = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x568ad119417a50529ed0d296a9f1389a6525b49a.txt:135:3: Warning: Integer Overflow.\n\t\tpixelsOnSale[pxHash].isValue\nInteger Overflow occurs if:\n    pixelsOwned[pxHash] = 0", 
+   "./uniqueContractSourceCode/0x568ad119417a50529ed0d296a9f1389a6525b49a.txt:149:3: Warning: Integer Overflow.\n\t\tpixelsOnSale[pxHash].isValue\nInteger Overflow occurs if:\n    pixelsOnSale[pxHash].blockOwner = 0", 
+   "./uniqueContractSourceCode/0x568ad119417a50529ed0d296a9f1389a6525b49a.txt:133:3: Warning: Integer Overflow.\n\t\tpixelsOnSale[pxHash].blockOwner\nInteger Overflow occurs if:\n    pixelsOwned[pxHash] = 0", 
+   "./uniqueContractSourceCode/0x568ad119417a50529ed0d296a9f1389a6525b49a.txt:33:2: Warning: Integer Overflow.\n\tmapping(bytes32 => pixelBlock) public pixelsOnSale"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x568ad119417a50529ed0d296a9f1389a6525b49a.txt:73:22: Warning: Integer Underflow.\n\t\tuint256 pxCount = (bX-tX\nInteger Underflow occurs if:\n    bX = 0\n    tX = 1", 
+   "./uniqueContractSourceCode/0x568ad119417a50529ed0d296a9f1389a6525b49a.txt:73:32: Warning: Integer Underflow.\n\t\tuint256 pxCount = (bX-tX) * (bY-tY\nInteger Underflow occurs if:\n    bY = 0\n    tY = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.6"
+}

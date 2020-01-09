@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x038Da599A137f89f49b43cd0d561d5E159058b60.txt:251:5: Warning: Integer Overflow.\n    function multiPartyTransferFrom(address _from, address[] _toAddresses, uint256[] _amounts) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _toAddresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x038Da599A137f89f49b43cd0d561d5E159058b60.txt:213:5: Warning: Integer Overflow.\n    function multiPartyTransfer(address[] _toAddresses, uint256[] _amounts) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _toAddresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.0"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x9e7f9b0f29cAce376Ce86A636c749105BA9a9E0A.txt:795:7: Warning: Timestamp Dependency.\n      require(now > (start + (period * 1 days)))"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9e7f9b0f29cAce376Ce86A636c749105BA9a9E0A.txt:767:78: Warning: Integer Underflow.\n        uint restrictedTokens = issuedTokenSupply.mul(restrictedPercent).div(100 - restrictedPercent\nInteger Underflow occurs if:\n    restrictedPercent = 112\n    softcap = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9e7f9b0f29cAce376Ce86A636c749105BA9a9E0A.txt:785:7: Warning: Transaction-Ordering Dependency.\n      selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0x9e7f9b0f29cAce376Ce86A636c749105BA9a9E0A.txt:763:9: Warning: Transaction-Ordering Dependency.\n        multisig.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.9"
+}

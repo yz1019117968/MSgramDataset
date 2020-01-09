@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x29eb46a643bc4cbc9d189eafffdf53913df2eed3.txt:89:21: Warning: Integer Overflow.\n        assert((z = x + y\nInteger Overflow occurs if:\n    _balances[holder] = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endDateICO = 1\n    ico_contract = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x29eb46a643bc4cbc9d189eafffdf53913df2eed3.txt:7:5: Warning: Integer Underflow.\n    string  public  name = \"BMChain Token\"", 
+   "./uniqueContractSourceCode/0x29eb46a643bc4cbc9d189eafffdf53913df2eed3.txt:9:5: Warning: Integer Underflow.\n    string  public  symbol = \"BMT\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.2"
+}

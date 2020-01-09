@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x45d147c800d401350b24fc1cd5fbc98040b177c8.txt:57:39: Warning: Integer Overflow.\n    if(balances[msg.sender]>_value && balances[_to]+_value\nInteger Overflow occurs if:\n    balances[_to] = 59218951627437310386411044169781991233084313256747678792531810087490296886273\n    _value = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    balances[msg.sender] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    transferLock = 0", 
+   "./uniqueContractSourceCode/0x45d147c800d401350b24fc1cd5fbc98040b177c8.txt:79:71: Warning: Integer Overflow.\n    if(balances[_from]>_value && allowed[_from][msg.sender]>_value && balances[_to]+_value\nInteger Overflow occurs if:\n    balances[_to] = 59218951627437310386411044169781991233084313256747678792531810087490296886273\n    _value = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    allowed[_from][msg.sender] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    balances[_from] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    transferLock = 0", 
+   "./uniqueContractSourceCode/0x45d147c800d401350b24fc1cd5fbc98040b177c8.txt:245:5: Warning: Integer Overflow.\n    function buy(string _commit) payable{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _commit = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x45d147c800d401350b24fc1cd5fbc98040b177c8.txt:135:5: Warning: Integer Underflow.\n    string public version=\"0.0.1\"", 
+   "./uniqueContractSourceCode/0x45d147c800d401350b24fc1cd5fbc98040b177c8.txt:139:5: Warning: Integer Underflow.\n    mapping(address=>string) public commit", 
+   "./uniqueContractSourceCode/0x45d147c800d401350b24fc1cd5fbc98040b177c8.txt:133:5: Warning: Integer Underflow.\n    string public name =\"NinjaToken\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.8"
+}

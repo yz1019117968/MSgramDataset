@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:601:5: Warning: Integer Overflow.\n    function transferAndCallDelegated(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:303:5: Warning: Integer Overflow.\n    address[] public creatorsPoolAddrs", 
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:629:5: Warning: Integer Overflow.\n    function transferMultipleDelegated(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:519:5: Warning: Integer Overflow.\n    function transferAndCall(address _to, uint256 _value, bytes _data) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:359:16: Warning: Integer Overflow.\n        return balances[_owner] + lockedBalances[_owner]\nInteger Overflow occurs if:\n    balances[_owner] = 1\n    lockedBalances[_owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:575:5: Warning: Integer Overflow.\n    function transferDelegated(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _signature = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:479:5: Warning: Integer Overflow.\n    function transferMultiple(address[] _addrs, uint256[] _values) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x02f61fd266da6e8b102d4121f5ce7b992640cf98.txt:783:5: Warning: Integer Overflow.\n    function registerCreatorsPools(address[] _poolAddrs, uint256 _mintLimit) onlyOwner public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _poolAddrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.7"
+}

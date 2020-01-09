@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:813:3: Warning: Integer Overflow.\n  Milestone[] public milestones", 
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:1151:3: Warning: Integer Overflow.\n  address[] public investors", 
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:929:25: Warning: Integer Overflow.\n        var milestone = milestones[i]\nInteger Overflow occurs if:\n    milestones.length = 7\n    milestones[i].end = 1\n    milestones[i].start = 0\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    mainSaleEndDate = 1", 
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:927:47: Warning: Integer Overflow.\n      if (now >= milestones[i].start && now < milestones[i].end\nInteger Overflow occurs if:\n    milestones.length = 115792089237316195423570984634543488696558837605497246864089130975994398638079\n    milestones[i].start = 0\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    mainSaleEndDate = 1", 
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:931:34: Warning: Integer Overflow.\n        return (milestone.bonus, milestone.price\nInteger Overflow occurs if:\n    milestones.length = 7\n    milestones[i].end = 1\n    milestones[i].start = 0\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    mainSaleEndDate = 1", 
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:195:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    mainSaleTokenRaised = 1\n    tokensAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    mainSaleEndDate = 1\n    mainSaleStartDate = 0", 
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:927:47: Warning: Integer Overflow.\n      if (now >= milestones[i].start && now < milestones[i]\nInteger Overflow occurs if:\n    milestones.length = 115792089237316195423570984634543488696558837605497246864089130975994398638079\n    milestones[i].start = 0\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    mainSaleEndDate = 1", 
+   "./uniqueContractSourceCode/0x39db2ab26f405916f0020ca12baa95e56fadf599.txt:931:17: Warning: Integer Overflow.\n        return (milestone.bonus\nInteger Overflow occurs if:\n    milestones.length = 7\n    milestones[i].end = 1\n    milestones[i].start = 0\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    milestones[i].start = 1\n    mainSaleEndDate = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.0"
+}

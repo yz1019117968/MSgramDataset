@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5809df7d3bc8b26e148c60ce2998c911f248cca2.txt:3:1: Warning: Integer Overflow.\ncontract People {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x5809df7d3bc8b26e148c60ce2998c911f248cca2.txt:7:5: Warning: Integer Overflow.\n    Person[] public people", 
+   "./uniqueContractSourceCode/0x5809df7d3bc8b26e148c60ce2998c911f248cca2.txt:37:9: Warning: Integer Overflow.\n        people.push(newPerson)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.7"
+}

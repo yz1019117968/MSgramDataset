@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x793ae8c1b1a160bfc07bfb0d04f85eab1a71f4f2.txt:25:10: Warning: Callstack Depth Attack Vulnerability.\n\t        msg.sender.send(sendAmount)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x793ae8c1b1a160bfc07bfb0d04f85eab1a71f4f2.txt:23:31: Warning: Integer Underflow.\n\t    if(lastSent[msg.sender]<(block.number-blockLimit\nInteger Underflow occurs if:\n    blockLimit = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.4"
+}

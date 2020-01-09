@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1a4ccc393320c882fc3074de21455a054d59ccfa.txt:5:1: Warning: Integer Underflow.\ncontract TheImmortalsPhoto {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1a4ccc393320c882fc3074de21455a054d59ccfa.txt:9:2: Warning: Integer Underflow.\n\tstring public photoText", 
+   "./uniqueContractSourceCode/0x1a4ccc393320c882fc3074de21455a054d59ccfa.txt:7:2: Warning: Integer Underflow.\n\tstring public photoData"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "31.3"
+}

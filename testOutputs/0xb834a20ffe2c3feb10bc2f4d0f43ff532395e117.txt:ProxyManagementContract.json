@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb834a20ffe2c3feb10bc2f4d0f43ff532395e117.txt:15:1: Warning: Integer Overflow.\ncontract ProxyManagementContract{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    proxyList.push(_proxyAdress) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    curator = 0", 
+   "./restContracts/0xb834a20ffe2c3feb10bc2f4d0f43ff532395e117.txt:57:9: Warning: Integer Overflow.\n        proxyList.push(_proxyAdress)\nInteger Overflow occurs if:\n    proxyList.push(_proxyAdress) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    curator = 0", 
+   "./restContracts/0xb834a20ffe2c3feb10bc2f4d0f43ff532395e117.txt:29:5: Warning: Integer Overflow.\n    address[] public proxyList", 
+   "./restContracts/0xb834a20ffe2c3feb10bc2f4d0f43ff532395e117.txt:77:45: Warning: Integer Overflow.\n        address[] memory tempAddressArray = new address[](temAddressArrayLength)\nInteger Overflow occurs if:\n    proxyList.length = 0\n    approvedProxies[_proxyAddress] = 255\n    curator = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb834a20ffe2c3feb10bc2f4d0f43ff532395e117.txt:73:38: Warning: Integer Underflow.\n        uint temAddressArrayLength = proxyList.length - 1\nInteger Underflow occurs if:\n    proxyList.length = 0\n    approvedProxies[_proxyAddress] = 255\n    curator = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.2"
+}

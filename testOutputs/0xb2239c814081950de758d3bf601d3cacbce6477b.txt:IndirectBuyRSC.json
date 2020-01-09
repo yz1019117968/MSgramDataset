@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0xb2239c814081950de758d3bf601d3cacbce6477b.txt:31:9: Warning: Re-Entrancy Vulnerability.\n        abc.transfer(_receiver, abc.balanceOf(this))", 
+   "./restContracts/0xb2239c814081950de758d3bf601d3cacbce6477b.txt:29:9: Warning: Re-Entrancy Vulnerability.\n        abc.buy.value(this.balance)()", 
+   "./restContracts/0xb2239c814081950de758d3bf601d3cacbce6477b.txt:31:33: Warning: Re-Entrancy Vulnerability.\n        abc.transfer(_receiver, abc.balanceOf(this)"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.5"
+}

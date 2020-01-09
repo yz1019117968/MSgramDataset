@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x840278b27eef8019095f8c8198a373b57a8fe0e7.txt:307:3: Warning: Integer Underflow.\n  string public name = \"Venezuelan Gold\"", 
+   "./restContracts/0x840278b27eef8019095f8c8198a373b57a8fe0e7.txt:309:3: Warning: Integer Underflow.\n  string public symbol = \"VZG\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

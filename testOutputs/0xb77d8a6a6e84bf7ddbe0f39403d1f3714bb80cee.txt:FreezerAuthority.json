@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb77d8a6a6e84bf7ddbe0f39403d1f3714bb80cee.txt:61:21: Warning: Integer Overflow.\n        int index = indexOf(c_freezers, freezer)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "23.9"
+}

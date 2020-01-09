@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x12FEF5e57bF45873Cd9B62E9DBd7BFb99e32D73e.txt:319:2: Warning: Integer Overflow.\n\tfunction freezeTransfersUntil(uint256 _frozenUntilBlock, string _reason) onlyOwner {     \t\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reason = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x12FEF5e57bF45873Cd9B62E9DBd7BFb99e32D73e.txt:295:2: Warning: Integer Overflow.\n\tfunction mintTokens(address _to, uint256 _amount, string _reason) {         \r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reason = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x12FEF5e57bF45873Cd9B62E9DBd7BFb99e32D73e.txt:241:2: Warning: Integer Overflow.\n\tfunction approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {            \r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x12FEF5e57bF45873Cd9B62E9DBd7BFb99e32D73e.txt:131:2: Warning: Integer Underflow.\n\tstring public name = \"Cofoundit\"", 
+   "./uniqueContractSourceCode/0x12FEF5e57bF45873Cd9B62E9DBd7BFb99e32D73e.txt:133:2: Warning: Integer Underflow.\n\tstring public symbol = \"CFI\"", 
+   "./uniqueContractSourceCode/0x12FEF5e57bF45873Cd9B62E9DBd7BFb99e32D73e.txt:129:2: Warning: Integer Underflow.\n\tstring public standard = \"Cofoundit token v1.0\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.0"
+}

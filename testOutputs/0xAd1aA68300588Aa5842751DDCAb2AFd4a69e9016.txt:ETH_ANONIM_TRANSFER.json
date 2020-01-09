@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xAd1aA68300588Aa5842751DDCAb2AFd4a69e9016.txt:79:13: Warning: Callstack Depth Attack Vulnerability.\n            _adr.send(_am)", 
+   "./restContracts/0xAd1aA68300588Aa5842751DDCAb2AFd4a69e9016.txt:77:13: Warning: Callstack Depth Attack Vulnerability.\n            creator.send(creatorFee)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xAd1aA68300588Aa5842751DDCAb2AFd4a69e9016.txt:5:1: Warning: Integer Overflow.\ncontract ETH_ANONIM_TRANSFER    \r\n^\nSpanning multiple lines.", 
+   "./restContracts/0xAd1aA68300588Aa5842751DDCAb2AFd4a69e9016.txt:51:9: Warning: Integer Overflow.\n        Log.push(LogUnit)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "38.8"
+}

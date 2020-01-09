@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:985:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    balances[_owner].length = 2\n    balances[_owner][0].fromBlock = 115792089233946202090177155034354530967392530831435920986640012447775178358784\n    parentSnapShotBlock = 170141183460469231731687286123698061309\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:995:51: Warning: Integer Overflow.\n               Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 1180591620717411303423\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:585:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:765:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:157:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:163:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.2'", 
+   "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:161:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:1049:17: Warning: Transaction-Ordering Dependency.\n        require(TokenController(controller).proxyPayment.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./restContracts/0xb45893bd77830bec7c305aded041bd74f0343bd1.txt:1075:13: Warning: Transaction-Ordering Dependency.\n            controller.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.3"
+}

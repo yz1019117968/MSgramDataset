@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6a4b123a29acfda4c296545c6915a44fc0985f2c.txt:309:3: Warning: Integer Underflow.\n  string public symbol = \"BRZL\"", 
+   "./uniqueContractSourceCode/0x6a4b123a29acfda4c296545c6915a44fc0985f2c.txt:307:3: Warning: Integer Underflow.\n  string public name = \"Brazilian Petro\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

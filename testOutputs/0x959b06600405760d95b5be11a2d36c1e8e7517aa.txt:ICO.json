@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x959b06600405760d95b5be11a2d36c1e8e7517aa.txt:653:13: Warning: Timestamp Dependency.\n    require(msg.value >= minInvestedLimit && now >= start && now < end", 
+   "./restContracts/0x959b06600405760d95b5be11a2d36c1e8e7517aa.txt:653:13: Warning: Timestamp Dependency.\n    require(msg.value >= minInvestedLimit && now >= start && now < end && invested < hardcap"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x959b06600405760d95b5be11a2d36c1e8e7517aa.txt:643:3: Warning: Integer Overflow.\n  Bonus[] public bonuses", 
+   "./restContracts/0x959b06600405760d95b5be11a2d36c1e8e7517aa.txt:777:5: Warning: Integer Overflow.\n    bonuses.push(Bonus(limit, bonus))\nInteger Overflow occurs if:\n    owner = 0\n    bonuses.push(Bonus(limit, bonus)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.5"
+}

@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7e7ac3b826c8a940728f324766089cadac54ed30.txt:417:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 67510370664490233506925552380706148586051015176134169117203489479141662036048\n    _value = 83221975011734133266565142229451573841667187653546648906918434538223430982742\n    balances[msg.sender] = 83221975011734133266565142229451573841667187653546648906918434538223430982742\n    istransferAllowed = 255", 
+   "./restContracts/0x7e7ac3b826c8a940728f324766089cadac54ed30.txt:559:9: Warning: Integer Overflow.\n        usdraised+=value\nInteger Overflow occurs if:\n    usdraised = 1\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownership[msg.sender] = 255", 
+   "./restContracts/0x7e7ac3b826c8a940728f324766089cadac54ed30.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_person] = 1\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownership[msg.sender] = 255", 
+   "./restContracts/0x7e7ac3b826c8a940728f324766089cadac54ed30.txt:465:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    _value = 105129860315738734449407965649719108748236554228829744849577222707109428918189\n    balances[_to] = 48221737607289230530781793082485821955689060952102618258465553029462851749639\n    allowed[_from][msg.sender] = 105129860315738734449407965649719108748236554228829744849577222707109428918189\n    balances[_from] = 105129860315738734449407965649719108748236554228829744849577222707109428918189\n    istransferAllowed = 255", 
+   "./restContracts/0x7e7ac3b826c8a940728f324766089cadac54ed30.txt:549:9: Warning: Integer Overflow.\n        btcraised+=value\nInteger Overflow occurs if:\n    btcraised = 1\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownership[msg.sender] = 255", 
+   "./restContracts/0x7e7ac3b826c8a940728f324766089cadac54ed30.txt:539:9: Warning: Integer Overflow.\n        ethraised+=value\nInteger Overflow occurs if:\n    ethraised = 1\n    value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownership[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7e7ac3b826c8a940728f324766089cadac54ed30.txt:337:5: Warning: Integer Underflow.\n    string public version = \"1.0\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.5"
+}

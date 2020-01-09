@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:1067:9: Warning: Timestamp Dependency.\n        require(now >= endTimestamp)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:1233:9: Warning: Transaction-Ordering Dependency.\n        _wallet.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5365b7a3e4f68a84323792f2d0b44b0bbd5b6f0b.txt:1301:9: Warning: Transaction-Ordering Dependency.\n        (msg.sender).transfer(investment)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.9"
+}

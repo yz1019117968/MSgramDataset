@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7a203102ac51e7202e500b51ab6041aabb9dbe63.txt:871:9: Warning: Integer Overflow.\n        totalFunded           += msg.value\nInteger Overflow occurs if:\n    totalFunded = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    config.stopBlock = 2475880078570760549798248449\n    config.startBlock = 2475880078570760549798248447\n    config.maxValue = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x7a203102ac51e7202e500b51ab6041aabb9dbe63.txt:873:9: Warning: Integer Overflow.\n        donations[msg.sender] += msg.value\nInteger Overflow occurs if:\n    totalFunded = 0\n    donations[msg.sender] = 1\n    config.stopBlock = 13164036458569648337239753460458804039861886925068638906788872193\n    config.startBlock = 13164036458569648337239753460458804039861886925068638906788872191\n    config.maxValue = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7a203102ac51e7202e500b51ab6041aabb9dbe63.txt:895:12: Warning: Transaction-Ordering Dependency.\n    { if (!fund.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7a203102ac51e7202e500b51ab6041aabb9dbe63.txt:911:14: Warning: Transaction-Ordering Dependency.\n        if (!msg.sender.send(donation)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.5"
+}

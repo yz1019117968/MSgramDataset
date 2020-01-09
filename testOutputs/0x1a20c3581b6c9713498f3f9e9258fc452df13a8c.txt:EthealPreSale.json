@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1a20c3581b6c9713498f3f9e9258fc452df13a8c.txt:1241:5: Warning: Integer Overflow.\n    function setWhitelist(address[] _add, address[] _remove, uint256[] _whitelistLimits) public onlyOwner beforeSale {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _add = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1a20c3581b6c9713498f3f9e9258fc452df13a8c.txt:927:5: Warning: Integer Overflow.\n    address[] public contributorsKeys"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.7"
+}

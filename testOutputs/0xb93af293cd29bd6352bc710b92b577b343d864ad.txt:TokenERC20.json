@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:261:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:9:1: Warning: Integer Overflow.\ncontract TokenERC20 {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    smartcontracts.push(_addressofcontract) = 105782898658114362639998236590588058411517566113314665475433552748888561006558", 
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:23:5: Warning: Integer Overflow.\n    address[] public smartcontracts", 
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:151:13: Warning: Integer Overflow.\n            smartcontracts.push(_addressofcontract)\nInteger Overflow occurs if:\n    smartcontracts.push(_addressofcontract) = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:301:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:337:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:15:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xb93af293cd29bd6352bc710b92b577b343d864ad.txt:13:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.3"
+}

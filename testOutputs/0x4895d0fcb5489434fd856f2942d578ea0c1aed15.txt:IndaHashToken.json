@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4895d0fcb5489434fd856f2942d578ea0c1aed15.txt:735:5: Warning: Timestamp Dependency.\n    require( atNow() > DATE_ICO_END + CLAWBACK_PERIOD )"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.7"
+}

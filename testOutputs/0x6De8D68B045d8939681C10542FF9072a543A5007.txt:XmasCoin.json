@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6De8D68B045d8939681C10542FF9072a543A5007.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 34668612226534129237714664128617922900445644498863402600890557320835794474799\n    usedTokens[_from] = 95253360933621812392822555961104178916219564847318774606887933609903176050621\n    allowed[_from][msg.sender] = 95253360933621812392822555961104178916219564847318774606887933609903176050621\n    balances[_from] = 95253360933621812392822555961104178916219564847318774606887933609903176050621", 
+   "./uniqueContractSourceCode/0x6De8D68B045d8939681C10542FF9072a543A5007.txt:465:5: Warning: Integer Overflow.\n    giftPool += msg.value\nInteger Overflow occurs if:\n    giftPool = 101557981100568259334102498830417111380131064938673871871293553541734249533839\n    timeToOpenPresents = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.5"
+}

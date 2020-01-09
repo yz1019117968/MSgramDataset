@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x51D32FB6c763878F44f93907d7f88FD9eF370595.txt:623:34: Warning: Integer Underflow.\n            uint256 difference = timeout - minimumTimeout\nInteger Underflow occurs if:\n    timeout = 0\n    numberOfWagersToMinimumTimeout = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minimumTimeout = 1\n    wagerIndex = 115792089237316195423570985008687907853269984665640564039457584007913129639934"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

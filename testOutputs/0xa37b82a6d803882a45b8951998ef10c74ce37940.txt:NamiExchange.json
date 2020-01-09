@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1827:36: Warning: Integer Overflow.\n            bid[msg.sender].eth = (bid[msg.sender].eth\nInteger Overflow occurs if:\n    bid[msg.sender].eth = 0", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1751:5: Warning: Integer Overflow.\n    mapping(address => OrderBid) public bid", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1913:9: Warning: Integer Overflow.\n        bid[msg.sender].eth\nInteger Overflow occurs if:\n    bid[msg.sender].eth = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    bid[msg.sender].price = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1831:43: Warning: Integer Overflow.\n            UpdateBid(msg.sender, _price, bid[msg.sender].eth\nInteger Overflow occurs if:\n    bid[msg.sender].eth = 0", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1827:13: Warning: Integer Overflow.\n            bid[msg.sender].eth\nInteger Overflow occurs if:\n    bid[msg.sender].eth = 0", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1939:13: Warning: Integer Overflow.\n            ask[_from].volume\nInteger Overflow occurs if:\n    NamiAddr = 0\n    ask[_from].volume = 0", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1753:5: Warning: Integer Overflow.\n    mapping(address => OrderAsk) public ask", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1943:38: Warning: Integer Overflow.\n            UpdateAsk(_from, _price, ask[_from].volume\nInteger Overflow occurs if:\n    NamiAddr = 0\n    ask[_from].volume = 0", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1915:54: Warning: Integer Overflow.\n        UpdateBid(msg.sender, bid[msg.sender].price, bid[msg.sender].eth\nInteger Overflow occurs if:\n    bid[msg.sender].eth = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    bid[msg.sender].price = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1939:34: Warning: Integer Overflow.\n            ask[_from].volume = (ask[_from].volume\nInteger Overflow occurs if:\n    NamiAddr = 0\n    ask[_from].volume = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa37b82a6d803882a45b8951998ef10c74ce37940.txt:1755:5: Warning: Integer Underflow.\n    string public name = \"NacExchange\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.1"
+}

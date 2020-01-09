@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x08711d3b02c8758f2fb3ab4e80228418a7f8e39c.txt:137:41: Warning: Integer Overflow.\n        if(msg.sender == owner && now < startTime + 1 years\nInteger Overflow occurs if:\n    startTime = 115792089237316195423570985008687907853269984665640564039457584007913113597440\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x08711d3b02c8758f2fb3ab4e80228418a7f8e39c.txt:77:5: Warning: Integer Underflow.\n    string public name = 'Edgeless'", 
+   "./uniqueContractSourceCode/0x08711d3b02c8758f2fb3ab4e80228418a7f8e39c.txt:75:5: Warning: Integer Underflow.\n    string public standard = 'ERC20'", 
+   "./uniqueContractSourceCode/0x08711d3b02c8758f2fb3ab4e80228418a7f8e39c.txt:79:5: Warning: Integer Underflow.\n    string public symbol = 'EDG'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.6"
+}

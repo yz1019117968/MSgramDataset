@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x31c8772dc63a3c63bbdd754a77b1b39331485df0.txt:691:13: Warning: Timestamp Dependency.\n    require(start <= now && saleOngoing"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x31c8772dc63a3c63bbdd754a77b1b39331485df0.txt:105:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    totalReceived = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    saleOngoing = 255\n    start = 0\n    hardcap = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    altDeposits = 45755392570536130959597968808644790424192658091095156411785517324666004153520\n    minimum = 69722843986276191112704802276904042686523943500539225692285358676886601247599"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x31c8772dc63a3c63bbdd754a77b1b39331485df0.txt:751:5: Warning: Transaction-Ordering Dependency.\n    multisigVault.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x31c8772dc63a3c63bbdd754a77b1b39331485df0.txt:751:5: Warning: Transaction-Ordering Dependency.\n    multisigVault.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.0"
+}

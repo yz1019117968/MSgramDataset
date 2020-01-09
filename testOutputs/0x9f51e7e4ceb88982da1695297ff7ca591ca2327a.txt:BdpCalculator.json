@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:751:2: Warning: Integer Overflow.\n\tfunction calculateRegionSalePixelPrice(address[16] _contracts, uint256 _regionId) view public returns (uint256) {\r\n\t^\nSpanning multiple lines.", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:775:34: Warning: Integer Overflow.\n\t\tvar (updatedAt, purchasedAt) = BdpDataStorage(BdpContracts.getBdpDataStorage(_contracts)).getRegionUpdatedAtPurchasedAt(_regionId)", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:663:26: Warning: Integer Overflow.\n\t\tvar (x1, y1, x2, y2) = BdpDataStorage(BdpContracts.getBdpDataStorage(_contracts)).getRegionCoordinates(_regionId)", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:773:2: Warning: Integer Overflow.\n\tfunction calculateSetupAllowedUntil(address[16] _contracts, uint256 _regionId) view public returns (uint256) {\r\n\t^\nSpanning multiple lines.", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:675:2: Warning: Integer Overflow.\n\tfunction countPurchasedPixels(address[16] _contracts) view public returns (uint256 _count) {\r\n\t^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:707:40: Warning: Integer Underflow.\n\t\tuint mod = _pixelsSold % (1000000 / (pricePointsLength - 1", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:665:12: Warning: Integer Underflow.\n\t\t_width = x2 - x1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

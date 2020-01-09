@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x61f33Da40594cEc1E3Dc900FaF99F861D01e2e7D.txt:243:5: Warning: Integer Underflow.\n    string public symbol = \"CRE\"", 
+   "./uniqueContractSourceCode/0x61f33Da40594cEc1E3Dc900FaF99F861D01e2e7D.txt:241:5: Warning: Integer Underflow.\n    string public name = \"Cybereits Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.6"
+}

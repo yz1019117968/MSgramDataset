@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9860e59993eb5998286c150a8e14bb9e4a36dd28.txt:2389:9: Warning: Integer Overflow.\n        nonce++\nInteger Overflow occurs if:\n    nonce = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9860e59993eb5998286c150a8e14bb9e4a36dd28.txt:2417:9: Warning: Integer Overflow.\n        nonce++\nInteger Overflow occurs if:\n    nonce = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9860e59993eb5998286c150a8e14bb9e4a36dd28.txt:2391:52: Warning: Integer Underflow.\n        uint8 result = (uint8(sha3(block.blockhash(block.number-1", 
+   "./restContracts/0x9860e59993eb5998286c150a8e14bb9e4a36dd28.txt:2419:54: Warning: Integer Underflow.\n        uint16 result = (uint16(sha3(block.blockhash(block.number-1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.7"
+}

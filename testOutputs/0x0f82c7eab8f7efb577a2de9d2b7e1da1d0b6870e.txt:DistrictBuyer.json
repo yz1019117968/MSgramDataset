@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x0f82c7eab8f7efb577a2de9d2b7e1da1d0b6870e.txt:239:5: Warning: Timestamp Dependency.\n    if (now < earliest_buy_time) return;"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0f82c7eab8f7efb577a2de9d2b7e1da1d0b6870e.txt:89:3: Warning: Integer Overflow.\n  function activate_kill_switch(string password) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0f82c7eab8f7efb577a2de9d2b7e1da1d0b6870e.txt:223:5: Warning: Integer Overflow.\n    bounty += msg.value\nInteger Overflow occurs if:\n    bounty = 1\n    bought_tokens = 0\n    kill_switch = 0\n    developer = 0", 
+   "./uniqueContractSourceCode/0x0f82c7eab8f7efb577a2de9d2b7e1da1d0b6870e.txt:309:7: Warning: Integer Overflow.\n      balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 102082538843166714478940725887685722465690551579405662030130435039139613118679\n    bought_tokens = 0\n    kill_switch = 0\n    sale = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0f82c7eab8f7efb577a2de9d2b7e1da1d0b6870e.txt:157:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[user]\nInteger Underflow occurs if:\n    contract_eth_value = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    balances[user] = 28948022309329048855892746252171976963317496166410141009864396001978282409985\n    bought_tokens = 255\n    sale = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x0f82c7eab8f7efb577a2de9d2b7e1da1d0b6870e.txt:135:7: Warning: Transaction-Ordering Dependency.\n      user.transfer(eth_to_withdraw)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x0f82c7eab8f7efb577a2de9d2b7e1da1d0b6870e.txt:271:9: Warning: Transaction-Ordering Dependency.\n    if(!sale.call.value(contract_eth_value)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.3"
+}

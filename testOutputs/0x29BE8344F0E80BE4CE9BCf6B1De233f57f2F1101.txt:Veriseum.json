@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x29BE8344F0E80BE4CE9BCf6B1De233f57f2F1101.txt:147:5: Warning: Integer Overflow.\n    function distributeVM(address[] addresses, uint256 _value, uint256 _ethbal) onlyOwner canDistr public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x29BE8344F0E80BE4CE9BCf6B1De233f57f2F1101.txt:227:17: Warning: Integer Overflow.\n             && balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 105129860315738734449407965649719108748236554228829744849577222707109428918189\n    balances[_to] = 48221737607289230530781793082485821955689060952102618258465553029462851749639\n    allowed[_from][msg.sender] = 105129860315738734449407965649719108748236554228829744849577222707109428918189\n    balances[_from] = 105129860315738734449407965649719108748236554228829744849577222707109428918189", 
+   "./uniqueContractSourceCode/0x29BE8344F0E80BE4CE9BCf6B1De233f57f2F1101.txt:197:17: Warning: Integer Overflow.\n             && balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 83221975011734133266565142229451573841667187653546648906918434538223430982742\n    balances[_to] = 67510370664490233506925552380706148586051015176134169117203489479141662036048\n    balances[msg.sender] = 83221975011734133266565142229451573841667187653546648906918434538223430982742"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.0"
+}

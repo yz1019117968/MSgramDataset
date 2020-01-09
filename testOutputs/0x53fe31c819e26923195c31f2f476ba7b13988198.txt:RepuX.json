@@ -1,0 +1,42 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:811:35: Warning: Integer Overflow.\n        assert(c.contributor.send(c.ethWei\nInteger Overflow occurs if:\n    crowdsaleTokenSold = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:453:5: Warning: Integer Overflow.\n    bytes32[] public contributionHashes", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:797:9: Warning: Integer Overflow.\n        c.resolved\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:781:78: Warning: Integer Overflow.\n        ContributionResolved(transactionHash, true, msg.sender, c.recipient, c.ethWei\nInteger Overflow occurs if:\n    balances[c.recipient] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:777:30: Warning: Integer Overflow.\n        assert(multisig.send(c.ethWei\nInteger Overflow occurs if:\n    balances[c.recipient] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:799:9: Warning: Integer Overflow.\n        c.success\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:773:9: Warning: Integer Overflow.\n        c.success\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:779:24: Warning: Integer Overflow.\n        Transfer(this, c.recipient\nInteger Overflow occurs if:\n    balances[c.recipient] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:775:18: Warning: Integer Overflow.\n        balances[c.recipient\nInteger Overflow occurs if:\n    balances[c.recipient] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:803:53: Warning: Integer Overflow.\n            presaleTokenSold = presaleTokenSold.sub(c.tokens\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:779:37: Warning: Integer Overflow.\n        Transfer(this, c.recipient, c.tokens\nInteger Overflow occurs if:\n    balances[c.recipient] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:801:13: Warning: Integer Overflow.\n        if (c.stage\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:775:59: Warning: Integer Overflow.\n        balances[c.recipient] = balances[c.recipient].add(c.tokens\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:775:42: Warning: Integer Overflow.\n        balances[c.recipient] = balances[c.recipient\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:783:13: Warning: Integer Overflow.\n            c.tokens\nInteger Overflow occurs if:\n    balances[c.recipient] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:815:13: Warning: Integer Overflow.\n            c.tokens\nInteger Overflow occurs if:\n    crowdsaleTokenSold = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:813:66: Warning: Integer Overflow.\n        ContributionResolved(transactionHash, false, msg.sender, c.recipient\nInteger Overflow occurs if:\n    crowdsaleTokenSold = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:813:79: Warning: Integer Overflow.\n        ContributionResolved(transactionHash, false, msg.sender, c.recipient, c.ethWei\nInteger Overflow occurs if:\n    crowdsaleTokenSold = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:771:9: Warning: Integer Overflow.\n        c.resolved\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:807:57: Warning: Integer Overflow.\n            crowdsaleTokenSold = crowdsaleTokenSold.sub(c.tokens\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:781:65: Warning: Integer Overflow.\n        ContributionResolved(transactionHash, true, msg.sender, c.recipient\nInteger Overflow occurs if:\n    balances[c.recipient] = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:777:16: Warning: Transaction-Ordering Dependency.\n        assert(multisig.send(c.ethWei)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x53fe31c819e26923195c31f2f476ba7b13988198.txt:811:16: Warning: Transaction-Ordering Dependency.\n        assert(c.contributor.send(c.ethWei)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.2"
+}

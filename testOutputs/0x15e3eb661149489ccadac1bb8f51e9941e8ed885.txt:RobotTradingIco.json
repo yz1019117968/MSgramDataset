@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x15e3eb661149489ccadac1bb8f51e9941e8ed885.txt:847:56: Warning: Integer Overflow.\n        uint tokensSold = add(roundData[0].soldTokens, roundData[1]\nInteger Overflow occurs if:\n    roundData[0] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    currentState = 0\n    sentTokensToPartner = 0\n    accManager = 0", 
+   "./uniqueContractSourceCode/0x15e3eb661149489ccadac1bb8f51e9941e8ed885.txt:685:13: Warning: Integer Overflow.\n            roundData[roundICO]\nInteger Overflow occurs if:\n    roundICO = 3618502788666131106986593281521497120414687020801267626233049500247285301248\n    roundData[roundICO] = 3618502788666131106986593281521497120414687020801267626233049500247285301249\n    accManager = 0", 
+   "./uniqueContractSourceCode/0x15e3eb661149489ccadac1bb8f51e9941e8ed885.txt:759:45: Warning: Integer Overflow.\n        uint tokensToEmit =  mul(msg.value, roundData[roundICO]\nInteger Overflow occurs if:\n    roundICO = 3618502788666131106986593281521497120414687020801267626233049500247285301248\n    currentState = 2923003274661805836407369665432566039311865085952\n    roundData[roundICO] = 3618502788666131106986593281521497120414687020801267626233049500247285301249", 
+   "./uniqueContractSourceCode/0x15e3eb661149489ccadac1bb8f51e9941e8ed885.txt:847:56: Warning: Integer Overflow.\n        uint tokensSold = add(roundData[0].soldTokens, roundData[1].soldTokens\nInteger Overflow occurs if:\n    roundData[0] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    currentState = 0\n    sentTokensToPartner = 0\n    accManager = 0", 
+   "./uniqueContractSourceCode/0x15e3eb661149489ccadac1bb8f51e9941e8ed885.txt:759:45: Warning: Integer Overflow.\n        uint tokensToEmit =  mul(msg.value, roundData[roundICO].price\nInteger Overflow occurs if:\n    currentState = 2923003274661805836407369665432566039311865085952\n    roundICO = 0\n    roundData[roundICO] = 1", 
+   "./uniqueContractSourceCode/0x15e3eb661149489ccadac1bb8f51e9941e8ed885.txt:685:13: Warning: Integer Overflow.\n            roundData[roundICO].dateStart\nInteger Overflow occurs if:\n    roundICO = 0\n    roundData[roundICO] = 1\n    accManager = 0", 
+   "./uniqueContractSourceCode/0x15e3eb661149489ccadac1bb8f51e9941e8ed885.txt:847:31: Warning: Integer Overflow.\n        uint tokensSold = add(roundData[0].soldTokens\nInteger Overflow occurs if:\n    currentState = 0\n    roundData[0] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    sentTokensToPartner = 0\n    accManager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.5"
+}

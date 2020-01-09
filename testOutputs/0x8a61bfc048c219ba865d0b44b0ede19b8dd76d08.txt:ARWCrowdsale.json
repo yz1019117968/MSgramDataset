@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:139:9: Warning: Timestamp Dependency.\n        if(now > 1521936000 && now < 1523746801) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:139:12: Warning: Timestamp Dependency.\n        if(now > 1521936000 && now < 1523746801", 
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:159:12: Warning: Timestamp Dependency.\n        if(now > 1525129200 && now < 1527289200", 
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:149:9: Warning: Timestamp Dependency.\n        if(now > 1523746800 && now < 1525129201) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:127:9: Warning: Timestamp Dependency.\n        require(now > startDate)", 
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:149:12: Warning: Timestamp Dependency.\n        if(now > 1523746800 && now < 1525129201", 
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:159:9: Warning: Timestamp Dependency.\n        if(now > 1525129200 && now < 1527289200) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:129:9: Warning: Timestamp Dependency.\n        require(now < endDate)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:171:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0x8a61bfc048c219ba865d0b44b0ede19b8dd76d08.txt:117:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.6"
+}

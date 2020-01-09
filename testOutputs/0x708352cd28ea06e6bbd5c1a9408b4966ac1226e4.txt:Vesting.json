@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:2391:13: Warning: Integer Overflow.\n            vestingSchedule.endTimestamp\nInteger Overflow occurs if:\n    _totalAmount = 0\n    _endTimestamp = 0\n    _lockPeriod = 0\n    _cliffTimestamp = 0\n    _startTimestamp = 0", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:2387:13: Warning: Integer Overflow.\n            vestingSchedule.cliffTimestamp\nInteger Overflow occurs if:\n    _totalAmount = 0\n    _endTimestamp = 0\n    _lockPeriod = 0\n    _cliffTimestamp = 0\n    _startTimestamp = 0", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:2283:9: Warning: Integer Overflow.\n        vestingSchedules[_newAddress] = VestingSchedule({\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _lockPeriod = 215468948753870877418925414731722738097948850653818326680813495631870\n    _startTimestamp = 2475880078570760553036251136\n    _cliffTimestamp = 115792089237000258548565121886651545534111616267743182546676441965803973115902\n    _endTimestamp = 115792089237000258548565121886651545534111678575305484964610290174769137451008\n    vestingSchedules[_newAddress].depositor = 0\n    _depositor = 1461501637330902918203684832716283019655932542975\n    owner = 0", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:2389:13: Warning: Integer Overflow.\n            vestingSchedule.lockPeriod\nInteger Overflow occurs if:\n    _totalAmount = 0\n    _endTimestamp = 0\n    _lockPeriod = 0\n    _cliffTimestamp = 0\n    _startTimestamp = 0", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:2383:13: Warning: Integer Overflow.\n            vestingSchedule.depositor\nInteger Overflow occurs if:\n    _totalAmount = 0\n    _endTimestamp = 0\n    _lockPeriod = 0\n    _cliffTimestamp = 0\n    _startTimestamp = 0", 
+   "./uniqueContractSourceCode/0x708352cd28ea06e6bbd5c1a9408b4966ac1226e4.txt:2393:13: Warning: Integer Overflow.\n            vestingSchedule.totalAmount\nInteger Overflow occurs if:\n    _totalAmount = 0\n    _endTimestamp = 0\n    _lockPeriod = 0\n    _cliffTimestamp = 0\n    _startTimestamp = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.8"
+}

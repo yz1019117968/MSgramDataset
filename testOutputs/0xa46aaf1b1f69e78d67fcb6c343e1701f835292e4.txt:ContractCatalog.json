@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:253:5: Warning: Integer Overflow.\n    function registerPrefix(string prefix) returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    prefix = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:237:5: Warning: Integer Overflow.\n    function removeForgivedChar(uint256 index, string char) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:123:5: Warning: Integer Overflow.\n    string[] public forgivedChars", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:313:5: Warning: Integer Overflow.\n    function registerContract(string code, address sample) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    code = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:183:5: Warning: Integer Overflow.\n    function getContractOwner(string code) constant returns (address) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    code = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:301:5: Warning: Integer Overflow.\n    function unregisterPrefix(string prefix) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    prefix = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:201:5: Warning: Integer Overflow.\n    function getContractBytecode(string code) constant returns (bytes) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    code = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:339:5: Warning: Integer Overflow.\n    function validateContractWithCode(address target, string code) constant returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    code = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:193:5: Warning: Integer Overflow.\n    function getContractSample(string code) constant returns (address) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    code = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:287:5: Warning: Integer Overflow.\n    function transferPrefix(string prefix, address to) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    prefix = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:223:5: Warning: Integer Overflow.\n    function addForgivedChar(string c) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    c = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:209:5: Warning: Integer Overflow.\n    function hasForgivedChar(string s) constant returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    s = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa46aaf1b1f69e78d67fcb6c343e1701f835292e4.txt:123:5: Warning: Integer Underflow.\n    string[] public forgivedChars"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "19.6"
+}

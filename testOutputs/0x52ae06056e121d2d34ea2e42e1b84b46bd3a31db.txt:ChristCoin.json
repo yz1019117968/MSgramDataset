@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x52ae06056e121d2d34ea2e42e1b84b46bd3a31db.txt:657:3: Warning: Integer Underflow.\n  string public symbol = \"CCLC\"", 
+   "./uniqueContractSourceCode/0x52ae06056e121d2d34ea2e42e1b84b46bd3a31db.txt:655:3: Warning: Integer Underflow.\n  string public name = \"Christ Coin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.0"
+}

@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4125c610b63dd63bE5c48D5CC3C68784F92D3B43.txt:169:5: Warning: Integer Overflow.\n    function deleteEntry(string dataString) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dataHash = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x4125c610b63dd63bE5c48D5CC3C68784F92D3B43.txt:149:5: Warning: Integer Overflow.\n    function addEntry(string dataString) payable\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dataHash = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4125c610b63dd63bE5c48D5CC3C68784F92D3B43.txt:257:17: Warning: Integer Overflow.\n                accounts[target].values", 
+   "./uniqueContractSourceCode/0x4125c610b63dd63bE5c48D5CC3C68784F92D3B43.txt:255:17: Warning: Integer Overflow.\n                accounts[target].values", 
+   "./uniqueContractSourceCode/0x4125c610b63dd63bE5c48D5CC3C68784F92D3B43.txt:257:17: Warning: Integer Overflow.\n                accounts[target].values[dataHash].staked"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4125c610b63dd63bE5c48D5CC3C68784F92D3B43.txt:129:31: Warning: Integer Underflow.\n        return status(target, sha3(dataString)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.6"
+}

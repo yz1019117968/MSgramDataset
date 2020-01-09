@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:455:13: Warning: Timestamp Dependency.\n        if (block.timestamp >= time0 && block.timestamp < time2", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:457:18: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time3 && block.timestamp < time7", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:445:9: Warning: Timestamp Dependency.\n        require(!hasEnded())", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:521:16: Warning: Timestamp Dependency.\n        return block.timestamp < time0 || (block.timestamp > time2 && block.timestamp < time3) || block.timestamp > time7", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:457:14: Warning: Timestamp Dependency.\n        else if (block.timestamp >= time3 && block.timestamp < time7) tokens = weiAmount.mul(10000)", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:455:9: Warning: Timestamp Dependency.\n        if (block.timestamp >= time0 && block.timestamp < time2) tokens = weiAmount.mul(11000);\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:521:44: Warning: Timestamp Dependency.\n        return block.timestamp < time0 || (block.timestamp > time2 && block.timestamp < time3", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:521:16: Warning: Timestamp Dependency.\n        return block.timestamp < time0 || (block.timestamp > time2 && block.timestamp < time3)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:539:13: Warning: Integer Overflow.\n            holders.push(newHolder)\nInteger Overflow occurs if:\n    time2 = 21267647932558653966460912964485513216\n    weiRaised = 5192296858534827556558664399591506\n    isHolder[newHolder] = 0\n    time3 = 21267647932558653966460912964485513217\n    time7 = 21267647932558653966460912964485513216\n    time0 = 21267647932558653966460912964485513216", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:531:5: Warning: Integer Overflow.\n    address[] public holders"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:505:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:387:17: Warning: Transaction-Ordering Dependency.\n                holders[i].transfer(ballanceOfHolder.mul(weiAmount).div(token.totalSupply()))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.0"
+}

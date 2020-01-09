@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:397:9: Warning: Timestamp Dependency.\n        require(saleRunning && now >=startTime && now < endTime)", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:397:17: Warning: Timestamp Dependency.\n        require(saleRunning && now >=startTime && now < endTime"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:871:13: Warning: Integer Overflow.\n            countTotalInvestors++\nInteger Overflow occurs if:\n    totalSupply = 35001287708040770602663937\n    countTotalInvestors = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 1\n    startTime = 0\n    saleRunning = 255", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:881:42: Warning: Integer Overflow.\n        investorStruct.tokensPurchased = investorStruct.tokensPurchased\nInteger Overflow occurs if:\n    totalSupply = 35001287708040770602663937\n    endTime = 1\n    startTime = 0\n    saleRunning = 255", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:881:9: Warning: Integer Overflow.\n        investorStruct.tokensPurchased\nInteger Overflow occurs if:\n    totalSupply = 35001287708040770602663937\n    endTime = 1\n    startTime = 0\n    saleRunning = 255", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:869:12: Warning: Integer Overflow.\n        if(investorStruct.investorID\nInteger Overflow occurs if:\n    totalSupply = 35001287708040770602663937\n    endTime = 1\n    startTime = 0\n    saleRunning = 255", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 74916270471965382975890592958629158692454078052314418273577836805842329840545\n    _value = 76882314333063350447773421756741757185269035842652031076687028070471013174695\n    balances[_from] = 76882314333063350447773421756741757185269035842652031076687028070471013174695\n    allowed[_from][msg.sender] = 76882314333063350447773421756741757185269035842652031076687028070471013174696\n    _from = 1461501637330902918203684832716283019655932542975\n    _to = 1461501637330902918203684832716283019655932542975\n    locked = 0", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:297:5: Warning: Integer Overflow.\n    mapping(address => Investor) public investors", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:873:13: Warning: Integer Overflow.\n            investorStruct.investorID\nInteger Overflow occurs if:\n    totalSupply = 35001287708040770602663937\n    endTime = 1\n    startTime = 0\n    saleRunning = 255", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:765:5: Warning: Integer Overflow.\n    function mintAndTransfer(address beneficiary, uint256 numberOfTokensWithoutDecimal, bytes comment) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    comment = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:567:5: Warning: Integer Overflow.\n    function transfer(address _to, uint _value, bytes _data) onlyUnlocked onlyPayloadSize(3 * 32) public returns(bool _success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:925:9: Warning: Transaction-Ordering Dependency.\n        ethCollector.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0xab857d8a2c8d743f0184ddc3ca184904afa66673.txt:1147:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

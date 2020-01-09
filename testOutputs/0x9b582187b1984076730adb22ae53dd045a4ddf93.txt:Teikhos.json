@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9b582187b1984076730adb22ae53dd045a4ddf93.txt:91:5: Warning: Integer Overflow.\n    function authenticate(string _name, bytes _publicKey) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9b582187b1984076730adb22ae53dd045a4ddf93.txt:55:5: Warning: Integer Overflow.\n    function checkAccount(string _name) view public returns (uint value, bytes proof) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9b582187b1984076730adb22ae53dd045a4ddf93.txt:63:5: Warning: Integer Overflow.\n    function newAccount(string _name, bytes _proof_of_public_key) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./restContracts/0x9b582187b1984076730adb22ae53dd045a4ddf93.txt:79:5: Warning: Integer Overflow.\n    function deposit(string _name) public payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "7.1"
+}

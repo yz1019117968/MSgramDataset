@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:2189:5: Warning: Integer Overflow.\n    mapping (address => Contributor) public contributors", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:2367:13: Warning: Integer Overflow.\n            contributorsKeys.push(contributor)\nInteger Overflow occurs if:\n    totalContributed = 6129982163463555433433388108601236734474956488734408705\n    hardCapReached = 128\n    maxGasPrice = 0\n    hardCapAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    softCapAmount = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    endTime = 1\n    startTime = 0\n    minContribAmount = 57896044618658097711779362522180490371201558944711680782994317047467830411262\n    stopped = 0\n    contributors[contributor].amount = 0", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:2885:37: Warning: Integer Overflow.\n        return (contributor.amount, contributor.isCompensated", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:2107:5: Warning: Integer Overflow.\n    address[] public advisers", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:2885:64: Warning: Integer Overflow.\n        return (contributor.amount, contributor.isCompensated, contributor.amountCompensated", 
+   "./restContracts/0xa7dd95d9978dde794eae5233889f1ffebcdc9914.txt:2187:5: Warning: Integer Overflow.\n    address[] public contributorsKeys"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "48.2"
+}

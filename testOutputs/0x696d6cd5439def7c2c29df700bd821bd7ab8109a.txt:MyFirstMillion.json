@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x696d6cd5439def7c2c29df700bd821bd7ab8109a.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x696d6cd5439def7c2c29df700bd821bd7ab8109a.txt:301:2: Warning: Integer Underflow.\n\tstring public symbol = 'MFM'", 
+   "./uniqueContractSourceCode/0x696d6cd5439def7c2c29df700bd821bd7ab8109a.txt:299:2: Warning: Integer Underflow.\n\tstring public name = 'My First Million'", 
+   "./uniqueContractSourceCode/0x696d6cd5439def7c2c29df700bd821bd7ab8109a.txt:307:2: Warning: Integer Underflow.\n\tstring public note = 'Especially for Cyber Frog'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.0"
+}

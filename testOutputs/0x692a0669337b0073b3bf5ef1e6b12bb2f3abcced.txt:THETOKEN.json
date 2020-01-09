@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x692a0669337b0073b3bf5ef1e6b12bb2f3abcced.txt:307:3: Warning: Integer Underflow.\n  string public name = \"francoin\"", 
+   "./uniqueContractSourceCode/0x692a0669337b0073b3bf5ef1e6b12bb2f3abcced.txt:309:3: Warning: Integer Underflow.\n  string public symbol = \"FRC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7b70ac49c8a88dabe9a9f5b2d5701d0a53b6e570.txt:333:24: Warning: Integer Underflow.\n        uint tPassed = now - icoStartTime\nInteger Underflow occurs if:\n    icoStartTime = 1\n    purchasingAllowed = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "6.4"
+}

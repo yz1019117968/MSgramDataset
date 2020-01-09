@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:5:1: Warning: Integer Overflow.\ncontract Pub {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    all.length = 19553522595453252762159207969660836113535560129003487626059407945321879306061", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:93:5: Warning: Integer Overflow.\n    function sign(string _name)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:45:9: Warning: Integer Overflow.\n        all.push(Publication(\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    all.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:65:5: Warning: Integer Overflow.\n    function publish(string _title, string _body)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _title = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:29:5: Warning: Integer Overflow.\n    Publication[] public all", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:73:9: Warning: Integer Overflow.\n        all.push(Publication(\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    all.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:23:5: Warning: Integer Overflow.\n    mapping (address => uint256[]) public allByAuthor", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:37:5: Warning: Integer Overflow.\n    function publishBytes(string _title, bytes _body)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _title = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:27:5: Warning: Integer Underflow.\n    mapping (address => string) public authors", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:29:5: Warning: Integer Underflow.\n    Publication[] public all", 
+   "./uniqueContractSourceCode/0x2a0f713aa953442eaca9ea47083f656170e67ba4.txt:5:1: Warning: Integer Underflow.\ncontract Pub {\r\n^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.8"
+}

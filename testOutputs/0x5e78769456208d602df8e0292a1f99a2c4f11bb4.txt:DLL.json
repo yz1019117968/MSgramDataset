@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:299:12: Warning: Integer Overflow.\n    return self.dll[_curr].prev", 
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:381:5: Warning: Integer Overflow.\n    self.dll[next].prev\nInteger Overflow occurs if:\n    self.dll[_curr].next = 14134776518227074636666380005943348126619871175004961109705815349631385600\n    _curr = 115777954460797968348934318628681964505143364794465559078347878192563498254335\n    self.dll[_curr].next = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:351:5: Warning: Integer Overflow.\n    self.dll[_curr].prev\nInteger Overflow occurs if:\n    _curr = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _next = 0\n    self.dll[_curr].next = 0\n    self.dll[_curr].next = 0\n    _prev = 0", 
+   "./uniqueContractSourceCode/0x5e78769456208d602df8e0292a1f99a2c4f11bb4.txt:359:5: Warning: Integer Overflow.\n    self.dll[_next].prev\nInteger Overflow occurs if:\n    _curr = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _next = 0\n    self.dll[_curr].next = 0\n    self.dll[_curr].next = 0\n    _prev = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.3"
+}

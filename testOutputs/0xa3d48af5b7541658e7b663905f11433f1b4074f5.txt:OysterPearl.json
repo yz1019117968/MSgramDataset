@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:139:47: Warning: Integer Underflow.\n        claimAmount = claimAmountSet * 10 ** (uint256(decimals) - 1\nInteger Underflow occurs if:\n    ownerLock = 0\n    decimals = 0\n    feeAmountSet = 0\n    payAmountSet = 0\n    claimAmountSet = 0", 
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:419:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:193:9: Warning: Integer Underflow.\n        balanceOf[_payout] -= payAmount\nInteger Underflow occurs if:\n    balanceOf[_payout] = 0\n    balanceOf[msg.sender] = 0\n    payAmount = 1\n    claimAmount = 0\n    buried[msg.sender] = 255\n    claimed[msg.sender] = 1", 
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:455:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"TPRL\"", 
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:195:9: Warning: Integer Underflow.\n        balanceOf[_fee] -= feeAmount\nInteger Underflow occurs if:\n    balanceOf[_fee] = 0\n    balanceOf[msg.sender] = 0\n    feeAmount = 1\n    claimAmount = 0\n    buried[msg.sender] = 255\n    claimed[msg.sender] = 1", 
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:185:46: Warning: Integer Underflow.\n        require(claimed[msg.sender] == 1 || (block.timestamp - claimed[msg.sender]\nInteger Underflow occurs if:\n    claimed[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    buried[msg.sender] = 255", 
+   "./restContracts/0xa3d48af5b7541658e7b663905f11433f1b4074f5.txt:13:5: Warning: Integer Underflow.\n    string public name = \"Oyster Pearl\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.4"
+}

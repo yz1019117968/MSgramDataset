@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8bccd8547cd101ee78c33c41476670cf58fff411.txt:185:5: Warning: Integer Overflow.\n    function __transferFromWithReference(address _from, address _to, uint _value, string _reference, address _sender) onlyProxy() returns(bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x8bccd8547cd101ee78c33c41476670cf58fff411.txt:13:5: Warning: Integer Overflow.\n    function __process(bytes _data, address _sender) payable {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x8bccd8547cd101ee78c33c41476670cf58fff411.txt:141:5: Warning: Integer Overflow.\n    function __transferWithReference(address _to, uint _value, string _reference, address _sender) onlyProxy() returns(bool) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.5"
+}

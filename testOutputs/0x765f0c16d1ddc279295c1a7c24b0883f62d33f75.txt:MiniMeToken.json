@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x765f0c16d1ddc279295c1a7c24b0883f62d33f75.txt:949:20: Warning: Integer Overflow.\n            return checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 115792089237316195423570985008687907853269982069492134772043769742664965029881\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x765f0c16d1ddc279295c1a7c24b0883f62d33f75.txt:965:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x765f0c16d1ddc279295c1a7c24b0883f62d33f75.txt:947:23: Warning: Integer Overflow.\n        if (_block >= checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 115792089237316195423570985008687194229423631685700034896472859260344938266624\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x765f0c16d1ddc279295c1a7c24b0883f62d33f75.txt:1007:51: Warning: Integer Overflow.\n               Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639933\n    balances[_owner][0].fromBlock = 0\n    parentSnapShotBlock = 1180591620717411303423\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x765f0c16d1ddc279295c1a7c24b0883f62d33f75.txt:997:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    balances[_owner].length = 2\n    balances[_owner][0].fromBlock = 115792089233946202090177155034354530967392530831435920986640012447775178358784\n    parentSnapShotBlock = 170141183460469231731687286123698061309\n    controller = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x765f0c16d1ddc279295c1a7c24b0883f62d33f75.txt:977:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x765f0c16d1ddc279295c1a7c24b0883f62d33f75.txt:171:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.1"
+}

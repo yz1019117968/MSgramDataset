@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x173905a75a0244fcb20db32dbacfadd3996cc702.txt:127:27: Warning: Integer Overflow.\n        bool overflowed = balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    _value = 57896044618658097711785492504343953926634992332820282019710344908039134214326", 
+   "./uniqueContractSourceCode/0x173905a75a0244fcb20db32dbacfadd3996cc702.txt:53:5: Warning: Integer Overflow.\n    function changeFact(string _string) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _string = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x173905a75a0244fcb20db32dbacfadd3996cc702.txt:83:27: Warning: Integer Overflow.\n        bool overflowed = balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852844631706989390960128365748614829458910\n    _value = 57896044618658097711785492504343953926634992332820282019710344908039134214326"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x173905a75a0244fcb20db32dbacfadd3996cc702.txt:37:5: Warning: Integer Underflow.\n    string public fact = \"Bears eat beets.\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.4"
+}

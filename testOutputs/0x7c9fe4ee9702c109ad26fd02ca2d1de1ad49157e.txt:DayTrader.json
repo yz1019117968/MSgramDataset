@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:1077:23: Warning: Integer Overflow.\n    Bag storage bag = bags[bagId]\nInteger Overflow occurs if:\n    bagId = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    bags[bagId] = 7237005577332262213973186563042994240829374041602535252466099000494570602497\n    contractOwner = 0", 
+   "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:1079:5: Warning: Integer Overflow.\n    bag.multiplier\nInteger Overflow occurs if:\n    bagId = 0\n    bags[bagId] = 1\n    contractOwner = 0", 
+   "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:1131:12: Warning: Integer Overflow.\n    delete bags[bagId]\nInteger Overflow occurs if:\n    bagId = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    bags[bagId] = 7237005577332262213973186563042994240829374041602535252466099000494570602497\n    contractOwner = 0", 
+   "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:1101:23: Warning: Integer Overflow.\n    Bag storage bag = bags[bagId]\nInteger Overflow occurs if:\n    bagId = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    bags[bagId] = 7237005577332262213973186563042994240829374041602535252466099000494570602497", 
+   "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:935:1: Warning: Integer Overflow.\ncontract DayTrader {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contractOwner = 0", 
+   "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:1045:5: Warning: Integer Overflow.\n    bags.push(bag)\nInteger Overflow occurs if:\n    contractOwner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:1061:5: Warning: Transaction-Ordering Dependency.\n    stocksaddress.transfer(SafeMath.div(this.balance, 2))"
+   ], 
+   [
+    "./restContracts/0x7c9fe4ee9702c109ad26fd02ca2d1de1ad49157e.txt:1215:5: Warning: Transaction-Ordering Dependency.\n    contractOwner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.5"
+}

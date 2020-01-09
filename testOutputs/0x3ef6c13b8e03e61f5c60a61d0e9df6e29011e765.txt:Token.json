@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3ef6c13b8e03e61f5c60a61d0e9df6e29011e765.txt:69:10: Warning: Integer Underflow.\n        \treturn _symbol\nInteger Underflow occurs if:\n    return _symbol = 1", 
+   "./uniqueContractSourceCode/0x3ef6c13b8e03e61f5c60a61d0e9df6e29011e765.txt:61:10: Warning: Integer Underflow.\n        \treturn _name\nInteger Underflow occurs if:\n    return _name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.9"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2969cd3423181c8d01dacc4ab421715966f46103.txt:589:59: Warning: Integer Overflow.\n    \t\tbalances[buyers[i].to] = balances[buyers[i].to].add(buyers[i].value\nInteger Overflow occurs if:\n    buyers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2969cd3423181c8d01dacc4ab421715966f46103.txt:75:15: Warning: Integer Overflow.\n\t\tuint256 c = a + b\nInteger Overflow occurs if:\n    balances[buyers[i].to] = 1\n    buyers[i].value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    buyers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.9"
+}

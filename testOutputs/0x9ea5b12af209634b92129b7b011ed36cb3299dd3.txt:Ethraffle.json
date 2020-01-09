@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:161:17: Warning: Integer Overflow.\n                gaps.push(i)\nInteger Overflow occurs if:\n    contestants[i].addr = 0\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].raffleId = 0\n    raffleId = 0", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:159:17: Warning: Integer Overflow.\n                contestants[i] = Contestant(address(0), 0)\nInteger Overflow occurs if:\n    contestants[i].addr = 0\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].raffleId = 0\n    raffleId = 0", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:155:66: Warning: Integer Overflow.\n            if (msg.sender == contestants[i].addr && raffleId == contestants[i].raffleId\nInteger Overflow occurs if:\n    contestants[i].addr = 0\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:43:5: Warning: Integer Overflow.\n    uint[] public gaps", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:61:9: Warning: Integer Overflow.\n        raffleId++\nInteger Overflow occurs if:\n    nextTicket = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    raffleId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:5:1: Warning: Integer Overflow.\ncontract Ethraffle {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contestants[i].addr = 0\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].addr = 1461501637330902918203684832716283019655932542975\n    contestants[i].raffleId = 0\n    raffleId = 0", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:103:13: Warning: Integer Overflow.\n            contestants[currTicket] = Contestant(msg.sender, raffleId)\nInteger Overflow occurs if:\n    nextTicket = 0\n    gaps.length = 0", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:41:5: Warning: Integer Overflow.\n    mapping (uint => Contestant) public contestants", 
+   "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:91:30: Warning: Integer Overflow.\n                currTicket = gaps[gaps.length-1]\nInteger Overflow occurs if:\n    nextTicket = 0\n    gaps.length = 115792089237316195423570985008687907853267326209648994207711776393792568950784"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:125:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(moneySent)"
+   ], 
+   [
+    "./restContracts/0x9ea5b12af209634b92129b7b011ed36cb3299dd3.txt:141:9: Warning: Transaction-Ordering Dependency.\n        winningAddress.transfer(prize)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.2"
+}

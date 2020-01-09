@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1983:27: Warning: Callstack Depth Attack Vulnerability.\n    bool sendSuccessful = winner.send(jackpot)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1287:5: Warning: Integer Overflow.\n    Cascade[] public cascades", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1745:3: Warning: Integer Overflow.\n  function __callback(bytes32 queryId, string result) public {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1393:5: Warning: Integer Overflow.\n    address[] public pendingWinners", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:2109:1: Warning: Integer Overflow.\ncontract CountBasedRaffle is Raffle {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    pendingWinners.length = 1\n    owner = 0\n    pendingPayments[winner] = 0", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1315:37: Warning: Integer Overflow.\n        totalCascadingPercentage -= cascades[index]\nInteger Overflow occurs if:\n    cascades.length = 115792089237316195423570985008687907853269984665640564039457582882013222797312\n    owner = 0", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1717:3: Warning: Integer Overflow.\n  function __callback(bytes32 queryId, string result, bytes proof) public {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1319:27: Warning: Integer Overflow.\n        cascades[index] = cascades[cascades.length - 1]\nInteger Overflow occurs if:\n    cascades.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owner = 0", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1297:9: Warning: Integer Overflow.\n        cascades.push(Cascade(newAddress, uint16(newPercentage)))\nInteger Overflow occurs if:\n    cascades.push(Cascade(newAddress, uint16(newPercentage))) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1315:9: Warning: Integer Underflow.\n        totalCascadingPercentage -= cascades[index].percentage\nInteger Underflow occurs if:\n    totalCascadingPercentage = 65534\n    cascades[index].percentage = 95779509802480722744478485512061607693151539203932160\n    cascades.length = 1\n    owner = 0", 
+   "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:319:53: Warning: Integer Underflow.\n            mstore(add(unonce, 0x20), xor(blockhash(sub(number, 1)\nInteger Underflow occurs if:\n    randomBytes = 16\n    raffleState = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1835:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0x8c7d36631768c83feae33ec42a843cc2a2fa1897.txt:1483:9: Warning: Transaction-Ordering Dependency.\n        winner.transfer(payment)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "36.7"
+}

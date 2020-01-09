@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc44889c52581bc6401be70addb69a13e3f6b8a81.txt:45:15: Warning: Integer Overflow.\n\t\tuint256 c = a + b\nInteger Overflow occurs if:\n    _value = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./restContracts/0xc44889c52581bc6401be70addb69a13e3f6b8a81.txt:125:2: Warning: Integer Overflow.\n\tfunction give(address[] _persons, uint256 _value) public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _persons = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc44889c52581bc6401be70addb69a13e3f6b8a81.txt:69:2: Warning: Integer Underflow.\n\tstring public symbol", 
+   "./restContracts/0xc44889c52581bc6401be70addb69a13e3f6b8a81.txt:71:2: Warning: Integer Underflow.\n\tstring public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.2"
+}

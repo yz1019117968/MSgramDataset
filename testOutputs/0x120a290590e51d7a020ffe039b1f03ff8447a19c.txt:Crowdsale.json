@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x120a290590e51d7a020ffe039b1f03ff8447a19c.txt:2265:3: Warning: Integer Overflow.\n  Tranche[] public tranches", 
+   "./uniqueContractSourceCode/0x120a290590e51d7a020ffe039b1f03ff8447a19c.txt:2347:16: Warning: Integer Overflow.\n        return tranches[i]\nInteger Overflow occurs if:\n    tranches.length = 115792089237316195423570985008687907853269943127265695760836555763942495879167\n    requiredSignedAddress = 0\n    tokensSold = 0\n    tranches[i].amount = 1\n    tranches[i].end = 1\n    tranches[i].start = 0\n    tranches[i].start = 1\n    earlyParticipantWhitelist[msg.sender] = 255\n    startsAt = 1\n    halted = 0", 
+   "./uniqueContractSourceCode/0x120a290590e51d7a020ffe039b1f03ff8447a19c.txt:2369:12: Warning: Integer Overflow.\n    return getCurrentTranche(tokensSold).price\nInteger Overflow occurs if:\n    tranches.length = 115792089237316195423570985008687907853269943127265695760836555763942495879167\n    requiredSignedAddress = 0\n    tokensSold = 0\n    tranches[i].amount = 1\n    tranches[i].end = 1\n    tranches[i].start = 0\n    tranches[i].start = 1\n    earlyParticipantWhitelist[msg.sender] = 255\n    startsAt = 1\n    halted = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.9"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6e5f94d66846e05eb8a5f83c9c9691ee72fd5e9e.txt:175:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    payday = 115792089237316195423570985008687907853269984665640564039457584007913128271872\n    nbMonthsPay = 5\n    First_pay_bountymanager = 0\n    bountyInit = 255\n    initPecul = 372682917519380244141939632342652170012262798458880\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.9"
+}

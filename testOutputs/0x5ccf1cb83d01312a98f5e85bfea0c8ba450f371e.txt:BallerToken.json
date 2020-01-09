@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:495:5: Warning: Integer Overflow.\n    function changeTeamName(uint _tokenId, string _newName) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _newName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:419:5: Warning: Integer Overflow.\n    function createPlayer(string _name, uint _teamID, uint _price) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:471:37: Warning: Integer Overflow.\n        Player storage currPlayer = ballerPlayers[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    ballerPlayers[_tokenId] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:515:5: Warning: Integer Overflow.\n    function changePlayerName(uint _tokenId, string _newName) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _newName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:541:9: Warning: Integer Overflow.\n        ballerPlayers[_tokenId].teamID\nInteger Overflow occurs if:\n    ballerPlayers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    _newTeamId = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:377:5: Warning: Integer Overflow.\n    function createTeam(string _name, uint _price) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:397:5: Warning: Integer Overflow.\n    function createPromoTeam(string _name, address _owner, uint _price) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:443:33: Warning: Integer Overflow.\n        Team storage currTeam = ballerTeams[_tokenId]\nInteger Overflow occurs if:\n    ballerTeams[_tokenId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:541:9: Warning: Integer Overflow.\n        ballerPlayers[_tokenId]\nInteger Overflow occurs if:\n    ballerPlayers.length = 95780971304118053647396689196894323976171195136475136\n    _tokenId = 95780971304118053647396689196894323976171195136475134\n    _newTeamId = 95780971304118053647396689196894323976171195136475135\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:473:9: Warning: Integer Underflow.\n        playerName = currPlayer.name\nInteger Underflow occurs if:\n    _tokenId = 0\n    ballerPlayers[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:445:9: Warning: Integer Underflow.\n        teamName = currTeam.name\nInteger Underflow occurs if:\n    ballerTeams[_tokenId] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:1039:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5ccf1cb83d01312a98f5e85bfea0c8ba450f371e.txt:1035:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.2"
+}

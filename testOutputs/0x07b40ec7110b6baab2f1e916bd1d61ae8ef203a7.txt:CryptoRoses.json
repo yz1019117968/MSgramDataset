@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x07b40ec7110b6baab2f1e916bd1d61ae8ef203a7.txt:173:3: Warning: Integer Overflow.\n  function buyRoseGRLC(bytes32 gaddrHash, string memo, uint amntSent) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    memo = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x07b40ec7110b6baab2f1e916bd1d61ae8ef203a7.txt:95:3: Warning: Integer Overflow.\n  function buyRoseETH(string memo) public payable {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    memo = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x07b40ec7110b6baab2f1e916bd1d61ae8ef203a7.txt:235:68: Warning: Integer Overflow.\n      return (roseOwners[h].hasRose, uint(roseOwners[h].roseType), roseOwners[h].memo\nInteger Overflow occurs if:\n    roseOwners[h].hasRose = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x07b40ec7110b6baab2f1e916bd1d61ae8ef203a7.txt:235:7: Warning: Integer Underflow.\n      return (roseOwners[h].hasRose, uint(roseOwners[h].roseType), roseOwners[h].memo)\nInteger Underflow occurs if:\n    roseOwners[h].hasRose = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.9"
+}

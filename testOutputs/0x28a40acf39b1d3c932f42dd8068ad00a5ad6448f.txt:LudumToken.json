@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x28a40acf39b1d3c932f42dd8068ad00a5ad6448f.txt:407:3: Warning: Timestamp Dependency.\n\t\trequire( now >= crowdsaleEnd || totalSupply == maximumSupply )", 
+   "./uniqueContractSourceCode/0x28a40acf39b1d3c932f42dd8068ad00a5ad6448f.txt:407:12: Warning: Timestamp Dependency.\n\t\trequire( now >= crowdsaleEnd || totalSupply == maximumSupply"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x28a40acf39b1d3c932f42dd8068ad00a5ad6448f.txt:415:12: Warning: Transaction-Ordering Dependency.\n\t\trequire( ethDepositAddress.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x28a40acf39b1d3c932f42dd8068ad00a5ad6448f.txt:415:12: Warning: Transaction-Ordering Dependency.\n\t\trequire( ethDepositAddress.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.6"
+}

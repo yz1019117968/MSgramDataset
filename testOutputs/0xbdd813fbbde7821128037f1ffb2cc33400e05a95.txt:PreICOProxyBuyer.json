@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:2211:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\r\n      ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [
+   "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:2021:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))", 
+   "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:2015:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))", 
+   "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:1889:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:1709:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    weiMaximumLimit = 57866891633657531536338902057972701639799234101611942927272425371195947220991\n    weiMinimumLimit = 57866891633657531536338902057972701639799234101611942927272425371195947220991\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0", 
+   "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:1727:3: Warning: Integer Overflow.\n  address[] public investors", 
+   "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:1941:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    weiMaximumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    weiMinimumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:2173:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+   ], 
+   [
+    "./restContracts/0xbdd813fbbde7821128037f1ffb2cc33400e05a95.txt:2015:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.6"
+}

@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:293:20: Warning: Timestamp Dependency.\n            } else if ( now > deadline )  {\r\n            ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:369:21: Warning: Integer Overflow.\n                    contributions[i]\nInteger Overflow occurs if:\n    contributions.length = 57896044618658097711785492504343953926634992332820282019728792003956564819974\n    state = 1\n    contributions[i].contributor = 0\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:367:43: Warning: Integer Overflow.\n                    uint amountToRefund = contributions[i]\nInteger Overflow occurs if:\n    contributions.length = 57896044618658097711785492504343953926634992332820282019728792003956564819974\n    state = 1\n    contributions[i].contributor = 0\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:371:25: Warning: Integer Overflow.\n                    if(!contributions[i].contributor\nInteger Overflow occurs if:\n    contributions.length = 57896044618658097711785492504343953926634992332820282019728792003956564819974\n    state = 1\n    contributions[i].contributor = 0\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:371:25: Warning: Integer Overflow.\n                    if(!contributions[i]\nInteger Overflow occurs if:\n    contributions.length = 57896044618658097711785492504343953926634992332820282019728792003956564819974\n    state = 1\n    contributions[i].contributor = 0\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:365:20: Warning: Integer Overflow.\n                if(contributions[i].contributor\nInteger Overflow occurs if:\n    state = 1\n    contributions.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:365:20: Warning: Integer Overflow.\n                if(contributions[i]\nInteger Overflow occurs if:\n    contributions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    state = 1\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:381:25: Warning: Integer Underflow.\n                        totalRaised -= amountToRefund\nInteger Underflow occurs if:\n    contributions.length = 57896044618658097711785492504343953926634992332820282019728792003956564819974\n    state = 1\n    contributions[i].amount = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    totalRaised = 57896044618658097711785492504343953926634992332820282019728792003956564819967\n    contributions[i].contributor = 0\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975\n    contributions[i].contributor = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:333:17: Warning: Transaction-Ordering Dependency.\n            if(!beneficiary.send(this.balance)"
+   ], 
+   [
+    "./restContracts/0xACbfB851D69EF8Eca1453d82f38B590268ca46B1.txt:333:17: Warning: Transaction-Ordering Dependency.\n            if(!beneficiary.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

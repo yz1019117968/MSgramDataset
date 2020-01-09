@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4032a725b81cfd0cdb519933cc6084d9b22175c0.txt:43:3: Warning: Integer Overflow.\n  function addReceivers(address[] receivers, uint[] balances) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    receivers = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.7"
+}

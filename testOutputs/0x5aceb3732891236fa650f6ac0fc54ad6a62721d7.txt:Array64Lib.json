@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5aceb3732891236fa650f6ac0fc54ad6a62721d7.txt:343:13: Warning: Integer Overflow.\n        if (self[i]\nInteger Overflow occurs if:\n    self[i] = 0\n    self.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    value = 9223372036854775808\n    isSorted = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5aceb3732891236fa650f6ac0fc54ad6a62721d7.txt:369:17: Warning: Integer Underflow.\n    uint256 i = index - 1\nInteger Underflow occurs if:\n    self.length = 1", 
+   "./uniqueContractSourceCode/0x5aceb3732891236fa650f6ac0fc54ad6a62721d7.txt:399:19: Warning: Integer Underflow.\n    uint256 end = self.length - 1\nInteger Underflow occurs if:\n    self.length = 0", 
+   "./uniqueContractSourceCode/0x5aceb3732891236fa650f6ac0fc54ad6a62721d7.txt:309:24: Warning: Integer Underflow.\n        uint256 high = self.length - 1\nInteger Underflow occurs if:\n    self.length = 0\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.9"
+}

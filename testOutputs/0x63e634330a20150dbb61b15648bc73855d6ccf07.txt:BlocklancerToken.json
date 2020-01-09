@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x63e634330a20150dbb61b15648bc73855d6ccf07.txt:591:68: Warning: Integer Underflow.\n        uint256 additionalTokens = totalTokens * percentOfTotal / (100 - percentOfTotal\nInteger Underflow occurs if:\n    percentOfTotal = 112\n    master = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "8.4"
+}

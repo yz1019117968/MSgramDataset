@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2717:7: Warning: Integer Overflow.\n      betsAway[i]\nInteger Overflow occurs if:\n    betsAway.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    betsHome.length = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2709:7: Warning: Integer Overflow.\n      betsHome[i]\nInteger Overflow occurs if:\n    betsHome.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2741:3: Warning: Integer Overflow.\n  function __callback(bytes32, string result) onlyState(GameState.Closed) onlyOraclize public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2657:7: Warning: Integer Overflow.\n      betAway += betsAway[i].amount\nInteger Overflow occurs if:\n    betsAway.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    betsAway[i].amount = 1\n    betsAway[i].amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    betsHome.length = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2527:5: Warning: Integer Overflow.\n    LogMoneyline({\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    gameState = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2511:7: Warning: Integer Overflow.\n      LogGame({\r\n      ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    gameState = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2617:5: Warning: Integer Overflow.\n    betsHome.push(Bet({\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    gameState = 1\n    CurrentMoneyline.home = 0\n    betsHome.push(Bet({\r\n\r\n      sender: msg.sender,\r\n\r\n      amount: msg.value,\r\n\r\n      odds: CurrentMoneyline.home\r\n\r\n    })) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minBet = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2707:7: Warning: Integer Overflow.\n      betsHome[i]\nInteger Overflow occurs if:\n    betsHome.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2651:18: Warning: Integer Overflow.\n      betHome += betsHome[i]\nInteger Overflow occurs if:\n    betsHome.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2715:7: Warning: Integer Overflow.\n      betsAway[i]\nInteger Overflow occurs if:\n    betsAway.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    betsHome.length = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2657:18: Warning: Integer Overflow.\n      betAway += betsAway[i].amount\nInteger Overflow occurs if:\n    betsAway.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    betsHome.length = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2707:7: Warning: Integer Overflow.\n      betsHome[i].amount\nInteger Overflow occurs if:\n    betsHome.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:335:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2651:18: Warning: Integer Overflow.\n      betHome += betsHome[i].amount\nInteger Overflow occurs if:\n    betsHome.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2715:7: Warning: Integer Overflow.\n      betsAway[i].amount\nInteger Overflow occurs if:\n    betsAway.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    betsHome.length = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2657:18: Warning: Integer Overflow.\n      betAway += betsAway[i]\nInteger Overflow occurs if:\n    betsAway.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    betsHome.length = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2651:7: Warning: Integer Overflow.\n      betHome += betsHome[i].amount\nInteger Overflow occurs if:\n    betsHome.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    betsHome[i].amount = 1\n    betsHome[i].amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2475:28: Warning: Integer Underflow.\n    return calculateMaxBet(this.balance - payoutHome\nInteger Underflow occurs if:\n    gameState = 1\n    payoutHome = 1", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2511:7: Warning: Integer Underflow.\n      LogGame({\r\n      ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    gameState = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4B177c969E1E4F5EA6a01E7707e77d0b9d289C4c.txt:2483:28: Warning: Integer Underflow.\n    return calculateMaxBet(this.balance - payoutAway\nInteger Underflow occurs if:\n    gameState = 1\n    payoutAway = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "32.5"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x203feca1b8ded7e170188adba844f3b58ac25b63.txt:955:3: Warning: Integer Overflow.\n  Milestone[] public milestones", 
+   "./uniqueContractSourceCode/0x203feca1b8ded7e170188adba844f3b58ac25b63.txt:1013:5: Warning: Integer Overflow.\n    milestones.push(Milestone(limit, bonus))\nInteger Overflow occurs if:\n    milestones.push(Milestone(limit, bonus)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x203feca1b8ded7e170188adba844f3b58ac25b63.txt:905:1: Warning: Integer Overflow.\ncontract CommonCrowdsale is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    milestones.push(Milestone(limit, bonus)) = 41422112641837104714977910719459132799912797182732962724615910609143899352111\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.7"
+}

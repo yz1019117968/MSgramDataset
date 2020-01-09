@@ -1,0 +1,36 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:249:9: Warning: Integer Overflow.\n        pendingWithdrawals[offer.seller] += msg.value\nInteger Overflow occurs if:\n    pendingWithdrawals[offer.seller] = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:243:18: Warning: Integer Overflow.\n        Transfer(offer.seller\nInteger Overflow occurs if:\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:135:13: Warning: Integer Overflow.\n            nextPunkIndexToAssign++\nInteger Overflow occurs if:\n    numberOfPunksReserved = 0\n    nextPunkIndexToAssign = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxForThisRun = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numberOfPunksToReserve = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:141:9: Warning: Integer Overflow.\n        numberOfPunksReserved += numberPunksReservedThisRun\nInteger Overflow occurs if:\n    maxForThisRun = 2\n    numberOfPunksReserved = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    numberOfPunksToReserve = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:191:9: Warning: Integer Overflow.\n        punksOfferedForSale[punkIndex] = Offer(false, punkIndex, msg.sender, 0, 0x0)\nInteger Overflow occurs if:\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:203:9: Warning: Integer Overflow.\n        punksOfferedForSale[punkIndex] = Offer(true, punkIndex, msg.sender, minSalePriceInWei, 0x0)\nInteger Overflow occurs if:\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:177:9: Warning: Integer Overflow.\n        balanceOf[to]++\nInteger Overflow occurs if:\n    balanceOf[to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:241:9: Warning: Integer Overflow.\n        balanceOf[msg.sender]++\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:239:19: Warning: Integer Overflow.\n        balanceOf[offer.seller\nInteger Overflow occurs if:\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:215:9: Warning: Integer Overflow.\n        punksOfferedForSale[punkIndex] = Offer(true, punkIndex, msg.sender, minSalePriceInWei, toAddress)\nInteger Overflow occurs if:\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:249:28: Warning: Integer Overflow.\n        pendingWithdrawals[offer.seller\nInteger Overflow occurs if:\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:251:42: Warning: Integer Overflow.\n        PunkBought(punkIndex, msg.value, offer.seller\nInteger Overflow occurs if:\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:73:5: Warning: Integer Overflow.\n    mapping (uint => Offer) public punksOfferedForSale", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:157:9: Warning: Integer Overflow.\n        balanceOf[msg.sender]++\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    punkIndexToAddress[punkIndex] = 0\n    punksRemainingToAssign = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:175:9: Warning: Integer Underflow.\n        balanceOf[msg.sender]--\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 0\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:19:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:9:5: Warning: Integer Underflow.\n    string public imageHash = \"ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b\"", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:17:5: Warning: Integer Underflow.\n    string public standard = 'CryptoPunks'", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:239:9: Warning: Integer Underflow.\n        balanceOf[offer.seller]--\nInteger Underflow occurs if:\n    balanceOf[offer.seller] = 0\n    punkIndexToAddress[punkIndex] = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:139:9: Warning: Integer Underflow.\n        punksRemainingToAssign -= numberPunksReservedThisRun\nInteger Underflow occurs if:\n    maxForThisRun = 1\n    numberOfPunksReserved = 0\n    punksRemainingToAssign = 0\n    numberOfPunksToReserve = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6ba6f2207e343923ba692e5cae646fb0f566db8d.txt:21:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.6"
+}

@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0xa395480a4a90c7066c8ddb5db83e2718e750641c.txt:31:11: Warning: Re-Entrancy Vulnerability.\n       if(target.call.value(amount)()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0xa395480a4a90c7066c8ddb5db83e2718e750641c.txt:55:13: Warning: Integer Overflow.\n            investors[msg.sender] += msg.value\nInteger Overflow occurs if:\n    investors[msg.sender] = 67606803465988544512558867833847644795746605046665031481628858099221143297437"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa395480a4a90c7066c8ddb5db83e2718e750641c.txt:75:13: Warning: Integer Underflow.\n            investors[msg.sender] -= amount\nInteger Underflow occurs if:\n    investors[msg.sender] = 95780971304118053647396689196894323976171195136475134\n    amount = 95780971304118053647396689196894323976171195136475136"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.9"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x18dfd8c468ed83397C0E1caDAe01E1e65E86d275.txt:193:17: Warning: Integer Overflow.\n    assert((z = x + y\nInteger Overflow occurs if:\n    wad = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    iTokensOwnedM[dst] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    pausedB = 0\n    pAllowedM[src][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    src = 0\n    dst = 1461501637330902918203684832716283019655932542975\n    iTokensOwnedM[src] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    saleInProgressB = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

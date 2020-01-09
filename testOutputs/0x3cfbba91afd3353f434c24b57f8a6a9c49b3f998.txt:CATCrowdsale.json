@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3cfbba91afd3353f434c24b57f8a6a9c49b3f998.txt:1141:5: Warning: Integer Overflow.\n    uint32[] public BONUS_AMOUNTS_VALUES", 
+   "./uniqueContractSourceCode/0x3cfbba91afd3353f434c24b57f8a6a9c49b3f998.txt:1139:5: Warning: Integer Overflow.\n    uint32[] public BONUS_AMOUNTS", 
+   "./uniqueContractSourceCode/0x3cfbba91afd3353f434c24b57f8a6a9c49b3f998.txt:1137:5: Warning: Integer Overflow.\n    uint32[] public BONUS_TIMES_VALUES", 
+   "./uniqueContractSourceCode/0x3cfbba91afd3353f434c24b57f8a6a9c49b3f998.txt:1239:5: Warning: Integer Overflow.\n    function setBonusesForAmounts(uint32[] amounts, uint32[] values) public onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3cfbba91afd3353f434c24b57f8a6a9c49b3f998.txt:1197:5: Warning: Integer Overflow.\n    function setBonusesForTimes(uint32[] times, uint32[] values) public onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3cfbba91afd3353f434c24b57f8a6a9c49b3f998.txt:1135:5: Warning: Integer Overflow.\n    uint32[] public BONUS_TIMES"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.7"
+}

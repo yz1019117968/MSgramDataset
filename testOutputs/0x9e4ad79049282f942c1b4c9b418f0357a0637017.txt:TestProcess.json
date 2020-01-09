@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:681:14: Warning: Re-Entrancy Vulnerability.\n        if (!main.call.value(24)()", 
+   "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:679:14: Warning: Re-Entrancy Vulnerability.\n        if (!main.NoxonInit.value(12)()", 
+   "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:703:14: Warning: Re-Entrancy Vulnerability.\n        if (!main.call.value(26)()", 
+   "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:719:16: Warning: Re-Entrancy Vulnerability.\n        assert(main.balanceOf(address(this))", 
+   "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:717:14: Warning: Re-Entrancy Vulnerability.\n        if (!main.call.value(40)()", 
+   "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:705:16: Warning: Re-Entrancy Vulnerability.\n        assert(main.balanceOf(address(this))"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:717:14: Warning: Transaction-Ordering Dependency.\n        if (!main.call.value(40)()"
+   ], 
+   [
+    "./restContracts/0x9e4ad79049282f942c1b4c9b418f0357a0637017.txt:703:14: Warning: Transaction-Ordering Dependency.\n        if (!main.call.value(26)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.8"
+}

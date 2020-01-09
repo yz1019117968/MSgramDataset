@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x15f08079310e2c9dacaa73c0e450368185724aea.txt:123:8: Warning: Timestamp Dependency.\n\t\telse if(closeAt < now) selfdestruct(owner)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x15f08079310e2c9dacaa73c0e450368185724aea.txt:819:3: Warning: Integer Overflow.\n  function logGameData(bytes32[] serverSeeds, bytes32[] clientSeeds, int[] results, uint8 v, bytes32 r, bytes32 s) public{\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x15f08079310e2c9dacaa73c0e450368185724aea.txt:39:10: Warning: Integer Underflow.\n\t\treturn a - b\nInteger Underflow occurs if:\n    authorized[ecrecover(keccak256(player, winBalance, gameCount), v, r, s)] = 255\n    authorized[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x15f08079310e2c9dacaa73c0e450368185724aea.txt:37:15: Warning: Integer Underflow.\n\t\telse assert(a - b\nInteger Underflow occurs if:\n    authorized[ecrecover(keccak256(player, winBalance, gameCount), v, r, s)] = 255\n    authorized[msg.sender] = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.3"
+}

@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x36b53af431e71e427ffd4b955e689c7a4b5b235d.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x36b53af431e71e427ffd4b955e689c7a4b5b235d.txt:305:2: Warning: Integer Underflow.\n\tstring public name = 'SIEMENS'", 
+   "./uniqueContractSourceCode/0x36b53af431e71e427ffd4b955e689c7a4b5b235d.txt:313:2: Warning: Integer Underflow.\n\tstring public publishier = 'TokenDone.io'", 
+   "./uniqueContractSourceCode/0x36b53af431e71e427ffd4b955e689c7a4b5b235d.txt:307:2: Warning: Integer Underflow.\n\tstring public symbol = 'SIEMENS'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.4"
+}

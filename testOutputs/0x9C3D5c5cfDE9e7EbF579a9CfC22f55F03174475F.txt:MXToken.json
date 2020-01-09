@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9C3D5c5cfDE9e7EbF579a9CfC22f55F03174475F.txt:621:5: Warning: Integer Underflow.\n    string public symbol = \"PRG\"", 
+   "./restContracts/0x9C3D5c5cfDE9e7EbF579a9CfC22f55F03174475F.txt:619:5: Warning: Integer Underflow.\n    string public name = \"PRGOT\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.8"
+}

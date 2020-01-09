@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x06194c50a5a85bb1fee0e73877eefdef64466514.txt:169:5: Warning: Integer Overflow.\n    function fipsRegister(uint count, address owner, bytes data) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x06194c50a5a85bb1fee0e73877eefdef64466514.txt:211:5: Warning: Integer Overflow.\n    function fipsRegister(address owner, bytes data) { fipsRegister(1, owner, data); }\nInteger Overflow occurs if:\n    owner = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x06194c50a5a85bb1fee0e73877eefdef64466514.txt:119:5: Warning: Integer Overflow.\n    function fipsPublishData(bytes20 fips, bytes data) constant {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x06194c50a5a85bb1fee0e73877eefdef64466514.txt:207:5: Warning: Integer Overflow.\n    function fipsRegister(uint count, bytes data) { fipsRegister(count, msg.sender, data); }\nInteger Overflow occurs if:\n    owner = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.4"
+}

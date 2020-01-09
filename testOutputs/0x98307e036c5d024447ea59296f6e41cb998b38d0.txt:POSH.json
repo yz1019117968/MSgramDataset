@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x98307e036c5d024447ea59296f6e41cb998b38d0.txt:189:7: Warning: Integer Overflow.\n\t\t    balanceOfOld[_to] += _value\nInteger Overflow occurs if:\n    balanceOfOld[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    _to = 1461501637330902918203684832716283019655932542975\n    balanceOfOld[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    allowance[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x98307e036c5d024447ea59296f6e41cb998b38d0.txt:435:41: Warning: Integer Underflow.\n\t\treturn reserve() - fixedExp((fixedLog(totalSupply - tokens\nInteger Underflow occurs if:\n    totalSupply = 604462909807314587357182\n    _value = 604462909807314587357184\n    _to = 0\n    balanceOfOld[_from] = 604462909807314587357184\n    allowance[_from][msg.sender] = 604462909807314587357184", 
+   "./restContracts/0x98307e036c5d024447ea59296f6e41cb998b38d0.txt:485:16: Warning: Integer Underflow.\n\t\tint256 s = (((int256)(a) - one\nInteger Underflow occurs if:\n    totalSupply = 604475962366583895957504\n    _value = 604462909807314587353088\n    _to = 0\n    balanceOfOld[_from] = 604462909807314587353088\n    allowance[_from][msg.sender] = 604462909807314587353088"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "28.3"
+}

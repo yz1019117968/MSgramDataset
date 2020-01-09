@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:285:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    ownedArea[_owner] = 1\n    _area = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:925:10: Warning: Integer Overflow.\n\t\treturn ownedTokens[_owner][_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    ownedTokens[_owner][_index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:983:10: Warning: Integer Overflow.\n\t\treturn tokenIds[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    tokenIds[_index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:941:3: Warning: Integer Overflow.\n\t\townedTokens[_owner].push(_tokenId)\nInteger Overflow occurs if:\n    ownedTokens[_owner].push(_tokenId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:999:3: Warning: Integer Overflow.\n\t\ttokenIds.push(_tokenId)\nInteger Overflow occurs if:\n    tokenIds.push(_tokenId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:795:1: Warning: Integer Overflow.\ncontract BdpOwnershipStorage is BdpBase {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokenIds.push(_tokenId) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:835:2: Warning: Integer Overflow.\n\tuint256[] public tokenIds", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:991:3: Warning: Integer Overflow.\n\t\ttokenIds[_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457583867175641284607\n    tokenIds[_index] = 115792089237316195423570985008687907853269984665640564039457583867175641284608\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:933:3: Warning: Integer Overflow.\n\t\townedTokens[_owner][_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457583867175641284607\n    ownedTokens[_owner][_index] = 115792089237316195423570985008687907853269984665640564039457583867175641284608\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:823:2: Warning: Integer Overflow.\n\tmapping (address => uint256[]) public ownedTokens"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:1009:3: Warning: Integer Underflow.\n\t\ttokenIds.length--\nInteger Underflow occurs if:\n    tokenIds.length = 0\n    ownerAddress = 0\n    setupComplete = 0", 
+   "./restContracts/0x9f51e7e4ceb88982da1695297ff7ca591ca2327a.txt:951:3: Warning: Integer Underflow.\n\t\townedTokens[_owner].length--\nInteger Underflow occurs if:\n    ownedTokens[_owner].length = 0\n    ownerAddress = 0\n    setupComplete = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.1"
+}

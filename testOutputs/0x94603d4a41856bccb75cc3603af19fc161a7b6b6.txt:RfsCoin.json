@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x94603d4a41856bccb75cc3603af19fc161a7b6b6.txt:177:13: Warning: Integer Overflow.\n            balanceOfOld[_to] += _value\nInteger Overflow occurs if:\n    balanceOfOld[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    _to = 1461501637330902918203684832716283019655932542975\n    balanceOfOld[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    allowance[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x94603d4a41856bccb75cc3603af19fc161a7b6b6.txt:267:16: Warning: Integer Underflow.\n        return balance() - ((uint256) ((int256) (earningsPerShare * totalSupply) - totalPayouts) / PRECISION) - 1\nInteger Underflow occurs if:\n    earningsPerShare = 0\n    totalPayouts = 0\n    totalSupply = 1000000000000000", 
+   "./restContracts/0x94603d4a41856bccb75cc3603af19fc161a7b6b6.txt:267:40: Warning: Integer Underflow.\n        return balance() - ((uint256) ((int256) (earningsPerShare * totalSupply) - totalPayouts\nInteger Underflow occurs if:\n    earningsPerShare = 0\n    totalPayouts = 1\n    totalSupply = 1000000000000000", 
+   "./restContracts/0x94603d4a41856bccb75cc3603af19fc161a7b6b6.txt:383:47: Warning: Integer Underflow.\n        return reserve() - fixedExp((fixedLog(totalSupply - tokens\nInteger Underflow occurs if:\n    totalSupply = 4717754795614806220846\n    _value = 4726978168888081023504\n    _to = 0\n    balanceOfOld[_from] = 4726978168888081023504\n    allowance[_from][msg.sender] = 4726978168888081023504", 
+   "./restContracts/0x94603d4a41856bccb75cc3603af19fc161a7b6b6.txt:267:16: Warning: Integer Underflow.\n        return balance() - ((uint256) ((int256) (earningsPerShare * totalSupply) - totalPayouts) / PRECISION)\nInteger Underflow occurs if:\n    earningsPerShare = 0\n    totalPayouts = 18446744073709551616\n    totalSupply = 1000000000000000"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.0"
+}

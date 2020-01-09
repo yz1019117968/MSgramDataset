@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc3ef562cc403c8f9edf7c3826655fbf50f4ddde8.txt:187:9: Warning: Integer Overflow.\n        store[msg.sender][key]=tx(amount,repeatMinutes,repeatTimes)", 
+   "./restContracts/0xc3ef562cc403c8f9edf7c3826655fbf50f4ddde8.txt:169:5: Warning: Integer Overflow.\n    mapping (address => mapping(address=>tx)) public store"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.6"
+}

@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb3d5f0210cd4f4631aa634103388fb759a73385d.txt:219:9: Warning: Integer Underflow.\n        return stateNames[ uint(currentState()) ]\nInteger Underflow occurs if:\n    return stateNames[ uint(currentState()) ] = 1\n    isAborted = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb3d5f0210cd4f4631aa634103388fb759a73385d.txt:247:14: Warning: Transaction-Ordering Dependency.\n        if (!msg.sender.send(amount_to_refund)"
+   ], 
+   [
+    "./restContracts/0xb3d5f0210cd4f4631aa634103388fb759a73385d.txt:247:14: Warning: Transaction-Ordering Dependency.\n        if (!msg.sender.send(amount_to_refund)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.4"
+}

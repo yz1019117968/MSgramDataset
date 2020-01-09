@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8d1fc2a7d4bc3c64ff04f5a9485a32e3f6f8fdaf.txt:89:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    totalSupply_ = 1\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    mintingFinished = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8d1fc2a7d4bc3c64ff04f5a9485a32e3f6f8fdaf.txt:661:3: Warning: Integer Underflow.\n  string public version = \"H0.1\"", 
+   "./restContracts/0x8d1fc2a7d4bc3c64ff04f5a9485a32e3f6f8fdaf.txt:657:3: Warning: Integer Underflow.\n  string public name = \"Vortix$\"", 
+   "./restContracts/0x8d1fc2a7d4bc3c64ff04f5a9485a32e3f6f8fdaf.txt:659:3: Warning: Integer Underflow.\n  string public symbol = \"VTX$\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.8"
+}

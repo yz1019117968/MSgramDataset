@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1218113304d8ffb12f4641ba7475975972381f8a.txt:375:71: Warning: Timestamp Dependency.\n        if (msg.sender == wallets.fees || msg.sender == wallets.fund) require(!funding())", 
+   "./uniqueContractSourceCode/0x1218113304d8ffb12f4641ba7475975972381f8a.txt:395:16: Warning: Timestamp Dependency.\n        return now >= sale.startTime && now <= sale.endTime"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1218113304d8ffb12f4641ba7475975972381f8a.txt:287:5: Warning: Integer Overflow.\n    mapping(uint => Sale) public sales"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1218113304d8ffb12f4641ba7475975972381f8a.txt:383:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(payment)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1218113304d8ffb12f4641ba7475975972381f8a.txt:383:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(payment)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.4"
+}

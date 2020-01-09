@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:823:5: Warning: Integer Overflow.\n    icoRounds[rNo].rSentKrownsCount\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:515:3: Warning: Integer Overflow.\n  mapping(address => RoundPayments) public paymentsFromAddress", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:849:2: Warning: Integer Overflow.\n\ticoRounds[rNo].roundCompleted\nInteger Overflow occurs if:\n    icoInProgress = 255\n    icoRounds[rNo].rEndBlock = 115792089237316195423570985008687907853269984665640564039457583867175641284606\n    icoRounds[rNo].rStartBlock = 115792089237316195423570985008687907853269984665640564039457583867175641284608\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:835:5: Warning: Integer Overflow.\n    icoRounds[rNo].rEndBlock\nInteger Overflow occurs if:\n    icoRounds[rNo].rStartBlock = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:495:3: Warning: Integer Overflow.\n  mapping(uint => IcoRoundData) public icoRounds", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:819:5: Warning: Integer Overflow.\n    icoRounds[rNo].rEthPaymentsCount\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:847:2: Warning: Integer Overflow.\n\ticoRounds[rNo].rEndBlock\nInteger Overflow occurs if:\n    icoInProgress = 255\n    icoRounds[rNo].rEndBlock = 115792089237316195423570985008687907853269984665640564039457583867175641284606\n    icoRounds[rNo].rStartBlock = 115792089237316195423570985008687907853269984665640564039457583867175641284608\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:811:5: Warning: Integer Overflow.\n    icoRounds[rNo].rMaxKrsCap\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:815:5: Warning: Integer Overflow.\n    icoRounds[rNo].rEndBlock\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:805:5: Warning: Integer Overflow.\n    icoRounds[rNo].rKrsUsdFixed\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:809:5: Warning: Integer Overflow.\n    icoRounds[rNo].rMinKrsCap\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:617:78: Warning: Integer Overflow.\n        krowns4eth = safeDiv(safeMul(safeMul(msg.value, ethUsd), uint(100)), icoRounds[rNo].rKrsUsdFixed\nInteger Overflow occurs if:\n    icoRounds[rNo].rKrsUsdFixed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ethUsd = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ethEur = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    icoRounds[rNo].roundCompleted = 0\n    icoInProgress = 255\n    icoRounds[rNo].rEndBlock = 115792089237316195423570985008676489871728336986592097751701988046813477732351\n    icoRounds[rNo].rStartBlock = 115792089237316195423570985008676489871728336986592097751701988046813477732351\n    owner = 0\n    icoRounds[rNo].rMinEthPayment = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:785:2: Warning: Integer Overflow.\n\ticoRounds[rNo] = IcoRoundData(_rMinEthPayment, _rKrsUsdFixed, _rKycTreshold, _rMinKrsCap, _rMaxKrsCap, \r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    rNo = 24\n    icoInProgress = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:669:71: Warning: Integer Overflow.\n\t    if(block.number >= icoRounds[rNo].rStartBlock && block.number <= icoRounds[rNo].rEndBlock\nInteger Overflow occurs if:\n    icoRounds[rNo].rStartBlock = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:813:5: Warning: Integer Overflow.\n    icoRounds[rNo].rStartBlock\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:675:27: Warning: Integer Overflow.\n        if(block.number > icoRounds[rNo].rEndBlock\nInteger Overflow occurs if:\n    icoRounds[rNo].rStartBlock = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:807:5: Warning: Integer Overflow.\n    icoRounds[rNo].rKycTreshold\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:821:5: Warning: Integer Overflow.\n    icoRounds[rNo].rSentKrownsAmount\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:715:3: Warning: Integer Overflow.\n  function tokenFallback(address _sender, address _origin, uint _value, bytes _data) returns (bool ok) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:817:5: Warning: Integer Overflow.\n    icoRounds[rNo].rEthPaymentsAmount\nInteger Overflow occurs if:\n    icoRounds[rNo].roundCompleted = 0\n    owner = 0\n    icoRounds[rNo].rEthPaymentsAmount = 0", 
+   "./uniqueContractSourceCode/0x1C06e21Bd42C331f6A7b9914e60C60B5B8F02DC5.txt:669:25: Warning: Integer Overflow.\n\t    if(block.number >= icoRounds[rNo].rStartBlock\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.0"
+}

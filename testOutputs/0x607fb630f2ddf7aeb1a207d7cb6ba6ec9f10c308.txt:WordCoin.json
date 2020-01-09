@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x607fb630f2ddf7aeb1a207d7cb6ba6ec9f10c308.txt:1085:9: Warning: Integer Overflow.\n        deposits[msg.sender].time\nInteger Overflow occurs if:\n    amount = 0\n    _balances[msg.sender] = 1\n    deposits[msg.sender].amount = 0", 
+   "./uniqueContractSourceCode/0x607fb630f2ddf7aeb1a207d7cb6ba6ec9f10c308.txt:1089:9: Warning: Integer Overflow.\n        _balances[this] += amount\nInteger Overflow occurs if:\n    _balances[this] = 59218951627437310386411044169781991233084313256747678792531810087490296886273\n    amount = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    _balances[msg.sender] = 105782898658114362639998236590588058411517566113314665475433552748888561006559\n    deposits[msg.sender].amount = 0", 
+   "./uniqueContractSourceCode/0x607fb630f2ddf7aeb1a207d7cb6ba6ec9f10c308.txt:829:5: Warning: Integer Overflow.\n    function setName(string name_) auth {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x607fb630f2ddf7aeb1a207d7cb6ba6ec9f10c308.txt:825:5: Warning: Integer Underflow.\n    string public  name = \"\"", 
+   "./uniqueContractSourceCode/0x607fb630f2ddf7aeb1a207d7cb6ba6ec9f10c308.txt:749:5: Warning: Integer Underflow.\n    string  public  symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.7"
+}

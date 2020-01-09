@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa02772a580ad64f9a789449364cfd17a97efbf76.txt:223:5: Warning: Integer Underflow.\n    string public name = \"Schengencoin\"", 
+   "./restContracts/0xa02772a580ad64f9a789449364cfd17a97efbf76.txt:225:5: Warning: Integer Underflow.\n    string public symbol = \"SGNC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.0"
+}

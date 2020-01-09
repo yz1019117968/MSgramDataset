@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2cc13780ba2a48a103ad19d458a52945bda7ac7d.txt:367:3: Warning: Integer Underflow.\n  string public name = \"Shark Trust\"", 
+   "./uniqueContractSourceCode/0x2cc13780ba2a48a103ad19d458a52945bda7ac7d.txt:369:3: Warning: Integer Underflow.\n  string public symbol = \"SKT\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.7"
+}

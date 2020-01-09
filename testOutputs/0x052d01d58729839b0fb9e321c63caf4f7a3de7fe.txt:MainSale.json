@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x052d01d58729839b0fb9e321c63caf4f7a3de7fe.txt:939:5: Warning: Timestamp Dependency.\n    require(now > start && now < start + 28 days)", 
+   "./uniqueContractSourceCode/0x052d01d58729839b0fb9e321c63caf4f7a3de7fe.txt:939:13: Warning: Timestamp Dependency.\n    require(now > start && now < start + 28 days"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x052d01d58729839b0fb9e321c63caf4f7a3de7fe.txt:201:5: Warning: Integer Overflow.\n    authorizers.length++\nInteger Overflow occurs if:\n    authorizers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authorizerIndex[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x052d01d58729839b0fb9e321c63caf4f7a3de7fe.txt:899:1: Warning: Integer Overflow.\ncontract MainSale is Ownable, Authorizable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    authorizers.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    authorizerIndex[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.8"
+}

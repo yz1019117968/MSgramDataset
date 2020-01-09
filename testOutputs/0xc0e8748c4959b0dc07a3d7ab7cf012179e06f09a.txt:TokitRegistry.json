@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:357:13: Warning: Integer Overflow.\n            project_registry[_projectId].fund", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:287:9: Warning: Integer Overflow.\n        registry[_customer][_projectId].fund\nInteger Overflow occurs if:\n    registrars[msg.sender] = 255", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:249:5: Warning: Integer Overflow.\n    mapping (uint => ProjectContracts) public project_registry", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:335:13: Warning: Integer Overflow.\n            registry[_customer][_projectId].fund", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:309:9: Warning: Integer Overflow.\n        registry[_customer][_projectId].campaign\nInteger Overflow occurs if:\n    registrars[msg.sender] = 255", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:337:13: Warning: Integer Overflow.\n            registry[_customer][_projectId].campaign", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:313:9: Warning: Integer Overflow.\n        project_registry[_projectId].campaign\nInteger Overflow occurs if:\n    registrars[msg.sender] = 255", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:245:5: Warning: Integer Overflow.\n    mapping (address => mapping(uint => ProjectContracts)) public registry", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:293:9: Warning: Integer Overflow.\n        project_registry[_projectId].fund\nInteger Overflow occurs if:\n    registrars[msg.sender] = 255", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:359:13: Warning: Integer Overflow.\n            project_registry[_projectId].campaign"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

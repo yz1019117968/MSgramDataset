@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x700fc72abc067e90111a391d0fae8ce8c799b38f.txt:27:5: Warning: Integer Overflow.\n    function multiTransfer(ERC20 token, address[] Airdrop2, uint256 amount) public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x700fc72abc067e90111a391d0fae8ce8c799b38f.txt:21:5: Warning: Integer Overflow.\n    address[] public Airdrop2"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.5"
+}

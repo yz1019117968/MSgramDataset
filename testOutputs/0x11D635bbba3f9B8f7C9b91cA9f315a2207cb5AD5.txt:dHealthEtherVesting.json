@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2551:3: Warning: Timestamp Dependency.\n\t\trequire(contractTimeout <= getBlockTime())"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2425:22: Warning: Integer Overflow.\n\t\t\tuint256 endTime = startingAt + (vestingPeriodLength * (i))\nInteger Overflow occurs if:\n    startingAt = 1\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2423:24: Warning: Integer Overflow.\n\t\t\tuint256 startTime = startingAt + (vestingPeriodLength * (i - 1))\nInteger Overflow occurs if:\n    startingAt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    timestamp = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2379:22: Warning: Integer Overflow.\n\t\t\tuint256 endTime = startingAt + (vestingPeriodLength * (i))\nInteger Overflow occurs if:\n    startingAt = 1\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2253:2: Warning: Integer Overflow.\n\tmapping (uint256 => VestingStruct) public vestings", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2377:24: Warning: Integer Overflow.\n\t\t\tuint256 startTime = startingAt + (vestingPeriodLength * (i - 1))\nInteger Overflow occurs if:\n    startingAt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    timestamp = 115792089237316195423570985008687907853269984665640564039457584007913129639934"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2553:3: Warning: Transaction-Ordering Dependency.\n\t\towner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2553:3: Warning: Transaction-Ordering Dependency.\n\t\towner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.4"
+}

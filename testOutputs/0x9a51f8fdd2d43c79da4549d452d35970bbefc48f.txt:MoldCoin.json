@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:345:17: Warning: Timestamp Dependency.\n        require(block.timestamp >= startDatetime && block.timestamp <= endDatetime", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:397:9: Warning: Timestamp Dependency.\n        if (timeInSeconds <= endDatetime) return 10000", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:345:9: Warning: Timestamp Dependency.\n        require(block.timestamp >= startDatetime && block.timestamp <= endDatetime)", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:395:9: Warning: Timestamp Dependency.\n        if (timeInSeconds <= secondStageDatetime) return 12000", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:393:9: Warning: Timestamp Dependency.\n        if (timeInSeconds <= firstStageDatetime) return 15000", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:391:9: Warning: Timestamp Dependency.\n        if (timeInSeconds < startDatetime) return 0"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:39:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    endDatetime = 0\n    saleTokenSupply = 1\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    admin = 0", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:199:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:179:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:265:5: Warning: Integer Underflow.\n    string public name = \"MOLD\"", 
+   "./restContracts/0x9a51f8fdd2d43c79da4549d452d35970bbefc48f.txt:267:5: Warning: Integer Underflow.\n    string public symbol = \"MLD\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.4"
+}

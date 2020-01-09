@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaeda4bbc81f4d1695dbc97f3b0edad449a649cb4.txt:41:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_owner] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xaeda4bbc81f4d1695dbc97f3b0edad449a649cb4.txt:151:3: Warning: Integer Overflow.\n  function transfer(address _to, uint _value, bytes _data) returns (bool success) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaeda4bbc81f4d1695dbc97f3b0edad449a649cb4.txt:289:3: Warning: Integer Underflow.\n  string public name = \"I Love You\"", 
+   "./restContracts/0xaeda4bbc81f4d1695dbc97f3b0edad449a649cb4.txt:291:3: Warning: Integer Underflow.\n  string public symbol = \"LOVE\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.9"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x89fc9b1a86f416b62936c6fdea6e43456954b476.txt:115:13: Warning: Integer Overflow.\n            bounties[index].reward\nInteger Overflow occurs if:\n    bounties[index].hash = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    bounties[index].isClaimed = 0", 
+   "./restContracts/0x89fc9b1a86f416b62936c6fdea6e43456954b476.txt:87:5: Warning: Integer Overflow.\n    function claimBounty(uint claimIndex, string solution) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    solution = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x89fc9b1a86f416b62936c6fdea6e43456954b476.txt:115:13: Warning: Integer Overflow.\n            bounties[index].reward += msg.value\nInteger Overflow occurs if:\n    bounties[index].reward = 1\n    bounties[index].hash = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    bounties[index].isClaimed = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.5"
+}

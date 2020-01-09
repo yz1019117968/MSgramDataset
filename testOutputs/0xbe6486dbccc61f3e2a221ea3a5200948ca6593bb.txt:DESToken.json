@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbe6486dbccc61f3e2a221ea3a5200948ca6593bb.txt:233:5: Warning: Integer Underflow.\n    string public symbol = \"DES\"", 
+   "./restContracts/0xbe6486dbccc61f3e2a221ea3a5200948ca6593bb.txt:231:5: Warning: Integer Underflow.\n    string public name = \"Decentralized Escrow Service\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.0"
+}

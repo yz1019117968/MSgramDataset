@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xa85b55495a6c7fe7d41dd2494d42be2622ee20da.txt:191:32: Warning: Timestamp Dependency.\n    modifier afterDeadline() { if (now >= deadline) _"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa85b55495a6c7fe7d41dd2494d42be2622ee20da.txt:171:9: Warning: Integer Overflow.\n        amountRaised += amount\nInteger Overflow occurs if:\n    amountRaised = 1\n    deadline = 0", 
+   "./restContracts/0xa85b55495a6c7fe7d41dd2494d42be2622ee20da.txt:169:9: Warning: Integer Overflow.\n        balanceOf[msg.sender] += amount\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 1\n    deadline = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.6"
+}

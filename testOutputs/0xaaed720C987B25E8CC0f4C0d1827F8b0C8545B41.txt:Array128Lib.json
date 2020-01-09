@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:275:22: Warning: Integer Overflow.\n          mid := div(add(low,high)\nInteger Overflow occurs if:\n    self = 0\n    value = 1\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:139:23: Warning: Integer Overflow.\n        term := sload(add(sha3(0x60,0x20),div(i,2))", 
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:195:23: Warning: Integer Overflow.\n        term := sload(add(sha3(0x60,0x20),div(i,2))", 
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:277:25: Warning: Integer Overflow.\n          term := sload(add(sha3(0x60,0x20),div(mid,2))\nInteger Overflow occurs if:\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:267:21: Warning: Integer Underflow.\n        let high := sub(sload(self_slot),1)\nInteger Underflow occurs if:\n    isSorted = 1", 
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:387:17: Warning: Integer Underflow.\n    uint256 i = index - 1\nInteger Underflow occurs if:\n    self.length = 1", 
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:313:23: Warning: Integer Underflow.\n              high := sub(mid,1)\nInteger Underflow occurs if:\n    self = 340282366287113163349259906683416608768\n    self = 115792089237316195423570985008687907852929702298719625575994209400481361428480\n    self = 115792089237316195423570985008687907852929702298719625575994209400481361428480\n    value = 316912650057057350374175801345\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xaaed720C987B25E8CC0f4C0d1827F8b0C8545B41.txt:417:19: Warning: Integer Underflow.\n    uint256 end = self.length - 1\nInteger Underflow occurs if:\n    self.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.8"
+}

@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1319:12: Warning: Integer Overflow.\n\t\tsecret = registrations[_unique].secret", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1091:3: Warning: Integer Overflow.\n\t\tflowerBalances[_to] += _value\nInteger Overflow occurs if:\n    flowerBalances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    flowerAllowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    flowerBalances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1233:2: Warning: Integer Overflow.\n\tmapping (bytes32 => Registration) public registrations", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1013:16: Warning: Integer Overflow.\n\t\tactivateAt = diamond.activateAt\nInteger Overflow occurs if:\n    diamonds[_id] = 1", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1343:3: Warning: Integer Overflow.\n\t\t_signTruelove(_registerID, _secret, _topSecret)\nInteger Overflow occurs if:\n    cooAddress = 0", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1327:2: Warning: Integer Overflow.\n\tfunction signTruelove(bytes32 _registerID, string _secret, string _topSecret) public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _secret = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:677:3: Warning: Integer Overflow.\n\t\townershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    diamondIndexToOwner[_tokenId] = 0\n    diamondIndexToApproved[_tokenId] = 0\n    paused = 0", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1003:29: Warning: Integer Overflow.\n\t\tDiamond storage diamond = diamonds[_id]\nInteger Overflow occurs if:\n    diamonds[_id] = 14474011154664524427946373126085988481658748083205070504932198000989141204993"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:817:11: Warning: Integer Underflow.\n\t\t\treturn diamonds.length - 1\nInteger Underflow occurs if:\n    diamonds.length = 0", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:683:4: Warning: Integer Underflow.\n\t\t\townershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    diamondIndexToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    diamondIndexToApproved[_tokenId] = 0\n    paused = 0", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1319:3: Warning: Integer Underflow.\n\t\tsecret = registrations[_unique].secret", 
+   "./restContracts/0xa61c86eea36c9ebe51b70c4a77ecbce0a6078d02.txt:1233:2: Warning: Integer Underflow.\n\tmapping (bytes32 => Registration) public registrations"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.0"
+}

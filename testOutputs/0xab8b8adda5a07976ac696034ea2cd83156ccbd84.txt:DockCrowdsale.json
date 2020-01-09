@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab8b8adda5a07976ac696034ea2cd83156ccbd84.txt:1131:21: Warning: Integer Overflow.\n        extraTime = capReleaseTimestamp + 7 days\nInteger Overflow occurs if:\n    stage = 0\n    owner = 0", 
+   "./restContracts/0xab8b8adda5a07976ac696034ea2cd83156ccbd84.txt:1129:31: Warning: Integer Overflow.\n        capReleaseTimestamp = startTime + 5 hours\nInteger Overflow occurs if:\n    stage = 0\n    owner = 0", 
+   "./restContracts/0xab8b8adda5a07976ac696034ea2cd83156ccbd84.txt:1373:53: Warning: Integer Overflow.\n            allocateTokensBeforeOffering(toList[i], tokensList[i]\nInteger Overflow occurs if:\n    stage = 0\n    tokensList = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0", 
+   "./restContracts/0xab8b8adda5a07976ac696034ea2cd83156ccbd84.txt:1373:42: Warning: Integer Overflow.\n            allocateTokensBeforeOffering(toList[i]\nInteger Overflow occurs if:\n    stage = 0\n    toList = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0", 
+   "./restContracts/0xab8b8adda5a07976ac696034ea2cd83156ccbd84.txt:231:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    stage = 0\n    durationInSeconds = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xab8b8adda5a07976ac696034ea2cd83156ccbd84.txt:1095:5: Warning: Integer Overflow.\n    function whitelist(address[] users) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    users = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.4"
+}

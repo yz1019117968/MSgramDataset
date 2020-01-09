@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa95ac0d22379c428fb73296446a6399962c1a93a.txt:801:3: Warning: Integer Underflow.\n  string public symbol = \"RDT\"", 
+   "./restContracts/0xa95ac0d22379c428fb73296446a6399962c1a93a.txt:799:3: Warning: Integer Underflow.\n  string public name = \"Rate Date Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.2"
+}

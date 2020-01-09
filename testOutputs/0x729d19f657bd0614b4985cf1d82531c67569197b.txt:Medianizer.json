@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x729d19f657bd0614b4985cf1d82531c67569197b.txt:675:47: Warning: Integer Underflow.\n        bytes32[] memory wuts = new bytes32[](uint96(next) - 1\nInteger Underflow occurs if:\n    next = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.7"
+}

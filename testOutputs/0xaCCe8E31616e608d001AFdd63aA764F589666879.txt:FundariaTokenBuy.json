@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xaCCe8E31616e608d001AFdd63aA764F589666879.txt:197:9: Warning: Timestamp Dependency.\n        if(now>finalTimestampOfBonusPeriod) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaCCe8E31616e608d001AFdd63aA764F589666879.txt:193:28: Warning: Integer Underflow.\n        var remnantValue = msg.value-returnedWei"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xaCCe8E31616e608d001AFdd63aA764F589666879.txt:233:9: Warning: Transaction-Ordering Dependency.\n        (ft.fundariaPoolAddress()).transfer(weiForFundariaPool)"
+   ], 
+   [
+    "./restContracts/0xaCCe8E31616e608d001AFdd63aA764F589666879.txt:233:9: Warning: Transaction-Ordering Dependency.\n        (ft.fundariaPoolAddress()).transfer(weiForFundariaPool)", 
+    "./restContracts/0xaCCe8E31616e608d001AFdd63aA764F589666879.txt:249:27: Warning: Transaction-Ordering Dependency.\n        if(returnedWei>0) msg.sender.transfer(returnedWei)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.0"
+}

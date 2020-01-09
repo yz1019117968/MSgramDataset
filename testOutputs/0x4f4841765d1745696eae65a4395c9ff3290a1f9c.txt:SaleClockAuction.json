@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:6859:17: Warning: Integer Overflow.\n        return (_auction.startedAt", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:6759:9: Warning: Integer Overflow.\n        tokenIdToAuction[_tokenId] = _auction\nInteger Overflow occurs if:\n    _endingPrice = 0\n    _startingPrice = 0\n    _duration = 64\n    nonFungibleContract = 0", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:6877:19: Warning: Integer Overflow.\n        if (now > _auction.startedAt", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:6887:13: Warning: Integer Overflow.\n            _auction.endingPrice", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:6889:13: Warning: Integer Overflow.\n            _auction.duration", 
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:6885:37: Warning: Integer Overflow.\n        return _computeCurrentPrice(_auction.startingPrice"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4f4841765d1745696eae65a4395c9ff3290a1f9c.txt:6919:39: Warning: Integer Underflow.\n            int256 totalPriceChange = int256(_endingPrice) - int256(_startingPrice)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.1"
+}

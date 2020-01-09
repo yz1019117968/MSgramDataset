@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x58bf7df57d9da7113c4ccb49d8463d4908c735cb.txt:163:12: Warning: Integer Overflow.\n        || amount + balances[to]\nInteger Overflow occurs if:\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    frozen = 0", 
+   "./uniqueContractSourceCode/0x58bf7df57d9da7113c4ccb49d8463d4908c735cb.txt:255:12: Warning: Integer Overflow.\n        || balances[to] + amount\nInteger Overflow occurs if:\n    balances[to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    frozen = 0", 
+   "./uniqueContractSourceCode/0x58bf7df57d9da7113c4ccb49d8463d4908c735cb.txt:129:9: Warning: Integer Overflow.\n        balances[to] += amount\nInteger Overflow occurs if:\n    balances[to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    admins[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x58bf7df57d9da7113c4ccb49d8463d4908c735cb.txt:199:12: Warning: Integer Overflow.\n        || balances[to] + amount\nInteger Overflow occurs if:\n    balances[to] = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    amount = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    admins[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x58bf7df57d9da7113c4ccb49d8463d4908c735cb.txt:235:9: Warning: Integer Underflow.\n        totalSupply -= amount\nInteger Underflow occurs if:\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    admins[msg.sender] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.3"
+}

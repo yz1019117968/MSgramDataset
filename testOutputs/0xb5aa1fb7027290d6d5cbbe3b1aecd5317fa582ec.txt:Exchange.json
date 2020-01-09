@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:2171:5: Warning: Integer Overflow.\n    function atomicMatch_(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldataBuy = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:2027:5: Warning: Integer Overflow.\n    function ordersCanMatch_(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldataBuy = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:2087:5: Warning: Integer Overflow.\n    function orderCalldataCanMatch(bytes buyCalldata, bytes buyReplacementPattern, bytes sellCalldata, bytes sellReplacementPattern)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    buyCalldata = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:1893:5: Warning: Integer Overflow.\n    function approveOrder_ (\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldata = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:1837:5: Warning: Integer Overflow.\n    function validateOrder_ (\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldata = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:1747:5: Warning: Integer Overflow.\n    function hashOrder_(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldata = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:1791:5: Warning: Integer Overflow.\n    function validateOrderParameters_ (\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldata = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:1933:5: Warning: Integer Overflow.\n    function cancelOrder_(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldata = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:683:5: Warning: Integer Overflow.\n    function staticCall(address target, bytes memory calldata, bytes memory extradata)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:2121:5: Warning: Integer Overflow.\n    function calculateMatchPrice_(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldataBuy = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:1983:5: Warning: Integer Overflow.\n    function calculateCurrentPrice_(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    calldata = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5aa1fb7027290d6d5cbbe3b1aecd5317fa582ec.txt:1701:5: Warning: Integer Overflow.\n    function guardedArrayReplace(bytes array, bytes desired, bytes mask)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    array = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "16.4"
+}

@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:427:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    mintingDone = 0\n    owner = 0", 
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:429:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    mintingDone = 0\n    owner = 0", 
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:439:5: Warning: Integer Overflow.\n    function rename(string newName, string newSymbol) onlyOwner public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:261:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:337:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:55:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:301:9: Warning: Integer Underflow.\n        totalSupply -= _value\nInteger Underflow occurs if:\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x954ceff97a9fda758a9bfd935c8a356e783ba5a7.txt:53:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.9"
+}

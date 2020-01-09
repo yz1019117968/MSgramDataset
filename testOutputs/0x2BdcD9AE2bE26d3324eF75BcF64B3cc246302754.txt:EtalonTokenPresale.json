@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2BdcD9AE2bE26d3324eF75BcF64B3cc246302754.txt:559:3: Warning: Integer Underflow.\n  string public name = \"Etalon Token Presale\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2BdcD9AE2bE26d3324eF75BcF64B3cc246302754.txt:843:5: Warning: Transaction-Ordering Dependency.\n    beneficiary.transfer( collected )"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2BdcD9AE2bE26d3324eF75BcF64B3cc246302754.txt:933:47: Warning: Transaction-Ordering Dependency.\n  function burn() onlyOwner onlyInEmergency { selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.5"
+}

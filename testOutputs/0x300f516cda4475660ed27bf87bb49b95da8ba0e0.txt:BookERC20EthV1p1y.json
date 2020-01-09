@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:963:35: Warning: Integer Overflow.\n            order.feesBaseOrCntr, order.feesRwrd", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:937:45: Warning: Integer Overflow.\n            order.status, order.reasonCode, order.executedBase", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:961:13: Warning: Integer Overflow.\n    return (order.status", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:937:65: Warning: Integer Overflow.\n            order.status, order.reasonCode, order.executedBase, order.executedCntr", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:961:65: Warning: Integer Overflow.\n    return (order.status, order.reasonCode, order.executedBase, order.executedCntr", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:935:40: Warning: Integer Overflow.\n    return (order.client, order.price, order.sizeBase", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:937:13: Warning: Integer Overflow.\n            order.status", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:961:45: Warning: Integer Overflow.\n    return (order.status, order.reasonCode, order.executedBase", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:939:35: Warning: Integer Overflow.\n            order.feesBaseOrCntr, order.feesRwrd", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:961:27: Warning: Integer Overflow.\n    return (order.status, order.reasonCode", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:937:27: Warning: Integer Overflow.\n            order.status, order.reasonCode", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:963:13: Warning: Integer Overflow.\n            order.feesBaseOrCntr", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:939:13: Warning: Integer Overflow.\n            order.feesBaseOrCntr", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:935:56: Warning: Integer Overflow.\n    return (order.client, order.price, order.sizeBase, order.terms"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:807:83: Warning: Integer Underflow.\n    ClientPaymentEvent(client, ClientPaymentEventType.Transfer, BalanceType.Base, -int(amountBase)\nInteger Underflow occurs if:\n    amountBase = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balanceBaseForClient[client] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x300f516cda4475660ed27bf87bb49b95da8ba0e0.txt:855:83: Warning: Integer Underflow.\n    ClientPaymentEvent(client, ClientPaymentEventType.Withdraw, BalanceType.Cntr, -int(amountCntr)\nInteger Underflow occurs if:\n    amountCntr = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balanceCntrForClient[client] = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "16.1"
+}

@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:865:10: Warning: Timestamp Dependency.\n    else if (block.timestamp < startsAt) return State.PreFunding;\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:867:14: Warning: Timestamp Dependency.\n    else if (block.timestamp <= endsAt && !isCrowdsaleFull()", 
+   "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:867:10: Warning: Timestamp Dependency.\n    else if (block.timestamp <= endsAt && !isCrowdsaleFull()) return State.Funding;\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:1417:5: Warning: Integer Overflow.\n    investorCount++\nInteger Overflow occurs if:\n    investorCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:1415:5: Warning: Integer Overflow.\n    tokensSold += _tokenAmount\nInteger Overflow occurs if:\n    tokensSold = 1\n    _tokenAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:1413:5: Warning: Integer Overflow.\n    weiRaised += _weiAmount\nInteger Overflow occurs if:\n    weiRaised = 1\n    _weiAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:657:9: Warning: Transaction-Ordering Dependency.\n    if(!multisigWallet.send(weiAmount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x17ba01ca261a8daca30cd2b4b12c96e62cca359e.txt:825:10: Warning: Transaction-Ordering Dependency.\n    if (!msg.sender.send(weiValue)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.5"
+}

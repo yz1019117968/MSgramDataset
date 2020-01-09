@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x844e2883A0CE21718B999e459890bD16023Dbca6.txt:173:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    tradingStarted = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x844e2883A0CE21718B999e459890bD16023Dbca6.txt:445:3: Warning: Integer Underflow.\n  string public symbol = \"fdX\"", 
+   "./restContracts/0x844e2883A0CE21718B999e459890bD16023Dbca6.txt:443:3: Warning: Integer Underflow.\n  string public name = \"fidentiaX\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.9"
+}

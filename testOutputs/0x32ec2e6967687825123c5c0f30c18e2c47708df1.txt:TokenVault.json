@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:81:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    tLock = 9337653150818025450427544716366568173878264522937032505136044905442708553711\n    extracted = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tDuration = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    controller = 0", 
+   "./uniqueContractSourceCode/0x32ec2e6967687825123c5c0f30c18e2c47708df1.txt:1717:14: Warning: Integer Overflow.\n\t\tif (tNow > tUnlock + tDuration\nInteger Overflow occurs if:\n    tLock = 9337653150818025450427544716366568173878264522937032505136044905442710650879\n    tDuration = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    controller = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.7"
+}

@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1157:5: Warning: Integer Overflow.\n    function receiveApproval(address _spender, uint256 _value, address _token, bytes _extraData)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1129:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) \r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1329:5: Warning: Integer Overflow.\n    function setupInfo(string _version, string _publisher, string _description)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _version = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1293:5: Warning: Integer Underflow.\n    string public symbol = \"SVL\"", 
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1301:5: Warning: Integer Underflow.\n    string public publisher = \"https://www.silicon-valley.one/\"", 
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1291:5: Warning: Integer Underflow.\n    string public name = \"Silicon Valley Token\"", 
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1299:5: Warning: Integer Underflow.\n    string public version = \"0.1\"", 
+   "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1303:5: Warning: Integer Underflow.\n    string public description = \"This is an official Silicon Valley Token (SVL)\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1397:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(address(this).balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2af8b34f04e93c79ee3a1f300a019f29869d896a.txt:1397:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(address(this).balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.6"
+}

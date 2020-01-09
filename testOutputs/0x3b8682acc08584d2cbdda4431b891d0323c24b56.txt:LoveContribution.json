@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x3b8682acc08584d2cbdda4431b891d0323c24b56.txt:735:5: Warning: Timestamp Dependency.\n    require(now >= endTime)", 
+   "./uniqueContractSourceCode/0x3b8682acc08584d2cbdda4431b891d0323c24b56.txt:665:5: Warning: Timestamp Dependency.\n    require(now >= endTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3b8682acc08584d2cbdda4431b891d0323c24b56.txt:637:3: Warning: Integer Overflow.\n  function KYCApprove(address[] contributorsList) public onlyOwner  {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3b8682acc08584d2cbdda4431b891d0323c24b56.txt:151:1: Warning: Integer Overflow.\ncontract LoveContribution is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    topWinners.length = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    endTime = 0\n    owner = 0\n    contributors.length = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3b8682acc08584d2cbdda4431b891d0323c24b56.txt:505:6: Warning: Integer Underflow.\n     topWinners.length--\nInteger Underflow occurs if:\n    topWinners.length = 0\n    endTime = 0\n    owner = 0\n    contributors.length = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3b8682acc08584d2cbdda4431b891d0323c24b56.txt:681:9: Warning: Transaction-Ordering Dependency.\n    if (msg.sender.send(amountWon[msg.sender])"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3b8682acc08584d2cbdda4431b891d0323c24b56.txt:739:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.6"
+}

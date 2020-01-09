@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:669:9: Warning: Timestamp Dependency.\n        if( now >= saleEndTime ) return 0", 
+   "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:989:9: Warning: Timestamp Dependency.\n        require( ! saleEnded() )", 
+   "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:1093:9: Warning: Timestamp Dependency.\n        require( saleEnded() )", 
+   "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:667:9: Warning: Timestamp Dependency.\n        if( now < saleStartTime ) return 0", 
+   "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:987:9: Warning: Timestamp Dependency.\n        require( saleStarted() )", 
+   "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:683:9: Warning: Timestamp Dependency.\n        if ( now > firstRoundTime ) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:575:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    raisedWei = 115103018747252892199280300010063094196999112577673350533087295183890956681216\n    saleEndTime = 115792089237316195423570985008687907853269984665638088159379031261761840873472\n    firstRoundTime = 2475875356222292078662516736\n    minCap = 81273166778322926880308020538934962605717958332382633039949968129760497238016\n    saleStartTime = 2475875356222292078662516736\n    haltSale = 0\n    participated[_contributor] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:1021:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer( msg.value.sub( weiPayment ) )"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x12795d1331b2f9a4c789203efc5987030854ad55.txt:1055:9: Warning: Transaction-Ordering Dependency.\n        multiSigWallet.transfer( value )"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.4"
+}

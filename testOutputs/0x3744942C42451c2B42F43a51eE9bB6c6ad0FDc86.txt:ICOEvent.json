@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x3744942C42451c2B42F43a51eE9bB6c6ad0FDc86.txt:1507:17: Warning: Timestamp Dependency.\n        require((now >= endTime) || (totalWeiContributed >= icoCapInWei)", 
+   "./uniqueContractSourceCode/0x3744942C42451c2B42F43a51eE9bB6c6ad0FDc86.txt:1507:9: Warning: Timestamp Dependency.\n        require((now >= endTime) || (totalWeiContributed >= icoCapInWei))"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3744942C42451c2B42F43a51eE9bB6c6ad0FDc86.txt:1447:17: Warning: Integer Underflow.\n        return (icoCapInWei - totalWeiContributed\nInteger Underflow occurs if:\n    icoCapInWei = 0\n    totalWeiContributed = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3744942C42451c2B42F43a51eE9bB6c6ad0FDc86.txt:1517:9: Warning: Transaction-Ordering Dependency.\n        holdingAccount.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3744942C42451c2B42F43a51eE9bB6c6ad0FDc86.txt:1517:9: Warning: Transaction-Ordering Dependency.\n        holdingAccount.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.0"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0c47e8028d5452fcc1ad577b3212c1e63de72b50.txt:347:3: Warning: Integer Overflow.\n  function ownerOf(uint256 _tokenId) public view returns (address _owner) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0c47e8028d5452fcc1ad577b3212c1e63de72b50.txt:93:13: Warning: Integer Underflow.\n            totalSeraphims -= 1\nInteger Underflow occurs if:\n    creatorAddress = 0\n    seraphims[_oldSeraphim] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.2"
+}

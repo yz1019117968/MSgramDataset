@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x593b851932dafdf8573ed7891518b1ba5b0d5838.txt:43:3: Warning: Integer Overflow.\n  function setMessage(string _message) public payable {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _message = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x593b851932dafdf8573ed7891518b1ba5b0d5838.txt:9:3: Warning: Integer Underflow.\n  string public message"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x593b851932dafdf8573ed7891518b1ba5b0d5838.txt:75:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x593b851932dafdf8573ed7891518b1ba5b0d5838.txt:67:5: Warning: Transaction-Ordering Dependency.\n    addr.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.5"
+}

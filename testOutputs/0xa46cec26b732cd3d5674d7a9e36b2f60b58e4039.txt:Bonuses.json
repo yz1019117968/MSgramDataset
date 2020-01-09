@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa46cec26b732cd3d5674d7a9e36b2f60b58e4039.txt:623:5: Warning: Integer Overflow.\n    function initBonuses (string _preset) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _preset = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.6"
+}

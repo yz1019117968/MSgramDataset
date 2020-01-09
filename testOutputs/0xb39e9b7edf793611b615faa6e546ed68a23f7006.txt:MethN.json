@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb39e9b7edf793611b615faa6e546ed68a23f7006.txt:13:5: Warning: Integer Underflow.\n    string public name = \"MethN\"", 
+   "./restContracts/0xb39e9b7edf793611b615faa6e546ed68a23f7006.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"METH\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

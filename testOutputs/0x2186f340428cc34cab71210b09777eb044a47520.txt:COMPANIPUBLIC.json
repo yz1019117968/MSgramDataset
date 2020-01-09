@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2186f340428cc34cab71210b09777eb044a47520.txt:363:3: Warning: Integer Underflow.\n  string public name = \"Compani Ltd., (http://compani.org) - Public Token\"", 
+   "./uniqueContractSourceCode/0x2186f340428cc34cab71210b09777eb044a47520.txt:365:3: Warning: Integer Underflow.\n  string public symbol = \"THBP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

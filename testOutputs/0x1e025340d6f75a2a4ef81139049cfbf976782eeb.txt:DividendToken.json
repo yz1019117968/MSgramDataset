@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:1689:9: Warning: Timestamp Dependency.\n        require(dividendEndTime < now)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1e025340d6f75a2a4ef81139049cfbf976782eeb.txt:121:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    dividendCycleTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    dividendEndTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    isTreasurer[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.8"
+}

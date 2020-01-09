@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:523:19: Warning: Integer Overflow.\n      if (ownerOf(listedItems[i]\nInteger Overflow occurs if:\n    listedItems.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    ownerOfItem[_itemId] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:349:5: Warning: Integer Overflow.\n    listedItems.push(_itemId)\nInteger Overflow occurs if:\n    ownerOfItem[_itemId] = 0\n    admins[msg.sender] = 255\n    priceOfItem[_itemId] = 0", 
+   "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:283:3: Warning: Integer Overflow.\n  function populateFromItemRegistry (uint256[] _itemIds) onlyOwner() public {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:139:1: Warning: Integer Overflow.\ncontract CryptoDynasty is ERC721{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ownerOfItem[_itemId] = 0\n    admins[msg.sender] = 255\n    priceOfItem[_itemId] = 0", 
+   "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:761:9: Warning: Integer Overflow.\n        listedItems.push(i)\nInteger Overflow occurs if:\n    ownerOfItem[i] = 0\n    admins[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:557:19: Warning: Integer Overflow.\n      if (ownerOf(listedItems[i]\nInteger Overflow occurs if:\n    listedItems.length = 2\n    ownerOfItem[_itemId] = 1461501637330902918203684832716283019655932542975\n    ownerOfItem[_itemId] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:275:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4afdd46783bc8322770c574c4d3c584960be721a.txt:267:4: Warning: Transaction-Ordering Dependency.\n   msg.sender.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.0"
+}

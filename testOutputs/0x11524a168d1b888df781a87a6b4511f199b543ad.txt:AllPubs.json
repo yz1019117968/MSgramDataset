@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:101:5: Warning: Integer Overflow.\n    function register(address _pubish, string _abi)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _abi = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:61:5: Warning: Integer Overflow.\n    address[] public pubs", 
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:131:9: Warning: Integer Overflow.\n        pubs.push(_pubish)\nInteger Overflow occurs if:\n    membership[msg.sender] = 4\n    membership[_pubish] = 2\n    pubs.push(_pubish) = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:139:5: Warning: Integer Overflow.\n    function reject(address _pubish, string _reason)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reason = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:151:9: Warning: Integer Overflow.\n        PubRejected(_pubish, _reason)\nInteger Overflow occurs if:\n    membership[_pubish] = 2\n    membership[msg.sender] = 4", 
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:25:1: Warning: Integer Overflow.\ncontract AllPubs {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    pubs.push(_pubish) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    membership[msg.sender] = 4\n    membership[_pubish] = 2"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:151:9: Warning: Integer Underflow.\n        PubRejected(_pubish, _reason)\nInteger Underflow occurs if:\n    membership[_pubish] = 2\n    membership[msg.sender] = 4", 
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:25:1: Warning: Integer Underflow.\ncontract AllPubs {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    membership[_pubish] = 0", 
+   "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:59:5: Warning: Integer Underflow.\n    mapping (address => string) public abis"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:149:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(invalidationBounty)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x11524a168d1b888df781a87a6b4511f199b543ad.txt:129:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(registrationBounty)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.6"
+}

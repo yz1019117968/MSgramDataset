@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3388d5ce5388d72f5fb5858bd6de7a28ab1a08c5.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1", 
+   "./uniqueContractSourceCode/0x3388d5ce5388d72f5fb5858bd6de7a28ab1a08c5.txt:395:5: Warning: Integer Overflow.\n    ethCollected += msg.value\nInteger Overflow occurs if:\n    ethCollected = 1\n    hasFinished = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.2"
+}

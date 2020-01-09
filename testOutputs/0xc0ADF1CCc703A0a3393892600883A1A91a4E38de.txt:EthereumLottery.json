@@ -1,0 +1,51 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:351:35: Warning: Callstack Depth Attack Vulnerability.\n                bool successful = winner.call.gas(GAS_LIMIT).value(value)()", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:363:21: Warning: Callstack Depth Attack Vulnerability.\n            var _ = admin.call.gas(GAS_LIMIT).value(this.balance)()"
+  ], 
+  "time_dependency": [
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:675:9: Warning: Timestamp Dependency.\n        require(now - lastInitTimestamp > INACTIVITY_TIMEOUT)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:229:5: Warning: Integer Overflow.\n    function buyTickets(uint[] _tickets)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _tickets = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:217:41: Warning: Integer Overflow.\n        lotteries[id].cutoffTimestamp = now + ticketSaleDuration\nInteger Overflow occurs if:\n    _jackpot = 1\n    _ticketPrice = 1\n    _numTickets = 2\n    owner = 0\n    id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:219:9: Warning: Integer Overflow.\n        lotteries[id].winningTicket\nInteger Overflow occurs if:\n    _jackpot = 1\n    _ticketPrice = 1\n    _numTickets = 2\n    owner = 0\n    id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:309:16: Warning: Integer Overflow.\n               lotteries[id].finalizationBlock\nInteger Overflow occurs if:\n    lotteries[id].decidingBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:505:27: Warning: Integer Overflow.\n        _numTicketsSold = lotteries[_actualId].numTicketsSold\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:323:48: Warning: Integer Overflow.\n        if (lotteries[id].nearestKnownBlock != lotteries[id].decidingBlock\nInteger Overflow occurs if:\n    lotteries[id].decidingBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    id = 0\n    lotteries[id].finalizationBlock = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:461:5: Warning: Integer Overflow.\n    function setMessage(int _id, string _message)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _message = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:543:19: Warning: Integer Overflow.\n        _winner = lotteries[_actualId].winner\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:333:30: Warning: Integer Overflow.\n            address winner = lotteries[id].tickets\nInteger Overflow occurs if:\n    lotteries[id].numTickets = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    lotteries[id].decidingBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    id = 0\n    lotteries[id].nearestKnownBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    lotteries[id].finalizationBlock = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:503:23: Warning: Integer Overflow.\n        _numTickets = lotteries[_actualId].numTickets\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:337:13: Warning: Integer Overflow.\n            lotteries[id].winningTicket\nInteger Overflow occurs if:\n    lotteries[id].numTickets = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    lotteries[id].decidingBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    id = 0\n    lotteries[id].nearestKnownBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    lotteries[id].finalizationBlock = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:547:22: Warning: Integer Overflow.\n        _finalizer = lotteries[_actualId].finalizer\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:453:5: Warning: Integer Overflow.\n    function getMessageLength(string _message) constant returns (uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _message = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:215:9: Warning: Integer Overflow.\n        lotteries[id].ticketPrice\nInteger Overflow occurs if:\n    _jackpot = 1\n    _ticketPrice = 1\n    _numTickets = 2\n    owner = 0\n    id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:211:13: Warning: Integer Overflow.\n            BTCRelay(btcRelay).getLastBlockHeight() + _durationInBlocks\nInteger Overflow occurs if:\n    _jackpot = 1\n    _durationInBlocks = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _ticketPrice = 1\n    _numTickets = 2\n    owner = 0\n    id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:99:5: Warning: Integer Overflow.\n    mapping (int => Lottery) public lotteries", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:501:26: Warning: Integer Overflow.\n        _decidingBlock = lotteries[_actualId].decidingBlock\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:545:30: Warning: Integer Overflow.\n        _finalizationBlock = lotteries[_actualId].finalizationBlock\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:511:28: Warning: Integer Overflow.\n        _cutoffTimestamp = lotteries[_actualId].cutoffTimestamp\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:621:16: Warning: Integer Overflow.\n        return lotteries[_id].tickets\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:213:9: Warning: Integer Overflow.\n        lotteries[id].numTickets\nInteger Overflow occurs if:\n    _jackpot = 1\n    _ticketPrice = 1\n    _numTickets = 2\n    owner = 0\n    id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:217:9: Warning: Integer Overflow.\n        lotteries[id].cutoffTimestamp\nInteger Overflow occurs if:\n    _jackpot = 1\n    _ticketPrice = 1\n    _numTickets = 2\n    owner = 0\n    id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:323:13: Warning: Integer Overflow.\n        if (lotteries[id].nearestKnownBlock\nInteger Overflow occurs if:\n    lotteries[id].decidingBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    id = 0\n    lotteries[id].finalizationBlock = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:509:24: Warning: Integer Overflow.\n        _ticketPrice = lotteries[_actualId].ticketPrice\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:209:9: Warning: Integer Overflow.\n        lotteries[id].decidingBlock\nInteger Overflow occurs if:\n    _jackpot = 1\n    _ticketPrice = 1\n    _numTickets = 2\n    owner = 0\n    id = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:541:26: Warning: Integer Overflow.\n        _winningTicket = lotteries[_actualId].winningTicket\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:329:33: Warning: Integer Overflow.\n            int winningTicket = lotteries[id].nearestKnownBlockHash\nInteger Overflow occurs if:\n    lotteries[id].decidingBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    id = 0\n    lotteries[id].nearestKnownBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    lotteries[id].finalizationBlock = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:549:20: Warning: Integer Overflow.\n        _message = lotteries[_actualId].message\nInteger Overflow occurs if:\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:331:37: Warning: Integer Overflow.\n                                int(lotteries[id].numTickets\nInteger Overflow occurs if:\n    lotteries[id].decidingBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    id = 0\n    lotteries[id].nearestKnownBlock = 1005835979029789659298528172384524501576311611802687624628428476091182612474\n    lotteries[id].finalizationBlock = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:549:9: Warning: Integer Underflow.\n        _message = lotteries[_actualId].message\nInteger Underflow occurs if:\n    _message = 1\n    _id = 0", 
+   "./restContracts/0xc0ADF1CCc703A0a3393892600883A1A91a4E38de.txt:99:5: Warning: Integer Underflow.\n    mapping (int => Lottery) public lotteries"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.4"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6df5df1583fa3f31d7599503d56b4fe6925e0cb9.txt:23:9: Warning: Integer Underflow.\n        return languageCodeToComment[\"ZH\"]\nInteger Underflow occurs if:\n    return languageCodeToComment[\"ZH\"] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.1"
+}

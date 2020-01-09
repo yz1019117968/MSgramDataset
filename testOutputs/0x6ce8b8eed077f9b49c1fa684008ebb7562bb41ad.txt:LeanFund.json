@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6ce8b8eed077f9b49c1fa684008ebb7562bb41ad.txt:135:21: Warning: Integer Underflow.\n      uint amount = this.balance - amountRaised\nInteger Underflow occurs if:\n    amountRaised = 115792089237316195423570985008687907853269984665640564039457583990320943595519\n    owner = 0\n    open = 255\n    deadlineBlockNumber = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6ce8b8eed077f9b49c1fa684008ebb7562bb41ad.txt:137:11: Warning: Transaction-Ordering Dependency.\n      if (owner.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6ce8b8eed077f9b49c1fa684008ebb7562bb41ad.txt:195:7: Warning: Transaction-Ordering Dependency.\n      selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.7"
+}

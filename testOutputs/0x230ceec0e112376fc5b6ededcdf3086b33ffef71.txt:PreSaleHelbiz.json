@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:901:13: Warning: Integer Overflow.\n            tokenHoldersClaimed[add]+=amount\nInteger Overflow occurs if:\n    tokenHoldersClaimed[add] = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    tokenHoldersToClaim[add] = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    owner = 0", 
+   "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:903:13: Warning: Integer Overflow.\n            tokenHolders.push(add)\nInteger Overflow occurs if:\n    tokenHolders.push(add) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenHoldersToClaim[add] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:859:32: Warning: Integer Overflow.\n        tokenHoldersTotal[add]=tokenHoldersClaimed[add]+amount\nInteger Overflow occurs if:\n    tokenHoldersClaimed[add] = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:737:1: Warning: Integer Overflow.\ncontract PreSaleHelbiz is Ownable,Destructible{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokenHolders.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    tokenHoldersToClaim[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isReady = 255", 
+   "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:835:16: Warning: Integer Overflow.\n        return tokenHolders[i]\nInteger Overflow occurs if:\n    i = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    tokenHolders[i] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:879:13: Warning: Integer Overflow.\n            tokenHoldersClaimed[msg.sender]+=amount\nInteger Overflow occurs if:\n    tokenHoldersToClaim[msg.sender] = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    tokenHoldersClaimed[msg.sender] = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    isReady = 255", 
+   "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:881:13: Warning: Integer Overflow.\n            tokenHolders.push(msg.sender)\nInteger Overflow occurs if:\n    tokenHolders.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenHoldersToClaim[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isReady = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:707:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x230ceec0e112376fc5b6ededcdf3086b33ffef71.txt:715:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(_recipient)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.9"
+}

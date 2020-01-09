@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x0f466a0b3900f786f2d71134730b26a4bd7e3bbb.txt:549:9: Warning: Transaction-Ordering Dependency.\n        withdrawAddress1.transfer(amount / 2)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x0f466a0b3900f786f2d71134730b26a4bd7e3bbb.txt:551:9: Warning: Transaction-Ordering Dependency.\n        withdrawAddress2.transfer(amount / 2)", 
+    "./uniqueContractSourceCode/0x0f466a0b3900f786f2d71134730b26a4bd7e3bbb.txt:549:9: Warning: Transaction-Ordering Dependency.\n        withdrawAddress1.transfer(amount / 2)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.5"
+}

@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:451:27: Warning: Integer Overflow.\n            if (whiteList[_users[i]\nInteger Overflow occurs if:\n    whiteList[_users[i]] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:431:13: Warning: Integer Overflow.\n            totalWhiteListed++\nInteger Overflow occurs if:\n    totalWhiteListed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[_user] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:33:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    ethReceived = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:453:27: Warning: Integer Overflow.\n                whiteList[_users[i]\nInteger Overflow occurs if:\n    whiteList[_users[i]] = 0\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:331:5: Warning: Integer Overflow.\n    mapping(address => Backer) public backers", 
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:455:17: Warning: Integer Overflow.\n                totalWhiteListed++\nInteger Overflow occurs if:\n    totalWhiteListed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[_users[i]] = 0\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:333:5: Warning: Integer Overflow.\n    address[] public backersIndex"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:559:63: Warning: Integer Underflow.\n        require(block.number > endBlock || totalTokensSent >= maxCap - 1000\nInteger Underflow occurs if:\n    endBlock = 0\n    maxCap = 999\n    crowdsaleClosed = 0\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:657:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(backer.weiReceived)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x587c549c4113127340ac0f5e996cab7a4f35bb49.txt:611:9: Warning: Transaction-Ordering Dependency.\n        multisig.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.4"
+}

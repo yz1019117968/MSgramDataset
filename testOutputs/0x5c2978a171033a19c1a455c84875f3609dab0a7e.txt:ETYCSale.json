@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x5c2978a171033a19c1a455c84875f3609dab0a7e.txt:1051:35: Warning: Timestamp Dependency.\n    modifier afterDeadline()    { require (currentTime() >= endTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5c2978a171033a19c1a455c84875f3609dab0a7e.txt:281:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 70036696666780064463973016200043117429077326574545407627672066683247125486415\n    minContribution = 69722843986276191112704802276904042686523943500539225692285358676886601247599\n    rentrancy_lock = 0\n    saleClosed = 0\n    startTime = 0\n    endTime = 1\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5c2978a171033a19c1a455c84875f3609dab0a7e.txt:1321:9: Warning: Transaction-Ordering Dependency.\n        beneficiary.transfer(balanceToSend)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5c2978a171033a19c1a455c84875f3609dab0a7e.txt:1371:17: Warning: Transaction-Ordering Dependency.\n                msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.1"
+}

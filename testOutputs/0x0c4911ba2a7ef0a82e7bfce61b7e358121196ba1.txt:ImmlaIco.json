@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:609:17: Warning: Timestamp Dependency.\n        require(soldTokensOnIco >= minIcoTokenLimit || now > icoDeadline || icoStoppedManually", 
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:609:9: Warning: Timestamp Dependency.\n        require(soldTokensOnIco >= minIcoTokenLimit || now > icoDeadline || icoStoppedManually)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:935:17: Warning: Integer Overflow.\n            if (tokenSupplies[stage]\nInteger Overflow occurs if:\n    tokenSupplies[stage] = 115777954460797968348934318628681964505143364794465559087792611158302788681727\n    soldTokensOnIco = 434477176999999999999999999\n    icoDeadline = 0\n    icoStart = 0\n    icoStoppedManually = 0\n    tokenSupplies[stage] = 0", 
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:513:5: Warning: Integer Overflow.\n    uint[] public tokenSupplies", 
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:941:35: Warning: Integer Overflow.\n            uint maxTokenAmount = tokenPrices[stage]\nInteger Overflow occurs if:\n    tokenSupplies[stage] = 115791647525550000827488589184312722123641027794666345134718053606362806484991\n    tokenPrices[stage] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    tokenSupplies[stage] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    soldTokensOnIco = 434477176999999999999999999\n    icoDeadline = 0\n    icoStart = 0\n    icoStoppedManually = 0\n    tokenSupplies[stage] = 0", 
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:509:5: Warning: Integer Overflow.\n    uint[] public tokenPrices", 
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:943:35: Warning: Integer Overflow.\n            if (maxTokenAmount <= tokenSupplies[stage]\nInteger Overflow occurs if:\n    tokenSupplies[stage] = 115791647525550000827488589184312722123641027794666345134718053606362806484991\n    tokenPrices[stage] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    tokenSupplies[stage] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    soldTokensOnIco = 434477176999999999999999999\n    icoDeadline = 0\n    icoStart = 0\n    icoStoppedManually = 0\n    tokenSupplies[stage] = 0", 
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    importedTokens = 90124977372327004031758570853785828543150413892121215297380148023055890776064\n    importedFromPreIco[_account] = 0\n    tokenImporter = 0", 
+   "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:961:34: Warning: Integer Overflow.\n            result = add(result, tokenPrices[3]\nInteger Overflow occurs if:\n    tokenSupplies[stage] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenPrices[3] = 115792089237316195423570985008687907853269984665640564039457584007913129639932\n    soldTokensOnIco = 434477176999999999999999999\n    icoDeadline = 0\n    icoStart = 0\n    icoStoppedManually = 0\n    tokenSupplies[stage] = 0\n    tokenSupplies[stage] = 0\n    tokenSupplies[stage] = 0\n    tokenSupplies[stage] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:875:13: Warning: Transaction-Ordering Dependency.\n            escrow.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1.txt:905:9: Warning: Transaction-Ordering Dependency.\n        _account.transfer(balances[_account])"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.5"
+}

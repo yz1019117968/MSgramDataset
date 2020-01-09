@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbb58c5cadf428209151c61c72158b61d8d716b2b.txt:1873:2: Warning: Integer Overflow.\n\tfunction setImageData(address[16] _contracts, uint256 _imageId, uint16 _part, uint256[] _imageData) public returns (address) {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbb58c5cadf428209151c61c72158b61d8d716b2b.txt:1819:2: Warning: Integer Overflow.\n\tfunction setNextImagePart(address[16] _contracts, uint256 _regionId, uint16 _part, uint16 _partsCount, uint16 _imageDescriptor, uint256[] _imageData) public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xbb58c5cadf428209151c61c72158b61d8d716b2b.txt:1895:2: Warning: Integer Overflow.\n\tfunction imageUploadComplete(address[16] _contracts, uint256 _imageId) view public returns (bool) {\r\n\t^\nSpanning multiple lines.", 
+   "./restContracts/0xbb58c5cadf428209151c61c72158b61d8d716b2b.txt:1785:2: Warning: Integer Overflow.\n\tfunction checkImageInput(address[16] _contracts, uint256 _regionId, uint256 _imageId, uint256[] _imageData, bool _swapImages, bool _clearImage) view public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "31.5"
+}

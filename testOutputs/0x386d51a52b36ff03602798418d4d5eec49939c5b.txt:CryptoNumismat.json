@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:319:27: Warning: Integer Overflow.\n        address _seller = cardsForSale[_cardIndex].seller\nInteger Overflow occurs if:\n    _cardIndex = 8\n    cardsForSale[_cardIndex].minValue = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    cardsForSale[_cardIndex].seller = 0\n    cardsForSale[_cardIndex].cardIndex = 8", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:37:5: Warning: Integer Overflow.\n    mapping (uint => Buy) public cardsForSale", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:195:9: Warning: Integer Overflow.\n        cardsForSale[_cardIndex].seller\nInteger Overflow occurs if:\n    _cardIndex = 8\n    cardsForSale[_cardIndex].cardIndex = 8", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:203:5: Warning: Integer Overflow.\n    function setNick(string _newNick) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _newNick = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:197:9: Warning: Integer Overflow.\n        cardsForSale[_cardIndex].minValue\nInteger Overflow occurs if:\n    _cardIndex = 8\n    cardsForSale[_cardIndex].cardIndex = 8", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:321:26: Warning: Integer Overflow.\n        uint256 _price = cardsForSale[_cardIndex].minValue\nInteger Overflow occurs if:\n    _cardIndex = 8\n    cardsForSale[_cardIndex].minValue = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    cardsForSale[_cardIndex].seller = 0\n    cardsForSale[_cardIndex].cardIndex = 8"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:15:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:217:9: Warning: Integer Underflow.\n        return nicknames[_owner]\nInteger Underflow occurs if:\n    return nicknames[_owner] = 1", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:13:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:11:5: Warning: Integer Underflow.\n    string public standard = 'CryptoNumismat'", 
+   "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:41:5: Warning: Integer Underflow.\n    mapping (address => string) public nicknames"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:145:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x386d51a52b36ff03602798418d4d5eec49939c5b.txt:131:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.1"
+}

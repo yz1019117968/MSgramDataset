@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5903bac538fa570d30ae5b39614c0707b9e584f7.txt:259:5: Warning: Integer Underflow.\n    string public name = \"Ethspers\"", 
+   "./uniqueContractSourceCode/0x5903bac538fa570d30ae5b39614c0707b9e584f7.txt:261:5: Warning: Integer Underflow.\n    string public symbol = \"ETHSP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.2"
+}

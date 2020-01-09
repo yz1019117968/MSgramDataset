@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x52d3ec187457a106d2ec546be4cb8a11d9be2527.txt:1717:9: Warning: Integer Overflow.\n        nonce++\nInteger Overflow occurs if:\n    nonce = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x52d3ec187457a106d2ec546be4cb8a11d9be2527.txt:1707:1: Warning: Integer Overflow.\ncontract MonsterCreatorInterface is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    baseStats[_mId][0] = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x52d3ec187457a106d2ec546be4cb8a11d9be2527.txt:1719:59: Warning: Integer Underflow.\n        uint16 result = (uint16(keccak256(block.blockhash(block.number-1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.8"
+}

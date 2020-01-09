@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x94deb5143345ec837f16d1144a2a109d648c4e2f.txt:379:7: Warning: Integer Overflow.\n      customerCount++\nInteger Overflow occurs if:\n    totalTransferred = 86843889497365009823153408796655604306532869611761882327164766628015513812992\n    customerCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    customerId = 340282366920938463463374607431768211455\n    halted = 0\n    paymentsByCustomer[customerId] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "92.4"
+}

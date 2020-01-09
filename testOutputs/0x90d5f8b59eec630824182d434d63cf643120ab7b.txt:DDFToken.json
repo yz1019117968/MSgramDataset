@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x90d5f8b59eec630824182d434d63cf643120ab7b.txt:655:7: Warning: Timestamp Dependency.\n      if(now <= fundingEndTime && totalSupply != tokenCreationCap) throw", 
+   "./restContracts/0x90d5f8b59eec630824182d434d63cf643120ab7b.txt:655:10: Warning: Timestamp Dependency.\n      if(now <= fundingEndTime && totalSupply != tokenCreationCap"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x90d5f8b59eec630824182d434d63cf643120ab7b.txt:193:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 48221737607289230530781793082485821955689060952102618258465553029462851749639\n    allowed[_from][msg.sender] = 105129860315738734449407965649719108748236554228829744849577222707109428918189\n    balances[_from] = 105129860315738734449407965649719108748236554228829744849577222707109428918189"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x90d5f8b59eec630824182d434d63cf643120ab7b.txt:495:5: Warning: Integer Underflow.\n    string public version = \"1.0\""
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x90d5f8b59eec630824182d434d63cf643120ab7b.txt:663:7: Warning: Transaction-Ordering Dependency.\n      ethFundDeposit.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0x90d5f8b59eec630824182d434d63cf643120ab7b.txt:663:7: Warning: Transaction-Ordering Dependency.\n      ethFundDeposit.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.7"
+}

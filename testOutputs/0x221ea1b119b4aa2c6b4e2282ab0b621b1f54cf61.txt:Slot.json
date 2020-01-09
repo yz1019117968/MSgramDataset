@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:3737:5: Warning: Integer Overflow.\n    function setConfiguration(uint[] _probabilities, uint[] _multipliers) \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _probabilities = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2863:68: Warning: Integer Overflow.\n            if ((investors[i].amountInvested + profitOfInvestor >= investors[i].amountInvested\nInteger Overflow occurs if:\n    invested = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numInvestors = 1\n    profitDistributed = 0\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2439:13: Warning: Integer Overflow.\n\t    assert(ORACLIZE_BASE_GAS_LIMIT + safeGas\nInteger Overflow occurs if:\n    safeGas = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2765:25: Warning: Integer Overflow.\n        uint invested = investors[investorIDs[currentInvestor]].amountInvested\nInteger Overflow occurs if:\n    profitDistributed = 255\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:3359:5: Warning: Integer Overflow.\n    uint[] public multipliers", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:3205:20: Warning: Integer Overflow.\n            delete investors[i].votedForEmergencyWithdrawal\nInteger Overflow occurs if:\n    numInvestors = 1\n    owner = 0\n    isStopped = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:3185:9: Warning: Integer Overflow.\n        investors[investorIDs[msg.sender]].votedForEmergencyWithdrawal\nInteger Overflow occurs if:\n    isStopped = 372682917519380244141939632342652170012262798458880\n    proposedWithdrawal.toAddress = 1461501637330902918203684832716283019655932542975\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2863:18: Warning: Integer Overflow.\n            if ((investors[i].amountInvested\nInteger Overflow occurs if:\n    invested = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numInvestors = 1\n    profitDistributed = 0\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:239:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:3357:5: Warning: Integer Overflow.\n    uint[] public probabilities", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:3805:44: Warning: Integer Overflow.\n        return (spins[myid].playerAddress, spins[myid].amountWagered", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2919:9: Warning: Integer Overflow.\n        investors[investorIDs[msg.sender]].amountInvested\nInteger Overflow occurs if:\n    profitDistributed = 255\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isStopped = 0", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:3699:6: Warning: Integer Overflow.\n     function __callback(bytes32 myid, string result, bytes _proof) \r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2751:16: Warning: Integer Overflow.\n        return investors[investorIDs[currentInvestor]].amountInvested\nInteger Overflow occurs if:\n    profitDistributed = 255\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2737:16: Warning: Integer Overflow.\n        return investors[investorIDs[currentInvestor]].amountInvested\nInteger Overflow occurs if:\n    invested = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    profitDistributed = 255\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2919:9: Warning: Integer Overflow.\n        investors[investorIDs[msg.sender]].amountInvested += msg.value\nInteger Overflow occurs if:\n    investors[investorIDs[msg.sender]].amountInvested = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    numInvestors = 0\n    profitDistributed = 0\n    investorIDs[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isStopped = 0", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2569:5: Warning: Integer Overflow.\n    mapping(uint => Investor) public investors", 
+   "./uniqueContractSourceCode/0x221ea1b119b4aa2c6b4e2282ab0b621b1f54cf61.txt:2685:14: Warning: Integer Overflow.\n            (invested + investorsProfit\nInteger Overflow occurs if:\n    investorsProfit = 57896044618658097711785492493042362126124131283778892608569590599931029793450\n    invested = 86844066927987146567678238768103340544513411547551000781562815384129019139412"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "34.1"
+}

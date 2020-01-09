@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x781643835810707ad98db8928c49a5fcc956b584.txt:469:3: Warning: Timestamp Dependency.\n\t\tif(block.timestamp<_startTime){\r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x781643835810707ad98db8928c49a5fcc956b584.txt:503:5: Warning: Transaction-Ordering Dependency.\n\t\t\t\towner.transfer(GetMaxEther())"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x781643835810707ad98db8928c49a5fcc956b584.txt:495:5: Warning: Transaction-Ordering Dependency.\n\t\t\t\towner.transfer(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.9"
+}

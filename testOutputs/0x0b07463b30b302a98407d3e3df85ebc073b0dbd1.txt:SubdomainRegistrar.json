@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:659:5: Warning: Integer Overflow.\n    function setTransferAddress(string name, address transfer) public owner_only(keccak256(name)) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:521:5: Warning: Integer Overflow.\n    function transfer(string name, address newOwner) public owner_only(keccak256(name)) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:567:5: Warning: Integer Overflow.\n    function configureDomain(string name, uint price, uint referralFeePPM) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:913:5: Warning: Integer Overflow.\n    function upgrade(string name) public owner_only(keccak256(name)) new_registrar {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:595:5: Warning: Integer Overflow.\n    function configureDomainFor(string name, uint price, uint referralFeePPM, address _owner, address _transfer) public owner_only(keccak256(name)) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:769:5: Warning: Integer Overflow.\n    function register(bytes32 label, string subdomain, address subdomainOwner, address referrer, address resolver) public not_stopped payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    subdomain = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:481:5: Warning: Integer Overflow.\n    function owner(bytes32 label) public view returns (address) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    domains[label].owner = 0", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:1031:5: Warning: Integer Overflow.\n    function payRent(bytes32 label, string subdomain) public payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    subdomain = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:689:5: Warning: Integer Overflow.\n    function unlistDomain(string name) public owner_only(keccak256(name)) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:487:20: Warning: Integer Overflow.\n            return domains[label].owner\nInteger Overflow occurs if:\n    domains[label].owner = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:543:5: Warning: Integer Overflow.\n    function setResolver(string name, address resolver) public owner_only(keccak256(name)) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:897:5: Warning: Integer Overflow.\n    function rentDue(bytes32 label, string subdomain) public view returns (uint timestamp) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    subdomain = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:979:5: Warning: Integer Overflow.\n    function migrate(string name) public owner_only(keccak256(name)) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0b07463b30b302a98407d3e3df85ebc073b0dbd1.txt:731:5: Warning: Integer Overflow.\n    function query(bytes32 label, string subdomain) public view returns (string domain, uint price, uint rent, uint referralFeePPM) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    subdomain = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.3"
+}

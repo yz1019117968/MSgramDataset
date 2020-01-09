@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1f58af89d12d4a60647f99a9fc71dd0367b56df4.txt:765:21: Warning: Integer Overflow.\n        return (y * gameSettings[gameIndex].cols\nInteger Overflow occurs if:\n    gameSettings[gameIndex].rows = 1\n    gameSettings[gameIndex].cols = 1", 
+   "./uniqueContractSourceCode/0x1f58af89d12d4a60647f99a9fc71dd0367b56df4.txt:695:5: Warning: Integer Overflow.\n    mapping (uint256 => GameState) public gameStates", 
+   "./uniqueContractSourceCode/0x1f58af89d12d4a60647f99a9fc71dd0367b56df4.txt:689:5: Warning: Integer Overflow.\n    mapping (uint256 => GameSettings) public gameSettings", 
+   "./uniqueContractSourceCode/0x1f58af89d12d4a60647f99a9fc71dd0367b56df4.txt:917:9: Warning: Integer Overflow.\n        gameStates[gameIndex].identifierToOwner\nInteger Overflow occurs if:\n    gameStates[gameIndex].identifierToOwner[_identifier] = 0\n    paused = 0", 
+   "./uniqueContractSourceCode/0x1f58af89d12d4a60647f99a9fc71dd0367b56df4.txt:779:26: Warning: Integer Overflow.\n        y = identifier / gameSettings[gameIndex].cols", 
+   "./uniqueContractSourceCode/0x1f58af89d12d4a60647f99a9fc71dd0367b56df4.txt:781:31: Warning: Integer Overflow.\n        x = identifier - (y * gameSettings[gameIndex].cols\nInteger Overflow occurs if:\n    gameSettings[gameIndex].cols = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.6"
+}

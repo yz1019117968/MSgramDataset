@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x259e224c49da9cbb1fff1002282fc83012a8a1e3.txt:1059:17: Warning: Integer Overflow.\n    remainder = self.exchangeRate\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 12\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.saleData[self.base.milestoneTimes[self.base.currentMilestone]][0] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    9 + self = 2047\n    self.base.currentMilestone = 10\n    self.base.capAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _amount = 0\n    self.base.ownerBalance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 2048\n    self.startTime = 2048\n    self.base.owner = 0", 
+   "./uniqueContractSourceCode/0x259e224c49da9cbb1fff1002282fc83012a8a1e3.txt:1057:14: Warning: Integer Overflow.\n    result = self.exchangeRate\nInteger Overflow occurs if:\n    self.base.milestoneTimes.length = 12\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.base.saleData[self.base.milestoneTimes[self.base.currentMilestone]][0] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    9 + self = 2047\n    self.base.currentMilestone = 10\n    self.base.capAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _amount = 0\n    self.base.ownerBalance = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.endTime = 2048\n    self.startTime = 2048\n    self.base.owner = 0", 
+   "./uniqueContractSourceCode/0x259e224c49da9cbb1fff1002282fc83012a8a1e3.txt:379:3: Warning: Integer Overflow.\n  function init(DirectCrowdsaleStorage storage self,\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _saleData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x259e224c49da9cbb1fff1002282fc83012a8a1e3.txt:573:3: Warning: Integer Underflow.\n  function getSaleData(DirectCrowdsaleStorage storage self, uint256 timestamp) returns (uint256[3]) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.6"
+}

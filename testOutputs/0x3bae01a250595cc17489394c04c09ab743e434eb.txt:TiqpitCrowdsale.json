@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1455:58: Warning: Integer Overflow.\n        return (preIcoPurchases[_address].refundableWei, preIcoPurchases[_address].burnableTiqs", 
+   "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1809:50: Warning: Integer Overflow.\n        preIcoPurchases[_address].burnableTiqs = preIcoPurchases[_address].burnableTiqs\nInteger Overflow occurs if:\n    _tokensAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokensRemainingPreIco = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTimePreIco = 115792089237316195423570985008682198862499160826116330895579786027363303686143\n    startTimePreIco = 115792089237316195423570985008682198862499160826116330895579786027363303686143\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1847:47: Warning: Integer Overflow.\n        icoPurchases[_address].burnableTiqs = icoPurchases[_address].burnableTiqs\nInteger Overflow occurs if:\n    _tokensAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    soldTokensPreIco = 1000000000000000000000000\n    tokensRemainingIco = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTimeIco = 115792089237316195423570985008687907852589419931798687112530834793049526108159\n    startTimeIco = 115792089237316195423570985008687907852589419931798687112530834793049526108159\n    startTimePreIco = 115792089237316195423570985008687907852589419931798687112530834793049526108160\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1439:55: Warning: Integer Overflow.\n        return (icoPurchases[_address].refundableWei, icoPurchases[_address].burnableTiqs", 
+   "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1809:9: Warning: Integer Overflow.\n        preIcoPurchases[_address].burnableTiqs\nInteger Overflow occurs if:\n    _tokensAmount = 71229559195305426448594102498149235255116075842055345065726504096132953725931\n    preIcoPurchases[_address].burnableTiqs = 40920195008843599929254881022623519126123314952117894092864393163094814634755\n    tokensRemainingPreIco = 71229559195305426448594102498149235255116075842055345065726504096132953725931\n    endTimePreIco = 0\n    startTimePreIco = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1847:9: Warning: Integer Overflow.\n        icoPurchases[_address].burnableTiqs\nInteger Overflow occurs if:\n    _tokensAmount = 52639311389296313875632238990861247679203464694301182784949239538042206733455\n    icoPurchases[_address].burnableTiqs = 5194257726279294358185542057158681824629954785703215195990607842013217332235\n    soldTokensPreIco = 1000000000000000000000000\n    tokensRemainingIco = 52639311389296313875632238990861247679203464694301182784949239538042206733455\n    endTimeIco = 0\n    startTimeIco = 0\n    startTimePreIco = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:89:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _tokensAmount = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    icoPurchases[_address].burnableTiqs = 115792089237315989735501319857932638481696812038176268118145161551131910882782\n    soldTokensPreIco = 1000000000000000000000000\n    tokensRemainingIco = 57896044618658097711785492504343953926634992332820282019710345259882855102646\n    endTimeIco = 0\n    startTimeIco = 0\n    startTimePreIco = 1\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1479:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(amountWei)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3bae01a250595cc17489394c04c09ab743e434eb.txt:1513:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(amountWei)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.9"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x3d92a0e142e05c1077d8ebeccf1601bd8e17a0cc.txt:991:9: Warning: Timestamp Dependency.\n        if (now >= mainSaleEndTime) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3d92a0e142e05c1077d8ebeccf1601bd8e17a0cc.txt:1091:35: Warning: Integer Overflow.\n            minTradingStartTime = now + 2 weeks\nInteger Overflow occurs if:\n    stage = 3\n    totalReceived = 0\n    minimumMainSaleRaise = 0\n    mainSaleEndTime = 115792089237316195423570985008687907853269984665640564039457584007913129607168"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3d92a0e142e05c1077d8ebeccf1601bd8e17a0cc.txt:995:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3d92a0e142e05c1077d8ebeccf1601bd8e17a0cc.txt:811:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.1"
+}

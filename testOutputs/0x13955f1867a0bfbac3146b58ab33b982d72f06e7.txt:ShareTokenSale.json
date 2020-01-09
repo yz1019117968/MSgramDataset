@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:359:9: Warning: Timestamp Dependency.\n        require(isClearTime())"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:509:38: Warning: Integer Overflow.\n            uint256 stageUsedEther = pi.amounts\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:311:5: Warning: Integer Overflow.\n    address[] public purchaserList", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:455:24: Warning: Integer Overflow.\n            if (now >= stages[i].startTime\nInteger Overflow occurs if:\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 1\n    stages.length = 115790322390251417039241401711187164934754157181743688420499462401711837020160", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:551:13: Warning: Integer Overflow.\n            purchaserList.push(msg.sender)\nInteger Overflow occurs if:\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 1\n    stages.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    purchaserList.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:293:5: Warning: Integer Overflow.\n    Stage[] public stages", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:455:24: Warning: Integer Overflow.\n            if (now >= stages[i]\nInteger Overflow occurs if:\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 1\n    stages.length = 115790322390251417039241401711187164934754157181743688420499462401711837020160", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:507:39: Warning: Integer Overflow.\n            sendEther = sendEther.add(pi.amounts\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:421:5: Warning: Integer Overflow.\n    function startSale(uint256[] rates, uint256[] durations, uint256 userWithdrawalDelaySec, uint256 clearDelaySec) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    rates = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:555:34: Warning: Integer Overflow.\n        pi.amounts[stageIndex] = pi.amounts\nInteger Overflow occurs if:\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 1\n    stages.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:453:26: Warning: Integer Underflow.\n        for (uint256 i = stages.length - 1\nInteger Underflow occurs if:\n    endTime = 57896044618658097711785492504343953926634992332820282019728792003956564819966\n    startTime = 37778931862957161709568\n    stages.length = 0", 
+   "./uniqueContractSourceCode/0x13955f1867a0bfbac3146b58ab33b982d72f06e7.txt:453:53: Warning: Integer Underflow.\n        for (uint256 i = stages.length - 1; i >= 0; i--\nInteger Underflow occurs if:\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    startTime = 37778931862957161709568\n    stages.length = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.3"
+}

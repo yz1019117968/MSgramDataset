@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2e9094044c13b0c7ce93ed0be8bd275f722f7d27.txt:253:27: Warning: Integer Overflow.\n    uint lotterynumber = (uint(curhash)+block.timestamp\nInteger Overflow occurs if:\n    curhash = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2e9094044c13b0c7ce93ed0be8bd275f722f7d27.txt:139:20: Warning: Integer Underflow.\n      diff = (int)((int)(value)-(int)(guesses[i].guess)\nInteger Underflow occurs if:\n    guesses[i].guess = 1\n    numguesses = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.7"
+}

@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x9f93f5cf28448d0bae2dfd16a0b4a83b3c5ed726.txt:741:30: Warning: Callstack Depth Attack Vulnerability.\n        if(_buyer_money > 0) msg.sender.send(_buyer_money)", 
+   "./restContracts/0x9f93f5cf28448d0bae2dfd16a0b4a83b3c5ed726.txt:739:31: Warning: Callstack Depth Attack Vulnerability.\n        if(_seller_money > 0) _from.send(_seller_money)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9f93f5cf28448d0bae2dfd16a0b4a83b3c5ed726.txt:327:18: Warning: Integer Overflow.\n              && balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705", 
+   "./restContracts/0x9f93f5cf28448d0bae2dfd16a0b4a83b3c5ed726.txt:201:7: Warning: Integer Overflow.\n      address[] public orders_sell_list", 
+   "./restContracts/0x9f93f5cf28448d0bae2dfd16a0b4a83b3c5ed726.txt:377:17: Warning: Integer Overflow.\n             && balances[_to] + _amount\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9f93f5cf28448d0bae2dfd16a0b4a83b3c5ed726.txt:275:11: Warning: Transaction-Ordering Dependency.\n          owner.send(balance)"
+   ], 
+   [
+    "./restContracts/0x9f93f5cf28448d0bae2dfd16a0b4a83b3c5ed726.txt:275:11: Warning: Transaction-Ordering Dependency.\n          owner.send(balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.0"
+}

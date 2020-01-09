@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x555eedd21fbef9789ad25a531e342df0d020d98d.txt:343:5: Warning: Integer Overflow.\n    function getRate(string _symbol) public view returns(uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _symbol = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x555eedd21fbef9789ad25a531e342df0d020d98d.txt:309:5: Warning: Integer Overflow.\n    function updateRates(uint[] data) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x555eedd21fbef9789ad25a531e342df0d020d98d.txt:291:5: Warning: Integer Overflow.\n    function updateRate(string _symbol, uint _rate) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _symbol = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.1"
+}

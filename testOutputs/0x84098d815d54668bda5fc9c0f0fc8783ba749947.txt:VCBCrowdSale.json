@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x84098d815d54668bda5fc9c0f0fc8783ba749947.txt:995:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(finaladdr)"
+   ], 
+   [
+    "./restContracts/0x84098d815d54668bda5fc9c0f0fc8783ba749947.txt:995:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(finaladdr)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "22.9"
+}

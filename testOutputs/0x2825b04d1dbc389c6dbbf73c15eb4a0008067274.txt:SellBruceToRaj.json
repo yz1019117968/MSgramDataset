@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x2825b04d1dbc389c6dbbf73c15eb4a0008067274.txt:33:9: Warning: Re-Entrancy Vulnerability.\n        CCContract.purchase.value(2245076957899502036)(558)", 
+   "./uniqueContractSourceCode/0x2825b04d1dbc389c6dbbf73c15eb4a0008067274.txt:39:9: Warning: Re-Entrancy Vulnerability.\n        CCContract.transfer(address(0x9A2Bd3D08d648b4721Ef41B8D21a69C2BD7Ba17d), 558)"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2825b04d1dbc389c6dbbf73c15eb4a0008067274.txt:67:9: Warning: Transaction-Ordering Dependency.\n        address(0xa57F0CecEdE74CbE0675c31AFAbF06E61a9A3C14).transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2825b04d1dbc389c6dbbf73c15eb4a0008067274.txt:33:9: Warning: Transaction-Ordering Dependency.\n        CCContract.purchase.value(2245076957899502036)(558)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.9"
+}

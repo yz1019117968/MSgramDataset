@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x18d70bd7bdfa7e424271fe25b527ee0250db5c90.txt:331:5: Warning: Timestamp Dependency.\n    if ((icoStartTime != 0) && (getNow() < icoStartTime)) return;"
+  ], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x18d70bd7bdfa7e424271fe25b527ee0250db5c90.txt:343:12: Warning: Re-Entrancy Vulnerability.\n    assert(crowdSale.call.value(purchaseAmount)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x18d70bd7bdfa7e424271fe25b527ee0250db5c90.txt:289:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x18d70bd7bdfa7e424271fe25b527ee0250db5c90.txt:343:12: Warning: Transaction-Ordering Dependency.\n    assert(crowdSale.call.value(purchaseAmount)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.9"
+}

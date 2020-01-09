@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x971e78e0C92392A4E39099835cF7E6aB535b2227.txt:4565:3: Warning: Timestamp Dependency.\n\t\trequire(initiationTime + SD_DURATION < now)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x971e78e0C92392A4E39099835cF7E6aB535b2227.txt:5019:35: Warning: Integer Overflow.\n            emit Transfer(sender, recipients[i]\nInteger Overflow occurs if:\n    recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0", 
+   "./restContracts/0x971e78e0C92392A4E39099835cF7E6aB535b2227.txt:5019:50: Warning: Integer Overflow.\n            emit Transfer(sender, recipients[i], values[i]\nInteger Overflow occurs if:\n    values = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x971e78e0C92392A4E39099835cF7E6aB535b2227.txt:3713:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x971e78e0C92392A4E39099835cF7E6aB535b2227.txt:5231:33: Warning: Integer Underflow.\n            safeMul(preBalance, now - lastTransferTimestamp[account]\nInteger Underflow occurs if:\n    lastTransferTimestamp[account] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    feePeriodStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    targetFeePeriodDurationSeconds = 2\n    proxy = 0", 
+   "./restContracts/0x971e78e0C92392A4E39099835cF7E6aB535b2227.txt:3715:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.8"
+}

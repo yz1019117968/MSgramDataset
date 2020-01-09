@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa7620c421d29db2bb991cd603a725b960e927ced.txt:33:5: Warning: Integer Overflow.\n    function hash(string dataString) public pure returns(bytes32){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dataString = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.5"
+}

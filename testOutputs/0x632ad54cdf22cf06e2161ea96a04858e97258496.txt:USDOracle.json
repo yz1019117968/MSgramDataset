@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x632ad54cdf22cf06e2161ea96a04858e97258496.txt:265:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x632ad54cdf22cf06e2161ea96a04858e97258496.txt:2191:3: Warning: Integer Overflow.\n  function __callback(bytes32 _myid, string _result) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x632ad54cdf22cf06e2161ea96a04858e97258496.txt:2169:31: Warning: Integer Overflow.\n    return block.timestamp > (lastUpdated + priceExpirationInterval\nInteger Overflow occurs if:\n    lastUpdated = 1\n    priceExpirationInterval = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.2"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xC1746273C53b9BF2D827B01B3974113bb597EAeB.txt:11:3: Warning: Integer Underflow.\n  string public symbol", 
+   "./restContracts/0xC1746273C53b9BF2D827B01B3974113bb597EAeB.txt:103:5: Warning: Integer Underflow.\n    allowance[_from][msg.sender] -= _value\nInteger Underflow occurs if:\n    _value = 34854167250581871405066246989256871414772772338490027241114662174608296847733\n    balanceOf[_to] = 57346295533576563428689019345578713683075960063462234266750547215274860937281\n    allowance[_from][msg.sender] = 34854167250581871405066246989256871414772772338490027241114662174608296847732\n    balanceOf[_from] = 34854167250581871405066246989256871414772772338490027241114662174608296847733\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xC1746273C53b9BF2D827B01B3974113bb597EAeB.txt:9:3: Warning: Integer Underflow.\n  string public name", 
+   "./restContracts/0xC1746273C53b9BF2D827B01B3974113bb597EAeB.txt:7:3: Warning: Integer Underflow.\n  string public standard = 'ERC20'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.9"
+}

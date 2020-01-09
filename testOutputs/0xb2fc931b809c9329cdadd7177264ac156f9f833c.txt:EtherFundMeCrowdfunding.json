@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb2fc931b809c9329cdadd7177264ac156f9f833c.txt:161:4: Warning: Integer Overflow.\n\t\t\tinvestorCount++\nInteger Overflow occurs if:\n    halted = 0\n    investorCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endsAt = 1\n    startsAt = 0\n    investedAmountOf[investor] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb2fc931b809c9329cdadd7177264ac156f9f833c.txt:8:2: Warning: Integer Underflow.\n\tstring public name", 
+   "./restContracts/0xb2fc931b809c9329cdadd7177264ac156f9f833c.txt:11:2: Warning: Integer Underflow.\n\tstring public description", 
+   "./restContracts/0xb2fc931b809c9329cdadd7177264ac156f9f833c.txt:14:2: Warning: Integer Underflow.\n\tstring public teamContact"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.8"
+}

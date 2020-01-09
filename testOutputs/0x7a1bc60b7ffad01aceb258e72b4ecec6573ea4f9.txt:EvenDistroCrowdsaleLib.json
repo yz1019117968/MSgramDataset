@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7a1bc60b7ffad01aceb258e72b4ecec6573ea4f9.txt:683:3: Warning: Integer Underflow.\n  function getSaleData(EvenDistroCrowdsaleStorage storage self, uint256 timestamp)\r\n  ^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.0"
+}

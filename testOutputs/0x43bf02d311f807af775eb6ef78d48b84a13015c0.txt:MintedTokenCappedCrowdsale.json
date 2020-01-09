@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x43bf02d311f807af775eb6ef78d48b84a13015c0.txt:801:10: Warning: Timestamp Dependency.\n    else if (block.timestamp <= endsAt && !isCrowdsaleFull()) return State.Funding;\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x43bf02d311f807af775eb6ef78d48b84a13015c0.txt:799:10: Warning: Timestamp Dependency.\n    else if (block.timestamp < startsAt) return State.PreFunding;\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x43bf02d311f807af775eb6ef78d48b84a13015c0.txt:801:14: Warning: Timestamp Dependency.\n    else if (block.timestamp <= endsAt && !isCrowdsaleFull()"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x43bf02d311f807af775eb6ef78d48b84a13015c0.txt:631:9: Warning: Transaction-Ordering Dependency.\n    if(!multisigWallet.send(weiAmount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x43bf02d311f807af775eb6ef78d48b84a13015c0.txt:761:10: Warning: Transaction-Ordering Dependency.\n    if (!msg.sender.send(weiValue)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.3"
+}

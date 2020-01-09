@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:81:9: Warning: Timestamp Dependency.\n        require(now >= timeOut)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:59:5: Warning: Integer Overflow.\n    function claim(string _hash) public returns(bool result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _hash = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:13:5: Warning: Integer Underflow.\n    string public version"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.5"
+}

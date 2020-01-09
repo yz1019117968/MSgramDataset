@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:539:5: Warning: Integer Overflow.\n    uint256[] public activeTimesFrom", 
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:541:5: Warning: Integer Overflow.\n    uint256[] public activeTimesTo"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:649:31: Warning: Integer Underflow.\n        uint256 timeOfWeek = (block.timestamp - 345600"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.8"
+}

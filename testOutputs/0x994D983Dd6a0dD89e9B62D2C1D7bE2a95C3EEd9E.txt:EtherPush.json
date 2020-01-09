@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:921:50: Warning: Integer Overflow.\n    bytes32 nonce = sha3(block.number, msg.data, _nonce++\nInteger Overflow occurs if:\n    _nonce = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:709:31: Warning: Integer Overflow.\n    uint    ordersellamount = orders[id][seller].sellamount\nInteger Overflow occurs if:\n    orders[id][seller].buyamount = 0\n    orders[id][seller].expired = 0\n    buyamount = 0\n    orders[id][seller].buyer = 0\n    running = 255", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:949:7: Warning: Integer Overflow.\n      orders[id][seller].buyamount", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:291:3: Warning: Integer Overflow.\n  mapping (uint => mapping (address => Order))              public orders", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:707:19: Warning: Integer Overflow.\n    address buy = orders[id][seller].buy\nInteger Overflow occurs if:\n    orders[id][seller].buyamount = 0\n    orders[id][seller].expired = 0\n    buyamount = 0\n    orders[id][seller].buyer = 0\n    running = 255", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:945:7: Warning: Integer Overflow.\n      orders[id][seller].sellamount", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:711:30: Warning: Integer Overflow.\n    uint    orderbuyamount = orders[id][seller].buyamount\nInteger Overflow occurs if:\n    orders[id][seller].buyamount = 0\n    orders[id][seller].expired = 0\n    buyamount = 0\n    orders[id][seller].buyer = 0\n    running = 255", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:947:7: Warning: Integer Overflow.\n      orders[id][seller].buy", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:917:5: Warning: Integer Overflow.\n    orders[id][msg.sender].sellamount", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:953:7: Warning: Integer Overflow.\n      orders[id][seller].expired", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:31:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    tokens[token][msg.sender] = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    token = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:951:7: Warning: Integer Overflow.\n      orders[id][seller].buyer", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:943:13: Warning: Integer Overflow.\n    return (orders[id][seller].sell", 
+   "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:705:20: Warning: Integer Overflow.\n    address sell = orders[id][seller].sell\nInteger Overflow occurs if:\n    orders[id][seller].buyamount = 0\n    orders[id][seller].expired = 0\n    buyamount = 0\n    orders[id][seller].buyer = 0\n    running = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:467:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0x994D983Dd6a0dD89e9B62D2C1D7bE2a95C3EEd9E.txt:453:5: Warning: Transaction-Ordering Dependency.\n    account.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.5"
+}

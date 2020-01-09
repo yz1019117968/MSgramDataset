@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x12e29d7d6fd63f0f12040fcd1bf9021919b0e4fa.txt:901:3: Warning: Integer Overflow.\n  function transferFrom(address _from, address _to, uint256 _value, bytes _data) public returns (bool) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x12e29d7d6fd63f0f12040fcd1bf9021919b0e4fa.txt:917:3: Warning: Integer Overflow.\n  function increaseApproval(address _spender, uint _addedValue, bytes _data) public whenNotPaused returns (bool) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x12e29d7d6fd63f0f12040fcd1bf9021919b0e4fa.txt:909:3: Warning: Integer Overflow.\n  function approve(address _spender, uint256 _value, bytes _data) public whenNotPaused returns (bool) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x12e29d7d6fd63f0f12040fcd1bf9021919b0e4fa.txt:925:3: Warning: Integer Overflow.\n  function decreaseApproval(address _spender, uint _subtractedValue, bytes _data) public whenNotPaused returns (bool) {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x12e29d7d6fd63f0f12040fcd1bf9021919b0e4fa.txt:893:3: Warning: Integer Overflow.\n  function transfer(address _to, uint256 _value, bytes _data) public whenNotPaused returns (bool) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.5"
+}

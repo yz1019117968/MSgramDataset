@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9f01ffd2b8291a68b5151606900a0eb922282bc8.txt:7:3: Warning: Integer Underflow.\n  string public name", 
+   "./restContracts/0x9f01ffd2b8291a68b5151606900a0eb922282bc8.txt:9:3: Warning: Integer Underflow.\n  string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "30.8"
+}

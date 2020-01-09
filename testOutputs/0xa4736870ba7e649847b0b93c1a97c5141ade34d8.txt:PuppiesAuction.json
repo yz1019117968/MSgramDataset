@@ -1,0 +1,38 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:2271:9: Warning: Callstack Depth Attack Vulnerability.\n        msg.sender.send(autoBirthFee)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1867:13: Warning: Integer Overflow.\n        if (_sire.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 40564819207303340847894502572033", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1785:29: Warning: Integer Overflow.\n        Puppy storage pup = puppies[_puppyId]\nInteger Overflow occurs if:\n    _puppyId = 1\n    puppies[_puppyId] = 2\n    PuppyIndexToOwner[_tokenId] = 0\n    paused = 0", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1889:69: Warning: Integer Overflow.\n        if (_sire.matronId == _matron.matronId || _sire.matronId == _matron.sireId\nInteger Overflow occurs if:\n    puppies[_matronId] = 72057594037927937", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1961:32: Warning: Integer Overflow.\n        Puppy storage matron = puppies[_matronId]\nInteger Overflow occurs if:\n    puppies[_matronId] = 2251799813685249", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1861:44: Warning: Integer Overflow.\n        if (_matron.matronId == _sireId || _matron.sireId\nInteger Overflow occurs if:\n    puppies[_matronId] = 25108406941546723055343157692830665664409421777856138051585", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1861:13: Warning: Integer Overflow.\n        if (_matron.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 57896265474541195009827073540416763263664060355064179049689618801890879864832", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1895:49: Warning: Integer Overflow.\n        if (_sire.sireId == _matron.matronId || _sire.sireId\nInteger Overflow occurs if:\n    puppies[_matronId] = 20769187434139310514121985316880385", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1895:13: Warning: Integer Overflow.\n        if (_sire.sireId\nInteger Overflow occurs if:\n    puppies[_matronId] = 3", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1895:29: Warning: Integer Overflow.\n        if (_sire.sireId == _matron.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 3", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1889:13: Warning: Integer Overflow.\n        if (_sire.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 862718293348820473429344482784628181556388621521298319395315527974913", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1889:51: Warning: Integer Overflow.\n        if (_sire.matronId == _matron.matronId || _sire.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 72057594037927937", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1879:36: Warning: Integer Overflow.\n        if (_sire.matronId == 0 || _matron.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 862718293348820473429344482784628181556388621521298319395315527974913", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1889:31: Warning: Integer Overflow.\n        if (_sire.matronId == _matron.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 862718293348820473429344482784628181556388621521298319395315527974913", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1895:65: Warning: Integer Overflow.\n        if (_sire.sireId == _matron.matronId || _sire.sireId == _matron.sireId\nInteger Overflow occurs if:\n    puppies[_matronId] = 20769187434139310514121985316880385", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1867:44: Warning: Integer Overflow.\n        if (_sire.matronId == _matronId || _sire.sireId\nInteger Overflow occurs if:\n    puppies[_matronId] = 4503599627370497", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1963:30: Warning: Integer Overflow.\n        Puppy storage sire = puppies[_sireId]\nInteger Overflow occurs if:\n    puppies[_matronId] = 43556142965880142666125063585333126365184", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1879:13: Warning: Integer Overflow.\n        if (_sire.matronId\nInteger Overflow occurs if:\n    puppies[_matronId] = 862718293348820473429344482784628181556388621521298319395315527974913", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:715:9: Warning: Integer Overflow.\n        ownershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    PuppyIndexToOwner[_tokenId] = 0\n    PuppyIndexToApproved[_tokenId] = 0\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:2291:29: Warning: Integer Underflow.\n            block.blockhash(block.number - 1", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:725:13: Warning: Integer Underflow.\n            ownershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    PuppyIndexToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975\n    PuppyIndexToApproved[_tokenId] = 0\n    paused = 0", 
+   "./restContracts/0xa4736870ba7e649847b0b93c1a97c5141ade34d8.txt:1293:16: Warning: Integer Underflow.\n        return puppies.length - 1\nInteger Underflow occurs if:\n    puppies.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.4"
+}

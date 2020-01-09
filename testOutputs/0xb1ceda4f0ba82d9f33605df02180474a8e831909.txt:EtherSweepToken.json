@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:317:5: Warning: Integer Overflow.\n    function betOpen(uint duration, string category, string tournament, string player1, string player2, bool drawAllowed) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    category = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:393:9: Warning: Integer Overflow.\n        bets[eventId].push(Bet(msg.sender, winner, msg.value))\nInteger Overflow occurs if:\n    winner = 0\n    eventId = 0\n    betEvents[eventId].until = 0\n    betEvents.length = 1", 
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:7:18: Warning: Integer Overflow.\n    function add(uint a, uin\nInteger Overflow occurs if:\n    bets[eventId].length = 2\n    eventId = 0\n    betEvents.length = 1", 
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:347:9: Warning: Integer Overflow.\n        betEvent.winner\nInteger Overflow occurs if:\n    winner = 0\n    eventId = 0\n    betEvents[eventId] = 1\n    owner = 0", 
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:233:1: Warning: Integer Overflow.\ncontract EtherSweepToken is ICO {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    winner = 0\n    eventId = 0\n    betEvents[eventId].until = 0\n    betEvents.length = 1", 
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:401:5: Warning: Integer Overflow.\n    function getEvents(uint from, string category, uint mode) public constant returns (uint cnt, uint[20] res) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    category = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:281:5: Warning: Integer Overflow.\n    BetEvent[] public betEvents", 
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:283:5: Warning: Integer Overflow.\n    mapping(uint => Bet[]) public bets"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb1ceda4f0ba82d9f33605df02180474a8e831909.txt:281:5: Warning: Integer Underflow.\n    BetEvent[] public betEvents"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.8"
+}

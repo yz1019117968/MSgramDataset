@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8f199d74d89b977d3f0684f0572bc66b16120ed8.txt:305:5: Warning: Integer Overflow.\n    function init(ERC20 _baseToken, TokenHolders _tokenHolders, string _name, string _symbol,\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8f199d74d89b977d3f0684f0572bc66b16120ed8.txt:129:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x8f199d74d89b977d3f0684f0572bc66b16120ed8.txt:131:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0x8f199d74d89b977d3f0684f0572bc66b16120ed8.txt:127:5: Warning: Integer Underflow.\n    string public standard = 'ERC20'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.8"
+}

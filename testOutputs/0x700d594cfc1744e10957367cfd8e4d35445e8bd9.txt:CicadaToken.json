@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x700d594cfc1744e10957367cfd8e4d35445e8bd9.txt:83:5: Warning: Integer Underflow.\n    string public standard = 'Cicada 33.01'", 
+   "./uniqueContractSourceCode/0x700d594cfc1744e10957367cfd8e4d35445e8bd9.txt:87:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x700d594cfc1744e10957367cfd8e4d35445e8bd9.txt:85:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "48.4"
+}

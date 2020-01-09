@@ -1,0 +1,49 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:777:27: Warning: Integer Overflow.\n        bytes32 oldName = tokenIndexToToken[_tokenId].name\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:1159:26: Warning: Integer Overflow.\n        uint256 _price = tokenIndexToToken[_tokenId].price", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:711:17: Warning: Integer Overflow.\n        return (tokenIndexToToken[_tokenId].lastBlock", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:791:27: Warning: Integer Overflow.\n        bytes32 oldMeta = tokenIndexToToken[_tokenId].metadata\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:607:9: Warning: Integer Overflow.\n        tokenIndexToToken[_tokenId] = _token\nInteger Overflow occurs if:\n    _tokenId = 0\n    tokenIndexToToken[_tokenId].exists = 0\n    _owner = 1461501637330902918203684832716283019655932542975\n    _price = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:581:9: Warning: Integer Overflow.\n        totalTokens++\nInteger Overflow occurs if:\n    _tokenId = 0\n    totalTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenIndexToToken[_tokenId].exists = 0\n    _owner = 1461501637330902918203684832716283019655932542975\n    _price = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:621:5: Warning: Integer Overflow.\n    function createTokens(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _tokenIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:1029:9: Warning: Integer Overflow.\n        ownershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenIndexToToken[_tokenId].approved = 374144419156711147060143317175368453031918731001600\n    tokenIndexToToken[_tokenId].owner = 0\n    _from = 0\n    contractLock = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:915:17: Warning: Integer Overflow.\n        return (tokenIndexToToken[_tokenId].metadata\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:851:18: Warning: Integer Overflow.\n        _owner = token.owner", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:765:9: Warning: Integer Overflow.\n        tokenIndexToToken[_tokenId].parentId\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:677:26: Warning: Integer Overflow.\n        address _owner = tokenIndexToToken[_tokenId].owner\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    gameAddress = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:849:17: Warning: Integer Overflow.\n        price = token.price", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:703:18: Warning: Integer Overflow.\n        _owner = tokenIndexToToken[_tokenId].owner\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:845:21: Warning: Integer Overflow.\n        tokenName = token.name", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:895:16: Warning: Integer Overflow.\n        return tokenIndexToToken[_tokenId].price\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:675:26: Warning: Integer Overflow.\n        uint256 _price = tokenIndexToToken[_tokenId].price\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    gameAddress = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:763:31: Warning: Integer Overflow.\n        uint256 oldParentId = tokenIndexToToken[_tokenId].parentId\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:1031:9: Warning: Integer Overflow.\n        tokenIndexToToken[_tokenId].owner\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].approved = 374144419156711147060143317175368453031918731001600\n    tokenIndexToToken[_tokenId].owner = 0\n    _from = 0\n    contractLock = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:1033:9: Warning: Integer Overflow.\n        tokenIndexToToken[_tokenId].lastBlock\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].approved = 374144419156711147060143317175368453031918731001600\n    tokenIndexToToken[_tokenId].owner = 0\n    _from = 0\n    contractLock = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:779:9: Warning: Integer Overflow.\n        tokenIndexToToken[_tokenId].name\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:847:20: Warning: Integer Overflow.\n        parentId = token.parentId", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:657:28: Warning: Integer Overflow.\n        address oldOwner = tokenIndexToToken[_tokenId].owner\nInteger Overflow occurs if:\n    _tokenId = 0\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:793:9: Warning: Integer Overflow.\n        tokenIndexToToken[_tokenId].metadata\nInteger Overflow occurs if:\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:661:41: Warning: Integer Underflow.\n        ownershipTokenCount[oldOwner] = ownershipTokenCount[oldOwner]--\nInteger Underflow occurs if:\n    _tokenId = 0\n    ownershipTokenCount[oldOwner] = 0\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:653:9: Warning: Integer Underflow.\n        totalTokens--\nInteger Underflow occurs if:\n    _tokenId = 0\n    totalTokens = 0\n    tokenIndexToToken[_tokenId].exists = 255\n    manager = 0", 
+   "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:1039:13: Warning: Integer Underflow.\n            ownershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    tokenIndexToToken[_tokenId].approved = 374144419156711147060143317175368453031918731001600\n    tokenIndexToToken[_tokenId].owner = 1461501637330902918203684832716283019655932542975\n    _from = 1461501637330902918203684832716283019655932542975\n    contractLock = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:223:13: Warning: Transaction-Ordering Dependency.\n            _to.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xac1badba2d5ad0df7b002091a09117710565a1eb.txt:219:13: Warning: Transaction-Ordering Dependency.\n            owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.3"
+}

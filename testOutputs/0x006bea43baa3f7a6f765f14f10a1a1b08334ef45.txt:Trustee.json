@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x006bea43baa3f7a6f765f14f10a1a1b08334ef45.txt:1087:5: Warning: Integer Overflow.\n    mapping (address => Grant) public grants", 
+   "./uniqueContractSourceCode/0x006bea43baa3f7a6f765f14f10a1a1b08334ef45.txt:1211:42: Warning: Integer Overflow.\n        uint256 refund = grant.value.sub(grant.transferred\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x006bea43baa3f7a6f765f14f10a1a1b08334ef45.txt:1165:9: Warning: Integer Overflow.\n        grants[_to] = Grant({\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    totalVesting = 5605462845496375111903543649021547885076859310963338047620319627814666429169\n    _cliff = 79549396383658401716890341720322769209814244831302165656971496996967001612279\n    _value = 35251408631369539472778434008878750796650370930229863370913097740658665518069\n    _end = 79549396383658401716890341720322769209814244831302165656971496996967001612279\n    _start = 79549396383658401716890341720322769209814244831302165656971496996967001612279\n    _to = 1461501637330902918203684832716283019655932542975\n    owner = 0\n    grants[_to].value = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.3"
+}

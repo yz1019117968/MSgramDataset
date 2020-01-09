@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8f81eb4030968e2e13a8a182ef0d07673e48ef6f.txt:13:17: Warning: Integer Overflow.\n        return (a + b\nInteger Overflow occurs if:\n    contractBalance = 1\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8f81eb4030968e2e13a8a182ef0d07673e48ef6f.txt:61:29: Warning: Integer Underflow.\n    require(((((_betSize * (10000-(safeSub(_playerNumber,1))\nInteger Underflow occurs if:\n    underNumber = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    gamePaused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "18.5"
+}

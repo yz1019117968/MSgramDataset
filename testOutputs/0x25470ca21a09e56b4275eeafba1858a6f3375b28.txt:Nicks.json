@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:5:1: Warning: Integer Overflow.\ncontract Nicks {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:91:12: Warning: Integer Overflow.\n    delete ownerOfNick[oldNick]", 
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:33:3: Warning: Integer Overflow.\n  function ownerOf (string _nick) public view returns (address _owner) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _nick = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:41:3: Warning: Integer Overflow.\n  function set (string _nick) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _nick = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:87:5: Warning: Integer Overflow.\n    Unset(oldNick, owner)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:91:12: Warning: Integer Underflow.\n    delete ownerOfNick[oldNick]", 
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:5:1: Warning: Integer Underflow.\ncontract Nicks {\r\n^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:87:5: Warning: Integer Underflow.\n    Unset(oldNick, owner)", 
+   "./uniqueContractSourceCode/0x25470ca21a09e56b4275eeafba1858a6f3375b28.txt:27:5: Warning: Integer Underflow.\n    return nickOfOwner[_owner]\nInteger Underflow occurs if:\n    return nickOfOwner[_owner] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.9"
+}

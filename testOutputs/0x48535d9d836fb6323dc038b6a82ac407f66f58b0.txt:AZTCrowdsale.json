@@ -1,0 +1,41 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:113:9: Warning: Timestamp Dependency.\n        if (now > 1527811199 && now < 1528416000 && tokenSold > 1250000 && tokenSold < 3250001) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:153:9: Warning: Timestamp Dependency.\n        if (now > 1530226799 && now < 1530831600 && tokenSold > 9250000 && tokenSold < 11250001) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:133:13: Warning: Timestamp Dependency.\n        if (now > 1529107199 && now < 1529622000 && tokenSold > 5250000 && tokenSold < 7250001", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:103:9: Warning: Timestamp Dependency.\n        if (now > 1526342400 && now < 1527811200 && tokenSold < 1250001) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:103:13: Warning: Timestamp Dependency.\n        if (now > 1526342400 && now < 1527811200", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:103:13: Warning: Timestamp Dependency.\n        if (now > 1526342400 && now < 1527811200 && tokenSold < 1250001", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:113:13: Warning: Timestamp Dependency.\n        if (now > 1527811199 && now < 1528416000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:143:13: Warning: Timestamp Dependency.\n        if (now > 1529621999 && now < 1530226800", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:123:13: Warning: Timestamp Dependency.\n        if (now > 1528415999 && now < 1529107200 && tokenSold > 3250000 && tokenSold < 5250001", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:123:13: Warning: Timestamp Dependency.\n        if (now > 1528415999 && now < 1529107200", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:133:13: Warning: Timestamp Dependency.\n        if (now > 1529107199 && now < 1529622000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:163:13: Warning: Timestamp Dependency.\n        if (now > 1530831599 && now < 1531609199 && tokenSold > 11250000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:143:13: Warning: Timestamp Dependency.\n        if (now > 1529621999 && now < 1530226800 && tokenSold > 7250000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:153:13: Warning: Timestamp Dependency.\n        if (now > 1530226799 && now < 1530831600 && tokenSold > 9250000 && tokenSold < 11250001", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:123:13: Warning: Timestamp Dependency.\n        if (now > 1528415999 && now < 1529107200 && tokenSold > 3250000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:133:13: Warning: Timestamp Dependency.\n        if (now > 1529107199 && now < 1529622000 && tokenSold > 5250000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:143:13: Warning: Timestamp Dependency.\n        if (now > 1529621999 && now < 1530226800 && tokenSold > 7250000 && tokenSold < 9250001", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:163:13: Warning: Timestamp Dependency.\n        if (now > 1530831599 && now < 1531609199", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:153:13: Warning: Timestamp Dependency.\n        if (now > 1530226799 && now < 1530831600 && tokenSold > 9250000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:113:13: Warning: Timestamp Dependency.\n        if (now > 1527811199 && now < 1528416000 && tokenSold > 1250000", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:133:9: Warning: Timestamp Dependency.\n        if (now > 1529107199 && now < 1529622000 && tokenSold > 5250000 && tokenSold < 7250001) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:123:9: Warning: Timestamp Dependency.\n        if (now > 1528415999 && now < 1529107200 && tokenSold > 3250000 && tokenSold < 5250001) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:113:13: Warning: Timestamp Dependency.\n        if (now > 1527811199 && now < 1528416000 && tokenSold > 1250000 && tokenSold < 3250001", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:143:9: Warning: Timestamp Dependency.\n        if (now > 1529621999 && now < 1530226800 && tokenSold > 7250000 && tokenSold < 9250001) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:153:13: Warning: Timestamp Dependency.\n        if (now > 1530226799 && now < 1530831600", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:163:13: Warning: Timestamp Dependency.\n        if (now > 1530831599 && now < 1531609199 && tokenSold > 11250000 && tokenSold < 13250001", 
+   "./uniqueContractSourceCode/0x48535d9d836fb6323dc038b6a82ac407f66f58b0.txt:163:9: Warning: Timestamp Dependency.\n        if (now > 1530831599 && now < 1531609199 && tokenSold > 11250000 && tokenSold < 13250001) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.4"
+}

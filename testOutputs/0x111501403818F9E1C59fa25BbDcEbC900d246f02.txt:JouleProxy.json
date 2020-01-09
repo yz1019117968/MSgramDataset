@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x111501403818F9E1C59fa25BbDcEbC900d246f02.txt:1569:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x111501403818F9E1C59fa25BbDcEbC900d246f02.txt:1533:23: Warning: Transaction-Ordering Dependency.\n        uint change = joule.register.value(msg.value)(_address, _timestamp, _gasLimit, _gasPrice)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.1"
+}

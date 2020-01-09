@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x51fdc3827865af9bde006a2ad6d593d4aca5e591.txt:33:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    crowdSaleAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x51fdc3827865af9bde006a2ad6d593d4aca5e591.txt:149:5: Warning: Integer Underflow.\n    string public version = \"v0.1\"", 
+   "./uniqueContractSourceCode/0x51fdc3827865af9bde006a2ad6d593d4aca5e591.txt:143:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x51fdc3827865af9bde006a2ad6d593d4aca5e591.txt:145:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.7"
+}

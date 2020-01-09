@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x117ca39dffc4da6fb3af6145dfff246830637fe2.txt:625:17: Warning: Integer Overflow.\n                accounts[target].values", 
+   "./uniqueContractSourceCode/0x117ca39dffc4da6fb3af6145dfff246830637fe2.txt:627:17: Warning: Integer Overflow.\n                accounts[target].values[dataHash].staked", 
+   "./uniqueContractSourceCode/0x117ca39dffc4da6fb3af6145dfff246830637fe2.txt:627:17: Warning: Integer Overflow.\n                accounts[target].values"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.6"
+}

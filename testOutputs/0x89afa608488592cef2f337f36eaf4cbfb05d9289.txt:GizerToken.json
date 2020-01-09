@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x89afa608488592cef2f337f36eaf4cbfb05d9289.txt:641:14: Warning: Integer Underflow.\n      return balances[_account] - locked[_account]\nInteger Underflow occurs if:\n    balances[_account] = 0\n    locked[_account] = 1\n    date_ico_end = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.8"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb47841728f10f39abad9d799e8f6ba05e30c1b9d.txt:935:1: Warning: Integer Overflow.\ncontract DayTrader{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contractOwner = 0", 
+   "./restContracts/0xb47841728f10f39abad9d799e8f6ba05e30c1b9d.txt:1089:23: Warning: Integer Overflow.\n    Bag storage bag = bags[bagId]\nInteger Overflow occurs if:\n    bagId = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    bags[bagId] = 7237005577332262213973186563042994240829374041602535252466099000494570602497", 
+   "./restContracts/0xb47841728f10f39abad9d799e8f6ba05e30c1b9d.txt:1067:5: Warning: Integer Overflow.\n    bag.multiplier\nInteger Overflow occurs if:\n    bagId = 0\n    bags[bagId] = 1\n    contractOwner = 0", 
+   "./restContracts/0xb47841728f10f39abad9d799e8f6ba05e30c1b9d.txt:1065:23: Warning: Integer Overflow.\n    Bag storage bag = bags[bagId]\nInteger Overflow occurs if:\n    bagId = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    bags[bagId] = 7237005577332262213973186563042994240829374041602535252466099000494570602497\n    contractOwner = 0", 
+   "./restContracts/0xb47841728f10f39abad9d799e8f6ba05e30c1b9d.txt:1119:12: Warning: Integer Overflow.\n    delete bags[bagId]\nInteger Overflow occurs if:\n    bagId = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    bags[bagId] = 7237005577332262213973186563042994240829374041602535252466099000494570602497\n    contractOwner = 0", 
+   "./restContracts/0xb47841728f10f39abad9d799e8f6ba05e30c1b9d.txt:1041:5: Warning: Integer Overflow.\n    bags.push(bag)\nInteger Overflow occurs if:\n    contractOwner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.5"
+}

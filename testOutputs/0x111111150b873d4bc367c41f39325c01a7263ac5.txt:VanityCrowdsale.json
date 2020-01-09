@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x111111150b873d4bc367c41f39325c01a7263ac5.txt:801:5: Warning: Integer Overflow.\n    address[] public participants", 
+   "./uniqueContractSourceCode/0x111111150b873d4bc367c41f39325c01a7263ac5.txt:885:35: Warning: Integer Overflow.\n            address participant = participants[distributedCount + i]\nInteger Overflow occurs if:\n    distributedCount = 95780971304118053647396689196894323976171195136475134\n    participants.length = 95780971304118053647396689196894323976171195136475136", 
+   "./uniqueContractSourceCode/0x111111150b873d4bc367c41f39325c01a7263ac5.txt:1049:70: Warning: Integer Overflow.\n            uint256 tokens = participant.balance.mul(TOKEN_RATE).mul(100 + bonus\nInteger Overflow occurs if:\n    registeredInDay[participant] = 16\n    distributedCount = 0\n    participants.length = 115790322390251417039241401711187164934754157181746164300578033162261635268607\n    finalized = 187072209578355573530071658587684226515959365500928\n    count = 2475880078570760549798248449\n    bonusMultiplier = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.5"
+}

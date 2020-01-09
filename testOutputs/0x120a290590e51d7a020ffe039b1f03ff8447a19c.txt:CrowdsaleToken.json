@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x120a290590e51d7a020ffe039b1f03ff8447a19c.txt:205:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    released = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x120a290590e51d7a020ffe039b1f03ff8447a19c.txt:1345:3: Warning: Integer Underflow.\n  string public symbol = \"TH\"", 
+   "./uniqueContractSourceCode/0x120a290590e51d7a020ffe039b1f03ff8447a19c.txt:1341:3: Warning: Integer Underflow.\n  string public name = \"TokenHome\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.7"
+}

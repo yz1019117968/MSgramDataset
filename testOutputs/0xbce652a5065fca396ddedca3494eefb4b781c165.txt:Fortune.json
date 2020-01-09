@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbce652a5065fca396ddedca3494eefb4b781c165.txt:45:3: Warning: Integer Overflow.\n  function addFortune( string fortune ) public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    fortune = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbce652a5065fca396ddedca3494eefb4b781c165.txt:67:37: Warning: Integer Underflow.\n    number = uint( block.blockhash( block.number - 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "16.7"
+}

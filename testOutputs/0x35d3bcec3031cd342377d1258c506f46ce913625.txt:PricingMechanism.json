@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x35d3bcec3031cd342377d1258c506f46ce913625.txt:255:9: Warning: Integer Overflow.\n        priceList.push(PriceTier(uint(safeDiv(1 ether, 400 * factor)),0,5000 ether))\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x35d3bcec3031cd342377d1258c506f46ce913625.txt:227:1: Warning: Integer Overflow.\ncontract PricingMechanism is Haltable, SafeMath{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x35d3bcec3031cd342377d1258c506f46ce913625.txt:231:5: Warning: Integer Overflow.\n    PriceTier[] public priceList"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.2"
+}

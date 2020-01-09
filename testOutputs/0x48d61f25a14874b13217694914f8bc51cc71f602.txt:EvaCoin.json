@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:867:13: Warning: Integer Overflow.\n            raisedSale2USD += amount\nInteger Overflow occurs if:\n    stage = 2\n    raisedSale2USD = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:877:37: Warning: Integer Overflow.\n        return payedDividendsUSD >= raisedPreSaleUSD + raisedSale1USD\nInteger Overflow occurs if:\n    raisedPreSaleUSD = 1\n    raisedSale1USD = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:863:13: Warning: Integer Overflow.\n            raisedSale1USD += amount\nInteger Overflow occurs if:\n    stage = 1\n    raisedSale1USD = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:859:13: Warning: Integer Overflow.\n            raisedPreSaleUSD += amount\nInteger Overflow occurs if:\n    stage = 0\n    raisedPreSaleUSD = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:75:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    value = 102193105763139748325718525101305097118150824356519535598067612640545889181206\n    balances[account] = 27606996064821820061008794903973754237683878608246892920768729156091458425317\n    stage = 0\n    allowed[_from][msg.sender] = 102193105763139748325718525101305097118150824356519535598067612640545889181206\n    balances[account] = 102193105763139748325718525101305097118150824356519535598067612640545889181206\n    to = 1461501637330902918203684832716283019655932542975\n    transferAllowed = 255\n    totalDividendsPerCoin = 0", 
+   "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:769:63: Warning: Integer Overflow.\n            balances[account] += balances[account] * coins / (totalSupplyPreSale + totalSupplySale1\nInteger Overflow occurs if:\n    stage = 3\n    totalSupplyPreSale = 1\n    totalSupplySale1 = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    sale1Coins[account] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    sale2Payed[account] = 0\n    sale2Payed[account] = 255\n    transferAllowed = 255\n    totalDividendsPerCoin = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:707:26: Warning: Integer Underflow.\n            var actual = totalDividendsPerCoin - lastDividends[account]\nInteger Underflow occurs if:\n    totalDividendsPerCoin = 8388608\n    lastDividends[account] = 8388609\n    transferAllowed = 255"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:983:13: Warning: Transaction-Ordering Dependency.\n            owner.transfer(this.balance - etherBalance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x48d61f25a14874b13217694914f8bc51cc71f602.txt:589:12: Warning: Transaction-Ordering Dependency.\n    assert(payee.send(payment)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.4"
+}

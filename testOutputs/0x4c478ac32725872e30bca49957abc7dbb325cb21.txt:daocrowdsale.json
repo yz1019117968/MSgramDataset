@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4c478ac32725872e30bca49957abc7dbb325cb21.txt:567:56: Warning: Integer Underflow.\n    require((msg.value == price*_amount)&&(_amount <= (Values.hardcap - DAO.totalSupply()\nInteger Underflow occurs if:\n    Values.hardcap = 10696736279445356447491263573986256744594967969664887699892592816919937024\n    timeOfNextShift = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.0"
+}

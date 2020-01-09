@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x42f67fe3c40b90c00adee3377f92afc3cb9fa8ac.txt:185:9: Warning: Integer Overflow.\n        balanceOf[owner] += value\nInteger Overflow occurs if:\n    value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balanceOf[owner] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    reserveSupply = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    owner = 0", 
+   "./uniqueContractSourceCode/0x42f67fe3c40b90c00adee3377f92afc3cb9fa8ac.txt:187:9: Warning: Integer Overflow.\n        totalSupply += value\nInteger Overflow occurs if:\n    value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    totalSupply = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    reserveSupply = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    owner = 0", 
+   "./uniqueContractSourceCode/0x42f67fe3c40b90c00adee3377f92afc3cb9fa8ac.txt:137:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x42f67fe3c40b90c00adee3377f92afc3cb9fa8ac.txt:51:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x42f67fe3c40b90c00adee3377f92afc3cb9fa8ac.txt:49:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.1"
+}

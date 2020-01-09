@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc00b89fc3a7ee7043629d8f9a79abfef55634960.txt:85:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705", 
+   "./restContracts/0xc00b89fc3a7ee7043629d8f9a79abfef55634960.txt:105:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./restContracts/0xc00b89fc3a7ee7043629d8f9a79abfef55634960.txt:11:13: Warning: Integer Overflow.\nuint256 z = x + y\nInteger Overflow occurs if:\n    totalEth = 89660649888868366171417216235708288031085258661234677303951427843448891257349"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc00b89fc3a7ee7043629d8f9a79abfef55634960.txt:175:5: Warning: Integer Underflow.\n    string public version = \"1.0\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.3"
+}

@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2305:19: Warning: Integer Overflow.\n        endTime = now + potTime\nInteger Overflow occurs if:\n    potTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    endTime = 115792089237316195423570985008687907853269984665640564039457583726438152929279\n    potSize = 0", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2045:1: Warning: Integer Overflow.\ncontract EthereumPot is usingOraclize {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    locked = 0\n    endTime = 0\n    potSize = 0", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2223:25: Warning: Integer Overflow.\n           if(random <= slots[i]\nInteger Overflow occurs if:\n    slots.length = 115792082335569848633007197573932045576244532214531591869071028845388905840639\n    slots[i] = 0\n    random = 1", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:239:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2061:5: Warning: Integer Overflow.\n    uint[] public slots", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2343:27: Warning: Integer Overflow.\n                endTime = now + potTime\nInteger Overflow occurs if:\n    potTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    potSize = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    endTime = 115792089237316195423570985008687907853269984665640564039457583937544385462271\n    addresses.length = 1", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2149:5: Warning: Integer Overflow.\n    function __callback(bytes32 _queryId, string _result, bytes _proof) oraclize_randomDS_proofVerify(_queryId, _result, _proof)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2051:5: Warning: Integer Overflow.\n    address[] public addresses", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2225:23: Warning: Integer Overflow.\n               return addresses[i]\nInteger Overflow occurs if:\n    addresses[i] = 12\n    slots.length = 10\n    random = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    slots[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639934"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2345:26: Warning: Integer Underflow.\n                timeLeft(endTime - now\nInteger Underflow occurs if:\n    potTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    potSize = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    endTime = 115792089237316195423570985008687907853269984665640564039457583937544385462271\n    addresses.length = 1", 
+   "./uniqueContractSourceCode/0x5a13caa82851342e14cd2ad0257707cddb8a31b7.txt:2307:18: Warning: Integer Underflow.\n        timeLeft(endTime - now\nInteger Underflow occurs if:\n    potTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    endTime = 115792089237316195423570985008687907853269984665640564039457583726438152929279\n    potSize = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "19.9"
+}

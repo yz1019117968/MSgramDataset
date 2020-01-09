@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:55:5: Warning: Integer Overflow.\n    function SetMessage(string _message)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _message = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:29:5: Warning: Integer Overflow.\n    function GetHash(bytes pass) public constant returns (bytes32) {return sha3(pass);}", 
+   "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:73:5: Warning: Integer Overflow.\n    function GetGift(bytes pass)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:83:24: Warning: Integer Overflow.\n        if(hashPass == sha3(pass)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:83:24: Warning: Integer Underflow.\n        if(hashPass == sha3(pass)", 
+   "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:5:1: Warning: Integer Underflow.\ncontract ETH_GIFT_BOX\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    sender = 0", 
+   "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:89:13: Warning: Integer Underflow.\n            return message\nInteger Underflow occurs if:\n    return message = 1\n    hashPass = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:87:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xB49B1dDdf1b3d6E878FD9b73874Da7Ab0da7E004.txt:109:13: Warning: Transaction-Ordering Dependency.\n            sender.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.7"
+}

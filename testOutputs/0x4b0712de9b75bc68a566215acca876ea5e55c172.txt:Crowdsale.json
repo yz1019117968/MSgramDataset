@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4b0712de9b75bc68a566215acca876ea5e55c172.txt:729:16: Warning: Integer Overflow.\n        return weiTokensOwed[_addr] + satTokensOwed[_addr]\nInteger Overflow occurs if:\n    weiTokensOwed[_addr] = 1\n    satTokensOwed[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4b0712de9b75bc68a566215acca876ea5e55c172.txt:815:9: Warning: Integer Overflow.\n        balances[0] += weiTokensOwed[_addr]\nInteger Overflow occurs if:\n    balances[0] = 1\n    weiTokensOwed[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4b0712de9b75bc68a566215acca876ea5e55c172.txt:829:9: Warning: Integer Overflow.\n        balances[0] += satTokensOwed[_addr]\nInteger Overflow occurs if:\n    balances[0] = 1\n    satTokensOwed[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4b0712de9b75bc68a566215acca876ea5e55c172.txt:677:40: Warning: Integer Overflow.\n        TokenPurchase(_addr, _addr, 0, weiTokensOwed[_addr] + satTokensOwed[_addr]\nInteger Overflow occurs if:\n    weiTokensOwed[_addr] = 1\n    satTokensOwed[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x4b0712de9b75bc68a566215acca876ea5e55c172.txt:813:9: Warning: Transaction-Ordering Dependency.\n        _addr.transfer(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x4b0712de9b75bc68a566215acca876ea5e55c172.txt:887:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.1"
+}

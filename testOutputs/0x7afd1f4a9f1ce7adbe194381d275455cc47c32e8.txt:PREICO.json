@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x7afd1f4a9f1ce7adbe194381d275455cc47c32e8.txt:73:12: Warning: Integer Overflow.\n    return holders_[ix]\nInteger Overflow occurs if:\n    holders_[ix] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x7afd1f4a9f1ce7adbe194381d275455cc47c32e8.txt:119:5: Warning: Integer Underflow.\n    totalSupply_ -= amount\nInteger Underflow occurs if:\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply_ = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances_[holder] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holder = 1461501637330902918203684832716283019655932542975\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.6"
+}

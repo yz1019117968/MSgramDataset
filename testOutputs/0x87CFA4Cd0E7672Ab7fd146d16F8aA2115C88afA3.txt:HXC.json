@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x87CFA4Cd0E7672Ab7fd146d16F8aA2115C88afA3.txt:31:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    totalRelease = 1\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    admin = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x87CFA4Cd0E7672Ab7fd146d16F8aA2115C88afA3.txt:47:5: Warning: Integer Underflow.\n    string public name = \"HXC\"", 
+   "./restContracts/0x87CFA4Cd0E7672Ab7fd146d16F8aA2115C88afA3.txt:49:5: Warning: Integer Underflow.\n    string public symbol = \"HXC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.1"
+}

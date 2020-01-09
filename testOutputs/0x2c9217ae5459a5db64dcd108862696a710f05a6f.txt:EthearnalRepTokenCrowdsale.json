@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2c9217ae5459a5db64dcd108862696a710f05a6f.txt:1439:13: Warning: Integer Overflow.\n            whitelistedInvestorCounter++\nInteger Overflow occurs if:\n    whitelistedInvestorCounter = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whitelist[_newInvestor] = 0\n    ownerRegistry[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x2c9217ae5459a5db64dcd108862696a710f05a6f.txt:1457:17: Warning: Integer Overflow.\n                whitelistedInvestorCounter++\nInteger Overflow occurs if:\n    whitelistedInvestorCounter = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whitelist[newInvestor] = 0\n    whitelist[newInvestor] = 255\n    whitelist[newInvestor] = 255\n    whitelist[newInvestor] = 255\n    whitelist[newInvestor] = 255\n    whitelist[newInvestor] = 255\n    whitelist[newInvestor] = 255\n    whitelist[newInvestor] = 255\n    whitelist[newInvestor] = 255\n    ownerRegistry[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x2c9217ae5459a5db64dcd108862696a710f05a6f.txt:1451:35: Warning: Integer Overflow.\n            address newInvestor = _investors[i]\nInteger Overflow occurs if:\n    whitelist[newInvestor] = 255\n    ownerRegistry[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x2c9217ae5459a5db64dcd108862696a710f05a6f.txt:871:5: Warning: Integer Overflow.\n    function setupOwners(address[] _owners) public {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.1"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa7f598984f6a77da416efaaf6ff18f5f7b9eeab2.txt:107:1: Warning: Integer Overflow.\ncontract Creatures is Permissions {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    callerAddress = 0", 
+   "./restContracts/0xa7f598984f6a77da416efaaf6ff18f5f7b9eeab2.txt:163:24: Warning: Integer Overflow.\n\t\tCreature storage c = creatures[id]\nInteger Overflow occurs if:\n    id = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    creatures[id] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0xa7f598984f6a77da416efaaf6ff18f5f7b9eeab2.txt:195:3: Warning: Integer Overflow.\n\t\townershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _from = 0\n    callerAddress = 0", 
+   "./restContracts/0xa7f598984f6a77da416efaaf6ff18f5f7b9eeab2.txt:153:27: Warning: Integer Overflow.\n\t\tuint256 newCreatureID = creatures.push(_creature)\nInteger Overflow occurs if:\n    callerAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa7f598984f6a77da416efaaf6ff18f5f7b9eeab2.txt:191:4: Warning: Integer Underflow.\n\t\t\townershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    _from = 1461501637330902918203684832716283019655932542975\n    callerAddress = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.3"
+}

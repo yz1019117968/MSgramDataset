@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x516b55c0fdff1ff787c31ee5b8456bd9147de0ee.txt:799:55: Warning: Integer Overflow.\n    bool duringGracePeriod = gracePeriodSet && now <= gracePeriodStart + 24 hours\nInteger Overflow occurs if:\n    gracePeriodStart = 115792089237316195423570985008687907853269984665640564039457584007913129568896\n    start = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.7"
+}

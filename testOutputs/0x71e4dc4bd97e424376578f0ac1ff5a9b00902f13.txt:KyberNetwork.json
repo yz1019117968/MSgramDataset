@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x71e4dc4bd97e424376578f0ac1ff5a9b00902f13.txt:771:5: Warning: Integer Overflow.\n    KyberReserve[] public reserves", 
+   "./uniqueContractSourceCode/0x71e4dc4bd97e424376578f0ac1ff5a9b00902f13.txt:1369:13: Warning: Integer Overflow.\n            reserves.push(reserve)\nInteger Overflow occurs if:\n    admin = 0", 
+   "./uniqueContractSourceCode/0x71e4dc4bd97e424376578f0ac1ff5a9b00902f13.txt:853:5: Warning: Integer Overflow.\n    function getPrice( ERC20 source, ERC20 dest ) constant returns(uint) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    reserves[reserveIndex] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x71e4dc4bd97e424376578f0ac1ff5a9b00902f13.txt:833:5: Warning: Integer Overflow.\n    function getRate( ERC20 source, ERC20 dest, uint reserveIndex ) constant returns(uint rate, uint expBlock, uint balance){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    reserves[reserveIndex] = 1", 
+   "./uniqueContractSourceCode/0x71e4dc4bd97e424376578f0ac1ff5a9b00902f13.txt:1381:21: Warning: Integer Overflow.\n                if( reserves[i]\nInteger Overflow occurs if:\n    reserves.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    admin = 0", 
+   "./uniqueContractSourceCode/0x71e4dc4bd97e424376578f0ac1ff5a9b00902f13.txt:761:1: Warning: Integer Overflow.\ncontract KyberNetwork {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    reserves.length = 67675851557066309277206487579460205599833868865632224295036559502024660319725\n    reserves[i] = 0\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    reserves[i] = 1461501637330902918203684832716283019655932542975\n    admin = 0", 
+   "./uniqueContractSourceCode/0x71e4dc4bd97e424376578f0ac1ff5a9b00902f13.txt:1471:9: Warning: Integer Overflow.\n        return reserves\nInteger Overflow occurs if:\n    return reserves = 3618502788666131106986593281521497120414687020801267626233049500247285301247"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.6"
+}

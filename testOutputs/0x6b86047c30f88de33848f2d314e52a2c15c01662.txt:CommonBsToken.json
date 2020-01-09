@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:375:13: Warning: Integer Overflow.\n            owners.push(owner)\nInteger Overflow occurs if:\n    ownerMap[owner] = 0\n    ownerMap[owner] = 255", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:399:33: Warning: Integer Overflow.\n                    owners[i] = owners[owners.length - 1]\nInteger Overflow occurs if:\n    owners.length = 115792089237316195423570967049755754880017127982826627318194429362534294224896\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:319:5: Warning: Integer Overflow.\n    address[] public owners", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:473:1: Warning: Integer Overflow.\ncontract CommonBsToken is StandardToken, MultiOwnable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owners.length = 3\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:397:21: Warning: Integer Overflow.\n                if (owners[i]\nInteger Overflow occurs if:\n    owners.length = 28948022309329048855892746252171976963317496166410141009864396001978282409985\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:399:21: Warning: Integer Overflow.\n                    owners[i]\nInteger Overflow occurs if:\n    owners.length = 115792089237316195423570967049755754880017127982826627318194429362534294224896\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:477:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:485:5: Warning: Integer Underflow.\n    string public version = 'v0.1'", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:395:34: Warning: Integer Underflow.\n            for (uint i = 0; i < owners.length - 1\nInteger Underflow occurs if:\n    owners.length = 0\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./uniqueContractSourceCode/0x6b86047c30f88de33848f2d314e52a2c15c01662.txt:479:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.0"
+}

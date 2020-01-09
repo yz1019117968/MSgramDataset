@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x17c8009617879a1bdba57f771bbb8a1631f948e2.txt:353:8: Warning: Integer Underflow.\n       string   public  name = \"FUXECoin\"", 
+   "./uniqueContractSourceCode/0x17c8009617879a1bdba57f771bbb8a1631f948e2.txt:355:8: Warning: Integer Underflow.\n       string   public  symbol = \"FUX\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.2"
+}

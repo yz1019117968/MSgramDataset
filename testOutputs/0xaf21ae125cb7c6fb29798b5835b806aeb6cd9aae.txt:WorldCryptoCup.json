@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:135:6: Warning: Integer Overflow.\n\t    teams[_teamId].curPrice\nInteger Overflow occurs if:\n    _newPrice = 70368744177664\n    _teamId = 0\n    teams[_teamId].curPrice = 70368744177665\n    teams[_teamId].ownerAddress = 0\n    teams[_teamId] = 1", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:181:16: Warning: Integer Overflow.\n        return(teams[_teamId].ownerAddress\nInteger Overflow occurs if:\n    _teamId = 0\n    teams[_teamId] = 1", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:171:16: Warning: Integer Overflow.\n        return(teams[_teamId].curPrice\nInteger Overflow occurs if:\n    _teamId = 0\n    teams[_teamId] = 1", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:171:16: Warning: Integer Overflow.\n        return(teams[_teamId]\nInteger Overflow occurs if:\n    _teamId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    teams[_teamId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:181:16: Warning: Integer Overflow.\n        return(teams[_teamId]\nInteger Overflow occurs if:\n    _teamId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    teams[_teamId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:153:30: Warning: Integer Overflow.\n        Team storage _team = teams[_teamId]\nInteger Overflow occurs if:\n    teams[_teamId] = 115792089237316195423570985008687907853269984665640564039457584007913084900695", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:135:6: Warning: Integer Overflow.\n\t    teams[_teamId]\nInteger Overflow occurs if:\n    _newPrice = 1\n    _teamId = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    teams[_teamId].curPrice = 2\n    teams[_teamId].ownerAddress = 0\n    teams[_teamId] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:237:9: Warning: Integer Overflow.\n        teams.push(Team(\"Brazil\", cfoAddress, 700000000000000000))\nInteger Overflow occurs if:\n    teams.push(Team(\"Brazil\", cfoAddress, 700000000000000000)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    teamsAreInitiated = 0\n    ceoAddress = 0", 
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:5:1: Warning: Integer Overflow.\ncontract WorldCryptoCup {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    teams.push(Team(\"Brazil\", cfoAddress, 700000000000000000)) = 71035195276905978830841378541667856625157632706140231142381185849046086175071\n    teamsAreInitiated = 0\n    ceoAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaf21ae125cb7c6fb29798b5835b806aeb6cd9aae.txt:157:9: Warning: Integer Underflow.\n        name = _team.name\nInteger Underflow occurs if:\n    teams[_teamId] = 115792089237316195423570985008687907853269984665640564039457584007913084900695"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "14.0"
+}

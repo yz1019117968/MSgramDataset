@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9e88613418cf03dca54d6a2cf6ad934a78c7a17a.txt:1081:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./restContracts/0x9e88613418cf03dca54d6a2cf6ad934a78c7a17a.txt:711:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9e88613418cf03dca54d6a2cf6ad934a78c7a17a.txt:1093:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663", 
+   "./restContracts/0x9e88613418cf03dca54d6a2cf6ad934a78c7a17a.txt:891:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9e88613418cf03dca54d6a2cf6ad934a78c7a17a.txt:301:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x9e88613418cf03dca54d6a2cf6ad934a78c7a17a.txt:305:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0x9e88613418cf03dca54d6a2cf6ad934a78c7a17a.txt:307:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.4"
+}

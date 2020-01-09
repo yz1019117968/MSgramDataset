@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x34bc4f174c027a68f94a7ea6a3b4930e0211b19d.txt:141:9: Warning: Timestamp Dependency.\n        require(now>unlockTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x34bc4f174c027a68f94a7ea6a3b4930e0211b19d.txt:85:24: Warning: Integer Overflow.\n        if(hashPass == keccak256(pass)\nInteger Overflow occurs if:\n    unlockTime = 0", 
+   "./uniqueContractSourceCode/0x34bc4f174c027a68f94a7ea6a3b4930e0211b19d.txt:29:5: Warning: Integer Overflow.\n    function GetHash(bytes pass) public constant returns (bytes32) {return keccak256(pass);}"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x34bc4f174c027a68f94a7ea6a3b4930e0211b19d.txt:85:24: Warning: Integer Underflow.\n        if(hashPass == keccak256(pass)\nInteger Underflow occurs if:\n    unlockTime = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x34bc4f174c027a68f94a7ea6a3b4930e0211b19d.txt:89:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x34bc4f174c027a68f94a7ea6a3b4930e0211b19d.txt:111:13: Warning: Transaction-Ordering Dependency.\n            sender.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.3"
+}

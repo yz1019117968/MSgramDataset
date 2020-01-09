@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:211:14: Warning: Integer Underflow.\n      return sale.base.capAmount - 160000000000000000000000\nInteger Underflow occurs if:\n    sale.base.capAmount = 159999999999999999999999\n    greenshoeActive = 0", 
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:271:3: Warning: Integer Underflow.\n  function getSaleData(uint256 timestamp) constant returns (uint256[3]) {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x86fe3c20379ac71ebbf8c0499b41fd2b457e4e9e.txt:281:12: Warning: Integer Underflow.\n    return sale.base.startingTokenBalance - sale.base.withdrawTokensMap[sale.base.owner]\nInteger Underflow occurs if:\n    sale.base.startingTokenBalance = 0\n    sale.base.withdrawTokensMap[sale.base.owner] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

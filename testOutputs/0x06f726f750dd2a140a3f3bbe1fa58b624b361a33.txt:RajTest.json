@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:287:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:315:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    crowdsaleAgent = 0", 
+   "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:317:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    crowdsaleAgent = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:49:5: Warning: Integer Underflow.\n    string public symbol = \"RT\"", 
+   "./uniqueContractSourceCode/0x06f726f750dd2a140a3f3bbe1fa58b624b361a33.txt:47:5: Warning: Integer Underflow.\n    string public name = \"RajTest\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.6"
+}

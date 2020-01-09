@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6b106609bbea6f4c9ace8836aa3fb04c6b586c4e.txt:363:7: Warning: Integer Overflow.\n      tokens.push(_tokenId)\nInteger Overflow occurs if:\n    collectibleIndexToOwner[_tokenId] = 0\n    collectibleIndexToPrice[_tokenId] = 0", 
+   "./uniqueContractSourceCode/0x6b106609bbea6f4c9ace8836aa3fb04c6b586c4e.txt:841:19: Warning: Integer Overflow.\n        tokenId = tokens[tokenIndex]\nInteger Overflow occurs if:\n    tokens.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    collectibleIndexToOwner[tokenId] = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x6b106609bbea6f4c9ace8836aa3fb04c6b586c4e.txt:91:1: Warning: Integer Overflow.\ncontract NewWorld {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    collectibleIndexToOwner[_tokenId] = 0\n    collectibleIndexToPrice[_tokenId] = 0", 
+   "./uniqueContractSourceCode/0x6b106609bbea6f4c9ace8836aa3fb04c6b586c4e.txt:789:5: Warning: Integer Overflow.\n    tokens.push(tokenId)\nInteger Overflow occurs if:\n    promoCreatedCount = 49999\n    collectibleIndexToOwner[tokenId] = 0\n    cooAddress = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6b106609bbea6f4c9ace8836aa3fb04c6b586c4e.txt:815:7: Warning: Transaction-Ordering Dependency.\n      _to.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6b106609bbea6f4c9ace8836aa3fb04c6b586c4e.txt:811:7: Warning: Transaction-Ordering Dependency.\n      ceoAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.3"
+}

@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xB044a1F6352fAdbB9cEe1a499f2ccf17204f8AFe.txt:9:5: Warning: Integer Overflow.\n    address[] public potMembers", 
+   "./restContracts/0xB044a1F6352fAdbB9cEe1a499f2ccf17204f8AFe.txt:115:10: Warning: Integer Overflow.\n\t        potMembers.push(msg.sender)\nInteger Overflow occurs if:\n    potMembers.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    minBetSize = 0\n    endTime = 1", 
+   "./restContracts/0xB044a1F6352fAdbB9cEe1a499f2ccf17204f8AFe.txt:3:1: Warning: Integer Overflow.\ncontract Pot {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    potMembers.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    minBetSize = 0\n    endTime = 1", 
+   "./restContracts/0xB044a1F6352fAdbB9cEe1a499f2ccf17204f8AFe.txt:207:23: Warning: Integer Overflow.\n            endTime = now + potTime\nInteger Overflow occurs if:\n    potTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    potSize = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xB044a1F6352fAdbB9cEe1a499f2ccf17204f8AFe.txt:209:22: Warning: Integer Underflow.\n            timeLeft(endTime - now\nInteger Underflow occurs if:\n    potTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0\n    endTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    potSize = 0", 
+   "./restContracts/0xB044a1F6352fAdbB9cEe1a499f2ccf17204f8AFe.txt:177:60: Warning: Integer Underflow.\n                \tuint random_number = uint(block.blockhash(block.number-1\nInteger Underflow occurs if:\n    endTime = 0\n    potMembers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    potSize = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    locked = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.6"
+}

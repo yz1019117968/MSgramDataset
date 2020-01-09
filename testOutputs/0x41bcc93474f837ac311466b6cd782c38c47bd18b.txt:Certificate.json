@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:315:5: Warning: Integer Overflow.\n    certificates[certificate_hash] = CertificateMeta(msg.sender, expires, sealed_hash, certificate_hash)\nInteger Overflow occurs if:\n    expires = 1", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:415:29: Warning: Integer Overflow.\n      return (cert.expires, cert.sealed_hash", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:387:64: Warning: Integer Overflow.\n      return (cert.ca_address, cert.expires, cert.sealed_hash, cert.certificate_hash", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:259:73: Warning: Integer Overflow.\n    return (ca.lookup_api, ca.organization, ca.common_name, ca.country, ca.province", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:259:86: Warning: Integer Overflow.\n    return (ca.lookup_api, ca.organization, ca.common_name, ca.country, ca.province, ca.locality", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:387:32: Warning: Integer Overflow.\n      return (cert.ca_address, cert.expires", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:259:61: Warning: Integer Overflow.\n    return (ca.lookup_api, ca.organization, ca.common_name, ca.country", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:415:15: Warning: Integer Overflow.\n      return (cert.expires", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:415:47: Warning: Integer Overflow.\n      return (cert.expires, cert.sealed_hash, cert.certificate_hash", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:259:45: Warning: Integer Overflow.\n    return (ca.lookup_api, ca.organization, ca.common_name", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:285:5: Warning: Integer Overflow.\n    certificates[certificate_hash] = CertificateMeta(msg.sender, expires, sealed_hash, certificate_hash)\nInteger Overflow occurs if:\n    expires = 1", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:367:5: Warning: Integer Overflow.\n    cert.expires", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:167:3: Warning: Integer Overflow.\n  function addCA(\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    lookup_api = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:259:28: Warning: Integer Overflow.\n    return (ca.lookup_api, ca.organization", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:387:46: Warning: Integer Overflow.\n      return (cert.ca_address, cert.expires, cert.sealed_hash"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:75:1: Warning: Integer Underflow.\ncontract Certificate is Ownable {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:243:12: Warning: Integer Underflow.\n    return bytes(certificate_authority[ca_address].lookup_api).length", 
+   "./uniqueContractSourceCode/0x41bcc93474f837ac311466b6cd782c38c47bd18b.txt:259:5: Warning: Integer Underflow.\n    return (ca.lookup_api, ca.organization, ca.common_name, ca.country, ca.province, ca.locality)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.3"
+}

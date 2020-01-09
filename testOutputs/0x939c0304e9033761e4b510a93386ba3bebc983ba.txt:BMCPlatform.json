@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:797:16: Warning: Integer Overflow.\n        return assets[_symbol].baseUnit", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:1745:9: Warning: Integer Overflow.\n        holders[fromId].trust\nInteger Overflow occurs if:\n    holderIndex[_holder] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holders[getHolderId(_from)].trust[_to] = 0\n    holderIndex[_holder] = 0", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:203:5: Warning: Integer Overflow.\n    function withdrawnTokens(address[] tokens, address _to) onlyContractOwner returns(uint) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:1053:5: Warning: Integer Overflow.\n    function massTransfer(address[] addresses, uint[] values, bytes32 _symbol) external\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:1289:5: Warning: Integer Overflow.\n    function proxyTransferWithReference(address _to, uint _value, bytes32 _symbol, string _reference, address _sender) returns(uint errorCode) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:863:16: Warning: Integer Overflow.\n        return assets[_symbol].isReissuable", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:579:5: Warning: Integer Overflow.\n    mapping(bytes32 => Asset) public assets", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:1427:5: Warning: Integer Overflow.\n    function issueAsset(bytes32 _symbol, uint _value, string _name, string _description, uint8 _baseUnit, bool _isReissuable) returns(uint errorCode) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:305:5: Warning: Integer Overflow.\n    function emitTransfer(address _from, address _to, bytes32 _symbol, uint _value, string _reference) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:2007:16: Warning: Integer Overflow.\n        return assets[_symbol].wallets", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:841:16: Warning: Integer Overflow.\n        return assets[_symbol].description", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:979:16: Warning: Integer Overflow.\n        return assets[_symbol].wallets", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:2041:5: Warning: Integer Overflow.\n    function proxyTransferFromWithReference(address _from, address _to, uint _value, bytes32 _symbol, string _reference, address _sender) returns(uint errorCode) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _reference = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:2007:16: Warning: Integer Overflow.\n        return assets[_symbol].wallets[_fromId].allowance", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:931:16: Warning: Integer Overflow.\n        return assets[_symbol].totalSupply", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:819:16: Warning: Integer Overflow.\n        return assets[_symbol].name"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:819:9: Warning: Integer Underflow.\n        return assets[_symbol].name\nInteger Underflow occurs if:\n    return assets[_symbol].name = 1", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:841:9: Warning: Integer Underflow.\n        return assets[_symbol].description\nInteger Underflow occurs if:\n    return assets[_symbol].description = 1", 
+   "./restContracts/0x939c0304e9033761e4b510a93386ba3bebc983ba.txt:579:5: Warning: Integer Underflow.\n    mapping(bytes32 => Asset) public assets"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.6"
+}

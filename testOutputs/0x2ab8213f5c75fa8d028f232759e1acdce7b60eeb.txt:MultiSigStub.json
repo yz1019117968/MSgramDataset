@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2ab8213f5c75fa8d028f232759e1acdce7b60eeb.txt:119:5: Warning: Integer Overflow.\n    function submitTransaction(address destination, uint value, bytes data)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2ab8213f5c75fa8d028f232759e1acdce7b60eeb.txt:23:5: Warning: Integer Overflow.\n    mapping (uint => Transaction) public transactions", 
+   "./uniqueContractSourceCode/0x2ab8213f5c75fa8d028f232759e1acdce7b60eeb.txt:21:5: Warning: Integer Overflow.\n    address[] public tokens", 
+   "./uniqueContractSourceCode/0x2ab8213f5c75fa8d028f232759e1acdce7b60eeb.txt:163:5: Warning: Integer Overflow.\n    function setMyTokenList(address[] _tokenList)  \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _tokenList = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x2ab8213f5c75fa8d028f232759e1acdce7b60eeb.txt:19:5: Warning: Integer Overflow.\n    address[] public owners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2ab8213f5c75fa8d028f232759e1acdce7b60eeb.txt:453:43: Warning: Integer Underflow.\n            failed := iszero(delegatecall(sub(gas, 10000)", 
+   "./uniqueContractSourceCode/0x2ab8213f5c75fa8d028f232759e1acdce7b60eeb.txt:23:5: Warning: Integer Underflow.\n    mapping (uint => Transaction) public transactions"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.5"
+}

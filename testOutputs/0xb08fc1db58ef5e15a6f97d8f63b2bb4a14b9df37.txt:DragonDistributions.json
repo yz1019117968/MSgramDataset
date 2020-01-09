@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb08fc1db58ef5e15a6f97d8f63b2bb4a14b9df37.txt:119:13: Warning: Integer Underflow.\n            balanceOf[ msg.sender ] -= 15000000000000\nInteger Underflow occurs if:\n    balanceOf[ msg.sender ] = 14999999999999\n    distributionOne[ msg.sender ] = 0\n    advisors[msg.sender] = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.4"
+}

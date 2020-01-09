@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x03cd7d4706dfdb2c69efc12cabf2a9a1eb3fc981.txt:179:2: Warning: Integer Underflow.\n\tstring \tpublic name = \"SNB - Network for the Blind\"", 
+   "./uniqueContractSourceCode/0x03cd7d4706dfdb2c69efc12cabf2a9a1eb3fc981.txt:181:2: Warning: Integer Underflow.\n\tstring \tpublic symbol = \"SNB\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.4"
+}

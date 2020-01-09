@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:395:9: Warning: Callstack Depth Attack Vulnerability.\n        receiver.call.value(0)(bytes4(sha3(_custom_fallback)), msg.sender, _value, _data)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:415:3: Warning: Integer Overflow.\n  function transfer(address _to, uint _value, bytes _data) isUnlocked isUnfreezed(_to) returns (bool success) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:347:9: Warning: Integer Overflow.\n        Transfer(msg.sender, 0x0, _value , empty)\nInteger Overflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687372635385219930685167182219040447236986109952\n    totalSupply = 57896044617391959087952948886438931154837543495040987836867453873165904642050\n    _value = 4\n    rootAddress = 0", 
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:381:3: Warning: Integer Overflow.\n  function transfer(address _to, uint _value, bytes _data, string _custom_fallback) isUnlocked isUnfreezed(_to) returns (bool success) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:223:8: Warning: Integer Underflow.\n\t      return name\nInteger Underflow occurs if:\n    return name = 1", 
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:91:5: Warning: Integer Underflow.\n    string public version = 'v0.2'", 
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:347:9: Warning: Integer Underflow.\n        Transfer(msg.sender, 0x0, _value , empty)\nInteger Underflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687372635385219930685167182219040447236986109952\n    totalSupply = 48849787646992769944319009300540211125596945552821328038273264446278071222272\n    _value = 1\n    rootAddress = 0", 
+   "./uniqueContractSourceCode/0x22f0af8d78851b72ee799e05f54a77001586b18a.txt:229:8: Warning: Integer Underflow.\n\t      return symbol\nInteger Underflow occurs if:\n    return symbol = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.3"
+}

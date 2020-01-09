@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:999:9: Warning: Timestamp Dependency.\n    if (now >= startsAt && now < startsAt + ICO_DURATION", 
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:999:5: Warning: Timestamp Dependency.\n    if (now >= startsAt && now < startsAt + ICO_DURATION && !isCrowdsaleFull())\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:999:9: Warning: Timestamp Dependency.\n    if (now >= startsAt && now < startsAt + ICO_DURATION && !isCrowdsaleFull()"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:891:68: Warning: Integer Overflow.\n       divisor = safeAdd(divisor, safeMul(investments[i].weiValue, investments[i].weight\nInteger Overflow occurs if:\n    owner = 0\n    investments.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiRaised = 1000000000000000000\n    startsAt = 1\n    preIcoTokensDistributed = 100549172315720534603488770212215593398909903132361309645192566711533273350144\n    multisigWallet = 1461501637330902918203684832716283019655932542975\n    token = 1461501637330902918203684832716283019655932542975\n    finalized = 0", 
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:891:43: Warning: Integer Overflow.\n       divisor = safeAdd(divisor, safeMul(investments[i].weiValue\nInteger Overflow occurs if:\n    owner = 0\n    investments.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiRaised = 1000000000000000000\n    startsAt = 1\n    preIcoTokensDistributed = 100549172315720534603488770212215593398909903132361309645192566711533273350144\n    multisigWallet = 1461501637330902918203684832716283019655932542975\n    token = 1461501637330902918203684832716283019655932542975\n    finalized = 0", 
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:671:3: Warning: Integer Overflow.\n  Investment[] public investments", 
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:891:43: Warning: Integer Overflow.\n       divisor = safeAdd(divisor, safeMul(investments[i]\nInteger Overflow occurs if:\n    investments.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    weiRaised = 1000000000000000000\n    startsAt = 1\n    preIcoTokensDistributed = 100549172315720534603488770212215593398909903132361309645192566711533273350144\n    multisigWallet = 1461501637330902918203684832716283019655932542975\n    token = 1461501637330902918203684832716283019655932542975\n    finalized = 0\n    investments[i].weiValue = 0", 
+   "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:669:3: Warning: Integer Overflow.\n  Milestone[] public milestones"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:527:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0xb765049d934d69d91a495f21f32e3845af028db0.txt:951:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(weiValue)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.7"
+}

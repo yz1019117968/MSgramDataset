@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x69b5357d893fce82248e83ccd9b0871f5d5d9461.txt:125:3: Warning: Integer Underflow.\n  string public symbol = \"HWACCH\"", 
+   "./uniqueContractSourceCode/0x69b5357d893fce82248e83ccd9b0871f5d5d9461.txt:123:3: Warning: Integer Underflow.\n  string public name = \"HorseWithACheapCardboardHorn\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.4"
+}

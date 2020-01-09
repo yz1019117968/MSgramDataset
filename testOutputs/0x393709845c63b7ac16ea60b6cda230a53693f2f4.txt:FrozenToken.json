@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x393709845c63b7ac16ea60b6cda230a53693f2f4.txt:47:19: Warning: Integer Overflow.\n      uint256 c = a + b\nInteger Overflow occurs if:\n    frozenTokens[_addr] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[_addr] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    owner = 0", 
+   "./uniqueContractSourceCode/0x393709845c63b7ac16ea60b6cda230a53693f2f4.txt:359:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.2"
+}

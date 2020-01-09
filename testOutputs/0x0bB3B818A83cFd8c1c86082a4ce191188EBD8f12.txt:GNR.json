@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1095:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    balances[_owner].length = 12259964326927110866866776217202473468949912977468817408\n    balances[_owner][0].fromBlock = 0\n    grants[_holder].length = 0", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:967:16: Warning: Integer Overflow.\n        assert(curTotalSupply+_amount\nInteger Overflow occurs if:\n    controller = 0", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1511:13: Warning: Integer Overflow.\n    value = grant.value\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1515:13: Warning: Integer Overflow.\n    cliff = grant.cliff\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1655:20: Warning: Integer Overflow.\n      date = max64(grants[holder][i]\nInteger Overflow occurs if:\n    grants[_holder].length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    grants[holder][i].vesting = 0", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1317:3: Warning: Integer Overflow.\n  mapping (address => TokenGrant[]) public grants", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1505:32: Warning: Integer Overflow.\n    TokenGrant storage grant = grants[_holder][_grantId]\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1513:13: Warning: Integer Overflow.\n    start = grant.start\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1517:15: Warning: Integer Overflow.\n    vesting = grant.vesting\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:897:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1137:51: Warning: Integer Overflow.\n               Checkpoint storage oldCheckPoint = checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    controller = 0", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1077:23: Warning: Integer Overflow.\n        if (_block >= checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687194229423631685700034896472859260344938266624\n    balances[_owner][0].fromBlock = 0\n    grants[_holder].length = 0", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1655:20: Warning: Integer Overflow.\n      date = max64(grants[holder][i].vesting\nInteger Overflow occurs if:\n    grants[_holder].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1107:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    balances[_owner].length = 2\n    balances[_owner][0].fromBlock = 21309186309904059371387855823557361663\n    grants[_holder].length = 0", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:699:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1127:13: Warning: Integer Overflow.\n        || (checkpoints[checkpoints.length -1]\nInteger Overflow occurs if:\n    controller = 0", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:1079:20: Warning: Integer Overflow.\n            return checkpoints[checkpoints.length-1]\nInteger Overflow occurs if:\n    balances[_owner].length = 115792089237316195423570985008687907853269982069492134772043769742664965029881\n    balances[_owner][0].fromBlock = 0\n    grants[_holder].length = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:251:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:257:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.1'", 
+   "./uniqueContractSourceCode/0x0bB3B818A83cFd8c1c86082a4ce191188EBD8f12.txt:255:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.4"
+}

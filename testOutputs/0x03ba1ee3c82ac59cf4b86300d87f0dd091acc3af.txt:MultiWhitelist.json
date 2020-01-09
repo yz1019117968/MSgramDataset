@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x03ba1ee3c82ac59cf4b86300d87f0dd091acc3af.txt:37:5: Warning: Integer Overflow.\n    function multisetUserCategory(address[] users, uint category, whitelist listContract) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    users = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.5"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0b6ddd1c0b7ab2dffccbbf95002713774677cbec.txt:323:9: Warning: Integer Overflow.\n        totalSupply += _value\nInteger Overflow occurs if:\n    totalSupply = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ico = 0", 
+   "./uniqueContractSourceCode/0x0b6ddd1c0b7ab2dffccbbf95002713774677cbec.txt:321:9: Warning: Integer Overflow.\n        balances[_recipient] += _value\nInteger Overflow occurs if:\n    balances[_recipient] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ico = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0b6ddd1c0b7ab2dffccbbf95002713774677cbec.txt:261:5: Warning: Integer Underflow.\n    string public standard = \"Token 0.2\"", 
+   "./uniqueContractSourceCode/0x0b6ddd1c0b7ab2dffccbbf95002713774677cbec.txt:269:5: Warning: Integer Underflow.\n    string public symbol = \"FCC\"", 
+   "./uniqueContractSourceCode/0x0b6ddd1c0b7ab2dffccbbf95002713774677cbec.txt:265:5: Warning: Integer Underflow.\n    string public name = \"First Capital Coin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.2"
+}

@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:211:37: Warning: Integer Overflow.\n        WeaponModel memory weapon = weaponModels[id]\nInteger Overflow occurs if:\n    id = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    weaponModels[id] = 7237005577332262213973186563042994240829374041602535252466099000494570602497", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:199:38: Warning: Integer Overflow.\n        WeaponEntity memory weapon = weaponEntities[id]\nInteger Overflow occurs if:\n    id = 7237005577332262213973186563042994240829374041602535252466099000494570602496\n    weaponEntities[id] = 7237005577332262213973186563042994240829374041602535252466099000494570602497", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:115:5: Warning: Integer Overflow.\n    WeaponModel[] public weaponModels", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:117:5: Warning: Integer Overflow.\n    WeaponEntity[] public weaponEntities"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:223:29: Warning: Integer Underflow.\n        uint weaponsCount = nextWeaponID - 1\nInteger Underflow occurs if:\n    nextWeaponID = 0", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:221:5: Warning: Integer Underflow.\n    function getWeaponIds() external view returns (uint[]) {\r\n    ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    nextWeaponID = 374144419156711147060143317175368453031918731001856"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.4"
+}

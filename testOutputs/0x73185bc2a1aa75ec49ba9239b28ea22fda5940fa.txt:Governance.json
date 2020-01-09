@@ -1,0 +1,37 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:15:16: Warning: Callstack Depth Attack Vulnerability.\n        return target.call.value(value)(calldata)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:721:13: Warning: Integer Overflow.\n            versions[id]\nInteger Overflow occurs if:\n    versions[id] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:229:16: Warning: Integer Overflow.\n        return actions[id].calldata", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:415:13: Warning: Integer Overflow.\n            actions[id].triggered", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:255:16: Warning: Integer Overflow.\n        return actions[id].triggered\nInteger Overflow occurs if:\n    actions[id].deadline = 0\n    isMember[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:565:5: Warning: Integer Overflow.\n    Version[] public versions", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:723:13: Warning: Integer Overflow.\n            versions[id]\nInteger Overflow occurs if:\n    versions[id] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:137:5: Warning: Integer Overflow.\n    address[]  public  members", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:243:16: Warning: Integer Overflow.\n        return actions[id].confirmations", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:561:5: Warning: Integer Overflow.\n    address[] public authorities", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:419:13: Warning: Integer Overflow.\n            actions[id].value", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:249:16: Warning: Integer Overflow.\n        return actions[id].deadline\nInteger Overflow occurs if:\n    isMember[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:147:5: Warning: Integer Overflow.\n    mapping (uint => Action)                     public  actions", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:235:16: Warning: Integer Overflow.\n        return actions[id].value", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:413:13: Warning: Integer Overflow.\n            actions[id].deadline", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:281:5: Warning: Integer Overflow.\n    function propose(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:725:13: Warning: Integer Overflow.\n            versions[id]\nInteger Overflow occurs if:\n    versions[id] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:725:13: Warning: Integer Overflow.\n            versions[id].timestamp\nInteger Overflow occurs if:\n    versions[id] = 1", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:411:13: Warning: Integer Overflow.\n            actions[id].confirmations"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:147:5: Warning: Integer Underflow.\n    mapping (uint => Action)                     public  actions", 
+   "./uniqueContractSourceCode/0x73185bc2a1aa75ec49ba9239b28ea22fda5940fa.txt:229:9: Warning: Integer Underflow.\n        return actions[id].calldata\nInteger Underflow occurs if:\n    return actions[id].calldata = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.5"
+}

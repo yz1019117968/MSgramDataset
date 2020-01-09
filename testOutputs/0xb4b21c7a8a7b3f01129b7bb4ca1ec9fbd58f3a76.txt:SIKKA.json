@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb4b21c7a8a7b3f01129b7bb4ca1ec9fbd58f3a76.txt:155:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb4b21c7a8a7b3f01129b7bb4ca1ec9fbd58f3a76.txt:17:5: Warning: Integer Underflow.\n    string public standard = 'SIKKA 1.0'", 
+   "./restContracts/0xb4b21c7a8a7b3f01129b7bb4ca1ec9fbd58f3a76.txt:25:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xb4b21c7a8a7b3f01129b7bb4ca1ec9fbd58f3a76.txt:21:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.4"
+}

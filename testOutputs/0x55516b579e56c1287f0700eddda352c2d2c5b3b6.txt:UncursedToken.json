@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x55516b579e56c1287f0700eddda352c2d2c5b3b6.txt:179:5: Warning: Integer Overflow.\n    function approveAndCall(address spender, uint tokencount, bytes data) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x55516b579e56c1287f0700eddda352c2d2c5b3b6.txt:251:17: Warning: Integer Overflow.\n                i += 10000\nInteger Overflow occurs if:\n    birthBlock = 115792089237316195423570985008687907853269984665640564039457584007913129635056"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x55516b579e56c1287f0700eddda352c2d2c5b3b6.txt:57:5: Warning: Integer Underflow.\n    string public name = \"Cornbread\"", 
+   "./uniqueContractSourceCode/0x55516b579e56c1287f0700eddda352c2d2c5b3b6.txt:55:5: Warning: Integer Underflow.\n    string public symbol = \"CB\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.9"
+}

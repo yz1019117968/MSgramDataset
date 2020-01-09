@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x44a190e05ad81844daac33eda20333819f3df76e.txt:1279:28: Warning: Integer Overflow.\n                    return icoBonuses[i].percent\nInteger Overflow occurs if:\n    currentTime = 115792089237316195423570985008687907853269984665640561621605944778654780227582\n    icoStartTime = 0\n    icoBonuses[i].duration = 115792089237316195423570985008687907853269984665640561621605944778654780227582\n    icoBonuses.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    preIcoStartTime = 115792089237316195423570985008687907853269984665640561621605944778654780227583", 
+   "./uniqueContractSourceCode/0x44a190e05ad81844daac33eda20333819f3df76e.txt:821:5: Warning: Integer Overflow.\n    Bonus[] public preIcoBonuses", 
+   "./uniqueContractSourceCode/0x44a190e05ad81844daac33eda20333819f3df76e.txt:1261:44: Warning: Integer Overflow.\n                if (preIcoDiffInSeconds <= preIcoBonuses[i]\nInteger Overflow occurs if:\n    preIcoBonuses.length = 1532495540865888858358347027150309183618739122183602176\n    preIcoStartTime = 39495624578078554427667823714343633122078471767205600449615888388\n    currentTime = 1545404479604745252906327471249475862476517149752661756105396046525492101120\n    preIcoBonuses[i].duration = 1545404479565249628328248916821808038762173516630583284338190446075876212731\n    preIcoEndTime = 1545404479604745252906327471249475862476517149752661756105396046525492101120", 
+   "./uniqueContractSourceCode/0x44a190e05ad81844daac33eda20333819f3df76e.txt:1277:41: Warning: Integer Overflow.\n                if (icoDiffInSeconds <= icoBonuses[i]\nInteger Overflow occurs if:\n    currentTime = 105312291668557186697918027683670432318895095400549111254310977536\n    icoBonuses.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    icoStartTime = 0\n    icoBonuses[i].duration = 105312291668557186697918027683670432318895095400549111254310977535\n    preIcoStartTime = 105312291668557186697918027683670432318895095400549111254310977537", 
+   "./uniqueContractSourceCode/0x44a190e05ad81844daac33eda20333819f3df76e.txt:1263:28: Warning: Integer Overflow.\n                    return preIcoBonuses[i].percent\nInteger Overflow occurs if:\n    preIcoStartTime = 16384\n    currentTime = 16384\n    preIcoBonuses[i].duration = 0\n    preIcoBonuses.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    preIcoEndTime = 16384", 
+   "./uniqueContractSourceCode/0x44a190e05ad81844daac33eda20333819f3df76e.txt:823:5: Warning: Integer Overflow.\n    Bonus[] public icoBonuses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.7"
+}

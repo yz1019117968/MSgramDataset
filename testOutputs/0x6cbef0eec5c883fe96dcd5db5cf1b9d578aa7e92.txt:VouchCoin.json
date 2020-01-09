@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6cbef0eec5c883fe96dcd5db5cf1b9d578aa7e92.txt:71:7: Warning: Integer Overflow.\n      balanceOf[_to] += _value\nInteger Overflow occurs if:\n    _value = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balanceOf[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balanceOf[_from] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    _from = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x6cbef0eec5c883fe96dcd5db5cf1b9d578aa7e92.txt:49:7: Warning: Integer Overflow.\n      balanceOf[_to] += _value\nInteger Overflow occurs if:\n    balanceOf[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balanceOf[owner] = 67419346655525027280071070946112097648534143608088887667851415925010121249705"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6cbef0eec5c883fe96dcd5db5cf1b9d578aa7e92.txt:19:3: Warning: Integer Underflow.\n  string public standard = \"VouchCoin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.1"
+}

@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x29b3e5028d00c5dc222b016d702bd85329d28900.txt:163:9: Warning: Integer Overflow.\n        balanceOf[0x0] += _value\nInteger Overflow occurs if:\n    balanceOf[0x0] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balanceOf[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x29b3e5028d00c5dc222b016d702bd85329d28900.txt:149:5: Warning: Integer Overflow.\n    function setName(string _name) isOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x29b3e5028d00c5dc222b016d702bd85329d28900.txt:11:5: Warning: Integer Underflow.\n    string public symbol = \"TRT\"", 
+   "./uniqueContractSourceCode/0x29b3e5028d00c5dc222b016d702bd85329d28900.txt:9:5: Warning: Integer Underflow.\n    string public name = \"TripleRealityToken\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.8"
+}

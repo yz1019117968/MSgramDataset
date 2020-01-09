@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:245:48: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock, v.expiresBlock\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:243:23: Warning: Integer Overflow.\n    Visit storage v = bookings[_who][_index]\nInteger Overflow occurs if:\n    bookings[_who][_index] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:245:64: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock, v.expiresBlock, v.state\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:455:5: Warning: Integer Overflow.\n    v.state\nInteger Overflow occurs if:\n    repossessionBlocks = 0\n    bookings[_who].length = 1", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:245:29: Warning: Integer Overflow.\n    return (v.unicornCount, v.t\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:457:5: Warning: Integer Overflow.\n    bookings[_who][_index]\nInteger Overflow occurs if:\n    repossessionBlocks = 0\n    bookings[_who].length = 28948022309329048855892746252171976963317496166410141009864396001978282409985", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:245:34: Warning: Integer Overflow.\n    return (v.unicornCount, v.t, v.startBlock\nInteger Overflow occurs if:\n    bookings[_who][_index] = 1", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:313:5: Warning: Integer Overflow.\n    bookings[msg.sender].push(Visit(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    visitingUnicorns = 0\n    visitLength[uint8(_type)] = 0\n    visitCost[uint8(_type)] = 0", 
+   "./uniqueContractSourceCode/0x76273a63d7c102a61104149f3cc567ec2b4e4257.txt:159:3: Warning: Integer Overflow.\n  mapping (bytes32 => VisitMeta) public bookingMetadataForKey"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.9"
+}

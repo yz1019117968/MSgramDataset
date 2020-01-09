@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:3405:19: Warning: Integer Overflow.\n        isReady = cooldownStartTime + challengeCooldownTime\nInteger Overflow occurs if:\n    challengeCooldownTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _id = 10894474682274239493831243662817379401261526446360622092269559273883068006399"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:479:12: Warning: Transaction-Ordering Dependency.\n    assert(payee.send(payment)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x141766882733cafa9033e8707548fdcac908db22.txt:317:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.2"
+}

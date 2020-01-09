@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x43021fef65be5e09d8516ac2f14450993784479a.txt:15:3: Warning: Integer Overflow.\n  function publishLawyersInAttendance(string cert) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cert = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x43021fef65be5e09d8516ac2f14450993784479a.txt:35:5: Warning: Integer Underflow.\n    return certificate\nInteger Underflow occurs if:\n    return certificate = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.1"
+}

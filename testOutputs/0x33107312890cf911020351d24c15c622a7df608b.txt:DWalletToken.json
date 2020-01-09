@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x33107312890cf911020351d24c15c622a7df608b.txt:67:5: Warning: Integer Underflow.\n    string public standard = 'ERC20'", 
+   "./uniqueContractSourceCode/0x33107312890cf911020351d24c15c622a7df608b.txt:69:5: Warning: Integer Underflow.\n    string public name = 'D-WALLET TOKEN'", 
+   "./uniqueContractSourceCode/0x33107312890cf911020351d24c15c622a7df608b.txt:71:5: Warning: Integer Underflow.\n    string public symbol = 'DWT'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.1"
+}

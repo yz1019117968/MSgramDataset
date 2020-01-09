@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x261a3dc3b1b4c93a0fefcee82ec6dd20e8bd345f.txt:89:5: Warning: Integer Overflow.\n    function getVatomOwner(string vatomID) public constant returns(string) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    vatomID = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x261a3dc3b1b4c93a0fefcee82ec6dd20e8bd345f.txt:81:5: Warning: Integer Overflow.\n    function setVAtomOwner(string vatomID, string ownerID) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    vatomID = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "25.3"
+}

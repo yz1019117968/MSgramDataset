@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4876bca6feab4243e4370bddc92f5a8364de9df9.txt:45:5: Warning: Integer Overflow.\n    function GetGift(bytes pass)\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4876bca6feab4243e4370bddc92f5a8364de9df9.txt:17:5: Warning: Integer Overflow.\n    function GetHash(bytes pass) constant returns (bytes32) {return sha3(pass);}"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.2"
+}

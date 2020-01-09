@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6dd5b09acda78b05d0356483fe05eb0768352945.txt:723:5: Warning: Integer Overflow.\n    function setName(string _name) onlyAccountAddressForSponsee {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6dd5b09acda78b05d0356483fe05eb0768352945.txt:747:5: Warning: Integer Overflow.\n    function setSymbol(string _symbol) onlyAccountAddressForSponsee {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6dd5b09acda78b05d0356483fe05eb0768352945.txt:481:5: Warning: Integer Underflow.\n    string public symbol = \"SLC\"", 
+   "./uniqueContractSourceCode/0x6dd5b09acda78b05d0356483fe05eb0768352945.txt:479:5: Warning: Integer Underflow.\n    string public name = \"SOLA COIN\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.2"
+}

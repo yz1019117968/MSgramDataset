@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:87:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    lastWagerTimeoutTimestamp = 0\n    prizePool = 1\n    wagerPool = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    gameStarted = 65280", 
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:539:5: Warning: Integer Overflow.\n    uint256[] public activeTimesFrom", 
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:961:1: Warning: Integer Overflow.\ncontract ChronosCore is ChronosFinance {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cfoAddress = 0", 
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:541:5: Warning: Integer Overflow.\n    uint256[] public activeTimesTo"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:1385:9: Warning: Integer Underflow.\n        ActiveTimes(_from, _to)\nInteger Underflow occurs if:\n    cfoAddress = 0", 
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:1105:44: Warning: Integer Underflow.\n        if (wagerIndex % nthWagerPrizeN == nthWagerPrizeN - 1\nInteger Underflow occurs if:\n    lastWagerTimeoutTimestamp = 0\n    nthWagerPrizeN = 0\n    gameStarted = 65280\n    price = 0\n    gameIndex = 0", 
+   "./restContracts/0x9cd02516d58EBAEf8DcE063FEe284a3c47a737E8.txt:649:31: Warning: Integer Underflow.\n        uint256 timeOfWeek = (block.timestamp - 345600\nInteger Underflow occurs if:\n    gameStarted = 0\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.6"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:667:3: Warning: Integer Overflow.\n  function setTokenName(string name) onlyOwner public\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:657:3: Warning: Integer Overflow.\n  function setTokenSymbolName(string symbol) onlyOwner public\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:643:3: Warning: Integer Overflow.\n  function distributeToken(address[] addresses, uint256[] amounts) onlyOwner public {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "38.3"
+}

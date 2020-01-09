@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2433:20: Warning: Integer Overflow.\n            reward[addresses[i]\nInteger Overflow occurs if:\n    addresses.length = 115679011025170378826477653968640361068257025696240524426137801211030401974271", 
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2407:16: Warning: Integer Overflow.\n        return addresses[i]\nInteger Overflow occurs if:\n    addresses[i] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2255:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2563:5: Warning: Integer Overflow.\n    function stringToUint(string s) returns(uint) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2501:13: Warning: Integer Overflow.\n            balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:243:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2085:5: Warning: Integer Overflow.\n    address[] public addresses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2077:1: Warning: Integer Underflow.\ncontract METAXCrowdSale is ERC20, usingOraclize\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    ico_end_date = 0\n    OAR = 0\n    owner = 0\n    crowd_sale_status = 255", 
+   "./uniqueContractSourceCode/0x44033f223f8d1c1bc40a0bcca30c37f9737425a3.txt:2329:27: Warning: Integer Underflow.\n            totalSupply = totalSupply - _amount\nInteger Underflow occurs if:\n    balances[address(this)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.2"
+}

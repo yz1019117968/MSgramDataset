@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9cc5404e0ad06fe0ff4d2c7cc5f28a32ae95e483.txt:41:5: Warning: Transaction-Ordering Dependency.\n    oldOwner.transfer(price)"
+   ], 
+   [
+    "./restContracts/0x9cc5404e0ad06fe0ff4d2c7cc5f28a32ae95e483.txt:49:5: Warning: Transaction-Ordering Dependency.\n    ceoAddress.transfer(price)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.6"
+}

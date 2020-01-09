@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8627ffCaDADe9C0c4dab4A82C73Ceae10C2B401D.txt:305:3: Warning: Integer Underflow.\n  string public name = \"FiberToken\"", 
+   "./restContracts/0x8627ffCaDADe9C0c4dab4A82C73Ceae10C2B401D.txt:307:3: Warning: Integer Underflow.\n  string public symbol = \"FBTK\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

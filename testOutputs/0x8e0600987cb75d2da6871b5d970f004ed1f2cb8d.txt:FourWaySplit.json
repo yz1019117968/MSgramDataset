@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8e0600987cb75d2da6871b5d970f004ed1f2cb8d.txt:75:5: Warning: Integer Overflow.\n    beneficiaryBalance[beneficiaryList[0]] += forth\nInteger Overflow occurs if:\n    beneficiaryBalance[beneficiaryList[0]] = 97528167469804069997983436505014857813850140507376639438483740974090670859953", 
+   "./restContracts/0x8e0600987cb75d2da6871b5d970f004ed1f2cb8d.txt:81:5: Warning: Integer Overflow.\n    beneficiaryBalance[beneficiaryList[3]] += forth\nInteger Overflow occurs if:\n    beneficiaryBalance[beneficiaryList[3]] = 97528167469804069997983436505014857813850140507376639438483740974090670859953", 
+   "./restContracts/0x8e0600987cb75d2da6871b5d970f004ed1f2cb8d.txt:79:5: Warning: Integer Overflow.\n    beneficiaryBalance[beneficiaryList[2]] += forth\nInteger Overflow occurs if:\n    beneficiaryBalance[beneficiaryList[2]] = 97528167469804069997983436505014857813850140507376639438483740974090670859953", 
+   "./restContracts/0x8e0600987cb75d2da6871b5d970f004ed1f2cb8d.txt:77:5: Warning: Integer Overflow.\n    beneficiaryBalance[beneficiaryList[1]] += forth\nInteger Overflow occurs if:\n    beneficiaryBalance[beneficiaryList[1]] = 97528167469804069997983436505014857813850140507376639438483740974090670859953"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.6"
+}

@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:1027:9: Warning: Timestamp Dependency.\n        require(saleStarted())", 
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:763:9: Warning: Timestamp Dependency.\n        if (now < presaleStartTime) return 0", 
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:1029:9: Warning: Timestamp Dependency.\n        require(!saleEnded())", 
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:1133:9: Warning: Timestamp Dependency.\n        require(saleEnded())", 
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:773:9: Warning: Timestamp Dependency.\n        if (now < openSaleStartTime) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:767:9: Warning: Timestamp Dependency.\n        if (now >= openSaleEndTime) return 0", 
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:851:9: Warning: Timestamp Dependency.\n        if (now < openSaleStartTime) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:75:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    remainingPublicSaleCap = 77203057082789580684091579375032800912795931252926397408815066573833164536520\n    participated[contributor] = 81481804523236195190857270509048739956546502908774595344192081858424519995526\n    openSaleEndTime = 58518073084802886835961356132988786798976228318981957269765350045187485712385\n    openSaleStartTime = 28891155514365037976140936179226186940630360420066594472342421121438868354808\n    presaleStartTime = 28891155514365037976140936179226186940630360420066594472342421121438868354808\n    haltSale = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:1045:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(msg.value.sub(weiPayment))"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x11fc3e9730c8413f66007d66fbabc5eee1955dcc.txt:1095:9: Warning: Transaction-Ordering Dependency.\n        gripWallet.transfer(value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.1"
+}

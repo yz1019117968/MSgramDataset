@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:677:5: Warning: Integer Overflow.\n    function getProposalHash(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _transactionBytecode = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:15:5: Warning: Integer Overflow.\n    function tokenFallback(address _from, uint256 _value, bytes _data){\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:741:5: Warning: Integer Overflow.\n    function createProposal(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _description = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:795:5: Warning: Integer Overflow.\n    function vote(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _justificationText = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:893:13: Warning: Integer Overflow.\n            p.state\nInteger Overflow occurs if:\n    congressMemberThreshold = 0\n    _proposalID = 0\n    marginForMajority = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    proposals[_proposalID] = 1\n    minimumQuorum = 0", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:883:13: Warning: Integer Overflow.\n            p.state\nInteger Overflow occurs if:\n    congressMemberThreshold = 0\n    _proposalID = 0\n    minimumQuorum = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    proposals[_proposalID] = 1", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:901:9: Warning: Integer Overflow.\n        p.state\nInteger Overflow occurs if:\n    congressMemberThreshold = 0\n    _proposalID = 0\n    proposals[_proposalID] = 1\n    marginForMajority = 0\n    minimumQuorum = 0", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:913:5: Warning: Integer Overflow.\n    function executeProposal(uint256 _proposalID, bytes _transactionBytecode) onlyCongressMembers {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _transactionBytecode = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:529:5: Warning: Integer Overflow.\n    Proposal[] public proposals", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:881:14: Warning: Integer Overflow.\n        if ((tokensFor + tokensAgainst\nInteger Overflow occurs if:\n    congressMemberThreshold = 0\n    _proposalID = 0\n    tokensLocks[_voter] = 2147483648\n    tokensLocks[_voter] = 2147483648\n    proposals[_proposalID] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:529:5: Warning: Integer Underflow.\n    Proposal[] public proposals", 
+   "./restContracts/0x9A0ace223eDe819b9A48C605fdB0254b3335f4B2.txt:891:14: Warning: Integer Underflow.\n        if ((tokensFor - tokensAgainst\nInteger Underflow occurs if:\n    congressMemberThreshold = 0\n    _proposalID = 0\n    minimumQuorum = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    tokensLocks[_voter] = 2147483648\n    proposals[_proposalID] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.6"
+}

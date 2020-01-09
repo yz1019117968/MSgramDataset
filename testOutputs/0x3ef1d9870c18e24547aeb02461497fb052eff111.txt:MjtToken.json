@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:915:16: Warning: Integer Overflow.\n        return reservedTokensList[addr].inPercentageDecimals", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:1469:1: Warning: Integer Overflow.\ncontract MjtToken is CrowdsaleTokenExt {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:907:16: Warning: Integer Overflow.\n        return reservedTokensList[addr].inPercentageUnit", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:231:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    released = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:887:9: Warning: Integer Overflow.\n        reservedTokensDestinations.push(addr)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:1449:5: Warning: Integer Overflow.\n    function setTokenInformation(string _name, string _symbol) onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:921:5: Warning: Integer Overflow.\n    function setReservedTokensListMultiple(address[] addrs, uint[] inTokens, uint[] inPercentageUnit, uint[] inPercentageDecimals) onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:879:5: Warning: Integer Overflow.\n    address[] public reservedTokensDestinations", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:877:5: Warning: Integer Overflow.\n    mapping (address => ReservedTokensData) public reservedTokensList"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:1295:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x3ef1d9870c18e24547aeb02461497fb052eff111.txt:1299:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.2"
+}

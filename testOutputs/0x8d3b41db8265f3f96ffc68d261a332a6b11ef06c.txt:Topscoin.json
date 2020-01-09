@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8d3b41db8265f3f96ffc68d261a332a6b11ef06c.txt:55:2: Warning: Integer Underflow.\n\tstring public symbol", 
+   "./restContracts/0x8d3b41db8265f3f96ffc68d261a332a6b11ef06c.txt:51:2: Warning: Integer Underflow.\n\tstring public standard = \"Topscoin v1.0\"", 
+   "./restContracts/0x8d3b41db8265f3f96ffc68d261a332a6b11ef06c.txt:53:2: Warning: Integer Underflow.\n\tstring public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.2"
+}

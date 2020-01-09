@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb0d15abb7ef3167cfad71b6e8302a5f9d7b51e77.txt:591:2: Warning: Integer Overflow.\n\tfunction multiMint(uint nonce, uint256[] bits) onlyOwner {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    bits = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.7"
+}

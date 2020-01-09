@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5cAa6488f965F2F520C5a70f15019952C6e3C1fC.txt:131:9: Warning: Integer Underflow.\n        return (shopSandwich[0].sandwichName, shopSandwich[1].sandwichName,\r\n        ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    return (shopSandwich[0].sandwichName, shopSandwich[1].sandwichName,\r\n\r\n                shopSandwich[2].sandwichName, shopSandwich[3].sandwichName,\r\n\r\n                shopSandwich[4].sandwichName ) = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "15.4"
+}

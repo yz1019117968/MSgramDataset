@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb91c462fde994f04dcd28da92e3ae23bd3484d51.txt:115:5: Warning: Integer Underflow.\n    string  public name = \"Top.One Coin\"", 
+   "./restContracts/0xb91c462fde994f04dcd28da92e3ae23bd3484d51.txt:103:21: Warning: Integer Underflow.\n        assert((z = x - y\nInteger Underflow occurs if:\n    _balances[msg.sender] = 340282366920938463463374607431768211454\n    wad = 340282366920938463463374607431768211455\n    owner = 0", 
+   "./restContracts/0xb91c462fde994f04dcd28da92e3ae23bd3484d51.txt:113:5: Warning: Integer Underflow.\n    string  public  symbol = \"TOP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.0"
+}

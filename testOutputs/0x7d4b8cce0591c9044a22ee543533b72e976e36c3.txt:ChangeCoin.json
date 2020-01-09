@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7d4b8cce0591c9044a22ee543533b72e976e36c3.txt:131:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tradingStarted = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7d4b8cce0591c9044a22ee543533b72e976e36c3.txt:435:3: Warning: Integer Underflow.\n  string public name = \"Change COIN\"", 
+   "./restContracts/0x7d4b8cce0591c9044a22ee543533b72e976e36c3.txt:437:3: Warning: Integer Underflow.\n  string public symbol = \"CAG\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.0"
+}

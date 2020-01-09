@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:359:13: Warning: Integer Overflow.\n            owners.push(owner)\nInteger Overflow occurs if:\n    ownerMap[owner] = 0\n    ownerMap[owner] = 255", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:383:33: Warning: Integer Overflow.\n                    owners[i] = owners[owners.length - 1]\nInteger Overflow occurs if:\n    owners.length = 115792089237316195423570967049755754880017127982826627318194429362534294224896\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:383:21: Warning: Integer Overflow.\n                    owners[i]\nInteger Overflow occurs if:\n    owners.length = 115792089237316195423570967049755754880017127982826627318194429362534294224896\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:311:5: Warning: Integer Overflow.\n    address[] public owners", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:381:21: Warning: Integer Overflow.\n                if (owners[i]\nInteger Overflow occurs if:\n    owners.length = 28948022309329048855892746252171976963317496166410141009864396001978282409985\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:415:1: Warning: Integer Overflow.\ncontract BsToken is StandardToken, MultiOwnable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owners.length = 2\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:431:5: Warning: Integer Underflow.\n    string public version = 'v0.1'", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:379:34: Warning: Integer Underflow.\n            for (uint i = 0; i < owners.length - 1\nInteger Underflow occurs if:\n    owners.length = 0\n    ownerMap[owner] = 255\n    ownerMap[owner] = 255", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:423:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xa553674d900fad85b432fc7bd0c15b52b2177321.txt:425:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.8"
+}

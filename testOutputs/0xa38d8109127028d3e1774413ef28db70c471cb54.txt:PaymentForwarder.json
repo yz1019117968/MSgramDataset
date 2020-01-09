@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa38d8109127028d3e1774413ef28db70c471cb54.txt:221:5: Warning: Integer Overflow.\n    totalTransferred += weiAmount\nInteger Overflow occurs if:\n    totalTransferred = 1\n    halted = 0", 
+   "./restContracts/0xa38d8109127028d3e1774413ef28db70c471cb54.txt:227:7: Warning: Integer Overflow.\n      customerCount++\nInteger Overflow occurs if:\n    customerCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    halted = 0\n    paymentsByCustomer[customerId] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.6"
+}

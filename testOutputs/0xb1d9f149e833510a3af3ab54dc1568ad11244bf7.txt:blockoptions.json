@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb1d9f149e833510a3af3ab54dc1568ad11244bf7.txt:579:20: Warning: Integer Overflow.\n           ico_end=ico_start + 31 days\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0xb1d9f149e833510a3af3ab54dc1568ad11244bf7.txt:295:73: Warning: Integer Overflow.\n        else if(msg.sender == owner && check < 130000000000000 && now < ico_start + 180 days\nInteger Overflow occurs if:\n    ico_start = 115792089237316195423570985008687907853269984665640564039457584007913122471936\n    balances[owner] = 129999999999999\n    _value = 0\n    pre_ico_end = 1\n    pre_ico_start = 1\n    owner = 0", 
+   "./restContracts/0xb1d9f149e833510a3af3ab54dc1568ad11244bf7.txt:303:73: Warning: Integer Overflow.\n        else if (msg.sender == owner && check < 97500000000000 && now < ico_start + 360 days\nInteger Overflow occurs if:\n    ico_start = 115792089237316195423570985008687907853269984665640564039457584007913121251328\n    balances[owner] = 4173332480\n    _value = 0\n    pre_ico_end = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    pre_ico_start = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb1d9f149e833510a3af3ab54dc1568ad11244bf7.txt:613:27: Warning: Integer Underflow.\n           _totalSupply = _totalSupply-burnedTokens\nInteger Underflow occurs if:\n    balances[owner] = 130000000000002\n    _totalSupply = 1\n    owner = 0", 
+   "./restContracts/0xb1d9f149e833510a3af3ab54dc1568ad11244bf7.txt:277:22: Warning: Integer Underflow.\n        uint check = balances[owner] - _value\nInteger Underflow occurs if:\n    balances[owner] = 0\n    _value = 1", 
+   "./restContracts/0xb1d9f149e833510a3af3ab54dc1568ad11244bf7.txt:65:7: Warning: Integer Underflow.\n      string public symbol = \"BOP\"", 
+   "./restContracts/0xb1d9f149e833510a3af3ab54dc1568ad11244bf7.txt:59:7: Warning: Integer Underflow.\n      string public name = \"blockoptions\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.0"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xacfa209fb73bf3dd5bbfb1101b9bc999c49062a5.txt:423:5: Warning: Integer Overflow.\n    function massChangeRegistrationStatusForSilverWhiteList(address[] _targets, bool _isRegistered) public onlyOwnerOrWhiteLister {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xacfa209fb73bf3dd5bbfb1101b9bc999c49062a5.txt:437:5: Warning: Integer Overflow.\n    function massChangeRegistrationStatusForGoldWhiteList(address[] _targets, bool _isRegistered) public onlyOwnerOrWhiteLister {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.1"
+}

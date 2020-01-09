@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x98cdcf8cd44c216fe370cf5c420d9630ae916fc4.txt:1497:13: Warning: Transaction-Ordering Dependency.\n            escapeHatchDestination.transfer(balance)"
+   ], 
+   [
+    "./restContracts/0x98cdcf8cd44c216fe370cf5c420d9630ae916fc4.txt:1497:13: Warning: Transaction-Ordering Dependency.\n            escapeHatchDestination.transfer(balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.0"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x648dac4dd671e11ac55a75e361b1a5a556c0398d.txt:25:5: Warning: Integer Overflow.\n    function hashTest(string input) pure returns (bytes32) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    input = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x648dac4dd671e11ac55a75e361b1a5a556c0398d.txt:15:5: Warning: Integer Overflow.\n    function OpenRedEnvelope (string input) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    input = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "42.6"
+}

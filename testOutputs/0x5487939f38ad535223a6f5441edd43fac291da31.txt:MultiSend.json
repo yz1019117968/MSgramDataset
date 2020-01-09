@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5487939f38ad535223a6f5441edd43fac291da31.txt:195:2: Warning: Integer Overflow.\n\tfunction Send(address[] _vaddr, uint256[] _vamounts) onlyOwner \r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vaddr = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.1"
+}

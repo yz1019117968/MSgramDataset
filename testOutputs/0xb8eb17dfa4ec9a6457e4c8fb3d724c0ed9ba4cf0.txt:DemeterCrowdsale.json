@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8eb17dfa4ec9a6457e4c8fb3d724c0ed9ba4cf0.txt:623:3: Warning: Integer Overflow.\n  function addWhiteListedInvestor(address _investor, string _referralCode) public\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xb8eb17dfa4ec9a6457e4c8fb3d724c0ed9ba4cf0.txt:661:3: Warning: Integer Overflow.\n  function loadWhiteList(address[] _investors, bytes32[] _referralCodes) public onlyOwner\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xb8eb17dfa4ec9a6457e4c8fb3d724c0ed9ba4cf0.txt:695:3: Warning: Integer Overflow.\n  function addReferredInvestor(string _referralCode, address _referredInvestor) public\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xb8eb17dfa4ec9a6457e4c8fb3d724c0ed9ba4cf0.txt:733:3: Warning: Integer Overflow.\n  function loadReferredInvestors(bytes32[] _referralCodes, address[] _investors) public onlyOwner\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb8eb17dfa4ec9a6457e4c8fb3d724c0ed9ba4cf0.txt:1099:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ], 
+   [
+    "./restContracts/0xb8eb17dfa4ec9a6457e4c8fb3d724c0ed9ba4cf0.txt:1107:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(_recipient)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "32.7"
+}

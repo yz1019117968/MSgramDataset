@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:979:9: Warning: Integer Overflow.\n        descriptionHashHistory.push(descriptionHash)\nInteger Overflow occurs if:\n    descriptionHashHistory.push(descriptionHash) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    artist = 0", 
+   "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:503:5: Warning: Integer Overflow.\n    address[] public contributors", 
+   "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:661:42: Warning: Integer Overflow.\n            address currentContributor = contributors[nextContributorIndexToBeGivenTokens++]\nInteger Overflow occurs if:\n    currentState = 1\n    nextContributorIndexToBeGivenTokens = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    icoEndTime = 0\n    contributors.length = 28948022309329048855892746252171976963317496166410141009864396001978282409985\n    contributorsNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:375:1: Warning: Integer Overflow.\ncontract TrivialToken is StandardToken, PullPayment {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contributors.push(msg.sender) = 99034085913958777105748447837208833308935399115084549486186285725102401529839\n    currentState = 1\n    icoEndTime = 1\n    contributions[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:637:13: Warning: Integer Overflow.\n            contributors.push(msg.sender)\nInteger Overflow occurs if:\n    currentState = 1\n    contributors.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    icoEndTime = 1\n    contributions[msg.sender] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:397:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:1017:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(trivial)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x55fc04a73f058832b4f3498dc83ceb6e53a9e314.txt:367:12: Warning: Transaction-Ordering Dependency.\n    assert(payee.send(payment)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.6"
+}

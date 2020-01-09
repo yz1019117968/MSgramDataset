@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0ac1eb22b98cdd76796401ff462a96da9dbf07d4.txt:539:1: Warning: Integer Overflow.\ncontract TokenLock is Owned {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owners.length = 2\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x0ac1eb22b98cdd76796401ff462a96da9dbf07d4.txt:459:11: Warning: Integer Overflow.\n      if (owners[i]\nInteger Overflow occurs if:\n    owners.length = 13164036458569648337239753460458804039861886925068638906788872192\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255", 
+   "./uniqueContractSourceCode/0x0ac1eb22b98cdd76796401ff462a96da9dbf07d4.txt:411:3: Warning: Integer Overflow.\n  address[] public owners", 
+   "./uniqueContractSourceCode/0x0ac1eb22b98cdd76796401ff462a96da9dbf07d4.txt:485:5: Warning: Integer Overflow.\n    owners.push(_owner)\nInteger Overflow occurs if:\n    isOwner[_owner] = 0\n    isOwner[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0ac1eb22b98cdd76796401ff462a96da9dbf07d4.txt:623:41: Warning: Integer Underflow.\n      longTermTokens = tokenBalance.mul(100 - shortShare\nInteger Underflow occurs if:\n    shortShare = 112\n    shortLock = 0\n    isOwner[msg.sender] = 255\n    _wallet = 1461501637330902918203684832716283019655932542975\n    longTermTokens = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.2"
+}

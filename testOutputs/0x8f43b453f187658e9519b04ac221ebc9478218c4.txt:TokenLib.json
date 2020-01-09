@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:889:5: Warning: Integer Overflow.\n    self.owner\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _newOwner = 1461501637330902918203684832716283019655932542975\n    self.owner = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:947:5: Warning: Integer Overflow.\n    self.stillMinting\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.owner = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:859:9: Warning: Integer Overflow.\n        self.allowed\nInteger Overflow occurs if:\n    self.allowed[msg.sender][_spender] = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _valueChange = 0\n    _increase = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:857:23: Warning: Integer Overflow.\n        _newAllowed = self.allowed\nInteger Overflow occurs if:\n    self.allowed[msg.sender][_spender] = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _valueChange = 0\n    _increase = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:851:26: Warning: Integer Overflow.\n      if (_valueChange > self.allowed\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _increase = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:781:5: Warning: Integer Overflow.\n    self.allowed\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _value = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:757:12: Warning: Integer Overflow.\n    return self.balances\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:853:9: Warning: Integer Overflow.\n        self.allowed\nInteger Overflow occurs if:\n    self.allowed[msg.sender][_spender] = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _valueChange = 1\n    _increase = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:603:3: Warning: Integer Overflow.\n  function init(TokenStorage storage self,\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:809:12: Warning: Integer Overflow.\n    return self.allowed\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.2"
+}

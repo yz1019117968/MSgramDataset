@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:265:9: Warning: Integer Overflow.\n        balanceOf[target] += mintedAmount\nInteger Overflow occurs if:\n    balanceOf[target] = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:267:9: Warning: Integer Overflow.\n        totalSupply += mintedAmount\nInteger Overflow occurs if:\n    totalSupply = 1\n    mintedAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:359:41: Warning: Integer Overflow.\n        seed = uint(keccak256(keccak256(pool[pool.length -1]\nInteger Overflow occurs if:\n    pool.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    owner = 0", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:379:41: Warning: Integer Overflow.\n        seed = uint(keccak256(keccak256(pool[pool.length -3]\nInteger Overflow occurs if:\n    pool.length = 115792089237316195423570985008687907853269984665640564039457584007913129639931\n    owner = 0", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:243:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:369:41: Warning: Integer Overflow.\n        seed = uint(keccak256(keccak256(pool[pool.length -2]\nInteger Overflow occurs if:\n    pool.length = 57896044618658097711785492504343953752410420469299788726480992998891240554496\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:359:46: Warning: Integer Underflow.\n        seed = uint(keccak256(keccak256(pool[pool.length -1\nInteger Underflow occurs if:\n    pool.length = 0\n    owner = 0", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:379:46: Warning: Integer Underflow.\n        seed = uint(keccak256(keccak256(pool[pool.length -3\nInteger Underflow occurs if:\n    pool.length = 2\n    owner = 0", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:19:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:369:46: Warning: Integer Underflow.\n        seed = uint(keccak256(keccak256(pool[pool.length -2\nInteger Underflow occurs if:\n    pool.length = 1\n    owner = 0", 
+   "./restContracts/0x9cacf0f744fccbeb5930ffbf933750255a96b441.txt:21:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

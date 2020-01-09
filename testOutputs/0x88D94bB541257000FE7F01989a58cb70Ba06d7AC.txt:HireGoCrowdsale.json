@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x88D94bB541257000FE7F01989a58cb70Ba06d7AC.txt:911:24: Warning: Integer Overflow.\n            investor = investors_number[i]\nInteger Overflow occurs if:\n    investors_number.length = 115792089237210883131902427821989989825586314233321668944057034896658818662399\n    isRefundAllowed = 255\n    icoEndTime = 0\n    owner = 0\n    contributors[investor] = 0", 
+   "./restContracts/0x88D94bB541257000FE7F01989a58cb70Ba06d7AC.txt:871:24: Warning: Integer Overflow.\n            investor = investors_number[i]\nInteger Overflow occurs if:\n    investors_number.length = 115792089237314549919013663802645752884087427315135581303591950428049781030911\n    icoEndTime = 0\n    orderedTokens[investor] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x88D94bB541257000FE7F01989a58cb70Ba06d7AC.txt:61:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    icoEndTime = 17216380380943669795776617767943703780223807930111034590661756059032746004496\n    totalWeiRaised = 113108202757945904616631665441707019671838337850309501028784767831523712791397\n    hardCap = 113108202757945904616631665441707019671838337850309501028784767831523712791398\n    icoStartTime = 17216380380943669795776617767943703780223807930111034590661756059032746004496\n    presaleStartTime = 17216380380943669795776617767943703780223807930111034590661756059032746004497", 
+   "./restContracts/0x88D94bB541257000FE7F01989a58cb70Ba06d7AC.txt:705:5: Warning: Integer Overflow.\n    address[] public investors_number"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.8"
+}

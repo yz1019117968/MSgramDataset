@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xad21c61eed9b2a05f56a3f92ed5a531b96f59c47.txt:171:2: Warning: Integer Overflow.\n\tfunction register(address[] _addrs) onlyOwner{\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.3"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x12b13919955ce7be34bb09697bdaf1a0edf4be0c.txt:369:3: Warning: Integer Underflow.\n  string public symbol = \"SAK\"", 
+   "./uniqueContractSourceCode/0x12b13919955ce7be34bb09697bdaf1a0edf4be0c.txt:367:3: Warning: Integer Underflow.\n  string public name = \"Shark Fund\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.2"
+}

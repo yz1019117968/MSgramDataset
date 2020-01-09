@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2801:22: Warning: Integer Overflow.\n\t\t\tuint256 endTime = startingAt + (vestingPeriodLength * (i))\nInteger Overflow occurs if:\n    startingAt = 1\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2645:2: Warning: Integer Overflow.\n\tmapping (uint256 => VestingStruct) public vestings", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2847:22: Warning: Integer Overflow.\n\t\t\tuint256 endTime = startingAt + (vestingPeriodLength * (i))\nInteger Overflow occurs if:\n    startingAt = 1\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2799:24: Warning: Integer Overflow.\n\t\t\tuint256 startTime = startingAt + (vestingPeriodLength * (i - 1))\nInteger Overflow occurs if:\n    startingAt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    timestamp = 115792089237316195423570985008687907853269984665640564039457584007913129639934", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2845:24: Warning: Integer Overflow.\n\t\t\tuint256 startTime = startingAt + (vestingPeriodLength * (i - 1))\nInteger Overflow occurs if:\n    startingAt = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    vestingPeriodLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    timestamp = 115792089237316195423570985008687907853269984665640564039457584007913129639934"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.0"
+}

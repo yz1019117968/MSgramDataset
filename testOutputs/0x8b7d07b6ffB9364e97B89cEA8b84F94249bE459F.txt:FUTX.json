@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:361:9: Warning: Integer Overflow.\n        _submitted += _value\nInteger Overflow occurs if:\n    swap = 0\n    _submitted = 822752278660603021077484591278675252491367932816789931674304513\n    MAX_SUBMITTED = 822752278660603021077484591278675252491367932816789931674304512\n    tier = 115792089237316195423570985008687907853269984665640564039457584007913129639925", 
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:433:31: Warning: Integer Overflow.\n            tokens = _value * ratios[tier]\nInteger Overflow occurs if:\n    swap = 0\n    tier = 3213876088517980551083924184682325205044405987565585670602762\n    ratios[tier] = 3213876088517980551083924184682325205044405987565585670602763\n    levels[tier] = 3213876088517980551083924184682325205044405987565585670602763\n    MAX_SUBMITTED = 0\n    _submitted = 0", 
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:417:33: Warning: Integer Overflow.\n            tokens = (_value) * ratios[tier]\nInteger Overflow occurs if:\n    swap = 0\n    tier = 3213876088517980551083924184682325205044405987565585670602762\n    ratios[tier] = 3213876088517980551083924184682325205044405987565585670602763\n    levels[tier] = 3213876088517980551083924184682325205044405987565585670602763\n    MAX_SUBMITTED = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _submitted = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:339:25: Warning: Integer Overflow.\n        uint256 total = _submitted + _value\nInteger Overflow occurs if:\n    swap = 0\n    _submitted = 1\n    tier = 115792089237316195423570985008687907853269984665640564039457584007913129639925", 
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:409:21: Warning: Integer Overflow.\n        if (total > levels[tier]\nInteger Overflow occurs if:\n    swap = 0\n    tier = 309485009821345068724781066\n    levels[tier] = 309485009821345068724781067\n    MAX_SUBMITTED = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _submitted = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:413:41: Warning: Integer Overflow.\n            uint256 remaining = total - levels[tier]\nInteger Overflow occurs if:\n    swap = 0\n    tier = 9223372036854775818\n    levels[tier] = 9223372036854775819\n    MAX_SUBMITTED = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _submitted = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:127:5: Warning: Integer Underflow.\n    string public name = \"Futereum X\"", 
+   "./restContracts/0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F.txt:415:13: Warning: Integer Underflow.\n            _value -= remaining\nInteger Underflow occurs if:\n    _submitted = 730750818665451459101842416358141509827966271488\n    swap = 0\n    tier = 0\n    levels[tier] = 1\n    MAX_SUBMITTED = 730750818665451459101842416358141509827966271488"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "17.0"
+}

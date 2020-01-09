@@ -1,0 +1,30 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1851:3: Warning: Timestamp Dependency.\n\t\tif(now>=phasePresale_From && now<phasePresale_To){\r\n\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1827:4: Warning: Timestamp Dependency.\n\t\t\tif(now>=phasePresale_From)\r\n\t\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1831:10: Warning: Timestamp Dependency.\n\t\t} else if(now<phasePublicSale3_To){\r\n\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1855:10: Warning: Timestamp Dependency.\n\t\t} else if (now>=phasePublicSale1_From && now<phasePublicSale1_To) {\r\n\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1851:6: Warning: Timestamp Dependency.\n\t\tif(now>=phasePresale_From && now<phasePresale_To", 
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1855:14: Warning: Timestamp Dependency.\n\t\t} else if (now>=phasePublicSale1_From && now<phasePublicSale1_To", 
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1825:3: Warning: Timestamp Dependency.\n\t\tif(now<phasePresale_To){\r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1227:3: Warning: Integer Overflow.\n\t\treferralCount++\nInteger Overflow occurs if:\n    owner = 95406826884961342500336545879718955523139276405473280\n    referralCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1543:3: Warning: Transaction-Ordering Dependency.\n\t\tethFundDeposit.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xb3536f8f02e05ac6b6cb8f862a33fdc2331290cf.txt:1543:3: Warning: Transaction-Ordering Dependency.\n\t\tethFundDeposit.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.3"
+}

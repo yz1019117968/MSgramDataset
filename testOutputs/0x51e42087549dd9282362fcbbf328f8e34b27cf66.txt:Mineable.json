@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x51e42087549dd9282362fcbbf328f8e34b27cf66.txt:11:5: Warning: Integer Underflow.\n    string public symbol = 'MIT'", 
+   "./uniqueContractSourceCode/0x51e42087549dd9282362fcbbf328f8e34b27cf66.txt:9:5: Warning: Integer Underflow.\n    string public name = 'MIT'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.0"
+}

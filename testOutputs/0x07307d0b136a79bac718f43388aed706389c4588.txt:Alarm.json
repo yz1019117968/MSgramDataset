@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x07307d0b136a79bac718f43388aed706389c4588.txt:4135:51: Warning: Integer Overflow.\n                return callDatabase.data_registry[callDatabase.calls[callKey].dataHash", 
+   "./uniqueContractSourceCode/0x07307d0b136a79bac718f43388aed706389c4588.txt:3841:24: Warning: Integer Overflow.\n                return callDatabase.callerPool.generations[generationId].endAt"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x07307d0b136a79bac718f43388aed706389c4588.txt:4135:17: Warning: Integer Underflow.\n                return callDatabase.data_registry[callDatabase.calls[callKey].dataHash]\nInteger Underflow occurs if:\n    return callDatabase.data_registry[callDatabase.calls[callKey].dataHash] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.8"
+}

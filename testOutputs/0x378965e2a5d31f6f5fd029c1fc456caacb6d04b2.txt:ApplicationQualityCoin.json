@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.txt:7:5: Warning: Integer Underflow.\n    string public name = \"Application Quality Coin\"", 
+   "./uniqueContractSourceCode/0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.txt:9:5: Warning: Integer Underflow.\n    string public symbol = \"AQC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.6"
+}

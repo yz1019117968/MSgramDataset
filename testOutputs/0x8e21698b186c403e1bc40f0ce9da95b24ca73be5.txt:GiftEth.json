@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8e21698b186c403e1bc40f0ce9da95b24ca73be5.txt:115:5: Warning: Timestamp Dependency.\n    require(now >= lockTs)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8e21698b186c403e1bc40f0ce9da95b24ca73be5.txt:93:3: Warning: Integer Underflow.\n  string public giftMessage"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.8"
+}

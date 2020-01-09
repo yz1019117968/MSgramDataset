@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1c9207daaa1da36ba34b7e1bc83810dd7390d7c9.txt:25:3: Warning: Integer Overflow.\n  function checkDocument(string sha256) constant returns (uint) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    sha256 = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1c9207daaa1da36ba34b7e1bc83810dd7390d7c9.txt:7:3: Warning: Integer Overflow.\n  function storeProof(string sha256) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    sha256 = 115792089237316195423570985008687907853269984665640564039457584007913129639932", 
+   "./uniqueContractSourceCode/0x1c9207daaa1da36ba34b7e1bc83810dd7390d7c9.txt:15:3: Warning: Integer Overflow.\n  function notarize(string sha256) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    sha256 = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "29.7"
+}

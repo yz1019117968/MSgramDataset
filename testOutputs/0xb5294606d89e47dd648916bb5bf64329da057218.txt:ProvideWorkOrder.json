@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb5294606d89e47dd648916bb5bf64329da057218.txt:171:3: Warning: Integer Overflow.\n  function complete(uint256 _amount, string _details) public onlyProvider onlyInProgress {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _details = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb5294606d89e47dd648916bb5bf64329da057218.txt:219:5: Warning: Integer Overflow.\n    TransactionCompleted(identifier, paymentAmount, feeAmount, details)\nInteger Overflow occurs if:\n    status = 680564733841876926926749214863536422912\n    peer = 0\n    amount = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb5294606d89e47dd648916bb5bf64329da057218.txt:69:3: Warning: Integer Underflow.\n  string public details", 
+   "./restContracts/0xb5294606d89e47dd648916bb5bf64329da057218.txt:219:5: Warning: Integer Underflow.\n    TransactionCompleted(identifier, paymentAmount, feeAmount, details)\nInteger Underflow occurs if:\n    status = 680564733841876926926749214863536422912\n    peer = 0\n    amount = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb5294606d89e47dd648916bb5bf64329da057218.txt:207:5: Warning: Transaction-Ordering Dependency.\n    paymentEscrow.transfer(paymentAmount)"
+   ], 
+   [
+    "./restContracts/0xb5294606d89e47dd648916bb5bf64329da057218.txt:213:5: Warning: Transaction-Ordering Dependency.\n    prvd.transfer(feeAmount)", 
+    "./restContracts/0xb5294606d89e47dd648916bb5bf64329da057218.txt:207:5: Warning: Transaction-Ordering Dependency.\n    paymentEscrow.transfer(paymentAmount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.7"
+}

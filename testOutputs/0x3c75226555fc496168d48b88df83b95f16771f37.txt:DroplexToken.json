@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3c75226555fc496168d48b88df83b95f16771f37.txt:61:5: Warning: Integer Underflow.\n    string public name = 'Droplex Token'", 
+   "./uniqueContractSourceCode/0x3c75226555fc496168d48b88df83b95f16771f37.txt:59:5: Warning: Integer Underflow.\n    string public standard = 'ERC20'", 
+   "./uniqueContractSourceCode/0x3c75226555fc496168d48b88df83b95f16771f37.txt:63:5: Warning: Integer Underflow.\n    string public symbol = 'DROP'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.4"
+}

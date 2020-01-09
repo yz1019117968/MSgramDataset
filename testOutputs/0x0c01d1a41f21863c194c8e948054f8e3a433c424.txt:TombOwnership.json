@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0c01d1a41f21863c194c8e948054f8e3a433c424.txt:265:37: Warning: Integer Overflow.\n        return (tombToOwner[index], tombs[index]\nInteger Overflow occurs if:\n    tombs[index] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x0c01d1a41f21863c194c8e948054f8e3a433c424.txt:265:60: Warning: Integer Overflow.\n        return (tombToOwner[index], tombs[index].sculptor, tombs[index]\nInteger Overflow occurs if:\n    tombs[index] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x0c01d1a41f21863c194c8e948054f8e3a433c424.txt:265:60: Warning: Integer Overflow.\n        return (tombToOwner[index], tombs[index].sculptor, tombs[index].data\nInteger Overflow occurs if:\n    tombs[index] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0c01d1a41f21863c194c8e948054f8e3a433c424.txt:277:5: Warning: Integer Underflow.\n    string public name = \"EtherFen\"", 
+   "./uniqueContractSourceCode/0x0c01d1a41f21863c194c8e948054f8e3a433c424.txt:265:9: Warning: Integer Underflow.\n        return (tombToOwner[index], tombs[index].sculptor, tombs[index].data)\nInteger Underflow occurs if:\n    return (tombToOwner[index], tombs[index].sculptor, tombs[index].data) = 1\n    tombs[index] = 1", 
+   "./uniqueContractSourceCode/0x0c01d1a41f21863c194c8e948054f8e3a433c424.txt:279:5: Warning: Integer Underflow.\n    string public symbol = \"ETF\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.0"
+}

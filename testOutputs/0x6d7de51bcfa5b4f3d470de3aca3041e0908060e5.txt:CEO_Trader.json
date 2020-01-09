@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6d7de51bcfa5b4f3d470de3aca3041e0908060e5.txt:89:9: Warning: Timestamp Dependency.\n        require(block.timestamp>contestStartTime)", 
+   "./uniqueContractSourceCode/0x6d7de51bcfa5b4f3d470de3aca3041e0908060e5.txt:195:9: Warning: Timestamp Dependency.\n        if(timePassed()>=TIME_TO_COOK){\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6d7de51bcfa5b4f3d470de3aca3041e0908060e5.txt:321:5: Warning: Timestamp Dependency.\n    assert(b <= a)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6d7de51bcfa5b4f3d470de3aca3041e0908060e5.txt:25:5: Warning: Integer Overflow.\n    Potato[] public potatoes", 
+   "./uniqueContractSourceCode/0x6d7de51bcfa5b4f3d470de3aca3041e0908060e5.txt:109:34: Warning: Integer Overflow.\n            uint256 sellingPrice=potato.price\nInteger Overflow occurs if:\n    lastBidTime = 83076749736557242056487941267521536\n    index = 0\n    ceoAddress = 1461501637330902918203684832716283019655932542975\n    potatoes[index] = 1\n    TIME_TO_COOK = 57896044611918111044997832555677200154880084664410995914093648883680662257664\n    contestStartTime = 57896044611918111044997832555677200154880167741160732471335705371621929779198"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6d7de51bcfa5b4f3d470de3aca3041e0908060e5.txt:185:5: Warning: Transaction-Ordering Dependency.\n    ceoAddress.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6d7de51bcfa5b4f3d470de3aca3041e0908060e5.txt:133:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(purchaseExcess)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.8"
+}

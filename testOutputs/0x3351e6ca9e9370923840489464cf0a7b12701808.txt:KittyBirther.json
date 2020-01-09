@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3351e6ca9e9370923840489464cf0a7b12701808.txt:111:5: Warning: Integer Overflow.\n    function birth(uint blockNumber, uint64[] kittyIds) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    kittyIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.1"
+}

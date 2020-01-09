@@ -1,0 +1,41 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:273:3: Warning: Integer Overflow.\n\t\tnextMineEvent++\nInteger Overflow occurs if:\n    MineLevel[_MineId] = 1\n    nextMineEvent = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ResourcesOwner[lvl][msg.sender] = 30\n    MineOwner[_MineId] = 0", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:425:55: Warning: Integer Overflow.\n\t\t\tResourcesOwner[TradeLot.ResourceId][msg.sender] += TradeLot.ResourceAmount", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:377:4: Warning: Integer Overflow.\n\t\t\tResourcesOwner[TradeLot.ResourceId][TradeLot.Seller] += TradeLot.ResourceAmount\nInteger Overflow occurs if:\n    ResourcesOwner[TradeLot.ResourceId][TradeLot.Seller] = 1", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:377:60: Warning: Integer Overflow.\n\t\t\tResourcesOwner[TradeLot.ResourceId][TradeLot.Seller] += TradeLot.ResourceAmount", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:301:5: Warning: Integer Overflow.\n    mapping(uint256 => tradeStruct) public TradeList", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:431:7: Warning: Integer Overflow.\n\t\tif (TradeLot.MineId", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:437:4: Warning: Integer Overflow.\n\t\t\tnextMineEvent++\nInteger Overflow occurs if:\n    nextMineEvent = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:401:3: Warning: Integer Overflow.\n\t\tTradeLot.Price", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:387:3: Warning: Integer Overflow.\n\t\tnextTradeEvent++\nInteger Overflow occurs if:\n    nextTradeEvent = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:435:31: Warning: Integer Overflow.\n\t\t\tMineAffected(nextMineEvent,TradeLot.MineId", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:163:2: Warning: Integer Overflow.\n\tfunction StartMiningByIdArray(uint256[] _MineIds) public {\r\n\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:451:3: Warning: Integer Overflow.\n\t\tTradeLot.Price", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:457:3: Warning: Integer Overflow.\n\t\tnextTradeEvent++\nInteger Overflow occurs if:\n    nextTradeEvent = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:525:2: Warning: Integer Overflow.\n\tfunction getMinesInfo(uint256[] _MineIds) public constant returns(address[32], uint8[32], uint256[32]) {\r\n\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:383:3: Warning: Integer Overflow.\n\t\tTradeLot.Price", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:425:4: Warning: Integer Overflow.\n\t\t\tResourcesOwner[TradeLot.ResourceId][msg.sender] += TradeLot.ResourceAmount\nInteger Overflow occurs if:\n    ResourcesOwner[TradeLot.ResourceId][msg.sender] = 1", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:433:14: Warning: Integer Overflow.\n\t\t\tMineOwner[TradeLot.MineId", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:407:3: Warning: Integer Overflow.\n\t\tnextTradeEvent++\nInteger Overflow occurs if:\n    nextTradeEvent = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:575:13: Warning: Integer Underflow.\n\t    return now - MineCooldown[_MineId]\nInteger Underflow occurs if:\n    MineCooldown[_MineId] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:109:9: Warning: Transaction-Ordering Dependency.\n\tassert(payee.send(payment)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:445:3: Warning: Transaction-Ordering Dependency.\n\t\tpayee.transfer(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.5"
+}

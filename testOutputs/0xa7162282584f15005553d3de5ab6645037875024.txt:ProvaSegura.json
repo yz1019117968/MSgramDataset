@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa7162282584f15005553d3de5ab6645037875024.txt:47:15: Warning: Integer Overflow.\n        ret = provas[hash_].block_number", 
+   "./restContracts/0xa7162282584f15005553d3de5ab6645037875024.txt:39:3: Warning: Integer Overflow.\n\t\tprovas[hash_].block_number\nInteger Overflow occurs if:\n    provas[hash_].existe = 0\n    owner = 0", 
+   "./restContracts/0xa7162282584f15005553d3de5ab6645037875024.txt:17:5: Warning: Integer Overflow.\n    mapping(address => Prova) public provas"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x1c381ca8112f823941c37cb9514819909ecb102d.txt:945:21: Warning: Callstack Depth Attack Vulnerability.\n      bool isSent = msg.sender.call.gas(3000000).value(change)()"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1c381ca8112f823941c37cb9514819909ecb102d.txt:899:7: Warning: Integer Overflow.\n      ICOinvestors[msg.sender] += extraTokensAmount\nInteger Overflow occurs if:\n    rentrancy_lock = 1496577676626844588240573268701473812127674924007424\n    ICOinvestors[msg.sender] = 1\n    preICOinvestors[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1c381ca8112f823941c37cb9514819909ecb102d.txt:825:19: Warning: Transaction-Ordering Dependency.\n    bool isSent = multisig.call.gas(3000000).value(this.balance)()"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1c381ca8112f823941c37cb9514819909ecb102d.txt:865:19: Warning: Transaction-Ordering Dependency.\n    bool isSent = multisig.call.gas(3000000).value(this.balance)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.3"
+}

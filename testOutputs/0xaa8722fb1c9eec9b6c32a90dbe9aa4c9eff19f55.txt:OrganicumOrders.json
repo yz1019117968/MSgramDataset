@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xaa8722fb1c9eec9b6c32a90dbe9aa4c9eff19f55.txt:321:9: Warning: Timestamp Dependency.\n        assert(now >= endDate + durationVoting)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaa8722fb1c9eec9b6c32a90dbe9aa4c9eff19f55.txt:19:5: Warning: Integer Overflow.\n    mapping (address => order) public orders", 
+   "./restContracts/0xaa8722fb1c9eec9b6c32a90dbe9aa4c9eff19f55.txt:321:23: Warning: Integer Overflow.\n        assert(now >= endDate + durationVoting\nInteger Overflow occurs if:\n    endDate = 1\n    durationVoting = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xaa8722fb1c9eec9b6c32a90dbe9aa4c9eff19f55.txt:21:5: Warning: Integer Overflow.\n    address[] public holders", 
+   "./restContracts/0xaa8722fb1c9eec9b6c32a90dbe9aa4c9eff19f55.txt:251:40: Warning: Integer Overflow.\n        assert(now >= endDate && now < endDate + durationVoting\nInteger Overflow occurs if:\n    endDate = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    durationVoting = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    voter[msg.sender] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xaa8722fb1c9eec9b6c32a90dbe9aa4c9eff19f55.txt:337:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ], 
+   [
+    "./restContracts/0xaa8722fb1c9eec9b6c32a90dbe9aa4c9eff19f55.txt:337:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.3"
+}

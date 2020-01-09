@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1065:9: Warning: Integer Overflow.\n        sellOrders[_jingleId] = Order({\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _amount = 112\n    sellOrders[_jingleId].exists = 0\n    jingleContract = 0", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:987:1: Warning: Integer Overflow.\ncontract Marketplace is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _amount = 101\n    jinglesOnSale.push(_jingleId) = 45784770667049665814206783170927586666935834562267908884694456308001664461871\n    sellOrders[_jingleId].exists = 0\n    jingleContract = 0", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1199:24: Warning: Integer Overflow.\n        uint lastOne = jinglesOnSale[length - 1]\nInteger Overflow occurs if:\n    jinglesOnSale.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    sellOrders[_jingleId].seller = 0\n    sellOrders[_jingleId].exists = 255", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1079:9: Warning: Integer Overflow.\n        numOrders++\nInteger Overflow occurs if:\n    _amount = 112\n    numOrders = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    sellOrders[_jingleId].exists = 0\n    jingleContract = 0", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1113:9: Warning: Integer Overflow.\n        sellOrders[_jingleId].exists\nInteger Overflow occurs if:\n    sellOrders[_jingleId].price = 0\n    sellOrders[_jingleId].exists = 255", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1033:5: Warning: Integer Overflow.\n    mapping (uint => Order) public sellOrders", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1085:9: Warning: Integer Overflow.\n        jinglesOnSale.push(_jingleId)\nInteger Overflow occurs if:\n    _amount = 112\n    jinglesOnSale.push(_jingleId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    sellOrders[_jingleId].exists = 0\n    jingleContract = 0", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1167:9: Warning: Integer Overflow.\n        sellOrders[_jingleId].exists\nInteger Overflow occurs if:\n    sellOrders[_jingleId].seller = 0\n    sellOrders[_jingleId].exists = 255", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1039:5: Warning: Integer Overflow.\n    uint[] public jinglesOnSale"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1171:9: Warning: Integer Underflow.\n        numOrders--\nInteger Underflow occurs if:\n    numOrders = 0\n    sellOrders[_jingleId].seller = 0\n    sellOrders[_jingleId].exists = 255", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1117:9: Warning: Integer Underflow.\n        numOrders--\nInteger Underflow occurs if:\n    numOrders = 0\n    sellOrders[_jingleId].price = 0\n    sellOrders[_jingleId].exists = 255", 
+   "./restContracts/0xc1ef465527343f68bb1841f99b9adeb061cc7ac9.txt:1199:38: Warning: Integer Underflow.\n        uint lastOne = jinglesOnSale[length - 1\nInteger Underflow occurs if:\n    jinglesOnSale.length = 0\n    sellOrders[_jingleId].seller = 0\n    sellOrders[_jingleId].exists = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.1"
+}

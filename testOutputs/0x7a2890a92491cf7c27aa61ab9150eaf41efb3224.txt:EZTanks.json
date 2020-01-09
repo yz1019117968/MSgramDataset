@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7a2890a92491cf7c27aa61ab9150eaf41efb3224.txt:475:17: Warning: Transaction-Ordering Dependency.\n        require(msg.sender.send(_amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7a2890a92491cf7c27aa61ab9150eaf41efb3224.txt:475:17: Warning: Transaction-Ordering Dependency.\n        require(msg.sender.send(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.6"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xaf28902a20fe752c26258dad52587ad8765c247f.txt:79:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xaf28902a20fe752c26258dad52587ad8765c247f.txt:297:5: Warning: Integer Underflow.\n    string public name = \"EnterCoin\"", 
+   "./restContracts/0xaf28902a20fe752c26258dad52587ad8765c247f.txt:299:5: Warning: Integer Underflow.\n    string public symbol = \"ENTR\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.9"
+}

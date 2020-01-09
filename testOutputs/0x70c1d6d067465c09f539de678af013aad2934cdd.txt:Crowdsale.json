@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x70c1d6d067465c09f539de678af013aad2934cdd.txt:871:5: Warning: Timestamp Dependency.\n    require(address(this).balance >= softcap && now > endICO14)", 
+   "./uniqueContractSourceCode/0x70c1d6d067465c09f539de678af013aad2934cdd.txt:829:5: Warning: Timestamp Dependency.\n    require(address(this).balance < softcap && now > endICO)", 
+   "./uniqueContractSourceCode/0x70c1d6d067465c09f539de678af013aad2934cdd.txt:845:5: Warning: Timestamp Dependency.\n    require(now <= payments[msg.sender][_id].dateEndRefund)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x70c1d6d067465c09f539de678af013aad2934cdd.txt:873:7: Warning: Transaction-Ordering Dependency.\n      wallet.transfer(address(this).balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x70c1d6d067465c09f539de678af013aad2934cdd.txt:861:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "33.7"
+}

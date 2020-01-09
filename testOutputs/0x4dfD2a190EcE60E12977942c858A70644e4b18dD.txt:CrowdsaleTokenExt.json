@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:1089:3: Warning: Integer Overflow.\n  function setTokenInformation(string _name, string _symbol) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:959:1: Warning: Integer Overflow.\ncontract CrowdsaleTokenExt is ReleasableToken, MintableTokenExt, UpgradeableToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:831:3: Warning: Integer Overflow.\n  address[] public reservedTokensDestinations", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:829:3: Warning: Integer Overflow.\n  mapping (address => ReservedTokensData) public reservedTokensList", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:859:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentageDecimals", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:837:5: Warning: Integer Overflow.\n    reservedTokensDestinations.push(addr)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:853:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentageUnit", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:863:3: Warning: Integer Overflow.\n  function setReservedTokensListMultiple(address[] addrs, uint[] inTokens, uint[] inPercentageUnit, uint[] inPercentageDecimals) onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:133:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    released = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:967:3: Warning: Integer Underflow.\n  string public symbol", 
+   "./uniqueContractSourceCode/0x4dfD2a190EcE60E12977942c858A70644e4b18dD.txt:965:3: Warning: Integer Underflow.\n  string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.2"
+}

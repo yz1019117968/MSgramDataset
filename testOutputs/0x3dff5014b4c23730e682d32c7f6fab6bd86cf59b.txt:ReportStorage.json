@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3dff5014b4c23730e682d32c7f6fab6bd86cf59b.txt:187:5: Warning: Integer Overflow.\n    function addNewReport(string newReport) public onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newReport = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3dff5014b4c23730e682d32c7f6fab6bd86cf59b.txt:165:5: Warning: Integer Overflow.\n    Report[] public reports"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3dff5014b4c23730e682d32c7f6fab6bd86cf59b.txt:165:5: Warning: Integer Underflow.\n    Report[] public reports"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "44.7"
+}

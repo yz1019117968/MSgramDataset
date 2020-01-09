@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x51d9e05775bde1b3c12d781d2f847b1ab93e3c3d.txt:93:34: Warning: Integer Underflow.\n\t        TechnicalRise.transfer((address(this).balance - msg.value\nInteger Underflow occurs if:\n    timeOut = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.4"
+}

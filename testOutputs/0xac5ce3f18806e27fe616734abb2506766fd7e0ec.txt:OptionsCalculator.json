@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:2057:26: Warning: Integer Overflow.\n    uint issuedOptions = emp.poolOptions + emp.extraOptions\nInteger Overflow occurs if:\n    conversionOfferedAt = 0", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:2125:3: Warning: Integer Overflow.\n  function calculateOptions(uint[9] employee, uint32 calcAtTime, uint32 conversionOfferedAt, bool disableAcceleratedVesting)\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:2031:3: Warning: Integer Overflow.\n  function calculateOptionsComponents(uint[9] employee, uint32 calcAtTime, uint32 conversionOfferedAt,\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:2161:66: Warning: Integer Overflow.\n    uint poolOptions = divRound(issuedPoolOptions*vestedOptions, issuedPoolOptions + issuedExtraOptions\nInteger Overflow occurs if:\n    issuedPoolOptions = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    issuedExtraOptions = 95320360308092064085158862026869462789128858612754216248428463844421952977271"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:2013:45: Warning: Integer Underflow.\n    uint minFadeValue = divRound(options * (FP_SCALE - maxFadeoutPromille\nInteger Underflow occurs if:\n    maxFadeoutPromille = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    t = 0\n    terminatedAt = 0", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:1903:76: Warning: Integer Underflow.\n  function residualAmountPromille() public constant returns(uint) { return FP_SCALE - maxFadeoutPromille\nInteger Underflow occurs if:\n    maxFadeoutPromille = 57896044618658097711785492504343953926634992332820282019728792003956564819968", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:2005:32: Warning: Integer Underflow.\n    uint timefromTermination = t - terminatedAt\nInteger Underflow occurs if:\n    t = 4294967295\n    vestingPeriod = 2147483647\n    cliffPeriod = 2147483647", 
+   "./restContracts/0xac5ce3f18806e27fe616734abb2506766fd7e0ec.txt:2009:29: Warning: Integer Underflow.\n    uint employmentPeriod = terminatedAt - issueDate\nInteger Underflow occurs if:\n    issueDate = 1\n    t = 0\n    terminatedAt = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.9"
+}

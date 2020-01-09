@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x21d4acb4de0450ec46916fab187bb68dc5a8f5d8.txt:7:5: Warning: Integer Underflow.\n    string public name = \"eXchange Quality Coin\"", 
+   "./uniqueContractSourceCode/0x21d4acb4de0450ec46916fab187bb68dc5a8f5d8.txt:9:5: Warning: Integer Underflow.\n    string public symbol = \"XQC\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.6"
+}

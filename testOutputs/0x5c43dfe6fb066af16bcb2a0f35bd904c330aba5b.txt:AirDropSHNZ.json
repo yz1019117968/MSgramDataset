@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5c43dfe6fb066af16bcb2a0f35bd904c330aba5b.txt:181:5: Warning: Integer Overflow.\n    function airDrop(address[] _addrs, uint256 _amount) public onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5c43dfe6fb066af16bcb2a0f35bd904c330aba5b.txt:175:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5c43dfe6fb066af16bcb2a0f35bd904c330aba5b.txt:175:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.5"
+}

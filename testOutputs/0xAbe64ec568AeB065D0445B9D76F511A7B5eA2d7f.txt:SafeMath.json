@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xAbe64ec568AeB065D0445B9D76F511A7B5eA2d7f.txt:143:50: Warning: Integer Underflow.\n        uint256 genNum = uint256(block.blockhash(block.number-1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.6"
+}

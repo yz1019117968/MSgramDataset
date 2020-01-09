@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9aD6C7719664c16148BA322E195A21a63236AF1F.txt:309:5: Warning: Integer Overflow.\n    function setNameAndTicker(string _name, string _symbol) onlyOwner public returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9aD6C7719664c16148BA322E195A21a63236AF1F.txt:41:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    locked = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9aD6C7719664c16148BA322E195A21a63236AF1F.txt:75:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x9aD6C7719664c16148BA322E195A21a63236AF1F.txt:77:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.6"
+}

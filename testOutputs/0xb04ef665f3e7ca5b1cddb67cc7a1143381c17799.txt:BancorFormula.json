@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb04ef665f3e7ca5b1cddb67cc7a1143381c17799.txt:83:21: Warning: Integer Overflow.\n        uint256 z = _x + _y\nInteger Overflow occurs if:\n    _connectorBalance = 68646348461033264006858782791010321144662546358453084320242636809116264799991\n    _depositAmount = 81646115484138315713313883154805227993607565231147263388669419650958728724871\n    _connectorWeight = 983632\n    _supply = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb04ef665f3e7ca5b1cddb67cc7a1143381c17799.txt:171:5: Warning: Integer Underflow.\n    string public version = '0.3'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.8"
+}

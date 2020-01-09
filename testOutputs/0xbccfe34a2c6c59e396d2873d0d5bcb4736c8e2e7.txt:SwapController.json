@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbccfe34a2c6c59e396d2873d0d5bcb4736c8e2e7.txt:339:9: Warning: Integer Overflow.\n        guards.push(TokenTransferGuard(_guard))\nInteger Overflow occurs if:\n    guards.push(TokenTransferGuard(_guard)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authority = 1461501637330902918203684832716283019655932542975\n    owner = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbccfe34a2c6c59e396d2873d0d5bcb4736c8e2e7.txt:259:1: Warning: Integer Overflow.\ncontract SwapController is DSAuth, TokenController {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    guards.push(TokenTransferGuard(_guard)) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    authority = 1461501637330902918203684832716283019655932542975\n    owner = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbccfe34a2c6c59e396d2873d0d5bcb4736c8e2e7.txt:261:5: Warning: Integer Overflow.\n    TokenTransferGuard[] public guards"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "92.5"
+}

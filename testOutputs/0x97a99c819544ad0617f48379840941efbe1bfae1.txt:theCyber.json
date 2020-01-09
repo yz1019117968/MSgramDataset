@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x97a99c819544ad0617f48379840941efbe1bfae1.txt:501:3: Warning: Integer Overflow.\n  function passMessage(address _contractAddress, string _message) public membersOnly {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x97a99c819544ad0617f48379840941efbe1bfae1.txt:487:3: Warning: Integer Overflow.\n  function directMessage(uint8 _toMemberId, string _message) public membersOnly {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x97a99c819544ad0617f48379840941efbe1bfae1.txt:273:3: Warning: Integer Overflow.\n  function changeKey(string _newMemberKey) public membersOnly {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0x97a99c819544ad0617f48379840941efbe1bfae1.txt:473:3: Warning: Integer Overflow.\n  function broadcastMessage(string _message) public membersOnly {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _message = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x97a99c819544ad0617f48379840941efbe1bfae1.txt:33:1: Warning: Integer Underflow.\ncontract theCyber {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    addressIsMember_[_newMemberAddress] = 0\n    addressIsMember_[msg.sender] = 255", 
+   "./restContracts/0x97a99c819544ad0617f48379840941efbe1bfae1.txt:577:5: Warning: Integer Underflow.\n    return (\r\n    ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    return (\r\n\r\n      members_[_memberId].name,\r\n\r\n      members_[_memberId].pubkey,\r\n\r\n      members_[_memberId].memberSince,\r\n\r\n      members_[_memberId].inactiveSince,\r\n\r\n      memberToAddress_[_memberId]\r\n\r\n    ) = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.9"
+}

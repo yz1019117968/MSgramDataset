@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa918cc1e37adeeee76dbd61d15e5d94674758654.txt:91:2: Warning: Integer Overflow.\n\taddress[] public addresses", 
+   "./restContracts/0xa918cc1e37adeeee76dbd61d15e5d94674758654.txt:99:2: Warning: Integer Overflow.\n\tfunction register(address[] _addrs, uint[] _bals) onlyOwner{\r\n\t^\nSpanning multiple lines.", 
+   "./restContracts/0xa918cc1e37adeeee76dbd61d15e5d94674758654.txt:113:25: Warning: Integer Overflow.\n\t\t\ttokenReward.transfer(addresses[i]\nInteger Overflow occurs if:\n    addresses.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0xa918cc1e37adeeee76dbd61d15e5d94674758654.txt:89:2: Warning: Integer Overflow.\n\tuint[] public balances"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.3"
+}

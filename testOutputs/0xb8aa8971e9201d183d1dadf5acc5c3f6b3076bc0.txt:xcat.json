@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:82: Warning: Integer Overflow.\n        return (tl.issuer, tl.dest, tl.amount1, tl.chain1, tl.amount2, tl.chain2,tl.timeout", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:37: Warning: Integer Overflow.\n        return (tl.issuer, tl.dest, tl.amount1", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:94: Warning: Integer Overflow.\n        return (tl.issuer, tl.dest, tl.amount1, tl.chain1, tl.amount2, tl.chain2,tl.timeout, tl.crtAddr", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:72: Warning: Integer Overflow.\n        return (tl.issuer, tl.dest, tl.amount1, tl.chain1, tl.amount2, tl.chain2", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:129:5: Warning: Integer Overflow.\n    mapping(bytes32 => txLog) public ledger", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:137:5: Warning: Integer Overflow.\n    function newXcat(bytes32 _SecretHash, address _ReleaseFundsTo, string _chain1, uint _amount1, string _chain2, uint _amount2, uint _MaxTimeLimit) public returns (address newContract) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _chain1 = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:133:5: Warning: Integer Overflow.\n    function testHash(string yourSecretPhrase) public returns (bytes32 SecretHash) {return(sha256(yourSecretPhrase));}\nInteger Overflow occurs if:\n    yourSecretPhrase = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:49: Warning: Integer Overflow.\n        return (tl.issuer, tl.dest, tl.amount1, tl.chain1", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:28: Warning: Integer Overflow.\n        return (tl.issuer, tl.dest", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:60: Warning: Integer Overflow.\n        return (tl.issuer, tl.dest, tl.amount1, tl.chain1, tl.amount2"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:97:5: Warning: Integer Underflow.\n    string public version = \"v1\"", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:129:5: Warning: Integer Underflow.\n    mapping(bytes32 => txLog) public ledger", 
+   "./restContracts/0xb8aa8971e9201d183d1dadf5acc5c3f6b3076bc0.txt:187:9: Warning: Integer Underflow.\n        return (tl.issuer, tl.dest, tl.amount1, tl.chain1, tl.amount2, tl.chain2,tl.timeout, tl.crtAddr)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "14.4"
+}

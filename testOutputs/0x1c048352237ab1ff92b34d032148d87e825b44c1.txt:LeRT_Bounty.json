@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1c048352237ab1ff92b34d032148d87e825b44c1.txt:413:9: Warning: Integer Overflow.\n        extention.push(ext_)\nInteger Overflow occurs if:\n    extention.push(ext_) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x1c048352237ab1ff92b34d032148d87e825b44c1.txt:323:1: Warning: Integer Overflow.\ncontract LeRT_Bounty is owned {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    extention.push(ext_) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.5"
+}

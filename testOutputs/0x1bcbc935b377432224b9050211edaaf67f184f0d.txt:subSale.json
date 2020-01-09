@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:121:5: Warning: Integer Overflow.\n    records[node].subSale\nInteger Overflow occurs if:\n    records[node].subSale = 255\n    records[node].originalOwner = 0", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:141:12: Warning: Integer Overflow.\n    return records[node].subExpiry", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:99:5: Warning: Integer Overflow.\n    records[node].subSale\nInteger Overflow occurs if:\n    records[node].subSale = 0", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:125:5: Warning: Integer Overflow.\n    records[node].subExpiry\nInteger Overflow occurs if:\n    records[node].subSale = 255\n    records[node].originalOwner = 0", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:101:5: Warning: Integer Overflow.\n    records[node].subPrice\nInteger Overflow occurs if:\n    records[node].subSale = 0", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:157:12: Warning: Integer Overflow.\n    return records[node].subPrice", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:103:5: Warning: Integer Overflow.\n    records[node].subExpiry\nInteger Overflow occurs if:\n    records[node].subSale = 0", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:123:5: Warning: Integer Overflow.\n    records[node].subPrice\nInteger Overflow occurs if:\n    records[node].subSale = 255\n    records[node].originalOwner = 0", 
+   "./uniqueContractSourceCode/0x1bcbc935b377432224b9050211edaaf67f184f0d.txt:149:12: Warning: Integer Overflow.\n    return records[node].subSale"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.4"
+}

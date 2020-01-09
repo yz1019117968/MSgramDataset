@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:451:2: Warning: Integer Overflow.\n\tfunction transfer(address _to, uint _value, bytes _data)public returns(bool)\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:329:5: Warning: Integer Overflow.\n    function transferOwnershipWithHowMany(address[] newOwners, uint256 newHowManyOwnersDecide) public onlyManyOwners {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:437:10: Warning: Integer Overflow.\n        \t_balanceOf[_to]+=_value\nInteger Overflow occurs if:\n    _value = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    _balanceOf[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    _balanceOf[_addr] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    insideOnlyManyOwners = 0", 
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:311:5: Warning: Integer Overflow.\n    function transferOwnership(address[] newOwners) public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:119:5: Warning: Integer Overflow.\n    bytes32[] public allOperations", 
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:507:7: Warning: Integer Overflow.\n    \t\t_balanceOf[_to]+=_value\nInteger Overflow occurs if:\n    _allowances[_from][msg.sender] = 108779031545955277543559080919054252484196152817543671206344507167924026604798\n    _balanceOf[_to] = 106961387607553830142586959784430342763520679909891863900260368412018205527865\n    _value = 37460691467431304555842042408181019795494663052749072100767404543628495031805\n    _balanceOf[_from] = 37460691467431304555842042408181019795494663052749072100767404543628495031805\n    insideOnlyManyOwners = 0", 
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:117:5: Warning: Integer Overflow.\n    address[] public owners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:83:10: Warning: Integer Underflow.\n        \treturn _symbol\nInteger Underflow occurs if:\n    return _symbol = 1", 
+   "./uniqueContractSourceCode/0x48f0f65d7bca70768d13a4b97a25fa0fe91fc4f1.txt:75:10: Warning: Integer Underflow.\n        \treturn _name\nInteger Underflow occurs if:\n    return _name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "32.4"
+}

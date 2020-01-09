@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4026f73f99427c6b70c9b101321895cee6b72659.txt:145:9: Warning: Integer Overflow.\n        lastBlockClaimed += blockDelay\nInteger Overflow occurs if:\n    lastBlockClaimed = 1\n    reward = 50942633119752846454219349998365661925608737367104304655302372697894809501696\n    blockDelay = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.5"
+}

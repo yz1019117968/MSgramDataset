@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6750c97aa8a1b388ed560a06aefd64d457455ba7.txt:669:13: Warning: Timestamp Dependency.\n        if (now <= endTime && totalSupply != tokenGenerationCap", 
+   "./uniqueContractSourceCode/0x6750c97aa8a1b388ed560a06aefd64d457455ba7.txt:669:9: Warning: Timestamp Dependency.\n        if (now <= endTime && totalSupply != tokenGenerationCap) throw"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6750c97aa8a1b388ed560a06aefd64d457455ba7.txt:79:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isFinalized = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6750c97aa8a1b388ed560a06aefd64d457455ba7.txt:317:5: Warning: Integer Underflow.\n    string public version = \"1.0\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6750c97aa8a1b388ed560a06aefd64d457455ba7.txt:675:13: Warning: Transaction-Ordering Dependency.\n        if(!ethFundDeposit.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6750c97aa8a1b388ed560a06aefd64d457455ba7.txt:675:13: Warning: Transaction-Ordering Dependency.\n        if(!ethFundDeposit.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.1"
+}

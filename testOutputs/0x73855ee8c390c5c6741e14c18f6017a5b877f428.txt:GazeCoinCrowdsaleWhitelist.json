@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x73855ee8c390c5c6741e14c18f6017a5b877f428.txt:309:5: Warning: Integer Overflow.\n    function disable(address[] _addresses) public onlyAdministrator {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x73855ee8c390c5c6741e14c18f6017a5b877f428.txt:277:5: Warning: Integer Overflow.\n    function enable(address[] _addresses) public onlyAdministrator {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.9"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:389:3: Warning: Integer Overflow.\n  function unregisterByList(address[] _addrs)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x951f614f81da09c90e6187a14b759f98ed9e7490.txt:337:3: Warning: Integer Overflow.\n  function registerByList(address[] _addrs)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.2"
+}

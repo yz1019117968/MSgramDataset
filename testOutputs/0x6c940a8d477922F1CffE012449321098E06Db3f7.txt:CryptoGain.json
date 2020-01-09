@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:221:55: Warning: Integer Overflow.\n                if (is_slot_in_bid(bids[i].slot_from, bids[i]\nInteger Overflow occurs if:\n    bids.length = 254\n    slot = 128", 
+   "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:221:36: Warning: Integer Overflow.\n                if (is_slot_in_bid(bids[i]\nInteger Overflow occurs if:\n    bids.length = 254\n    slot = 128", 
+   "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:71:5: Warning: Integer Overflow.\n    Bid[] public bids", 
+   "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:223:28: Warning: Integer Overflow.\n                    return bids[i]\nInteger Overflow occurs if:\n    bids.length = 253\n    slot = 128"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:219:48: Warning: Integer Underflow.\n            for (i=uint8(bids.length)-1; i>=0; i--\nInteger Underflow occurs if:\n    bids.length = 1\n    slot = 128", 
+   "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:219:20: Warning: Integer Underflow.\n            for (i=uint8(bids.length)-1\nInteger Underflow occurs if:\n    bids.length = 0\n    slot = 128"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:141:9: Warning: Transaction-Ordering Dependency.\n        admin.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6c940a8d477922F1CffE012449321098E06Db3f7.txt:301:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "62.8"
+}

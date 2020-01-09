@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x7587fD3d797a3b19A7F93E6753a402FDa97c1250.txt:117:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x7587fD3d797a3b19A7F93E6753a402FDa97c1250.txt:101:17: Warning: Transaction-Ordering Dependency.\n        require(_account.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.3"
+}

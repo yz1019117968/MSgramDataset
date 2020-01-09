@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb9131e894259d0d374bf189ca640ffc472a7d143.txt:215:47: Warning: Integer Overflow.\n        if (balances[msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 61068019213701294628707335190173859867420937198447951001151321180294802610927\n    _value = 89093305270750953986347328165116013504614237347082306990534588010824664387279\n    balances[msg.sender] = 89093305270750953986347328165116013504614237347082306990534588010824664387279", 
+   "./restContracts/0xb9131e894259d0d374bf189ca640ffc472a7d143.txt:255:82: Warning: Integer Overflow.\n        if (balances[_from] >= _value && allowed[_from][msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 69034246395027646592907602546322891274471485757879647977748712251012457021375\n    _value = 112173586516313215544233754657459555286454672621676942826333166901222323519488\n    allowed[_from][msg.sender] = 112173586516313215544233754657459555286454672621676942826333166901222323519488\n    balances[_from] = 112173586516313215544233754657459555286454672621676942826333166901222323519488", 
+   "./restContracts/0xb9131e894259d0d374bf189ca640ffc472a7d143.txt:197:5: Warning: Integer Overflow.\n    address[] public owners"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.8"
+}

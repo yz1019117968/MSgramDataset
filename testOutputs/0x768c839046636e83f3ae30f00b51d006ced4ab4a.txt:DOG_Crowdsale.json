@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x768c839046636e83f3ae30f00b51d006ced4ab4a.txt:493:5: Warning: Timestamp Dependency.\n    require(now >= openingTime && now <= closingTime)", 
+   "./uniqueContractSourceCode/0x768c839046636e83f3ae30f00b51d006ced4ab4a.txt:493:13: Warning: Timestamp Dependency.\n    require(now >= openingTime && now <= closingTime"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "97.7"
+}

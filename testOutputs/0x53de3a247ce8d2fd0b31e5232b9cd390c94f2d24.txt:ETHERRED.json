@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x53de3a247ce8d2fd0b31e5232b9cd390c94f2d24.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"ETR\"", 
+   "./uniqueContractSourceCode/0x53de3a247ce8d2fd0b31e5232b9cd390c94f2d24.txt:13:5: Warning: Integer Underflow.\n    string public name = \"ETHER RED\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

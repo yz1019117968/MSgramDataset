@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:695:5: Warning: Integer Overflow.\n    ICOAllocation[] public icoAllocation", 
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:803:44: Warning: Integer Overflow.\n        ICOAllocation storage allocation = icoAllocation[_id]\nInteger Overflow occurs if:\n    _id = 37\n    icoAllocation[_id] = 57896044618658097711785492504343953926634992332820282019728792003956564820007", 
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:699:5: Warning: Integer Overflow.\n    uint256[] public distributionThresholds", 
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:771:47: Warning: Integer Overflow.\n        PreICOAllocation storage allocation = preIcoAllocation[_id]\nInteger Overflow occurs if:\n    preIcoAllocation[_id] = 32\n    _id = 30", 
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:791:44: Warning: Integer Overflow.\n        ICOAllocation storage allocation = icoAllocation[_id]\nInteger Overflow occurs if:\n    icoAllocation[_id] = 32\n    _id = 30", 
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:759:47: Warning: Integer Overflow.\n        PreICOAllocation storage allocation = preIcoAllocation[_id]\nInteger Overflow occurs if:\n    preIcoAllocation[_id] = 32\n    _id = 30", 
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:823:24: Warning: Integer Overflow.\n        return uint256(distributionThresholds[_id]\nInteger Overflow occurs if:\n    distributionThresholds[_id] = 32\n    _id = 30", 
+   "./restContracts/0xa73a6a1371bb51f1f85becbc8784a8b0c10def95.txt:691:5: Warning: Integer Overflow.\n    PreICOAllocation[] public preIcoAllocation"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

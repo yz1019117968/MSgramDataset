@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7e66e6d17a5ffa489e5f6fd04c084b708897977b.txt:1495:5: Warning: Integer Overflow.\n    function clearKyc(address[] _addrs)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7e66e6d17a5ffa489e5f6fd04c084b708897977b.txt:1649:5: Warning: Integer Overflow.\n    function transferToMany(address[] _addrs, uint[] _amounts)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7e66e6d17a5ffa489e5f6fd04c084b708897977b.txt:239:13: Warning: Integer Overflow.\n        c = a + b\nInteger Overflow occurs if:\n    etherContributed[addr] = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    refunded = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    __abortFuse = 0\n    __reMutex = 0\n    balances[addr] = 0", 
+   "./restContracts/0x7e66e6d17a5ffa489e5f6fd04c084b708897977b.txt:1567:5: Warning: Integer Overflow.\n    function refundFor(address[] _addrs)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _addrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x7e66e6d17a5ffa489e5f6fd04c084b708897977b.txt:1627:17: Warning: Transaction-Ordering Dependency.\n                addr.transfer(value)"
+   ], 
+   [
+    "./restContracts/0x7e66e6d17a5ffa489e5f6fd04c084b708897977b.txt:1809:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "64.1"
+}

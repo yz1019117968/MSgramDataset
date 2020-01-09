@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x25926eff952bdcd3cb395a5614ab5094474b2dba.txt:153:9: Warning: Timestamp Dependency.\n        require(now>SelfDestructTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x25926eff952bdcd3cb395a5614ab5094474b2dba.txt:109:28: Warning: Integer Overflow.\n        uint prizeAmount = Bids[msg.sender]+PrizeFund\nInteger Overflow occurs if:\n    Bids[msg.sender] = 115792089237316195423570985008687907853269984665640564039457583972728757551103\n    EndTime = 0\n    PrizeFund = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    MaxOffer = 115792089237316195423570985008687907853269984665640564039457583972728757551103", 
+   "./uniqueContractSourceCode/0x25926eff952bdcd3cb395a5614ab5094474b2dba.txt:41:9: Warning: Integer Overflow.\n        PrizeFund+=msg.value\nInteger Overflow occurs if:\n    PrizeFund = 1", 
+   "./uniqueContractSourceCode/0x25926eff952bdcd3cb395a5614ab5094474b2dba.txt:79:9: Warning: Integer Overflow.\n        Bids[msg.sender]+=msg.value\nInteger Overflow occurs if:\n    Bids[msg.sender] = 1\n    EndTime = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

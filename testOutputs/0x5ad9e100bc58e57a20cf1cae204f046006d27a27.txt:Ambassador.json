@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x5ad9e100bc58e57a20cf1cae204f046006d27a27.txt:285:9: Warning: Timestamp Dependency.\n        if( now < endRC ) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x5ad9e100bc58e57a20cf1cae204f046006d27a27.txt:283:9: Warning: Timestamp Dependency.\n        require( now > startRC )"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5ad9e100bc58e57a20cf1cae204f046006d27a27.txt:183:5: Warning: Integer Overflow.\n    uint256[] public euroThreshold", 
+   "./uniqueContractSourceCode/0x5ad9e100bc58e57a20cf1cae204f046006d27a27.txt:185:5: Warning: Integer Overflow.\n    uint256[] public bonusThreshold", 
+   "./uniqueContractSourceCode/0x5ad9e100bc58e57a20cf1cae204f046006d27a27.txt:61:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balanceUser[msg.sender] = 94031613512600440915525076072369244485604370948452608390382093113697262108672\n    endRC = 77371252455336267181195265\n    startRC = 77371252455336267181195263"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.7"
+}

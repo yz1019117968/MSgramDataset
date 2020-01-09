@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:227:19: Warning: Integer Overflow.\n        url     = leaders[key].url", 
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:29:5: Warning: Integer Overflow.\n    mapping (address => Leader) public leaders", 
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:147:5: Warning: Integer Overflow.\n    function setUrls(string url, string img_url) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    url = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:207:18: Warning: Integer Overflow.\n        if (url) leader.url\nInteger Overflow occurs if:\n    url = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:209:22: Warning: Integer Overflow.\n        if (img_url) leader.img_url\nInteger Overflow occurs if:\n    img_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    url = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:5:1: Warning: Integer Underflow.\ncontract Etherboard {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    img_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    url = 0", 
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:29:5: Warning: Integer Underflow.\n    mapping (address => Leader) public leaders", 
+   "./uniqueContractSourceCode/0x323eb855d59f07db88c9ce18ec08939c7c45828b.txt:227:9: Warning: Integer Underflow.\n        url     = leaders[key].url\nInteger Underflow occurs if:\n    url = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "23.5"
+}

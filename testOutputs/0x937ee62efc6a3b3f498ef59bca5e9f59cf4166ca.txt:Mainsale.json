@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x937ee62efc6a3b3f498ef59bca5e9f59cf4166ca.txt:753:27: Warning: Integer Overflow.\n    Stage storage stage = stages[number]\nInteger Overflow occurs if:\n    stages.length = 32\n    owner = 0", 
+   "./restContracts/0x937ee62efc6a3b3f498ef59bca5e9f59cf4166ca.txt:775:27: Warning: Integer Overflow.\n    Stage storage stage = stages[number]\nInteger Overflow occurs if:\n    stages.length = 32\n    owner = 0", 
+   "./restContracts/0x937ee62efc6a3b3f498ef59bca5e9f59cf4166ca.txt:757:12: Warning: Integer Overflow.\n    delete stages[number]\nInteger Overflow occurs if:\n    stages.length = 32\n    totalHardcap = 0\n    owner = 0", 
+   "./restContracts/0x937ee62efc6a3b3f498ef59bca5e9f59cf4166ca.txt:707:3: Warning: Integer Overflow.\n  Stage[] public stages", 
+   "./restContracts/0x937ee62efc6a3b3f498ef59bca5e9f59cf4166ca.txt:781:5: Warning: Integer Overflow.\n    stage.price\nInteger Overflow occurs if:\n    stages.length = 115792089237316195423570985008687907853184914073910329423591740356055187587071\n    totalHardcap = 0\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.8"
+}

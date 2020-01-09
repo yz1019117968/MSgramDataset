@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5ba708a7d74e3f87b719c234231548d3de0cabad.txt:87:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    lastWagerTimeoutTimestamp = 0\n    prizePool = 1\n    wagerPool = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    gameStarted = 372682917519380244141939632342652170012262798458880", 
+   "./uniqueContractSourceCode/0x5ba708a7d74e3f87b719c234231548d3de0cabad.txt:1163:9: Warning: Integer Overflow.\n        SpiceUpPrizePool(gameIndex, msg.sender, msg.value, message, prizePool)\nInteger Overflow occurs if:\n    prizePool = 12333100880863922282125715613562361213333868498467712905561943429024790678603\n    lastWagerTimeoutTimestamp = 0\n    gameStarted = 372682917519380244141939632342652170012262798458880\n    gameIndex = 0\n    _gameIndex = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5ba708a7d74e3f87b719c234231548d3de0cabad.txt:1163:9: Warning: Integer Underflow.\n        SpiceUpPrizePool(gameIndex, msg.sender, msg.value, message, prizePool)\nInteger Underflow occurs if:\n    prizePool = 12333100880863922282125715613562361213333868498467712905561943429024790678603\n    lastWagerTimeoutTimestamp = 0\n    gameStarted = 372682917519380244141939632342652170012262798458880\n    gameIndex = 0\n    _gameIndex = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "83.2"
+}

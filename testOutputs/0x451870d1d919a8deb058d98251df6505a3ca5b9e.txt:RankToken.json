@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x451870d1d919a8deb058d98251df6505a3ca5b9e.txt:723:3: Warning: Integer Overflow.\n  function setTokenInformation(string _name, string _symbol) public onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x451870d1d919a8deb058d98251df6505a3ca5b9e.txt:671:3: Warning: Integer Underflow.\n  string public symbol = \"RANK\"", 
+   "./uniqueContractSourceCode/0x451870d1d919a8deb058d98251df6505a3ca5b9e.txt:669:3: Warning: Integer Underflow.\n  string public name = \"Rank Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.5"
+}

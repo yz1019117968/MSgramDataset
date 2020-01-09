@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa7fa7588cd7ebf3d0e128f07da7406dd74e241df.txt:57:9: Warning: Integer Overflow.\n        amount += msg.value\nInteger Overflow occurs if:\n    amount = 115792089237316195423570985008687907853269984665640564039457574007913127608320\n    end_block = 0\n    start_block = 0\n    hard_limit = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.5"
+}

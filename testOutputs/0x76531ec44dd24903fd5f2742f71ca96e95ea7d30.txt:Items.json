@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x76531ec44dd24903fd5f2742f71ca96e95ea7d30.txt:189:9: Warning: Integer Overflow.\n        Market[NextItemID] = ItemToAdd\nInteger Overflow occurs if:\n    howmuch = 251\n    price = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.0"
+}

@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2183:3: Warning: Integer Overflow.\n  address[] public reservedTokensDestinations", 
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2205:12: Warning: Integer Overflow.\n    return reservedTokensList[addr].inPercentage", 
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2435:3: Warning: Integer Overflow.\n  function setTokenInformation(string _name, string _symbol) onlyOwner {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2189:5: Warning: Integer Overflow.\n    reservedTokensDestinations.push(addr)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2181:3: Warning: Integer Overflow.\n  mapping (address => ReservedTokensData) public reservedTokensList", 
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2209:3: Warning: Integer Overflow.\n  function setReservedTokensListMultiple(address[] addrs, uint[] inTokens, uint[] inPercentage) onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2305:1: Warning: Integer Overflow.\ncontract CrowdsaleTokenExt is ReleasableToken, MintableTokenExt, UpgradeableToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2313:3: Warning: Integer Underflow.\n  string public symbol", 
+   "./uniqueContractSourceCode/0x5c4a7fe7b47007da7cb5a7d25cc9084755b49000.txt:2311:3: Warning: Integer Underflow.\n  string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.8"
+}

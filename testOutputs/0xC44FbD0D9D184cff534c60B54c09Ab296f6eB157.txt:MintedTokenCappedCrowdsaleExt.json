@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xC44FbD0D9D184cff534c60B54c09Ab296f6eB157.txt:1449:11: Warning: Integer Overflow.\n      if (whitelistedParticipants[i]\nInteger Overflow occurs if:\n    whitelistedParticipants.length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    whitelistedParticipants[i] = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xC44FbD0D9D184cff534c60B54c09Ab296f6eB157.txt:811:3: Warning: Integer Overflow.\n  address[] public joinedCrowdsales", 
+   "./restContracts/0xC44FbD0D9D184cff534c60B54c09Ab296f6eB157.txt:1529:3: Warning: Integer Overflow.\n  function updateJoinedCrowdsalesMultiple(address[] addrs) public onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xC44FbD0D9D184cff534c60B54c09Ab296f6eB157.txt:1375:3: Warning: Integer Overflow.\n  function setEarlyParticipantWhitelistMultiple(address[] addrs, bool[] statuses, uint[] minCaps, uint[] maxCaps) public onlyOwner {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xC44FbD0D9D184cff534c60B54c09Ab296f6eB157.txt:755:3: Warning: Integer Underflow.\n  string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "48.1"
+}

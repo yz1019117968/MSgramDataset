@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x07995e463F8957B70d683ADDd00a695ba83bb324.txt:149:2: Warning: Integer Overflow.\n\tfunction get(address, string) public constant returns (bytes32) {}", 
+   "./uniqueContractSourceCode/0x07995e463F8957B70d683ADDd00a695ba83bb324.txt:151:2: Warning: Integer Overflow.\n\tfunction getAddress(address, string) public constant returns (address) {}", 
+   "./uniqueContractSourceCode/0x07995e463F8957B70d683ADDd00a695ba83bb324.txt:153:2: Warning: Integer Overflow.\n\tfunction getUint(address, string) public constant returns (uint) {}"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.9"
+}

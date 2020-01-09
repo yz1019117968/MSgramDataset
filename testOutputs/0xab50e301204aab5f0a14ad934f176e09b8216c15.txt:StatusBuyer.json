@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0xab50e301204aab5f0a14ad934f176e09b8216c15.txt:239:5: Warning: Re-Entrancy Vulnerability.\n    sale.proxyPayment.value(this.balance - bounty)(address(this))"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0xab50e301204aab5f0a14ad934f176e09b8216c15.txt:173:5: Warning: Integer Overflow.\n    bounty += msg.value\nInteger Overflow occurs if:\n    bounty = 1", 
+   "./restContracts/0xab50e301204aab5f0a14ad934f176e09b8216c15.txt:279:7: Warning: Integer Overflow.\n      deposits[msg.sender] += msg.value\nInteger Overflow occurs if:\n    deposits[msg.sender] = 1\n    bought_tokens = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xab50e301204aab5f0a14ad934f176e09b8216c15.txt:247:25: Warning: Integer Underflow.\n    uint256 eth_spent = old_contract_eth_balance - this.balance\nInteger Underflow occurs if:\n    bounty = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xab50e301204aab5f0a14ad934f176e09b8216c15.txt:239:5: Warning: Transaction-Ordering Dependency.\n    sale.proxyPayment.value(this.balance - bounty)(address(this))"
+   ], 
+   [
+    "./restContracts/0xab50e301204aab5f0a14ad934f176e09b8216c15.txt:239:5: Warning: Transaction-Ordering Dependency.\n    sale.proxyPayment.value(this.balance - bounty)(address(this))"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.7"
+}

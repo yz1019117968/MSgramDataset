@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1e73b989cc113d2868d83cf598fc31ff5f5099cb.txt:213:43: Warning: Integer Overflow.\n    return (reputations[user].reputation, reputations[user].correct", 
+   "./uniqueContractSourceCode/0x1e73b989cc113d2868d83cf598fc31ff5f5099cb.txt:213:99: Warning: Integer Overflow.\n    return (reputations[user].reputation, reputations[user].correct, reputations[user].incorrect, reputations[user].lastUpdateDate", 
+   "./uniqueContractSourceCode/0x1e73b989cc113d2868d83cf598fc31ff5f5099cb.txt:233:3: Warning: Integer Overflow.\n  function updateReputation(\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    reputation = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1e73b989cc113d2868d83cf598fc31ff5f5099cb.txt:213:133: Warning: Integer Overflow.\n    return (reputations[user].reputation, reputations[user].correct, reputations[user].incorrect, reputations[user].lastUpdateDate, reputations[user].lastFormulaApplied", 
+   "./uniqueContractSourceCode/0x1e73b989cc113d2868d83cf598fc31ff5f5099cb.txt:213:70: Warning: Integer Overflow.\n    return (reputations[user].reputation, reputations[user].correct, reputations[user].incorrect"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1e73b989cc113d2868d83cf598fc31ff5f5099cb.txt:213:5: Warning: Integer Underflow.\n    return (reputations[user].reputation, reputations[user].correct, reputations[user].incorrect, reputations[user].lastUpdateDate, reputations[user].lastFormulaApplied)\nInteger Underflow occurs if:\n    return (reputations[user].reputation, reputations[user].correct, reputations[user].incorrect, reputations[user].lastUpdateDate, reputations[user].lastFormulaApplied) = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "21.8"
+}

@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:55:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    totalSupply = 0\n    stakeStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stakeMinAge = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    transferIns[_address][i].time = 6277101735386680763495507056286727952638980837032266301440\n    transferIns[msg.sender].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxTotalSupply = 1", 
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:617:29: Warning: Integer Overflow.\n            if( _now < uint(transferIns[_address][i]\nInteger Overflow occurs if:\n    stakeStartTime = 14762799303122481108\n    transferIns[msg.sender].length = 56539106072908298546665520023773392506479484700019806659891398441363832832\n    totalSupply = 0\n    stakeMaxAge = 7424160346329316586\n    stakeMinAge = 7421932186149846218\n    transferIns[_address][i].time = 2497209434287128184839016046831067009113172839588140417024\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxTotalSupply = 1", 
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:515:9: Warning: Integer Overflow.\n        balances[msg.sender] += AirdropReward\nInteger Overflow occurs if:\n    AirdropReward = 57896044618658097711785492504343953926634992332820282019710345259882855135038\n    balances[msg.sender] = 115792089237316195423570985008687907852844631706989352274502138080481238844802\n    AirRewardTotalSupply = 0\n    isAirdropAddress[msg.sender] = 0\n    AirRewardmaxTotalSupply = 1", 
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:235:1: Warning: Integer Overflow.\ncontract EthereumUnlimited is ERC20,PoSTokenStandard,Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    balances[_to] = 680564733841876926926749214863536422912\n    _value = 0\n    transferIns[_from].length = 57896044618658097711785492504343953926609144703832680040179170332336264567662\n    allowed[_from][msg.sender] = 0\n    balances[_from] = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:683:5: Warning: Integer Overflow.\n    function batchTransfer(address[] _recipients, uint[] _values) onlyOwner returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:517:6: Warning: Integer Overflow.\n\t    AirRewardTotalSupply += AirdropReward\nInteger Overflow occurs if:\n    AirdropReward = 57896044618658097711785492504343953926634992332820282019710345259882855135038\n    AirRewardTotalSupply = 115792089237316195423570985008687907852844631706989352274502138080481238844802\n    isAirdropAddress[msg.sender] = 0\n    AirRewardmaxTotalSupply = 115792089237316195423570985008687907852844631706989352274502138080481238844803"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:241:5: Warning: Integer Underflow.\n    string public name = \"Ethereum Unlimited\"", 
+   "./uniqueContractSourceCode/0x39e5bd6ae0f2aa9240d2ae7fbf49e36f05dd339f.txt:243:5: Warning: Integer Underflow.\n    string public symbol = \"ETHU\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.4"
+}

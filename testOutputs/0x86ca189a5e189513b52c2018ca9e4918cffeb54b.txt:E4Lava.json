@@ -1,0 +1,44 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:457:30: Warning: Re-Entrancy Vulnerability.\n                        if (!owner.call.gas(rwGas).value(this.balance)()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:897:42: Warning: Integer Overflow.\n                   uint _currentPoints = holderAccounts[_addr].currentPoints\nInteger Overflow occurs if:\n    holderAccounts[_addr].alloced = 255", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:651:27: Warning: Integer Overflow.\n                balance = holderAccounts[_owner].tokens", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:697:75: Warning: Integer Overflow.\n              holderAccounts[_acct].currentPoints += (TotalFeesReceived - holderAccounts[_acct].lastSnapshot\nInteger Overflow occurs if:\n    allowed[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holderAccounts[_from].tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    developers = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:697:113: Warning: Integer Overflow.\n              holderAccounts[_acct].currentPoints += (TotalFeesReceived - holderAccounts[_acct].lastSnapshot) * holderAccounts[_acct].tokens\nInteger Overflow occurs if:\n    allowed[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holderAccounts[_from].tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    developers = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:721:17: Warning: Integer Overflow.\n                TotalFeesReceived += msg.value\nInteger Overflow occurs if:\n    TotalFeesReceived = 1", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:441:33: Warning: Integer Overflow.\n                                holderAccounts[a].currentPoints\nInteger Overflow occurs if:\n    numAccounts = 10\n    settingsState = 0\n    holderIndexes[i] = 1461501637330902918203684832716283019655932542975\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    owner = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:697:15: Warning: Integer Overflow.\n              holderAccounts[_acct].currentPoints\nInteger Overflow occurs if:\n    allowed[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holderAccounts[_from].tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    developers = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:899:85: Warning: Integer Overflow.\n                        ((TotalFeesReceived - holderAccounts[_addr].lastSnapshot) * holderAccounts[_addr].tokens\nInteger Overflow occurs if:\n    holderAccounts[_addr].alloced = 255", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:443:33: Warning: Integer Overflow.\n                                holderAccounts[a].lastSnapshot\nInteger Overflow occurs if:\n    numAccounts = 10\n    settingsState = 0\n    holderIndexes[i] = 1461501637330902918203684832716283019655932542975\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    owner = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:719:17: Warning: Integer Overflow.\n                holdoverBalance += msg.value\nInteger Overflow occurs if:\n    holdoverBalance = 1", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:1007:27: Warning: Integer Overflow.\n                _points = holderAccounts[_addr].currentPoints", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:607:21: Warning: Integer Overflow.\n                if (holderAccounts[_from].tokens\nInteger Overflow occurs if:\n    developers = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:1003:27: Warning: Integer Overflow.\n                _tokens = holderAccounts[_addr].tokens", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:439:33: Warning: Integer Overflow.\n                                holderAccounts[a].tokens\nInteger Overflow occurs if:\n    numAccounts = 10\n    settingsState = 0\n    holderIndexes[i] = 1461501637330902918203684832716283019655932542975\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    holderIndexes[i] = 0\n    owner = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:1005:29: Warning: Integer Overflow.\n                _snapshot = holderAccounts[_addr].lastSnapshot", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:899:47: Warning: Integer Overflow.\n                        ((TotalFeesReceived - holderAccounts[_addr].lastSnapshot\nInteger Overflow occurs if:\n    holderAccounts[_addr].alloced = 255", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:549:21: Warning: Integer Overflow.\n                if (holderAccounts[msg.sender].tokens\nInteger Overflow occurs if:\n    developers = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:313:9: Warning: Integer Underflow.\n        string public symbol", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:697:55: Warning: Integer Underflow.\n              holderAccounts[_acct].currentPoints += (TotalFeesReceived - holderAccounts[_acct].lastSnapshot\nInteger Underflow occurs if:\n    TotalFeesReceived = 0\n    holderAccounts[_acct].lastSnapshot = 1\n    allowed[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    holderAccounts[_from].tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    developers = 0", 
+   "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:899:27: Warning: Integer Underflow.\n                        ((TotalFeesReceived - holderAccounts[_addr].lastSnapshot\nInteger Underflow occurs if:\n    TotalFeesReceived = 0\n    holderAccounts[_addr].lastSnapshot = 1\n    holderAccounts[_addr].alloced = 255"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:457:30: Warning: Transaction-Ordering Dependency.\n                        if (!owner.call.gas(rwGas).value(this.balance)()"
+   ], 
+   [
+    "./restContracts/0x86ca189a5e189513b52c2018ca9e4918cffeb54b.txt:457:30: Warning: Transaction-Ordering Dependency.\n                        if (!owner.call.gas(rwGas).value(this.balance)()"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.5"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5854f05e13d2e87bdea5335c4b1156d727c1e676.txt:79:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    ico = 0\n    balances[this] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    tokenState = 95406826884961342500336545879718955523139276405473280"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5854f05e13d2e87bdea5335c4b1156d727c1e676.txt:155:5: Warning: Integer Underflow.\n    string public symbol = \"DDD\"", 
+   "./uniqueContractSourceCode/0x5854f05e13d2e87bdea5335c4b1156d727c1e676.txt:153:5: Warning: Integer Underflow.\n    string public name = \"DropDeck\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.1"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc4575b61286053c0ac362f70cdaa17becd90aacb.txt:677:25: Warning: Integer Underflow.\n        uint256 _day = (now - startBlock\nInteger Underflow occurs if:\n    started = 1461501637330902918203684832716283019655932542976\n    startBlock = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.2"
+}

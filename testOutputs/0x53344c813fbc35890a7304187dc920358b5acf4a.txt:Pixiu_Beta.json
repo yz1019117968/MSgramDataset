@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:953:9: Warning: Integer Overflow.\n        members[msg.sender].withdraw\nInteger Overflow occurs if:\n    members[msg.sender].dividend = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    members[msg.sender].withdraw = 0\n    members[msg.sender].isExists = 8388736\n    isWithdrawable = 65280", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:383:2: Warning: Integer Overflow.\n\tmapping (address => Member) public members", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:51:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 94081072505319428064907980419453110058465196176188788072430956560702876136828\n    _value = 57896044618658406243889870410726622959457708819736603062141355578937581764608\n    allowed[_from][msg.sender] = 57896044618658406243889870410726622959457708819736603062141355578937581764608\n    isPayable = 255\n    _from = 1461501637330902918203684832716283019655932542975\n    deposit_address = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:387:5: Warning: Integer Overflow.\n    address[] public memberArray", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:379:5: Warning: Integer Overflow.\n    exchangeRate[] public exchangeRateArray", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:1113:14: Warning: Integer Overflow.\n             deposit_amount += msg.value\nInteger Overflow occurs if:\n    deposit_amount = 96943655105911162741802056509404709410348723981800351264466039153235703480681\n    deposit_address = 0\n    isPayable = 255\n    min_pay_wei = 31769636791936532929661760715285583354076941682947407161600322099437000056172", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:1035:4: Warning: Integer Overflow.\n\t\t\tmemberArray.push(_to)\nInteger Overflow occurs if:\n    balances[_to] = 43863413946373679788912701092727818559884303025868817347787477804997522938785\n    _value = 36190632104665292862034961949088691625060837226655192873741527527453396738564\n    memberArray.push(_to) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[_to].isExists = 0\n    balances[msg.sender] = 36190632104665292862034961949088691625060837226655192873741527527453396738564\n    isPayable = 255\n    deposit_address = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:1077:4: Warning: Integer Overflow.\n\t\t\tmemberArray.push(_to)\nInteger Overflow occurs if:\n    balances[_to] = 46051101657100501394629572781090621324964648790473627641054406070427273300041\n    _value = 64454581142138801784915334437474320284769447924155155946150495990921558731889\n    memberArray.push(_to) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[_to].isExists = 0\n    balances[_from] = 64454581142138801784915334437474320284769447924155155946150495990921558731889\n    allowed[_from][msg.sender] = 64454581142138801784915334437474320284769447924155155946150495990921558731889\n    isPayable = 255\n    _from = 1461501637330902918203684832716283019655932542975\n    deposit_address = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:953:9: Warning: Integer Overflow.\n        members[msg.sender].withdraw += _remain\nInteger Overflow occurs if:\n    members[msg.sender].dividend = 1140850688\n    members[msg.sender].withdraw = 2147483648\n    members[msg.sender].isExists = 8388736\n    isWithdrawable = 65280", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:331:1: Warning: Integer Overflow.\ncontract Pixiu_Beta is StandardToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    memberArray.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    min_pay_wei = 0\n    members[msg.sender].isExists = 0\n    deposit_address = 0\n    isPayable = 255\n    exchangeRateArray.length = 0", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:1135:17: Warning: Integer Overflow.\n                memberArray.push(msg.sender)\nInteger Overflow occurs if:\n    min_pay_wei = 0\n    memberArray.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    members[msg.sender].isExists = 0\n    deposit_address = 0\n    isPayable = 255\n    exchangeRateArray.length = 0", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:385:5: Warning: Integer Overflow.\n    address[] public adminArray", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:663:5: Warning: Integer Overflow.\n    function admin_set_exchange_rate(uint[] exchangeRates) onlyAdmin{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    exchangeRates = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:927:21: Warning: Integer Overflow.\n        _withdraw = members[_member].withdraw", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:925:21: Warning: Integer Overflow.\n        _devidend = members[_member].dividend"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:929:19: Warning: Integer Underflow.\n        _remain = _devidend - _withdraw\nInteger Underflow occurs if:\n    members[_member].dividend = 0\n    members[_member].withdraw = 1", 
+   "./uniqueContractSourceCode/0x53344c813fbc35890a7304187dc920358b5acf4a.txt:907:25: Warning: Integer Underflow.\n        _total_remain = total_devidend - total_withdraw\nInteger Underflow occurs if:\n    total_devidend = 0\n    total_withdraw = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.8"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x74303d9d085a0d647ef47f9c0c424c73f3bfa6ca.txt:309:3: Warning: Integer Underflow.\n  string public symbol = \"MIAMI\"", 
+   "./uniqueContractSourceCode/0x74303d9d085a0d647ef47f9c0c424c73f3bfa6ca.txt:307:3: Warning: Integer Underflow.\n  string public name = \"MIAMI\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

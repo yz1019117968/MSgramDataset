@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x12b306fa98f4cbb8d4457fdff3a0a0a56f07ccdf.txt:1127:16: Warning: Integer Overflow.\n        return checkpoints[min]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 2\n    totalSupplyHistory[0].fromBlock = 21309186309904059371387855823557361663", 
+   "./uniqueContractSourceCode/0x12b306fa98f4cbb8d4457fdff3a0a0a56f07ccdf.txt:1115:17: Warning: Integer Overflow.\n            if (checkpoints[mid]\nInteger Overflow occurs if:\n    totalSupplyHistory.length = 12259964326927110866866776217202473468949912977468817408\n    totalSupplyHistory[0].fromBlock = 0", 
+   "./uniqueContractSourceCode/0x12b306fa98f4cbb8d4457fdff3a0a0a56f07ccdf.txt:927:5: Warning: Integer Overflow.\n    function createCloneToken(\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x12b306fa98f4cbb8d4457fdff3a0a0a56f07ccdf.txt:327:5: Warning: Integer Underflow.\n    string public version = 'MMT_0.1'", 
+   "./uniqueContractSourceCode/0x12b306fa98f4cbb8d4457fdff3a0a0a56f07ccdf.txt:325:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x12b306fa98f4cbb8d4457fdff3a0a0a56f07ccdf.txt:321:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "40.0"
+}

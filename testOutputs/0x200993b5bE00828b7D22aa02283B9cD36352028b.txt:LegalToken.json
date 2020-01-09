@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2599:13: Warning: Integer Overflow.\n    value = grant.value\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2263:3: Warning: Integer Overflow.\n  mapping (address => TokenGrant[]) public grants", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2373:24: Warning: Integer Overflow.\n    address receiver = grant.burnsOnRevoke\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2603:13: Warning: Integer Overflow.\n    cliff = grant.cliff\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2601:13: Warning: Integer Overflow.\n    start = grant.start\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2609:21: Warning: Integer Overflow.\n    burnsOnRevoke = grant.burnsOnRevoke\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2593:32: Warning: Integer Overflow.\n    TokenGrant storage grant = grants[_holder][_grantId]\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:109:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _value = 88409867174462835783634769239707059024179214697228683382189751174560517983297\n    balances[_to] = 115791604506874127092225986996011350166176224025844446342472408867955874726021\n    intervalDuration = 9007199254740992\n    _to = 1461501637330902918203684832716283019655932542975\n    balances[_owner] = 88409867174462835783634769239707059024179214697228683382189751174560517983297\n    released = 1095216660480\n    grants[_holder].length = 0", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2605:15: Warning: Integer Overflow.\n    vesting = grant.vesting\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2691:25: Warning: Integer Overflow.\n      date = Math.max64(grants[holder][i].vesting\nInteger Overflow occurs if:\n    grants[holder].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2691:25: Warning: Integer Overflow.\n      date = Math.max64(grants[holder][i]\nInteger Overflow occurs if:\n    grants[holder].length = 115791205813783806231406193359937536394012070923692126229978523204812483330047\n    grants[holder][i].vesting = 0", 
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:2607:17: Warning: Integer Overflow.\n    revokable = grant.revokable\nInteger Overflow occurs if:\n    grants[_holder][_grantId] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x200993b5bE00828b7D22aa02283B9cD36352028b.txt:305:37: Warning: Integer Underflow.\n        uint64 requiredIntervals = (currentTime - lastUpdate\nInteger Underflow occurs if:\n    lastUpdate = 26959946667150639791744011812357824837229774757108006441791745163264\n    released = 1095216660480"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.7"
+}

@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1748255382157bc5d4ed7e70c56afc5c97bddf07.txt:45:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1748255382157bc5d4ed7e70c56afc5c97bddf07.txt:581:34: Warning: Integer Underflow.\n            uint256 santasGift = MaxSantaRewardPerToken-NorthPoleAF\nInteger Underflow occurs if:\n    MaxSantaRewardPerToken = 9007199254740992\n    NorthPoleAF = 9007199254740993\n    NorthPoleMintingEnabled = 0\n    balances[holderAddress] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1748255382157bc5d4ed7e70c56afc5c97bddf07.txt:413:51: Warning: Integer Underflow.\n        return (uint256(keccak256(block.blockhash(block.number-min\nInteger Underflow occurs if:\n    minimumSantaCoinContribution = 1\n    santaCoinMinterLowerBound = 1\n    NorthPoleMintingEnabled = 1", 
+   "./uniqueContractSourceCode/0x1748255382157bc5d4ed7e70c56afc5c97bddf07.txt:579:13: Warning: Integer Underflow.\n            totalSupply -= 1\nInteger Underflow occurs if:\n    totalSupply = 0\n    MaxSantaRewardPerToken = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    NorthPoleMintingEnabled = 0\n    balances[holderAddress] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.6"
+}

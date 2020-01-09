@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3324d52c43952d53cf28b421c813efdc9c85af55.txt:977:9: Warning: Integer Overflow.\n        balances[msg.sender] += amount\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    balances[currentAddress] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    roots[msg.sender] = 1", 
+   "./uniqueContractSourceCode/0x3324d52c43952d53cf28b421c813efdc9c85af55.txt:875:13: Warning: Integer Overflow.\n            total += balanceOf(address(keccak256(toKey(_addr, release))))\nInteger Overflow occurs if:\n    balances[_owner] = 1\n    balances[_owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    chains[toKey(_addr, release)] = 18446744073709551615\n    roots[_addr] = 18446744073709551615"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.5"
+}

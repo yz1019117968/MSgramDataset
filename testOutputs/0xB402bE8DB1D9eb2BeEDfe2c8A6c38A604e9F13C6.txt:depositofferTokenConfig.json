@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xB402bE8DB1D9eb2BeEDfe2c8A6c38A604e9F13C6.txt:65:5: Warning: Integer Underflow.\n    string public           symbol          = \"DOT\"", 
+   "./restContracts/0xB402bE8DB1D9eb2BeEDfe2c8A6c38A604e9F13C6.txt:63:5: Warning: Integer Underflow.\n    string public           name            = \"depositoffer network\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.4"
+}

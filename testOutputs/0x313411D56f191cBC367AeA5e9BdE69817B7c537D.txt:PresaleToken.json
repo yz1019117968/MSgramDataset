@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:415:13: Warning: Timestamp Dependency.\n            if (isIcoOver()) {\r\n            ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:435:16: Warning: Timestamp Dependency.\n        assert(isIcoOver() && !isIcoSuccessful()"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:241:5: Warning: Integer Overflow.\n    address[] public addressList", 
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:215:16: Warning: Integer Overflow.\n        assert(ethBalances[_buyer] + ethValue\nInteger Overflow occurs if:\n    currentState = 1\n    ethBalances[_buyer] = 57896044676161899972031171744614118241349137500238963630350373044853757796675\n    totalSupply = 62419212197466551912314011644512371464196527148857529894992656255543167528768\n    icoDeadline = 1", 
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:373:92: Warning: Integer Overflow.\n        uint afterLast = nextInListToReturn + transfersPerIteration < addressList.length ? nextInListToReturn + transfersPerIteration\nInteger Overflow occurs if:\n    nextInListToReturn = 115792089237316195423570985008687907853269984665640564039457584007913129639910\n    addressList.length = 25\n    icoDeadline = 0\n    totalSupply = 159999999999999999999999", 
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:161:16: Warning: Integer Overflow.\n        assert(bountySupply + _amount\nInteger Overflow occurs if:\n    bountySupply = 1\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _user = 1461501637330902918203684832716283019655932542975\n    tokenManager = 0", 
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:373:26: Warning: Integer Overflow.\n        uint afterLast = nextInListToReturn + transfersPerIteration\nInteger Overflow occurs if:\n    nextInListToReturn = 115792089237316195423570985008687907853269984665640564039457584007913129639894\n    icoDeadline = 0\n    totalSupply = 159999999999999999999999", 
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:379:35: Warning: Integer Overflow.\n            address currentUser = addressList[i]\nInteger Overflow occurs if:\n    nextInListToReturn = 22835957638777487361917160097198203265242628094\n    addressList.length = 22835963083295358096932575511191922182123945984\n    icoDeadline = 0\n    totalSupply = 159999999999999999999999"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:277:9: Warning: Integer Underflow.\n        totalSupply -= tokens\nInteger Underflow occurs if:\n    currentState = 3\n    balances[_owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    crowdsaleManager = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:443:13: Warning: Transaction-Ordering Dependency.\n            _user.transfer(ethBalances[_user])"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x313411D56f191cBC367AeA5e9BdE69817B7c537D.txt:443:13: Warning: Transaction-Ordering Dependency.\n            _user.transfer(ethBalances[_user])"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.3"
+}

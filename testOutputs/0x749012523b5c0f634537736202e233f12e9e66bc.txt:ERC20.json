@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:227:5: Warning: Integer Overflow.\n    function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:175:16: Warning: Integer Underflow.\n        return _totalSupply  - balances[address(0)]\nInteger Underflow occurs if:\n    _totalSupply = 0\n    balances[address(0)] = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:261:9: Warning: Transaction-Ordering Dependency.\n        ceoAddress.transfer(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:261:9: Warning: Transaction-Ordering Dependency.\n        ceoAddress.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.8"
+}

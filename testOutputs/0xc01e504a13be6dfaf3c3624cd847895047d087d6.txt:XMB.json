@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:203:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:595:41: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance=needLockBalance.add(epochs[i]\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:653:14: Warning: Integer Overflow.\n\t\t\tif( now < epochs[i]\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:591:14: Warning: Integer Overflow.\n\t\t\tif( now < epochs[i]\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:595:41: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance=needLockBalance.add(epochs[i].amount\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:213:1: Warning: Integer Overflow.\ncontract XMB is ERC20,Ownable{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    totalSupply = 11099268513333954488696832\n    stepTwoEndTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stepTwoStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    stepOneStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:657:43: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance = needLockBalance.add(epochs[i].amount\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:657:43: Warning: Integer Overflow.\n\t\t\t\tneedLockBalance = needLockBalance.add(epochs[i]\nInteger Overflow occurs if:\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:469:4: Warning: Integer Overflow.\n\t\t epochs.push(epoch(endTime,amount))\nInteger Overflow occurs if:\n    totalSupply = 4644598706077697\n    stepTwoEndTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stepTwoStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    stepOneStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xc01e504a13be6dfaf3c3624cd847895047d087d6.txt:309:2: Warning: Integer Overflow.\n\tmapping(address=>epoch[]) public lockEpochsMap"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.6"
+}

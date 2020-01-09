@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x560da6e7f219e37a094342b3a56ea27bfa6798be.txt:311:13: Warning: Callstack Depth Attack Vulnerability.\n        if(!_spender.call(bytes4(bytes32(sha3(\"receiveApproval(address,uint256,address,bytes)\"))), msg.sender, _value, this, _extraData)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x560da6e7f219e37a094342b3a56ea27bfa6798be.txt:297:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x560da6e7f219e37a094342b3a56ea27bfa6798be.txt:155:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x560da6e7f219e37a094342b3a56ea27bfa6798be.txt:261:5: Warning: Integer Underflow.\n    string public version = 'H1.0'", 
+   "./uniqueContractSourceCode/0x560da6e7f219e37a094342b3a56ea27bfa6798be.txt:255:5: Warning: Integer Underflow.\n    string public name = 'FarmCoin'", 
+   "./uniqueContractSourceCode/0x560da6e7f219e37a094342b3a56ea27bfa6798be.txt:259:5: Warning: Integer Underflow.\n    string public symbol = 'FARM'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.3"
+}

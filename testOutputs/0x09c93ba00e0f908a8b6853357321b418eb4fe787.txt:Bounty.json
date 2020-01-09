@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x09c93ba00e0f908a8b6853357321b418eb4fe787.txt:509:13: Warning: Integer Underflow.\n            bountyTotal -= amount\nInteger Underflow occurs if:\n    bounties[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    bountyTotal = 115792089237316195423570985008687907853269984665640564039457584007913129639934"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.6"
+}

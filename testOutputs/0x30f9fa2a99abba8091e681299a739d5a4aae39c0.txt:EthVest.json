@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x30f9fa2a99abba8091e681299a739d5a4aae39c0.txt:45:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x30f9fa2a99abba8091e681299a739d5a4aae39c0.txt:633:9: Warning: Integer Overflow.\n        _investment.date\nInteger Overflow occurs if:\n    stopped = 95406826884961342500336545879718955523139276405473280", 
+   "./uniqueContractSourceCode/0x30f9fa2a99abba8091e681299a739d5a4aae39c0.txt:551:36: Warning: Integer Overflow.\n        return (_investment.value, _investment.date", 
+   "./uniqueContractSourceCode/0x30f9fa2a99abba8091e681299a739d5a4aae39c0.txt:513:5: Warning: Integer Overflow.\n    mapping(address => Investment) public investments"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x30f9fa2a99abba8091e681299a739d5a4aae39c0.txt:493:5: Warning: Integer Underflow.\n    string public name = \"EthVest\"", 
+   "./uniqueContractSourceCode/0x30f9fa2a99abba8091e681299a739d5a4aae39c0.txt:497:5: Warning: Integer Underflow.\n    string public symbol = \"VST\"", 
+   "./uniqueContractSourceCode/0x30f9fa2a99abba8091e681299a739d5a4aae39c0.txt:499:5: Warning: Integer Underflow.\n    string public version = \"1\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "69.3"
+}

@@ -1,0 +1,34 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:369:5: Warning: Integer Overflow.\n    function setABI(bytes32 node, uint256 contentType, bytes data) only_owner(node) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:399:41: Warning: Integer Overflow.\n        return (records[node].pubkey.x, records[node].pubkey.y", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:337:54: Warning: Integer Overflow.\n            if ((contentType & contentTypes) != 0 && record.abis\nInteger Overflow occurs if:\n    contentTypes = 512", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:399:17: Warning: Integer Overflow.\n        return (records[node].pubkey", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:265:9: Warning: Integer Overflow.\n        records[node].content", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:287:15: Warning: Integer Overflow.\n        ret = records[node].name", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:399:41: Warning: Integer Overflow.\n        return (records[node].pubkey.x, records[node].pubkey", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:241:15: Warning: Integer Overflow.\n        ret = records[node].content", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:339:24: Warning: Integer Overflow.\n                data = record.abis\nInteger Overflow occurs if:\n    contentTypes = 512", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:419:9: Warning: Integer Overflow.\n        records[node].pubkey = PublicKey(x, y)", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:483:16: Warning: Integer Overflow.\n        return records[node].mx", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:439:5: Warning: Integer Overflow.\n    function text(bytes32 node, string key) constant returns (string ret) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    key = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:503:9: Warning: Integer Overflow.\n        records[node].mx", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:461:5: Warning: Integer Overflow.\n    function setText(bytes32 node, string key, string value) only_owner(node) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    key = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:419:9: Warning: Integer Overflow.\n        records[node].pubkey", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:305:5: Warning: Integer Overflow.\n    function setName(bytes32 node, string name) only_owner(node) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:287:9: Warning: Integer Underflow.\n        ret = records[node].name", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:339:17: Warning: Integer Underflow.\n                data = record.abis[contentType]\nInteger Underflow occurs if:\n    contentTypes = 512", 
+   "./restContracts/0x7d8ecd4387af5024d60ef6fe79148d0e11a5b7ed.txt:337:54: Warning: Integer Underflow.\n            if ((contentType & contentTypes) != 0 && record.abis[contentType].length\nInteger Underflow occurs if:\n    contentTypes = 512"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "51.3"
+}

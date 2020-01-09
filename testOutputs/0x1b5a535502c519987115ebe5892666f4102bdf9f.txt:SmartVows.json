@@ -1,0 +1,44 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:503:5: Warning: Integer Overflow.\n    function updateCoupleImageIPFShash(bytes _coupleImageIPFShash) public{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _coupleImageIPFShash = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:559:5: Warning: Integer Overflow.\n    function updatePartner2_will(string _partner2_will) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _partner2_will = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:527:5: Warning: Integer Overflow.\n    function updatePrenup(string _prenupAgreement) public{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _prenupAgreement = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:249:5: Warning: Integer Overflow.\n    Event[] public lifeEvents", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:405:5: Warning: Integer Overflow.\n    function updateMaritalStatus(string _maritalStatus) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _maritalStatus = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:277:5: Warning: Integer Overflow.\n    contractEvent[] public contractEvents", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:135:1: Warning: Integer Overflow.\ncontract SmartVows is Ownable, Util {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    contractEvents.push(contractEvent(block.timestamp, description, mesg)) = 71035195276905978830841378541667856625157632706140231142381185849046086175071\n    partner1_address = 0", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:545:5: Warning: Integer Overflow.\n    function updatePartner1_will(string _partner1_will) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _partner1_will = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:341:5: Warning: Integer Overflow.\n    function addLifeEvent(string name, string description, string mesg) public{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:515:5: Warning: Integer Overflow.\n    function updateMarriageLicenceImageIPFShash(bytes _marriageLicenceImageIPFShash) public{\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _marriageLicenceImageIPFShash = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:367:9: Warning: Integer Overflow.\n        contractEvents.push(contractEvent(block.timestamp, description, mesg))\nInteger Overflow occurs if:\n    contractEvents.push(contractEvent(block.timestamp, description, mesg)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    partner1_address = 0", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:381:5: Warning: Integer Overflow.\n    function updatePartner1_vows(string _partner1_vows) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _partner1_vows = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:393:5: Warning: Integer Overflow.\n    function updatePartner2_vows(string _partner2_vows) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _partner2_vows = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:177:5: Warning: Integer Underflow.\n    bytes public coupleImageIPFShash", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:143:5: Warning: Integer Underflow.\n    string public partner2_name", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:141:5: Warning: Integer Underflow.\n    string public partner1_name", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:195:5: Warning: Integer Underflow.\n    string public partner1_will", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:197:5: Warning: Integer Underflow.\n    string public partner2_will", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:239:5: Warning: Integer Underflow.\n    string public witnesses", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:171:5: Warning: Integer Underflow.\n    string public maritalStatus", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:245:5: Warning: Integer Underflow.\n    string public location", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:157:5: Warning: Integer Underflow.\n    string public partner1_vows", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:277:5: Warning: Integer Underflow.\n    contractEvent[] public contractEvents", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:183:5: Warning: Integer Underflow.\n    bytes public marriageLicenceImageIPFShash", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:165:5: Warning: Integer Underflow.\n    string public marriageDate", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:249:5: Warning: Integer Underflow.\n    Event[] public lifeEvents", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:189:5: Warning: Integer Underflow.\n    string public prenupAgreement", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:233:5: Warning: Integer Underflow.\n    string public officiant", 
+   "./uniqueContractSourceCode/0x1b5a535502c519987115ebe5892666f4102bdf9f.txt:159:5: Warning: Integer Underflow.\n    string public partner2_vows"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "24.6"
+}

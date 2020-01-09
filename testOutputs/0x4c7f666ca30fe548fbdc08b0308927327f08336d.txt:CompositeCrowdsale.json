@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4c7f666ca30fe548fbdc08b0308927327f08336d.txt:1585:12: Warning: Timestamp Dependency.\n    return withinPeriod && nonZeroPurchase", 
+   "./uniqueContractSourceCode/0x4c7f666ca30fe548fbdc08b0308927327f08336d.txt:1581:25: Warning: Timestamp Dependency.\n    bool withinPeriod = now >= startTime && now <= endTime"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4c7f666ca30fe548fbdc08b0308927327f08336d.txt:1395:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    weiRaised = 89441541128781016767142973959400142541504689303939942133021960946669071077376\n    endTime = 0\n    startTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.5"
+}

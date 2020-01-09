@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:257:9: Warning: Integer Overflow.\n        ownerPlayersCount[_to]++\nInteger Overflow occurs if:\n    ownerPlayersCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _from = 1461501637330902918203684832716283019655932542975\n    playerOwners[_tokenId] = 1461501637330902918203684832716283019655932542975\n    playerApproved[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:195:5: Warning: Integer Overflow.\n    Player[] public players", 
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:359:32: Warning: Integer Overflow.\n        Player memory player = players[_playerId]\nInteger Overflow occurs if:\n    _playerId = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    players[_playerId] = 14474011154664524427946373126085988481658748083205070504932198000989141204993", 
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:163:1: Warning: Integer Overflow.\ncontract PlayerToken is ERC721, FMWorldAccessControl {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    cooAddress = 0", 
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:409:31: Warning: Integer Overflow.\n        uint256 newPlayerId = players.push(player)\nInteger Overflow occurs if:\n    cooAddress = 0", 
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:383:32: Warning: Integer Overflow.\n        Player memory player = players[_playerId]\nInteger Overflow occurs if:\n    _playerId = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    players[_playerId] = 14474011154664524427946373126085988481658748083205070504932198000989141204993"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:263:13: Warning: Integer Underflow.\n            ownerPlayersCount[_from]--\nInteger Underflow occurs if:\n    ownerPlayersCount[_from] = 0\n    _from = 1461501637330902918203684832716283019655932542975\n    playerOwners[_tokenId] = 1461501637330902918203684832716283019655932542975\n    playerApproved[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:189:5: Warning: Integer Underflow.\n    string public name = \"Football Manager Player\"", 
+   "./uniqueContractSourceCode/0x4409016e65eb770152316bcdd3f95c8329b4f7c7.txt:191:5: Warning: Integer Underflow.\n    string public symbol = \"FMP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.0"
+}

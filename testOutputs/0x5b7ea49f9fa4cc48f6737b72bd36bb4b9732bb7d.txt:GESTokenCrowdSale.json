@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5b7ea49f9fa4cc48f6737b72bd36bb4b9732bb7d.txt:725:3: Warning: Integer Overflow.\n  AmountBonus[] public amountBonuses"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5b7ea49f9fa4cc48f6737b72bd36bb4b9732bb7d.txt:951:5: Warning: Transaction-Ordering Dependency.\n    wallet.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5b7ea49f9fa4cc48f6737b72bd36bb4b9732bb7d.txt:1019:5: Warning: Transaction-Ordering Dependency.\n    wallet.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "39.0"
+}

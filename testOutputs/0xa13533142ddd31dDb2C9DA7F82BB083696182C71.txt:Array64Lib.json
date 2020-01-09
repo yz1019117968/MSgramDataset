@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa13533142ddd31dDb2C9DA7F82BB083696182C71.txt:295:13: Warning: Integer Overflow.\n        if (self[i]\nInteger Overflow occurs if:\n    self[i] = 0\n    self.length = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    value = 9223372036854775808\n    isSorted = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa13533142ddd31dDb2C9DA7F82BB083696182C71.txt:261:24: Warning: Integer Underflow.\n        uint256 high = self.length - 1\nInteger Underflow occurs if:\n    self.length = 0\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa13533142ddd31dDb2C9DA7F82BB083696182C71.txt:321:17: Warning: Integer Underflow.\n    uint256 i = index - 1\nInteger Underflow occurs if:\n    self.length = 1", 
+   "./restContracts/0xa13533142ddd31dDb2C9DA7F82BB083696182C71.txt:351:19: Warning: Integer Underflow.\n    uint256 end = self.length - 1\nInteger Underflow occurs if:\n    self.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "39.9"
+}

@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xac91f7764a3eee9476d2f1c622df7c8e7afe1325.txt:331:27: Warning: Integer Underflow.\n    bool astrAvailable = (ALLOC_CROWDSALE - astrSold\nInteger Underflow occurs if:\n    astrSold = 1\n    ALLOC_CROWDSALE = 0\n    startTime = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.6"
+}

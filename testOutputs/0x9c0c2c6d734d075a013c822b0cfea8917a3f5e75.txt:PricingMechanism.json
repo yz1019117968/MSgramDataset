@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9c0c2c6d734d075a013c822b0cfea8917a3f5e75.txt:255:9: Warning: Integer Overflow.\n        priceList.push(PriceTier(uint(safeDiv(1 ether, 100 * factor)),0,5000 ether))\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x9c0c2c6d734d075a013c822b0cfea8917a3f5e75.txt:227:1: Warning: Integer Overflow.\ncontract PricingMechanism is Haltable, SafeMath{\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x9c0c2c6d734d075a013c822b0cfea8917a3f5e75.txt:231:5: Warning: Integer Overflow.\n    PriceTier[] public priceList"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.2"
+}

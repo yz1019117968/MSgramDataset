@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9e3f0fc2a9ea1ec8d9e51a7a34c20b777021b030.txt:319:3: Warning: Integer Underflow.\n  string public   symbol =         \"WIN\"", 
+   "./restContracts/0x9e3f0fc2a9ea1ec8d9e51a7a34c20b777021b030.txt:317:3: Warning: Integer Underflow.\n  string public   name =           \"Winsome.io Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.0"
+}

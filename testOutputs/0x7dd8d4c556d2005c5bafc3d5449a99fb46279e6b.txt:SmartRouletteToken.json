@@ -1,0 +1,37 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:611:6: Warning: Integer Overflow.\n\t\tif(_balances[player].init\nInteger Overflow occurs if:\n    costOfOneToken = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    value_bet = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    player = 1461501637330902918203684832716283019655932542975\n    listGames[msg.sender].init = 255\n    stop_operation = 0", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:725:6: Warning: Integer Overflow.\n\t\tif(_temp_balance[who].end_date", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:345:7: Warning: Integer Overflow.\n\t\tif(!_balances[user].init\nInteger Overflow occurs if:\n    _balances[player].init = 0\n    costOfOneToken = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    value_bet = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    player = 1461501637330902918203684832716283019655932542975\n    listGames[msg.sender].init = 255\n    stop_operation = 0", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:5:1: Warning: Integer Overflow.\ncontract SmartRouletteToken {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _balances[player].init = 0\n    costOfOneToken = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    value_bet = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    player = 1461501637330902918203684832716283019655932542975\n    listGames[msg.sender].init = 255\n    stop_operation = 0", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:771:15: Warning: Integer Overflow.\n\t\telse return listAddrTempHolders[index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    listAddrTempHolders.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:959:15: Warning: Integer Overflow.\n\t\telse return listAddrHolders[index]\nInteger Overflow occurs if:\n    index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    listAddrHolders.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:347:4: Warning: Integer Overflow.\n\t\t\tlistAddrHolders.push(user)\nInteger Overflow occurs if:\n    _balances[player].init = 0\n    costOfOneToken = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    value_bet = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    player = 1461501637330902918203684832716283019655932542975\n    listGames[msg.sender].init = 255\n    stop_operation = 0", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:285:3: Warning: Integer Overflow.\n\t\taddrGames.push(new_game)\nInteger Overflow occurs if:\n    addrGames.push(new_game) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    new_game = 1461501637330902918203684832716283019655932542975\n    manager = 0", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:745:3: Warning: Integer Overflow.\n\t\t_temp_balance[recipient] = tempHolderData(0, 0, 0)\nInteger Overflow occurs if:\n    _temp_balance[recipient].tokens_count = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    stop_operation = 255\n    manager = 0", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:727:15: Warning: Integer Overflow.\n\t\telse return _temp_balance[who].end_date\nInteger Overflow occurs if:\n    _temp_balance[who].end_date = 0", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:715:6: Warning: Integer Overflow.\n\t\tif(_temp_balance[who].end_date", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:743:3: Warning: Integer Overflow.\n\t\t_balances[fond_wallet].tokens_count += _temp_balance[recipient].tokens_count\nInteger Overflow occurs if:\n    _balances[fond_wallet].tokens_count = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    _temp_balance[recipient].tokens_count = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    stop_operation = 255\n    manager = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:11:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:13:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:9:2: Warning: Integer Underflow.\n\tstring public standard = 'ERC20'"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:851:7: Warning: Transaction-Ordering Dependency.\n\t\t\tif(msg.sender.send(msg.value-max_value_buyToken)"
+   ], 
+   [
+    "./restContracts/0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b.txt:329:3: Warning: Transaction-Ordering Dependency.\n\t\tsuicide(developer)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.0"
+}

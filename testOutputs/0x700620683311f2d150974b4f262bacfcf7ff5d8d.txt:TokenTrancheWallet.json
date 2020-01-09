@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x700620683311f2d150974b4f262bacfcf7ff5d8d.txt:179:30: Warning: Integer Overflow.\n        completeUnlockTime = lockPeriodInDays * 1 days + lockStart\nInteger Overflow occurs if:\n    owner = 0\n    lockStart = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x700620683311f2d150974b4f262bacfcf7ff5d8d.txt:231:45: Warning: Integer Underflow.\n                uint256 periodsSinceLock = (now - lockStart\nInteger Underflow occurs if:\n    lockStart = 1\n    completeUnlockTime = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "94.5"
+}

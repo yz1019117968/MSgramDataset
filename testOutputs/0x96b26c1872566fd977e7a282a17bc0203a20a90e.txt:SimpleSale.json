@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x96b26c1872566fd977e7a282a17bc0203a20a90e.txt:255:9: Warning: Timestamp Dependency.\n        require (now >= startTime)", 
+   "./restContracts/0x96b26c1872566fd977e7a282a17bc0203a20a90e.txt:257:9: Warning: Timestamp Dependency.\n        require (now <= stopTime)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x96b26c1872566fd977e7a282a17bc0203a20a90e.txt:377:9: Warning: Integer Overflow.\n        deposits[msg.sender] += msg.value\nInteger Overflow occurs if:\n    deposits[msg.sender] = 60385532132931046920238023833645995486243454445247191943692606514125846119223\n    paused = 0\n    saleFinished = 0\n    stopTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authorised[msg.sender] = 255", 
+   "./restContracts/0x96b26c1872566fd977e7a282a17bc0203a20a90e.txt:379:9: Warning: Integer Overflow.\n        totalCollected += msg.value\nInteger Overflow occurs if:\n    totalCollected = 60385532132931046920238023833645995486243454445247191943692606514125846119223\n    paused = 0\n    saleFinished = 0\n    stopTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    startTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    authorised[msg.sender] = 255", 
+   "./restContracts/0x96b26c1872566fd977e7a282a17bc0203a20a90e.txt:305:5: Warning: Integer Overflow.\n    function authoriseManyAccounts(address[] many) onlyCSorOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    many = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.7"
+}

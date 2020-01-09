@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:359:38: Warning: Integer Overflow.\n    var paidBasis = MAX_DISCOUNT.sub(self.tiers[_tier]\nInteger Overflow occurs if:\n    participants[msg.sender].minimumTier = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    paused = 0\n    participants[msg.sender].authorized = 255", 
+   "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:261:19: Warning: Integer Overflow.\n      available = self.tiers[i].available\nInteger Overflow occurs if:\n    participants[msg.sender].minimumTier = 0\n    paused = 0\n    participants[msg.sender].authorized = 255", 
+   "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:177:5: Warning: Integer Overflow.\n    self.tiers.push(Tier({\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    paused = 372682917519380244141939632342652170012262798458880\n    owner = 0", 
+   "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:1135:3: Warning: Integer Overflow.\n  function authorizeForTier(uint256 _minimumTier, address[] _authorized)\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _authorized = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:261:19: Warning: Integer Overflow.\n      available = self.tiers[i]\nInteger Overflow occurs if:\n    participants[msg.sender].minimumTier = 14474011154664524427946373126085988481658748083205070504932198000989141204992\n    paused = 0\n    participants[msg.sender].authorized = 255", 
+   "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:1367:27: Warning: Integer Overflow.\n    uint256 minimumTier = participant.minimumTier"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:1261:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(refund)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x398acb6594866bc7ac3a23e925b2fc3727c19828.txt:1173:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.0"
+}

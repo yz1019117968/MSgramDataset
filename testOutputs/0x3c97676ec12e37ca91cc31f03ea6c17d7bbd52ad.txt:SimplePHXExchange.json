@@ -1,0 +1,38 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:231:28: Warning: Integer Overflow.\n        ethOfferors[ndx] = ethOfferors[ethOfferors.length - 1]\nInteger Overflow occurs if:\n    ethOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    ethEtherOffered[_offeror] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    ScaleFactor = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _ndx = 115792089237316195423570985008687907853269984665640564039457584007913129639929", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:351:32: Warning: Integer Overflow.\n        return ethEtherOffered[ethOfferors[_ndx]\nInteger Overflow occurs if:\n    _ndx = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    ethOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:335:16: Warning: Integer Overflow.\n        return ethOfferors[_ndx]\nInteger Overflow occurs if:\n    _ndx = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    ethOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:89:5: Warning: Integer Overflow.\n    address[] public ethOfferors", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:247:28: Warning: Integer Overflow.\n        address _offeror = tknOfferors[_ndx]\nInteger Overflow occurs if:\n    _ndx = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    tknOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:327:33: Warning: Integer Overflow.\n        return tknTokensOffered[tknOfferors[_ndx]\nInteger Overflow occurs if:\n    _ndx = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    tknOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:155:9: Warning: Integer Overflow.\n        ethOfferors.push(msg.sender)\nInteger Overflow occurs if:\n    ethOfferors.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ethAddrNdx[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:71:5: Warning: Integer Overflow.\n    address[] public tknOfferors", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:53:1: Warning: Integer Overflow.\ncontract SimplePHXExchange {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ethOfferors.push(msg.sender) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    ethAddrNdx[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:319:33: Warning: Integer Overflow.\n        return tknPricePerToken[tknOfferors[_ndx]\nInteger Overflow occurs if:\n    _ndx = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    tknOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:343:33: Warning: Integer Overflow.\n        return ethPricePerToken[ethOfferors[_ndx]\nInteger Overflow occurs if:\n    _ndx = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    ethOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:135:9: Warning: Integer Overflow.\n        tknOfferors.push(msg.sender)\nInteger Overflow occurs if:\n    tknOfferors.push(msg.sender) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _tokensOffered = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tknAddrNdx[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:191:28: Warning: Integer Overflow.\n        tknOfferors[ndx] = tknOfferors[tknOfferors.length - 1]\nInteger Overflow occurs if:\n    tknOfferors.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    tknAddrNdx[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:311:16: Warning: Integer Overflow.\n        return tknOfferors[_ndx]\nInteger Overflow occurs if:\n    _ndx = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    tknOfferors[_ndx] = 115792089237316195423570985008687907853269984665640564039457575000713874898944"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:191:40: Warning: Integer Underflow.\n        tknOfferors[ndx] = tknOfferors[tknOfferors.length - 1\nInteger Underflow occurs if:\n    tknOfferors.length = 0\n    tknAddrNdx[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:231:40: Warning: Integer Underflow.\n        ethOfferors[ndx] = ethOfferors[ethOfferors.length - 1\nInteger Underflow occurs if:\n    ethOfferors.length = 0\n    ethEtherOffered[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    ethAddrNdx[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:273:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(ethEtherOffered[_offeror])"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3c97676ec12e37ca91cc31f03ea6c17d7bbd52ad.txt:207:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(ethEtherOffered[msg.sender])"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.3"
+}

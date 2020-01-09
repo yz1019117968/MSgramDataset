@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:103:9: Warning: Integer Overflow.\n        _depositor[msg.sender]._deposit += msg.value\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904\n    _depositor[msg.sender]._deposit = 1", 
+   "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:87:17: Warning: Integer Overflow.\n                _depositor[msg.sender]._deposit", 
+   "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:105:41: Warning: Integer Overflow.\n        _depositor[msg.sender]._limit = block.number + period\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904", 
+   "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:85:17: Warning: Integer Overflow.\n                _depositor[msg.sender]._limit", 
+   "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:105:9: Warning: Integer Overflow.\n        _depositor[msg.sender]._limit\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904", 
+   "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:103:9: Warning: Integer Overflow.\n        _depositor[msg.sender]._deposit\nInteger Overflow occurs if:\n    _depositor[msg.sender]._token = 4611686018427387904"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:117:10: Warning: Transaction-Ordering Dependency.\n         msg.sender.transfer(tempDeposit + msg.value)"
+   ], 
+   [
+    "./restContracts/0x968fb04cdede76860e00324fb7d37338c0404e6c.txt:129:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(tempDeposit + msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

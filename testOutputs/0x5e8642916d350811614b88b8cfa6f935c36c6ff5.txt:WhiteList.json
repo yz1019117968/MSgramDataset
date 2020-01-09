@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5e8642916d350811614b88b8cfa6f935c36c6ff5.txt:207:28: Warning: Integer Overflow.\n                affiliates[_users[i]\nInteger Overflow occurs if:\n    _users = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    whiteList[_users[i]] = 0\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5e8642916d350811614b88b8cfa6f935c36c6ff5.txt:177:13: Warning: Integer Overflow.\n            totalWhiteListed++\nInteger Overflow occurs if:\n    totalWhiteListed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[_user] = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5e8642916d350811614b88b8cfa6f935c36c6ff5.txt:205:27: Warning: Integer Overflow.\n                whiteList[_users[i]\nInteger Overflow occurs if:\n    _users = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    whiteList[_users[i]] = 0\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5e8642916d350811614b88b8cfa6f935c36c6ff5.txt:207:41: Warning: Integer Overflow.\n                affiliates[_users[i]] = _affiliate[i]\nInteger Overflow occurs if:\n    _affiliate = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    whiteList[_users[i]] = 0\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5e8642916d350811614b88b8cfa6f935c36c6ff5.txt:209:17: Warning: Integer Overflow.\n                totalWhiteListed++\nInteger Overflow occurs if:\n    totalWhiteListed = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[_users[i]] = 0\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    whiteList[_users[i]] = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5e8642916d350811614b88b8cfa6f935c36c6ff5.txt:203:27: Warning: Integer Overflow.\n            if (whiteList[_users[i]\nInteger Overflow occurs if:\n    _users = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    whiteList[_users[i]] = 255\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5e8642916d350811614b88b8cfa6f935c36c6ff5.txt:151:9: Warning: Integer Underflow.\n        totalWhiteListed--\nInteger Underflow occurs if:\n    totalWhiteListed = 0\n    whiteList[_user] = 255\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

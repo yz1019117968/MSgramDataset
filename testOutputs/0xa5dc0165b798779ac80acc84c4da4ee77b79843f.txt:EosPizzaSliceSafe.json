@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa5dc0165b798779ac80acc84c4da4ee77b79843f.txt:147:18: Warning: Integer Overflow.\n        uint c = a + b\nInteger Overflow occurs if:\n    bundles[CORE_TEAM].lockedTokens = 1\n    bundles[ADVISORS].lockedTokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xa5dc0165b798779ac80acc84c4da4ee77b79843f.txt:895:5: Warning: Integer Overflow.\n    mapping (uint8 => AccountsBundle) public bundles"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.5"
+}

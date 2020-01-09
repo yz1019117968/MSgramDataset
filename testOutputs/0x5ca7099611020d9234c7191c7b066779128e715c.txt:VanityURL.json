@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:337:3: Warning: Integer Overflow.\n  function reserve(string _vanity_url) whenNotPaused public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vanity_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:301:3: Warning: Integer Overflow.\n  function retrieveWalletForVanity(string _vanity_url) constant public returns (address) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vanity_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:449:3: Warning: Integer Overflow.\n  function changeVanityURL(string _vanity_url) whenNotPaused public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vanity_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:499:3: Warning: Integer Overflow.\n  function reserveVanityURLByOwner(address _to,string _vanity_url) whenNotPaused onlyOwner public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vanity_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:409:3: Warning: Integer Overflow.\n  function checkForValidity(string _vanity_url) returns (bool) {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vanity_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:551:3: Warning: Integer Overflow.\n  function releaseVanityUrl(string _vanity_url) whenNotPaused onlyOwner public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _vanity_url = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:313:5: Warning: Integer Underflow.\n    return address_vanity_mapping[_address]\nInteger Underflow occurs if:\n    return address_vanity_mapping[_address] = 1", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:217:1: Warning: Integer Underflow.\ncontract VanityURL is Ownable,Pausable {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    paused = 0", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:481:5: Warning: Integer Underflow.\n    address_vanity_mapping[_to] = address_vanity_mapping[msg.sender]\nInteger Underflow occurs if:\n    paused = 0", 
+   "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:483:5: Warning: Integer Underflow.\n    vanity_address_mapping[address_vanity_mapping[msg.sender]]\nInteger Underflow occurs if:\n    paused = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:595:5: Warning: Transaction-Ordering Dependency.\n    owner.transfer(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x5ca7099611020d9234c7191c7b066779128e715c.txt:581:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "29.5"
+}

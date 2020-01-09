@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7.txt:929:5: Warning: Integer Overflow.\n    function receiveApproval(address _from, uint256 _value,\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7.txt:873:9: Warning: Integer Overflow.\n        totalFunded           += msg.value\nInteger Overflow occurs if:\n    totalFunded = 1\n    config.stopBlock = 115792089237316195423570985008687907853269984655499359218742282864460923142143\n    config.startBlock = 115792089237316195423570985008687907853269984655499359218742282864460923142143\n    config.maxValue = 0", 
+   "./uniqueContractSourceCode/0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7.txt:875:9: Warning: Integer Overflow.\n        donations[msg.sender] += msg.value\nInteger Overflow occurs if:\n    donations[msg.sender] = 1\n    config.stopBlock = 115792089237303031387112415360350668099809525861600702152532515369006332379135\n    config.startBlock = 115792089237303031387112415360350668099809525861600702152532515369006332379135\n    config.maxValue = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalFunded = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7.txt:615:5: Warning: Integer Underflow.\n    string public reference"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7.txt:901:12: Warning: Transaction-Ordering Dependency.\n    { if (!fund.send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x113058C101b2D78e001D4a7D2174a66b5ff3A4A7.txt:917:14: Warning: Transaction-Ordering Dependency.\n        if (!msg.sender.send(donation)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.9"
+}

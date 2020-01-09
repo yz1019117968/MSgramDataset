@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0062179227c03efc81301ade144f447f2561edd5.txt:309:5: Warning: Integer Overflow.\n    function setContactInformation(string info) onlyOwner public {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x0062179227c03efc81301ade144f447f2561edd5.txt:1175:13: Warning: Integer Overflow.\n            buyerCount++\nInteger Overflow occurs if:\n    weiRaised = 0\n    buyerCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isBuyer[beneficiary] = 0\n    weiMaximumGoal = 0\n    endTime = 0\n    startTime = 0\n    weiMinimumAmount = 0\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0062179227c03efc81301ade144f447f2561edd5.txt:1235:16: Warning: Integer Underflow.\n        return weiMaximumGoal - weiRaised\nInteger Underflow occurs if:\n    weiMaximumGoal = 0\n    weiRaised = 1", 
+   "./uniqueContractSourceCode/0x0062179227c03efc81301ade144f447f2561edd5.txt:297:5: Warning: Integer Underflow.\n    string public contactInformation"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.4"
+}

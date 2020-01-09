@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbCF50295941171D4c51e39cf04E884C5eb677804.txt:1387:3: Warning: Integer Overflow.\n  function setEarlyParticipantWhitelistMultiple(address[] addrs, bool[] statuses, uint[] minCaps, uint[] maxCaps) public onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xbCF50295941171D4c51e39cf04E884C5eb677804.txt:1519:3: Warning: Integer Overflow.\n  function updateJoinedCrowdsalesMultiple(address[] addrs) public onlyOwner {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xbCF50295941171D4c51e39cf04E884C5eb677804.txt:1369:7: Warning: Integer Overflow.\n      whitelistedParticipants.push(addr)\nInteger Overflow occurs if:\n    endsAt = 0\n    whitelistedParticipants.push(addr) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isWhiteListed = 65280\n    owner = 0\n    earlyParticipantWhitelist[addr].maxCap = 0", 
+   "./restContracts/0xbCF50295941171D4c51e39cf04E884C5eb677804.txt:1367:9: Warning: Integer Overflow.\n    if (earlyParticipantWhitelist[addr].maxCap\nInteger Overflow occurs if:\n    endsAt = 0\n    isWhiteListed = 65280\n    owner = 0", 
+   "./restContracts/0xbCF50295941171D4c51e39cf04E884C5eb677804.txt:811:3: Warning: Integer Overflow.\n  address[] public joinedCrowdsales", 
+   "./restContracts/0xbCF50295941171D4c51e39cf04E884C5eb677804.txt:1381:5: Warning: Integer Overflow.\n    earlyParticipantWhitelist[addr] = WhiteListData({status:status, minCap:minCap, maxCap:maxCap})\nInteger Overflow occurs if:\n    endsAt = 0\n    earlyParticipantWhitelist[addr].maxCap = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    isWhiteListed = 65280\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbCF50295941171D4c51e39cf04E884C5eb677804.txt:755:3: Warning: Integer Underflow.\n  string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.5"
+}

@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x0a630de26e5b41eaef08741e74da4018a6c2e14c.txt:79:20: Warning: Timestamp Dependency.\n        } else if (now > endRegisterTime && numPlayers > 0"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0a630de26e5b41eaef08741e74da4018a6c2e14c.txt:93:13: Warning: Integer Overflow.\n            gameNumber++\nInteger Overflow occurs if:\n    endRegisterTime = 18014398509481984\n    gameNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    numPlayers = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x0a630de26e5b41eaef08741e74da4018a6c2e14c.txt:117:13: Warning: Integer Overflow.\n            numPlayers++\nInteger Overflow occurs if:\n    endRegisterTime = 1\n    numPlayers = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    registered[gameNumber][msg.sender] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0a630de26e5b41eaef08741e74da4018a6c2e14c.txt:83:48: Warning: Integer Underflow.\n            uint winner = uint(block.blockhash(block.number - 1\nInteger Underflow occurs if:\n    endRegisterTime = 18014398509481984\n    numPlayers = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x0a630de26e5b41eaef08741e74da4018a6c2e14c.txt:103:13: Warning: Transaction-Ordering Dependency.\n            players[currentGamenumber][winner].send(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x0a630de26e5b41eaef08741e74da4018a6c2e14c.txt:103:13: Warning: Transaction-Ordering Dependency.\n            players[currentGamenumber][winner].send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

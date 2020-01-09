@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3b420901882eC5EFafBbc976e1004571DA223f37.txt:97:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    state = 0\n    deposited[investor] = 1\n    Owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3b420901882eC5EFafBbc976e1004571DA223f37.txt:175:9: Warning: Transaction-Ordering Dependency.\n        wallet.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3b420901882eC5EFafBbc976e1004571DA223f37.txt:201:9: Warning: Transaction-Ordering Dependency.\n        investor.transfer(depositedValue)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

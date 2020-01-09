@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:923:12: Warning: Integer Overflow.\n    return keccak256(symbol)", 
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:905:12: Warning: Integer Overflow.\n    return keccak256(name)"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:875:3: Warning: Integer Underflow.\n  string public symbol", 
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:923:12: Warning: Integer Underflow.\n    return keccak256(symbol)", 
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:873:3: Warning: Integer Underflow.\n  string public name", 
+   "./restContracts/0xc499ea948a1ad5d8eaf12abd2f67975c4dbe21aa.txt:905:12: Warning: Integer Underflow.\n    return keccak256(name)"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.3"
+}

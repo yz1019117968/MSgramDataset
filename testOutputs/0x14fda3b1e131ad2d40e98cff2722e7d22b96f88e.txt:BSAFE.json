@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x14fda3b1e131ad2d40e98cff2722e7d22b96f88e.txt:379:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x14fda3b1e131ad2d40e98cff2722e7d22b96f88e.txt:85:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balanceOf[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balanceOf[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./uniqueContractSourceCode/0x14fda3b1e131ad2d40e98cff2722e7d22b96f88e.txt:279:6: Warning: Integer Overflow.\n     function transfer(address _to, uint256 _value, bytes _data ) returns(bool ok) {\r\n     ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x14fda3b1e131ad2d40e98cff2722e7d22b96f88e.txt:151:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x14fda3b1e131ad2d40e98cff2722e7d22b96f88e.txt:149:5: Warning: Integer Underflow.\n    string public standard = 'BSAFE 1.1'", 
+   "./uniqueContractSourceCode/0x14fda3b1e131ad2d40e98cff2722e7d22b96f88e.txt:153:5: Warning: Integer Underflow.\n    string public symbol"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.0"
+}

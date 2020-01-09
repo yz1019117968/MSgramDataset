@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:1425:16: Warning: Integer Overflow.\n        return _tokenMetadata(_tokenId, _preferredTransport)", 
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:831:5: Warning: Integer Overflow.\n    uint256[] public dnas", 
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:1423:5: Warning: Integer Overflow.\n    function tokenMetadata(uint256 _tokenId, string _preferredTransport) external view returns (string infoUrl) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _preferredTransport = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:1033:15: Warning: Integer Overflow.\n        dna = dnas[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    dnas.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:1155:9: Warning: Integer Overflow.\n        ownerToTokenCount[_to]++\nInteger Overflow occurs if:\n    _tokenId = 0\n    ownerToTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 1461501637330902918203684832716283019655932542975\n    artworkIdToTransferApproved[_tokenId] = 0\n    _from = 0\n    artworkIdToOwner[_tokenId] = 0\n    isTransferDisabled[batch] = 0\n    dnas[_tokenId] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:1159:9: Warning: Integer Underflow.\n        ownerToTokenCount[_from]--\nInteger Underflow occurs if:\n    _tokenId = 0\n    ownerToTokenCount[_from] = 0\n    _to = 1461501637330902918203684832716283019655932542975\n    artworkIdToTransferApproved[_tokenId] = 0\n    _from = 0\n    artworkIdToOwner[_tokenId] = 0\n    isTransferDisabled[batch] = 0\n    dnas[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:93:60: Warning: Integer Underflow.\n        _seed = uint64(keccak256(keccak256(block.blockhash(block.number - 1", 
+   "./uniqueContractSourceCode/0x6d0a44fb6a416da6efe1c192560be1bccd01f6be.txt:103:68: Warning: Integer Underflow.\n        uint256 rand = uint256(keccak256(keccak256(block.blockhash(block.number - 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "80.7"
+}

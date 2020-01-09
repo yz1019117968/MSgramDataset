@@ -1,0 +1,36 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:669:9: Warning: Integer Overflow.\n        backer.state\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:665:37: Warning: Integer Overflow.\n        backer.withdrawnAtSegment = backer.withdrawnAtSegment\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:663:9: Warning: Integer Overflow.\n        backer.contribution\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:667:37: Warning: Integer Overflow.\n        backer.withdrawnAtCluster = backer.withdrawnAtCluster\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:665:9: Warning: Integer Overflow.\n        backer.withdrawnAtSegment\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:515:5: Warning: Integer Overflow.\n    mapping(address => Backer) public backers", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:667:9: Warning: Integer Overflow.\n        backer.withdrawnAtCluster\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:673:9: Warning: Integer Overflow.\n        contributors++\nInteger Overflow occurs if:\n    contributors = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:669:24: Warning: Integer Overflow.\n        backer.state = backer.state\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:663:31: Warning: Integer Overflow.\n        backer.contribution = backer.contribution\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:575:24: Warning: Integer Underflow.\n    \tuint blockCount = block.number - initialBlockCount\nInteger Underflow occurs if:\n    initialBlockCount = 1", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:553:24: Warning: Integer Underflow.\n    \tuint blockCount = block.number - initialBlockCount\nInteger Underflow occurs if:\n    initialBlockCount = 1", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:627:13: Warning: Integer Underflow.\n    \treturn block.number - initialBlockCount\nInteger Underflow occurs if:\n    initialBlockCount = 1", 
+   "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:601:24: Warning: Integer Underflow.\n    \tuint blockCount = block.number - initialBlockCount\nInteger Underflow occurs if:\n    initialBlockCount = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:267:8: Warning: Transaction-Ordering Dependency.\n\t\tif (!payee.send(payment)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x320344d8c18b6971b3fcdbf0b12ed73578a8a622.txt:837:18: Warning: Transaction-Ordering Dependency.\n            if (!owner.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "70.6"
+}

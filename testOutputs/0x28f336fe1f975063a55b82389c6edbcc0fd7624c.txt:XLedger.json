@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x28f336fe1f975063a55b82389c6edbcc0fd7624c.txt:15:5: Warning: Integer Underflow.\n    string public symbol = \"XLD\"", 
+   "./uniqueContractSourceCode/0x28f336fe1f975063a55b82389c6edbcc0fd7624c.txt:13:5: Warning: Integer Underflow.\n    string public name = \"XLedger\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.7"
+}

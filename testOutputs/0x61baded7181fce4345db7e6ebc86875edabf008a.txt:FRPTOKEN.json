@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x61baded7181fce4345db7e6ebc86875edabf008a.txt:367:5: Warning: Integer Underflow.\n    string public name = \"FRPTOKEN\"", 
+   "./uniqueContractSourceCode/0x61baded7181fce4345db7e6ebc86875edabf008a.txt:369:5: Warning: Integer Underflow.\n    string public symbol = \"FRP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

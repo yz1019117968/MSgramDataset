@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2395:15: Warning: Re-Entrancy Vulnerability.\n        if (!(addr.call.gas(safeGas).value(value)()"
+  ], 
+  "integer_overflow": [
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2333:30: Warning: Integer Overflow.\n            bytes32 betKey = betsKeys[id]\nInteger Overflow occurs if:\n    betsKeys.length = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2475:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result, bytes proof)\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2115:5: Warning: Integer Overflow.\n    bytes32[] public betsKeys", 
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2113:5: Warning: Integer Overflow.\n    mapping (bytes32 => Bet) public bets", 
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2335:49: Warning: Integer Overflow.\n            return (bets[betKey].playerAddress, bets[betKey].amountBet\nInteger Overflow occurs if:\n    betsKeys.length = 1", 
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2335:73: Warning: Integer Overflow.\n            return (bets[betKey].playerAddress, bets[betKey].amountBet, bets[betKey].numberRolled\nInteger Overflow occurs if:\n    betsKeys.length = 1", 
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:247:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2587:19: Warning: Integer Underflow.\n     uint value = investorsProfit - investorsLosses\nInteger Underflow occurs if:\n    investorsProfit = 0\n    investorsLosses = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2395:15: Warning: Transaction-Ordering Dependency.\n        if (!(addr.call.gas(safeGas).value(value)()"
+   ], 
+   [
+    "./restContracts/0x9e762daeb001DC7778D0Eb043d530357f0c4666c.txt:2633:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.7"
+}

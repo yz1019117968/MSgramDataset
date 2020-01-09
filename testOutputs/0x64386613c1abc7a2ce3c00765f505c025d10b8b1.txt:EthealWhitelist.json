@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x64386613c1abc7a2ce3c00765f505c025d10b8b1.txt:1035:5: Warning: Integer Overflow.\n    function isOffchainWhitelisted(address _addr, bytes _sig) public view returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _sig = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x64386613c1abc7a2ce3c00765f505c025d10b8b1.txt:1021:5: Warning: Integer Overflow.\n    function setManyWhitelist(address[] _addr, bool _state) public onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.7"
+}

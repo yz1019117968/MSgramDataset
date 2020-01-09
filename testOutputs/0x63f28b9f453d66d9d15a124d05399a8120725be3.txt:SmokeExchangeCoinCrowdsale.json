@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x63f28b9f453d66d9d15a124d05399a8120725be3.txt:739:26: Warning: Integer Underflow.\n    bool smxAvailable = (ALLOC_CROWDSALE - smxSold\nInteger Underflow occurs if:\n    smxSold = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    weiRaised = 0\n    startTime = 1\n    privateStartTime = 1\n    halted = 0", 
+   "./uniqueContractSourceCode/0x63f28b9f453d66d9d15a124d05399a8120725be3.txt:755:22: Warning: Integer Underflow.\n    bool tokenSold = ALLOC_CROWDSALE - smxSold\nInteger Underflow occurs if:\n    smxSold = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.1"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0abd16e326ace84e23b0b32398e5604efe83571f.txt:173:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _tokens = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    tokenRaised = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    endTimestamp = 0\n    tokensForSale = 89660649888868366171417216235708288031085258661234677303951427843448891257350\n    Admin = 0", 
+   "./uniqueContractSourceCode/0x0abd16e326ace84e23b0b32398e5604efe83571f.txt:845:3: Warning: Integer Overflow.\n  function authoriseManyAccounts(address[] many) onlyCSorAdmin public {\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    many = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.0"
+}

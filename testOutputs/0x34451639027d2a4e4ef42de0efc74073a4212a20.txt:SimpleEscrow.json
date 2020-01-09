@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x34451639027d2a4e4ef42de0efc74073a4212a20.txt:107:9: Warning: Timestamp Dependency.\n        require(now >= safeLastDate)"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x34451639027d2a4e4ef42de0efc74073a4212a20.txt:91:9: Warning: Integer Overflow.\n        safeLastDate += SAFE_PERIOD\nInteger Overflow occurs if:\n    safeLastDate = 1\n    SAFE_PERIOD = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    orderLastDate = 0\n    customerWallet = 0", 
+   "./uniqueContractSourceCode/0x34451639027d2a4e4ef42de0efc74073a4212a20.txt:123:25: Warning: Integer Overflow.\n        orderLastDate = started + PERIOD\nInteger Overflow occurs if:\n    PERIOD = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    customerWallet = 0", 
+   "./uniqueContractSourceCode/0x34451639027d2a4e4ef42de0efc74073a4212a20.txt:125:24: Warning: Integer Overflow.\n        safeLastDate = orderLastDate + SAFE_PERIOD\nInteger Overflow occurs if:\n    PERIOD = 0\n    SAFE_PERIOD = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    customerWallet = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x34451639027d2a4e4ef42de0efc74073a4212a20.txt:109:9: Warning: Transaction-Ordering Dependency.\n        developerWallet.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x34451639027d2a4e4ef42de0efc74073a4212a20.txt:81:9: Warning: Transaction-Ordering Dependency.\n        developerWallet.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.9"
+}

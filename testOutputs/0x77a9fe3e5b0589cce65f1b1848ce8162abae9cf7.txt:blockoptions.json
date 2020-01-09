@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x77a9fe3e5b0589cce65f1b1848ce8162abae9cf7.txt:663:23: Warning: Callstack Depth Attack Vulnerability.\n                      requestor[requestCount].send(dividentsMap[requestor[requestCount]].divident)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x77a9fe3e5b0589cce65f1b1848ce8162abae9cf7.txt:523:29: Warning: Integer Overflow.\n           else if (now >= (ico_start + 7 days\nInteger Overflow occurs if:\n    ico_start = 115792089237316195423570985008687907853269984665640564039457584007913129054208", 
+   "./uniqueContractSourceCode/0x77a9fe3e5b0589cce65f1b1848ce8162abae9cf7.txt:573:20: Warning: Integer Overflow.\n           ico_end=ico_start + 31 days\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x77a9fe3e5b0589cce65f1b1848ce8162abae9cf7.txt:65:7: Warning: Integer Underflow.\n      string public symbol = \"BOPT\"", 
+   "./uniqueContractSourceCode/0x77a9fe3e5b0589cce65f1b1848ce8162abae9cf7.txt:59:7: Warning: Integer Underflow.\n      string public name = \"blockoptions\"", 
+   "./uniqueContractSourceCode/0x77a9fe3e5b0589cce65f1b1848ce8162abae9cf7.txt:599:26: Warning: Integer Underflow.\n           totalSupply = totalSupply-burnedTokens\nInteger Underflow occurs if:\n    balances[owner] = 150000000000002\n    totalSupply = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x77a9fe3e5b0589cce65f1b1848ce8162abae9cf7.txt:271:22: Warning: Integer Underflow.\n        uint check = balances[owner] - _value\nInteger Underflow occurs if:\n    balances[owner] = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.7"
+}

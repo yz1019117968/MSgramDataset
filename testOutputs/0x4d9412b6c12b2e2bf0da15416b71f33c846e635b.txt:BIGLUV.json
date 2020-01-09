@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4d9412b6c12b2e2bf0da15416b71f33c846e635b.txt:143:5: Warning: Integer Overflow.\n    function transfer(address _to, uint256 _value, bytes _data) returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x4d9412b6c12b2e2bf0da15416b71f33c846e635b.txt:57:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4d9412b6c12b2e2bf0da15416b71f33c846e635b.txt:485:3: Warning: Integer Underflow.\n  string public name=\"BIGLUV\"", 
+   "./uniqueContractSourceCode/0x4d9412b6c12b2e2bf0da15416b71f33c846e635b.txt:487:3: Warning: Integer Underflow.\n  string public symbol=\"BLV\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.1"
+}

@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1519:9: Warning: Integer Overflow.\n        totalTokensReceived += _value\nInteger Overflow occurs if:\n    totalTokensReceived = 1\n    token = 0", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1195:16: Warning: Integer Overflow.\n        return records[_member].contributed", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1173:86: Warning: Integer Overflow.\n        return records[_member].index < recordIndex.length && _member == recordIndex[records[_member].index\nInteger Overflow occurs if:\n    updating = 2923003274661805836407369665432566039311865085952\n    records[_member].index = 0\n    recordIndex.length = 1", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1567:13: Warning: Integer Overflow.\n            r.contributed += acceptedAmount\nInteger Overflow occurs if:\n    updating = 2923003274661805836407369665432566039311865085952\n    records[_member].index = 0\n    recordIndex.length = 1", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1173:16: Warning: Integer Overflow.\n        return records[_member].index\nInteger Overflow occurs if:\n    updating = 2923003274661805836407369665432566039311865085952", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1585:9: Warning: Integer Overflow.\n        totalContributed += acceptedAmount\nInteger Overflow occurs if:\n    updating = 2923003274661805836407369665432566039311865085952\n    totalContributed = 108467620632365509778386176429971845918923287778296733422397448372705816477696\n    records[_member].index = 0\n    recordIndex.length = 1", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1277:36: Warning: Integer Overflow.\n        uint factoredContributed = r.contributed", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1567:13: Warning: Integer Overflow.\n            r.contributed\nInteger Overflow occurs if:\n    updating = 2923003274661805836407369665432566039311865085952\n    records[_member].index = 0\n    recordIndex.length = 1", 
+   "./restContracts/0xc45865b235a7c6693b9db5fed46ea8a3022d9b07.txt:1173:74: Warning: Integer Overflow.\n        return records[_member].index < recordIndex.length && _member == recordIndex[records[_member].index]\nInteger Overflow occurs if:\n    updating = 2923003274661805836407369665432566039311865085952\n    records[_member].index = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    recordIndex.length = 28948022309329048855892746252171976963317496166410141009864396001978282409985"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.8"
+}

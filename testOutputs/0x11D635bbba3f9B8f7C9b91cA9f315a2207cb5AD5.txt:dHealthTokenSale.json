@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:569:2: Warning: Integer Overflow.\n\tfunction tokenFallback(address _from, uint256 _value, bytes _data) public pure {\r\n\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:189:11: Warning: Integer Overflow.\n\t\t\treturn ts + plus\nInteger Overflow occurs if:\n    ts = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    plus = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxEthPerTransaction = 115792089237316195423570985008687907853269984665640564039457584007844410163199\n    minEthPerTransaction = 115792089237316195423570985008687907853269984665640564039457584007844410163199", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:193:11: Warning: Integer Overflow.\n\t\t\treturn block.timestamp + plus\nInteger Overflow occurs if:\n    plus = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxEthPerTransaction = 115792089237316195423570985008687907853269984665640564020568118076434548785151\n    minEthPerTransaction = 115792089237316195423570985008687907853269984665640564020568118076434548785151\n    ts = 0", 
+   "./uniqueContractSourceCode/0x11D635bbba3f9B8f7C9b91cA9f315a2207cb5AD5.txt:2031:2: Warning: Integer Overflow.\n\tfunction transferManual(address _to, uint256 _value, string _message) onlyOwner public returns (bool) {\r\n\t^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.7"
+}

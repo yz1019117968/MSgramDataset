@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xAc0007d373Df6eE6f0DF62E85084d5aF4dB3740F.txt:81:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./restContracts/0xAc0007d373Df6eE6f0DF62E85084d5aF4dB3740F.txt:85:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.1'", 
+   "./restContracts/0xAc0007d373Df6eE6f0DF62E85084d5aF4dB3740F.txt:79:5: Warning: Integer Underflow.\n    string public name", 
+   "./restContracts/0xAc0007d373Df6eE6f0DF62E85084d5aF4dB3740F.txt:207:33: Warning: Integer Underflow.\n        \tif ( lastTxBlockNum < (block.number-5000\nInteger Underflow occurs if:\n    balanceOf[_to] = 0\n    _value = 0\n    _to = 0\n    balanceOf[msg.sender] = 0", 
+   "./restContracts/0xAc0007d373Df6eE6f0DF62E85084d5aF4dB3740F.txt:221:10: Warning: Integer Underflow.\n        \ttotalSupply -= _value\nInteger Underflow occurs if:\n    balanceOf[_to] = 57346295533576563428689019345578713683075960063462234266750547215274860937281\n    _value = 34854167250581871405066246989256871414772772338490027241114662174608296847733\n    totalSupply = 34854167250581871405066246989256871414772772338490027241114662174608296847732\n    lastTxBlockNum = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _to = 0\n    balanceOf[msg.sender] = 34854167250581871405066246989256871414772772338490027241114662174608296847733"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.5"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x95411d0acaa34aaaf85c0ea55a8fde2cefb3d610.txt:227:7: Warning: Integer Overflow.\n\t\t    balanceOfOld[_to] += _value\nInteger Overflow occurs if:\n    balanceOfOld[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    _to = 1461501637330902918203684832716283019655932542975\n    balanceOfOld[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    allowance[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x95411d0acaa34aaaf85c0ea55a8fde2cefb3d610.txt:315:10: Warning: Integer Underflow.\n\t\treturn balance()\r\n\t\t^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    earningsPerShare = 0\n    totalPayouts = 0\n    totalSupply = 1000000000000000", 
+   "./restContracts/0x95411d0acaa34aaaf85c0ea55a8fde2cefb3d610.txt:315:10: Warning: Integer Underflow.\n\t\treturn balance()\r\n\t\t^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    earningsPerShare = 0\n    totalPayouts = 18446744073709551616\n    totalSupply = 1000000000000000", 
+   "./restContracts/0x95411d0acaa34aaaf85c0ea55a8fde2cefb3d610.txt:317:18: Warning: Integer Underflow.\n\t\t\t- ((uint256) ((int256) (earningsPerShare * totalSupply) - totalPayouts\nInteger Underflow occurs if:\n    earningsPerShare = 0\n    totalPayouts = 1\n    totalSupply = 1000000000000000", 
+   "./restContracts/0x95411d0acaa34aaaf85c0ea55a8fde2cefb3d610.txt:433:41: Warning: Integer Underflow.\n\t\treturn reserve() - fixedExp((fixedLog(totalSupply - tokens\nInteger Underflow occurs if:\n    totalSupply = 4717754795614806220846\n    _value = 4726978168888081023504\n    _to = 0\n    balanceOfOld[_from] = 4726978168888081023504\n    allowance[_from][msg.sender] = 4726978168888081023504"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "61.9"
+}

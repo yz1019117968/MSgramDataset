@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0x9dF4ac7268d9796749a997c1E7cf1094b9f13FB5.txt:99:17: Warning: Callstack Depth Attack Vulnerability.\n                __owner.send(summa_rest)", 
+   "./restContracts/0x9dF4ac7268d9796749a997c1E7cf1094b9f13FB5.txt:59:13: Warning: Callstack Depth Attack Vulnerability.\n            __owner.send(this.balance)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9dF4ac7268d9796749a997c1E7cf1094b9f13FB5.txt:95:14: Warning: Transaction-Ordering Dependency.\n        if (!target.send(summa_rest)"
+   ], 
+   [
+    "./restContracts/0x9dF4ac7268d9796749a997c1E7cf1094b9f13FB5.txt:57:14: Warning: Transaction-Ordering Dependency.\n        if (!target.send(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.7"
+}

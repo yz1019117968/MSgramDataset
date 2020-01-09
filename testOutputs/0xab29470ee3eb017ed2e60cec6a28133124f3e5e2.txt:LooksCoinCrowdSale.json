@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab29470ee3eb017ed2e60cec6a28133124f3e5e2.txt:1363:22: Warning: Integer Overflow.\n        tokensSold = tokensSold + tokens\nInteger Overflow occurs if:\n    currentState = 2923003274661805836407369665432566039311865085952\n    tokensSold = 48055260293504307537326441461185762040718983866030983815589210032332168775872", 
+   "./restContracts/0xab29470ee3eb017ed2e60cec6a28133124f3e5e2.txt:1307:26: Warning: Integer Overflow.\n        importedTokens = importedTokens + preSaleBalance\nInteger Overflow occurs if:\n    currentState = 2923003274661805836407369665432566039311865085952\n    importedTokens = 90124977372327004031758570853785828543150413892121215297380148023055890776064\n    importedFromPreSale[_account] = 0\n    saleController = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

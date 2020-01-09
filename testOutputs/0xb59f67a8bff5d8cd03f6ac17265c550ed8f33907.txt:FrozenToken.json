@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb59f67a8bff5d8cd03f6ac17265c550ed8f33907.txt:109:3: Warning: Integer Overflow.\n\t\taccounts[_to].liquid\nInteger Overflow occurs if:\n    accounts[who].liquid = 255", 
+   "./restContracts/0xb59f67a8bff5d8cd03f6ac17265c550ed8f33907.txt:135:3: Warning: Integer Overflow.\n\t\taccounts[_to].balance += _value\nInteger Overflow occurs if:\n    accounts[_to].balance = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    accounts[who].liquid = 255\n    accounts[_owner].balance = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

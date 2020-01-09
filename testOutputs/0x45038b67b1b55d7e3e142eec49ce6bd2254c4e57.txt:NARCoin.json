@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x45038b67b1b55d7e3e142eec49ce6bd2254c4e57.txt:141:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807", 
+   "./uniqueContractSourceCode/0x45038b67b1b55d7e3e142eec49ce6bd2254c4e57.txt:647:5: Warning: Integer Overflow.\n    totalSupply_ += tokens\nInteger Overflow occurs if:\n    totalSupply_ = 1\n    maxSupply = 0\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    backendWallet = 0", 
+   "./uniqueContractSourceCode/0x45038b67b1b55d7e3e142eec49ce6bd2254c4e57.txt:645:5: Warning: Integer Overflow.\n    balances[receiver] += tokens\nInteger Overflow occurs if:\n    balances[receiver] = 1\n    tokens = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    maxSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalSupply_ = 0\n    backendWallet = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "100.0"
+}

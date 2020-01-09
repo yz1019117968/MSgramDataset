@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb5c75e1addd0097117496496a046186d15bdda8b.txt:843:5: Warning: Integer Overflow.\n    investorCount++\nInteger Overflow occurs if:\n    investorCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0\n    balances[investor] = 0\n    lockedAt = 0", 
+   "./restContracts/0xb5c75e1addd0097117496496a046186d15bdda8b.txt:847:5: Warning: Integer Overflow.\n    tokensAllocatedTotal += amount\nInteger Overflow occurs if:\n    tokensAllocatedTotal = 89660649888868366171417216235708288031085258661234677303951427843448891257349\n    amount = 95320360308092064085158862026869462789128858612754216248428463844421952977271\n    owner = 0\n    balances[investor] = 0\n    lockedAt = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

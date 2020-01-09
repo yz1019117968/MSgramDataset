@@ -1,0 +1,38 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:417:3: Warning: Integer Overflow.\n\t\tdata[_id].y2\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:537:32: Warning: Integer Overflow.\n\t\treturn (data[_id].updatedAt, data[_id].purchasedAt", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:433:3: Warning: Integer Overflow.\n\t\tdata[_id].currentImageId\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:473:10: Warning: Integer Overflow.\n\t\treturn data[_id].currentPixelPrice", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:497:3: Warning: Integer Overflow.\n\t\tdata[_id].blockUpdatedAt\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:513:3: Warning: Integer Overflow.\n\t\tdata[_id].updatedAt\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:505:10: Warning: Integer Overflow.\n\t\treturn data[_id].updatedAt", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:529:3: Warning: Integer Overflow.\n\t\tdata[_id].purchasedAt\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:415:3: Warning: Integer Overflow.\n\t\tdata[_id].x2\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:553:3: Warning: Integer Overflow.\n\t\tdata[_id].purchasedPixelPrice\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:449:3: Warning: Integer Overflow.\n\t\tdata[_id].nextImageId\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:403:39: Warning: Integer Overflow.\n\t\treturn (data[_id].x1, data[_id].y1, data[_id].x2", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:481:3: Warning: Integer Overflow.\n\t\tdata[_id].currentPixelPrice\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:489:10: Warning: Integer Overflow.\n\t\treturn data[_id].blockUpdatedAt", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:403:53: Warning: Integer Overflow.\n\t\treturn (data[_id].x1, data[_id].y1, data[_id].x2, data[_id].y2", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:441:10: Warning: Integer Overflow.\n\t\treturn data[_id].nextImageId", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:537:11: Warning: Integer Overflow.\n\t\treturn (data[_id].updatedAt", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:413:3: Warning: Integer Overflow.\n\t\tdata[_id].y1\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:545:10: Warning: Integer Overflow.\n\t\treturn data[_id].purchasedPixelPrice", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:521:10: Warning: Integer Overflow.\n\t\treturn data[_id].purchasedAt", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:465:3: Warning: Integer Overflow.\n\t\tdata[_id].url\nInteger Overflow occurs if:\n    ownerAddress = 0\n    setupCompleted = 0", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:425:10: Warning: Integer Overflow.\n\t\treturn data[_id].currentImageId", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:403:25: Warning: Integer Overflow.\n\t\treturn (data[_id].x1, data[_id].y1", 
+   "./uniqueContractSourceCode/0x37dc39d1bf668e7747ad9a9493455b4867550b8d.txt:369:2: Warning: Integer Overflow.\n\tmapping (uint256 => Region) public data"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "86.7"
+}

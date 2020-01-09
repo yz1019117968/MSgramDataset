@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x319b33456aa1248cc0e04b555c63c10b51423a5e.txt:305:3: Warning: Integer Underflow.\n  string public name = \"Fopacoin\"", 
+   "./uniqueContractSourceCode/0x319b33456aa1248cc0e04b555c63c10b51423a5e.txt:307:3: Warning: Integer Underflow.\n  string public symbol = \"FOPA\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.5"
+}

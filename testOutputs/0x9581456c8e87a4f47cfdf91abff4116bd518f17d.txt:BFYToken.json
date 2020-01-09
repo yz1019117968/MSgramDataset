@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9581456c8e87a4f47cfdf91abff4116bd518f17d.txt:77:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9581456c8e87a4f47cfdf91abff4116bd518f17d.txt:367:5: Warning: Integer Underflow.\n    string public name = \"Bank4YOU Token\"", 
+   "./restContracts/0x9581456c8e87a4f47cfdf91abff4116bd518f17d.txt:369:5: Warning: Integer Underflow.\n    string public symbol = \"BFY\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.8"
+}

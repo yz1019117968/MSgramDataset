@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./restContracts/0xb1eb96f752c624dc784d80961a1accfaf348c923.txt:329:20: Warning: Callstack Depth Attack Vulnerability.\n            return owner.send(ethers)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.5"
+}

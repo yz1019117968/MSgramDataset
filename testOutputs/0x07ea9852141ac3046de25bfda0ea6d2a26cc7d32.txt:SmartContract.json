@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x07ea9852141ac3046de25bfda0ea6d2a26cc7d32.txt:155:1: Warning: Integer Overflow.\nbalanceOf[_to] += _value\nInteger Overflow occurs if:\n    balanceOf[_to] = 65133050195990379209015234167281133095147684435423372658451573861256282502524\n    balanceOf[msg.sender] = 68751552984656754570584411003563399145763693172169129330728274976256198443008"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x07ea9852141ac3046de25bfda0ea6d2a26cc7d32.txt:127:5: Warning: Integer Underflow.\n    string public name = 'DiXiEnergy'", 
+   "./uniqueContractSourceCode/0x07ea9852141ac3046de25bfda0ea6d2a26cc7d32.txt:129:5: Warning: Integer Underflow.\n    string public symbol = \"DXE\"", 
+   "./uniqueContractSourceCode/0x07ea9852141ac3046de25bfda0ea6d2a26cc7d32.txt:125:5: Warning: Integer Underflow.\n    string public standart = 'Token 0.1'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.0"
+}

@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x238e2854ded65f30c9c7765cf26cc882949323d7.txt:123:5: Warning: Integer Underflow.\n    string public symbol = 'NTR'", 
+   "./uniqueContractSourceCode/0x238e2854ded65f30c9c7765cf26cc882949323d7.txt:121:5: Warning: Integer Underflow.\n    string public name = 'Neter'", 
+   "./uniqueContractSourceCode/0x238e2854ded65f30c9c7765cf26cc882949323d7.txt:119:5: Warning: Integer Underflow.\n    string public standard = 'Neter proxy'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.0"
+}

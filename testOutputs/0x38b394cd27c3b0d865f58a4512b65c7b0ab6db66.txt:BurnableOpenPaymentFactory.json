@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:65:2: Warning: Integer Overflow.\n\tfunction newBurnableOpenPayment(address payer, uint serviceDeposit, uint autoreleaseInterval, string title, string initialStatement)\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    title = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x38b394cd27c3b0d865f58a4512b65c7b0ab6db66.txt:47:2: Warning: Integer Overflow.\n\taddress[]public BOPs"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "4.9"
+}

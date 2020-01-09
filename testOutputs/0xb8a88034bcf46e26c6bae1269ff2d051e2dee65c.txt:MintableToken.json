@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8a88034bcf46e26c6bae1269ff2d051e2dee65c.txt:387:45: Warning: Integer Overflow.\n           Snapshot storage oldCheckPoint = checkpoints[checkpoints.length-1]", 
+   "./restContracts/0xb8a88034bcf46e26c6bae1269ff2d051e2dee65c.txt:697:41: Warning: Integer Overflow.\n    userWithdrawalBlocks[userAddress] = balanceForDividendsHistory[balanceForDividendsHistory.length-1]\nInteger Overflow occurs if:\n    balanceForDividendsHistory.length = 115792089237316195423570985008687907853269984665640564039457584007913129639930", 
+   "./restContracts/0xb8a88034bcf46e26c6bae1269ff2d051e2dee65c.txt:377:43: Warning: Integer Overflow.\n        if ((checkpoints.length == 0) || (checkpoints[checkpoints.length -1]"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8a88034bcf46e26c6bae1269ff2d051e2dee65c.txt:571:3: Warning: Integer Underflow.\n  string public symbol = \"HMT\"", 
+   "./restContracts/0xb8a88034bcf46e26c6bae1269ff2d051e2dee65c.txt:697:68: Warning: Integer Underflow.\n    userWithdrawalBlocks[userAddress] = balanceForDividendsHistory[balanceForDividendsHistory.length-1\nInteger Underflow occurs if:\n    balanceForDividendsHistory.length = 0", 
+   "./restContracts/0xb8a88034bcf46e26c6bae1269ff2d051e2dee65c.txt:569:3: Warning: Integer Underflow.\n  string public name = \"Honey Mining Token\"", 
+   "./restContracts/0xb8a88034bcf46e26c6bae1269ff2d051e2dee65c.txt:673:26: Warning: Integer Underflow.\n      for(uint i = 0; i<=balanceForDividendsHistory.length-1\nInteger Underflow occurs if:\n    balanceForDividendsHistory.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "72.7"
+}

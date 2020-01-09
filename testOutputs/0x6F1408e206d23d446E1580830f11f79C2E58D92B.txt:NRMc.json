@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:443:36: Warning: Timestamp Dependency.\n    modifier afterDeadline() { if (now > deadline || balances[owner] == 0", 
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:443:32: Warning: Timestamp Dependency.\n    modifier afterDeadline() { if (now > deadline || balances[owner] == 0) _"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:173:16: Warning: Integer Overflow.\n            && balances[reserve2] + perReserve\nInteger Overflow occurs if:\n    perReserve = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[reserve2] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    prereserved2Done = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:241:16: Warning: Integer Overflow.\n            && balances[reserve4] + perReserve\nInteger Overflow occurs if:\n    perReserve = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[reserve4] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    prereserved4Done = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:207:16: Warning: Integer Overflow.\n            && balances[reserve3] + perReserve\nInteger Overflow occurs if:\n    perReserve = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[reserve3] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    prereserved3Done = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:139:16: Warning: Integer Overflow.\n            && balances[reserve1] + perReserve\nInteger Overflow occurs if:\n    balances[reserve1] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    perReserve = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    prereserved1Done = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:275:16: Warning: Integer Overflow.\n            && balances[reserve5] + perReserve\nInteger Overflow occurs if:\n    perReserve = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[reserve5] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    prereserved5Done = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:359:16: Warning: Integer Overflow.\n            && balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:9:5: Warning: Integer Underflow.\n    string public name = \"NRMc Closed ICO\"", 
+   "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:7:5: Warning: Integer Underflow.\n    string public symbol = \"NRMc\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:511:13: Warning: Transaction-Ordering Dependency.\n        if (out5.send(onefive)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6F1408e206d23d446E1580830f11f79C2E58D92B.txt:511:13: Warning: Transaction-Ordering Dependency.\n        if (out5.send(onefive)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.9"
+}

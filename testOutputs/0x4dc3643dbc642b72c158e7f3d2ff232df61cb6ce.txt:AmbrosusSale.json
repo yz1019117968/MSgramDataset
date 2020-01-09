@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x4dc3643dbc642b72c158e7f3d2ff232df61cb6ce.txt:479:41: Warning: Timestamp Dependency.\n\tmodifier only_during_period { require (now >= BEGIN_TIME && now < END_TIME", 
+   "./uniqueContractSourceCode/0x4dc3643dbc642b72c158e7f3d2ff232df61cb6ce.txt:479:41: Warning: Timestamp Dependency.\n\tmodifier only_during_period { require (now >= BEGIN_TIME && now < END_TIME && !isPaused"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4dc3643dbc642b72c158e7f3d2ff232df61cb6ce.txt:573:3: Warning: Integer Overflow.\n\t\tsaleRevenue += _etherPaid\nInteger Overflow occurs if:\n    saleRevenue = 1\n    _etherPaid = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4dc3643dbc642b72c158e7f3d2ff232df61cb6ce.txt:575:3: Warning: Integer Overflow.\n\t\ttotalSold += _amberSold\nInteger Overflow occurs if:\n    totalSold = 1\n    _amberSold = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "89.2"
+}

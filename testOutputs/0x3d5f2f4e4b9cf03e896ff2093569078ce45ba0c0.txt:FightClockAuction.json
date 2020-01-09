@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:757:13: Warning: Integer Overflow.\n            auction.startedAt", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:747:13: Warning: Integer Overflow.\n            auction.startingPrice", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:461:13: Warning: Integer Overflow.\n            _auction.startingPrice", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:749:13: Warning: Integer Overflow.\n            auction.endingPrice", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:463:13: Warning: Integer Overflow.\n            _auction.endingPrice", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:755:13: Warning: Integer Overflow.\n            auction.duration", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:465:13: Warning: Integer Overflow.\n            _auction.duration", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:325:9: Warning: Integer Overflow.\n        tokenIdToAuction[_tokenId] = _auction\nInteger Overflow occurs if:\n    _duration = 64\n    nonFungibleContract = 0\n    _endingPriceEth = 340282366920938463463374607431768211454\n    _startingPriceEth = 340282366920938463463374607431768211454\n    _endingPrice = 340282366920938463463374607431768211454\n    _startingPrice = 340282366920938463463374607431768211454", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:751:13: Warning: Integer Overflow.\n            auction.startingPriceEth", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:437:19: Warning: Integer Overflow.\n        if (now > _auction.startedAt", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:753:13: Warning: Integer Overflow.\n            auction.endingPriceEth"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:505:39: Warning: Integer Underflow.\n            int256 totalPriceChange = int256(_endingPrice) - int256(_startingPrice)", 
+   "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:565:19: Warning: Integer Underflow.\n       dayPass = (now -startTime\nInteger Underflow occurs if:\n    _duration = 64\n    startTime = 1\n    nonFungibleContract = 0\n    _endingPriceEth = 340282366920938463463374607431768211454\n    _startingPriceEth = 340282366920938463463374607431768211454\n    _endingPrice = 340282366920938463463374607431768211454\n    _startingPrice = 340282366920938463463374607431768211454"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:609:9: Warning: Transaction-Ordering Dependency.\n        nftAddress.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x3d5f2f4e4b9cf03e896ff2093569078ce45ba0c0.txt:609:9: Warning: Transaction-Ordering Dependency.\n        nftAddress.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.8"
+}

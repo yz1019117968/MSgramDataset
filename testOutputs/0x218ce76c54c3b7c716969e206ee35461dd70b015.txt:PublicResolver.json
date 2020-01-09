@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:315:41: Warning: Integer Overflow.\n        return (records[node].pubkey.x, records[node].pubkey.y", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:315:41: Warning: Integer Overflow.\n        return (records[node].pubkey.x, records[node].pubkey", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:255:53: Warning: Integer Overflow.\n            if((contentType & contentTypes) != 0 && record.abis\nInteger Overflow occurs if:\n    contentTypes = 512", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:335:9: Warning: Integer Overflow.\n        records[node].pubkey", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:227:9: Warning: Integer Overflow.\n        records[node].content", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:203:15: Warning: Integer Overflow.\n        ret = records[node].content", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:287:5: Warning: Integer Overflow.\n    function setABI(bytes32 node, uint256 contentType, bytes data) only_owner(node) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:257:24: Warning: Integer Overflow.\n                data = record.abis\nInteger Overflow occurs if:\n    contentTypes = 512", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:335:9: Warning: Integer Overflow.\n        records[node].pubkey = PublicKey(x, y)", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:315:17: Warning: Integer Overflow.\n        return (records[node].pubkey"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:255:53: Warning: Integer Underflow.\n            if((contentType & contentTypes) != 0 && record.abis[contentType].length\nInteger Underflow occurs if:\n    contentTypes = 512", 
+   "./uniqueContractSourceCode/0x218ce76c54c3b7c716969e206ee35461dd70b015.txt:257:17: Warning: Integer Underflow.\n                data = record.abis[contentType]\nInteger Underflow occurs if:\n    contentTypes = 512"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.3"
+}

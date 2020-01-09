@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x95953fe7b13d3b60aee496b541cd6e157bcf3764.txt:19:5: Warning: Integer Overflow.\n    totalWei += msg.value\nInteger Overflow occurs if:\n    totalWei = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.0"
+}

@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:565:21: Warning: Timestamp Dependency.\n            require(now > tier2End && tier2Total > 0", 
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:585:21: Warning: Timestamp Dependency.\n            require(now > tier3End && this.balance > 0", 
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:575:21: Warning: Timestamp Dependency.\n            require(now > tier3End && tier3Total > 0", 
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:541:21: Warning: Timestamp Dependency.\n            require(now > ICOStart && tier0Total > 0", 
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:555:21: Warning: Timestamp Dependency.\n            require(now > tier1End && tier1Total > 0"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:663:5: Warning: Integer Overflow.\n    function tokenFallback(address _from, uint _value, bytes _data) public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:471:13: Warning: Integer Overflow.\n            amount += tier1[msg.sender]\nInteger Overflow occurs if:\n    tier0[msg.sender] = 72417428326926053134494931297807942569786405729968136620612485149815081134869\n    tier1[msg.sender] = 79529950665186140148500237360372049389470860744375052624574198046375724576526\n    ICORunning = 0", 
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:479:13: Warning: Integer Overflow.\n            amount += tier2[msg.sender]\nInteger Overflow occurs if:\n    tier2[msg.sender] = 79529950665186140148500237360372049389470860744375052624574198046375724576526\n    tier1[msg.sender] = 72417428326926053134494931297807942569786405729968136620612485149815081134869\n    tier0[msg.sender] = 0\n    ICORunning = 0", 
+   "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:487:13: Warning: Integer Overflow.\n            amount += tier3[msg.sender]\nInteger Overflow occurs if:\n    tier3[msg.sender] = 79529950665186140148500237360372049389470860744375052624574198046375724576526\n    tier2[msg.sender] = 72417428326926053134494931297807942569786405729968136620612485149815081134869\n    tier1[msg.sender] = 0\n    tier0[msg.sender] = 0\n    ICORunning = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:511:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(amount)"
+   ], 
+   [
+    "./restContracts/0xA4F902f57Fd9FFcedF4dE6cF7EbC86ea9F76B5d1.txt:511:9: Warning: Transaction-Ordering Dependency.\n        msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.0"
+}

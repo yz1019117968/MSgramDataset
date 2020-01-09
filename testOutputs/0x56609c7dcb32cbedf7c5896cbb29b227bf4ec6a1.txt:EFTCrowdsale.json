@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:173:12: Warning: Timestamp Dependency.\n        if(now > 1525129200 && now < 1527807601", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:131:9: Warning: Timestamp Dependency.\n        require(now > startDate)", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:183:9: Warning: Timestamp Dependency.\n        if(now > 1527807600 && now < 1530399600) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:173:9: Warning: Timestamp Dependency.\n        if(now > 1525129200 && now < 1527807601) { \r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:153:9: Warning: Timestamp Dependency.\n        if(now > 1519862400 && now < 1522537201) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:143:12: Warning: Timestamp Dependency.\n        if(now > 1518307200 && now < 1519862401", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:183:12: Warning: Timestamp Dependency.\n        if(now > 1527807600 && now < 1530399600", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:163:9: Warning: Timestamp Dependency.\n        if(now > 1522537200 && now < 1525129201) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:143:9: Warning: Timestamp Dependency.\n        if(now > 1518307200 && now < 1519862401) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:133:9: Warning: Timestamp Dependency.\n        require(now < endDate)", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:153:12: Warning: Timestamp Dependency.\n        if(now > 1519862400 && now < 1522537201", 
+   "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:163:12: Warning: Timestamp Dependency.\n        if(now > 1522537200 && now < 1525129201"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:195:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(msg.value)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x56609c7dcb32cbedf7c5896cbb29b227bf4ec6a1.txt:121:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(owner)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.2"
+}

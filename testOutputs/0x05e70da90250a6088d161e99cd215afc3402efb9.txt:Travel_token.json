@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x05e70da90250a6088d161e99cd215afc3402efb9.txt:193:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x05e70da90250a6088d161e99cd215afc3402efb9.txt:83:25: Warning: Integer Overflow.\n        totalEthInWei = totalEthInWei + msg.value\nInteger Overflow occurs if:\n    totalEthInWei = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x05e70da90250a6088d161e99cd215afc3402efb9.txt:15:5: Warning: Integer Underflow.\n    string public symbol = 'TRV'", 
+   "./uniqueContractSourceCode/0x05e70da90250a6088d161e99cd215afc3402efb9.txt:25:6: Warning: Integer Underflow.\n     string public version = 'H1.0'", 
+   "./uniqueContractSourceCode/0x05e70da90250a6088d161e99cd215afc3402efb9.txt:13:5: Warning: Integer Underflow.\n    string public name = 'Travel_token'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.6"
+}

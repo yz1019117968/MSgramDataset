@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2b634a2302259e88e8ab85ab6d58e1f2f9e61e47.txt:155:20: Warning: Integer Underflow.\n    uint elapsed = now - STARTTIME"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2b634a2302259e88e8ab85ab6d58e1f2f9e61e47.txt:143:14: Warning: Transaction-Ordering Dependency.\n      return owner.send( amount )"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2b634a2302259e88e8ab85ab6d58e1f2f9e61e47.txt:43:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct( owner )"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.5"
+}

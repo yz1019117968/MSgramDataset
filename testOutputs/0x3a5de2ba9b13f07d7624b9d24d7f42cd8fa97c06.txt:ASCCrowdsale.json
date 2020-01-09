@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:163:12: Warning: Timestamp Dependency.\n        if(now > 1518649200 && now < 1519858800", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:153:12: Warning: Timestamp Dependency.\n        if(now > 1517439600 && now < 1518649200", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:121:9: Warning: Timestamp Dependency.\n        require(now < endDate)", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:133:9: Warning: Timestamp Dependency.\n        if(now > startDate && now < 1516230000) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:143:9: Warning: Timestamp Dependency.\n        if(now > 1516230000 && now < 1517439600) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:119:9: Warning: Timestamp Dependency.\n        require(now > startDate)", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:133:12: Warning: Timestamp Dependency.\n        if(now > startDate && now < 1516230000", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:143:12: Warning: Timestamp Dependency.\n        if(now > 1516230000 && now < 1517439600", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:163:9: Warning: Timestamp Dependency.\n        if(now > 1518649200 && now < 1519858800) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x3a5de2ba9b13f07d7624b9d24d7f42cd8fa97c06.txt:153:9: Warning: Timestamp Dependency.\n        if(now > 1517439600 && now < 1518649200) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.1"
+}

@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xb9255262a3b7a9e9d8372ed87a0979c3324e7820.txt:835:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(controller)"
+   ], 
+   [
+    "./restContracts/0xb9255262a3b7a9e9d8372ed87a0979c3324e7820.txt:1235:9: Warning: Transaction-Ordering Dependency.\n        getContract(\"FD.Funder\").transfer(_amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "92.4"
+}

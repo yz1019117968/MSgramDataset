@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x8c944c3f4029c14c22b6525ac3155482c2559541.txt:81:8: Warning: Timestamp Dependency.\n\t\telse if (now > presaleStop_13_December) {\r\n\t\t^\nSpanning multiple lines.", 
+   "./restContracts/0x8c944c3f4029c14c22b6525ac3155482c2559541.txt:75:3: Warning: Timestamp Dependency.\n\t\tif (now < presaleStart_6_December) {\r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8c944c3f4029c14c22b6525ac3155482c2559541.txt:31:2: Warning: Integer Underflow.\n\tstring public price = \"0.0035 Ether for 2 microBDSM\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "56.2"
+}

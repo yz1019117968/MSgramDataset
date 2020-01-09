@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x93fcd82fe7370fb367b7cc48477e93048b14a1ca.txt:1051:10: Warning: Timestamp Dependency.\n    else if (now < startsAt) return State.PreFunding;\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x93fcd82fe7370fb367b7cc48477e93048b14a1ca.txt:1053:10: Warning: Timestamp Dependency.\n    else if (now <= endsAt && !isMinimumGoalReached()) return State.Funding;\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0x93fcd82fe7370fb367b7cc48477e93048b14a1ca.txt:1053:14: Warning: Timestamp Dependency.\n    else if (now <= endsAt && !isMinimumGoalReached()"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x93fcd82fe7370fb367b7cc48477e93048b14a1ca.txt:1109:58: Warning: Integer Underflow.\n\tuint tokens= total.mul(team_token_percentage_total).div(100-team_token_percentage_total\nInteger Underflow occurs if:\n    team_token_percentage_total = 102\n    owner = 0\n    crowdsale_eth_fund = 0\n    CROWDSALE_ETH_IN_WEI_FUND_MIN = 0\n    endsAt = 28948022309329048855892746252171976963317496166410141009864396001978282409983\n    startsAt = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    finalized = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "75.8"
+}

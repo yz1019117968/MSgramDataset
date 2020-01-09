@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:821:16: Warning: Timestamp Dependency.\n    } else if ((accessTime > preEndTime) && (accessTime < ICOstartTime)", 
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:861:12: Warning: Timestamp Dependency.\n    return withinPeriod && nonZeroPurchase", 
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:785:12: Warning: Timestamp Dependency.\n    } else if ((accessTime >= ICOstartTime) && (accessTime <= ICOEndTime)) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:785:16: Warning: Timestamp Dependency.\n    } else if ((accessTime >= ICOstartTime) && (accessTime <= ICOEndTime)", 
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:857:25: Warning: Timestamp Dependency.\n    bool withinPeriod = now >= preStartTime && now <= ICOEndTime", 
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:767:9: Warning: Timestamp Dependency.\n    if ((accessTime >= preStartTime) && (accessTime < preEndTime)", 
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:821:12: Warning: Timestamp Dependency.\n    } else if ((accessTime > preEndTime) && (accessTime < ICOstartTime)){\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1a853aa1e872d330f9e743777e02c3ced98b56cc.txt:767:5: Warning: Timestamp Dependency.\n    if ((accessTime >= preStartTime) && (accessTime < preEndTime)) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.3"
+}

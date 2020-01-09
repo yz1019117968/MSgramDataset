@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:277:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    paused = 0", 
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:595:3: Warning: Integer Overflow.\n  function changeSymbolName(string symbolName) onlyOwner public\r\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    symbolName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:605:4: Warning: Integer Overflow.\n   function changeName(string symbolName) onlyOwner public\r\n   ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    symbolName = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:563:3: Warning: Integer Underflow.\n  string public name = \"GOD Token\"", 
+   "./uniqueContractSourceCode/0x06c9b941f1895e89ec7459975a71d29f2f1456ba.txt:565:3: Warning: Integer Underflow.\n  string public symbol = \"GOD\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.7"
+}

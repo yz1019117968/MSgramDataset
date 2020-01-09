@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x39a87dc12a7199aa012c18f114b763e27d0deca4.txt:669:5: Warning: Integer Overflow.\n    uint256[] public BOARD_RESERVED_PERSENTAGE = [200,200,200,500,500,1000,1000,2000,2000,2400]", 
+   "./uniqueContractSourceCode/0x39a87dc12a7199aa012c18f114b763e27d0deca4.txt:645:5: Warning: Integer Overflow.\n    address[] public BOARD_RESERVED = [ 0x91cdb4c96d43591432fba178b672800b30266d63,\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

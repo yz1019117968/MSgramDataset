@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:233:5: Warning: Integer Overflow.\n    function setContactInformation(string info) onlyOwner public {\r\n    ^\nSpanning multiple lines.", 
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:1119:13: Warning: Integer Overflow.\n            buyerCount++\nInteger Overflow occurs if:\n    weiRaised = 0\n    buyerCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMinimumAmount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumGoal = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endTime = 0\n    startTime = 0\n    paused = 0\n    boughtAmountOf[beneficiary] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:221:5: Warning: Integer Underflow.\n    string public contactInformation", 
+   "./restContracts/0xa854529f651b26dd7d2dc5c10954ffc48357bb5b.txt:1179:16: Warning: Integer Underflow.\n        return weiMaximumGoal - weiRaised\nInteger Underflow occurs if:\n    weiMaximumGoal = 0\n    weiRaised = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.7"
+}

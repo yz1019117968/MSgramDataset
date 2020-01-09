@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2689:5: Warning: Integer Overflow.\n    PreICOAllocation[] public preIcoAllocation", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2769:47: Warning: Integer Overflow.\n        PreICOAllocation storage allocation = preIcoAllocation[_id]\nInteger Overflow occurs if:\n    preIcoAllocation[_id] = 32\n    _id = 30", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2821:24: Warning: Integer Overflow.\n        return uint256(distributionThresholds[_id]\nInteger Overflow occurs if:\n    distributionThresholds[_id] = 32\n    _id = 30", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2693:5: Warning: Integer Overflow.\n    ICOAllocation[] public icoAllocation", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2801:44: Warning: Integer Overflow.\n        ICOAllocation storage allocation = icoAllocation[_id]\nInteger Overflow occurs if:\n    _id = 33\n    icoAllocation[_id] = 57896044618658097711785492504343953926634992332820282019728792003956564820003", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2697:5: Warning: Integer Overflow.\n    uint256[] public distributionThresholds", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2757:47: Warning: Integer Overflow.\n        PreICOAllocation storage allocation = preIcoAllocation[_id]\nInteger Overflow occurs if:\n    preIcoAllocation[_id] = 32\n    _id = 30", 
+   "./restContracts/0xab76bb81f9bf566d0795a4dd05af63db53e15725.txt:2789:44: Warning: Integer Overflow.\n        ICOAllocation storage allocation = icoAllocation[_id]\nInteger Overflow occurs if:\n    icoAllocation[_id] = 32\n    _id = 30"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

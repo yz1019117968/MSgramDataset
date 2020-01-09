@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x1f31d1168efe4bd22d00d31fc425e5bcb54c75e7.txt:189:65: Warning: Integer Underflow.\n    \tuint256 add_by_solded = ((soldSupply*1000000)/totalSupply*(maxBuyPrice-minBuyPrice\nInteger Underflow occurs if:\n    wlStartBlock = 0\n    wlStopBlock = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    maxBuyPrice = 0\n    minBuyPrice = 1", 
+   "./uniqueContractSourceCode/0x1f31d1168efe4bd22d00d31fc425e5bcb54c75e7.txt:99:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x1f31d1168efe4bd22d00d31fc425e5bcb54c75e7.txt:97:2: Warning: Integer Underflow.\n\tstring public standard = 'Token 0.1'", 
+   "./uniqueContractSourceCode/0x1f31d1168efe4bd22d00d31fc425e5bcb54c75e7.txt:101:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x1f31d1168efe4bd22d00d31fc425e5bcb54c75e7.txt:187:97: Warning: Integer Underflow.\n    \tuint256 add_by_blocks = (((block.number-wlStartBlock)*1000000)/(wlStopBlock-wlStartBlock)*(maxBuyPrice-minBuyPrice\nInteger Underflow occurs if:\n    wlStartBlock = 1\n    minBuyPrice = 1\n    wlStopBlock = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    maxBuyPrice = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x1f31d1168efe4bd22d00d31fc425e5bcb54c75e7.txt:361:9: Warning: Transaction-Ordering Dependency.\n\t\t\tif (!foundersAddresses[i].send(amount_to_withdraw)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x1f31d1168efe4bd22d00d31fc425e5bcb54c75e7.txt:361:9: Warning: Transaction-Ordering Dependency.\n\t\t\tif (!foundersAddresses[i].send(amount_to_withdraw)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.1"
+}

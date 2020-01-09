@@ -1,0 +1,39 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:983:5: Warning: Timestamp Dependency.\n    if (now > endDate) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:943:7: Warning: Integer Overflow.\n      whitelistIndex++\nInteger Overflow occurs if:\n    state = 0\n    whitelistIndex = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    whiteList[inv].isActive = 0\n    holdPeriod = 1\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:961:40: Warning: Integer Overflow.\n    if (whiteList[inv].holdPeriod==6)  whiteList[inv].holdTimestamp\nInteger Overflow occurs if:\n    endSaleDate = 32566525097995179962879339533693474083732183187211408636097445502225567186944\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 6\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:949:5: Warning: Integer Overflow.\n    whiteList[inv].invAmount\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 1\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    endSaleDate = 115792089237316195423570985008687907853269984665640564039457584007913128744448\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 3\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:953:5: Warning: Integer Overflow.\n    whiteList[inv].bonus\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 1\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:957:9: Warning: Integer Overflow.\n    if (whiteList[inv].holdPeriod\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 1\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:939:7: Warning: Integer Overflow.\n      whiteList[inv].payed\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 0\n    holdPeriod = 1\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:853:3: Warning: Integer Overflow.\n  mapping(address => WhitelistContributor) public whiteList", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:959:9: Warning: Integer Overflow.\n    if (whiteList[inv].holdPeriod\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 3\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:967:53: Warning: Integer Overflow.\n    AddedToWhiteList(inv, whiteList[inv].invAmount, whiteList[inv].holdPeriod\nInteger Overflow occurs if:\n    endSaleDate = 57896044618658097711785492504343953926634992332820282019728792003956564817408\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 3\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:951:5: Warning: Integer Overflow.\n    whiteList[inv].holdPeriod\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 1\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:963:9: Warning: Integer Overflow.\n    if (whiteList[inv].holdPeriod\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 12\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:967:27: Warning: Integer Overflow.\n    AddedToWhiteList(inv, whiteList[inv].invAmount\nInteger Overflow occurs if:\n    endSaleDate = 57896044618658097711785492504343953926634992332820282019728792003956564817408\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 3\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:967:81: Warning: Integer Overflow.\n    AddedToWhiteList(inv, whiteList[inv].invAmount, whiteList[inv].holdPeriod,  whiteList[inv].bonus\nInteger Overflow occurs if:\n    endSaleDate = 57896044618658097711785492504343953926634992332820282019728792003956564817408\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 3\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:959:40: Warning: Integer Overflow.\n    if (whiteList[inv].holdPeriod==3)  whiteList[inv].holdTimestamp\nInteger Overflow occurs if:\n    endSaleDate = 57896044618658097711785492504343953926634992332820282019728792003956564817408\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 3\n    owner = 0", 
+   "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:961:9: Warning: Integer Overflow.\n    if (whiteList[inv].holdPeriod\nInteger Overflow occurs if:\n    state = 0\n    whiteList[inv].isActive = 255\n    holdPeriod = 6\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:987:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(msg.value)"
+   ], 
+   [
+    "./restContracts/0x89ac2485449303a67dac802631d5cea8cb2c856c.txt:1093:5: Warning: Transaction-Ordering Dependency.\n    wallet.transfer(bal)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.7"
+}

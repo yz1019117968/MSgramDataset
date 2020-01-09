@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8404c9c6bb57002073150fbc8ccec4027c480955.txt:93:12: Warning: Integer Overflow.\n           _balance[addr] ++\nInteger Overflow occurs if:\n    _balance[addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _used[addr] = 0\n    active = 255", 
+   "./restContracts/0x8404c9c6bb57002073150fbc8ccec4027c480955.txt:79:26: Warning: Integer Overflow.\n        deactivateTime = now + 90 days"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8404c9c6bb57002073150fbc8ccec4027c480955.txt:9:5: Warning: Integer Underflow.\n    string public standard = 'Token 0.69'", 
+   "./restContracts/0x8404c9c6bb57002073150fbc8ccec4027c480955.txt:13:5: Warning: Integer Underflow.\n    string public symbol = \"DBC\"", 
+   "./restContracts/0x8404c9c6bb57002073150fbc8ccec4027c480955.txt:11:5: Warning: Integer Underflow.\n    string public name = \"Dick Butt Coin\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.3"
+}

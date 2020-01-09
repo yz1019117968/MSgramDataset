@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x4f0D20468571d7b6a1045656dC110fbc73143fb3.txt:55:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807", 
+   "./uniqueContractSourceCode/0x4f0D20468571d7b6a1045656dC110fbc73143fb3.txt:375:5: Warning: Integer Overflow.\n    function DeliverToClaimers(address[] dests, uint256[] values) forOwner returns (uint256) \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dests = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4f0D20468571d7b6a1045656dC110fbc73143fb3.txt:41:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x4f0D20468571d7b6a1045656dC110fbc73143fb3.txt:355:5: Warning: Integer Overflow.\n    function ClaimBTC(string fullSignature) payable\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    fullSignature = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x4f0D20468571d7b6a1045656dC110fbc73143fb3.txt:277:9: Warning: Integer Overflow.\n        balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[satoeContract] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    satoeContract = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x4f0D20468571d7b6a1045656dC110fbc73143fb3.txt:209:51: Warning: Integer Underflow.\n        uint256 airDropReward = (2048*10**8)/(2**(airDropStage-1\nInteger Underflow occurs if:\n    airDropStage = 0\n    airDropped[msg.sender] = 0", 
+   "./uniqueContractSourceCode/0x4f0D20468571d7b6a1045656dC110fbc73143fb3.txt:279:24: Warning: Integer Underflow.\n        _totalSupply = maxSupply - balances[satoeContract]\nInteger Underflow occurs if:\n    balances[satoeContract] = 115792089237316195423570985008687907853269984665640564039457579504313502269438\n    _value = 0\n    maxSupply = 115792089237316195423570985008687907853269984665640564039457579504313502269437\n    satoeContract = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.1"
+}

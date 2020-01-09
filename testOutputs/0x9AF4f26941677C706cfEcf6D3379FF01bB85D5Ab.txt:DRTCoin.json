@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9AF4f26941677C706cfEcf6D3379FF01bB85D5Ab.txt:139:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0x9AF4f26941677C706cfEcf6D3379FF01bB85D5Ab.txt:623:31: Warning: Integer Overflow.\n        uint256 amountTotal = ownerFrosted + ownerDefrosted\nInteger Overflow occurs if:\n    ownerFrosted = 1\n    ownerDefrosted = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x9AF4f26941677C706cfEcf6D3379FF01bB85D5Ab.txt:587:35: Warning: Integer Overflow.\n            uint256 amountTotal = icedBalances_frosted[currentAddress] + icedBalances_defrosted[currentAddress]\nInteger Overflow occurs if:\n    icedBalances_frosted[currentAddress] = 1\n    icedBalances_defrosted[currentAddress] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    icedBalances.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./restContracts/0x9AF4f26941677C706cfEcf6D3379FF01bB85D5Ab.txt:495:5: Warning: Integer Overflow.\n    function batchAssignTokens(address[] _vaddr, uint[] _vamounts, bool[] _vIcedBalance) onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9AF4f26941677C706cfEcf6D3379FF01bB85D5Ab.txt:645:21: Warning: Integer Underflow.\n        elapsed = ((now - START_ICO_TIMESTAMP"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.2"
+}

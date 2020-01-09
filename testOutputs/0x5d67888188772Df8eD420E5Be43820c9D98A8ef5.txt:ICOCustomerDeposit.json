@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5d67888188772Df8eD420E5Be43820c9D98A8ef5.txt:91:5: Warning: Integer Overflow.\n    ICODepositContract[] public contracts", 
+   "./uniqueContractSourceCode/0x5d67888188772Df8eD420E5Be43820c9D98A8ef5.txt:121:13: Warning: Integer Overflow.\n            contracts.push(depositContract)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5d67888188772Df8eD420E5Be43820c9D98A8ef5.txt:131:9: Warning: Integer Overflow.\n        totalDeposits += msg.value\nInteger Overflow occurs if:\n    totalDeposits = 1", 
+   "./uniqueContractSourceCode/0x5d67888188772Df8eD420E5Be43820c9D98A8ef5.txt:87:1: Warning: Integer Overflow.\ncontract ICOCustomerDeposit is Owned {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "52.5"
+}

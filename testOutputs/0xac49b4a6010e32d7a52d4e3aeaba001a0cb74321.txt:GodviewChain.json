@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xac49b4a6010e32d7a52d4e3aeaba001a0cb74321.txt:219:5: Warning: Integer Overflow.\n    function burn(uint256 _value, bytes _data) public returns (bool success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xac49b4a6010e32d7a52d4e3aeaba001a0cb74321.txt:19:14: Warning: Integer Overflow.\n    uint c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xac49b4a6010e32d7a52d4e3aeaba001a0cb74321.txt:167:5: Warning: Integer Overflow.\n    function transfer(address _to, uint _value, bytes _data) public returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xac49b4a6010e32d7a52d4e3aeaba001a0cb74321.txt:77:5: Warning: Integer Underflow.\n    string  public symbol", 
+   "./restContracts/0xac49b4a6010e32d7a52d4e3aeaba001a0cb74321.txt:75:5: Warning: Integer Underflow.\n    string  public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "53.4"
+}

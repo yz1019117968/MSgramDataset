@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0aac84ef458e67758a2991a769d979981cd41fc4.txt:433:3: Warning: Integer Underflow.\n  string public name = \"OxToken\"", 
+   "./uniqueContractSourceCode/0x0aac84ef458e67758a2991a769d979981cd41fc4.txt:435:3: Warning: Integer Underflow.\n  string public symbol = \"OX\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "67.2"
+}

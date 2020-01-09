@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x85302fcc8e5ed7e6182f65e9801dcdfed89bc52f.txt:859:64: Warning: Integer Overflow.\n            if (datetime >= phases[i].startTime && datetime <= phases[i].endTime\nInteger Overflow occurs if:\n    totalPhases = 10\n    phases[i].startTime = 0\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1", 
+   "./restContracts/0x85302fcc8e5ed7e6182f65e9801dcdfed89bc52f.txt:861:24: Warning: Integer Overflow.\n                return phases[i].bonusPercent\nInteger Overflow occurs if:\n    totalPhases = 10\n    phases[i].endTime = 0\n    phases[i].startTime = 0\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1\n    phases[i].startTime = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.2"
+}

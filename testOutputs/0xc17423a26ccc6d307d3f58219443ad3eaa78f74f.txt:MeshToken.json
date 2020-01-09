@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc17423a26ccc6d307d3f58219443ad3eaa78f74f.txt:839:3: Warning: Integer Underflow.\n  string public name = \"DJANGO UNCHAIN\"", 
+   "./restContracts/0xc17423a26ccc6d307d3f58219443ad3eaa78f74f.txt:841:3: Warning: Integer Underflow.\n  string public symbol = \"DJANGO\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.4"
+}

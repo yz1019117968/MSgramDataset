@@ -1,0 +1,27 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:857:9: Warning: Timestamp Dependency.\n        if (timeElapsed >= DURATION) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:711:5: Warning: Integer Underflow.\n    string public version = \"0.1.0\"", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:1055:9: Warning: Integer Underflow.\n        fundBalance -= contribution\nInteger Underflow occurs if:\n    stage = 2\n    fundBalance = 0\n    contributions[msg.sender] = 1\n    DURATION = 1\n    startDate = 0", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:853:28: Warning: Integer Underflow.\n        uint timeElapsed = now - startDate\nInteger Underflow occurs if:\n    stage = 1\n    startDate = 1", 
+   "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:1137:32: Warning: Integer Underflow.\n        uint remainingTokens = CAP - tokensSent\nInteger Underflow occurs if:\n    stage = 2\n    CAP = 0\n    tokensSent = 1\n    DURATION = 1\n    startDate = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:1061:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(contribution)"
+   ], 
+   [
+    "./restContracts/0xc0e8748c4959b0dc07a3d7ab7cf012179e06f09a.txt:1061:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(contribution)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.9"
+}

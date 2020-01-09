@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [
+   "./uniqueContractSourceCode/0x5182618e956deea92fad51de09a4db32e3978f9d.txt:215:9: Warning: Callstack Depth Attack Vulnerability.\n        owner.send(this.balance)", 
+   "./uniqueContractSourceCode/0x5182618e956deea92fad51de09a4db32e3978f9d.txt:171:7: Warning: Callstack Depth Attack Vulnerability.\n      owner.send(this.balance)"
+  ], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "1.5"
+}

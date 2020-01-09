@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2eefe55e7fd4546ce3451430aa4fdced0c4efe85.txt:113:5: Warning: Integer Overflow.\n    function startAirdropFrom(address _fromAddr, address[] users, uint256 amounts) public onlyOwner {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2eefe55e7fd4546ce3451430aa4fdced0c4efe85.txt:131:5: Warning: Integer Overflow.\n    function startAirdrop(address[] _user, uint256 _amount) public onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "57.4"
+}

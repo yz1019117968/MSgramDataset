@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbe464757c8f77565a8fa1b9beb3e4aead6a443a5.txt:847:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    _to = 1461501637330902918203684832716283019655932542975\n    whitelistedTransfer[msg.sender] = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbe464757c8f77565a8fa1b9beb3e4aead6a443a5.txt:247:5: Warning: Integer Underflow.\n    string public name = \"Taylor\"", 
+   "./restContracts/0xbe464757c8f77565a8fa1b9beb3e4aead6a443a5.txt:249:5: Warning: Integer Underflow.\n    string public symbol = \"TAY\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "87.2"
+}

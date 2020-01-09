@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x93765bd8e354192749e40088b3ce765e6e1824c9.txt:315:36: Warning: Integer Overflow.\n        uint256 previousBalances = balances[_from] + balances[_to]\nInteger Overflow occurs if:\n    balances[_from] = 115792089237316195423570985008687907853269984665640564039457584007913062834182\n    balances[_to] = 115487308118641924126717866189809754409289743693429519769181606938190102396799\n    allowed[_from][msg.sender] = 9444732965739357536127", 
+   "./restContracts/0x93765bd8e354192749e40088b3ce765e6e1824c9.txt:353:9: Warning: Integer Overflow.\n        tokenHolders.push(_holder)\nInteger Overflow occurs if:\n    balances[_to] = 65179140750564553659626807803321862665157531978768805486849662300672196211163\n    _tokenAccount[_holder] = 0\n    balances[_from] = 29043792468365450711368073721393079893207317879740726728458886810539705147465\n    allowed[_from][msg.sender] = 29043792468365450711368073721393079893207317879740726728458886810539705147465"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x93765bd8e354192749e40088b3ce765e6e1824c9.txt:385:9: Warning: Integer Underflow.\n        _totalSupply -= _value\nInteger Underflow occurs if:\n    _totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "43.0"
+}

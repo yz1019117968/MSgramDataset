@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xa4e53ebcdd4360d9f7c367623b43a92f6e41ef9e.txt:443:3: Warning: Integer Overflow.\n  function mint(address _to, uint256 _amount, string _account) onlyOwner canMint public returns (bool) {\r\n  ^\nSpanning multiple lines.", 
+   "./restContracts/0xa4e53ebcdd4360d9f7c367623b43a92f6e41ef9e.txt:55:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balances[_from] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./restContracts/0xa4e53ebcdd4360d9f7c367623b43a92f6e41ef9e.txt:479:3: Warning: Integer Overflow.\n  function getBindAccountAddress(string _account) public constant returns (address) {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa4e53ebcdd4360d9f7c367623b43a92f6e41ef9e.txt:487:7: Warning: Integer Underflow.\n      return bindAddressAccounts[_accountAddress]\nInteger Underflow occurs if:\n    return bindAddressAccounts[_accountAddress] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "55.6"
+}

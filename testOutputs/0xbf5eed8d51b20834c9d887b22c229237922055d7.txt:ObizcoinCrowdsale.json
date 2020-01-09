@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:539:13: Warning: Integer Overflow.\n            holders.push(newHolder)\nInteger Overflow occurs if:\n    time2 = 21267647932558653966460912964485513216\n    weiRaised = 5192296858534827556558664399591506\n    isHolder[newHolder] = 0\n    time3 = 21267647932558653966460912964485513217\n    time7 = 21267647932558653966460912964485513216\n    time0 = 21267647932558653966460912964485513216", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:531:5: Warning: Integer Overflow.\n    address[] public holders", 
+   "./restContracts/0xbf5eed8d51b20834c9d887b22c229237922055d7.txt:583:1: Warning: Integer Overflow.\ncontract ObizcoinCrowdsale is Crowdsale {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    isHolder[newHolder] = 0\n    time3 = 1\n    time0 = 1\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "41.6"
+}

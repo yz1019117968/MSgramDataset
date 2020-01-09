@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:365:9: Warning: Integer Overflow.\n        ownerHistory.push(owner)\nInteger Overflow occurs if:\n    ownerMap[owner] = 0\n    owner1 = 0", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1071:1: Warning: Integer Overflow.\ncontract GameWallet is CommonWallet {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    ownerMap[owner] = 0\n    owner1 = 0", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:313:5: Warning: Integer Overflow.\n    address[] public ownerHistory"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "95.8"
+}

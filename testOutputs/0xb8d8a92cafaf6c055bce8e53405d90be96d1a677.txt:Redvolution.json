@@ -1,0 +1,33 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:325:5: Warning: Integer Overflow.\n    function buyChannel(string channelName){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channelName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:499:5: Warning: Integer Overflow.\n    function setSymbol(string newSymbol) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newSymbol = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:309:5: Warning: Integer Overflow.\n    function sellChannel(string channelName, uint256 price){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channelName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:349:5: Warning: Integer Overflow.\n    function createChannel(string channelName){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channelName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:635:5: Warning: Integer Overflow.\n    function transferMultiple(uint256 _amount, address[] addresses) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:647:5: Warning: Integer Overflow.\n    function transferMultipleDifferentValues(uint256[] amounts, address[] addresses) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    amounts = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:407:5: Warning: Integer Overflow.\n    function getOwner(string channel) constant returns(address ownerOfChannel){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channel = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:285:5: Warning: Integer Overflow.\n    function sendMessageToChannel(string channelName, string messageContent){ // only owners can send messages to channels\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channelName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:385:5: Warning: Integer Overflow.\n    function setMetadataChannels(string channelName, string metadata){ // metadata can be used for a lot of things such as redirection or displaying an image\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channelName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:507:5: Warning: Integer Overflow.\n    function setName(string newName) onlyOwner {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    newName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:261:5: Warning: Integer Overflow.\n    function sendMessage(address to, string messageContent, string messageTitle, uint256 amountBonusToken){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    messageContent = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:273:5: Warning: Integer Overflow.\n    function sendMultipleMessages(address[] to, string messageContent, string messageTitle, uint256 amountBonusToken){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    to = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:423:5: Warning: Integer Overflow.\n    function getMetadataChannel(string channel) constant returns(string metadataOfChannel){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channel = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:415:5: Warning: Integer Overflow.\n    function getPriceChannel(string channel) constant returns(uint256 price){\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    channel = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:375:5: Warning: Integer Overflow.\n    function setMetadataUser(string metadata) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    metadata = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:189:5: Warning: Integer Underflow.\n    string public name = \"Redvolution\"", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:433:9: Warning: Integer Underflow.\n        return metadataUser[user]\nInteger Underflow occurs if:\n    return metadataUser[user] = 1", 
+   "./restContracts/0xb8d8a92cafaf6c055bce8e53405d90be96d1a677.txt:187:5: Warning: Integer Underflow.\n    string public symbol = \"REDV\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.3"
+}

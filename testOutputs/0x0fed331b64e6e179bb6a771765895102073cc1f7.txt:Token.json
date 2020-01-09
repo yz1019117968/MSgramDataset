@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0fed331b64e6e179bb6a771765895102073cc1f7.txt:605:5: Warning: Integer Overflow.\n    function setMotd(string _motd) public onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0fed331b64e6e179bb6a771765895102073cc1f7.txt:281:5: Warning: Integer Underflow.\n    string public motd", 
+   "./uniqueContractSourceCode/0x0fed331b64e6e179bb6a771765895102073cc1f7.txt:267:5: Warning: Integer Underflow.\n    string public name = \"FairWin Token\"", 
+   "./uniqueContractSourceCode/0x0fed331b64e6e179bb6a771765895102073cc1f7.txt:271:5: Warning: Integer Underflow.\n    string public symbol = \"FWIN\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.0"
+}

@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:205:21: Warning: Integer Overflow.\n        isPartner = partnersInfo[partner_address].create", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:263:47: Warning: Integer Overflow.\n        if(partner_address != address(0x0) && partnersInfo[partner_address].create\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:265:21: Warning: Integer Overflow.\n            promo = partnersInfo[partner_address].promo\nInteger Overflow occurs if:\n    partnersInfo[partner_address].create = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:211:21: Warning: Integer Overflow.\n            promo = partnersInfo[partner_address].promo\nInteger Overflow occurs if:\n    partnersInfo[partner_address].create = 255", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:173:5: Warning: Integer Overflow.\n    function setPromoToPartner(string promo) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:195:5: Warning: Integer Overflow.\n    function checkPromo(string promo) constant returns(bool){\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:347:16: Warning: Integer Overflow.\n            if(partnersPromo[promo]\nInteger Overflow occurs if:\n    contractPreICO = 0", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:337:5: Warning: Integer Overflow.\n    function add_referral(address referral, string promo, uint256 amount) external returns(address partner, uint256 p_partner, uint256 p_referral){\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:265:13: Warning: Integer Underflow.\n            promo = partnersInfo[partner_address].promo\nInteger Underflow occurs if:\n    partnersInfo[partner_address].create = 255\n    owner = 0", 
+   "./uniqueContractSourceCode/0x2c8eab1b7c57a6f9f81f761b26b71f99b25ff59c.txt:211:13: Warning: Integer Underflow.\n            promo = partnersInfo[partner_address].promo\nInteger Underflow occurs if:\n    partnersInfo[partner_address].create = 255"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.3"
+}

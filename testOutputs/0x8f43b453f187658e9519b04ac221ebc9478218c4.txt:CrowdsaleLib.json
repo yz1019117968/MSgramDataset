@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1521:5: Warning: Integer Overflow.\n    self.withdrawTokensMap\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.tokensSet = 0\n    self.owner = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1289:71: Warning: Integer Overflow.\n          uint256 _burnAmount = (self.withdrawTokensMap[msg.sender] * self.percentBurn\nInteger Overflow occurs if:\n    self.endTime = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.percentBurn = 16711680\n    self.owner = 0\n    self.withdrawTokensMap[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1591:12: Warning: Integer Overflow.\n    return self.startingTokenBalance\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1209:19: Warning: Integer Overflow.\n  \treturn (now >= self.startTime\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1523:5: Warning: Integer Overflow.\n    self.startingTokenBalance\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.tokensSet = 0\n    self.owner = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1289:34: Warning: Integer Overflow.\n          uint256 _burnAmount = (self.withdrawTokensMap\nInteger Overflow occurs if:\n    self.endTime = 0\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.percentBurn = 16711680\n    self.owner = 0\n    self.withdrawTokensMap[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1525:5: Warning: Integer Overflow.\n    self.tokensSet\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.tokensSet = 0\n    self.owner = 0", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1209:44: Warning: Integer Overflow.\n  \treturn (now >= self.startTime && now <= self.endTime\nInteger Overflow occurs if:\n    self = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    self.startTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1591:12: Warning: Integer Underflow.\n    return self.startingTokenBalance - self.token.balanceOf(this)\nInteger Underflow occurs if:\n    self.startingTokenBalance = 50942633119752846454219349998365661925608737367104304655302372697894809501695", 
+   "./restContracts/0x8f43b453f187658e9519b04ac221ebc9478218c4.txt:1455:21: Warning: Integer Underflow.\n    require((now > (self.startTime - 3 days\nInteger Underflow occurs if:\n    self.startTime = 259199\n    self.owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "27.5"
+}

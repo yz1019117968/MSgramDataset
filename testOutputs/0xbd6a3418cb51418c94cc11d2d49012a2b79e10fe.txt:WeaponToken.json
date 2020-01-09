@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:199:38: Warning: Integer Overflow.\n        WeaponEntity memory weapon = weaponEntities[id]\nInteger Overflow occurs if:\n    weaponEntities[id] = 7237005577332262213973186563042994240829374041602535252466099000494570602497", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:115:5: Warning: Integer Overflow.\n    WeaponModel[] public weaponModels", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:479:16: Warning: Integer Overflow.\n        return ownerToWeapons[_owner][_index]\nInteger Overflow occurs if:\n    _index = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    ownerToWeapons[_owner].length = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:373:1: Warning: Integer Overflow.\ncontract WeaponToken is WeaponsCore, ERC721 {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _from = 0\n    weaponToOwner[_tokenId] = 0\n    weaponToApproved[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:211:37: Warning: Integer Overflow.\n        WeaponModel memory weapon = weaponModels[id]\nInteger Overflow occurs if:\n    weaponModels[id] = 7237005577332262213973186563042994240829374041602535252466099000494570602497", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:295:9: Warning: Integer Overflow.\n        ownerToWeapons[_to].push(_id)\nInteger Overflow occurs if:\n    _from = 0\n    weaponToOwner[_tokenId] = 0\n    weaponToApproved[_tokenId] = 0\n    _to = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:117:5: Warning: Integer Overflow.\n    WeaponEntity[] public weaponEntities"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:223:29: Warning: Integer Underflow.\n        uint weaponsCount = nextWeaponID - 1\nInteger Underflow occurs if:\n    nextWeaponID = 0", 
+   "./restContracts/0xbd6a3418cb51418c94cc11d2d49012a2b79e10fe.txt:221:5: Warning: Integer Underflow.\n    function getWeaponIds() external view returns (uint[]) {\r\n    ^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    nextWeaponID = 374144419156711147060143317175368453031918731001856"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "76.9"
+}

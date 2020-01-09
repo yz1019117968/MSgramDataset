@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [
+   "./uniqueContractSourceCode/0x56ba2Ee7890461f463F7be02aAC3099f6d5811A8.txt:647:8: Warning: Re-Entrancy Vulnerability.\n\t\tif (!devETHDestination.call.value(this.balance)()"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x56ba2Ee7890461f463F7be02aAC3099f6d5811A8.txt:385:2: Warning: Integer Underflow.\n\tstring public version = \"1.0\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x56ba2Ee7890461f463F7be02aAC3099f6d5811A8.txt:647:8: Warning: Transaction-Ordering Dependency.\n\t\tif (!devETHDestination.call.value(this.balance)()"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x56ba2Ee7890461f463F7be02aAC3099f6d5811A8.txt:715:8: Warning: Transaction-Ordering Dependency.\n\t\tif (!msg.sender.send(etherAmount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "85.2"
+}

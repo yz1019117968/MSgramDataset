@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x52ae06056e121d2d34ea2e42e1b84b46bd3a31db.txt:369:5: Warning: Integer Overflow.\n    totalSupply += _amount\nInteger Overflow occurs if:\n    totalSupply = 1\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    controller = 0", 
+   "./uniqueContractSourceCode/0x52ae06056e121d2d34ea2e42e1b84b46bd3a31db.txt:127:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balanceOf[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    controller = 0", 
+   "./uniqueContractSourceCode/0x52ae06056e121d2d34ea2e42e1b84b46bd3a31db.txt:367:5: Warning: Integer Overflow.\n    balanceOf[_to] += _amount\nInteger Overflow occurs if:\n    balanceOf[_to] = 1\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    controller = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

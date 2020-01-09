@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x14e2ac9b6ca7bade21afdfa31b63708fc0b08d8f.txt:59:3: Warning: Timestamp Dependency.\n\t\tif ((lastKing + timeLimit) < block.timestamp) {\r\n\t\t^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x14e2ac9b6ca7bade21afdfa31b63708fc0b08d8f.txt:59:8: Warning: Integer Overflow.\n\t\tif ((lastKing + timeLimit\nInteger Overflow occurs if:\n    lastKing = 1\n    timeLimit = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x14e2ac9b6ca7bade21afdfa31b63708fc0b08d8f.txt:27:2: Warning: Integer Overflow.\n\taddress[] public previousEntries", 
+   "./uniqueContractSourceCode/0x14e2ac9b6ca7bade21afdfa31b63708fc0b08d8f.txt:65:3: Warning: Integer Overflow.\n\t\tpreviousEntries.push(currentKing)\nInteger Overflow occurs if:\n    previousEntries.push(currentKing) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    timeLimit = 0\n    lastKing = 0", 
+   "./uniqueContractSourceCode/0x14e2ac9b6ca7bade21afdfa31b63708fc0b08d8f.txt:15:1: Warning: Integer Overflow.\ncontract KingOfTheHill {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    previousEntries.push(currentKing) = 92635373996330437893093946882045833670667610140201060658241689357833325155464\n    timeLimit = 0\n    lastKing = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "78.2"
+}

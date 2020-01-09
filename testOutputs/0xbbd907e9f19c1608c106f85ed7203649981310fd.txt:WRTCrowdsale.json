@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:119:9: Warning: Timestamp Dependency.\n        require(now > startDate)", 
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:129:12: Warning: Timestamp Dependency.\n        if(now > startDate && now < 1517094000", 
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:139:12: Warning: Timestamp Dependency.\n        if(now > 1517439600 && now < 1519772400", 
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:139:9: Warning: Timestamp Dependency.\n        if(now > 1517439600 && now < 1519772400) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:121:9: Warning: Timestamp Dependency.\n        require(now < endDate)", 
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:149:9: Warning: Timestamp Dependency.\n        if(now > 1520636400 && now < 1521500400) {\r\n        ^\nSpanning multiple lines.", 
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:149:12: Warning: Timestamp Dependency.\n        if(now > 1520636400 && now < 1521500400", 
+   "./restContracts/0xbbd907e9f19c1608c106f85ed7203649981310fd.txt:129:9: Warning: Timestamp Dependency.\n        if(now > startDate && now < 1517094000) {\r\n        ^\nSpanning multiple lines."
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.2"
+}

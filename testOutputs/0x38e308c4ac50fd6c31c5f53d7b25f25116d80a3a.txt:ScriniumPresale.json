@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:155:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    _value = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705", 
+   "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:73:5: Warning: Integer Overflow.\n    function changeNameSymbol(string _name, string _symbol) payable external\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:221:17: Warning: Integer Overflow.\n             && balances[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:175:13: Warning: Integer Overflow.\n            balances[_to] += _value\nInteger Overflow occurs if:\n    balances[_to] = 1\n    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:15:1: Warning: Integer Underflow.\ncontract ScriniumPresale {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:19:5: Warning: Integer Underflow.\n    string public symbol = \"SCR\"", 
+   "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:17:5: Warning: Integer Underflow.\n    string public name = \"Scrinium\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:121:13: Warning: Transaction-Ordering Dependency.\n            selfdestruct(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x38e308c4ac50fd6c31c5f53d7b25f25116d80a3a.txt:101:13: Warning: Transaction-Ordering Dependency.\n            owner.transfer(msg.value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.2"
+}

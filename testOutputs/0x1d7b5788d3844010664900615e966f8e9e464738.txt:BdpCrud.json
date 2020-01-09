@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1d7b5788d3844010664900615e966f8e9e464738.txt:1971:2: Warning: Integer Overflow.\n\tfunction updateRegion(address[16] _contracts, uint256 _regionId, uint256 _imageId, uint256[] _imageData, bool _swapImages, bool _clearImage, uint8[128] _url, bool _deleteUrl, address _newOwner) public {\r\n\t^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x1d7b5788d3844010664900615e966f8e9e464738.txt:2019:11: Warning: Integer Overflow.\n\t\trequire(BdpOwnership.ownerOf(_contracts, _regionId)", 
+   "./uniqueContractSourceCode/0x1d7b5788d3844010664900615e966f8e9e464738.txt:1935:3: Warning: Integer Overflow.\n\t\tBdpOwnership.burn(_contracts, _regionId)", 
+   "./uniqueContractSourceCode/0x1d7b5788d3844010664900615e966f8e9e464738.txt:1917:3: Warning: Integer Overflow.\n\t\tBdpOwnership.mint(_contracts, _to, regionId)", 
+   "./uniqueContractSourceCode/0x1d7b5788d3844010664900615e966f8e9e464738.txt:1943:2: Warning: Integer Overflow.\n\tfunction setupRegion(address[16] _contracts, uint256 _regionId, uint256 _imageId, uint256[] _imageData, bool _swapImages, uint8[128] _url) public {\r\n\t^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "18.8"
+}

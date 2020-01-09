@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x21ad0028fea5fafa55b9b60e9c065db9f1c0616e.txt:969:9: Warning: Timestamp Dependency.\n        require(now >= start)", 
+   "./uniqueContractSourceCode/0x21ad0028fea5fafa55b9b60e9c065db9f1c0616e.txt:973:9: Warning: Timestamp Dependency.\n        require(now >= end || remainingCoins == 0)", 
+   "./uniqueContractSourceCode/0x21ad0028fea5fafa55b9b60e9c065db9f1c0616e.txt:973:17: Warning: Timestamp Dependency.\n        require(now >= end || remainingCoins == 0"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x21ad0028fea5fafa55b9b60e9c065db9f1c0616e.txt:917:5: Warning: Integer Overflow.\n    function registerKYC(address[] _customerAddrs) ownerOrOperator public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _customerAddrs = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x21ad0028fea5fafa55b9b60e9c065db9f1c0616e.txt:975:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x21ad0028fea5fafa55b9b60e9c065db9f1c0616e.txt:975:9: Warning: Transaction-Ordering Dependency.\n        owner.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "88.8"
+}

@@ -1,0 +1,31 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:389:9: Warning: Integer Overflow.\n        totalRemainSupply += _amount\nInteger Overflow occurs if:\n    totalRemainSupply = 96943655105911162741802056509404709410348723981800351264466039153235703480681\n    _amount = 31769636791936532929661760715285583354076941682947407161600322099437000056173\n    balances[msg.sender] = 31769636791936532929661760715285583354076941682947407161600322099437000056172\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:431:9: Warning: Integer Overflow.\n        blackListFreezeTokenAccounts[_freezeAddress].freezeUntilTime\nInteger Overflow occurs if:\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:447:31: Warning: Integer Overflow.\n        totalRemainSupply -= (foundingTeamSupply + gameDeveloperSupply\nInteger Overflow occurs if:\n    foundingTeamSupply = 1\n    gameDeveloperSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:443:9: Warning: Integer Overflow.\n        balances[_gameDeveloperAddr] += gameDeveloperSupply\nInteger Overflow occurs if:\n    balances[_gameDeveloperAddr] = 1\n    gameDeveloperSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:415:5: Warning: Integer Overflow.\n    function freezeTransfersUntil(uint256 _frozenUntilTime, string _freezeReason) onlyOwner {      \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _freezeReason = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:447:31: Warning: Integer Overflow.\n        totalRemainSupply -= (foundingTeamSupply + gameDeveloperSupply + communitySupply\nInteger Overflow occurs if:\n    gameDeveloperSupply = 0\n    foundingTeamSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    communitySupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:431:72: Warning: Integer Overflow.\n        blackListFreezeTokenAccounts[_freezeAddress].freezeUntilTime = now + blackListFreezeTime\nInteger Overflow occurs if:\n    blackListFreezeTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:307:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {            \r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:445:9: Warning: Integer Overflow.\n        balances[_communityAddr] += communitySupply\nInteger Overflow occurs if:\n    balances[_communityAddr] = 1\n    communitySupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:441:9: Warning: Integer Overflow.\n        balances[_foundingTeamAddr] += foundingTeamSupply\nInteger Overflow occurs if:\n    balances[_foundingTeamAddr] = 1\n    foundingTeamSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:167:5: Warning: Integer Underflow.\n    string  public standard = \"Mammoth Casino Contract Token\"", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:171:5: Warning: Integer Underflow.\n    string  public symbol = \"MCT\"", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:391:9: Warning: Integer Underflow.\n        balances[_addr] -= _amount\nInteger Underflow occurs if:\n    _amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    balances[_addr] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:447:9: Warning: Integer Underflow.\n        totalRemainSupply -= (foundingTeamSupply + gameDeveloperSupply + communitySupply)\nInteger Underflow occurs if:\n    totalRemainSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    gameDeveloperSupply = 0\n    communitySupply = 0\n    foundingTeamSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:247:16: Warning: Integer Underflow.\n        return totalSupply - totalRemainSupply\nInteger Underflow occurs if:\n    totalRemainSupply = 1\n    totalSupply = 0", 
+   "./uniqueContractSourceCode/0x46706460504aa8d1ac2a9a6140a96e995de56f35.txt:169:5: Warning: Integer Underflow.\n    string  public name = \"Mammoth Casino Token\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "63.8"
+}

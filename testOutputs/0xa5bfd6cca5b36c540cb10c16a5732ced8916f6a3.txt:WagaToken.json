@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xa5bfd6cca5b36c540cb10c16a5732ced8916f6a3.txt:473:17: Warning: Integer Underflow.\n        if(2 * (totalSupply - issueAmount\nInteger Underflow occurs if:\n    totalSupply = 0\n    issueAmount = 1\n    owner = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.9"
+}

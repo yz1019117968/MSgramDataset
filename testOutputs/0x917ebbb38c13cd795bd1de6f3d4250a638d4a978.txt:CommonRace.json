@@ -1,0 +1,32 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1741:5: Warning: Integer Overflow.\n    function finishRaceThenStartNext(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _carsAndRates = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1437:5: Warning: Integer Overflow.\n    address[] public drivers", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1989:9: Warning: Integer Overflow.\n        getRace(_lapId).tokensClaimedByDriver\nInteger Overflow occurs if:\n    _lapId = 0\n    race.stakeByCarAndDriver[race.firstCar][_driver] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    races[_lapId] = 1\n    wallet = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:365:9: Warning: Integer Overflow.\n        ownerHistory.push(owner)\nInteger Overflow occurs if:\n    ownerMap[owner] = 0\n    owner1 = 0", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1887:16: Warning: Integer Overflow.\n        return race.tokensByCarAndDriver\nInteger Overflow occurs if:\n    _lapId = 0\n    races[_lapId] = 1", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1665:5: Warning: Integer Overflow.\n    function finishRace(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _carsAndRates = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:313:5: Warning: Integer Overflow.\n    address[] public ownerHistory", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1405:1: Warning: Integer Overflow.\ncontract CommonRace is MultiOwnable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _lapId = 0\n    isKnownDriver[driver] = 0\n    races[_lapId] = 1\n    isKnownCar[_car] = 255\n    wallet = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1807:16: Warning: Integer Overflow.\n        return getRace(_lapId).startTime\nInteger Overflow occurs if:\n    _lapId = 0\n    races[_lapId] = 1", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1425:5: Warning: Integer Overflow.\n    address[] public cars", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1577:5: Warning: Integer Overflow.\n    function startNewRace(\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _carsAndRates = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1433:5: Warning: Integer Overflow.\n    RaceLib.Race[] public races", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1819:16: Warning: Integer Overflow.\n        return getRace(_lapId).finishTime\nInteger Overflow occurs if:\n    _lapId = 0\n    races[_lapId] = 1", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:2029:13: Warning: Integer Overflow.\n            drivers.push(driver)\nInteger Overflow occurs if:\n    _lapId = 0\n    isKnownDriver[driver] = 0\n    races[_lapId] = 1\n    isKnownCar[_car] = 255\n    wallet = 1461501637330902918203684832716283019655932542975", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:2125:28: Warning: Integer Overflow.\n        totals = new int[](5 + cars.length * 7\nInteger Overflow occurs if:\n    _lapId = 0\n    cars.length = 66166908135609254527754848576393090201868562666080322308261476575950359794249\n    races[_lapId] = 1", 
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1887:42: Warning: Integer Overflow.\n        return race.tokensByCarAndDriver[race.firstCar\nInteger Overflow occurs if:\n    _lapId = 0\n    races[_lapId] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x917ebbb38c13cd795bd1de6f3d4250a638d4a978.txt:1421:5: Warning: Integer Underflow.\n    string public name"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.8"
+}

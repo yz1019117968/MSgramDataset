@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:163:2: Warning: Integer Overflow.\n\tfunction StartMiningByIdArray(uint256[] _MineIds) public {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _MineIds = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1277ee49236da5c07e93b8b9df29d629842f0ab9.txt:273:3: Warning: Integer Overflow.\n\t\tnextMineEvent++\nInteger Overflow occurs if:\n    MineLevel[_MineId] = 1\n    nextMineEvent = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ResourcesOwner[lvl][msg.sender] = 30\n    MineOwner[_MineId] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.6"
+}

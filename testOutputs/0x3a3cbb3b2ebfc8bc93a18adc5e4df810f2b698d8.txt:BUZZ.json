@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x3a3cbb3b2ebfc8bc93a18adc5e4df810f2b698d8.txt:275:5: Warning: Integer Overflow.\n    function multiTransfer(address[] dests, uint[] values) public\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    dests = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x3a3cbb3b2ebfc8bc93a18adc5e4df810f2b698d8.txt:57:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807\n    isStarted = 255"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x3a3cbb3b2ebfc8bc93a18adc5e4df810f2b698d8.txt:227:5: Warning: Integer Underflow.\n    string public symbol = \"BUZZ\"", 
+   "./uniqueContractSourceCode/0x3a3cbb3b2ebfc8bc93a18adc5e4df810f2b698d8.txt:225:5: Warning: Integer Underflow.\n    string public name = \"Buzz.im\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "73.8"
+}

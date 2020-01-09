@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x90bacf482bd59c7f1a829b6b3923a4caa4dd7545.txt:155:36: Warning: Integer Overflow.\n        jumpi(setH, lt(value,sload(add(sha3(0x60,0x20),mid)\nInteger Overflow occurs if:\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x90bacf482bd59c7f1a829b6b3923a4caa4dd7545.txt:157:36: Warning: Integer Overflow.\n        jumpi(setL, gt(value,sload(add(sha3(0x60,0x20),mid)\nInteger Overflow occurs if:\n    value = 0\n    self = 0\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x90bacf482bd59c7f1a829b6b3923a4caa4dd7545.txt:167:19: Warning: Integer Underflow.\n          high := sub(mid,1)\nInteger Underflow occurs if:\n    value = 0\n    self = 1\n    isSorted = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x90bacf482bd59c7f1a829b6b3923a4caa4dd7545.txt:209:17: Warning: Integer Underflow.\n    uint256 i = index - 1\nInteger Underflow occurs if:\n    self.length = 1", 
+   "./restContracts/0x90bacf482bd59c7f1a829b6b3923a4caa4dd7545.txt:143:19: Warning: Integer Underflow.\n      let high := sub(sload(self_slot),1)", 
+   "./restContracts/0x90bacf482bd59c7f1a829b6b3923a4caa4dd7545.txt:239:19: Warning: Integer Underflow.\n    uint256 end = self.length - 1\nInteger Underflow occurs if:\n    self.length = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "45.4"
+}

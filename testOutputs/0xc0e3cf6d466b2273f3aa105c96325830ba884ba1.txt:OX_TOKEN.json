@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc0e3cf6d466b2273f3aa105c96325830ba884ba1.txt:261:13: Warning: Integer Overflow.\n         && oxen[_to] + _amount\nInteger Overflow occurs if:\n    _amount = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    oxen[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296\n    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960\n    oxen[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960", 
+   "./restContracts/0xc0e3cf6d466b2273f3aa105c96325830ba884ba1.txt:241:5: Warning: Integer Overflow.\n    oxen[to] += ox\nInteger Overflow occurs if:\n    oxen[to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    ox = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    starttime = 0\n    oxen[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc0e3cf6d466b2273f3aa105c96325830ba884ba1.txt:293:12: Warning: Integer Underflow.\n    return now - starttime\nInteger Underflow occurs if:\n    starttime = 1", 
+   "./restContracts/0xc0e3cf6d466b2273f3aa105c96325830ba884ba1.txt:301:20: Warning: Integer Underflow.\n    uint elapsed = now - starttime\nInteger Underflow occurs if:\n    starttime = 1"
+  ], 
+  "money_concurrency": [
+   [
+    "./restContracts/0xc0e3cf6d466b2273f3aa105c96325830ba884ba1.txt:115:17: Warning: Transaction-Ordering Dependency.\n      success = owner.send( amount )"
+   ], 
+   [
+    "./restContracts/0xc0e3cf6d466b2273f3aa105c96325830ba884ba1.txt:97:5: Warning: Transaction-Ordering Dependency.\n    selfdestruct( owner )"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.5"
+}

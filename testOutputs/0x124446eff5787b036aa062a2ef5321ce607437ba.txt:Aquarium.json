@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x124446eff5787b036aa062a2ef5321ce607437ba.txt:33:3: Warning: Integer Overflow.\n  function receive(address receiver, uint8 animalType, uint32[] ids) payable {}\nInteger Overflow occurs if:\n    ids = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "58.6"
+}

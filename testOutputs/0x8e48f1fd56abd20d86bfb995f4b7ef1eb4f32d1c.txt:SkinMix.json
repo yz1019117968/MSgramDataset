@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x8e48f1fd56abd20d86bfb995f4b7ef1eb4f32d1c.txt:593:9: Warning: Integer Overflow.\n        nextSkinId++\nInteger Overflow occurs if:\n    nextSkinId = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    skinAId = 0\n    skinBId = 0\n    skinIdToOwner[skinBId] = 0\n    skinIdToOwner[skinAId] = 0\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x8e48f1fd56abd20d86bfb995f4b7ef1eb4f32d1c.txt:617:9: Warning: Integer Underflow.\n        numSkinOfAccounts[account] -= 1\nInteger Underflow occurs if:\n    numSkinOfAccounts[account] = 0\n    skinAId = 0\n    skinBId = 0\n    skinIdToOwner[skinBId] = 0\n    skinIdToOwner[skinAId] = 0\n    paused = 0", 
+   "./restContracts/0x8e48f1fd56abd20d86bfb995f4b7ef1eb4f32d1c.txt:621:29: Warning: Integer Underflow.\n        MixSuccess(account, nextSkinId - 1\nInteger Underflow occurs if:\n    nextSkinId = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    skinAId = 0\n    skinBId = 0\n    skinIdToOwner[skinBId] = 0\n    skinIdToOwner[skinAId] = 0\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "90.5"
+}

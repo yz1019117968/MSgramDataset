@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:333:5: Warning: Integer Overflow.\n    mapping(uint => TOKEN) public token", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:907:39: Warning: Integer Overflow.\n        MiningUpgrade(msg.sender, id, token[id].mSpeed\nInteger Overflow occurs if:\n    n = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:515:22: Warning: Integer Overflow.\n        uint price = token[_tokenId].lastPrice", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:745:9: Warning: Integer Overflow.\n        tokenList.push(tokenId)\nInteger Overflow occurs if:\n    mSumRawSpeed = 0\n    tokenList.push(tokenId) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _mBaseSpeed = 0\n    _owner = 1461501637330902918203684832716283019655932542975\n    _price = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ceoAddress = 0\n    token[tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:295:9: Warning: Integer Overflow.\n        token[_tokenId].approved\nInteger Overflow occurs if:\n    token[_tokenId].owner = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:789:5: Warning: Integer Overflow.\n    function createMultipleTokens(uint[] tokenId, uint[] _price, address _owner, uint[] _mBaseSpeed) public onlyCLevel {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokenId = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:351:9: Warning: Integer Overflow.\n        token[_tokenId].approved\nInteger Overflow occurs if:\n    token[_tokenId].owner = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:303:5: Warning: Integer Overflow.\n    uint[] public tokenList", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:517:25: Warning: Integer Overflow.\n        uint priceLow = token[_tokenId].lastPrice\nInteger Overflow occurs if:\n    priceFactorB = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:911:5: Warning: Integer Overflow.\n    function payoutMiningAll(address owner, uint[] list) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    list = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:577:1: Warning: Integer Overflow.\ncontract GodPowerCoin is ERC721 {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokenList.push(tokenId) = 105782898658114362639998236590588058411517566113314665475433552748888561006558\n    mSumRawSpeed = 0\n    _mBaseSpeed = 0\n    _owner = 1461501637330902918203684832716283019655932542975\n    _price = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    cooAddress = 0\n    ceoAddress = 1461501637330902918203684832716283019655932542975\n    token[tokenId].price = 0", 
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:767:5: Warning: Integer Overflow.\n    function createSimilarTokens(uint[] tokenId, uint _price, address _owner, uint _mBaseSpeed) public onlyCLevel {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    tokenId = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x749012523b5c0f634537736202e233f12e9e66bc.txt:175:16: Warning: Integer Underflow.\n        return _totalSupply  - balances[address(0)]\nInteger Underflow occurs if:\n    _totalSupply = 0\n    balances[address(0)] = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "52.8"
+}

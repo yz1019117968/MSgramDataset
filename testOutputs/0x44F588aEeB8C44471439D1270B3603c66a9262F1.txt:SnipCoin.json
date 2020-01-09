@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x44F588aEeB8C44471439D1270B3603c66a9262F1.txt:403:5: Warning: Integer Overflow.\n    function addMultipleAddressesToCappedAddresses(address[] addrList) public onlyPermissioned {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x44F588aEeB8C44471439D1270B3603c66a9262F1.txt:423:5: Warning: Integer Overflow.\n    function addMultipleAddressesToUncappedAddresses(address[] addrList) public onlyPermissioned {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x44F588aEeB8C44471439D1270B3603c66a9262F1.txt:203:5: Warning: Integer Underflow.\n    string public version = \"1.0\"", 
+   "./uniqueContractSourceCode/0x44F588aEeB8C44471439D1270B3603c66a9262F1.txt:193:5: Warning: Integer Underflow.\n    string public symbol = \"SNIP\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "71.8"
+}

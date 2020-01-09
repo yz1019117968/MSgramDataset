@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:5:1: Warning: Integer Overflow.\ncontract Pub {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    all.length = 71035195276905978830841378541667856625157632706140231142381185849046086175071", 
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:25:5: Warning: Integer Overflow.\n    Publication[] public all", 
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:41:9: Warning: Integer Overflow.\n        all.push(Publication(\r\n        ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    all.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:59:5: Warning: Integer Overflow.\n    function sign(string _name)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:19:5: Warning: Integer Overflow.\n    mapping (address => uint256[]) public allByAuthor", 
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:33:5: Warning: Integer Overflow.\n    function publish(string _title, string _body)\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _title = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:25:5: Warning: Integer Underflow.\n    Publication[] public all", 
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:23:5: Warning: Integer Underflow.\n    mapping (address => string) public authors", 
+   "./restContracts/0x80d9b122dc3a16fdc41f96cf010ffe7e38d227c3.txt:5:1: Warning: Integer Underflow.\ncontract Pub {\r\n^\nSpanning multiple lines."
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "31.7"
+}

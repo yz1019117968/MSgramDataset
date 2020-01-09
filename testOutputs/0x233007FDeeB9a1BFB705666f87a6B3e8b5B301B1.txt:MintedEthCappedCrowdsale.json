@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x233007FDeeB9a1BFB705666f87a6B3e8b5B301B1.txt:1729:3: Warning: Integer Overflow.\n  function allocate(address receiver, uint tokenAmount, uint weiPrice, string customerId,  uint lockedTokenAmount) public onlyAllocateAgent {\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x233007FDeeB9a1BFB705666f87a6B3e8b5B301B1.txt:1889:3: Warning: Integer Overflow.\n  function buyWithCustomerId(string customerId) public payable {\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "68.3"
+}

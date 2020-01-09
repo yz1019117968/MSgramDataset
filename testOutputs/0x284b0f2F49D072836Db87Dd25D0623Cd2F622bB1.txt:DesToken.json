@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x284b0f2F49D072836Db87Dd25D0623Cd2F622bB1.txt:51:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1\n    transfersAllowed = 372682917519380244141939632342652170012262798458880"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x284b0f2F49D072836Db87Dd25D0623Cd2F622bB1.txt:455:3: Warning: Integer Underflow.\n  string public name = \"DES Token\"", 
+   "./uniqueContractSourceCode/0x284b0f2F49D072836Db87Dd25D0623Cd2F622bB1.txt:457:3: Warning: Integer Underflow.\n  string public symbol = \"DES\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "82.9"
+}

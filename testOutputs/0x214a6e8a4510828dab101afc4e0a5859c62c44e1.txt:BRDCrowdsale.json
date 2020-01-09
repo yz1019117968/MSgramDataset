@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x214a6e8a4510828dab101afc4e0a5859c62c44e1.txt:1515:43: Warning: Integer Overflow.\n      var (_shouldReward, _to, _amount) = lockup.unlock(_i)\nInteger Overflow occurs if:\n    owner = 0\n    endTime = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "77.8"
+}

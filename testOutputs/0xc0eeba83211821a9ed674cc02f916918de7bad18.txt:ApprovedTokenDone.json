@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xc0eeba83211821a9ed674cc02f916918de7bad18.txt:53:17: Warning: Integer Overflow.\n    uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 1"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0xc0eeba83211821a9ed674cc02f916918de7bad18.txt:305:2: Warning: Integer Underflow.\n\tstring public name = 'SIMCITY'", 
+   "./restContracts/0xc0eeba83211821a9ed674cc02f916918de7bad18.txt:313:2: Warning: Integer Underflow.\n\tstring public publisher = 'TokenDone.io'", 
+   "./restContracts/0xc0eeba83211821a9ed674cc02f916918de7bad18.txt:307:2: Warning: Integer Underflow.\n\tstring public symbol = 'SIMCITY'"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "66.8"
+}

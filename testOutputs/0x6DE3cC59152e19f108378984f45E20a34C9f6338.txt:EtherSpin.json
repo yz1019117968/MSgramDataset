@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6DE3cC59152e19f108378984f45E20a34C9f6338.txt:243:5: Warning: Integer Overflow.\n    function __callback(bytes32 myid, string result) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6DE3cC59152e19f108378984f45E20a34C9f6338.txt:2269:5: Warning: Integer Overflow.\n    function __callback(bytes32 _queryId, string _result, bytes _proof) onlyOraclize {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _result = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6DE3cC59152e19f108378984f45E20a34C9f6338.txt:1547:53: Warning: Integer Underflow.\n            mstore(add(unonce, 0x20), xor(blockhash(sub(number, 1)\nInteger Underflow occurs if:\n    oraclize = 0\n    OAR = 1461501637330902918203684832716283019655932542975\n    minBet = 0\n    maxBet = 0", 
+   "./uniqueContractSourceCode/0x6DE3cC59152e19f108378984f45E20a34C9f6338.txt:2143:1: Warning: Integer Underflow.\ncontract EtherSpin is usingOraclize, SafeMath {\r\n^\nSpanning multiple lines.\nInteger Underflow occurs if:\n    OAR = 0\n    minBet = 0\n    maxBet = 0"
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6DE3cC59152e19f108378984f45E20a34C9f6338.txt:2385:9: Warning: Transaction-Ordering Dependency.\n        suicide(owner)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6DE3cC59152e19f108378984f45E20a34C9f6338.txt:2377:11: Warning: Transaction-Ordering Dependency.\n      if(!addy.send(value)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "22.7"
+}

@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./restContracts/0x9bd453c1a6c9211403f39b1b31c4d2f67697b663.txt:27:5: Warning: Integer Underflow.\n    string public name = \"HOPEToken\"", 
+   "./restContracts/0x9bd453c1a6c9211403f39b1b31c4d2f67697b663.txt:29:5: Warning: Integer Underflow.\n    string public symbol = \"HT\""
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "60.7"
+}

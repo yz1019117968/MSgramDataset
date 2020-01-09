@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x74d13225bc488397212e63dc38b497f6aa7a7a69.txt:273:5: Warning: Integer Overflow.\n    balances[admin] += msg.value\nInteger Overflow occurs if:\n    balances[admin] = 1", 
+   "./uniqueContractSourceCode/0x74d13225bc488397212e63dc38b497f6aa7a7a69.txt:57:3: Warning: Integer Overflow.\n  uint32[] public coinCoordinates"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.2"
+}

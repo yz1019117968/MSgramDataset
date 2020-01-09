@@ -1,0 +1,39 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:559:21: Warning: Integer Overflow.\n        _position = player.position\nInteger Overflow occurs if:\n    players[_playerCard.playerId] = 1\n    playerCards[_cardId] = 1", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:209:5: Warning: Integer Overflow.\n    PlayerCard[] public playerCards", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:659:5: Warning: Integer Overflow.\n    function createCardForAcquiredPlayers(uint[] playerIds, address newOwner) public whenNotPaused returns (uint[]) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:393:13: Warning: Integer Overflow.\n            playerCards[_cardId]\nInteger Overflow occurs if:\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId] = 115792089237316195423570985008687907853269984665640564039457583972728723996672\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1523:1: Warning: Integer Overflow.\ncontract BCFMain is BCFSeeding {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 0\n    playerCards[_cardId] = 1\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:259:20: Warning: Integer Overflow.\n        approved = playerCards[_tokenId].approvedForTransfer\nInteger Overflow occurs if:\n    playerCards[_tokenId] = 1", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:443:9: Warning: Integer Overflow.\n        players[_playerId]\nInteger Overflow occurs if:\n    paused = 0\n    players[_playerId].form = 18374686479671623680\n    players[_playerId] = 57896044618658097711785492504343953926634992332820282019728792003956564819969", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:207:5: Warning: Integer Overflow.\n    Player[] public players", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1367:5: Warning: Integer Overflow.\n    function createPlayerOnAuction(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:351:9: Warning: Integer Overflow.\n        ownerToCardsOwned[_owner].push(_cardId)\nInteger Overflow occurs if:\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 0\n    playerCards[_cardId] = 1\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:1451:5: Warning: Integer Overflow.\n    function createPlayerAndAssign(\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:365:25: Warning: Integer Overflow.\n        uint swapCard = ownerToCardsOwned[_owner][length - 1]\nInteger Overflow occurs if:\n    ownerToCardsOwned[_owner].length = 115792089237316195423570985008687907853269984665640564039457584007913129639930\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId] = 1\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:541:33: Warning: Integer Overflow.\n        Player storage player = players[_playerCard.playerId]\nInteger Overflow occurs if:\n    players[_playerCard.playerId] = 115792089237316195423570961063445081823756572815834439515762475264365993918464\n    playerCards[_cardId] = 1", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:259:20: Warning: Integer Overflow.\n        approved = playerCards[_tokenId]\nInteger Overflow occurs if:\n    playerCards[_tokenId] = 115792089237316195423570985008687907853184914073910329423591740320870815498240", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:401:9: Warning: Integer Overflow.\n        playerCards[_cardId]\nInteger Overflow occurs if:\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 0\n    playerCards[_cardId] = 115792089237316195423570985008687907853269984665640564039457584007912055898112\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:401:9: Warning: Integer Overflow.\n        playerCards[_cardId].owner\nInteger Overflow occurs if:\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 0\n    playerCards[_cardId] = 1\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:533:42: Warning: Integer Overflow.\n        PlayerCard storage _playerCard = playerCards[_cardId]\nInteger Overflow occurs if:\n    playerCards[_cardId] = 115792089237316195423570985008687907853184914073910329423591740356055187587072", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:393:13: Warning: Integer Overflow.\n            playerCards[_cardId].approvedForTransfer\nInteger Overflow occurs if:\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId] = 1\n    paused = 0", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:569:5: Warning: Integer Overflow.\n    function isOwnerOfAllPlayerCards(uint256[] _cardIds, address owner) public view returns (bool) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:223:5: Warning: Integer Overflow.\n    mapping(uint => uint8[]) public playerIdToExtendedAttributes", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:473:23: Warning: Integer Overflow.\n        uint cardId = playerCards.push(_cardInstance)\nInteger Overflow occurs if:\n    players[_playerId] = 536870913\n    buyingEscrowAddress = 1461501637330902918203684832716283019655932542975\n    paused = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:559:9: Warning: Integer Underflow.\n        _position = player.position\nInteger Underflow occurs if:\n    players[_playerCard.playerId] = 1\n    playerCards[_cardId] = 1", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:207:5: Warning: Integer Underflow.\n    Player[] public players", 
+   "./uniqueContractSourceCode/0x6abf810730a342add1374e11f3e97500ee774d1f.txt:365:51: Warning: Integer Underflow.\n        uint swapCard = ownerToCardsOwned[_owner][length - 1\nInteger Underflow occurs if:\n    ownerToCardsOwned[_owner].length = 0\n    playerCards[_cardId].approvedForTransfer = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId].owner = 1461501637330902918203684832716283019655932542975\n    playerCards[_cardId] = 1\n    paused = 0"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "54.0"
+}

@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x28ccdda197d319a241005b9c9f01bac48b90f556.txt:153:9: Warning: Integer Overflow.\n        _balances[to] += amount\nInteger Overflow occurs if:\n    _balances[to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231\n    amount = 37717208912933073374861050775867160511051478474789766132129094234564326678807", 
+   "./uniqueContractSourceCode/0x28ccdda197d319a241005b9c9f01bac48b90f556.txt:41:5: Warning: Integer Overflow.\n    function MerkleAirDropToken(string name, string symbol, uint8 decimals, bytes32 rootHash, uint256 premine) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x28ccdda197d319a241005b9c9f01bac48b90f556.txt:123:9: Warning: Integer Overflow.\n        _balances[to] += amount\nInteger Overflow occurs if:\n    _balances[to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    amount = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    _balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852", 
+   "./uniqueContractSourceCode/0x28ccdda197d319a241005b9c9f01bac48b90f556.txt:195:5: Warning: Integer Overflow.\n    function redeemPackage(uint256 index, address recipient, uint256 amount, bytes32[] merkleProof) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    merkleProof = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x28ccdda197d319a241005b9c9f01bac48b90f556.txt:69:9: Warning: Integer Underflow.\n        return _name\nInteger Underflow occurs if:\n    return _name = 1", 
+   "./uniqueContractSourceCode/0x28ccdda197d319a241005b9c9f01bac48b90f556.txt:77:9: Warning: Integer Underflow.\n        return _symbol\nInteger Underflow occurs if:\n    return _symbol = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "49.9"
+}

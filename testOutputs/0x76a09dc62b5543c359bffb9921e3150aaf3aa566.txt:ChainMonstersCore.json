@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:2861:5: Warning: Integer Overflow.\n    function createTrainer(string _username, uint16 _starterId) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _username = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:3085:13: Warning: Integer Overflow.\n        if (trainer.currArea", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:2913:5: Warning: Integer Overflow.\n    function changeMonsterNickname(uint256 _tokenId, string _name) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:473:7: Warning: Integer Overflow.\n      mapping(address => Trainer) public addressToTrainer", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:2997:30: Warning: Integer Overflow.\n       Monster storage mon = monsters[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    monsters[_id] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:3045:35: Warning: Integer Overflow.\n            Monster storage mon = monsters[_tokenId]\nInteger Overflow occurs if:\n    _tokenId = 115792089237316195423570985008687907853269984665640564039457575000713874898943\n    monsters[_tokenId] = 115792089237316195423570985008687907853269984665640564039457575000713874898944", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:2899:5: Warning: Integer Overflow.\n    function changeUsername(string _name) public {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _name = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:535:13: Warning: Integer Overflow.\n            areas.push(areaIndex)\nInteger Overflow occurs if:\n    areas.push(areaIndex) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    adminAddress = 0", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:733:13: Warning: Integer Overflow.\n            addressToTrainer[player].currArea\nInteger Overflow occurs if:\n    areas.length = 65533\n    _newArea = 65533", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:753:9: Warning: Integer Overflow.\n        ownershipTokenCount[_to]++\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    monsterIndexToOwner[_tokenId] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:501:5: Warning: Integer Underflow.\n    mapping (uint256 => string) public monsterIdToNickname", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:473:7: Warning: Integer Underflow.\n      mapping(address => Trainer) public addressToTrainer", 
+   "./uniqueContractSourceCode/0x76a09dc62b5543c359bffb9921e3150aaf3aa566.txt:761:13: Warning: Integer Underflow.\n            ownershipTokenCount[_from]--\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    monsterIndexToOwner[_tokenId] = 1461501637330902918203684832716283019655932542975"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "50.9"
+}

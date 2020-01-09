@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x7e0055ebf95efcb00cad8554a51a8000af4a200e.txt:1837:9: Warning: Integer Overflow.\n        locks[_owner] = locked(_value,_date)\nInteger Overflow occurs if:\n    owner = 0", 
+   "./restContracts/0x7e0055ebf95efcb00cad8554a51a8000af4a200e.txt:1801:18: Warning: Integer Overflow.\n        if(now < locks[_owner].date", 
+   "./restContracts/0x7e0055ebf95efcb00cad8554a51a8000af4a200e.txt:1805:20: Warning: Integer Overflow.\n            return locks[_owner].date\nInteger Overflow occurs if:\n    locks[_owner].date = 1", 
+   "./restContracts/0x7e0055ebf95efcb00cad8554a51a8000af4a200e.txt:1597:21: Warning: Integer Overflow.\n        uint256 c = a + b\nInteger Overflow occurs if:\n    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155\n    balances[_from] = 67419346655525027280071070946112097648534143608088887667851415925010121249705\n    locks[_owner].date = 0\n    _paused = 0", 
+   "./restContracts/0x7e0055ebf95efcb00cad8554a51a8000af4a200e.txt:2175:5: Warning: Integer Overflow.\n    function migrateAll(address[] _holders) public onlyOwner {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "81.1"
+}

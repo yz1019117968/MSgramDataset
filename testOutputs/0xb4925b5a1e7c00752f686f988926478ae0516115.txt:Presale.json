@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xb4925b5a1e7c00752f686f988926478ae0516115.txt:861:23: Warning: Integer Overflow.\n            whitelist[users[i]\nInteger Overflow occurs if:\n    users = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0", 
+   "./restContracts/0xb4925b5a1e7c00752f686f988926478ae0516115.txt:839:23: Warning: Integer Overflow.\n            whitelist[users[i]\nInteger Overflow occurs if:\n    users = 115792089237316195423570985008687907853269984665640564039457584007913129639899\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "91.3"
+}

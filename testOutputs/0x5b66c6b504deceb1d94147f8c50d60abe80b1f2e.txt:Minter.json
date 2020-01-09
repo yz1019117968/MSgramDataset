@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x5b66c6b504deceb1d94147f8c50d60abe80b1f2e.txt:201:3: Warning: Integer Overflow.\n  uint256[] public amounts =   [\r\n  ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x5b66c6b504deceb1d94147f8c50d60abe80b1f2e.txt:335:22: Warning: Integer Overflow.\n      token.transfer(holders[i]\nInteger Overflow occurs if:\n    holders.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    amounts[i] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    complete = 0\n    owner = 0", 
+   "./uniqueContractSourceCode/0x5b66c6b504deceb1d94147f8c50d60abe80b1f2e.txt:81:3: Warning: Integer Overflow.\n  address[] public holders =   [\r\n  ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "98.6"
+}

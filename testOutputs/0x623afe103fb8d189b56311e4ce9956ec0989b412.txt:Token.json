@@ -1,0 +1,35 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:637:5: Warning: Integer Overflow.\n    function approveAndCall(address _spender, uint256 _amount, bytes _extraData) public returns (bool success) {\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:687:5: Warning: Integer Overflow.\n    function transferMulti(address[] _to, uint256[] _value) public returns (uint256 amount){\r\n    ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:825:9: Warning: Integer Overflow.\n        balanceOf[_user] += _amount\nInteger Overflow occurs if:\n    balanceOf[_user] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balanceOf[owner] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    controller = 0", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:411:5: Warning: Integer Overflow.\n    mapping (uint8 => mapping (uint8 => FreezeInfo)) public freezeOf", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:773:31: Warning: Integer Overflow.\n            uint256 _amount = fInfo.amount\nInteger Overflow occurs if:\n    lastFreezeSeq[_step] = 228\n    owner = 0", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:729:9: Warning: Integer Overflow.\n        freezeOf[_step][lastFreezeSeq[_step]] = FreezeInfo({user:_user, amount:_value})\nInteger Overflow occurs if:\n    balanceOf[_user] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    controller = 0", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:775:13: Warning: Integer Overflow.\n            balanceOf[fInfo.user] += _amount\nInteger Overflow occurs if:\n    lastFreezeSeq[_step] = 228\n    balanceOf[fInfo.user] = 1\n    owner = 0", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:923:9: Warning: Integer Overflow.\n        balanceOf[newOwner] += balanceOf[owner]\nInteger Overflow occurs if:\n    balanceOf[newOwner] = 1\n    balanceOf[owner] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    owner = 0", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:849:9: Warning: Integer Overflow.\n        balanceOf[owner] += _amount\nInteger Overflow occurs if:\n    balanceOf[owner] = 85653202831209899131921273706816539903532775246499202405936884825549521553152\n    balanceOf[_user] = 44369063854674067291029404066660873444229566625561754964912869797988903417852\n    owner = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:275:5: Warning: Integer Underflow.\n    string public name", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:393:5: Warning: Integer Underflow.\n    string public officialSite = \"http://www.beautybloc.io\"", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:279:5: Warning: Integer Underflow.\n    string public symbol", 
+   "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:391:5: Warning: Integer Underflow.\n    string public techProvider = \"WeYii Tech\""
+  ], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:797:29: Warning: Transaction-Ordering Dependency.\n        bool proxyPayment = TokenController(controller).proxyPayment.value(msg.value)(msg.sender)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x623afe103fb8d189b56311e4ce9956ec0989b412.txt:901:13: Warning: Transaction-Ordering Dependency.\n            controller.transfer(this.balance)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "65.1"
+}

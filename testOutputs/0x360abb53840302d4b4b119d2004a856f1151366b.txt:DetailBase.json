@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x360abb53840302d4b4b119d2004a856f1151366b.txt:335:35: Warning: Integer Overflow.\n        return (details[_id].dna, details[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457582882013222797311\n    details[_id] = 115792089237316195423570985008687907853269984665640564039457582882013222797312", 
+   "./uniqueContractSourceCode/0x360abb53840302d4b4b119d2004a856f1151366b.txt:335:17: Warning: Integer Overflow.\n        return (details[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853184914073910329423591740356055187587071\n    details[_id] = 115792089237316195423570985008687907853184914073910329423591740356055187587072", 
+   "./uniqueContractSourceCode/0x360abb53840302d4b4b119d2004a856f1151366b.txt:335:35: Warning: Integer Overflow.\n        return (details[_id].dna, details[_id].idParent\nInteger Overflow occurs if:\n    _id = 0\n    details[_id] = 1", 
+   "./uniqueContractSourceCode/0x360abb53840302d4b4b119d2004a856f1151366b.txt:335:58: Warning: Integer Overflow.\n        return (details[_id].dna, details[_id].idParent, details[_id].releaseTime\nInteger Overflow occurs if:\n    _id = 0\n    details[_id] = 1", 
+   "./uniqueContractSourceCode/0x360abb53840302d4b4b119d2004a856f1151366b.txt:335:58: Warning: Integer Overflow.\n        return (details[_id].dna, details[_id].idParent, details[_id]\nInteger Overflow occurs if:\n    _id = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n    details[_id] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "99.6"
+}

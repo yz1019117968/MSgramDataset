@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x2f97dc94317760c7204e72a5bd058c10b409dc12.txt:991:16: Warning: Timestamp Dependency.\n        } else if (now < endTime && tokensLeft() > 0) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2f97dc94317760c7204e72a5bd058c10b409dc12.txt:987:9: Warning: Timestamp Dependency.\n        if (now < startTime) {\r\n        ^\nSpanning multiple lines.", 
+   "./uniqueContractSourceCode/0x2f97dc94317760c7204e72a5bd058c10b409dc12.txt:991:20: Warning: Timestamp Dependency.\n        } else if (now < endTime && tokensLeft() > 0"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x2f97dc94317760c7204e72a5bd058c10b409dc12.txt:1051:17: Warning: Transaction-Ordering Dependency.\n            if (msg.sender.send(amount)"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x2f97dc94317760c7204e72a5bd058c10b409dc12.txt:1027:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "79.0"
+}

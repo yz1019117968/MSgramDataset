@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x1b1981a32999ad581fb01487ffbb26f620ca917a.txt:97:5: Warning: Integer Overflow.\n    function askForgiveness (string transaction) public payable {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    transaction = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x1b1981a32999ad581fb01487ffbb26f620ca917a.txt:111:5: Warning: Integer Overflow.\n    function isForgiven (string transaction) public view returns (bool) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    transaction = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "47.0"
+}

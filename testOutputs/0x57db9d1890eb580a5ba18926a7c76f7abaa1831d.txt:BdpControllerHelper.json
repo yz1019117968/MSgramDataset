@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x57db9d1890eb580a5ba18926a7c76f7abaa1831d.txt:2063:2: Warning: Integer Overflow.\n\tfunction setImageData(uint256 _imageId, uint16 _part, uint256[] _imageData) public returns (address) {\r\n\t^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _imageData = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "46.2"
+}

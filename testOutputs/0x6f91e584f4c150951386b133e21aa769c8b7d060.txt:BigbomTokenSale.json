@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./uniqueContractSourceCode/0x6f91e584f4c150951386b133e21aa769c8b7d060.txt:1289:9: Warning: Timestamp Dependency.\n        require( ! saleEnded() )", 
+   "./uniqueContractSourceCode/0x6f91e584f4c150951386b133e21aa769c8b7d060.txt:1287:9: Warning: Timestamp Dependency.\n        require( saleStarted() )", 
+   "./uniqueContractSourceCode/0x6f91e584f4c150951386b133e21aa769c8b7d060.txt:1397:9: Warning: Timestamp Dependency.\n        require( saleEnded() )"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./uniqueContractSourceCode/0x6f91e584f4c150951386b133e21aa769c8b7d060.txt:1359:9: Warning: Transaction-Ordering Dependency.\n        bigbomMultiSigWallet.transfer( value )"
+   ], 
+   [
+    "./uniqueContractSourceCode/0x6f91e584f4c150951386b133e21aa769c8b7d060.txt:1317:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer( msg.value.sub( maxcap ) )"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "84.6"
+}

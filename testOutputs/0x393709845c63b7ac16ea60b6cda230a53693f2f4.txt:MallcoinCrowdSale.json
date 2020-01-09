@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x393709845c63b7ac16ea60b6cda230a53693f2f4.txt:47:19: Warning: Integer Overflow.\n      uint256 c = a + b\nInteger Overflow occurs if:\n    ICO_END_TIME = 115792089237316195423570985008687907853269984665640564039457584007913129623552\n    SECRET_BONUS_FACTOR = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    ICO_BONUS_TIME_3 = 16383\n    ICO_BONUS_TIME_2 = 16383\n    ICO_BONUS_TIME_1 = 16383\n    crowdSaleStop = 0\n    ICO_START_TIME = 16383\n    PRE_ICO_START_TIME = 16384", 
+   "./uniqueContractSourceCode/0x393709845c63b7ac16ea60b6cda230a53693f2f4.txt:865:5: Warning: Integer Overflow.\n    function buyTokensByAtes(address addr_, uint256 amount_, string data_) onlyOwnerOrAuthorized  public returns (bool) {\r\n    ^\nSpanning multiple lines."
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "74.1"
+}

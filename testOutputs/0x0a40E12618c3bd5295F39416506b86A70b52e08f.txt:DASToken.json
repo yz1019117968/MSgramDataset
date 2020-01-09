@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x0a40E12618c3bd5295F39416506b86A70b52e08f.txt:455:5: Warning: Integer Overflow.\n    function transfer(address _to, uint256 _value, bytes _metadata) returns (bool _success) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x0a40E12618c3bd5295F39416506b86A70b52e08f.txt:171:9: Warning: Integer Underflow.\n        return symbol\nInteger Underflow occurs if:\n    return symbol = 1", 
+   "./uniqueContractSourceCode/0x0a40E12618c3bd5295F39416506b86A70b52e08f.txt:163:9: Warning: Integer Underflow.\n        return name\nInteger Underflow occurs if:\n    return name = 1"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "59.2"
+}

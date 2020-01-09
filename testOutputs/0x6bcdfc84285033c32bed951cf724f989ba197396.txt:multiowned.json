@@ -1,0 +1,21 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:655:13: Warning: Integer Overflow.\n            pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:651:13: Warning: Integer Overflow.\n        if (pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:719:57: Warning: Integer Overflow.\n    function removeOwner(address _owner) onlymanyowners(sha3(msg.data)", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:793:18: Warning: Integer Overflow.\n        return !(pending.ownersDone\nInteger Overflow occurs if:\n    m_ownerIndex[uint(_owner)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:653:13: Warning: Integer Overflow.\n            pending.yetNeeded++\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [
+   "./uniqueContractSourceCode/0x6bcdfc84285033c32bed951cf724f989ba197396.txt:655:13: Warning: Integer Underflow.\n            pending.ownersDone -= ownerIndexBit\nInteger Underflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "35.7"
+}

@@ -1,0 +1,26 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [
+   "./restContracts/0x9259b4e90c5980ad2cb16d685254c859f5eddde5.txt:1653:5: Warning: Timestamp Dependency.\n    if(now < freezeEndsAt) throw"
+  ], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0x9259b4e90c5980ad2cb16d685254c859f5eddde5.txt:1413:1: Warning: Integer Overflow.\ncontract PresaleFundCollector is Ownable {\r\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 57896044618658097711785492504343953926634992332820282019710345101553180702902\n    weiMinimumLimit = 0\n    investorCount = 0\n    MAX_INVESTORS = 1\n    moving = 0\n    balances[investor] = 0", 
+   "./restContracts/0x9259b4e90c5980ad2cb16d685254c859f5eddde5.txt:1435:3: Warning: Integer Overflow.\n  address[] public investors", 
+   "./restContracts/0x9259b4e90c5980ad2cb16d685254c859f5eddde5.txt:1567:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    weiMinimumLimit = 0\n    investorCount = 0\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    MAX_INVESTORS = 1\n    moving = 0\n    balances[investor] = 0"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./restContracts/0x9259b4e90c5980ad2cb16d685254c859f5eddde5.txt:1607:7: Warning: Transaction-Ordering Dependency.\n      crowdsale.invest.value(amount)(investor)"
+   ], 
+   [
+    "./restContracts/0x9259b4e90c5980ad2cb16d685254c859f5eddde5.txt:1671:9: Warning: Transaction-Ordering Dependency.\n    if(!investor.send(amount)"
+   ]
+  ], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "93.8"
+}

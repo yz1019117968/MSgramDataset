@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "integer_overflow": [
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:413:5: Warning: Integer Overflow.\n    function getCertKey(string _CertID) public pure returns (bytes32) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _CertID = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:385:5: Warning: Integer Overflow.\n    function getCertAddressByID(string _CertID) public constant returns (address) {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _CertID = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:229:5: Warning: Integer Overflow.\n    function setCertificate(string _CompanyName,\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _CompanyName = 115792089237316195423570985008687907853269984665640564039457584007913129639935", 
+   "./restContracts/0xC27B9094e8FA5b313B934f6be5969B5d6c8EB9bA.txt:281:5: Warning: Integer Overflow.\n    function delCertificate(string _CertID) public onlyCertAdmin {\r\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _CertID = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "assertion_failure": []
+ }, 
+ "evm_code_coverage": "15.1"
+}
