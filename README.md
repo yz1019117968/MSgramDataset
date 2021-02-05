@@ -5,8 +5,8 @@
 * uniqueContractSourceCode  
   All non-duplicated smart contract source code retrieved from Etherscan.io.
 * Welcome to cite our paper:  
-  The data are adopted and collected in the paper: Smart Contracts Vulnerability Auditing with Multi-semantics, here's the bibtex for your reference.  
-  
+  The data below are adopted and collected in the paper: Smart Contracts Vulnerability Auditing with Multi-semantics, here's the bibtex for your reference.  
+```
   @INPROCEEDINGS {9202747,
   author = {Z. Yang and J. Keung and M. Zhang and Y. Xiao and Y. Huang and T. Hui},
   booktitle = {2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC)},
@@ -22,3 +22,4 @@
   address = {Los Alamitos, CA, USA},
   month = {jul}
   }
+ ```
